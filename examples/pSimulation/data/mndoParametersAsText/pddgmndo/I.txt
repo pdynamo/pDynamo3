@@ -1,0 +1,47 @@
+# . Text parameter file for the element I.
+
+I    atomicNumber                          53
+I    iii                                    5
+I    iiid                                   5
+I    ir016                                  0
+I    ir066                                  0
+I    ir244                                  0
+I    ir266                                  0
+I    ir466                                  0
+I    qnd                                    0
+I    qnp                                    5
+I    qns                                    5
+I    ad                     0.498835539686933  atomic
+I    alp                    2.242446000000000  A^-1
+I    am                     0.552726347238928  atomic
+I    aq                     0.504023396052695  atomic
+I    betad                  0.000000000000000  eV
+I    betap                 -5.693814000000000  eV
+I    betas                 -6.698375000000000  eV
+I    dd                     1.209529357087164  atomic
+I    eheat                 25.516999999999999  kcal/mole
+I    eisol               -356.076397999999983  eV
+I    f0sd                   0.000000000000000  eV
+I    g2sd                   0.000000000000000  eV
+I    gp2                    9.914090710000000  eV
+I    gphot                  1.000000000000000  dimensionless
+I    gpp                   11.147783690000001  eV
+I    gsp                   13.056557979999999  eV
+I    gss                   15.040448550000001  eV
+I    hsp                    2.456382020000000  eV
+I    pcore                  0.000000000000000  atomic
+I    qq                     1.043558757603858  atomic
+I    udd                    0.000000000000000  eV
+I    upp                  -75.282605000000004  eV
+I    uss                 -106.588421999999994  eV
+I    zcore                  7.000000000000000  atomic
+I    zdn                    0.000000000000000  atomic
+I    zetad                  0.000000000000000  atomic
+I    zetap                  2.461813000000000  atomic
+I    zetas                  2.718404000000000  atomic
+I    zpn                    0.000000000000000  atomic
+I    zsn                    0.000000000000000  atomic
+I    pddgc0                 0.009616000000000  eV
+I    pddge0                 2.572332000000000  A
+I    pddgc1                -0.007505000000000  eV
+I    pddge1                 2.936456000000000  A

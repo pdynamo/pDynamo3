@@ -1,0 +1,44 @@
+# . CharmmPSFRead
+---
+Label : Charmm Test
+Children :
+  - Label : ava
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ CMAP Dihedral           , -16.464    , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Fourier Dihedral        , 13.604     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Gradient Error          , 1.4033e-05 , 1.0000e-03 , "{:.4e}" , "{:.4e}" ]
+      - [ Harmonic Angle          , 9.644      , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Bond           , 2.886      , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Improper       , 0.064      , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Electrostatic , 1112.775   , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Lennard-Jones , 11.500     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Electrostatic     , -1016.439  , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Lennard-Jones     , -12.355    , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Potential Energy        , 106.072    , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Urey-Bradley            , 0.858      , 0.500      , "{:.3f}" , "{:.3f}" ]
+  - Label : citrate_synthase
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ CMAP Dihedral           , -1649.793   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Fourier Dihedral        , 7357.373    , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Angle          , 5712.760    , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Bond           , 2978.650    , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Improper       , 577.268     , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Electrostatic , 72482.561   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Lennard-Jones , 6094.484    , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Electrostatic     , -101430.270 , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Lennard-Jones     , -4871.605   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Potential Energy        , -12177.045  , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Urey-Bradley            , 571.527     , 0.500 , "{:.3f}" , "{:.3f}" ]
+...

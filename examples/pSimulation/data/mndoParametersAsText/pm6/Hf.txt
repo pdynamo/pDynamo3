@@ -1,0 +1,79 @@
+# . Text parameter file for the element Hf.
+
+Hf   atomicNumber                          72
+Hf   iii                                    6
+Hf   iiid                                   5
+Hf   ir016                                  4
+Hf   ir066                                  1
+Hf   ir244                                  2
+Hf   ir266                                  8
+Hf   ir466                                  1
+Hf   qnd                                    5
+Hf   qnp                                    6
+Hf   qns                                    6
+Hf   ad                     0.087471279518946  atomic
+Hf   alp                    0.000000000000000  A^-1
+Hf   am                     0.132383510498037  atomic
+Hf   aq                     0.418118629581981  atomic
+Hf   betad                 -3.884443000000000  eV
+Hf   betap                -21.550118999999999  eV
+Hf   betas                 -5.366351000000000  eV
+Hf   dd                     0.783640940278464  atomic
+Hf   eheat                148.000000000000000  kcal/mole
+Hf   eisol                -82.423423539999987  eV
+Hf   f0sd                   4.842900000000000  eV
+Hf   g2sd                   4.386101000000000  eV
+Hf   gp2                   12.809707899999999  eV
+Hf   gphot                  1.000000000000000  dimensionless
+Hf   gpp                   14.769194460000000  eV
+Hf   gsp                    4.293728780000000  eV
+Hf   gss                    3.602338460000000  eV
+Hf   hsp                    0.011028380000000  eV
+Hf   pcore                  0.000000000000000  atomic
+Hf   qq                     1.914319237044147  atomic
+Hf   udd                  -20.637740999999998  eV
+Hf   upp                  -13.081670000000001  eV
+Hf   uss                  -22.375139999999998  eV
+Hf   zcore                  4.000000000000000  atomic
+Hf   zdn                    0.940283000000000  atomic
+Hf   zetad                  1.840840000000000  atomic
+Hf   zetap                  1.575819000000000  atomic
+Hf   zetas                  3.085344000000000  atomic
+Hf   zpn                    3.538911000000000  atomic
+Hf   zsn                    0.946927000000000  atomic
+Hf   diatomicA      H       1.423788000000000  A^-1
+Hf   diatomicX      H       3.427312000000000  dimensionless
+Hf   diatomicA      B       1.633500000000000  A^-1
+Hf   diatomicX      B       0.659270000000000  dimensionless
+Hf   diatomicA      C       1.002194000000000  A^-1
+Hf   diatomicX      C       0.378579000000000  dimensionless
+Hf   diatomicA      N       1.332410000000000  A^-1
+Hf   diatomicX      N       0.655795000000000  dimensionless
+Hf   diatomicA      O       1.633289000000000  A^-1
+Hf   diatomicX      O       1.034718000000000  dimensionless
+Hf   diatomicA      F       2.290803000000000  A^-1
+Hf   diatomicX      F       1.679335000000000  dimensionless
+Hf   diatomicA      Mg      1.911350000000000  A^-1
+Hf   diatomicX      Mg      4.330250000000000  dimensionless
+Hf   diatomicA      Al      0.949150000000000  A^-1
+Hf   diatomicX      Al      0.622520000000000  dimensionless
+Hf   diatomicA      Si      2.189300000000000  A^-1
+Hf   diatomicX      Si      3.382300000000000  dimensionless
+Hf   diatomicA      P       1.231220000000000  A^-1
+Hf   diatomicX      P       0.505530000000000  dimensionless
+Hf   diatomicA      S       2.327110000000000  A^-1
+Hf   diatomicX      S       1.666760000000000  dimensionless
+Hf   diatomicA      Cl      1.297117000000000  A^-1
+Hf   diatomicX      Cl      0.706421000000000  dimensionless
+Hf   diatomicA      Ca      2.054500000000000  A^-1
+Hf   diatomicX      Ca      4.319510000000000  dimensionless
+Hf   diatomicA      As      1.799500000000000  A^-1
+Hf   diatomicX      As      1.280820000000000  dimensionless
+Hf   diatomicA      Br      1.090759000000000  A^-1
+Hf   diatomicX      Br      0.692456000000000  dimensionless
+Hf   diatomicA      I       1.014096000000000  A^-1
+Hf   diatomicX      I       0.820948000000000  dimensionless
+Hf   diatomicA      Ba      2.264830000000000  A^-1
+Hf   diatomicX      Ba      9.022520000000000  dimensionless
+Hf   diatomicA      Hf      0.544144000000000  A^-1
+Hf   diatomicX      Hf      1.058911000000000  dimensionless

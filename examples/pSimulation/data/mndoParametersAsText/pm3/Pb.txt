@@ -1,0 +1,49 @@
+# . Text parameter file for the element Pb.
+
+Pb   atomicNumber                          82
+Pb   iii                                    6
+Pb   iiid                                   6
+Pb   ir016                                  0
+Pb   ir066                                  0
+Pb   ir244                                  0
+Pb   ir266                                  0
+Pb   ir466                                  0
+Pb   qnd                                    0
+Pb   qnp                                    6
+Pb   qns                                    6
+Pb   ad                     0.452757752781453  atomic
+Pb   alp                    1.620045000000000  A^-1
+Pb   am                     0.257685980052010  atomic
+Pb   aq                     0.215014435917970  atomic
+Pb   betad                  0.000000000000000  eV
+Pb   betap                 -1.395430000000000  eV
+Pb   betas                 -6.126024000000000  eV
+Pb   dd                     0.986628996919324  atomic
+Pb   eheat                 46.619999999999997  kcal/mole
+Pb   eisol                -73.466077499999983  eV
+Pb   f0sd                   0.000000000000000  eV
+Pb   g2sd                   0.000000000000000  eV
+Pb   gp2                    5.045651000000000  eV
+Pb   gphot                  1.000000000000000  dimensionless
+Pb   gpp                    5.183780000000000  eV
+Pb   gsp                    6.793782000000000  eV
+Pb   gss                    7.011992000000000  eV
+Pb   hsp                    1.566302000000000  eV
+Pb   pcore                  0.000000000000000  atomic
+Pb   qq                     1.594056189382933  atomic
+Pb   udd                    0.000000000000000  eV
+Pb   upp                  -24.425833999999998  eV
+Pb   uss                  -30.322755999999998  eV
+Pb   zcore                  4.000000000000000  atomic
+Pb   zdn                    0.000000000000000  atomic
+Pb   zetad                  0.000000000000000  atomic
+Pb   zetap                  1.892418000000000  atomic
+Pb   zetas                  3.141289000000000  atomic
+Pb   zpn                    0.000000000000000  atomic
+Pb   zsn                    0.000000000000000  atomic
+Pb   fn10                  -0.122576000000000  A_eV
+Pb   fn20                   6.003062000000000  A^-2
+Pb   fn30                   1.901597000000000  A
+Pb   fn11                  -0.056648000000000  A_eV
+Pb   fn21                   4.743705000000000  A^-2
+Pb   fn31                   2.861879000000000  A

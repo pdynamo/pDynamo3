@@ -1,0 +1,28 @@
+# . Space group Amam.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -A 2 2a
+Hermann-Mauguin    : Amam
+Schoenflies        : D2h^17
+Space Group Number : 63
+Space Group Symbol : 63:-cba
+Setting            : 301
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z)
+    - (-x+1/2,y,-z)
+    - (-x,-y,z)
+    - (-x,-y,-z)
+    - (-x+1/2,y,z)
+    - (x+1/2,-y,z)
+    - (x,y,-z)
+    - (x,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (-x,-y+1/2,z+1/2)
+    - (-x,-y+1/2,-z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (x,y+1/2,-z+1/2)
+...

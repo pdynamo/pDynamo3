@@ -1,0 +1,16 @@
+# . !PDBComponent
+{Atom Fields: [Atomic Number, Formal Charge, Label], Atoms: [[7, 0, N],
+    [6, 0, CA], [6, 0, C], [8, 0, O], [6, 0, CB], [6, 0, CG], [6, 0, CD], [7, 0, NE],
+    [6, 0, CZ], [7, 0, NH1], [7, 1, NH2], [8, 0, OXT], [1, 0, H], [1, 0, H2], [1,
+      0, HA], [1, 0, HB2], [1, 0, HB3], [1, 0, HG2], [1, 0, HG3], [1, 0, HD2], [1,
+      0, HD3], [1, 0, HE], [1, 0, HH11], [1, 0, HH12], [1, 0, HH21], [1, 0, HH22],
+    [1, 0, HXT]], Bond Fields: [Atom 1, Atom 2, Type], Bonds: [[N, CA, Single], [N,
+      H, Single], [N, H2, Single], [CA, C, Single], [CA, CB, Single], [CA, HA, Single],
+    [C, O, Double], [C, OXT, Single], [CB, CG, Single], [CB, HB2, Single], [CB, HB3,
+      Single], [CG, CD, Single], [CG, HG2, Single], [CG, HG3, Single], [CD, NE, Single],
+    [CD, HD2, Single], [CD, HD3, Single], [NE, CZ, Single], [NE, HE, Single], [CZ,
+      NH1, Single], [CZ, NH2, Double], [NH1, HH11, Single], [NH1, HH12, Single], [
+      NH2, HH21, Single], [NH2, HH22, Single], [OXT, HXT, Single]], Component Class: '"L-Peptide',
+  Formal Charge: 1, Is Heteroatom: false, Is In Chain: true, Label: ARG, Left Link: Peptide,
+  Left Termination: N Terminal, Name: ARGININE, PDB Class: Atomp, Right Link: Peptide,
+  Right Termination: C Terminal}

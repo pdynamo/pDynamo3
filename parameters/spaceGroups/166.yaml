@@ -1,0 +1,16 @@
+# . Space group P21nb.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2bc 2a
+Hermann-Mauguin    : P21nb
+Schoenflies        : C2v^9
+Space Group Number : 33
+Space Group Symbol : 33:cab
+Setting            : 166
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z)
+    - (x,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+...

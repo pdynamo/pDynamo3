@@ -1,0 +1,20 @@
+# . Space group P4122.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : P 4w 2c
+Hermann-Mauguin    : P4122
+Schoenflies        : D4^3
+Space Group Number : 91
+Space Group Symbol : 91
+Setting            : 368
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (-y,x,z+1/4)
+    - (y,-x,z+3/4)
+    - (-x,y,-z)
+    - (x,-y,-z+1/2)
+    - (y,x,-z+3/4)
+    - (-y,-x,-z+1/4)
+...

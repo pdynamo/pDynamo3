@@ -1,0 +1,15 @@
+# . Space group P32.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : P 32
+Hermann-Mauguin    : P32
+Schoenflies        : C3^3
+Space Group Number : 145
+Space Group Symbol : 145
+Setting            : 432
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z+2/3)
+    - (-x+y,-x,z+1/3)
+...

@@ -1,0 +1,73 @@
+# . Text parameter file for the element Ru.
+
+Ru   atomicNumber                          44
+Ru   iii                                    5
+Ru   iiid                                   4
+Ru   ir016                                  7
+Ru   ir066                                 21
+Ru   ir244                                  5
+Ru   ir266                                 43
+Ru   ir466                                 36
+Ru   qnd                                    4
+Ru   qnp                                    5
+Ru   qns                                    5
+Ru   ad                     0.326058697641613  atomic
+Ru   alp                    0.000000000000000  A^-1
+Ru   am                     0.162198397821994  atomic
+Ru   aq                     1.149877269054655  atomic
+Ru   betad                 -3.830797000000000  eV
+Ru   betap                 -8.475517999999999  eV
+Ru   betas                -12.859508000000000  eV
+Ru   dd                     0.092552751542059  atomic
+Ru   eheat                155.500000000000000  kcal/mole
+Ru   eisol               -310.443119000000024  eV
+Ru   f0sd                   5.917404000000000  eV
+Ru   g2sd                   5.859738000000000  eV
+Ru   gp2                   19.599956660000000  eV
+Ru   gphot                  1.000000000000000  dimensionless
+Ru   gpp                   22.490447610000000  eV
+Ru   gsp                    5.356995820000000  eV
+Ru   gss                    4.413642790000000  eV
+Ru   hsp                    0.008058090000000  eV
+Ru   pcore                  0.000000000000000  atomic
+Ru   qq                     0.463961217180490  atomic
+Ru   udd                  -37.934514000000000  eV
+Ru   upp                  -41.424408999999997  eV
+Ru   uss                  -44.901521000000002  eV
+Ru   zcore                  8.000000000000000  atomic
+Ru   zdn                    0.765332000000000  atomic
+Ru   zetad                  2.093164000000000  atomic
+Ru   zetap                  5.537201000000000  atomic
+Ru   zetas                  1.459195000000000  atomic
+Ru   zpn                    4.586613000000000  atomic
+Ru   zsn                    0.984449000000000  atomic
+Ru   diatomicA      H       2.892899000000000  A^-1
+Ru   diatomicX      H       7.137976000000000  dimensionless
+Ru   diatomicA      C       2.784833000000000  A^-1
+Ru   diatomicX      C       1.134936000000000  dimensionless
+Ru   diatomicA      N       3.055504000000000  A^-1
+Ru   diatomicX      N       2.334094000000000  dimensionless
+Ru   diatomicA      O       3.134940000000000  A^-1
+Ru   diatomicX      O       2.976279000000000  dimensionless
+Ru   diatomicA      F       3.878711000000000  A^-1
+Ru   diatomicX      F       6.947128000000000  dimensionless
+Ru   diatomicA      Si      2.775910000000000  A^-1
+Ru   diatomicX      Si      0.849430000000000  dimensionless
+Ru   diatomicA      P       0.298916000000000  A^-1
+Ru   diatomicX      P       0.056974000000000  dimensionless
+Ru   diatomicA      S       2.508076000000000  A^-1
+Ru   diatomicX      S       1.006683000000000  dimensionless
+Ru   diatomicA      Cl      1.759883000000000  A^-1
+Ru   diatomicX      Cl      0.126586000000000  dimensionless
+Ru   diatomicA      Ge      2.852320000000000  A^-1
+Ru   diatomicX      Ge      2.151560000000000  dimensionless
+Ru   diatomicA      Se      2.523160000000000  A^-1
+Ru   diatomicX      Se      2.202120000000000  dimensionless
+Ru   diatomicA      Br      2.584735000000000  A^-1
+Ru   diatomicX      Br      0.659881000000000  dimensionless
+Ru   diatomicA      Ru      0.572056000000000  A^-1
+Ru   diatomicX      Ru      0.097805000000000  dimensionless
+Ru   diatomicA      Sb      2.204350000000000  A^-1
+Ru   diatomicX      Sb      2.275760000000000  dimensionless
+Ru   diatomicA      I       3.953203000000000  A^-1
+Ru   diatomicX      I       7.837710000000000  dimensionless

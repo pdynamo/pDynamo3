@@ -1,0 +1,20 @@
+---
+# . !MMSequenceLink
+Left Atom : C
+Right Atom: N
+Label: Peptide
+Left Variant:
+  # . !MMSequenceVariant
+  Atom Fields: [ Label, Type, Charge ]
+  Atoms:
+    - [ C , C ,  0.51 ]
+    - [ O , O , -0.51 ]
+Right Variant:
+  # . !MMSequenceVariant
+  Atom Fields: [ Label, Type, Charge ]
+  Atoms:
+    - [ N , N  , -0.29 ]
+    - [ CA, CP1,  0.02 ]
+    - [ HA, HB ,  0.09 ]
+  Component: PRO
+...

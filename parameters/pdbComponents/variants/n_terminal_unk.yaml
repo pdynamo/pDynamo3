@@ -1,0 +1,5 @@
+# . !PDBComponentVariant
+{Atoms To Add: [[1, 0, H1], [1, 0, H2], [1, 0, H3]], Atom To Add Fields: [
+    Atomic Number, Formal Charge, Label], Atoms To Delete: [H, H2], Bonds To Add: [
+    [H1, N, Single], [H2, N, Single], [H3, N, Single]], Bond To Add Fields: [Atom 1,
+    Atom 2, Type], Component: UNK, Formal Charges: {N: 1}, Label: N Terminal}

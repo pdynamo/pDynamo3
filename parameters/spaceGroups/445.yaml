@@ -1,0 +1,18 @@
+# . Space group R32:R.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : P 3* 2
+Hermann-Mauguin    : R32:R
+Schoenflies        : D3^7
+Space Group Number : 155
+Space Group Symbol : 155:R
+Setting            : 445
+Transformations :
+    - (x,y,z)
+    - (z,x,y)
+    - (y,z,x)
+    - (-y,-x,-z)
+    - (-x,-z,-y)
+    - (-z,-y,-x)
+...

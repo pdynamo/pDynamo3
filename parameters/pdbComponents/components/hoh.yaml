@@ -1,0 +1,5 @@
+# . !PDBComponent
+{Atom Fields: [Atomic Number, Formal Charge, Label], Atoms: [[8, 0, O],
+    [1, 0, H1], [1, 0, H2]], Bond Fields: [Atom 1, Atom 2, Type], Bonds: [[O, H1, Single],
+    [O, H2, Single]], Component Class: Non-Polymer, Formal Charge: 0, Is Heteroatom: true,
+  Label: HOH, Name: WATER, PDB Class: Hetas}

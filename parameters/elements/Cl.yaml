@@ -1,0 +1,22 @@
+---
+# . !Element
+Allen Electronegativity        : 2.869
+Atomic Number                  : 17
+Bragg Radius                   : 1.0
+Covalent Radius                : 0.99
+Group                          : 17
+Mass                           : 35.453
+Maximum Orbital Quantum Number : 1
+Name                           : Chlorine
+Pauling Electronegativity      : 3.16
+Period                         : 3
+RGB Color Indices              : [31, 240, 31]
+Single Bond Distances          : {1     : 1.28, 6     : 1.77, 17     : 1.99}
+Symbol                         : Cl
+Valence Electrons              : 7
+vdW Radius                     : 1.97
+d Quantum Number               : 0
+f Quantum Number               : 0
+p Quantum Number               : 3
+s Quantum Number               : 3
+...

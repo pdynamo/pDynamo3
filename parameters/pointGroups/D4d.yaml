@@ -1,0 +1,19 @@
+# . Point group D4d.
+---
+# . !PointGroup
+Label : D4d
+Symmetry Operations :
+    C2    :  4
+    E     :  1
+    S8    :  1
+    sigma :  4
+Character Symmetry Operations : [ E, S8, sigma ]
+Character Table :
+    A1 : [ 1.000000 ,      1.000000 ,  1.000000 ]
+    A2 : [ 1.000000 ,      1.000000 , -1.000000 ]
+    B1 : [ 1.000000 ,     -1.000000 , -1.000000 ]
+    B2 : [ 1.000000 ,     -1.000000 ,  1.000000 ]
+    E1 : [ 2.000000 ,   2*cos(pi/4) ,  0.000000 ]
+    E2 : [ 2.000000 ,      0.000000 ,  0.000000 ]
+    E3 : [ 2.000000 , 2*cos(3*pi/4) ,  0.000000 ]
+...

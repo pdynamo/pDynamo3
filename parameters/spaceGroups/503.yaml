@@ -1,0 +1,36 @@
+# . Space group P432.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : P 4 2 3
+Hermann-Mauguin    : P432
+Schoenflies        : O^1
+Space Group Number : 207
+Space Group Symbol : 207
+Setting            : 503
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (z,x,y)
+    - (z,-x,-y)
+    - (-z,-x,y)
+    - (-z,x,-y)
+    - (y,z,x)
+    - (-y,z,-x)
+    - (y,-z,-x)
+    - (-y,-z,x)
+    - (y,x,-z)
+    - (-y,-x,-z)
+    - (y,-x,z)
+    - (-y,x,z)
+    - (x,z,-y)
+    - (-x,z,y)
+    - (-x,-z,-y)
+    - (x,-z,y)
+    - (z,y,-x)
+    - (z,-y,x)
+    - (-z,y,x)
+    - (-z,-y,-x)
+...

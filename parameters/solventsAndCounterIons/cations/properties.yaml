@@ -1,0 +1,17 @@
+---
+
+# . Properties for cations.
+
+potassium :
+    label        : "Potassium Cation"
+    pdbComponent : K
+    pdbAtoms     : [ K ]
+    symbol       : "K+"
+
+sodium    :
+    label        : "Sodium Cation"
+    pdbComponent : NA
+    pdbAtoms     : [ NA ]
+    symbol       : "Na+"
+
+...

@@ -1,0 +1,20 @@
+# . Space group Pncb:1.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P 2 2 -1bc
+Hermann-Mauguin    : Pncb:1
+Schoenflies        : D2h^4
+Space Group Number : 50
+Space Group Symbol : 50:1cab
+Setting            : 235
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (-x,-y+1/2,-z+1/2)
+    - (-x,y+1/2,z+1/2)
+    - (x,y+1/2,-z+1/2)
+    - (x,-y+1/2,z+1/2)
+...

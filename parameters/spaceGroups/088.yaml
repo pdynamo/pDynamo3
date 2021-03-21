@@ -1,0 +1,16 @@
+# . Space group P21/n11.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : -P 2xn
+Hermann-Mauguin    : P21/n11
+Schoenflies        : C2h^5
+Space Group Number : 14
+Space Group Symbol : 14:a2
+Setting            : 88
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x,-y,-z)
+    - (-x+1/2,y+1/2,z+1/2)
+...

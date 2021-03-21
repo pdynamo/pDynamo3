@@ -1,0 +1,28 @@
+# . Space group I4122.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : I 4bw 2bw
+Hermann-Mauguin    : I4122
+Schoenflies        : D4^10
+Space Group Number : 98
+Space Group Symbol : 98
+Setting            : 375
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-y,x+1/2,z+1/4)
+    - (y+1/2,-x,z+3/4)
+    - (-x+1/2,y,-z+3/4)
+    - (x,-y+1/2,-z+1/4)
+    - (y+1/2,x+1/2,-z+1/2)
+    - (-y,-x,-z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x,-y,z)
+    - (-y+1/2,x,z+3/4)
+    - (y,-x+1/2,z+1/4)
+    - (-x,y+1/2,-z+1/4)
+    - (x+1/2,-y,-z+3/4)
+    - (y,x,-z)
+    - (-y+1/2,-x+1/2,-z+1/2)
+...

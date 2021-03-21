@@ -1,0 +1,15 @@
+# . Point group C8.
+---
+# . !PointGroup
+Label : C8
+Symmetry Operations :
+    C8 :  1
+    E  :  1
+Character Symmetry Operations : [ E, C8 ]
+Character Table :
+    A  : [ 1.000000 ,      1.000000 ]
+    B  : [ 1.000000 ,     -1.000000 ]
+    E1 : [ 2.000000 ,   2*cos(pi/4) ]
+    E2 : [ 2.000000 ,      0.000000 ]
+    E3 : [ 2.000000 , 2*cos(3*pi/4) ]
+...

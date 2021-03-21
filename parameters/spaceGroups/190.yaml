@@ -1,0 +1,20 @@
+# . Space group Am2m.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : A -2 -2
+Hermann-Mauguin    : Am2m
+Schoenflies        : C2v^14
+Space Group Number : 38
+Space Group Symbol : 38:a-cb
+Setting            : 190
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (x,y,-z)
+    - (-x,y,z)
+    - (x,y+1/2,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (x,y+1/2,-z+1/2)
+    - (-x,y+1/2,z+1/2)
+...

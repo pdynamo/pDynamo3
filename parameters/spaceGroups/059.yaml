@@ -1,0 +1,16 @@
+# . Space group P2/m11.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : -P 2x
+Hermann-Mauguin    : P2/m11
+Schoenflies        : C2h^1
+Space Group Number : 10
+Space Group Symbol : 10:a
+Setting            : 59
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (-x,-y,-z)
+    - (-x,y,z)
+...

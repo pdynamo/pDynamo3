@@ -1,0 +1,13 @@
+Entities:
+- Components: [THR.1, THR.2, CYS.3, CYS.4, PRO.5, SER.6, ILE.7, VAL.8, ALA.9, ARG.10,
+    SER.11, ASN.12, PHE.13, ASN.14, VAL.15, CYS.16, ARG.17, LEU.18, PRO.19, GLY.20,
+    THR.21, PRO.22, GLU.23, ALA.24, LEU.25, CYS.26, ALA.27, THR.28,
+    TYR.29, THR.30, GLY.31, CYS.32, ILE.33, ILE.34, ILE.35, PRO.36, GLY.37, ALA.38,
+    THR.39, CYS.40, PRO.41, GLY.42, ASP.43, TYR.44, ALA.45, ASN.46]
+  Links:
+  - {Label: Disulfide_Bridge, Left Component: CYS.3, Right Component: CYS.40}
+  - {Label: Disulfide_Bridge, Left Component: CYS.4, Right Component: CYS.32}
+  - {Label: Disulfide_Bridge, Left Component: CYS.16, Right Component: CYS.26}
+Label: Crambin
+Linear Polymers:
+- {Left Terminal Component: ':THR.1', Right Terminal Component: ':ASN.46'}

@@ -1,0 +1,20 @@
+# . Space group P4nc.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : P 4 -2n
+Hermann-Mauguin    : P4nc
+Schoenflies        : C4v^6
+Space Group Number : 104
+Space Group Symbol : 104
+Setting            : 381
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (-y+1/2,-x+1/2,z+1/2)
+    - (y+1/2,x+1/2,z+1/2)
+...

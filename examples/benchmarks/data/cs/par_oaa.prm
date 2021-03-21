@@ -1,0 +1,29 @@
+BONDS
+CC     CC     493.60  1.5070
+CC     CD     493.60  1.5070
+
+ANGLES
+CC     CT2    CC         69.10  120.60
+CT2    CC     CC         57.80  113.40
+CC     CC     OC         47.40  116.60
+O      CC     CC         84.30  117.00
+
+CC     CD     OH1        47.40  116.60
+CC     CD     OB         47.40  116.60
+O      CC     CD         84.30  117.00
+CT2    CC     CD         57.80  113.40
+
+DIHEDRALS
+OC     CC     CC     CT2         0.20              2         180.0
+OC     CC     CC     O           0.00              2         180.0
+
+OB     CD     CC     CT2         0.20              2         180.0
+OH1    CD     CC     CT2         0.20              2         180.0
+OH1    CD     CC     O           0.00              2         180.0
+OB     CD     CC     O           0.00              2         180.0
+
+IMPROPER
+CC     CT2    CC     O          50.10              0           0.0
+CD     CC     OB     OH1        50.00              0           0.0
+CC     CT2    CD     O          50.00              0           0.0
+

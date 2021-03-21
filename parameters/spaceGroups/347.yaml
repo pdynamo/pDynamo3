@@ -1,0 +1,28 @@
+# . Space group Imcm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -I 2 2a
+Hermann-Mauguin    : Imcm
+Schoenflies        : D2h^28
+Space Group Number : 74
+Space Group Symbol : 74:bca
+Setting            : 347
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,y,-z)
+    - (x+1/2,-y,-z)
+    - (-x,-y,z)
+    - (-x,-y,-z)
+    - (x+1/2,-y,z)
+    - (-x+1/2,y,z)
+    - (x,y,-z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (x,-y+1/2,-z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x,-y+1/2,z+1/2)
+    - (-x,y+1/2,z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+...

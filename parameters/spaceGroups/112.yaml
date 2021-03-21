@@ -1,0 +1,16 @@
+# . Space group P21212.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P 2 2ab
+Hermann-Mauguin    : P21212
+Schoenflies        : D2^3
+Space Group Number : 18
+Space Group Symbol : 18
+Setting            : 112
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,-z)
+...

@@ -1,0 +1,16 @@
+# . Space group P2mm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2 2
+Hermann-Mauguin    : P2mm
+Schoenflies        : C2v^1
+Space Group Number : 25
+Space Group Symbol : 25:cab
+Setting            : 126
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x,y,-z)
+    - (x,-y,z)
+...

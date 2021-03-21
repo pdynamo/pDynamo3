@@ -1,0 +1,28 @@
+# . Space group Ibmm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -I 2c 2c
+Hermann-Mauguin    : Ibmm
+Schoenflies        : D2h^28
+Space Group Number : 74
+Space Group Symbol : 74:cab
+Setting            : 345
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z+1/2)
+    - (-x,-y,z+1/2)
+    - (-x,y,-z)
+    - (-x,-y,-z)
+    - (-x,y,z+1/2)
+    - (x,y,-z+1/2)
+    - (x,-y,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,-z)
+    - (-x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,y+1/2,z)
+    - (x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,z+1/2)
+...

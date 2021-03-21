@@ -1,0 +1,67 @@
+# . Text parameter file for the element Ag.
+
+Ag   atomicNumber                          47
+Ag   iii                                    5
+Ag   iiid                                   4
+Ag   ir016                                 10
+Ag   ir066                                 45
+Ag   ir244                                  5
+Ag   ir266                                 70
+Ag   ir466                                 70
+Ag   qnd                                    4
+Ag   qnp                                    5
+Ag   qns                                    5
+Ag   ad                     0.038728649493227  atomic
+Ag   alp                    0.000000000000000  A^-1
+Ag   am                     0.114593296642169  atomic
+Ag   aq                     0.378459857861740  atomic
+Ag   betad                -69.238347000000005  eV
+Ag   betap                  1.004115000000000  eV
+Ag   betas                 -6.129623000000000  eV
+Ag   dd                     0.522809529633290  atomic
+Ag   eheat                 68.099999999999994  kcal/mole
+Ag   eisol               -382.166856999999993  eV
+Ag   f0sd                   1.938327000000000  eV
+Ag   g2sd                   1.071901000000000  eV
+Ag   gp2                   20.212473870000000  eV
+Ag   gphot                  1.000000000000000  dimensionless
+Ag   gpp                   23.193295400000000  eV
+Ag   gsp                    3.785151830000000  eV
+Ag   gss                    3.118242130000000  eV
+Ag   hsp                    0.000431520000000  eV
+Ag   pcore                  0.000000000000000  atomic
+Ag   qq                     3.767941420840234  atomic
+Ag   udd                  -35.668272000000002  eV
+Ag   upp                  -36.116022999999998  eV
+Ag   uss                  -25.484137000000000  eV
+Ag   zcore                 11.000000000000000  atomic
+Ag   zdn                    0.506522000000000  atomic
+Ag   zetad                  6.007328000000000  atomic
+Ag   zetap                  0.681817000000000  atomic
+Ag   zetas                  1.994004000000000  atomic
+Ag   zpn                    4.729949000000000  atomic
+Ag   zsn                    0.695514000000000  atomic
+Ag   diatomicA      H       2.895936000000000  A^-1
+Ag   diatomicX      H       1.995168000000000  dimensionless
+Ag   diatomicA      C       4.404336000000000  A^-1
+Ag   diatomicX      C      11.335456000000001  dimensionless
+Ag   diatomicA      N       4.659871000000000  A^-1
+Ag   diatomicX      N      19.803709999999999  dimensionless
+Ag   diatomicA      O       1.893874000000000  A^-1
+Ag   diatomicX      O       0.165661000000000  dimensionless
+Ag   diatomicA      F       4.628423000000000  A^-1
+Ag   diatomicX      F      12.695884000000000  dimensionless
+Ag   diatomicA      Al      1.928800000000000  A^-1
+Ag   diatomicX      Al      0.896514000000000  dimensionless
+Ag   diatomicA      P       6.000006000000000  A^-1
+Ag   diatomicX      P       0.049932000000000  dimensionless
+Ag   diatomicA      S       3.653121000000000  A^-1
+Ag   diatomicX      S      11.188022000000000  dimensionless
+Ag   diatomicA      Cl      4.441176000000000  A^-1
+Ag   diatomicX      Cl     23.765459000000000  dimensionless
+Ag   diatomicA      Br      3.677491000000000  A^-1
+Ag   diatomicX      Br      1.714369000000000  dimensionless
+Ag   diatomicA      Ag      2.127645000000000  A^-1
+Ag   diatomicX      Ag      0.557742000000000  dimensionless
+Ag   diatomicA      I       2.593161000000000  A^-1
+Ag   diatomicX      I       0.048904000000000  dimensionless

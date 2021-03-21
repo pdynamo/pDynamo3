@@ -1,0 +1,20 @@
+# . Space group Pnnn:2.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2ab 2bc
+Hermann-Mauguin    : Pnnn:2
+Schoenflies        : D2h^2
+Space Group Number : 48
+Space Group Symbol : 48:2
+Setting            : 229
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-x+1/2,y,-z+1/2)
+    - (x,-y+1/2,-z+1/2)
+    - (-x,-y,-z)
+    - (x+1/2,y+1/2,-z)
+    - (x+1/2,-y,z+1/2)
+    - (-x,y+1/2,z+1/2)
+...

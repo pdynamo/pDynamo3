@@ -1,0 +1,35 @@
+---
+# . !HarmonicAngleParameterContainer
+Analytic Form:
+    Equation: k * ( t - t0 )**2
+    Symbols:
+        t  : Bond Angle
+        t0 : Equilibrium Value 
+        k  : Force Constant
+Label: Book Small Examples
+Units:
+    Equilibrium Value : degrees
+    Force Constant    : kcal/mol/radians**2
+Parameter Fields:
+    - Atom Type 1
+    - Atom Type 2
+    - Atom Type 3
+    - Equilibrium Value
+    - Force Constant
+Parameter Values:
+    - [ CT,  C ,  O ,  120.40,  80.00 ]
+    - [ CT,  C ,  N ,  116.60,  70.00 ]
+    - [ N ,  C ,  O ,  122.90,  80.00 ]
+    - [ HC,  CT,  HC,  107.80,  33.00 ]
+    - [ HC,  CT,  N ,  109.50,  35.00 ]
+    - [ C ,  CT,  HC,  109.50,  35.00 ]
+    - [ C ,  CT,  CT,  111.10,  63.00 ]
+    - [ C ,  CT,  N ,  110.10,  63.00 ]
+    - [ C ,  N ,  CT,  121.90,  50.00 ]
+    - [ C ,  N ,  H ,  119.80,  35.00 ]
+    - [ CT,  N ,  H ,  118.40,  38.00 ]
+    - [ CT,  CT,  N ,  109.70,  80.00 ]
+    - [ CT,  CT,  CT,  112.70,  58.35 ]
+    - [ CT,  CT,  HC,  110.70,  37.50 ]
+    - [ HW,  OW,  HW,  104.52,  34.05 ]
+...

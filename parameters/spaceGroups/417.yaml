@@ -1,0 +1,28 @@
+# . Space group P42/nnm:2.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -P 4ac 2bc
+Hermann-Mauguin    : P42/nnm:2
+Schoenflies        : D4h^12
+Space Group Number : 134
+Space Group Symbol : 134:2
+Setting            : 417
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-y+1/2,x,z+1/2)
+    - (y,-x+1/2,z+1/2)
+    - (-x+1/2,y,-z+1/2)
+    - (x,-y+1/2,-z+1/2)
+    - (y,x,-z)
+    - (-y+1/2,-x+1/2,-z)
+    - (-x,-y,-z)
+    - (x+1/2,y+1/2,-z)
+    - (y+1/2,-x,-z+1/2)
+    - (-y,x+1/2,-z+1/2)
+    - (x+1/2,-y,z+1/2)
+    - (-x,y+1/2,z+1/2)
+    - (-y,-x,z)
+    - (y+1/2,x+1/2,z)
+...

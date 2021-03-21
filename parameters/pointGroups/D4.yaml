@@ -1,0 +1,16 @@
+# . Point group D4.
+---
+# . !PointGroup
+Label : D4
+Symmetry Operations :
+    C2 :  4
+    C4 :  1
+    E  :  1
+Character Symmetry Operations : [ E, C4, C2-m ]
+Character Table :
+    A1 : [ 1.000000 ,  1.000000 ,  1.000000 ]
+    A2 : [ 1.000000 ,  1.000000 , -1.000000 ]
+    B1 : [ 1.000000 , -1.000000 ,  1.000000 ]
+    B2 : [ 1.000000 , -1.000000 , -1.000000 ]
+    E  : [ 2.000000 ,  0.000000 ,  0.000000 ]
+...

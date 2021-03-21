@@ -1,0 +1,28 @@
+# . Space group Ibam.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -I 2 2c
+Hermann-Mauguin    : Ibam
+Schoenflies        : D2h^26
+Space Group Number : 72
+Space Group Symbol : 72
+Setting            : 338
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,-z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-x,y,-z+1/2)
+    - (x,-y,-z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (x,-y,z+1/2)
+    - (-x,y,z+1/2)
+...

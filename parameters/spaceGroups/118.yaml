@@ -1,0 +1,20 @@
+# . Space group B2212.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : B 2 2b
+Hermann-Mauguin    : B2212
+Schoenflies        : D2^5
+Space Group Number : 20
+Space Group Symbol : 20:bca
+Setting            : 118
+Transformations :
+    - (x,y,z)
+    - (-x,y+1/2,-z)
+    - (x,-y+1/2,-z)
+    - (-x,-y,z)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,-y,z+1/2)
+...

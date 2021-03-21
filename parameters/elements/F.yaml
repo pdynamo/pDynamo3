@@ -1,0 +1,22 @@
+---
+# . !Element
+Allen Electronegativity        : 4.193
+Atomic Number                  : 9
+Bragg Radius                   : 0.5
+Covalent Radius                : 0.64
+Group                          : 17
+Mass                           : 18.9984
+Maximum Orbital Quantum Number : 1
+Name                           : Fluorine
+Pauling Electronegativity      : 3.98
+Period                         : 2
+RGB Color Indices              : [144, 224, 80]
+Single Bond Distances          : {1     : 0.92, 6     : 1.35, 9     : 1.42}
+Symbol                         : F
+Valence Electrons              : 7
+vdW Radius                     : 1.73
+d Quantum Number               : 0
+f Quantum Number               : 0
+p Quantum Number               : 2
+s Quantum Number               : 2
+...

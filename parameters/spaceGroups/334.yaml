@@ -1,0 +1,44 @@
+# . Space group Fmmm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -F 2 2
+Hermann-Mauguin    : Fmmm
+Schoenflies        : D2h^23
+Space Group Number : 69
+Space Group Symbol : 69
+Setting            : 334
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (x,-y,z)
+    - (-x,y,z)
+    - (x,y+1/2,z+1/2)
+    - (-x,-y+1/2,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (x,-y+1/2,-z+1/2)
+    - (-x,-y+1/2,-z+1/2)
+    - (x,y+1/2,-z+1/2)
+    - (x,-y+1/2,z+1/2)
+    - (-x,y+1/2,z+1/2)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,-y,z+1/2)
+    - (-x+1/2,y,-z+1/2)
+    - (x+1/2,-y,-z+1/2)
+    - (-x+1/2,-y,-z+1/2)
+    - (x+1/2,y,-z+1/2)
+    - (x+1/2,-y,z+1/2)
+    - (-x+1/2,y,z+1/2)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,-z)
+    - (-x+1/2,-y+1/2,-z)
+    - (x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,z)
+...

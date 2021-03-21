@@ -1,0 +1,18 @@
+# . Space group P65.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P 65
+Hermann-Mauguin    : P65
+Schoenflies        : C6^3
+Space Group Number : 170
+Space Group Symbol : 170
+Setting            : 464
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z+2/3)
+    - (-x+y,-x,z+1/3)
+    - (-x,-y,z+1/2)
+    - (y,-x+y,z+1/6)
+    - (x-y,x,z+5/6)
+...

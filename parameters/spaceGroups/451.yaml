@@ -1,0 +1,18 @@
+# . Space group R3m:R.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : P 3* -2
+Hermann-Mauguin    : R3m:R
+Schoenflies        : C3v^5
+Space Group Number : 160
+Space Group Symbol : 160:R
+Setting            : 451
+Transformations :
+    - (x,y,z)
+    - (z,x,y)
+    - (y,z,x)
+    - (y,x,z)
+    - (x,z,y)
+    - (z,y,x)
+...

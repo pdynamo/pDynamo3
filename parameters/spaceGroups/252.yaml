@@ -1,0 +1,20 @@
+# . Space group Pnmb.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2bc 2bc
+Hermann-Mauguin    : Pnmb
+Schoenflies        : D2h^7
+Space Group Number : 53
+Space Group Symbol : 53:ba-c
+Setting            : 252
+Transformations :
+    - (x,y,z)
+    - (-x,-y+1/2,z+1/2)
+    - (x,-y+1/2,-z+1/2)
+    - (-x,y,-z)
+    - (-x,-y,-z)
+    - (x,y+1/2,-z+1/2)
+    - (-x,y+1/2,z+1/2)
+    - (x,-y,z)
+...

@@ -1,0 +1,28 @@
+# . Space group Fdd2.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : F 2 -2d
+Hermann-Mauguin    : Fdd2
+Schoenflies        : C2v^19
+Space Group Number : 43
+Space Group Symbol : 43
+Setting            : 212
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (x+1/4,-y+1/4,z+1/4)
+    - (-x+1/4,y+1/4,z+1/4)
+    - (x,y+1/2,z+1/2)
+    - (-x,-y+1/2,z+1/2)
+    - (x+1/4,-y+3/4,z+3/4)
+    - (-x+1/4,y+3/4,z+3/4)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,-y,z+1/2)
+    - (x+3/4,-y+1/4,z+3/4)
+    - (-x+3/4,y+1/4,z+3/4)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y+1/2,z)
+    - (x+3/4,-y+3/4,z+1/4)
+    - (-x+3/4,y+3/4,z+1/4)
+...

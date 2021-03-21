@@ -1,0 +1,28 @@
+# . Space group P42/nbc:2.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -P 4ac 2b
+Hermann-Mauguin    : P42/nbc:2
+Schoenflies        : D4h^11
+Space Group Number : 133
+Space Group Symbol : 133:2
+Setting            : 415
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-y+1/2,x,z+1/2)
+    - (y,-x+1/2,z+1/2)
+    - (-x+1/2,y,-z)
+    - (x,-y+1/2,-z)
+    - (y,x,-z+1/2)
+    - (-y+1/2,-x+1/2,-z+1/2)
+    - (-x,-y,-z)
+    - (x+1/2,y+1/2,-z)
+    - (y+1/2,-x,-z+1/2)
+    - (-y,x+1/2,-z+1/2)
+    - (x+1/2,-y,z)
+    - (-x,y+1/2,z)
+    - (-y,-x,z+1/2)
+    - (y+1/2,x+1/2,z+1/2)
+...

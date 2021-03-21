@@ -1,0 +1,49 @@
+# . Text parameter file for the element Bi.
+
+Bi   atomicNumber                          83
+Bi   iii                                    6
+Bi   iiid                                   6
+Bi   ir016                                  0
+Bi   ir066                                  0
+Bi   ir244                                  0
+Bi   ir266                                  0
+Bi   ir466                                  0
+Bi   qnd                                    0
+Bi   qnp                                    6
+Bi   qns                                    6
+Bi   ad                     0.677589007506354  atomic
+Bi   alp                    1.857431000000000  A^-1
+Bi   am                     0.183360027186269  atomic
+Bi   aq                     0.258648047378546  atomic
+Bi   betad                  0.000000000000000  eV
+Bi   betap                 -5.800152000000000  eV
+Bi   betas                 -5.607283000000000  eV
+Bi   dd                     0.279860874371206  atomic
+Bi   eheat                 50.100000000000001  kcal/mole
+Bi   eisol               -109.277491000000012  eV
+Bi   f0sd                   0.000000000000000  eV
+Bi   g2sd                   0.000000000000000  eV
+Bi   gp2                    8.335447000000000  eV
+Bi   gphot                  1.000000000000000  dimensionless
+Bi   gpp                    8.696007000000000  eV
+Bi   gsp                    6.103308000000000  eV
+Bi   gss                    4.989480000000000  eV
+Bi   hsp                    0.599122000000000  eV
+Bi   pcore                  0.000000000000000  atomic
+Bi   qq                     1.559029438094650  atomic
+Bi   udd                    0.000000000000000  eV
+Bi   upp                  -35.521025999999999  eV
+Bi   uss                  -33.495938000000002  eV
+Bi   zcore                  5.000000000000000  atomic
+Bi   zdn                    0.000000000000000  atomic
+Bi   zetad                  0.000000000000000  atomic
+Bi   zetap                  1.934935000000000  atomic
+Bi   zetas                  4.916451000000000  atomic
+Bi   zpn                    0.000000000000000  atomic
+Bi   zsn                    0.000000000000000  atomic
+Bi   fn10                   2.581693000000000  A_eV
+Bi   fn20                   5.094022000000000  A^-2
+Bi   fn30                   0.499787000000000  A
+Bi   fn11                   0.060320000000000  A_eV
+Bi   fn21                   6.001538000000000  A^-2
+Bi   fn31                   2.427970000000000  A

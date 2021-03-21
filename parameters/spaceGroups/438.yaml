@@ -1,0 +1,18 @@
+# . Space group P312.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : P 3 2
+Hermann-Mauguin    : P312
+Schoenflies        : D3^1
+Space Group Number : 149
+Space Group Symbol : 149
+Setting            : 438
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-y,-x,-z)
+    - (-x+y,y,-z)
+    - (x,x-y,-z)
+...

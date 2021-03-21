@@ -1,0 +1,16 @@
+# . Space group P2aa.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2a 2
+Hermann-Mauguin    : P2aa
+Schoenflies        : C2v^3
+Space Group Number : 27
+Space Group Symbol : 27:cab
+Setting            : 135
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x+1/2,y,-z)
+    - (x+1/2,-y,z)
+...

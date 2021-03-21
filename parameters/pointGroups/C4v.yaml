@@ -1,0 +1,16 @@
+# . Point group C4v.
+---
+# . !PointGroup
+Label : C4v
+Symmetry Operations :
+    C4    :  1
+    E     :  1
+    sigma :  4
+Character Symmetry Operations : [ E, C4, sigma-m ]
+Character Table :
+    A1 : [ 1.000000 ,  1.000000 ,  1.000000 ]
+    A2 : [ 1.000000 ,  1.000000 , -1.000000 ]
+    B1 : [ 1.000000 , -1.000000 ,  1.000000 ]
+    B2 : [ 1.000000 , -1.000000 , -1.000000 ]
+    E  : [ 2.000000 ,  0.000000 ,  0.000000 ]
+...

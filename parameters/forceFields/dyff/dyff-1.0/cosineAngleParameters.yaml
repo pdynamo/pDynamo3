@@ -1,0 +1,18 @@
+---
+# . !CosineAngleParameterContainer
+Analytic Form:
+    Equation: Sum_p c_p * cos ( p * angle )
+    Symbols:
+        angle : Angle
+        c_p   : Force Constant
+        p     : Period
+Label: DYFF-1.0
+Units:
+    Force Constant : kJ/mol
+Parameter Fields:
+    - Atom Type 1
+    - Atom Type 2
+    - Atom Type 3
+    - Period / Force Constant Pairs
+Parameter Values:
+...

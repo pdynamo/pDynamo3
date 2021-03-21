@@ -1,0 +1,22 @@
+---
+# . !Element
+Allen Electronegativity        : 2.359
+Atomic Number                  : 53
+Bragg Radius                   : 1.4
+Covalent Radius                : 1.4
+Group                          : 17
+Mass                           : 126.9045
+Maximum Orbital Quantum Number : 1
+Name                           : Iodine
+Pauling Electronegativity      : 2.66
+Period                         : 5
+RGB Color Indices              : [148, 0, 148]
+Single Bond Distances          : {1     : 1.6, 53     : 2.67, 6     : 2.14}
+Symbol                         : I
+Valence Electrons              : 7
+vdW Radius                     : 2.15
+d Quantum Number               : 0
+f Quantum Number               : 0
+p Quantum Number               : 5
+s Quantum Number               : 5
+...

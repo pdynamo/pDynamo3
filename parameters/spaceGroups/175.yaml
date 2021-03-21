@@ -1,0 +1,20 @@
+# . Space group Bm2m.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : B -2 -2
+Hermann-Mauguin    : Bm2m
+Schoenflies        : C2v^11
+Space Group Number : 35
+Space Group Symbol : 35:bca
+Setting            : 175
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (-x,y,z)
+    - (x,y,-z)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,y,-z+1/2)
+    - (-x+1/2,y,z+1/2)
+    - (x+1/2,y,-z+1/2)
+...

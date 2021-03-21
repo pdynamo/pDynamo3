@@ -1,0 +1,73 @@
+# . Text parameter file for the element In.
+
+In   atomicNumber                          49
+In   iii                                    5
+In   iiid                                   5
+In   ir016                                  0
+In   ir066                                  0
+In   ir244                                  0
+In   ir266                                  0
+In   ir466                                  0
+In   qnd                                    0
+In   qnp                                    5
+In   qns                                    5
+In   ad                     0.535663172374982  atomic
+In   alp                    0.000000000000000  A^-1
+In   am                     0.364042167734846  atomic
+In   aq                     0.261346521980355  atomic
+In   betad                  0.000000000000000  eV
+In   betap                 -3.330294000000000  eV
+In   betas                 -1.982376000000000  eV
+In   dd                     1.534389371067320  atomic
+In   eheat                 58.000000000000000  kcal/mole
+In   eisol                -52.606454999999997  eV
+In   f0sd                   0.000000000000000  eV
+In   g2sd                   0.000000000000000  eV
+In   gp2                    7.906563000000000  eV
+In   gphot                  1.000000000000000  dimensionless
+In   gpp                    4.826006000000000  eV
+In   gsp                   10.520060000000001  eV
+In   gss                    9.906091000000000  eV
+In   hsp                    3.500299000000000  eV
+In   pcore                  0.000000000000000  atomic
+In   qq                     1.219512277846779  atomic
+In   udd                    0.000000000000000  eV
+In   upp                  -23.373875000000002  eV
+In   uss                  -28.339245999999999  eV
+In   zcore                  3.000000000000000  atomic
+In   zdn                    0.000000000000000  atomic
+In   zetad                  0.000000000000000  atomic
+In   zetap                  2.106618000000000  atomic
+In   zetas                  2.023087000000000  atomic
+In   zpn                    0.000000000000000  atomic
+In   zsn                    0.000000000000000  atomic
+In   diatomicA      H       3.064144000000000  A^-1
+In   diatomicX      H      14.975293000000001  dimensionless
+In   diatomicA      C       2.189272000000000  A^-1
+In   diatomicX      C       2.187385000000000  dimensionless
+In   diatomicA      N       2.469868000000000  A^-1
+In   diatomicX      N       3.369993000000000  dimensionless
+In   diatomicA      O       2.662095000000000  A^-1
+In   diatomicX      O       4.128583000000000  dimensionless
+In   diatomicA      F       2.948797000000000  A^-1
+In   diatomicX      F       3.701016000000000  dimensionless
+In   diatomicA      S       2.542131000000000  A^-1
+In   diatomicX      S       6.341105000000000  dimensionless
+In   diatomicA      Cl      2.233405000000000  A^-1
+In   diatomicX      Cl      2.388552000000000  dimensionless
+In   diatomicA      Ga      1.628870000000000  A^-1
+In   diatomicX      Ga      2.421987000000000  dimensionless
+In   diatomicA      As      2.299552000000000  A^-1
+In   diatomicX      As      6.208350000000000  dimensionless
+In   diatomicA      Se      1.906572000000000  A^-1
+In   diatomicX      Se      2.319323000000000  dimensionless
+In   diatomicA      Br      2.257957000000000  A^-1
+In   diatomicX      Br      3.728598000000000  dimensionless
+In   diatomicA      In      2.073241000000000  A^-1
+In   diatomicX      In      8.063491000000001  dimensionless
+In   diatomicA      Sb      2.141933000000000  A^-1
+In   diatomicX      Sb      6.660801000000000  dimensionless
+In   diatomicA      Te      1.540988000000000  A^-1
+In   diatomicX      Te      2.039582000000000  dimensionless
+In   diatomicA      I       2.351758000000000  A^-1
+In   diatomicX      I       5.947821000000000  dimensionless

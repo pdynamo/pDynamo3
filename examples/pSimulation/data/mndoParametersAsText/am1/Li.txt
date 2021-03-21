@@ -1,0 +1,43 @@
+# . Text parameter file for the element Li.
+
+Li   atomicNumber                           3
+Li   iii                                    2
+Li   iiid                                   3
+Li   ir016                                  0
+Li   ir066                                  0
+Li   ir244                                  0
+Li   ir266                                  0
+Li   ir466                                  0
+Li   qnd                                    0
+Li   qnp                                    2
+Li   qns                                    2
+Li   ad                     0.226974254993732  atomic
+Li   alp                    1.250140000000000  A^-1
+Li   am                     0.268270079940147  atomic
+Li   aq                     0.261453881321057  atomic
+Li   betad                  0.000000000000000  eV
+Li   betap                 -1.350040000000000  eV
+Li   betas                 -1.350040000000000  eV
+Li   dd                     2.054978320815035  atomic
+Li   eheat                 38.409999999999997  kcal/mole
+Li   eisol                 -5.128000000000000  eV
+Li   f0sd                   0.000000000000000  eV
+Li   g2sd                   0.000000000000000  eV
+Li   gp2                    4.520000000000000  eV
+Li   gphot                  1.000000000000000  dimensionless
+Li   gpp                    5.000000000000000  eV
+Li   gsp                    5.420000000000000  eV
+Li   gss                    7.300000000000000  eV
+Li   hsp                    0.830000000000000  eV
+Li   pcore                  0.000000000000000  atomic
+Li   qq                     1.743706927007587  atomic
+Li   udd                    0.000000000000000  eV
+Li   upp                   -2.721200000000000  eV
+Li   uss                   -5.128000000000000  eV
+Li   zcore                  1.000000000000000  atomic
+Li   zdn                    0.000000000000000  atomic
+Li   zetad                  0.000000000000000  atomic
+Li   zetap                  0.702380000000000  atomic
+Li   zetas                  0.702380000000000  atomic
+Li   zpn                    0.000000000000000  atomic
+Li   zsn                    0.000000000000000  atomic

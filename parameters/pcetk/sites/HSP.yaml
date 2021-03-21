@@ -1,0 +1,29 @@
+
+# The Gmodel values were calculated for T = 300K
+# They are appropriately recalculated for a given temperature of the model
+# 
+# Acids have their contribution to Gmicro negative, bases positive (is that true?)
+---
+site      : HSP
+atoms     : [NE2, CG, ND1, HD1, CE1, HE2, CD2, CB, HB1, HB2, HD2, HE1]
+instances :
+  - label   : HSP
+    Gmodel  : 0.000000
+    protons : 2
+    charges : [-0.51,  0.19, -0.51,  0.44,  0.32,  0.44,  0.19, -0.05,  0.09,  0.09,  0.13,  0.18]
+
+  - label   : HSD
+    Gmodel  : 9.602486
+    protons : 1
+    charges : [-0.70, -0.05, -0.36,  0.32,  0.25,  0.00,  0.22, -0.09,  0.09,  0.09,  0.10,  0.13]
+
+  - label   : HSE
+    Gmodel  : 9.053770
+    protons : 1
+    charges : [-0.36,  0.22, -0.70,  0.00,  0.25,  0.32, -0.05, -0.08,  0.09,  0.09,  0.09,  0.13]
+
+  - label   : fd
+    Gmodel  : 27.434000
+    protons : 0
+    charges : [-0.70,  0.12, -0.70,  0.00,  0.12,  0.00, -0.05, -0.08,  0.09,  0.09,  0.09,  0.02]
+...

@@ -1,0 +1,27 @@
+---
+# . !HarmonicBondParameterContainer
+Analytic Form:
+    Equation: k * ( b - b0 )**2
+    Symbols:
+        b  : Bond Length
+        b0 : Equilibrium Value 
+        k  : Force Constant
+Label: Book Small Examples
+Units:
+    Equilibrium Value : Angstroms
+    Force Constant    : kcal/mol/Angstroms**2
+Parameter Fields:
+    - Atom Type 1
+    - Atom Type 2
+    - Equilibrium Value
+    - Force Constant
+Parameter Values:
+    - [ C ,  CT,  1.5220,  317.00 ]
+    - [ C ,  O ,  1.2290,  570.00 ]
+    - [ C ,  N ,  1.3350,  490.00 ]
+    - [ CT,  CT,  1.5290,  268.00 ]
+    - [ CT,  HC,  1.0900,  340.00 ]
+    - [ CT,  N ,  1.4490,  337.00 ]
+    - [ H ,  N ,  1.0100,  434.00 ]
+    - [ HW,  OW,  0.9572,  529.60 ]
+...

@@ -1,0 +1,15 @@
+# . Point group C3h.
+---
+# . !PointGroup
+Label : C3h
+Symmetry Operations :
+    C3    :  1
+    E     :  1
+    sigma :  1
+Character Symmetry Operations : [ E, C3, sigma ]
+Character Table :
+    A" : [ 1.000000 ,  1.000000 , -1.000000 ]
+    A' : [ 1.000000 ,  1.000000 ,  1.000000 ]
+    E" : [ 2.000000 , -1.000000 , -2.000000 ]
+    E' : [ 2.000000 , -1.000000 ,  2.000000 ]
+...

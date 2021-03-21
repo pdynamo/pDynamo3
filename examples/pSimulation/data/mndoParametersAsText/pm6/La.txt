@@ -1,0 +1,69 @@
+# . Text parameter file for the element La.
+
+La   atomicNumber                          57
+La   iii                                    6
+La   iiid                                   5
+La   ir016                                  0
+La   ir066                                  0
+La   ir244                                  0
+La   ir266                                  0
+La   ir466                                  0
+La   qnd                                    5
+La   qnp                                    6
+La   qns                                    6
+La   ad                     0.211446723119291  atomic
+La   alp                    0.000000000000000  A^-1
+La   am                     0.226171526435514  atomic
+La   aq                     0.407545579246552  atomic
+La   betad                 -0.484922000000000  eV
+La   betap                -10.856056000000001  eV
+La   betas                  0.796727000000000  eV
+La   dd                     0.761825927292325  atomic
+La   eheat                928.899999999999977  kcal/mole
+La   eisol                -55.768451880000001  eV
+La   f0sd                   8.856858000000001  eV
+La   g2sd                   7.925585000000000  eV
+La   gp2                   15.679056900000001  eV
+La   gphot                  1.000000000000000  dimensionless
+La   gpp                   18.077464540000001  eV
+La   gsp                    7.322703860000000  eV
+La   gss                    6.154440120000000  eV
+La   hsp                    0.138601060000000  eV
+La   pcore                  2.511701000000000  atomic
+La   qq                     2.416792148803767  atomic
+La   udd                  -22.638985999999999  eV
+La   upp                  -22.059431000000000  eV
+La   uss                  -19.641953000000001  eV
+La   zcore                  3.000000000000000  atomic
+La   zdn                    2.285738000000000  atomic
+La   zetad                  1.688562000000000  atomic
+La   zetap                  1.248192000000000  atomic
+La   zetas                  2.673780000000000  atomic
+La   zpn                    4.331620000000000  atomic
+La   zsn                    1.617784000000000  atomic
+La   diatomicA      H       0.833667000000000  A^-1
+La   diatomicX      H       0.623501000000000  dimensionless
+La   diatomicA      C       0.604869000000000  A^-1
+La   diatomicX      C       0.108649000000000  dimensionless
+La   diatomicA      N       0.758881000000000  A^-1
+La   diatomicX      N       0.104778000000000  dimensionless
+La   diatomicA      O       1.318333000000000  A^-1
+La   diatomicX      O       0.557957000000000  dimensionless
+La   diatomicA      F       2.379335000000000  A^-1
+La   diatomicX      F       2.401903000000000  dimensionless
+La   diatomicA      Al      1.003510000000000  A^-1
+La   diatomicX      Al      0.500540000000000  dimensionless
+La   diatomicA      Si      2.016820000000000  A^-1
+La   diatomicX      Si      3.219030000000000  dimensionless
+La   diatomicA      P       0.954450000000000  A^-1
+La   diatomicX      P       0.541660000000000  dimensionless
+La   diatomicA      S       1.834129000000000  A^-1
+La   diatomicX      S       2.682412000000000  dimensionless
+La   diatomicA      Cl      0.993753000000000  A^-1
+La   diatomicX      Cl      0.230203000000000  dimensionless
+La   diatomicA      Br      0.758184000000000  A^-1
+La   diatomicX      Br      0.238582000000000  dimensionless
+La   diatomicA      I       0.592666000000000  A^-1
+La   diatomicX      I       0.226883000000000  dimensionless
+La   diatomicA      La      4.248067000000000  A^-1
+La   diatomicX      La      5.175162000000000  dimensionless

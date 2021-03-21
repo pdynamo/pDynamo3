@@ -1,0 +1,14 @@
+# . !PDBComponent
+{Atom Fields: [Atomic Number, Formal Charge, Label], Atoms: [[7, 0, N],
+    [6, 0, CA], [6, 0, C], [8, 0, O], [6, 0, CB], [6, 0, CG1], [6, 0, CG2], [6, 0,
+      CD1], [8, 0, OXT], [1, 0, H], [1, 0, H2], [1, 0, HA], [1, 0, HB], [1, 0, HG12],
+    [1, 0, HG13], [1, 0, HG21], [1, 0, HG22], [1, 0, HG23], [1, 0, HD11], [1, 0, HD12],
+    [1, 0, HD13], [1, 0, HXT]], Bond Fields: [Atom 1, Atom 2, Type], Bonds: [[N, CA,
+      Single], [N, H, Single], [N, H2, Single], [CA, C, Single], [CA, CB, Single],
+    [CA, HA, Single], [C, O, Double], [C, OXT, Single], [CB, CG1, Single], [CB, CG2,
+      Single], [CB, HB, Single], [CG1, CD1, Single], [CG1, HG12, Single], [CG1, HG13,
+      Single], [CG2, HG21, Single], [CG2, HG22, Single], [CG2, HG23, Single], [CD1,
+      HD11, Single], [CD1, HD12, Single], [CD1, HD13, Single], [OXT, HXT, Single]],
+  Component Class: '"L-Peptide', Formal Charge: 0, Is Heteroatom: false, Is In Chain: true,
+  Label: ILE, Left Link: Peptide, Left Termination: N Terminal, Name: ISOLEUCINE,
+  PDB Class: Atomp, Right Link: Peptide, Right Termination: C Terminal}

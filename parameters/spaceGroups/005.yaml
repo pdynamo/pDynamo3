@@ -1,0 +1,14 @@
+# . Space group P211.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : P 2x
+Hermann-Mauguin    : P211
+Schoenflies        : C2^1
+Space Group Number : 3
+Space Group Symbol : 3:a
+Setting            : 5
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+...

@@ -1,0 +1,71 @@
+# . Text parameter file for the element V.
+
+V    atomicNumber                          23
+V    iii                                    4
+V    iiid                                   3
+V    ir016                                  6
+V    ir066                                  3
+V    ir244                                  3
+V    ir266                                 15
+V    ir466                                  8
+V    qnd                                    3
+V    qnp                                    4
+V    qns                                    4
+V    ad                     0.333473520168762  atomic
+V    alp                    0.000000000000000  A^-1
+V    am                     0.219875487109560  atomic
+V    aq                     0.250440944740757  atomic
+V    betad                  3.153669000000000  eV
+V    betap                  0.740746000000000  eV
+V    betas                 -1.211330000000000  eV
+V    dd                     1.119087117454676  atomic
+V    eheat                122.900000000000006  kcal/mole
+V    eisol               -161.860170819999979  eV
+V    f0sd                   6.810021000000000  eV
+V    g2sd                   1.831407000000000  eV
+V    gp2                    3.944481150000000  eV
+V    gphot                  1.000000000000000  dimensionless
+V    gpp                    4.499762940000000  eV
+V    gsp                    4.736769490000000  eV
+V    gss                    5.983116180000000  eV
+V    hsp                    0.901105190000000  eV
+V    pcore                  0.000000000000000  atomic
+V    qq                     1.995398712414042  atomic
+V    udd                  -34.506245000000000  eV
+V    upp                  -21.572500999999999  eV
+V    uss                  -32.162275999999999  eV
+V    zcore                  5.000000000000000  atomic
+V    zdn                    1.099367000000000  atomic
+V    zetad                  1.394806000000000  atomic
+V    zetap                  1.063106000000000  atomic
+V    zetas                  1.974330000000000  atomic
+V    zpn                    0.755378000000000  atomic
+V    zsn                    1.094426000000000  atomic
+V    diatomicA      H       1.280133000000000  A^-1
+V    diatomicX      H       0.105204000000000  dimensionless
+V    diatomicA      C       2.789855000000000  A^-1
+V    diatomicX      C       1.938760000000000  dimensionless
+V    diatomicA      N       1.607540000000000  A^-1
+V    diatomicX      N       0.276725000000000  dimensionless
+V    diatomicA      O       1.623973000000000  A^-1
+V    diatomicX      O       0.415312000000000  dimensionless
+V    diatomicA      F       1.825160000000000  A^-1
+V    diatomicX      F       0.342815000000000  dimensionless
+V    diatomicA      Na      2.551010000000000  A^-1
+V    diatomicX      Na      8.276020000000001  dimensionless
+V    diatomicA      P       2.549154000000000  A^-1
+V    diatomicX      P       6.250624000000000  dimensionless
+V    diatomicA      S       2.704124000000000  A^-1
+V    diatomicX      S       2.035039000000000  dimensionless
+V    diatomicA      Cl      1.688529000000000  A^-1
+V    diatomicX      Cl      0.243657000000000  dimensionless
+V    diatomicA      K       4.521360000000000  A^-1
+V    diatomicX      K       2.026590000000000  dimensionless
+V    diatomicA      V       4.832391000000000  A^-1
+V    diatomicX      V      10.779892000000000  dimensionless
+V    diatomicA      Br      1.902904000000000  A^-1
+V    diatomicX      Br      0.612698000000000  dimensionless
+V    diatomicA      I       2.683520000000000  A^-1
+V    diatomicX      I       6.198112000000000  dimensionless
+V    diatomicA      Pb      1.500000000000000  A^-1
+V    diatomicX      Pb      1.000000000000000  dimensionless

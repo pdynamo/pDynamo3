@@ -1,0 +1,28 @@
+# . Space group I41md.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : I 4bw -2
+Hermann-Mauguin    : I41md
+Schoenflies        : C4v^11
+Space Group Number : 109
+Space Group Symbol : 109
+Setting            : 386
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-y,x+1/2,z+1/4)
+    - (y+1/2,-x,z+3/4)
+    - (x,-y,z)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (-y,-x+1/2,z+1/4)
+    - (y+1/2,x,z+3/4)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x,-y,z)
+    - (-y+1/2,x,z+3/4)
+    - (y,-x+1/2,z+1/4)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x,y,z)
+    - (-y+1/2,-x,z+3/4)
+    - (y,x+1/2,z+1/4)
+...

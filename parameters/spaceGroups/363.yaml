@@ -1,0 +1,28 @@
+# . Space group I4/m.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -I 4
+Hermann-Mauguin    : I4/m
+Schoenflies        : C4h^5
+Space Group Number : 87
+Space Group Symbol : 87
+Setting            : 363
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-y+1/2,x+1/2,z+1/2)
+    - (y+1/2,-x+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (y+1/2,-x+1/2,-z+1/2)
+    - (-y+1/2,x+1/2,-z+1/2)
+...

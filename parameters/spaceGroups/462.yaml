@@ -1,0 +1,18 @@
+# . Space group P6.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P 6
+Hermann-Mauguin    : P6
+Schoenflies        : C6^1
+Space Group Number : 168
+Space Group Symbol : 168
+Setting            : 462
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-x,-y,z)
+    - (y,-x+y,z)
+    - (x-y,x,z)
+...

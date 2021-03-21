@@ -1,0 +1,69 @@
+# . Text parameter file for the element Y.
+
+Y    atomicNumber                          39
+Y    iii                                    5
+Y    iiid                                   4
+Y    ir016                                  2
+Y    ir066                                  0
+Y    ir244                                  1
+Y    ir266                                  0
+Y    ir466                                  0
+Y    qnd                                    4
+Y    qnp                                    5
+Y    qns                                    5
+Y    ad                     0.321139536176792  atomic
+Y    alp                    0.000000000000000  A^-1
+Y    am                     0.148714720619460  atomic
+Y    aq                     0.330505076232072  atomic
+Y    betad                 -4.508957000000000  eV
+Y    betap                 -3.180807000000000  eV
+Y    betas                  0.343336000000000  eV
+Y    dd                     0.987184145700274  atomic
+Y    eheat                101.500000000000000  kcal/mole
+Y    eisol                -40.843186720000006  eV
+Y    f0sd                   4.972716000000000  eV
+Y    g2sd                   5.016364000000000  eV
+Y    gp2                    6.343281120000000  eV
+Y    gphot                  1.000000000000000  dimensionless
+Y    gpp                    7.278752410000000  eV
+Y    gsp                    4.726277200000000  eV
+Y    gss                    4.046733280000000  eV
+Y    hsp                    0.679228050000000  eV
+Y    pcore                  2.773703000000000  atomic
+Y    qq                     1.723704102417319  atomic
+Y    udd                  -16.394302000000000  eV
+Y    upp                  -14.817140000000000  eV
+Y    uss                  -14.247809000000000  eV
+Y    zcore                  3.000000000000000  atomic
+Y    zdn                    1.384238000000000  atomic
+Y    zetad                  1.650893000000000  atomic
+Y    zetap                  1.490422000000000  atomic
+Y    zetas                  0.593368000000000  atomic
+Y    zpn                    1.484400000000000  atomic
+Y    zsn                    0.902611000000000  atomic
+Y    diatomicA      H       1.189053000000000  A^-1
+Y    diatomicX      H       0.612399000000000  dimensionless
+Y    diatomicA      C       1.336094000000000  A^-1
+Y    diatomicX      C       0.504306000000000  dimensionless
+Y    diatomicA      N       1.778796000000000  A^-1
+Y    diatomicX      N       1.627903000000000  dimensionless
+Y    diatomicA      O       1.851030000000000  A^-1
+Y    diatomicX      O       1.742922000000000  dimensionless
+Y    diatomicA      F       2.648046000000000  A^-1
+Y    diatomicX      F       4.433809000000000  dimensionless
+Y    diatomicA      Al      1.003500000000000  A^-1
+Y    diatomicX      Al      0.500670000000000  dimensionless
+Y    diatomicA      Si      2.016820000000000  A^-1
+Y    diatomicX      Si      3.219030000000000  dimensionless
+Y    diatomicA      P       0.954450000000000  A^-1
+Y    diatomicX      P       0.541660000000000  dimensionless
+Y    diatomicA      S       0.971688000000000  A^-1
+Y    diatomicX      S       0.318222000000000  dimensionless
+Y    diatomicA      Cl      1.630152000000000  A^-1
+Y    diatomicX      Cl      1.154959000000000  dimensionless
+Y    diatomicA      Br      1.401208000000000  A^-1
+Y    diatomicX      Br      1.054316000000000  dimensionless
+Y    diatomicA      Y       1.012681000000000  A^-1
+Y    diatomicX      Y       1.691725000000000  dimensionless
+Y    diatomicA      I       1.279110000000000  A^-1
+Y    diatomicX      I       1.021402000000000  dimensionless

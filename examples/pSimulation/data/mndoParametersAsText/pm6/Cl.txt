@@ -1,0 +1,190 @@
+# . Text parameter file for the element Cl.
+
+Cl   atomicNumber                          17
+Cl   iii                                    3
+Cl   iiid                                   3
+Cl   ir016                                  0
+Cl   ir066                                  0
+Cl   ir244                                  0
+Cl   ir266                                  0
+Cl   ir466                                  0
+Cl   qnd                                    3
+Cl   qnp                                    3
+Cl   qns                                    3
+Cl   ad                     0.868986697777764  atomic
+Cl   alp                    0.000000000000000  A^-1
+Cl   am                     0.409485024565124  atomic
+Cl   aq                     0.635730468957676  atomic
+Cl   betad                 -4.037751000000000  eV
+Cl   betap                -13.802139000000000  eV
+Cl   betas                 -2.367988000000000  eV
+Cl   dd                     0.815004299681025  atomic
+Cl   eheat                 28.989999999999998  kcal/mole
+Cl   eisol               -252.909376000000037  eV
+Cl   f0sd                   8.670757090000000  eV
+Cl   g2sd                   0.052521780000000  eV
+Cl   gp2                    8.128436000000001  eV
+Cl   gphot                  1.000000000000000  dimensionless
+Cl   gpp                    9.551886000000000  eV
+Cl   gsp                    7.487881000000000  eV
+Cl   gss                   11.142654000000000  eV
+Cl   hsp                    5.004267000000000  eV
+Cl   pcore                  0.000000000000000  atomic
+Cl   qq                     0.789992782871507  atomic
+Cl   udd                  -38.258155000000002  eV
+Cl   upp                  -54.482801000000002  eV
+Cl   uss                  -61.389930000000000  eV
+Cl   zcore                  7.000000000000000  atomic
+Cl   zdn                    6.410325000000000  atomic
+Cl   zetad                  1.324033000000000  atomic
+Cl   zetap                  2.118146000000000  atomic
+Cl   zetas                  2.637050000000000  atomic
+Cl   zpn                    2.464067000000000  atomic
+Cl   zsn                    0.956297000000000  atomic
+Cl   fn10                  -0.013213000000000  A_eV
+Cl   fn20                   3.687022000000000  A^-2
+Cl   fn30                   2.544635000000000  A
+Cl   diatomicA      H       2.402886000000000  A^-1
+Cl   diatomicX      H       0.754831000000000  dimensionless
+Cl   diatomicA      He      1.671677000000000  A^-1
+Cl   diatomicX      He      0.272964000000000  dimensionless
+Cl   diatomicA      Li      2.783001000000000  A^-1
+Cl   diatomicX      Li      4.227794000000000  dimensionless
+Cl   diatomicA      Be      2.822676000000000  A^-1
+Cl   diatomicX      Be      2.507275000000000  dimensionless
+Cl   diatomicA      B       2.259323000000000  A^-1
+Cl   diatomicX      B       0.822129000000000  dimensionless
+Cl   diatomicA      C       2.162197000000000  A^-1
+Cl   diatomicX      C       0.515787000000000  dimensionless
+Cl   diatomicA      N       2.172134000000000  A^-1
+Cl   diatomicX      N       0.520745000000000  dimensionless
+Cl   diatomicA      O       2.323236000000000  A^-1
+Cl   diatomicX      O       0.585510000000000  dimensionless
+Cl   diatomicA      F       2.313270000000000  A^-1
+Cl   diatomicX      F       0.411124000000000  dimensionless
+Cl   diatomicA      Ne      1.703151000000000  A^-1
+Cl   diatomicX      Ne      0.125133000000000  dimensionless
+Cl   diatomicA      Na      1.816429000000000  A^-1
+Cl   diatomicX      Na      1.357894000000000  dimensionless
+Cl   diatomicA      Mg      2.391806000000000  A^-1
+Cl   diatomicX      Mg      2.430856000000000  dimensionless
+Cl   diatomicA      Al      2.125939000000000  A^-1
+Cl   diatomicX      Al      2.153451000000000  dimensionless
+Cl   diatomicA      Si      1.684978000000000  A^-1
+Cl   diatomicX      Si      0.513000000000000  dimensionless
+Cl   diatomicA      P       1.468306000000000  A^-1
+Cl   diatomicX      P       0.352361000000000  dimensionless
+Cl   diatomicA      S       1.715435000000000  A^-1
+Cl   diatomicX      S       0.356971000000000  dimensionless
+Cl   diatomicA      Cl      1.823239000000000  A^-1
+Cl   diatomicX      Cl      0.332919000000000  dimensionless
+Cl   diatomicA      Ar      2.554449000000000  A^-1
+Cl   diatomicX      Ar      2.256094000000000  dimensionless
+Cl   diatomicA      K       1.622163000000000  A^-1
+Cl   diatomicX      K       1.231481000000000  dimensionless
+Cl   diatomicA      Ca      2.383391000000000  A^-1
+Cl   diatomicX      Ca      5.956144000000000  dimensionless
+Cl   diatomicA      Sc      2.141474000000000  A^-1
+Cl   diatomicX      Sc      2.996129000000000  dimensionless
+Cl   diatomicA      Ti      1.461034000000000  A^-1
+Cl   diatomicX      Ti      0.333297000000000  dimensionless
+Cl   diatomicA      V       1.688529000000000  A^-1
+Cl   diatomicX      V       0.243657000000000  dimensionless
+Cl   diatomicA      Cr      1.494367000000000  A^-1
+Cl   diatomicX      Cr      0.081301000000000  dimensionless
+Cl   diatomicA      Mn      1.657010000000000  A^-1
+Cl   diatomicX      Mn      0.201850000000000  dimensionless
+Cl   diatomicA      Fe      1.229793000000000  A^-1
+Cl   diatomicX      Fe      0.019473000000000  dimensionless
+Cl   diatomicA      Co      2.703903000000000  A^-1
+Cl   diatomicX      Co      0.936122000000000  dimensionless
+Cl   diatomicA      Ni      2.200512000000000  A^-1
+Cl   diatomicX      Ni      0.202313000000000  dimensionless
+Cl   diatomicA      Cu      2.792274000000000  A^-1
+Cl   diatomicX      Cu      0.162637000000000  dimensionless
+Cl   diatomicA      Zn      1.625176000000000  A^-1
+Cl   diatomicX      Zn      0.721351000000000  dimensionless
+Cl   diatomicA      Ga      2.024710000000000  A^-1
+Cl   diatomicX      Ga      1.186661000000000  dimensionless
+Cl   diatomicA      Ge      1.771228000000000  A^-1
+Cl   diatomicX      Ge      0.545239000000000  dimensionless
+Cl   diatomicA      As      1.691070000000000  A^-1
+Cl   diatomicX      As      0.454433000000000  dimensionless
+Cl   diatomicA      Se      2.128861000000000  A^-1
+Cl   diatomicX      Se      0.981067000000000  dimensionless
+Cl   diatomicA      Br      1.710331000000000  A^-1
+Cl   diatomicX      Br      0.389238000000000  dimensionless
+Cl   diatomicA      Kr      1.884974000000000  A^-1
+Cl   diatomicX      Kr      0.520217000000000  dimensionless
+Cl   diatomicA      Rb      2.274411000000000  A^-1
+Cl   diatomicX      Rb     10.384486000000001  dimensionless
+Cl   diatomicA      Sr      1.854190000000000  A^-1
+Cl   diatomicX      Sr      3.783955000000000  dimensionless
+Cl   diatomicA      Y       1.630152000000000  A^-1
+Cl   diatomicX      Y       1.154959000000000  dimensionless
+Cl   diatomicA      Zr      1.328835000000000  A^-1
+Cl   diatomicX      Zr      0.443099000000000  dimensionless
+Cl   diatomicA      Nb      2.215275000000000  A^-1
+Cl   diatomicX      Nb      1.891557000000000  dimensionless
+Cl   diatomicA      Mo      1.783362000000000  A^-1
+Cl   diatomicX      Mo      0.474325000000000  dimensionless
+Cl   diatomicA      Tc      2.572043000000000  A^-1
+Cl   diatomicX      Tc      1.651583000000000  dimensionless
+Cl   diatomicA      Ru      1.759883000000000  A^-1
+Cl   diatomicX      Ru      0.126586000000000  dimensionless
+Cl   diatomicA      Rh      3.300130000000000  A^-1
+Cl   diatomicX      Rh      3.586865000000000  dimensionless
+Cl   diatomicA      Pd      3.871243000000000  A^-1
+Cl   diatomicX      Pd      2.969891000000000  dimensionless
+Cl   diatomicA      Ag      4.441176000000000  A^-1
+Cl   diatomicX      Ag     23.765459000000000  dimensionless
+Cl   diatomicA      Cd      0.943547000000000  A^-1
+Cl   diatomicX      Cd      0.140424000000000  dimensionless
+Cl   diatomicA      In      2.233405000000000  A^-1
+Cl   diatomicX      In      2.388552000000000  dimensionless
+Cl   diatomicA      Sn      1.771522000000000  A^-1
+Cl   diatomicX      Sn      0.807782000000000  dimensionless
+Cl   diatomicA      Sb      1.117287000000000  A^-1
+Cl   diatomicX      Sb      0.156475000000000  dimensionless
+Cl   diatomicA      Te      1.300260000000000  A^-1
+Cl   diatomicX      Te      0.285478000000000  dimensionless
+Cl   diatomicA      I       1.574161000000000  A^-1
+Cl   diatomicX      I       0.310474000000000  dimensionless
+Cl   diatomicA      Xe      1.546396000000000  A^-1
+Cl   diatomicX      Xe      0.463758000000000  dimensionless
+Cl   diatomicA      Cs      1.673663000000000  A^-1
+Cl   diatomicX      Cs      4.531965000000000  dimensionless
+Cl   diatomicA      Ba      1.071044000000000  A^-1
+Cl   diatomicX      Ba      0.160177000000000  dimensionless
+Cl   diatomicA      La      0.993753000000000  A^-1
+Cl   diatomicX      La      0.230203000000000  dimensionless
+Cl   diatomicA      Gd      0.806810000000000  A^-1
+Cl   diatomicX      Gd      0.089970000000000  dimensionless
+Cl   diatomicA      Lu      2.753636000000000  A^-1
+Cl   diatomicX      Lu     12.757099000000000  dimensionless
+Cl   diatomicA      Hf      1.297117000000000  A^-1
+Cl   diatomicX      Hf      0.706421000000000  dimensionless
+Cl   diatomicA      Ta      1.608805000000000  A^-1
+Cl   diatomicX      Ta      0.516413000000000  dimensionless
+Cl   diatomicA      W       1.310690000000000  A^-1
+Cl   diatomicX      W       0.278000000000000  dimensionless
+Cl   diatomicA      Re      1.433875000000000  A^-1
+Cl   diatomicX      Re      0.146319000000000  dimensionless
+Cl   diatomicA      Os      1.833070000000000  A^-1
+Cl   diatomicX      Os      0.327920000000000  dimensionless
+Cl   diatomicA      Ir      2.009770000000000  A^-1
+Cl   diatomicX      Ir      0.258916000000000  dimensionless
+Cl   diatomicA      Pt      2.108526000000000  A^-1
+Cl   diatomicX      Pt      0.341001000000000  dimensionless
+Cl   diatomicA      Au      3.019391000000000  A^-1
+Cl   diatomicX      Au      0.885574000000000  dimensionless
+Cl   diatomicA      Hg      0.430731000000000  A^-1
+Cl   diatomicX      Hg      0.053660000000000  dimensionless
+Cl   diatomicA      Tl      0.846193000000000  A^-1
+Cl   diatomicX      Tl      0.162037000000000  dimensionless
+Cl   diatomicA      Pb      1.094123000000000  A^-1
+Cl   diatomicX      Pb      0.164814000000000  dimensionless
+Cl   diatomicA      Bi      1.272975000000000  A^-1
+Cl   diatomicX      Bi      0.326871000000000  dimensionless
+Cl   diatomicA      Fr      1.579660000000000  A^-1
+Cl   diatomicX      Fr      0.761560000000000  dimensionless

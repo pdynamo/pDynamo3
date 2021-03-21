@@ -1,0 +1,43 @@
+# . Text parameter file for the element P.
+
+P    atomicNumber                          15
+P    iii                                    3
+P    iiid                                   3
+P    ir016                                  0
+P    ir066                                  0
+P    ir244                                  0
+P    ir266                                  0
+P    ir466                                  0
+P    qnd                                    0
+P    qnp                                    3
+P    qns                                    3
+P    ad                     0.488230772396192  atomic
+P    alp                    2.415280000000000  A^-1
+P    am                     0.424822208781932  atomic
+P    aq                     0.497932404202514  atomic
+P    betad                  0.000000000000000  eV
+P    betap                 -6.791600000000000  eV
+P    betas                 -6.791600000000000  eV
+P    dd                     1.012969898914458  atomic
+P    eheat                 75.569999999999993  kcal/mole
+P    eisol               -152.959960000000024  eV
+P    f0sd                   0.000000000000000  eV
+P    g2sd                   0.000000000000000  eV
+P    gp2                    7.680000000000000  eV
+P    gphot                  1.000000000000000  dimensionless
+P    gpp                    8.640000000000001  eV
+P    gsp                   10.080000000000000  eV
+P    gss                   11.560000000000000  eV
+P    hsp                    1.920000000000000  eV
+P    pcore                  0.000000000000000  atomic
+P    qq                     0.937009006035441  atomic
+P    udd                    0.000000000000000  eV
+P    upp                  -42.851080000000003  eV
+P    uss                  -56.143360000000001  eV
+P    zcore                  5.000000000000000  atomic
+P    zdn                    0.000000000000000  atomic
+P    zetad                  0.000000000000000  atomic
+P    zetap                  1.785810000000000  atomic
+P    zetas                  2.108720000000000  atomic
+P    zpn                    0.000000000000000  atomic
+P    zsn                    0.000000000000000  atomic

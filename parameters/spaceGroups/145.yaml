@@ -1,0 +1,16 @@
+# . Space group P21ab.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2b 2a
+Hermann-Mauguin    : P21ab
+Schoenflies        : C2v^5
+Space Group Number : 29
+Space Group Symbol : 29:cab
+Setting            : 145
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z)
+    - (x,y+1/2,-z)
+    - (x+1/2,-y+1/2,z)
+...

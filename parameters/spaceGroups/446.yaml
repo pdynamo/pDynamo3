@@ -1,0 +1,18 @@
+# . Space group P3m1.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : P 3 -2"
+Hermann-Mauguin    : P3m1
+Schoenflies        : C3v^1
+Space Group Number : 156
+Space Group Symbol : 156
+Setting            : 446
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-y,-x,z)
+    - (-x+y,y,z)
+    - (x,x-y,z)
+...

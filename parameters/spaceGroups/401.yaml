@@ -1,0 +1,28 @@
+# . Space group P4/mcc.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -P 4 2c
+Hermann-Mauguin    : P4/mcc
+Schoenflies        : D4h^2
+Space Group Number : 124
+Space Group Symbol : 124
+Setting            : 401
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (-x,y,-z+1/2)
+    - (x,-y,-z+1/2)
+    - (y,x,-z+1/2)
+    - (-y,-x,-z+1/2)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x,-y,z+1/2)
+    - (-x,y,z+1/2)
+    - (-y,-x,z+1/2)
+    - (y,x,z+1/2)
+...

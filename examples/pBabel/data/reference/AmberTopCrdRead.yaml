@@ -1,0 +1,40 @@
+# . AmberTopCrdRead
+---
+Label : AMBER Test
+Children :
+  - Label : dna
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ Fourier Dihedral        , 15756.526   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Fourier Improper        , 1.793       , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Angle          , 30898.111   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Bond           , 49910.063   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Electrostatic , -102141.970 , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Lennard-Jones , 8247.082    , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Electrostatic     , 546979.090  , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Lennard-Jones     , -6646.564   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Potential Energy        , 543004.131  , 0.500 , "{:.3f}" , "{:.3f}" ]
+  - Label : glucose
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ Fourier Dihedral        , 0.000      , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Fourier Improper        , 0.000      , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Gradient Error          , 1.7557e-05 , 1.0000e-03 , "{:.4e}" , "{:.4e}" ]
+      - [ Harmonic Angle          , 4.111      , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Bond           , 10.702     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Electrostatic , 657.058    , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Lennard-Jones , 27.367     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Electrostatic     , -361.098   , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Lennard-Jones     , 30.379     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Potential Energy        , 368.519    , 0.500      , "{:.3f}" , "{:.3f}" ]
+...

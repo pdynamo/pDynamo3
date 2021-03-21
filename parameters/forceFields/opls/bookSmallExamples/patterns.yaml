@@ -1,0 +1,47 @@
+---
+# . !MMPatternContainer
+Atom Fields:
+    - Key
+    - Atomic Number
+    - Connections
+    - Formal Charge
+    - Hydrogens
+    - Atom Type Label
+    - Charge
+Atom Result Fields:
+    - Atom Type Label
+    - Charge
+Bond Fields:
+    - Atom Key 1
+    - Atom Key 2
+    - Type
+Label: Book Small Examples
+Patterns:
+    - Label: Amide Carbonyl
+      Atom Patterns:
+          - [ O, 8, 1, 0, 0, O, . ]
+          - [ C, 6, 3, 0, ., C, . ]
+      Bond Patterns:
+          - [ C, O, Double ]
+    - Label: Amide Nitrogen
+      Atom Patterns:
+          - [ N, 7, 3, 0, ., N , -0.2 ]
+          - [ C, 6, 4, 0, ., CT,  0.2 ]
+      Bond Patterns:
+          - [ C, N, Single ]
+    - Label: Chloride Anion
+      Atom Patterns:
+          - [ ., 17, 0, -1, 0, Cl, -1.0 ]
+    - Label: Potassium Cation
+      Atom Patterns:
+          - [ ., 19, 0, 1, 0, K, 1.0 ]
+    - Label: Sodium Cation
+      Atom Patterns:
+          - [ ., 11, 0, 1, 0, Na, 1.0 ]
+    - Label: Tetrahedral Carbon
+      Atom Patterns:
+          - [ ., 6, 4, 0, ., CT, . ]
+    - Label: Water
+      Atom Patterns:
+          - [ ., 8, 2, 0, 2, OW, 0.0 ]
+...

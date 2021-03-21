@@ -1,0 +1,67 @@
+# . Text parameter file for the element Ni.
+
+Ni   atomicNumber                          28
+Ni   iii                                    4
+Ni   iiid                                   3
+Ni   ir016                                 16
+Ni   ir066                                 28
+Ni   ir244                                  8
+Ni   ir266                                 50
+Ni   ir466                                 43
+Ni   qnd                                    3
+Ni   qnp                                    4
+Ni   qns                                    4
+Ni   ad                     0.342691171513662  atomic
+Ni   alp                    0.000000000000000  A^-1
+Ni   am                     0.149969440362962  atomic
+Ni   aq                     0.425581612065508  atomic
+Ni   betad                 -8.655910000000000  eV
+Ni   betap                 -8.086696000000000  eV
+Ni   betas                 -9.151521000000001  eV
+Ni   dd                     1.144091788280100  atomic
+Ni   eheat                102.799999999999997  kcal/mole
+Ni   eisol               -835.370778059999907  eV
+Ni   f0sd                   4.651664000000000  eV
+Ni   g2sd                   1.880502000000000  eV
+Ni   gp2                    3.933771110000000  eV
+Ni   gphot                  1.000000000000000  dimensionless
+Ni   gpp                    4.487545200000000  eV
+Ni   gsp                    4.099451680000000  eV
+Ni   gss                    4.080875940000000  eV
+Ni   hsp                    0.993497740000000  eV
+Ni   pcore                  1.586979000000000  atomic
+Ni   qq                     0.920416734198381  atomic
+Ni   udd                  -93.026394999999994  eV
+Ni   upp                  -32.878408000000000  eV
+Ni   uss                  -47.620246999999999  eV
+Ni   zcore                 10.000000000000000  atomic
+Ni   zdn                    1.461345000000000  atomic
+Ni   zetad                  2.514761000000000  atomic
+Ni   zetap                  2.304739000000000  atomic
+Ni   zetas                  1.591828000000000  atomic
+Ni   zpn                    0.753327000000000  atomic
+Ni   zsn                    0.746470000000000  atomic
+Ni   diatomicA      H       2.635280000000000  A^-1
+Ni   diatomicX      H       1.763124000000000  dimensionless
+Ni   diatomicA      C       4.285513000000000  A^-1
+Ni   diatomicX      C       7.133324000000000  dimensionless
+Ni   diatomicA      N       3.845215000000000  A^-1
+Ni   diatomicX      N       4.286800000000000  dimensionless
+Ni   diatomicA      O       2.937232000000000  A^-1
+Ni   diatomicX      O       0.885942000000000  dimensionless
+Ni   diatomicA      F       3.440241000000000  A^-1
+Ni   diatomicX      F       1.088208000000000  dimensionless
+Ni   diatomicA      Si      2.068881000000000  A^-1
+Ni   diatomicX      Si      0.938646000000000  dimensionless
+Ni   diatomicA      P       3.260283000000000  A^-1
+Ni   diatomicX      P       5.059727000000000  dimensionless
+Ni   diatomicA      S       2.002752000000000  A^-1
+Ni   diatomicX      S       0.274852000000000  dimensionless
+Ni   diatomicA      Cl      2.200512000000000  A^-1
+Ni   diatomicX      Cl      0.202313000000000  dimensionless
+Ni   diatomicA      Ni      1.097960000000000  A^-1
+Ni   diatomicX      Ni      0.035474000000000  dimensionless
+Ni   diatomicA      Br      2.772136000000000  A^-1
+Ni   diatomicX      Br      0.632145000000000  dimensionless
+Ni   diatomicA      I       1.085343000000000  A^-1
+Ni   diatomicX      I       0.017459000000000  dimensionless

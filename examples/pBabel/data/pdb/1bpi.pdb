@@ -1,0 +1,792 @@
+HEADER    PROTEINASE INHIBITOR (TRYPSIN)          18-FEB-95   1BPI      1BPI   2
+TITLE     BPTI
+COMPND    BOVINE PANCREATIC TRYPSIN INHIBITOR (BPTI) (CRYSTAL FORM II)  1BPI   3
+SOURCE    BOVINE (BOS TAURUS) PANCREAS                                  1BPI   4
+EXPDTA    X-RAY DIFFRACTION                                             1BPI   5
+AUTHOR    S.PARKIN,B.RUPP,H.HOPE                                        1BPI   6
+REVDAT   1   03-JUN-95 1BPI    0                                        1BPI   7
+JRNL        AUTH   S.PARKIN,B.RUPP,H.HOPE                               1BPI   8
+JRNL        TITL   THE STRUCTURE OF BOVINE PANCREATIC TRYPSIN           1BPI   9
+JRNL        TITL 2 INHIBITOR AT 125K:  DEFINITION OF CARBOXYL-TERMINAL  1BPI  10
+JRNL        TITL 3 RESIDUES GLYCINE-57 AND ALANINE-58                   1BPI  11
+JRNL        REF    TO BE PUBLISHED                                      1BPI  12
+JRNL        REFN                                                  0353  1BPI  13
+REMARK   1                                                              1BPI  14
+REMARK   2                                                              1BPI  15
+REMARK   2 RESOLUTION. 1.1  ANGSTROMS.                                  1BPI  16
+REMARK   3                                                              1BPI  17
+REMARK   3 REFINEMENT.                                                  1BPI  18
+REMARK   3   PROGRAM 1                  SHELXL-92                       1BPI  19
+REMARK   3   AUTHORS 1                  SHELDRICK                       1BPI  20
+REMARK   3   PROGRAM 2                  SHELXL-93                       1BPI  21
+REMARK   3   AUTHORS 2                  SHELDRICK                       1BPI  22
+REMARK   3   PROGRAM 3                  XFIT                            1BPI  23
+REMARK   3   AUTHORS 3                  DUNCAN MCREE                    1BPI  24
+REMARK   3   R VALUE (I>2SIGMA(I))      0.146                           1BPI  25
+REMARK   3   R VALUE (ALL DATA)         0.187                           1BPI  26
+REMARK   3   FREE R VALUE               0.218                           1BPI  27
+REMARK   3   MEAN B VALUE(ALL ATOMS)    10.3   ANGSTROMS**2             1BPI  28
+REMARK   3   MEAN B VALUE(PROTEIN)      7.9    ANGSTROMS**2             1BPI  29
+REMARK   3   MEAN B VALUE(SOLVENT)      16.3   ANGSTROMS**2             1BPI  30
+REMARK   3   ESD FROM LUZZATI PLOT      0.12   ANGSTROMS                1BPI  31
+REMARK   3   ESTIMATED COORD. ERROR     0.090  ANGSTROMS (ALL)          1BPI  32
+REMARK   3   ESTIMATED COORD. ERROR     0.060  ANGSTROMS (PROTEIN)      1BPI  33
+REMARK   3   ESTIMATED COORD. ERROR     0.135  ANGSTROMS (SOLVENT)      1BPI  34
+REMARK   3   FINAL RMS COORD. SHIFT     0.000  ANGSTROMS                1BPI  35
+REMARK   3   FINAL LARGEST COORD. SHIFT 0.025  ANGSTROMS                1BPI  36
+REMARK   3                                                              1BPI  37
+REMARK   3   NUMBER OF REFLECTIONS      20740                           1BPI  38
+REMARK   3   RESOLUTION RANGE      10.0 - 1.09 ANGSTROMS                1BPI  39
+REMARK   3   DATA CUTOFF                0.0    SIGMA(F)                 1BPI  40
+REMARK   3   COMPLETENESS FOR RANGE     99.9   %                        1BPI  41
+REMARK   3                                                              1BPI  42
+REMARK   3  DATA COLLECTION.                                            1BPI  43
+REMARK   3   NUMBER OF UNIQUE REFLECTIONS      20781                    1BPI  44
+REMARK   3   COMPLETENESS OF DATA              99.9   %                 1BPI  45
+REMARK   3   REJECTION CRITERIA                0.0    SIGMA(I)          1BPI  46
+REMARK   3                                                              1BPI  47
+REMARK   3  SOLVENT CONTENT (VS)               38.0   %                 1BPI  48
+REMARK   3                                                              1BPI  49
+REMARK   3  NUMBER OF ATOMS USED IN REFINEMENT.                         1BPI  50
+REMARK   3   NUMBER OF PROTEIN ATOMS (INC. DISORDER)        460         1BPI  51
+REMARK   3   NUMBER OF HETEROGEN ATOMS (DISORDERED P)         2         1BPI  52
+REMARK   3   NUMBER OF SOLVENT ATOMS (INC. DISORDER)        167         1BPI  53
+REMARK   3                                                              1BPI  54
+REMARK   3  REFINEMENT BY RESTRAINED LEAST-SQUARES USING THE PROGRAMS   1BPI  55
+REMARK   3  *SHELXL-92* AND *SHELXL-93*.  INITIAL MODEL REBUILDING WAS  1BPI  56
+REMARK   3  ACCOMPLISHED BY ELECTRON DENSITY PEAK PICKING FROM          1BPI  57
+REMARK   3  DIFFERENCE FOURIER MAPS AND IN THE FINAL STAGES OF          1BPI  58
+REMARK   3  REFINEMENT BY THE PROGRAM *XFIT* FROM THE *XTALVIEW 2.0*    1BPI  59
+REMARK   3  PACKAGE WAS USED. (MCREE, 1992. J.MOLECULAR GRAPHICS 10     1BPI  60
+REMARK   3  PP. 44-46).                                                 1BPI  61
+REMARK   4                                                              1BPI  62
+REMARK   4 COMPND                                                       1BPI  63
+REMARK   4   LOW TEMPERATURE - 125 KELVIN.                              1BPI  64
+REMARK   5                                                              1BPI  65
+REMARK   5 INITIAL MODEL DERIVED FROM THE COORDINATE SET OF PDB ENTRY   1BPI  66
+REMARK   5 5PTI.  PRIOR TO REFINEMENT THE MODEL WAS MODIFIED AS         1BPI  67
+REMARK   5 FOLLOWS: (I) DISORDER WAS REMOVED, MAJOR CONFORMATIONS       1BPI  68
+REMARK   5 INCLUDED AT FULL OCCUPANCY.  (II) HYDROGEN ATOMS REMOVED.    1BPI  69
+REMARK   5 (III) ISOTROPIC THERMAL PARAMETERS HALVED, CONVERTED TO *U*  1BPI  70
+REMARK   5 FORMAT AND ROUNDED TO THE NEAREST 0.01 ANGSTROM SQUARED.     1BPI  71
+REMARK   5 (IV) AMINO ACID GEOMETRIES RESTRAINED ACCORDING TO ENGH AND  1BPI  72
+REMARK   5 HUBER (1991), ACTA CRYST. A47 PP.392-400.                    1BPI  73
+REMARK   6                                                              1BPI  74
+REMARK   6 RESIDUES GLU 7 AND ARG 53 WERE MODELED IN TWO                1BPI  75
+REMARK   6 CONFORMATIONS.  145.6 WATER MOLECULES OVER 167 SITES WERE    1BPI  76
+REMARK   6 MODELED.  123 ARE AT FULL OCCUPANCY, 39 ARE AT HALF          1BPI  77
+REMARK   6 OCCUPANCY AND THE REMAINDER HAVE OCCUPANCIES DETERMINED BY   1BPI  78
+REMARK   6 THE DISORDER AT RESIDUES GLU 7 AND ARG 53.  THE PHOSPHATE    1BPI  79
+REMARK   6 WAS MODELED IN TWO CONFORMATIONS.                            1BPI  80
+REMARK   7                                                              1BPI  81
+REMARK   7 RESTRAINED ANISOTROPIC THERMAL PARAMETERS WERE REFINED.      1BPI  82
+REMARK   7 THE COORDINATES IN THIS ENTRY ARE THOSE OF THE ISOTROPIC     1BPI  83
+REMARK   7 MODEL.  R VALUES FOR THE ISOTROPIC AND ANISOTROPIC MODELS    1BPI  84
+REMARK   7 WERE 0.187 AND 0.161 FOR ALL DATA.  FREE R VALUES FOR BOTH   1BPI  85
+REMARK   7 MODELS WERE INSIGNIFICANTLY DIFFERENT.                       1BPI  86
+REMARK   8                                                              1BPI  87
+REMARK   8 PROTEIN GEOMETRY FOR MAJOR AND MINOR CONFORMATIONS OF GLU 7  1BPI  88
+REMARK   8 AND ASP 53 WAS CHECKED WITH THE PROCHECK PROGRAM             1BPI  89
+REMARK   8 (LASKOWSKI, MACARTHUR, MOSS, THORNTON (1993) J. APPL.        1BPI  90
+REMARK   8 CRYST. 26, 283 - 291).  THE OMEGA TORSION ANGLE OF ARG 1     1BPI  91
+REMARK   8 SHOWS A MARKED DEVIATION FROM PLANARITY.  ELECTRON DENSITY   1BPI  92
+REMARK   8 MAPS CLEARLY SUPPORT THIS DISTORTION.                        1BPI  93
+REMARK   9                                                              1BPI  94
+REMARK   9 PDB ADVISORY NOTICE:                                         1BPI  95
+REMARK   9 A LARGE NUMBER OF CLOSE CONTACTS PRESENT INVOLVE             1BPI  96
+REMARK   9 DISORDERED WATER MOLECULES OR DISORDERED ATOMS.              1BPI  97
+REMARK  18                                                              1BPI  98
+REMARK  18 EXPERIMENTAL DETAILS                                         1BPI  99
+REMARK  18  DATE OF DATA COLLECTION        : JUN-84                     1BPI 100
+REMARK  18  MONOCHROMATIC (Y/N)            : Y                          1BPI 101
+REMARK  18  WAVELENGTH OR RANGE (A)        : 1.54178                    1BPI 102
+REMARK  18  DETECTOR TYPE                  : NAI SCINTILLATOR           1BPI 103
+REMARK  18  DETECTOR MANUFACTURER          : SIEMENS                    1BPI 104
+REMARK  18  INTENSITY-INTEGRATION SOFTWARE : SIEMENS XDISK              1BPI 105
+REMARK 999                                                              1BPI 106
+REMARK 999 CROSS REFERENCE TO SEQUENCE DATABASE                         1BPI 107
+REMARK 999 SWISS-PROT ENTRY NAME       PDB ENTRY CHAIN NAME             1BPI 108
+REMARK 999    BPT1_BOVIN                                                1BPI 109
+SEQRES   1     58  ARG PRO ASP PHE CYS LEU GLU PRO PRO TYR THR GLY PRO  1BPI 110
+SEQRES   2     58  CYS LYS ALA ARG ILE ILE ARG TYR PHE TYR ASN ALA LYS  1BPI 111
+SEQRES   3     58  ALA GLY LEU CYS GLN THR PHE VAL TYR GLY GLY CYS ARG  1BPI 112
+SEQRES   4     58  ALA LYS ARG ASN ASN PHE LYS SER ALA GLU ASP CYS MET  1BPI 113
+SEQRES   5     58  ARG THR CYS GLY GLY ALA                              1BPI 114
+FTNOTE   1                                                              1BPI 115
+FTNOTE   1 SIDE CHAINS OF RESIDUES GLU 7 AND ARG 53 WERE FOUND TO       1BPI 116
+FTNOTE   1 OCCUPY TWO MAJOR SITES.  THESE ARE DENOTED BY THE ALTERNATE  1BPI 117
+FTNOTE   1 SITE INDICATORS *A* AND *B*.                                 1BPI 118
+HET    PO4     59      10     PHOSPHATE GROUP                           1BPI 119
+FORMUL   2  PO4    O4 P1 3-                                             1BPI 120
+FORMUL   3  HOH   *167(H2 O1)                                           1BPI 121
+HELIX    1  H1 PRO      2  GLU      7  5                                1BPI 122
+HELIX    2  H2 SER     47  GLY     56  1                                1BPI 123
+SHEET    1  S1 3 LEU    29  TYR    35  0                                1BPI 124
+SHEET    2  S1 3 ILE    18  ASN    24 -1                                1BPI 125
+SHEET    3  S1 3 PHE    45  PHE    45 -1                                1BPI 126
+SSBOND   1 CYS      5    CYS     55                                     1BPI 127
+SSBOND   2 CYS     14    CYS     38                                     1BPI 128
+SSBOND   3 CYS     30    CYS     51                                     1BPI 129
+CRYST1   75.390   22.581   28.600  90.00  90.00  90.00 P 21 21 21    4  1BPI 130
+ORIGX1      1.000000  0.000000  0.000000        0.00000                 1BPI 131
+ORIGX2      0.000000  1.000000  0.000000        0.00000                 1BPI 132
+ORIGX3      0.000000  0.000000  1.000000        0.00000                 1BPI 133
+SCALE1      0.013264  0.000000  0.000000        0.00000                 1BPI 134
+SCALE2      0.000000  0.044285  0.000000        0.00000                 1BPI 135
+SCALE3      0.000000  0.000000  0.034965        0.00000                 1BPI 136
+ATOM      1  N   ARG     1      31.758  13.358 -13.673  1.00 18.79      1BPI 137
+ATOM      2  CA  ARG     1      31.718  13.292 -12.188  1.00 14.26      1BPI 138
+ATOM      3  C   ARG     1      33.154  13.224 -11.664  1.00 18.25      1BPI 139
+ATOM      4  O   ARG     1      33.996  12.441 -12.225  1.00 20.10      1BPI 140
+ATOM      5  CB  ARG     1      30.886  12.103 -11.724  1.00 16.74      1BPI 141
+ATOM      6  CG  ARG     1      29.594  11.968 -12.534  1.00 15.96      1BPI 142
+ATOM      7  CD  ARG     1      28.700  13.182 -12.299  1.00 15.45      1BPI 143
+ATOM      8  NE  ARG     1      27.267  12.895 -12.546  1.00 12.82      1BPI 144
+ATOM      9  CZ  ARG     1      26.661  13.087 -13.727  1.00 17.38      1BPI 145
+ATOM     10  NH1 ARG     1      27.370  13.558 -14.735  1.00 18.38      1BPI 146
+ATOM     11  NH2 ARG     1      25.367  12.797 -13.838  1.00 25.73      1BPI 147
+ATOM     12  N   PRO     2      33.800  13.936 -10.586  1.00 17.07      1BPI 148
+ATOM     13  CA  PRO     2      34.976  13.367  -9.840  1.00 14.99      1BPI 149
+ATOM     14  C   PRO     2      34.960  11.922  -9.660  1.00 13.11      1BPI 150
+ATOM     15  O   PRO     2      33.962  11.306  -9.391  1.00 10.57      1BPI 151
+ATOM     16  CB  PRO     2      34.922  14.145  -8.523  1.00 15.81      1BPI 152
+ATOM     17  CG  PRO     2      34.058  15.391  -8.737  1.00 18.91      1BPI 153
+ATOM     18  CD  PRO     2      33.371  15.273 -10.096  1.00 19.41      1BPI 154
+ATOM     19  N   ASP     3      36.192  11.317  -9.707  1.00  8.73      1BPI 155
+ATOM     20  CA  ASP     3      36.395   9.971  -9.489  1.00  8.57      1BPI 156
+ATOM     21  C   ASP     3      35.764   9.467  -8.225  1.00  6.40      1BPI 157
+ATOM     22  O   ASP     3      35.190   8.349  -8.112  1.00  9.66      1BPI 158
+ATOM     23  CB  ASP     3      37.870   9.562  -9.575  1.00 20.87      1BPI 159
+ATOM     24  CG  ASP     3      38.726  10.453  -8.656  1.00 29.48      1BPI 160
+ATOM     25  OD1 ASP     3      38.363  11.444  -7.997  1.00 28.61      1BPI 161
+ATOM     26  OD2 ASP     3      40.110  10.093  -8.650  1.00 42.36      1BPI 162
+ATOM     27  N   PHE     4      35.968  10.299  -7.148  1.00  9.22      1BPI 163
+ATOM     28  CA  PHE     4      35.546   9.854  -5.800  1.00  9.46      1BPI 164
+ATOM     29  C   PHE     4      33.997   9.743  -5.796  1.00  7.19      1BPI 165
+ATOM     30  O   PHE     4      33.487   9.043  -4.911  1.00  9.30      1BPI 166
+ATOM     31  CB  PHE     4      36.060  10.653  -4.678  1.00 10.44      1BPI 167
+ATOM     32  CG  PHE     4      35.555  12.089  -4.652  1.00 12.50      1BPI 168
+ATOM     33  CD1 PHE     4      34.373  12.418  -4.078  1.00 10.29      1BPI 169
+ATOM     34  CD2 PHE     4      36.249  13.116  -5.257  1.00 17.50      1BPI 170
+ATOM     35  CE1 PHE     4      33.888  13.717  -4.071  1.00 11.93      1BPI 171
+ATOM     36  CE2 PHE     4      35.831  14.433  -5.230  1.00 15.26      1BPI 172
+ATOM     37  CZ  PHE     4      34.644  14.730  -4.606  1.00 14.72      1BPI 173
+ATOM     38  N   CYS     5      33.239  10.364  -6.649  1.00  5.41      1BPI 174
+ATOM     39  CA  CYS     5      31.773  10.208  -6.681  1.00  5.42      1BPI 175
+ATOM     40  C   CYS     5      31.396   8.841  -7.132  1.00  6.63      1BPI 176
+ATOM     41  O   CYS     5      30.234   8.461  -6.967  1.00  8.27      1BPI 177
+ATOM     42  CB  CYS     5      31.195  11.255  -7.630  1.00  7.57      1BPI 178
+ATOM     43  SG  CYS     5      31.456  12.942  -7.124  1.00  8.77      1BPI 179
+ATOM     44  N   LEU     6      32.324   8.103  -7.737  1.00  7.23      1BPI 180
+ATOM     45  CA  LEU     6      32.057   6.763  -8.279  1.00  6.56      1BPI 181
+ATOM     46  C   LEU     6      32.433   5.711  -7.177  1.00  8.19      1BPI 182
+ATOM     47  O   LEU     6      32.096   4.559  -7.354  1.00 10.09      1BPI 183
+ATOM     48  CB  LEU     6      32.872   6.422  -9.518  1.00  6.76      1BPI 184
+ATOM     49  CG  LEU     6      32.805   7.522 -10.586  1.00 10.94      1BPI 185
+ATOM     50  CD1 LEU     6      33.730   7.120 -11.745  1.00 14.50      1BPI 186
+ATOM     51  CD2 LEU     6      31.357   7.653 -11.072  1.00 14.22      1BPI 187
+ATOM     52  N   GLU     7      33.088   6.101  -6.107  1.00  9.52      1BPI 188
+ATOM     53  CA  GLU     7      33.503   5.118  -5.110  1.00  7.95      1BPI 189
+ATOM     54  C   GLU     7      32.331   4.717  -4.255  1.00  7.30      1BPI 190
+ATOM     55  O   GLU     7      31.398   5.561  -4.076  1.00  7.69      1BPI 191
+ATOM     56  CB  GLU     7      34.654   5.688  -4.245  1.00 13.15      1BPI 192
+ATOM     57  CG AGLU     7      34.258   7.092  -3.780  0.53 16.15   1  1BPI 193
+ATOM     58  CG BGLU     7      36.018   5.774  -4.941  0.47 10.67   1  1BPI 194
+ATOM     59  CD AGLU     7      35.177   7.646  -2.704  0.53 20.13   1  1BPI 195
+ATOM     60  CD BGLU     7      36.505   4.452  -5.506  0.47 10.51   1  1BPI 196
+ATOM     61  OE1AGLU     7      36.575   7.410  -2.792  0.53 23.92   1  1BPI 197
+ATOM     62  OE1BGLU     7      36.810   3.447  -4.858  0.47 14.83   1  1BPI 198
+ATOM     63  OE2AGLU     7      34.805   8.349  -1.761  0.53  8.32   1  1BPI 199
+ATOM     64  OE2BGLU     7      36.765   4.386  -6.905  0.47 18.17   1  1BPI 200
+ATOM     65  N   PRO     8      32.316   3.498  -3.803  1.00  6.94      1BPI 201
+ATOM     66  CA  PRO     8      31.203   3.087  -2.888  1.00  6.67      1BPI 202
+ATOM     67  C   PRO     8      31.233   3.835  -1.608  1.00  5.14      1BPI 203
+ATOM     68  O   PRO     8      32.287   4.219  -1.170  1.00  6.46      1BPI 204
+ATOM     69  CB  PRO     8      31.477   1.584  -2.673  1.00 10.69      1BPI 205
+ATOM     70  CG  PRO     8      32.921   1.316  -3.094  1.00 13.03      1BPI 206
+ATOM     71  CD  PRO     8      33.346   2.455  -4.030  1.00  9.28      1BPI 207
+ATOM     72  N   PRO     9      30.061   3.929  -1.034  1.00  5.01      1BPI 208
+ATOM     73  CA  PRO     9      30.040   4.583   0.324  1.00  5.85      1BPI 209
+ATOM     74  C   PRO     9      30.701   3.751   1.358  1.00  5.63      1BPI 210
+ATOM     75  O   PRO     9      30.613   2.527   1.269  1.00  7.20      1BPI 211
+ATOM     76  CB  PRO     9      28.509   4.637   0.609  1.00  7.06      1BPI 212
+ATOM     77  CG  PRO     9      27.884   3.498  -0.218  1.00  6.45      1BPI 213
+ATOM     78  CD  PRO     9      28.757   3.366  -1.477  1.00  6.45      1BPI 214
+ATOM     79  N   TYR    10      31.325   4.381   2.294  1.00  5.04      1BPI 215
+ATOM     80  CA  TYR    10      32.221   3.706   3.271  1.00  4.75      1BPI 216
+ATOM     81  C   TYR    10      31.664   3.912   4.643  1.00  5.13      1BPI 217
+ATOM     82  O   TYR    10      31.742   5.006   5.236  1.00  5.43      1BPI 218
+ATOM     83  CB  TYR    10      33.619   4.302   3.140  1.00  6.17      1BPI 219
+ATOM     84  CG  TYR    10      34.667   3.628   4.001  1.00  6.32      1BPI 220
+ATOM     85  CD1 TYR    10      34.990   2.262   3.722  1.00  7.69      1BPI 221
+ATOM     86  CD2 TYR    10      35.262   4.233   5.011  1.00  7.62      1BPI 222
+ATOM     87  CE1 TYR    10      36.017   1.639   4.505  1.00  7.80      1BPI 223
+ATOM     88  CE2 TYR    10      36.319   3.584   5.776  1.00  7.34      1BPI 224
+ATOM     89  CZ  TYR    10      36.630   2.292   5.464  1.00  7.76      1BPI 225
+ATOM     90  OH  TYR    10      37.664   1.602   6.173  1.00  9.34      1BPI 226
+ATOM     91  N   THR    11      31.160   2.847   5.194  1.00  5.50      1BPI 227
+ATOM     92  CA  THR    11      30.708   2.892   6.621  1.00  3.94      1BPI 228
+ATOM     93  C   THR    11      31.888   3.012   7.567  1.00  2.69      1BPI 229
+ATOM     94  O   THR    11      31.881   3.769   8.519  1.00  4.44      1BPI 230
+ATOM     95  CB  THR    11      29.889   1.646   6.943  1.00  4.71      1BPI 231
+ATOM     96  OG1 THR    11      28.678   1.681   6.180  1.00  5.03      1BPI 232
+ATOM     97  CG2 THR    11      29.568   1.553   8.428  1.00  4.97      1BPI 233
+ATOM     98  N   GLY    12      32.955   2.282   7.281  1.00  5.92      1BPI 234
+ATOM     99  CA  GLY    12      34.150   2.341   8.105  1.00  5.85      1BPI 235
+ATOM    100  C   GLY    12      34.047   1.474   9.372  1.00  5.68      1BPI 236
+ATOM    101  O   GLY    12      33.028   0.759   9.540  1.00  7.47      1BPI 237
+ATOM    102  N   PRO    13      35.082   1.522  10.177  1.00  6.41      1BPI 238
+ATOM    103  CA  PRO    13      35.214   0.473  11.251  1.00  6.71      1BPI 239
+ATOM    104  C   PRO    13      34.613   0.894  12.542  1.00  7.70      1BPI 240
+ATOM    105  O   PRO    13      34.607   0.131  13.473  1.00  8.81      1BPI 241
+ATOM    106  CB  PRO    13      36.771   0.439  11.408  1.00  8.58      1BPI 242
+ATOM    107  CG  PRO    13      37.246   1.868  11.062  1.00  8.57      1BPI 243
+ATOM    108  CD  PRO    13      36.304   2.342   9.936  1.00  6.68      1BPI 244
+ATOM    109  N   CYS    14      34.093   2.099  12.694  1.00  6.29      1BPI 245
+ATOM    110  CA  CYS    14      33.450   2.557  13.906  1.00  6.68      1BPI 246
+ATOM    111  C   CYS    14      32.003   2.205  13.922  1.00  5.65      1BPI 247
+ATOM    112  O   CYS    14      31.414   1.805  12.909  1.00  7.96      1BPI 248
+ATOM    113  CB  CYS    14      33.737   4.034  14.121  1.00  5.49      1BPI 249
+ATOM    114  SG  CYS    14      35.432   4.427  14.566  1.00  6.71      1BPI 250
+ATOM    115  N   LYS    15      31.394   2.219  15.052  1.00  8.49      1BPI 251
+ATOM    116  CA  LYS    15      30.060   1.519  15.286  1.00  6.50      1BPI 252
+ATOM    117  C   LYS    15      29.015   2.590  15.587  1.00  6.56      1BPI 253
+ATOM    118  O   LYS    15      27.920   2.159  16.060  1.00  9.28      1BPI 254
+ATOM    119  CB  LYS    15      30.206   0.575  16.484  1.00 13.06      1BPI 255
+ATOM    120  CG  LYS    15      31.207  -0.546  16.169  1.00 18.69      1BPI 256
+ATOM    121  CD  LYS    15      30.744  -1.333  14.937  1.00 29.77      1BPI 257
+ATOM    122  CE  LYS    15      31.861  -2.232  14.408  1.00 37.15      1BPI 258
+ATOM    123  NZ  LYS    15      31.623  -2.860  13.076  1.00 40.74      1BPI 259
+ATOM    124  N   ALA    16      29.137   3.873  15.297  1.00  6.12      1BPI 260
+ATOM    125  CA  ALA    16      27.983   4.795  15.219  1.00  5.08      1BPI 261
+ATOM    126  C   ALA    16      27.063   4.409  14.099  1.00  5.02      1BPI 262
+ATOM    127  O   ALA    16      27.432   3.638  13.165  1.00  5.25      1BPI 263
+ATOM    128  CB  ALA    16      28.446   6.248  15.003  1.00  5.61      1BPI 264
+ATOM    129  N   ARG    17      25.837   4.934  14.171  1.00  4.71      1BPI 265
+ATOM    130  CA  ARG    17      24.937   4.892  12.960  1.00  4.06      1BPI 266
+ATOM    131  C   ARG    17      24.593   6.346  12.611  1.00  5.40      1BPI 267
+ATOM    132  O   ARG    17      23.561   6.876  13.164  1.00  7.24      1BPI 268
+ATOM    133  CB  ARG    17      23.696   4.074  13.287  1.00  5.17      1BPI 269
+ATOM    134  CG  ARG    17      24.029   2.588  13.447  1.00  5.77      1BPI 270
+ATOM    135  CD  ARG    17      22.751   1.798  13.711  1.00  5.51      1BPI 271
+ATOM    136  NE  ARG    17      22.913   0.347  13.824  1.00  7.01      1BPI 272
+ATOM    137  CZ  ARG    17      21.864  -0.519  13.896  1.00  9.81      1BPI 273
+ATOM    138  NH1 ARG    17      20.639  -0.030  13.871  1.00 11.65      1BPI 274
+ATOM    139  NH2 ARG    17      22.147  -1.803  13.989  1.00  8.93      1BPI 275
+ATOM    140  N   ILE    18      25.382   6.939  11.789  1.00  3.99      1BPI 276
+ATOM    141  CA  ILE    18      25.160   8.307  11.397  1.00  4.84      1BPI 277
+ATOM    142  C   ILE    18      24.619   8.326   9.973  1.00  3.72      1BPI 278
+ATOM    143  O   ILE    18      25.307   7.821   9.044  1.00  4.94      1BPI 279
+ATOM    144  CB  ILE    18      26.456   9.143  11.473  1.00  6.53      1BPI 280
+ATOM    145  CG1 ILE    18      26.964   9.195  12.917  1.00  5.72      1BPI 281
+ATOM    146  CG2 ILE    18      26.165  10.562  10.972  1.00  4.95      1BPI 282
+ATOM    147  CD1 ILE    18      28.394   9.721  12.966  1.00  7.94      1BPI 283
+ATOM    148  N   ILE    19      23.489   8.776   9.687  1.00  5.06      1BPI 284
+ATOM    149  CA  ILE    19      22.916   8.759   8.372  1.00  5.42      1BPI 285
+ATOM    150  C   ILE    19      23.521   9.872   7.516  1.00  4.65      1BPI 286
+ATOM    151  O   ILE    19      23.403  11.061   7.898  1.00  6.51      1BPI 287
+ATOM    152  CB  ILE    19      21.397   8.876   8.397  1.00  7.02      1BPI 288
+ATOM    153  CG1 ILE    19      20.765   7.901   9.373  1.00  7.75      1BPI 289
+ATOM    154  CG2 ILE    19      20.825   8.716   6.990  1.00  7.16      1BPI 290
+ATOM    155  CD1 ILE    19      21.271   6.477   9.139  1.00 15.21      1BPI 291
+ATOM    156  N   ARG    20      24.123   9.501   6.394  1.00  3.92      1BPI 292
+ATOM    157  CA  ARG    20      24.780  10.455   5.493  1.00  3.37      1BPI 293
+ATOM    158  C   ARG    20      24.258  10.222   4.056  1.00  5.00      1BPI 294
+ATOM    159  O   ARG    20      23.663   9.120   3.816  1.00  4.81      1BPI 295
+ATOM    160  CB  ARG    20      26.301  10.273   5.542  1.00  3.25      1BPI 296
+ATOM    161  CG  ARG    20      26.902  10.693   6.873  1.00  4.37      1BPI 297
+ATOM    162  CD  ARG    20      26.997  12.219   6.970  1.00  3.48      1BPI 298
+ATOM    163  NE  ARG    20      27.460  12.717   8.280  1.00  4.28      1BPI 299
+ATOM    164  CZ  ARG    20      28.749  12.757   8.662  1.00  4.87      1BPI 300
+ATOM    165  NH1 ARG    20      29.711  12.418   7.830  1.00  5.39      1BPI 301
+ATOM    166  NH2 ARG    20      28.981  13.090   9.928  1.00  6.80      1BPI 302
+ATOM    167  N   TYR    21      24.534  11.161   3.181  1.00  3.67      1BPI 303
+ATOM    168  CA  TYR    21      24.255  10.953   1.755  1.00  3.13      1BPI 304
+ATOM    169  C   TYR    21      25.510  10.497   1.092  1.00  4.10      1BPI 305
+ATOM    170  O   TYR    21      26.635  10.894   1.473  1.00  4.45      1BPI 306
+ATOM    171  CB  TYR    21      23.743  12.259   1.145  1.00  4.01      1BPI 307
+ATOM    172  CG  TYR    21      22.251  12.455   1.321  1.00  3.71      1BPI 308
+ATOM    173  CD1 TYR    21      21.392  11.870   0.484  1.00  3.14      1BPI 309
+ATOM    174  CD2 TYR    21      21.779  13.257   2.363  1.00  5.29      1BPI 310
+ATOM    175  CE1 TYR    21      19.971  12.047   0.667  1.00  6.95      1BPI 311
+ATOM    176  CE2 TYR    21      20.371  13.476   2.517  1.00  5.25      1BPI 312
+ATOM    177  CZ  TYR    21      19.547  12.891   1.650  1.00  4.02      1BPI 313
+ATOM    178  OH  TYR    21      18.150  13.111   1.804  1.00  5.76      1BPI 314
+ATOM    179  N   PHE    22      25.367   9.692   0.032  1.00  3.54      1BPI 315
+ATOM    180  CA  PHE    22      26.407   9.350  -0.933  1.00  3.95      1BPI 316
+ATOM    181  C   PHE    22      25.791   9.503  -2.349  1.00  4.44      1BPI 317
+ATOM    182  O   PHE    22      24.596   9.292  -2.493  1.00  4.03      1BPI 318
+ATOM    183  CB  PHE    22      27.031   8.029  -0.754  1.00  4.53      1BPI 319
+ATOM    184  CG  PHE    22      26.140   6.855  -1.204  1.00  3.68      1BPI 320
+ATOM    185  CD1 PHE    22      25.029   6.463  -0.510  1.00  4.82      1BPI 321
+ATOM    186  CD2 PHE    22      26.467   6.137  -2.303  1.00  3.91      1BPI 322
+ATOM    187  CE1 PHE    22      24.190   5.436  -0.931  1.00  5.69      1BPI 323
+ATOM    188  CE2 PHE    22      25.692   5.048  -2.713  1.00  5.45      1BPI 324
+ATOM    189  CZ  PHE    22      24.557   4.696  -2.032  1.00  5.85      1BPI 325
+ATOM    190  N   TYR    23      26.663   9.729  -3.322  1.00  4.18      1BPI 326
+ATOM    191  CA  TYR    23      26.222   9.655  -4.723  1.00  3.28      1BPI 327
+ATOM    192  C   TYR    23      26.278   8.233  -5.168  1.00  4.45      1BPI 328
+ATOM    193  O   TYR    23      27.350   7.584  -5.215  1.00  4.66      1BPI 329
+ATOM    194  CB  TYR    23      27.094  10.572  -5.570  1.00  4.28      1BPI 330
+ATOM    195  CG  TYR    23      26.609  10.692  -7.009  1.00  5.55      1BPI 331
+ATOM    196  CD1 TYR    23      25.498  11.383  -7.291  1.00  5.32      1BPI 332
+ATOM    197  CD2 TYR    23      27.315  10.022  -8.039  1.00  5.36      1BPI 333
+ATOM    198  CE1 TYR    23      25.044  11.507  -8.666  1.00  6.21      1BPI 334
+ATOM    199  CE2 TYR    23      26.856  10.182  -9.394  1.00  7.50      1BPI 335
+ATOM    200  CZ  TYR    23      25.744  10.838  -9.638  1.00  6.40      1BPI 336
+ATOM    201  OH  TYR    23      25.303  10.997 -10.992  1.00  7.11      1BPI 337
+ATOM    202  N   ASN    24      25.104   7.714  -5.560  1.00  4.59      1BPI 338
+ATOM    203  CA  ASN    24      24.987   6.377  -6.165  1.00  4.35      1BPI 339
+ATOM    204  C   ASN    24      25.093   6.613  -7.659  1.00  3.76      1BPI 340
+ATOM    205  O   ASN    24      24.139   7.026  -8.322  1.00  4.00      1BPI 341
+ATOM    206  CB  ASN    24      23.638   5.768  -5.782  1.00  5.04      1BPI 342
+ATOM    207  CG  ASN    24      23.424   4.416  -6.460  1.00  4.55      1BPI 343
+ATOM    208  OD1 ASN    24      24.129   4.066  -7.420  1.00  6.69      1BPI 344
+ATOM    209  ND2 ASN    24      22.485   3.638  -5.980  1.00  7.62      1BPI 345
+ATOM    210  N   ALA    25      26.251   6.386  -8.231  1.00  5.45      1BPI 346
+ATOM    211  CA  ALA    25      26.523   6.696  -9.645  1.00  5.26      1BPI 347
+ATOM    212  C   ALA    25      25.790   5.794 -10.587  1.00  4.87      1BPI 348
+ATOM    213  O   ALA    25      25.458   6.181 -11.736  1.00  6.32      1BPI 349
+ATOM    214  CB  ALA    25      28.023   6.706  -9.967  1.00  8.36      1BPI 350
+ATOM    215  N   LYS    26      25.432   4.578 -10.175  1.00  5.97      1BPI 351
+ATOM    216  CA  LYS    26      24.589   3.610 -10.998  1.00  5.22      1BPI 352
+ATOM    217  C   LYS    26      23.202   4.182 -11.136  1.00  4.19      1BPI 353
+ATOM    218  O   LYS    26      22.600   4.130 -12.244  1.00  5.21      1BPI 354
+ATOM    219  CB  LYS    26      24.608   2.233 -10.341  1.00  6.87      1BPI 355
+ATOM    220  CG  LYS    26      23.895   1.193 -11.212  1.00  6.71      1BPI 356
+ATOM    221  CD  LYS    26      23.810  -0.143 -10.459  1.00  8.59      1BPI 357
+ATOM    222  CE  LYS    26      23.170  -1.222 -11.332  1.00  9.36      1BPI 358
+ATOM    223  NZ  LYS    26      22.865  -2.492 -10.596  1.00 10.51      1BPI 359
+ATOM    224  N   ALA    27      22.624   4.768 -10.079  1.00  5.10      1BPI 360
+ATOM    225  CA  ALA    27      21.262   5.357 -10.070  1.00  5.32      1BPI 361
+ATOM    226  C   ALA    27      21.278   6.778 -10.559  1.00  4.33      1BPI 362
+ATOM    227  O   ALA    27      20.189   7.314 -10.948  1.00  5.89      1BPI 363
+ATOM    228  CB  ALA    27      20.712   5.302  -8.625  1.00  5.58      1BPI 364
+ATOM    229  N   GLY    28      22.435   7.475 -10.470  1.00  4.55      1BPI 365
+ATOM    230  CA  GLY    28      22.442   8.873 -10.837  1.00  5.41      1BPI 366
+ATOM    231  C   GLY    28      21.801   9.754  -9.722  1.00  5.15      1BPI 367
+ATOM    232  O   GLY    28      21.318  10.862 -10.084  1.00  6.54      1BPI 368
+ATOM    233  N   LEU    29      21.749   9.342  -8.472  1.00  5.23      1BPI 369
+ATOM    234  CA  LEU    29      21.000   9.960  -7.382  1.00  3.74      1BPI 370
+ATOM    235  C   LEU    29      21.903   9.890  -6.098  1.00  4.10      1BPI 371
+ATOM    236  O   LEU    29      22.463   8.858  -5.844  1.00  4.82      1BPI 372
+ATOM    237  CB  LEU    29      19.724   9.158  -7.049  1.00  6.38      1BPI 373
+ATOM    238  CG  LEU    29      18.720   9.219  -8.192  1.00  4.96      1BPI 374
+ATOM    239  CD1 LEU    29      17.598   8.213  -7.943  1.00  7.67      1BPI 375
+ATOM    240  CD2 LEU    29      18.158  10.639  -8.314  1.00 10.24      1BPI 376
+ATOM    241  N   CYS    30      21.772  10.963  -5.323  1.00  3.88      1BPI 377
+ATOM    242  CA  CYS    30      22.257  10.927  -3.921  1.00  3.04      1BPI 378
+ATOM    243  C   CYS    30      21.283  10.194  -3.076  1.00  5.39      1BPI 379
+ATOM    244  O   CYS    30      20.063  10.500  -3.140  1.00  6.25      1BPI 380
+ATOM    245  CB  CYS    30      22.480  12.359  -3.449  1.00  5.51      1BPI 381
+ATOM    246  SG  CYS    30      23.777  13.225  -4.312  1.00  6.79      1BPI 382
+ATOM    247  N   GLN    31      21.764   9.276  -2.249  1.00  4.98      1BPI 383
+ATOM    248  CA  GLN    31      20.962   8.417  -1.416  1.00  5.21      1BPI 384
+ATOM    249  C   GLN    31      21.582   8.329  -0.036  1.00  4.77      1BPI 385
+ATOM    250  O   GLN    31      22.732   8.707   0.145  1.00  4.96      1BPI 386
+ATOM    251  CB  GLN    31      20.877   7.013  -2.047  1.00  5.51      1BPI 387
+ATOM    252  CG  GLN    31      20.183   7.130  -3.406  1.00  4.59      1BPI 388
+ATOM    253  CD  GLN    31      20.162   5.733  -4.052  1.00  6.39      1BPI 389
+ATOM    254  OE1 GLN    31      20.908   4.798  -3.896  1.00  7.58      1BPI 390
+ATOM    255  NE2 GLN    31      19.068   5.614  -5.028  1.00  9.82      1BPI 391
+ATOM    256  N   THR    32      20.788   7.822   0.948  1.00  4.70      1BPI 392
+ATOM    257  CA  THR    32      21.348   7.626   2.294  1.00  4.17      1BPI 393
+ATOM    258  C   THR    32      22.131   6.362   2.443  1.00  3.70      1BPI 394
+ATOM    259  O   THR    32      21.871   5.328   1.806  1.00  5.30      1BPI 395
+ATOM    260  CB  THR    32      20.242   7.713   3.358  1.00  4.49      1BPI 396
+ATOM    261  OG1 THR    32      19.369   6.586   3.229  1.00  6.20      1BPI 397
+ATOM    262  CG2 THR    32      19.449   8.994   3.280  1.00  5.27      1BPI 398
+ATOM    263  N   PHE    33      23.092   6.402   3.368  1.00  4.31      1BPI 399
+ATOM    264  CA  PHE    33      23.838   5.244   3.857  1.00  4.91      1BPI 400
+ATOM    265  C   PHE    33      24.152   5.472   5.362  1.00  3.17      1BPI 401
+ATOM    266  O   PHE    33      24.059   6.583   5.825  1.00  4.89      1BPI 402
+ATOM    267  CB  PHE    33      25.021   4.874   3.085  1.00  4.75      1BPI 403
+ATOM    268  CG  PHE    33      26.258   5.718   3.351  1.00  5.11      1BPI 404
+ATOM    269  CD1 PHE    33      26.362   7.013   2.940  1.00  4.52      1BPI 405
+ATOM    270  CD2 PHE    33      27.324   5.197   4.045  1.00  5.02      1BPI 406
+ATOM    271  CE1 PHE    33      27.466   7.822   3.164  1.00  4.95      1BPI 407
+ATOM    272  CE2 PHE    33      28.435   5.989   4.294  1.00  5.24      1BPI 408
+ATOM    273  CZ  PHE    33      28.516   7.282   3.844  1.00  5.81      1BPI 409
+ATOM    274  N   VAL    34      24.594   4.495   6.028  1.00  3.89      1BPI 410
+ATOM    275  CA  VAL    34      24.980   4.529   7.385  1.00  4.15      1BPI 411
+ATOM    276  C   VAL    34      26.512   4.572   7.504  1.00  4.36      1BPI 412
+ATOM    277  O   VAL    34      27.246   3.734   7.106  1.00  5.64      1BPI 413
+ATOM    278  CB  VAL    34      24.442   3.352   8.201  1.00  6.46      1BPI 414
+ATOM    279  CG1 VAL    34      24.801   3.588   9.672  1.00  8.58      1BPI 415
+ATOM    280  CG2 VAL    34      22.953   3.160   7.960  1.00  8.94      1BPI 416
+ATOM    281  N   TYR    35      26.948   5.718   8.103  1.00  3.92      1BPI 417
+ATOM    282  CA  TYR    35      28.375   5.996   8.396  1.00  4.40      1BPI 418
+ATOM    283  C   TYR    35      28.623   5.652   9.822  1.00  3.90      1BPI 419
+ATOM    284  O   TYR    35      27.909   5.987  10.766  1.00  4.69      1BPI 420
+ATOM    285  CB  TYR    35      28.634   7.455   8.065  1.00  4.91      1BPI 421
+ATOM    286  CG  TYR    35      29.975   7.980   8.550  1.00  4.60      1BPI 422
+ATOM    287  CD1 TYR    35      31.166   7.306   8.223  1.00  5.77      1BPI 423
+ATOM    288  CD2 TYR    35      30.010   9.098   9.295  1.00  6.11      1BPI 424
+ATOM    289  CE1 TYR    35      32.418   7.872   8.616  1.00  5.70      1BPI 425
+ATOM    290  CE2 TYR    35      31.283   9.625   9.723  1.00  6.09      1BPI 426
+ATOM    291  CZ  TYR    35      32.417   8.949   9.413  1.00  5.79      1BPI 427
+ATOM    292  OH  TYR    35      33.687   9.421   9.834  1.00  6.99      1BPI 428
+ATOM    293  N   GLY    36      29.767   4.922  10.050  1.00  4.28      1BPI 429
+ATOM    294  CA  GLY    36      30.130   4.420  11.352  1.00  5.46      1BPI 430
+ATOM    295  C   GLY    36      30.833   5.488  12.249  1.00  4.91      1BPI 431
+ATOM    296  O   GLY    36      31.022   5.153  13.449  1.00  5.90      1BPI 432
+ATOM    297  N   GLY    37      31.155   6.660  11.778  1.00  6.07      1BPI 433
+ATOM    298  CA  GLY    37      31.552   7.727  12.677  1.00  6.31      1BPI 434
+ATOM    299  C   GLY    37      33.092   7.977  12.705  1.00  7.18      1BPI 435
+ATOM    300  O   GLY    37      33.471   8.986  13.402  1.00  7.47      1BPI 436
+ATOM    301  N   CYS    38      33.879   7.245  12.032  1.00  4.90      1BPI 437
+ATOM    302  CA  CYS    38      35.282   7.502  11.824  1.00  5.55      1BPI 438
+ATOM    303  C   CYS    38      35.767   7.131  10.471  1.00  6.78      1BPI 439
+ATOM    304  O   CYS    38      35.197   6.242   9.811  1.00  6.12      1BPI 440
+ATOM    305  CB  CYS    38      36.123   6.888  12.935  1.00  5.90      1BPI 441
+ATOM    306  SG  CYS    38      36.284   5.103  12.857  1.00  6.59      1BPI 442
+ATOM    307  N   ARG    39      36.879   7.812  10.077  1.00  7.19      1BPI 443
+ATOM    308  CA  ARG    39      37.594   7.450   8.817  1.00  8.74      1BPI 444
+ATOM    309  C   ARG    39      36.722   7.536   7.618  1.00  8.56      1BPI 445
+ATOM    310  O   ARG    39      36.805   6.798   6.619  1.00  7.62      1BPI 446
+ATOM    311  CB  ARG    39      38.314   6.119   9.013  1.00  9.67      1BPI 447
+ATOM    312  CG  ARG    39      39.180   6.175  10.276  1.00 13.93      1BPI 448
+ATOM    313  CD  ARG    39      40.119   4.989  10.401  1.00 21.33      1BPI 449
+ATOM    314  NE  ARG    39      41.069   5.097  11.557  1.00 22.69      1BPI 450
+ATOM    315  CZ  ARG    39      42.010   4.191  11.873  1.00 24.00      1BPI 451
+ATOM    316  NH1 ARG    39      41.870   2.926  11.524  1.00 16.96      1BPI 452
+ATOM    317  NH2 ARG    39      43.084   4.612  12.554  1.00 27.69      1BPI 453
+ATOM    318  N   ALA    40      35.951   8.639   7.591  1.00  6.12      1BPI 454
+ATOM    319  CA  ALA    40      35.127   8.957   6.406  1.00  6.53      1BPI 455
+ATOM    320  C   ALA    40      35.916   8.994   5.141  1.00  6.75      1BPI 456
+ATOM    321  O   ALA    40      37.118   9.483   5.149  1.00  9.60      1BPI 457
+ATOM    322  CB  ALA    40      34.393  10.288   6.626  1.00  7.37      1BPI 458
+ATOM    323  N   LYS    41      35.339   8.616   4.051  1.00  5.51      1BPI 459
+ATOM    324  CA  LYS    41      35.848   8.913   2.669  1.00  6.35      1BPI 460
+ATOM    325  C   LYS    41      35.133  10.082   2.052  1.00  5.60      1BPI 461
+ATOM    326  O   LYS    41      34.270  10.715   2.724  1.00  6.81      1BPI 462
+ATOM    327  CB  LYS    41      35.724   7.659   1.810  1.00  8.11      1BPI 463
+ATOM    328  CG  LYS    41      36.621   6.550   2.389  1.00  8.91      1BPI 464
+ATOM    329  CD  LYS    41      36.718   5.411   1.379  1.00 12.03      1BPI 465
+ATOM    330  CE  LYS    41      37.434   4.201   1.952  1.00 14.97      1BPI 466
+ATOM    331  NZ  LYS    41      38.814   4.432   2.445  1.00 17.38      1BPI 467
+ATOM    332  N   ARG    42      35.464  10.465   0.862  1.00  5.71      1BPI 468
+ATOM    333  CA  ARG    42      35.005  11.760   0.288  1.00  6.16      1BPI 469
+ATOM    334  C   ARG    42      33.516  11.620  -0.121  1.00  5.48      1BPI 470
+ATOM    335  O   ARG    42      32.808  12.655  -0.119  1.00  7.12      1BPI 471
+ATOM    336  CB  ARG    42      35.860  12.077  -0.938  1.00  8.55      1BPI 472
+ATOM    337  CG  ARG    42      37.270  12.512  -0.542  1.00 11.12      1BPI 473
+ATOM    338  CD  ARG    42      38.028  13.042  -1.767  1.00 13.84      1BPI 474
+ATOM    339  NE  ARG    42      37.427  14.336  -2.250  1.00 23.40      1BPI 475
+ATOM    340  CZ  ARG    42      38.044  15.131  -3.155  1.00 24.19      1BPI 476
+ATOM    341  NH1 ARG    42      39.045  14.598  -3.841  1.00 18.98      1BPI 477
+ATOM    342  NH2 ARG    42      37.670  16.400  -3.246  1.00 19.15      1BPI 478
+ATOM    343  N   ASN    43      33.002  10.438  -0.584  1.00  5.62      1BPI 479
+ATOM    344  CA  ASN    43      31.592  10.282  -1.063  1.00  5.16      1BPI 480
+ATOM    345  C   ASN    43      30.720  10.069   0.138  1.00  3.78      1BPI 481
+ATOM    346  O   ASN    43      30.185   8.988   0.426  1.00  4.77      1BPI 482
+ATOM    347  CB  ASN    43      31.517   9.109  -2.037  1.00  5.40      1BPI 483
+ATOM    348  CG  ASN    43      30.166   9.118  -2.766  1.00  2.76      1BPI 484
+ATOM    349  OD1 ASN    43      29.384  10.062  -2.624  1.00  4.58      1BPI 485
+ATOM    350  ND2 ASN    43      29.914   8.132  -3.576  1.00  4.71      1BPI 486
+ATOM    351  N   ASN    44      30.639  11.183   0.956  1.00  4.26      1BPI 487
+ATOM    352  CA  ASN    44      29.991  11.142   2.288  1.00  4.28      1BPI 488
+ATOM    353  C   ASN    44      29.613  12.597   2.543  1.00  4.23      1BPI 489
+ATOM    354  O   ASN    44      30.517  13.459   2.676  1.00  5.21      1BPI 490
+ATOM    355  CB  ASN    44      30.997  10.633   3.304  1.00  4.39      1BPI 491
+ATOM    356  CG  ASN    44      30.448  10.600   4.728  1.00  4.27      1BPI 492
+ATOM    357  OD1 ASN    44      29.654  11.459   5.122  1.00  5.04      1BPI 493
+ATOM    358  ND2 ASN    44      30.903   9.694   5.556  1.00  4.38      1BPI 494
+ATOM    359  N   PHE    45      28.313  12.880   2.580  1.00  3.50      1BPI 495
+ATOM    360  CA  PHE    45      27.751  14.254   2.590  1.00  3.31      1BPI 496
+ATOM    361  C   PHE    45      26.751  14.337   3.737  1.00  5.80      1BPI 497
+ATOM    362  O   PHE    45      25.952  13.460   3.959  1.00  5.60      1BPI 498
+ATOM    363  CB  PHE    45      27.193  14.669   1.313  1.00  4.46      1BPI 499
+ATOM    364  CG  PHE    45      28.146  14.551   0.127  1.00  4.23      1BPI 500
+ATOM    365  CD1 PHE    45      29.031  15.567  -0.171  1.00  6.30      1BPI 501
+ATOM    366  CD2 PHE    45      28.190  13.436  -0.636  1.00  4.89      1BPI 502
+ATOM    367  CE1 PHE    45      29.950  15.484  -1.208  1.00  6.42      1BPI 503
+ATOM    368  CE2 PHE    45      29.083  13.328  -1.704  1.00  5.80      1BPI 504
+ATOM    369  CZ  PHE    45      29.926  14.385  -2.001  1.00  6.80      1BPI 505
+ATOM    370  N   LYS    46      26.771  15.527   4.322  1.00  4.99      1BPI 506
+ATOM    371  CA  LYS    46      25.755  15.751   5.418  1.00  4.38      1BPI 507
+ATOM    372  C   LYS    46      24.430  16.164   4.804  1.00  6.22      1BPI 508
+ATOM    373  O   LYS    46      23.434  16.160   5.609  1.00  7.16      1BPI 509
+ATOM    374  CB  LYS    46      26.287  16.840   6.353  1.00  6.13      1BPI 510
+ATOM    375  CG  LYS    46      27.497  16.293   7.135  1.00  8.21      1BPI 511
+ATOM    376  CD  LYS    46      28.010  17.351   8.112  1.00 10.81      1BPI 512
+ATOM    377  CE  LYS    46      29.356  16.926   8.706  1.00 12.28      1BPI 513
+ATOM    378  NZ  LYS    46      29.752  17.643   9.952  1.00 11.61      1BPI 514
+ATOM    379  N   SER    47      24.294  16.552   3.599  1.00  5.11      1BPI 515
+ATOM    380  CA  SER    47      23.070  16.999   2.981  1.00  5.61      1BPI 516
+ATOM    381  C   SER    47      22.984  16.510   1.541  1.00  4.92      1BPI 517
+ATOM    382  O   SER    47      23.994  16.290   0.866  1.00  4.27      1BPI 518
+ATOM    383  CB  SER    47      22.820  18.508   3.032  1.00  5.62      1BPI 519
+ATOM    384  OG  SER    47      23.751  19.058   2.109  1.00  6.10      1BPI 520
+ATOM    385  N   ALA    48      21.776  16.361   1.032  1.00  5.15      1BPI 521
+ATOM    386  CA  ALA    48      21.515  16.098  -0.393  1.00  4.95      1BPI 522
+ATOM    387  C   ALA    48      22.043  17.212  -1.268  1.00  5.16      1BPI 523
+ATOM    388  O   ALA    48      22.521  16.887  -2.416  1.00  5.81      1BPI 524
+ATOM    389  CB  ALA    48      19.997  15.965  -0.626  1.00  7.60      1BPI 525
+ATOM    390  N   GLU    49      21.970  18.469  -0.812  1.00  5.27      1BPI 526
+ATOM    391  CA  GLU    49      22.473  19.577  -1.650  1.00  6.07      1BPI 527
+ATOM    392  C   GLU    49      23.967  19.489  -1.780  1.00  6.19      1BPI 528
+ATOM    393  O   GLU    49      24.546  19.858  -2.837  1.00  6.82      1BPI 529
+ATOM    394  CB  GLU    49      22.061  20.916  -1.001  1.00  6.32      1BPI 530
+ATOM    395  CG  GLU    49      20.557  21.133  -1.142  1.00  8.18      1BPI 531
+ATOM    396  CD  GLU    49      19.779  20.337  -0.095  1.00  8.06      1BPI 532
+ATOM    397  OE1 GLU    49      20.230  19.867   0.958  1.00 10.53      1BPI 533
+ATOM    398  OE2 GLU    49      18.425  20.055  -0.379  1.00 10.96      1BPI 534
+ATOM    399  N   ASP    50      24.719  19.197  -0.693  1.00  5.06      1BPI 535
+ATOM    400  CA  ASP    50      26.120  19.076  -0.743  1.00  6.43      1BPI 536
+ATOM    401  C   ASP    50      26.502  18.036  -1.768  1.00  5.33      1BPI 537
+ATOM    402  O   ASP    50      27.432  18.098  -2.602  1.00  5.52      1BPI 538
+ATOM    403  CB  ASP    50      26.726  18.722   0.625  1.00  6.61      1BPI 539
+ATOM    404  CG  ASP    50      26.639  19.916   1.590  1.00  8.07      1BPI 540
+ATOM    405  OD1 ASP    50      26.302  21.082   1.296  1.00  7.92      1BPI 541
+ATOM    406  OD2 ASP    50      27.029  19.609   2.921  1.00  9.99      1BPI 542
+ATOM    407  N   CYS    51      25.796  16.839  -1.641  1.00  4.32      1BPI 543
+ATOM    408  CA  CYS    51      26.050  15.720  -2.551  1.00  3.47      1BPI 544
+ATOM    409  C   CYS    51      25.771  16.066  -3.961  1.00  4.90      1BPI 545
+ATOM    410  O   CYS    51      26.565  15.754  -4.865  1.00  5.88      1BPI 546
+ATOM    411  CB  CYS    51      25.224  14.529  -2.059  1.00  3.72      1BPI 547
+ATOM    412  SG  CYS    51      25.341  13.057  -3.044  1.00  6.26      1BPI 548
+ATOM    413  N   MET    52      24.685  16.735  -4.258  1.00  4.48      1BPI 549
+ATOM    414  CA  MET    52      24.365  17.118  -5.651  1.00  5.24      1BPI 550
+ATOM    415  C   MET    52      25.358  18.101  -6.194  1.00  5.65      1BPI 551
+ATOM    416  O   MET    52      25.801  17.989  -7.376  1.00  7.13      1BPI 552
+ATOM    417  CB  MET    52      22.947  17.684  -5.652  1.00  7.64      1BPI 553
+ATOM    418  CG  MET    52      22.627  18.350  -6.991  1.00  8.08      1BPI 554
+ATOM    419  SD  MET    52      22.405  17.203  -8.358  1.00 10.28      1BPI 555
+ATOM    420  CE  MET    52      20.684  16.772  -8.038  1.00 12.68      1BPI 556
+ATOM    421  N   ARG    53      25.786  19.040  -5.391  1.00  7.32      1BPI 557
+ATOM    422  CA  ARG    53      26.701  20.079  -5.936  1.00  8.48      1BPI 558
+ATOM    423  C   ARG    53      28.029  19.407  -6.276  1.00  7.86      1BPI 559
+ATOM    424  O   ARG    53      28.663  19.767  -7.326  1.00  9.19      1BPI 560
+ATOM    425  CB  ARG    53      26.862  21.149  -4.861  1.00 11.26      1BPI 561
+ATOM    426  CG AARG    53      27.936  22.224  -5.014  0.78 10.51   1  1BPI 562
+ATOM    427  CG BARG    53      26.650  22.553  -5.417  0.22 11.59   1  1BPI 563
+ATOM    428  CD AARG    53      28.175  22.894  -3.648  0.78  8.42   1  1BPI 564
+ATOM    429  CD BARG    53      26.144  23.497  -4.324  0.22  9.68   1  1BPI 565
+ATOM    430  NE  ARG    53      26.915  23.431  -3.065  1.00  8.84      1BPI 566
+ATOM    431  CZ  ARG    53      26.414  23.109  -1.864  1.00  6.54      1BPI 567
+ATOM    432  NH1 ARG    53      25.143  23.370  -1.615  1.00  9.34      1BPI 568
+ATOM    433  NH2 ARG    53      27.207  22.513  -0.977  1.00  9.74      1BPI 569
+ATOM    434  N   THR    54      28.442  18.474  -5.520  1.00  7.19      1BPI 570
+ATOM    435  CA  THR    54      29.804  17.916  -5.717  1.00  6.85      1BPI 571
+ATOM    436  C   THR    54      29.758  16.845  -6.812  1.00  6.50      1BPI 572
+ATOM    437  O   THR    54      30.661  16.810  -7.648  1.00  8.75      1BPI 573
+ATOM    438  CB  THR    54      30.344  17.314  -4.424  1.00  9.19      1BPI 574
+ATOM    439  OG1 THR    54      30.293  18.270  -3.362  1.00  8.71      1BPI 575
+ATOM    440  CG2 THR    54      31.759  16.782  -4.585  1.00  9.92      1BPI 576
+ATOM    441  N   CYS    55      28.696  16.005  -6.811  1.00  7.34      1BPI 577
+ATOM    442  CA  CYS    55      28.650  14.780  -7.571  1.00  5.84      1BPI 578
+ATOM    443  C   CYS    55      27.590  14.738  -8.610  1.00  6.76      1BPI 579
+ATOM    444  O   CYS    55      27.589  13.726  -9.376  1.00  8.16      1BPI 580
+ATOM    445  CB  CYS    55      28.579  13.580  -6.633  1.00  5.58      1BPI 581
+ATOM    446  SG  CYS    55      30.061  13.221  -5.711  1.00  7.77      1BPI 582
+ATOM    447  N   GLY    56      26.641  15.603  -8.687  1.00  6.49      1BPI 583
+ATOM    448  CA  GLY    56      25.573  15.468  -9.643  1.00  7.90      1BPI 584
+ATOM    449  C   GLY    56      25.908  16.014 -11.064  1.00  9.11      1BPI 585
+ATOM    450  O   GLY    56      25.049  15.834 -11.970  1.00  9.70      1BPI 586
+ATOM    451  N   GLY    57      27.126  16.610 -11.334  1.00  8.49      1BPI 587
+ATOM    452  CA  GLY    57      27.421  16.842 -12.739  1.00 11.67      1BPI 588
+ATOM    453  C   GLY    57      26.995  18.257 -13.233  1.00 10.67      1BPI 589
+ATOM    454  O   GLY    57      26.571  19.080 -12.375  1.00 12.78      1BPI 590
+ATOM    455  N   ALA    58      27.094  18.552 -14.497  1.00 12.78      1BPI 591
+ATOM    456  CA  ALA    58      27.057  19.958 -14.967  1.00 11.48      1BPI 592
+ATOM    457  C   ALA    58      25.655  20.526 -14.818  1.00  9.41      1BPI 593
+ATOM    458  O   ALA    58      24.685  19.688 -15.053  1.00 10.51      1BPI 594
+ATOM    459  CB  ALA    58      27.436  19.990 -16.463  1.00 10.69      1BPI 595
+ATOM    460  OXT ALA    58      25.472  21.810 -14.573  1.00 13.71      1BPI 596
+TER     461      ALA    58                                              1BPI 597
+HETATM  462  P  APO4    59      32.962  13.132  10.119  0.50  5.92      1BPI 598
+HETATM  463  P  BPO4    59      29.958  16.129  12.915  0.50  5.57      1BPI 599
+HETATM  464  O1 APO4    59      33.760  14.473  10.152  0.50  9.79      1BPI 600
+HETATM  465  O1 BPO4    59      29.724  14.854  13.705  0.50  8.01      1BPI 601
+HETATM  466  O2 APO4    59      31.682  13.269  11.001  0.50  5.83      1BPI 602
+HETATM  467  O2 BPO4    59      28.639  16.699  12.332  0.50  5.33      1BPI 603
+HETATM  468  O3 APO4    59      32.284  12.885   8.756  0.50  6.43      1BPI 604
+HETATM  469  O3 BPO4    59      30.913  15.685  11.772  0.50 10.05      1BPI 605
+HETATM  470  O4 APO4    59      33.742  11.884  10.748  0.50  3.36      1BPI 606
+HETATM  471  O4 BPO4    59      30.656  17.191  13.739  0.50 10.09      1BPI 607
+HETATM  472  O   HOH    60      33.450   4.286  10.777  1.00  5.37      1BPI 608
+HETATM  473  O   HOH    61      32.579   7.506   4.391  1.00  5.08      1BPI 609
+HETATM  474  O   HOH    62      31.767   7.215   1.777  1.00  7.28      1BPI 610
+HETATM  475  O   HOH    63      25.782   8.796 -12.430  1.00  7.69      1BPI 611
+HETATM  476  O   HOH    64      27.341   0.880  12.582  1.00  9.98      1BPI 612
+HETATM  477  O   HOH    65      20.967   6.216  13.162  1.00  8.02      1BPI 613
+HETATM  478  O   HOH    66      26.231  23.406   2.891  1.00  9.39      1BPI 614
+HETATM  479  O   HOH    67      20.228   4.577 -13.432  1.00  7.64      1BPI 615
+HETATM  480  O   HOH    68      19.564  17.004   2.779  1.00  9.01      1BPI 616
+HETATM  481  O   HOH    69      23.752  19.782   6.647  1.00 10.45      1BPI 617
+HETATM  482  O   HOH    70      20.690  13.487  -6.239  0.80  6.02      1BPI 618
+HETATM  483  O   HOH    71      21.717  14.279  -6.622  0.20  5.41      1BPI 619
+HETATM  484  O   HOH    72      17.644  18.608  -2.610  1.00 10.32      1BPI 620
+HETATM  485  O   HOH    73      33.312   6.677  -0.313  1.00  9.06      1BPI 621
+HETATM  486  O   HOH    74      25.551  -3.256  -9.787  1.00  9.73      1BPI 622
+HETATM  487  O   HOH    75      23.635   9.688 -13.977  1.00 11.49      1BPI 623
+HETATM  488  O   HOH    76      38.905   6.042   5.116  1.00 13.44      1BPI 624
+HETATM  489  O   HOH    77      23.262  24.111  -3.574  1.00 10.99      1BPI 625
+HETATM  490  O   HOH    78      24.158  23.642   1.150  1.00  8.82      1BPI 626
+HETATM  491  O   HOH    79      28.518  17.461   3.380  1.00 10.33      1BPI 627
+HETATM  492  O   HOH    80      16.788   6.705   2.356  1.00 12.22      1BPI 628
+HETATM  493  O   HOH    81      20.639  15.532  -4.245  1.00 11.30      1BPI 629
+HETATM  494  O   HOH    82      21.462   1.241  -7.541  1.00  9.47      1BPI 630
+HETATM  495  O   HOH    83      23.321  21.651   2.896  1.00  9.05      1BPI 631
+HETATM  496  O   HOH    84      23.113  21.563  -4.595  1.00 11.12      1BPI 632
+HETATM  497  O   HOH    85      32.796  -0.093   5.603  1.00 15.48      1BPI 633
+HETATM  498  O   HOH    86      32.855   2.965  17.521  1.00 11.31      1BPI 634
+HETATM  499  O   HOH    87      17.255  13.725  -0.926  1.00  9.69      1BPI 635
+HETATM  500  O   HOH    88      20.364   4.533   4.891  1.00 14.86      1BPI 636
+HETATM  501  O   HOH    89      22.211  10.470  11.861  1.00 12.18      1BPI 637
+HETATM  502  O   HOH    90      18.230   4.519   9.484  1.00 11.74      1BPI 638
+HETATM  503  O   HOH    91      18.937  -1.745  12.116  1.00 14.34      1BPI 639
+HETATM  504  O   HOH    92      17.954   7.101   0.041  1.00  8.53      1BPI 640
+HETATM  505  O   HOH    93      25.023  19.256   9.060  1.00 11.39      1BPI 641
+HETATM  506  O   HOH    94      16.718   7.475  -4.617  1.00 10.92      1BPI 642
+HETATM  507  O   HOH    95      40.687   1.620   9.818  1.00 14.63      1BPI 643
+HETATM  508  O   HOH    96      24.477   1.662   4.966  1.00  8.21      1BPI 644
+HETATM  509  O   HOH    97      38.859  10.797   6.795  1.00 14.31      1BPI 645
+HETATM  510  O   HOH    98      21.303   2.875  -1.978  1.00 12.45      1BPI 646
+HETATM  511  O   HOH    99      30.614  14.848   5.304  1.00 12.95      1BPI 647
+HETATM  512  O   HOH   100      24.015  17.294 -14.038  1.00 12.84      1BPI 648
+HETATM  513  O   HOH   101      37.849   9.897  11.643  1.00 17.23      1BPI 649
+HETATM  514  O   HOH   102      38.868  17.338  -5.755  0.53 10.37      1BPI 650
+HETATM  515  O   HOH   103      27.138  21.009 -19.842  1.00  9.48      1BPI 651
+HETATM  516  O   HOH   104      35.692  -2.987  10.080  1.00 15.48      1BPI 652
+HETATM  517  O   HOH   105      37.749   9.232  -0.516  1.00 11.58      1BPI 653
+HETATM  518  O   HOH   106      25.515  24.968  -5.020  0.78 10.67      1BPI 654
+HETATM  519  O   HOH   107      28.566   1.752   3.272  1.00 12.87      1BPI 655
+HETATM  520  O   HOH   108      20.549  -1.967  -8.720  1.00 13.42      1BPI 656
+HETATM  521  O   HOH   109      23.323  15.340   8.229  1.00  9.26      1BPI 657
+HETATM  522  O   HOH   110      28.805   5.951  -6.980  1.00 13.67      1BPI 658
+HETATM  523  O   HOH   111      29.599  16.816 -10.382  1.00 16.05      1BPI 659
+HETATM  524  O   HOH   112      20.678  20.456  -4.737  1.00 17.35      1BPI 660
+HETATM  525  O   HOH   113      21.068   1.558  10.648  1.00 13.11      1BPI 661
+HETATM  526  O   HOH   114      24.686  13.263   9.347  1.00 11.76      1BPI 662
+HETATM  527  O   HOH   115      25.334  20.661   4.632  1.00  9.77      1BPI 663
+HETATM  528  O   HOH   116      21.477  13.320  -8.853  1.00 13.82      1BPI 664
+HETATM  529  O   HOH   117      31.298  20.755  -3.467  1.00 14.49      1BPI 665
+HETATM  530  O   HOH   118      22.028  -4.411 -12.407  1.00 13.53      1BPI 666
+HETATM  531  O   HOH   119      20.564   1.872 -10.169  1.00 15.79      1BPI 667
+HETATM  532  O   HOH   120      24.981  16.639  10.052  1.00 11.77      1BPI 668
+HETATM  533  O   HOH   121      21.812   2.159   4.113  1.00 12.05      1BPI 669
+HETATM  534  O   HOH   122      20.644   0.790   6.468  1.00 14.76      1BPI 670
+HETATM  535  O   HOH   123      18.598  19.320  -7.313  1.00 12.30      1BPI 671
+HETATM  536  O   HOH   124      23.468   0.192  10.089  1.00 11.82      1BPI 672
+HETATM  537  O   HOH   125      22.901  14.110 -11.290  1.00 16.95      1BPI 673
+HETATM  538  O   HOH   126      23.528  20.137 -17.602  1.00 13.79      1BPI 674
+HETATM  539  O   HOH   127      26.098   0.559  10.008  1.00 15.70      1BPI 675
+HETATM  540  O   HOH   128      29.626  20.335   9.256  1.00 19.19      1BPI 676
+HETATM  541  O   HOH   129      19.609   4.567   0.433  1.00 15.88      1BPI 677
+HETATM  542  O   HOH   130      20.861  -3.442  11.113  1.00 12.41      1BPI 678
+HETATM  543  O   HOH   131      19.415  13.544  -2.838  1.00 11.98      1BPI 679
+HETATM  544  O   HOH   132      24.119  13.399 -16.391  1.00 16.00      1BPI 680
+HETATM  545  O   HOH   133      34.013   0.397   0.571  1.00 37.06      1BPI 681
+HETATM  546  O   HOH   134      17.331   9.779  -0.325  1.00 11.30      1BPI 682
+HETATM  547  O   HOH   135      31.994  11.388 -15.477  1.00 12.97      1BPI 683
+HETATM  548  O   HOH   136      38.411  12.625 -10.809  1.00 29.73      1BPI 684
+HETATM  549  O   HOH   137      23.356   0.040   7.148  1.00 11.09      1BPI 685
+HETATM  550  O   HOH   138      31.127   0.369   3.698  1.00 18.69      1BPI 686
+HETATM  551  O   HOH   139      21.454  18.187   6.327  1.00 14.25      1BPI 687
+HETATM  552  O   HOH   140      22.069   2.659   1.123  1.00 15.96      1BPI 688
+HETATM  553  O   HOH   141      23.487  15.966 -16.283  1.00 13.86      1BPI 689
+HETATM  554  O   HOH   142      26.943  14.874 -17.346  1.00 14.67      1BPI 690
+HETATM  555  O   HOH   143      34.515   3.086  -0.158  1.00 17.45      1BPI 691
+HETATM  556  O   HOH   144      32.612  18.650  -8.165  1.00 18.61      1BPI 692
+HETATM  557  O   HOH   145      23.493  -0.771  -7.083  1.00 20.51      1BPI 693
+HETATM  558  O   HOH   146      31.338  16.834  16.331  1.00 19.47      1BPI 694
+HETATM  559  O   HOH   147      21.925  11.840 -12.774  1.00 15.15      1BPI 695
+HETATM  560  O   HOH   148      35.899  15.971  -0.305  1.00 30.71      1BPI 696
+HETATM  561  O   HOH   149      16.711   6.008  -2.263  1.00 12.25      1BPI 697
+HETATM  562  O   HOH   150      27.345  -0.818   6.163  1.00 12.61      1BPI 698
+HETATM  563  O   HOH   151      33.004  13.907   6.415  1.00 20.80      1BPI 699
+HETATM  564  O   HOH   152      42.156   6.335   7.257  1.00 29.87      1BPI 700
+HETATM  565  O   HOH   153      18.736  22.511  -4.100  1.00 16.51      1BPI 701
+HETATM  566  O   HOH   154      20.669  21.421   3.128  1.00 18.61      1BPI 702
+HETATM  567  O   HOH   155      41.840   3.831  15.078  1.00 21.52      1BPI 703
+HETATM  568  O   HOH   156      31.297  17.655   4.705  1.00 28.11      1BPI 704
+HETATM  569  O   HOH   157      17.704   3.327  -6.019  1.00 13.31      1BPI 705
+HETATM  570  O   HOH   158      39.539   8.840   1.232  1.00 15.76      1BPI 706
+HETATM  571  O   HOH   159      29.505   0.116  11.907  1.00 27.30      1BPI 707
+HETATM  572  O   HOH   160      30.661   3.403  -9.364  1.00 17.40      1BPI 708
+HETATM  573  O   HOH   161      18.738  23.644  -6.608  1.00 15.19      1BPI 709
+HETATM  574  O   HOH   162      35.509  -0.640  -1.787  1.00 22.88      1BPI 710
+HETATM  575  O   HOH   163      17.002  10.007  -2.727  1.00 30.46      1BPI 711
+HETATM  576  O   HOH   164      25.292  23.807  -7.184  0.78 14.86      1BPI 712
+HETATM  577  O   HOH   165      32.144  -1.420  10.682  1.00 50.27      1BPI 713
+HETATM  578  O   HOH   166      40.383  12.368  -3.621  1.00 22.48      1BPI 714
+HETATM  579  O   HOH   167      40.202   3.851   6.147  1.00 23.32      1BPI 715
+HETATM  580  O   HOH   168      32.050  20.861   7.905  1.00 26.20      1BPI 716
+HETATM  581  O   HOH   169      31.447  21.732  -5.899  1.00 21.58      1BPI 717
+HETATM  582  O   HOH   170      40.855   7.340  -7.797  1.00 30.02      1BPI 718
+HETATM  583  O   HOH   171      19.163  10.596   9.682  1.00 32.75      1BPI 719
+HETATM  584  O   HOH   172      31.176  20.837  -8.822  1.00 30.83      1BPI 720
+HETATM  585  O   HOH   173      40.793  14.268  -6.397  1.00 30.97      1BPI 721
+HETATM  586  O   HOH   174      37.719   9.297 -13.241  1.00 29.89      1BPI 722
+HETATM  587  O   HOH   175      40.339   9.768  11.783  1.00 30.50      1BPI 723
+HETATM  588  O   HOH   176      39.021   2.534   8.122  1.00 31.19      1BPI 724
+HETATM  589  O   HOH   177      38.977   8.359  -4.436  1.00 26.95      1BPI 725
+HETATM  590  O   HOH   178      33.730  -2.425  -2.347  1.00 40.04      1BPI 726
+HETATM  591  O   HOH   179      42.405  11.507  -4.928  1.00 32.75      1BPI 727
+HETATM  592  O   HOH   180      21.628  12.057   9.384  1.00 42.39      1BPI 728
+HETATM  593  O   HOH   181      38.689   6.886  -6.663  1.00 37.70      1BPI 729
+HETATM  594  O   HOH   182      38.132  15.321 -12.052  1.00 34.19      1BPI 730
+HETATM  595  O   HOH   183      40.257   7.051 -10.290  1.00 37.50      1BPI 731
+HETATM  596  O   HOH   184      27.007  -0.384  16.770  1.00 16.99      1BPI 732
+HETATM  597  O   HOH   185      18.045   3.403  -9.731  1.00 16.63      1BPI 733
+HETATM  598  O   HOH   186      29.113  20.986   3.812  1.00 23.78      1BPI 734
+HETATM  599  O   HOH   187      40.409   9.543   8.328  1.00 18.49      1BPI 735
+HETATM  600  O   HOH   188      30.122  19.933   6.434  0.50 25.05      1BPI 736
+HETATM  601  O   HOH   189      31.536   0.038   0.910  0.50  8.83      1BPI 737
+HETATM  602  O   HOH   190      28.791  20.043 -11.501  0.50 20.59      1BPI 738
+HETATM  603  O   HOH   191      29.414  19.939 -10.370  0.50 15.35      1BPI 739
+HETATM  604  O   HOH   192      32.699  16.804   9.651  0.50 21.38      1BPI 740
+HETATM  605  O   HOH   193      40.364   6.389   0.928  0.50 20.85      1BPI 741
+HETATM  606  O   HOH   194      41.475   4.596   2.614  0.50 22.79      1BPI 742
+HETATM  607  O   HOH   195      36.318  11.150   9.538  0.50  4.64      1BPI 743
+HETATM  608  O   HOH   196      35.825  12.150  12.319  0.50 16.04      1BPI 744
+HETATM  609  O   HOH   197      35.264  12.399  10.844  0.50 13.21      1BPI 745
+HETATM  610  O   HOH   198      39.524   7.248  13.916  0.50 11.59      1BPI 746
+HETATM  611  O   HOH   199      19.392  -0.828 -11.076  0.50  8.76      1BPI 747
+HETATM  612  O   HOH   200      17.944  -1.491  16.266  0.50 24.44      1BPI 748
+HETATM  613  O   HOH   201      19.770  -2.690  15.618  0.50  9.83      1BPI 749
+HETATM  614  O   HOH   202      29.892  -0.024   0.076  0.50 13.58      1BPI 750
+HETATM  615  O   HOH   203      29.823  -1.187  -1.104  0.50  8.74      1BPI 751
+HETATM  616  O   HOH   204      27.388  -0.395  -8.752  0.50 11.70      1BPI 752
+HETATM  617  O   HOH   205      28.514  -1.543  -9.545  0.50 21.02      1BPI 753
+HETATM  618  O   HOH   206      28.749   5.177  -4.668  0.50 10.24      1BPI 754
+HETATM  619  O   HOH   207      27.326   3.815  -6.612  0.50 10.78      1BPI 755
+HETATM  620  O   HOH   208      30.374   2.347  -6.110  0.50 13.60      1BPI 756
+HETATM  621  O   HOH   209      28.795   3.203  -5.493  0.50 16.55      1BPI 757
+HETATM  622  O   HOH   210      28.554   1.806  -8.279  0.50 12.52      1BPI 758
+HETATM  623  O   HOH   211      28.292   2.870  -9.652  0.50 19.24      1BPI 759
+HETATM  624  O   HOH   212      35.141   9.788 -12.991  0.50  9.69      1BPI 760
+HETATM  625  O   HOH   213      35.455  10.397 -13.775  0.50 13.51      1BPI 761
+HETATM  626  O   HOH   214      32.505  16.453  11.719  0.50 14.97      1BPI 762
+HETATM  627  O   HOH   215      33.892  12.131  10.068  0.50 12.89      1BPI 763
+HETATM  628  O   HOH   216      30.584  18.579   0.385  0.50 18.14      1BPI 764
+HETATM  629  O   HOH   217      29.587  19.130  -0.933  0.50 18.09      1BPI 765
+HETATM  630  O   HOH   218      40.823   7.600  13.023  0.50 17.16      1BPI 766
+HETATM  631  O   HOH   219      42.694   7.773  11.622  0.50 11.70      1BPI 767
+HETATM  632  O   HOH   220      42.796   6.658  15.403  0.50 20.04      1BPI 768
+HETATM  633  O   HOH   221      43.075   8.136  12.932  0.50 13.10      1BPI 769
+HETATM  634  O   HOH   222      18.213  -1.238  14.513  0.50 39.77      1BPI 770
+HETATM  635  O   HOH   223      27.128   2.754  -8.053  0.50 22.84      1BPI 771
+HETATM  636  O   HOH   224      34.007  14.609 -14.650  0.50 20.26      1BPI 772
+HETATM  637  O   HOH   225      33.701  18.357 -11.101  0.50 21.40      1BPI 773
+HETATM  638  O   HOH   226      39.741  11.018  -5.721  0.50 37.97      1BPI 774
+CONECT   43   42  446                                                   1BPI 775
+CONECT  114  113  306                                                   1BPI 776
+CONECT  246  245  412                                                   1BPI 777
+CONECT  306  114  305                                                   1BPI 778
+CONECT  412  246  411                                                   1BPI 779
+CONECT  446   43  445                                                   1BPI 780
+CONECT  462  464  466  468  470                                         1BPI 781
+CONECT  463  465  467  469  471                                         1BPI 782
+CONECT  464  462                                                        1BPI 783
+CONECT  465  463                                                        1BPI 784
+CONECT  466  462                                                        1BPI 785
+CONECT  467  463                                                        1BPI 786
+CONECT  468  462                                                        1BPI 787
+CONECT  469  463                                                        1BPI 788
+CONECT  470  462                                                        1BPI 789
+CONECT  471  463                                                        1BPI 790
+MASTER       96    4    1    2    3    0    0    6  637    1   16    5  1BPI 791
+END                                                                     1BPI 792

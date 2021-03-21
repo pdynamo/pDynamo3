@@ -1,0 +1,36 @@
+# . Space group P4332.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : P 4acd 2ab 3
+Hermann-Mauguin    : P4332
+Schoenflies        : O^6
+Space Group Number : 212
+Space Group Symbol : 212
+Setting            : 508
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z)
+    - (z,x,y)
+    - (z+1/2,-x+1/2,-y)
+    - (-z+1/2,-x,y+1/2)
+    - (-z,x+1/2,-y+1/2)
+    - (y,z,x)
+    - (-y,z+1/2,-x+1/2)
+    - (y+1/2,-z+1/2,-x)
+    - (-y+1/2,-z,x+1/2)
+    - (y+1/4,x+3/4,-z+3/4)
+    - (-y+1/4,-x+1/4,-z+1/4)
+    - (y+3/4,-x+3/4,z+1/4)
+    - (-y+3/4,x+1/4,z+3/4)
+    - (x+1/4,z+3/4,-y+3/4)
+    - (-x+3/4,z+1/4,y+3/4)
+    - (-x+1/4,-z+1/4,-y+1/4)
+    - (x+3/4,-z+3/4,y+1/4)
+    - (z+1/4,y+3/4,-x+3/4)
+    - (z+3/4,-y+3/4,x+1/4)
+    - (-z+3/4,y+1/4,x+3/4)
+    - (-z+1/4,-y+1/4,-x+1/4)
+...

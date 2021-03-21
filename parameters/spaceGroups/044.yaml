@@ -1,0 +1,16 @@
+# . Space group I1c1.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : I -2yc
+Hermann-Mauguin    : I1c1
+Schoenflies        : Cs^4
+Space Group Number : 9
+Space Group Symbol : 9:-b3
+Setting            : 44
+Transformations :
+    - (x,y,z)
+    - (x,-y,z+1/2)
+    - (x+1/2,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,z)
+...

@@ -1,0 +1,20 @@
+# . Space group P4mm.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : P 4 -2
+Hermann-Mauguin    : P4mm
+Schoenflies        : C4v^1
+Space Group Number : 99
+Space Group Symbol : 99
+Setting            : 376
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (x,-y,z)
+    - (-x,y,z)
+    - (-y,-x,z)
+    - (y,x,z)
+...

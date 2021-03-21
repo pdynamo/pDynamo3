@@ -1,0 +1,28 @@
+# . Space group Cccm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -C 2 2c
+Hermann-Mauguin    : Cccm
+Schoenflies        : D2h^20
+Space Group Number : 66
+Space Group Symbol : 66
+Setting            : 313
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z+1/2)
+    - (x,-y,-z+1/2)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (x,-y,z+1/2)
+    - (-x,y,z+1/2)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,-y+1/2,-z)
+    - (x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+...

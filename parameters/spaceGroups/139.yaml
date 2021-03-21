@@ -1,0 +1,16 @@
+# . Space group P2mb.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2b 2
+Hermann-Mauguin    : P2mb
+Schoenflies        : C2v^4
+Space Group Number : 28
+Space Group Symbol : 28:cab
+Setting            : 139
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x,y+1/2,-z)
+    - (x,-y+1/2,z)
+...

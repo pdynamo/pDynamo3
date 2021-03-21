@@ -1,0 +1,49 @@
+# . Text parameter file for the element Mg.
+
+Mg   atomicNumber                          12
+Mg   iii                                    3
+Mg   iiid                                   3
+Mg   ir016                                  0
+Mg   ir066                                  0
+Mg   ir244                                  0
+Mg   ir266                                  0
+Mg   ir466                                  0
+Mg   qnd                                    0
+Mg   qnp                                    3
+Mg   qns                                    3
+Mg   ad                     0.269569779952423  atomic
+Mg   alp                    1.329147000000000  A^-1
+Mg   am                     0.246011013170319  atomic
+Mg   aq                     0.276748475036346  atomic
+Mg   betad                  0.000000000000000  eV
+Mg   betap                 -0.569581000000000  eV
+Mg   betas                 -2.071691000000000  eV
+Mg   dd                     1.140395018290635  atomic
+Mg   eheat                 35.000000000000000  kcal/mole
+Mg   eisol                -22.553075999999997  eV
+Mg   f0sd                   0.000000000000000  eV
+Mg   g2sd                   0.000000000000000  eV
+Mg   gp2                    7.090823000000000  eV
+Mg   gphot                  1.000000000000000  dimensionless
+Mg   gpp                    6.910446000000000  eV
+Mg   gsp                    6.793995000000000  eV
+Mg   gss                    6.694300000000000  eV
+Mg   hsp                    0.543300000000000  eV
+Mg   pcore                  0.000000000000000  atomic
+Mg   qq                     1.127989935015232  atomic
+Mg   udd                    0.000000000000000  eV
+Mg   upp                  -14.173460000000000  eV
+Mg   uss                  -14.623688000000000  eV
+Mg   zcore                  2.000000000000000  atomic
+Mg   zdn                    0.000000000000000  atomic
+Mg   zetad                  0.000000000000000  atomic
+Mg   zetap                  1.483453000000000  atomic
+Mg   zetas                  0.698552000000000  atomic
+Mg   zpn                    0.000000000000000  atomic
+Mg   zsn                    0.000000000000000  atomic
+Mg   fn10                   2.117050000000000  A_eV
+Mg   fn20                   6.009477000000000  A^-2
+Mg   fn30                   2.084406000000000  A
+Mg   fn11                  -2.547767000000000  A_eV
+Mg   fn21                   4.395370000000000  A^-2
+Mg   fn31                   2.063674000000000  A

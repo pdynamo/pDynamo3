@@ -1,0 +1,20 @@
+# . Space group I212121.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : I 2b 2c
+Hermann-Mauguin    : I212121
+Schoenflies        : D2^9
+Space Group Number : 24
+Space Group Symbol : 24
+Setting            : 124
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x,-y+1/2,z)
+    - (-x+1/2,y,-z)
+    - (x,-y,-z+1/2)
+...

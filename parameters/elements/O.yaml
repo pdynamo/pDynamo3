@@ -1,0 +1,23 @@
+---
+# . !Element
+Allen Electronegativity        : 3.610
+Atomic Number                  : 8
+Bragg Radius                   : 0.6
+Coordination Angles            : {2     : 105.0, 3     : 109.0}
+Covalent Radius                : 0.68
+Group                          : 16
+Mass                           : 15.9994
+Maximum Orbital Quantum Number : 1
+Name                           : Oxygen
+Pauling Electronegativity      : 3.44
+Period                         : 2
+RGB Color Indices              : [255, 13, 13]
+Single Bond Distances          : {16     : 1.57, 1     : 0.96, 6     : 1.43, 7     : 1.4, 8     : 1.48, 14     : 1.64, 15     : 1.6}
+Symbol                         : O
+Valence Electrons              : 6
+vdW Radius                     : 1.7
+d Quantum Number               : 0
+f Quantum Number               : 0
+p Quantum Number               : 2
+s Quantum Number               : 2
+...

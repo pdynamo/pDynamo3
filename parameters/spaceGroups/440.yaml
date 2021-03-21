@@ -1,0 +1,18 @@
+# . Space group P3112.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : P 31 2c (0 0 1)
+Hermann-Mauguin    : P3112
+Schoenflies        : D3^3
+Space Group Number : 151
+Space Group Symbol : 151
+Setting            : 440
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z+1/3)
+    - (-x+y,-x,z+2/3)
+    - (-y,-x,-z+2/3)
+    - (-x+y,y,-z+1/3)
+    - (x,x-y,-z)
+...

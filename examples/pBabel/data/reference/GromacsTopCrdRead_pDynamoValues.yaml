@@ -1,0 +1,79 @@
+# . GromacsTopCrdRead_pDynamoValues
+---
+Label : Gromacs Test
+Children :
+  - Label : 1atp_peptide-AMBER
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ Fourier Dihedral        , 659.624   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Fourier Improper        , 1.450     , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Angle          , 491.402   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Bond           , 2246.445  , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Electrostatic , 1469.475  , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Lennard-Jones , 539.661   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Electrostatic     , -3440.757 , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Lennard-Jones     , 848.571   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Potential Energy        , 2815.870  , 0.500 , "{:.3f}" , "{:.3f}" ]
+  - Label : 1atp_peptide-CHARMM
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ CMAP Dihedral           , -73.974   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Fourier Dihedral        , 311.018   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Angle          , 430.627   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Bond           , 2566.596  , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Improper       , 2.076     , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Electrostatic , 119.799   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Lennard-Jones , 478.206   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Electrostatic     , -2060.603 , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Lennard-Jones     , 831.676   , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Potential Energy        , 2758.554  , 0.500 , "{:.3f}" , "{:.3f}" ]
+      - [ Urey-Bradley            , 153.132   , 0.500 , "{:.3f}" , "{:.3f}" ]
+  - Label : ava-AMBER
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ Fourier Dihedral        , 44.671     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Fourier Improper        , 0.020      , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Gradient Error          , 1.2701e-05 , 1.0000e-03 , "{:.4e}" , "{:.4e}" ]
+      - [ Harmonic Angle          , 13.418     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Bond           , 20.776     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Electrostatic , 840.046    , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Lennard-Jones , 43.894     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Electrostatic     , -1050.042  , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Lennard-Jones     , -14.065    , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Potential Energy        , -101.282   , 0.500      , "{:.3f}" , "{:.3f}" ]
+  - Label : ava-CHARMM
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ CMAP Dihedral           , -16.421    , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Fourier Dihedral        , 13.722     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Gradient Error          , 1.3990e-05 , 1.0000e-03 , "{:.4e}" , "{:.4e}" ]
+      - [ Harmonic Angle          , 10.515     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Bond           , 3.207      , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Harmonic Improper       , 0.037      , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Electrostatic , 1113.992   , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM 1-4 Lennard-Jones , 11.627     , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Electrostatic     , -1017.112  , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ MM/MM Lennard-Jones     , -12.582    , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Potential Energy        , 107.909    , 0.500      , "{:.3f}" , "{:.3f}" ]
+      - [ Urey-Bradley            , 0.924      , 0.500      , "{:.3f}" , "{:.3f}" ]
+...

@@ -1,0 +1,16 @@
+# . Space group P21cn.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2n 2a
+Hermann-Mauguin    : P21cn
+Schoenflies        : C2v^9
+Space Group Number : 33
+Space Group Symbol : 33:-cba
+Setting            : 167
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z)
+    - (x,-y+1/2,z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+...

@@ -1,0 +1,20 @@
+# . Space group Pbma.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2a 2ab
+Hermann-Mauguin    : Pbma
+Schoenflies        : D2h^11
+Space Group Number : 57
+Space Group Symbol : 57:bca
+Setting            : 273
+Transformations :
+    - (x,y,z)
+    - (-x,y+1/2,-z)
+    - (x+1/2,-y+1/2,-z)
+    - (-x+1/2,-y,z)
+    - (-x,-y,-z)
+    - (x,-y+1/2,z)
+    - (-x+1/2,y+1/2,z)
+    - (x+1/2,y,-z)
+...

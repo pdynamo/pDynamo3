@@ -1,0 +1,12 @@
+# . Point group Ci.
+---
+# . !PointGroup
+Label : Ci
+Symmetry Operations :
+    E :  1
+    i :  1
+Character Symmetry Operations : [ E, i ]
+Character Table :
+    Ag : [ 1.000000 ,  1.000000 ]
+    Au : [ 1.000000 , -1.000000 ]
+...

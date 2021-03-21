@@ -1,0 +1,20 @@
+# . Space group C2/m11.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : -C 2x
+Hermann-Mauguin    : C2/m11
+Schoenflies        : C2h^3
+Space Group Number : 12
+Space Group Symbol : 12:a2
+Setting            : 70
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (-x,-y,-z)
+    - (-x,y,z)
+    - (x+1/2,y+1/2,z)
+    - (x+1/2,-y+1/2,-z)
+    - (-x+1/2,-y+1/2,-z)
+    - (-x+1/2,y+1/2,z)
+...

@@ -1,0 +1,12 @@
+---
+# . !PDBComponentLink
+Bond Type     : Single
+Label         : Disulfide Bridge
+Left Atom     : SG
+Left Variant  : &id001
+  # . !PDBComponentVariant
+  Atoms To Delete : [HG]
+  Component       : CYS
+Right Atom    : SG
+Right Variant : *id001
+...

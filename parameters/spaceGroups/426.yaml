@@ -1,0 +1,44 @@
+# . Space group I41/amd:1.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : I 4bw 2bw -1bw
+Hermann-Mauguin    : I41/amd:1
+Schoenflies        : D4h^19
+Space Group Number : 141
+Space Group Symbol : 141:1
+Setting            : 426
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-y,x+1/2,z+1/4)
+    - (y+1/2,-x,z+3/4)
+    - (-x+1/2,y,-z+3/4)
+    - (x,-y+1/2,-z+1/4)
+    - (y+1/2,x+1/2,-z+1/2)
+    - (-y,-x,-z)
+    - (-x,-y+1/2,-z+1/4)
+    - (x+1/2,y,-z+3/4)
+    - (y,-x,-z)
+    - (-y+1/2,x+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x,y,z)
+    - (-y+1/2,-x,z+3/4)
+    - (y,x+1/2,z+1/4)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x,-y,z)
+    - (-y+1/2,x,z+3/4)
+    - (y,-x+1/2,z+1/4)
+    - (-x,y+1/2,-z+1/4)
+    - (x+1/2,-y,-z+3/4)
+    - (y,x,-z)
+    - (-y+1/2,-x+1/2,-z+1/2)
+    - (-x+1/2,-y,-z+3/4)
+    - (x,y+1/2,-z+1/4)
+    - (y+1/2,-x+1/2,-z+1/2)
+    - (-y,x,-z)
+    - (x,-y,z)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (-y,-x+1/2,z+1/4)
+    - (y+1/2,x,z+3/4)
+...

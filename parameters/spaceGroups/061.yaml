@@ -1,0 +1,16 @@
+# . Space group P1121/m.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : -P 2c
+Hermann-Mauguin    : P1121/m
+Schoenflies        : C2h^2
+Space Group Number : 11
+Space Group Symbol : 11:c
+Setting            : 61
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (-x,-y,-z)
+    - (x,y,-z+1/2)
+...

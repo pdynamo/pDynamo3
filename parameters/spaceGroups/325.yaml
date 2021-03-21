@@ -1,0 +1,28 @@
+# . Space group Cccb:2.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -C 2b 2c
+Hermann-Mauguin    : Cccb:2
+Schoenflies        : D2h^22
+Space Group Number : 68
+Space Group Symbol : 68:2ba-c
+Setting            : 325
+Transformations :
+    - (x,y,z)
+    - (-x,-y+1/2,z)
+    - (x,-y,-z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (-x,-y,-z)
+    - (x,y+1/2,-z)
+    - (-x,y,z+1/2)
+    - (x,-y+1/2,z+1/2)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y,z)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,y,-z+1/2)
+    - (-x+1/2,-y+1/2,-z)
+    - (x+1/2,y,-z)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (x+1/2,-y,z+1/2)
+...

@@ -1,0 +1,69 @@
+# . Text parameter file for the element Ir.
+
+Ir   atomicNumber                          77
+Ir   iii                                    6
+Ir   iiid                                   5
+Ir   ir016                                 14
+Ir   ir066                                 21
+Ir   ir244                                  7
+Ir   ir266                                 43
+Ir   ir466                                 36
+Ir   qnd                                    5
+Ir   qnp                                    6
+Ir   qns                                    6
+Ir   ad                     0.208394592602716  atomic
+Ir   alp                    0.000000000000000  A^-1
+Ir   am                     0.129632041787335  atomic
+Ir   aq                     0.718081189137609  atomic
+Ir   betad                 -3.791731000000000  eV
+Ir   betap                  2.908880000000000  eV
+Ir   betas                -10.943427000000000  eV
+Ir   dd                     0.275435824745572  atomic
+Ir   eheat                160.000000000000000  kcal/mole
+Ir   eisol               -283.647894809999968  eV
+Ir   f0sd                   2.627170000000000  eV
+Ir   g2sd                   2.996029000000000  eV
+Ir   gp2                   11.553611880000000  eV
+Ir   gphot                  1.000000000000000  dimensionless
+Ir   gpp                   13.320954850000000  eV
+Ir   gsp                    4.203819910000000  eV
+Ir   gss                    3.527467190000000  eV
+Ir   hsp                    0.018500520000000  eV
+Ir   pcore                  0.000000000000000  atomic
+Ir   qq                     0.734619243259117  atomic
+Ir   udd                  -32.538201999999998  eV
+Ir   upp                  -38.210923999999999  eV
+Ir   uss                  -29.703973999999999  eV
+Ir   zcore                  9.000000000000000  atomic
+Ir   zdn                    0.662007000000000  atomic
+Ir   zetad                  2.676047000000000  atomic
+Ir   zetap                  4.106373000000000  atomic
+Ir   zetas                  1.500907000000000  atomic
+Ir   zpn                    3.191892000000000  atomic
+Ir   zsn                    0.927246000000000  atomic
+Ir   diatomicA      H       1.033900000000000  A^-1
+Ir   diatomicX      H       0.058047000000000  dimensionless
+Ir   diatomicA      C       1.690295000000000  A^-1
+Ir   diatomicX      C       0.115047000000000  dimensionless
+Ir   diatomicA      N       3.934508000000000  A^-1
+Ir   diatomicX      N       8.518640000000000  dimensionless
+Ir   diatomicA      O       3.748272000000000  A^-1
+Ir   diatomicX      O       9.625401999999999  dimensionless
+Ir   diatomicA      F       2.982799000000000  A^-1
+Ir   diatomicX      F       1.499639000000000  dimensionless
+Ir   diatomicA      Na      2.550820000000000  A^-1
+Ir   diatomicX      Na      8.275829999999999  dimensionless
+Ir   diatomicA      P       2.714060000000000  A^-1
+Ir   diatomicX      P       6.284670000000000  dimensionless
+Ir   diatomicA      S       3.204834000000000  A^-1
+Ir   diatomicX      S       4.135732000000000  dimensionless
+Ir   diatomicA      Cl      2.009770000000000  A^-1
+Ir   diatomicX      Cl      0.258916000000000  dimensionless
+Ir   diatomicA      K       4.521170000000000  A^-1
+Ir   diatomicX      K       2.026400000000000  dimensionless
+Ir   diatomicA      Br      2.038142000000000  A^-1
+Ir   diatomicX      Br      0.171879000000000  dimensionless
+Ir   diatomicA      I       3.410914000000000  A^-1
+Ir   diatomicX      I       1.497148000000000  dimensionless
+Ir   diatomicA      Ir      5.771663000000000  A^-1
+Ir   diatomicX      Ir     11.175193000000000  dimensionless

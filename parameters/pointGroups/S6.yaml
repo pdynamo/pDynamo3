@@ -1,0 +1,15 @@
+# . Point group S6.
+---
+# . !PointGroup
+Label : S6
+Symmetry Operations :
+    E  :  1
+    S6 :  1
+    i  :  1
+Character Symmetry Operations : [ E, S6 ]
+Character Table :
+    Ag : [ 1.000000 ,  1.000000 ]
+    Au : [ 1.000000 , -1.000000 ]
+    Eg : [ 2.000000 , -1.000000 ]
+    Eu : [ 2.000000 ,  1.000000 ]
+...

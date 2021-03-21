@@ -1,0 +1,21 @@
+# . !MMSequenceComponent
+Atom Fields: [Label, Type, Charge]
+Atoms:
+- [N, '??', 0.0]
+- [CA, '??', 0.0]
+- [C, CD, 0.72]
+- [O, OB, -0.55]
+- [CB, CP2, -0.18]
+- [CG, CP2, -0.18]
+- [CD, CP3, 0.0]
+- [OXT, OH1, -0.61]
+- [H, '??', 0.0]
+- [HA, '??', 0.0]
+- [HB2, HA, 0.09]
+- [HB3, HA, 0.09]
+- [HG2, HA, 0.09]
+- [HG3, HA, 0.09]
+- [HD2, HA, 0.09]
+- [HD3, HA, 0.09]
+- [HXT, H, 0.44]
+Label: PRO

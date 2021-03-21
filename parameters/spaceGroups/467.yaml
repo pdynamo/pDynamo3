@@ -1,0 +1,18 @@
+# . Space group P63.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P 6c
+Hermann-Mauguin    : P63
+Schoenflies        : C6^6
+Space Group Number : 173
+Space Group Symbol : 173
+Setting            : 467
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-x,-y,z+1/2)
+    - (y,-x+y,z+1/2)
+    - (x-y,x,z+1/2)
+...

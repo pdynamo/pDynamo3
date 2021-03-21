@@ -1,0 +1,72 @@
+# . Text parameter file for the element Sn.
+
+Sn   atomicNumber                          50
+Sn   iii                                    5
+Sn   iiid                                   5
+Sn   ir016                                  0
+Sn   ir066                                  0
+Sn   ir244                                  0
+Sn   ir266                                  0
+Sn   ir466                                  0
+Sn   qnd                                    0
+Sn   qnp                                    5
+Sn   qns                                    5
+Sn   ad                     0.237093703512143  atomic
+Sn   alp                    0.000000000000000  A^-1
+Sn   am                     0.303904247661293  atomic
+Sn   aq                     0.375268249756667  atomic
+Sn   betad                  0.000000000000000  eV
+Sn   betap                 -4.989752000000000  eV
+Sn   betas                 -8.621086999999999  eV
+Sn   dd                     1.387920347489112  atomic
+Sn   eheat                 72.200000000000003  kcal/mole
+Sn   eisol                -71.339413500000006  eV
+Sn   f0sd                   0.000000000000000  eV
+Sn   g2sd                   0.000000000000000  eV
+Sn   gp2                    5.855159000000000  eV
+Sn   gphot                  1.000000000000000  dimensionless
+Sn   gpp                    6.584874000000000  eV
+Sn   gsp                    5.013349000000000  eV
+Sn   gss                    8.269655000000000  eV
+Sn   hsp                    0.531212000000000  eV
+Sn   pcore                  0.000000000000000  atomic
+Sn   qq                     1.248377729098204  atomic
+Sn   udd                    0.000000000000000  eV
+Sn   upp                  -22.156953999999999  eV
+Sn   uss                  -29.888217000000001  eV
+Sn   zcore                  4.000000000000000  atomic
+Sn   zdn                    0.000000000000000  atomic
+Sn   zetad                  0.000000000000000  atomic
+Sn   zetap                  2.057908000000000  atomic
+Sn   zetas                  2.383941000000000  atomic
+Sn   zpn                    0.000000000000000  atomic
+Sn   zsn                    0.000000000000000  atomic
+Sn   fn10                  -1.004587000000000  A_eV
+Sn   fn20                   4.706252000000000  A^-2
+Sn   fn30                   1.180218000000000  A
+Sn   diatomicA      H       2.648910000000000  A^-1
+Sn   diatomicX      H       6.535162000000000  dimensionless
+Sn   diatomicA      C       2.440538000000000  A^-1
+Sn   diatomicX      C       3.374355000000000  dimensionless
+Sn   diatomicA      N       2.085589000000000  A^-1
+Sn   diatomicX      N       1.391900000000000  dimensionless
+Sn   diatomicA      O       2.727260000000000  A^-1
+Sn   diatomicX      O       4.374017000000000  dimensionless
+Sn   diatomicA      F       3.724286000000000  A^-1
+Sn   diatomicX      F      18.598663999999999  dimensionless
+Sn   diatomicA      S       2.131542000000000  A^-1
+Sn   diatomicX      S       2.314870000000000  dimensionless
+Sn   diatomicA      Cl      1.771522000000000  A^-1
+Sn   diatomicX      Cl      0.807782000000000  dimensionless
+Sn   diatomicA      Ge      2.524633000000000  A^-1
+Sn   diatomicX      Ge     12.343411000000000  dimensionless
+Sn   diatomicA      Se      2.127377000000000  A^-1
+Sn   diatomicX      Se      3.061885000000000  dimensionless
+Sn   diatomicA      Br      1.535089000000000  A^-1
+Sn   diatomicX      Br      0.668798000000000  dimensionless
+Sn   diatomicA      Sn      0.921000000000000  A^-1
+Sn   diatomicX      Sn      0.287000000000000  dimensionless
+Sn   diatomicA      Te      1.763941000000000  A^-1
+Sn   diatomicX      Te      2.951976000000000  dimensionless
+Sn   diatomicA      I       1.855633000000000  A^-1
+Sn   diatomicX      I       1.783163000000000  dimensionless

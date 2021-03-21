@@ -1,0 +1,36 @@
+# . Space group Pm-3.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : -P 2 2 3
+Hermann-Mauguin    : Pm-3
+Schoenflies        : Th^1
+Space Group Number : 200
+Space Group Symbol : 200
+Setting            : 494
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (z,x,y)
+    - (z,-x,-y)
+    - (-z,-x,y)
+    - (-z,x,-y)
+    - (y,z,x)
+    - (-y,z,-x)
+    - (y,-z,-x)
+    - (-y,-z,x)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (x,-y,z)
+    - (-x,y,z)
+    - (-z,-x,-y)
+    - (-z,x,y)
+    - (z,x,-y)
+    - (z,-x,y)
+    - (-y,-z,-x)
+    - (y,-z,x)
+    - (-y,z,x)
+    - (y,z,-x)
+...

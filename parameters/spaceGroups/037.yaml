@@ -1,0 +1,16 @@
+# . Space group Cm11.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : C -2x
+Hermann-Mauguin    : Cm11
+Schoenflies        : Cs^3
+Space Group Number : 8
+Space Group Symbol : 8:a2
+Setting            : 37
+Transformations :
+    - (x,y,z)
+    - (-x,y,z)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,y+1/2,z)
+...

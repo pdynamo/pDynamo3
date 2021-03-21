@@ -1,0 +1,16 @@
+# . Space group P12/a1.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : -P 2ya
+Hermann-Mauguin    : P12/a1
+Schoenflies        : C2h^4
+Space Group Number : 13
+Space Group Symbol : 13:b3
+Setting            : 74
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,y,-z)
+    - (-x,-y,-z)
+    - (x+1/2,-y,z)
+...

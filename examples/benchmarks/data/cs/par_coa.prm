@@ -1,0 +1,54 @@
+BONDS
+S      C      198.00  1.8180 ! adopted
+CT1    CN9    222.50  1.5380 ! adopted from CT2  CT1
+C      CE2    250.00  1.3550
+
+ANGLES
+CT2    S      C        34.00   95.00  ! adopted from CT3 S CT2
+S      C      O        80.00  121.00  ! adopted
+S      C      CT3      50.00  114.00  ! adopted
+C      CT1    OH1      50.00  110.50
+CN9    CT1    CT1      53.35  111.00    8.00   2.5610  ! CT2  CT1  CT1
+CT3    CT1    CN9      53.35  114.00    8.00   2.5610  ! CT3  CT1  CT2
+CT1    CN9    HN9      33.43  110.10   22.53   2.1790  ! HA   CT2  CT1
+CT1    CN9    ON2      45.00  111.50  ! DEET, diethylether, alex
+C      CE2    HE2      55.50  120.50 
+O      C      CE2      80.00  133.50  
+S      C      CE2      50.00  114.00
+
+DIHEDRALS
+C      S      CT2    HA      0.0   3    0.0 ! adopted
+HA     CT3    C      S       0.04  3    0.0 ! adopted from HA CT3 CT2 CA
+
+C      S      CT2    CT2     0.24  1  180.0 ! ALOW    ALI SUL ION
+C      S      CT2    CT2     0.37  3    0.0 ! ALOW    ALI SUL ION
+O      C      S      CT2     3.73  1  180.0
+O      C      S      CT2     2.07  2  180.0
+CT3    C      S      CT2     2.63  1  180.0
+CT3    C      S      CT2     2.56  2  180.0
+
+NH1    C      CT2    CT2     2.98  1    0.0
+
+CT2    CT2    NH1    C       1.44  1  180.0
+CT2    CT2    NH1    C       0.30  3  180.0
+
+NH1    C      CT1    OH1     0.00  3    0.0
+O      C      CT1    OH1     0.00  3    0.0
+NH1    C      CT1    HA      0.00  3    0.0
+O      C      CT1    HA      0.00  3    0.0
+CT1    CT1    CN9    HN9     0.04  3    0.0
+CT3    CT1    CN9    HN9     0.04  3    0.0
+CT3    CT1    CN9    ON2     0.19  3    0.0 ! alkane, 4/98, yin and mackerell
+CT1    CT1    CN9    ON2     0.16  1  180.0 ! methylpropylether, 2/12/05, ATM
+CT1    CT1    CN9    ON2     0.39  2    0.0 ! methylpropylether
+P      ON2    CN9    CT1     1.55  1    0.0
+P      ON2    CN9    CT1     0.55  2    0.0
+P      ON2    CN9    CT1     0.20  3    0.0
+
+HE2    CE2    C      S       5.20  2  180.0
+HE2    CE2    C      O       5.20  2  180.0
+CE2    C      S      CT2     3.65  1  180.0
+CE2    C      S      CT2     0.47  2  180.0
+
+
+

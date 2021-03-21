@@ -1,0 +1,86 @@
+# . Text parameter file for the element Pb.
+
+Pb   atomicNumber                          82
+Pb   iii                                    6
+Pb   iiid                                   6
+Pb   ir016                                  0
+Pb   ir066                                  0
+Pb   ir244                                  0
+Pb   ir266                                  0
+Pb   ir466                                  0
+Pb   qnd                                    0
+Pb   qnp                                    6
+Pb   qns                                    6
+Pb   ad                     0.292548075459475  atomic
+Pb   alp                    0.000000000000000  A^-1
+Pb   am                     0.193085662818598  atomic
+Pb   aq                     0.356216359468483  atomic
+Pb   betad                  0.000000000000000  eV
+Pb   betap                 -2.237891000000000  eV
+Pb   betas                 -8.323791999999999  eV
+Pb   dd                     1.534780204727186  atomic
+Pb   eheat                 46.619999999999997  kcal/mole
+Pb   eisol                -84.447285000000008  eV
+Pb   f0sd                   0.000000000000000  eV
+Pb   g2sd                   0.000000000000000  eV
+Pb   gp2                    5.603019000000000  eV
+Pb   gphot                  1.000000000000000  dimensionless
+Pb   gpp                    6.818551000000000  eV
+Pb   gsp                    7.061016000000000  eV
+Pb   gss                    5.254128000000000  eV
+Pb   hsp                    1.018819000000000  eV
+Pb   pcore                  0.000000000000000  atomic
+Pb   qq                     1.790017971144670  atomic
+Pb   udd                    0.000000000000000  eV
+Pb   upp                  -25.413401000000000  eV
+Pb   uss                  -35.038145000000000  eV
+Pb   zcore                  4.000000000000000  atomic
+Pb   zdn                    0.000000000000000  atomic
+Pb   zetad                  0.000000000000000  atomic
+Pb   zetap                  1.685246000000000  atomic
+Pb   zetas                  2.368901000000000  atomic
+Pb   zpn                    0.000000000000000  atomic
+Pb   zsn                    0.000000000000000  atomic
+Pb   fn10                  -0.239463000000000  A_eV
+Pb   fn20                   5.444338000000000  A^-2
+Pb   fn30                   1.613682000000000  A
+Pb   diatomicA      H       1.522676000000000  A^-1
+Pb   diatomicX      H       0.840096000000000  dimensionless
+Pb   diatomicA      Li      1.001810000000000  A^-1
+Pb   diatomicX      Li      1.285064000000000  dimensionless
+Pb   diatomicA      B       0.911197000000000  A^-1
+Pb   diatomicX      B       1.138157000000000  dimensionless
+Pb   diatomicA      C       1.525593000000000  A^-1
+Pb   diatomicX      C       0.404656000000000  dimensionless
+Pb   diatomicA      N       1.317394000000000  A^-1
+Pb   diatomicX      N       0.335787000000000  dimensionless
+Pb   diatomicA      O       1.763210000000000  A^-1
+Pb   diatomicX      O       0.782506000000000  dimensionless
+Pb   diatomicA      F       3.288902000000000  A^-1
+Pb   diatomicX      F       8.368562000000001  dimensionless
+Pb   diatomicA      P       4.516800000000000  A^-1
+Pb   diatomicX      P       5.033200000000000  dimensionless
+Pb   diatomicA      S       1.027519000000000  A^-1
+Pb   diatomicX      S       0.175150000000000  dimensionless
+Pb   diatomicA      Cl      1.094123000000000  A^-1
+Pb   diatomicX      Cl      0.164814000000000  dimensionless
+Pb   diatomicA      V       1.500000000000000  A^-1
+Pb   diatomicX      V       1.000000000000000  dimensionless
+Pb   diatomicA      Cr      1.860760000000000  A^-1
+Pb   diatomicX      Cr      1.029110000000000  dimensionless
+Pb   diatomicA      Zn      1.500000000000000  A^-1
+Pb   diatomicX      Zn      1.000000000000000  dimensionless
+Pb   diatomicA      Se      0.460797000000000  A^-1
+Pb   diatomicX      Se      0.111195000000000  dimensionless
+Pb   diatomicA      Br      0.865550000000000  A^-1
+Pb   diatomicX      Br      0.148229000000000  dimensionless
+Pb   diatomicA      Nb      1.500000000000000  A^-1
+Pb   diatomicX      Nb      1.000000000000000  dimensionless
+Pb   diatomicA      Mo      2.000000000000000  A^-1
+Pb   diatomicX      Mo      5.000000000000000  dimensionless
+Pb   diatomicA      Te      1.002559000000000  A^-1
+Pb   diatomicX      Te      0.809042000000000  dimensionless
+Pb   diatomicA      I       0.983474000000000  A^-1
+Pb   diatomicX      I       0.267426000000000  dimensionless
+Pb   diatomicA      Pb      1.881764000000000  A^-1
+Pb   diatomicX      Pb      2.362343000000000  dimensionless

@@ -1,0 +1,28 @@
+# . Space group Ammm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -A 2 2
+Hermann-Mauguin    : Ammm
+Schoenflies        : D2h^19
+Space Group Number : 65
+Space Group Symbol : 65:cab
+Setting            : 311
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (-x,-y,-z)
+    - (-x,y,z)
+    - (x,y,-z)
+    - (x,-y,z)
+    - (x,y+1/2,z+1/2)
+    - (x,-y+1/2,-z+1/2)
+    - (-x,-y+1/2,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (-x,-y+1/2,-z+1/2)
+    - (-x,y+1/2,z+1/2)
+    - (x,y+1/2,-z+1/2)
+    - (x,-y+1/2,z+1/2)
+...

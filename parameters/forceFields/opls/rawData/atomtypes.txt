@@ -1,0 +1,1211 @@
+#
+# . Ac
+#
+*   0 Ac   697   89     3.00000    3.47300    0.05400     Ac+3 Actinide params -
+#
+# . Al
+#
+*   0 Al    13   13     0.00000    4.05000    0.10000
+#
+# . Am
+#
+*   0 Am   699   95     3.00000    3.30000    0.05000     Am+3 F. van Veggel
+#
+# . Ar
+#
+*   0 Ar    18   18     0.00000    3.40100    0.23400
+*   1 Ar   103   18     0.00000    3.40100    0.23390     Ar - Verlet & Weis,
+#
+# . B
+#
+*   0 B      5    5     0.00000    3.60000    0.05000
+#
+# . Ba
+#
+*   0 Ba   414   56     2.00000    3.81661    0.04710     Ba++
+*   1 Ba  1114   56     2.00000    4.18000    0.04710     Ba++
+#
+# . Be
+#
+*   0 Be     4    4     0.00000    3.25000    0.05000     to zero by BOSS.
+#
+# . Br
+#
+*   0 Br    35   35     0.00000    3.47000    0.47000
+*   1 Br   402   35    -1.00000    4.62376    0.09000     Br- JACS 107, 7793(1985)
+*   2 Br   722   35    -0.22000    3.47000    0.47000     Br    alkyl bromide (UA)
+*   3 Br   730   35    -0.20000    3.47000    0.47000     Br    bromobenzene
+*   4 Br   975   35    -0.20000    3.47000    0.47000     Br in alkyl bromides
+*   5 Br   982   35    -0.08000    3.47000    0.47000     Br in  acyl bromide    tentative
+*   6 Br  1102   35    -1.00000    4.51000    0.09000     Br-  correct free energies
+#
+# . C
+#
+*   0 C      6    6     0.00000    3.55000    0.07000
+*   1 C     61    6     0.55000    3.75000    0.10500     Co in CCOOH JPC,95,3315(1991)
+*   2 C    131    6     0.50000    3.80000    0.11500     C in C=O for UA formamide, DMF.
+*   3 C    231    6     0.70000    3.75000    0.10500     C: C=O in benzophenone
+*   4 C    232    6     0.56500    3.75000    0.10500     C: C=O in benzaldehyde
+*   5 C    233    6     0.58500    3.75000    0.10500     C: C=O in acetophenone
+*   6 C    234    6     0.61500    3.75000    0.10500     C: C=O in benzamide
+*   7 C    235    6     0.50000    3.75000    0.10500     C: C=O in amide.   Acyl R in amides
+*   8 C    247    6     0.14200    3.75000    0.10500     C in O=C(NH2)2  Urea
+*   9 C    252    6     0.42000    3.75000    0.10500     C(=O) in imide
+*  10 C    267    6     0.52000    3.75000    0.10500     Co in CCOOH carboxylic acid
+*  11 C    271    6     0.70000    3.75000    0.10500     C in COO- carboxylate
+*  12 C    277    6     0.45000    3.75000    0.10500     AA C: aldehyde & acyl halide - for C-alpha use
+*  13 C    280    6     0.47000    3.75000    0.10500     AA C: ketone - for C-alpha use
+*  14 C    320    6     0.50000    3.75000    0.10500     Uracil C2
+*  15 C    322    6     0.45000    3.75000    0.10500     Uracil C4
+*  16 C    334    6     0.55000    3.75000    0.10500     Cytosine C2
+*  17 C    366    6     0.52000    3.75000    0.10500     Guanine C6
+*  18 C    378    6     0.65000    3.75000    0.10500     CytH+ C2
+*  19 C    465    6     0.51000    3.75000    0.10500     AA C:   esters   - for R on C=O, use
+*  20 C    470    6     0.63500    3.75000    0.10500     Co in benzoic acid
+*  21 C    471    6     0.62500    3.75000    0.10500     Co in methyl benzoate, aryl ester
+*  22 C    772    6     0.86000    3.75000    0.10500     " C=O    Lucienne's
+*  23 C    952    6     0.70000    3.75000    0.10500     glycine zwit. 6-31G* CHELPG charges
+*  24 C    990    6     0.88800    3.75000    0.10500     C  in hydroxamic acid  jtr 11/98
+*  25 C    991    6     1.00300    3.75000    0.10500     C  in aromatic hydroxamic acid
+*  26 C   1035    6     0.60000    3.75000    0.10500     C: C=O in tert amide.   Acyl R in amides
+*  27 C   1043    6     0.57000    3.75000    0.10500     C: C=O in tert formamide.
+#
+# . C!
+#
+*   0 C!   519    6     0.00000    3.55000    0.07000     biphenyl C1
+*   1 C!   690    6     0.58800    3.55000    0.07000     2-phenyl pyridine C2
+*   2 C!   691    6    -0.10300    3.55000    0.07000     2-phenyl pyridine C2'
+*   3 C!   692    6    -0.33200    3.55000    0.07000     3-phenyl pyridine C3
+*   4 C!   693    6     0.04000    3.55000    0.07000     3-phenyl pyridine C3'
+*   5 C!   694    6     0.34200    3.55000    0.07000     4-phenyl pyridine C4
+*   6 C!   695    6    -0.05000    3.55000    0.07000     4-phenyl pyridine C4'
+*   7 C!   948    6     0.02700    3.55000    0.07000     C2' in 2-phenylfuran
+*   8 C!   949    6     0.01100    3.55000    0.07000     C3' in 2-phenylfuran
+*   9 C!  1000    6    -0.03400    3.55000    0.07000     3-phenyl pyrrole C3
+*  10 C!  1001    6     0.00300    3.55000    0.07000     3-phenyl pyrrole C3'
+*  11 C!  1002    6     0.30000    3.55000    0.07000     4-phenyl imidazole C4
+*  12 C!  1003    6    -0.04000    3.55000    0.07000     4-phenyl imidazole C4'
+#
+# . C$
+#
+*   0 C$   685    6     0.50000    3.75000    0.10500     C: C=O beta-lactam
+#
+# . C*
+#
+*   0 C*   500    6     0.07500    3.55000    0.07000     CG in TRP
+#
+# . C+
+#
+*   0 C+   700    6     0.61900    3.55000    0.07600     C+  in t-butyl+ B3LYP/6-31G*
+#
+# . C2
+#
+*   0 C2    55    6     0.22000    3.90500    0.11800     CH2F  alkyl fluoride (UA)
+*   1 C2    71    6     0.00000    3.90500    0.11800     CH2 (SP3) ALKANES
+*   2 C2    81    6     0.26500    3.90500    0.11800     CH2 IN ETHANOL       "
+*   3 C2    89    6     0.18000    3.90500    0.11800     CH2 IN CH3CH2SH   "
+*   4 C2    91    6     0.23500    3.80000    0.11800     CH2 IN RCH2SR     "
+*   5 C2    93    6     0.30000    3.80000    0.11800     CH2 IN RCH2SSR    "
+*   6 C2   110    6     0.25000    3.80000    0.11800     ETHER CH2 (-O)   "
+*   7 C2   118    6     0.50000    3.80000    0.11800     CH2 Methylenechloride  C-Cl=1.772
+*   8 C2   723    6     0.22000    3.90500    0.11800     CH2   alkyl bromide (UA)
+#
+# . C3
+#
+*   0 C3    64    6     0.08000    3.91000    0.16000     CH3 in CH3COOH
+*   1 C3    67    6     0.00000    3.77500    0.20700     CH3 (C1) ETHANE
+*   2 C3    68    6     0.00000    3.90500    0.17500     CH3 (C2) N-ALKANES
+*   3 C3    69    6     0.00000    3.91000    0.16000     CH3 (C3) ISOBUTANE
+*   4 C3    70    6     0.00000    3.96000    0.14500     CH3 (C4) NEOPENTANE
+*   5 C3    80    6     0.26500    3.77500    0.20700     CH3 IN METHANOL      "
+*   6 C3    88    6     0.18000    3.77500    0.20700     CH3 IN CH3SH      "
+*   7 C3    90    6     0.23500    3.80000    0.17000     CH3 IN CH3SR      "
+*   8 C3    92    6     0.30000    3.80000    0.17000     CH3 IN CH3SSR     "
+*   9 C3    96    6     0.15000    3.77500    0.20700     CH3 IN CH3CN  united atom    "
+*  10 C3   109    6     0.25000    3.80000    0.17000     ETHER CH3 (-O)   "
+*  11 C3   126    6     0.16000    3.81000    0.16000     DMSO
+*  12 C3   132    6     0.28500    3.80000    0.17000     CH3 in HCON(CH3)2 DMF
+*  13 C3   415    6    -0.40000    4.20000    0.30000     C  in  CH3S-  thiolate
+*  14 C3   418    6    -0.20000    4.20000    0.30000     C  in  CH3O-  alkoxide
+*  15 C3   425    6    -0.30000    4.20000    0.30000     C  in  CH3NH-
+*  16 C3   429    6    -0.40000    4.20000    0.30000     C2 in  CH3CH2- RCH2-
+#
+# . C4
+#
+*   0 C4    66    6     0.00000    3.73000    0.29400     CH4 66-77: JACS,106,6638 (1984)
+#
+# . C7
+#
+*   0 C7    77    6     0.00000    3.75000    0.10500     C   (SP2) ISOBUTENE
+#
+# . C8
+#
+*   0 C8    74    6     0.00000    3.80000    0.11500     CH  (SP2) 2-ALKENES
+#
+# . C9
+#
+*   0 C9    72    6     0.00000    3.85000    0.14000     CH2 (SP2) 1-ALKENES
+#
+# . C=
+#
+*   0 C=   150    6    -0.11500    3.55000    0.07600     diene =CH-CH=; see 178 also
+*   1 C=   178    6     0.00000    3.55000    0.07600     diene =CR-RC=; see 150 also
+#
+# . CA
+#
+*   0 CA   145    6    -0.11500    3.55000    0.07000     Benzene C - 12 site JACS,112,4768-90
+*   1 CA   147    6     0.00000    3.55000    0.07000     Naphthalene fusion C (C9)
+*   2 CA   166    6     0.15000    3.55000    0.07000     C(OH)  phenol  Use with all
+*   3 CA   199    6     0.08500    3.55000    0.07000     C(OMe)  anisole
+*   4 CA   221    6    -0.05500    3.55000    0.07000     C(CH2OH)   - benzyl alcohols, nitriles
+*   5 CA   228    6     0.10250    3.55000    0.07000     C(SMe)  thioanisole
+*   6 CA   260    6     0.03500    3.55000    0.07000     C(CN)  benzonitrile
+*   7 CA   263    6     0.18000    3.55000    0.07000     C(Cl)  chlorobenzene
+*   8 CA   266    6     0.08500    3.55000    0.07000     ipso C in N-phenylacetamide
+*   9 CA   302    6     0.64000    3.55000    0.05000     C: guanidinium C+
+*  10 CA   312    6     0.36000    3.50000    0.08000     DAP C2   pyridine
+*  11 CA   315    6    -0.15000    3.50000    0.08000     DAP C3
+*  12 CA   317    6    -0.04000    3.50000    0.08000     DAP C4
+*  13 CA   336    6     0.46000    3.50000    0.08000     Cytosine C4     Nucleotide base
+*  14 CA   351    6     0.44000    3.50000    0.08000     Adenine C6
+*  15 CA   362    6     0.46000    3.50000    0.08000     Guanine C2
+*  16 CA   380    6     0.66000    3.50000    0.08000     CytH+ C4
+*  17 CA   457    6    -0.14000    3.55000    0.07000     Cipso  benzyl methylphosphonate
+*  18 CA   460    6    -0.04000    3.55000    0.07000     Cipso  methyl benzylphosphonate
+*  19 CA   463    6     0.14000    3.55000    0.07000     Cipso C6H5OPO3(2-)  use with 445-7
+*  20 CA   472    6     0.13500    3.55000    0.07000     Cipso phenyl ester
+*  21 CA   488    6     0.00000    3.55000    0.07000     benzene C attached to S of sulfonamide
+*  22 CA   489    6     0.03000    3.55000    0.07000     benzene C attached to S of alkyl aryl sulfoxide
+*  23 CA   521    6     0.47300    3.55000    0.07000     C1  in pyridine CHELPG
+*  24 CA   522    6    -0.44700    3.55000    0.07000     C2  in pyridine charges
+*  25 CA   523    6     0.22700    3.55000    0.07000     C3  in pyridine for
+*  26 CA   528    6     0.19200    3.55000    0.07000     C   in pyrazine
+*  27 CA   532    6     0.65300    3.55000    0.07000     C4  in pyrimidine
+*  28 CA   533    6    -0.68900    3.55000    0.07000     C5  in pyrimidine
+*  29 CA   538    6     0.37800    3.55000    0.07000     C3  in pyridazine
+*  30 CA   539    6    -0.16000    3.55000    0.07000     C4  in pyridazine
+*  31 CA   590    6    -0.27000    3.55000    0.07000     C4  in indole
+*  32 CA   591    6    -0.12700    3.55000    0.07000     C5  in indole
+*  33 CA   592    6    -0.10800    3.55000    0.07000     C6  in indole
+*  34 CA   593    6    -0.25800    3.55000    0.07000     C7  in indole
+*  35 CA   604    6     0.42500    3.55000    0.07000     C2  in quinoline
+*  36 CA   605    6    -0.35900    3.55000    0.07000     C3  in quinoline
+*  37 CA   606    6    -0.00800    3.55000    0.07000     C4  in quinoline
+*  38 CA   607    6    -0.19700    3.55000    0.07000     C5  in quinoline
+*  39 CA   608    6    -0.11200    3.55000    0.07000     C6  in quinoline
+*  40 CA   609    6    -0.07000    3.55000    0.07000     C7  in quinoline
+*  41 CA   610    6    -0.30700    3.55000    0.07000     C8  in quinoline
+*  42 CA   611    6     0.56300    3.55000    0.07000     C9  in quinoline
+*  43 CA   612    6    -0.05100    3.55000    0.07000     C10 in quinoline
+*  44 CA   625    6     0.34300    3.55000    0.07000     C6  in purine
+*  45 CA   644    6     0.13000    3.55000    0.07000     C5  in serotonin
+*  46 CA   647    6     0.39200    3.55000    0.07000     C2  in 1,10-phenanthroline
+*  47 CA   648    6    -0.34800    3.55000    0.07000     C3  in 1,10-phenanthroline
+*  48 CA   649    6     0.02000    3.55000    0.07000     C4  in 1,10-phenanthroline
+*  49 CA   650    6    -0.04200    3.55000    0.07000     C12 in 1,10-phenanthroline
+*  50 CA   651    6     0.34700    3.55000    0.07000     C11 in 1,10-phenanthroline
+*  51 CA   652    6    -0.19600    3.55000    0.07000     C5  in 1,10-phenanthroline
+*  52 CA   684    6     0.52300    3.55000    0.07000     C6 in 6-mercaptopurine
+*  53 CA   714    6    -0.23000    3.55000    0.07000     C in C5H5- cyclopentadienyl anion
+*  54 CA   716    6    -0.09900    3.55000    0.07000     C in C5H5  cyclopentadienyl radical
+*  55 CA   718    6     0.22000    3.55000    0.07000     C(F)  fluorobenzene
+*  56 CA   720    6     0.13000    3.55000    0.07000     C(F)  hexafluorobenzene
+*  57 CA   724    6     0.15000    3.55000    0.07000     C(CF3) trifluoromethylbenzene
+*  58 CA   727    6     0.20000    3.55000    0.07000     C(F)  difluorobenzenes
+*  59 CA   729    6     0.20000    3.55000    0.07000     C(Br) bromobenzene
+*  60 CA   731    6     0.10000    3.55000    0.07000     C(I)  iodobenzene - tentative
+*  61 CA   735    6     0.06500    3.55000    0.07000     C(S)  thiophenol
+*  62 CA   736    6     0.01300    3.55000    0.07000     CG of Benzamidine
+*  63 CA   737    6    -0.10600    3.55000    0.07000     CD of Benzamidine
+*  64 CA   738    6    -0.09000    3.55000    0.07000     CE of Benzamidine
+*  65 CA   739    6    -0.11900    3.55000    0.07000     CZ of Benzamidine
+*  66 CA   742    6     0.82700    3.55000    0.05000     C+ of Benzamidine
+*  67 CA   752    6     0.55000    3.55000    0.05000     CZ  "    "     "
+*  68 CA   768    6     0.09000    3.55000    0.07000     C(NO2) nitrobenzene
+*  69 CA   790    6     0.15000    3.55000    0.07000     C(CF3) trifluoromethylbenzene test
+*  70 CA   916    6     0.18000    3.55000    0.07000     C(NH2) aniline
+*  71 CA   917    6     0.20000    3.55000    0.07000     C(NHR) N-methylaniline
+*  72 CA   918    6     0.21000    3.55000    0.07000     C(NR2) N,N-dimethylaniline
+*  73 CA   983    6     0.10000    3.55000    0.07000     C(OCF3): trifluoroanisole
+*  74 CA   988    6    -0.04500    3.55000    0.07000     ipso C in N-methyl,N-phenylacetamide
+*  75 CA  1004    6    -0.05750    3.55000    0.07000     diphenylmethane Cipso
+*  76 CA  1022    6     0.15500    3.55000    0.07000     benzene C on N of N-phenyl sulfonamide
+*  77 CA  1032    6    -0.10000    3.55000    0.07000     ipso C in benzoate ion
+*  78 CA  1034    6     0.21800    3.55000    0.07000     ipso C in N-phenylurea
+*  79 CA  1126    6     0.13500    3.55000    0.07000     Cipso (ArNR3+)
+*  80 CA  1128    6     0.15500    3.55000    0.07000     Cipso (ArNR2H+)
+#
+# . CB
+#
+*   0 CB   349    6     0.38000    3.50000    0.08000     Adenine C4
+*   1 CB   350    6     0.15000    3.50000    0.08000     Adenine C5
+*   2 CB   364    6     0.34000    3.50000    0.08000     Guanine C4
+*   3 CB   365    6     0.12000    3.50000    0.08000     Guanine C5
+*   4 CB   501    6    -0.05500    3.55000    0.07000     CD C in TRP
+*   5 CB   595    6     0.22500    3.55000    0.07000     C9  in indole
+*   6 CB   623    6     0.73600    3.55000    0.07000     C4  in purine
+*   7 CB   624    6     0.03800    3.55000    0.07000     C5  in purine
+#
+# . CD
+#
+*   0 CD    75    6     0.00000    3.75000    0.11000     CH (AROM) BENZENOID united atom
+#
+# . CH
+#
+*   0 CH    73    6     0.00000    3.85000    0.08000     CH  (SP3) ISOBUTANE
+*   1 CH   106    6     0.26500    3.85000    0.08000     CH  (SP3) ISOPROPANOL
+*   2 CH   120    6     0.42000    3.80000    0.08000     CH  Chloroform JPC,94,1683 (1990)
+#
+# . CK
+#
+*   0 CK   353    6     0.20000    3.50000    0.08000     Adenine C8 Guanine
+*   1 CK   627    6     0.45200    3.55000    0.07000     C8  in purine
+#
+# . CM
+#
+*   0 CM   141    6     0.00000    3.55000    0.07600     alkene C (R2-C=) all atom
+*   1 CM   142    6    -0.11500    3.55000    0.07600     alkene C (RH-C=) all atom
+*   2 CM   143    6    -0.23000    3.55000    0.07600     alkene C (H2-C=) all atom
+*   3 CM   227    6     0.00500    3.55000    0.07600     chloroalkene C (ClH-C=)
+*   4 CM   323    6    -0.07000    3.50000    0.08000     Uracil C5
+*   5 CM   324    6     0.08000    3.50000    0.08000     Uracil C6
+*   6 CM   337    6    -0.06000    3.50000    0.08000     Cytosine C5     parameters:
+*   7 CM   338    6     0.10000    3.50000    0.08000     Cytosine C6     JACS,113,2810(1991)
+*   8 CM   381    6    -0.06000    3.50000    0.08000     CytH+ C5
+*   9 CM   382    6     0.10000    3.50000    0.08000     CytH+ C6
+*  10 CM   397    6     0.18000    3.50000    0.08000     F3C-C5 thymine; trifluorothymine
+*  11 CM   399    6     0.12000    3.55000    0.07600     chloroalkene C (Cl2-C=)  - tentaive
+*  12 CM   517    6    -0.03000    3.55000    0.07600     vinyl ether HCOR
+*  13 CM   518    6     0.08500    3.55000    0.07600     vinyl ether RCOR
+*  14 CM   708    6    -0.34400    3.55000    0.07600     C  in Cl..CH3..Cl- TS
+#
+# . CN
+#
+*   0 CN   502    6     0.13000    3.55000    0.07000     CE C in TRP
+*   1 CN   594    6     0.22000    3.55000    0.07000     C8  in indole
+#
+# . CO
+#
+*   0 CO   189    6     0.20000    3.50000    0.06600     C(H2O2): acetal OCH2O
+*   1 CO   191    6     0.26500    3.50000    0.06600     C(H2O2): hemiacetal OCH2OH
+*   2 CO   193    6     0.30000    3.50000    0.06600     C(HCO2): acetal OCHRO
+*   3 CO   195    6     0.36500    3.50000    0.06600     C(HCO2): hemiacetal OCHROH
+*   4 CO   197    6     0.40000    3.50000    0.06600     C(C2O2): acetal OCRRO
+*   5 CO   198    6     0.46500    3.50000    0.06600     C(C2O2): hemiacetal OCRROH
+*   6 CO   931    6     0.45000    3.50000    0.06600     C1' of (ade, gua) by Deping
+*   7 CO   932    6     0.48000    3.50000    0.06600     C1' of cyt by Deping
+*   8 CO   933    6     0.51000    3.50000    0.06600     C1' of (ura, thy) by Deping
+#
+# . CQ
+#
+*   0 CQ   347    6     0.22000    3.50000    0.08000     Adenine C2
+*   1 CQ   531    6     0.87400    3.55000    0.07000     C2  in pyrimidine
+*   2 CQ   621    6     0.67900    3.55000    0.07000     C2  in purine
+*   3 CQ   642    6     0.96500    3.55000    0.07000     C   in 1,3,5-triazine
+#
+# . CR
+#
+*   0 CR   506    6     0.29500    3.55000    0.07000     CE1 in HID, HIE
+*   1 CR   509    6     0.38500    3.55000    0.07000     CE1 in HIP
+*   2 CR   558    6     0.27500    3.55000    0.07000     C2  in imidazole
+*   3 CR   572    6     0.51100    3.55000    0.07000     C2  in oxazole
+*   4 CR   634    6     0.24200    3.55000    0.07000     C2  in thiazole
+*   5 CR   658    6     0.16600    3.55000    0.07000     C2  in 1-methylimidazole
+*   6 CR  1234    6     0.35000    3.55000    0.07000     C2  thiazole jlj0003
+#
+# . CS
+#
+*   0 CS   544    6    -0.14900    3.55000    0.07000     C3  in pyrrole
+*   1 CS   551    6    -0.32000    3.55000    0.07000     C4  in pyrazole
+*   2 CS   568    6    -0.15400    3.55000    0.07600     C3  in furan
+*   3 CS   582    6    -0.45500    3.55000    0.07000     C4  in isoxazole
+*   4 CS   589    6    -0.39000    3.55000    0.07000     C3  in indole
+*   5 CS   947    6    -0.03900    3.55000    0.07600     C3  in 3-phenylfuran
+#
+# . CT
+#
+*   0 CT    76    6     0.00000    3.80000    0.05000     C   (SP3) NEOPENTANE
+*   1 CT   107    6     0.26500    3.80000    0.05000     C   (SP3) T-BUTANOL
+*   2 CT   122    6     0.24800    3.80000    0.05000     C   CCl4
+*   3 CT   135    6    -0.18000    3.50000    0.06600     CH3    all-atom C: alkanes
+*   4 CT   136    6    -0.12000    3.50000    0.06600     CH2    all-atom C: alkanes
+*   5 CT   137    6    -0.06000    3.50000    0.06600     CH     all-atom C: alkanes
+*   6 CT   138    6    -0.24000    3.50000    0.06600     CH4    all-atom C: methane
+*   7 CT   139    6     0.00000    3.50000    0.06600     C      all-atom C: alkanes
+*   8 CT   148    6    -0.06500    3.50000    0.06600     all-atom C: CH3, toluene
+*   9 CT   149    6    -0.00500    3.50000    0.06600     all-atom C: CH2, ethyl benzene
+*  10 CT   152    6    -0.00600    3.50000    0.06600     RCH2Cl "     "
+*  11 CT   157    6     0.14500    3.50000    0.06600     all-atom C: CH3 & CH2, alcohols
+*  12 CT   158    6     0.20500    3.50000    0.06600     all-atom C: CH, alcohols
+*  13 CT   159    6     0.26500    3.50000    0.06600     all-atom C: C, alcohols
+*  14 CT   160    6     0.12630    3.50000    0.06600     CH2    Trifluoroethanol
+*  15 CT   161    6     0.53230    3.25000    0.06200     CF3           "
+*  16 CT   173    6     0.14500    3.50000    0.06600     C(H2OH):   "
+*  17 CT   174    6     0.20500    3.50000    0.06600     C(HROH):   "
+*  18 CT   175    6     0.26500    3.50000    0.06600     C(R2OH):   "
+*  19 CT   181    6     0.11000    3.50000    0.06600     C(H3OR): methyl ether
+*  20 CT   182    6     0.14000    3.50000    0.06600     C(H2OR): ethyl  ether
+*  21 CT   183    6     0.17000    3.50000    0.06600     C(HOR):  i-Pr   ether
+*  22 CT   184    6     0.20000    3.50000    0.06600     C(OR):   t-Bu   ether
+*  23 CT   206    6     0.06000    3.50000    0.06600     all-atom C: CH2, thiols
+*  24 CT   207    6     0.12000    3.50000    0.06600     all-atom C: CH, thiols
+*  25 CT   208    6     0.18000    3.50000    0.06600     all-atom C: C, thiols
+*  26 CT   209    6     0.03750    3.50000    0.06600     all-atom C: CH3, sulfides
+*  27 CT   210    6     0.09750    3.50000    0.06600     all-atom C: CH2, sulfides
+*  28 CT   211    6     0.15750    3.50000    0.06600     all-atom C: CH, sulfides
+*  29 CT   212    6     0.21750    3.50000    0.06600     all-atom C: C, sulfides
+*  30 CT   213    6     0.03750    3.50000    0.06600     all-atom C: CH3, disulfides
+*  31 CT   214    6     0.09750    3.50000    0.06600     all-atom C: CH2, disulfides
+*  32 CT   215    6     0.15750    3.50000    0.06600     all-atom C: CH, disulfides
+*  33 CT   216    6     0.21750    3.50000    0.06600     all-atom C: C, disulfides
+*  34 CT   217    6     0.00000    3.50000    0.06600     all-atom C: CH3, methanethiol
+*  35 CT   218    6     0.20000    3.50000    0.06600     C in CH2OH - benzyl alcohols
+*  36 CT   219    6     0.26000    3.50000    0.06600     C in CHROH - benzyl alcohols
+*  37 CT   220    6     0.32000    3.50000    0.06600     C in CR2OH - benzyl alcohols
+*  38 CT   223    6     0.08000    3.50000    0.06600     C in RCH2NH2 and Gly CA (See 900 for amines)
+*  39 CT   224    6     0.14000    3.50000    0.06600     C in R2CHNH2 and Ala CA
+*  40 CT   225    6     0.20000    3.50000    0.06600     C in R3CNH2 and Aib  CA
+*  41 CT   229    6     0.14000    3.50000    0.06600     C on N: secondary N-CHR2 amide
+*  42 CT   230    6     0.20000    3.50000    0.06600     C on N: secondary N-CR3  amide
+*  43 CT   242    6     0.02000    3.50000    0.06600     C on N: secondary N-Me amide
+*  44 CT   243    6    -0.11000    3.50000    0.06600     C on N: tertiary  N-Me amide
+*  45 CT   244    6     0.08000    3.50000    0.06600     C on N: secondary N-CH2R amide
+*  46 CT   245    6    -0.05000    3.50000    0.06600     C on N: tertiary  N-CH2R amide (Pro Cdelta)
+*  47 CT   246    6     0.01000    3.50000    0.06600     C on N: tertiary  N-CHR2 amide (Pro Calpha)
+*  48 CT   256    6    -0.12000    3.50000    0.06600     C in CH3  imide
+*  49 CT   257    6    -0.06000    3.50000    0.06600     C in RCH2 imide
+*  50 CT   258    6     0.00000    3.50000    0.06600     C in R2CH imide
+*  51 CT   259    6     0.06000    3.50000    0.06600     C in R3C  imide
+*  52 CT   273    6    -0.28000    3.50000    0.06600     C: CH3, carboxylate ion
+*  53 CT   274    6    -0.22000    3.50000    0.06600     C: CH2, carboxylate ion
+*  54 CT   275    6    -0.16000    3.50000    0.06600     C: CH,  carboxylate ion
+*  55 CT   276    6    -0.10000    3.50000    0.06600     C: C,   carboxylate ion
+*  56 CT   283    6     0.04000    3.50000    0.06600     AA C-alpha on C-terminal ALA
+*  57 CT   284    6    -0.02000    3.50000    0.06600     AA C-alpha on C-terminal GLY
+*  58 CT   285    6    -0.09000    3.50000    0.06600     AA C-alpha on C-terminal PRO
+*  59 CT   291    6     0.13000    3.50000    0.06600     C in  CH3NH3+
+*  60 CT   292    6     0.19000    3.50000    0.06600     C in  RCH2NH3+ & CA in N-term Gly
+*  61 CT   293    6     0.25000    3.50000    0.06600     C in  R2CHNH3+ & CA in N-term Ala, etc.
+*  62 CT   294    6     0.31000    3.50000    0.06600     C in  R3CNH3+
+*  63 CT   295    6     0.23000    3.50000    0.06600     AA:C-alpha in N-term PRO
+*  64 CT   296    6     0.17000    3.50000    0.06600     AA:C-delta in N-term PRO
+*  65 CT   297    6     0.11000    3.50000    0.06600     CT in  CH3NH2+R
+*  66 CT   298    6     0.09000    3.50000    0.06600     AA C-alpha in Gly zwitterion
+*  67 CT   299    6     0.15000    3.50000    0.06600     AA C-alpha in Ala zwitterion
+*  68 CT   305    6     0.20000    3.50000    0.06600     C: CH3, methylguanidinium
+*  69 CT   306    6    -0.11000    3.50000    0.06600     C: CH3, ethylguanidinium
+*  70 CT   307    6     0.19000    3.50000    0.06600     C: CH2(D), ARG, ethylguanidinium
+*  71 CT   308    6    -0.05000    3.50000    0.06600     C: CH2(G), ARG
+*  72 CT   331    6    -0.14000    3.50000    0.08000     Thymine C-C5
+*  73 CT   371    6    -0.01000    3.50000    0.08000     9-Me A or G C-N9
+*  74 CT   373    6    -0.01000    3.50000    0.08000     1-Me U or T C-N1
+*  75 CT   375    6    -0.01000    3.50000    0.08000     1-Me Cytosine C-N1
+*  76 CT   391    6     0.01000    3.50000    0.08000     1-Me CytH+ C-N1
+*  77 CT   396    6     0.02000    3.55000    0.06600     C in CH3      "  for AA
+*  78 CT   421    6    -1.07000    4.20000    0.30000     C1 in  CH2CN-  RCN-
+*  79 CT   431    6     0.00000    4.20000    0.30000     C1 in  CH3CH2-
+*  80 CT   438    6     0.27000    3.50000    0.06600     C  in  dimetyl phosphate
+*  81 CT   443    6     0.30000    3.50000    0.06600     C  in   "     phosphate
+*  82 CT   448    6     0.44000    3.50000    0.06600     C  in   "     6-31+G* CHELPG
+*  83 CT   453    6     0.28000    3.50000    0.06600     C(O)    "     methylphosphonate
+*  84 CT   455    6    -0.51000    3.50000    0.06600     C(P)    "
+*  85 CT   458    6     0.32000    3.50000    0.06600     C(O)    "           "
+*  86 CT   461    6    -0.47000    3.50000    0.06600     C(P)    "           "
+*  87 CT   464    6     0.24000    3.50000    0.06600     C6(R2) of barbiturate
+*  88 CT   468    6     0.16000    3.50000    0.06600     methoxy C in esters - see also 490-492
+*  89 CT   476    6    -0.54000    3.50000    0.06600     CH3 attached to S of sulfonamide
+*  90 CT   482    6     0.18000    3.50000    0.06600     alpha CH3-N of sulfonamide
+*  91 CT   484    6     0.39000    3.50000    0.06600     alpha CH2-N of sulfonamide
+*  92 CT   486    6    -0.18000    3.50000    0.06600     beta CH3 of N-ethyl sulfonamide
+*  93 CT   490    6     0.19000    3.50000    0.06600     C(H2OS) ethyl ester
+*  94 CT   491    6     0.22000    3.50000    0.06600     C(HOS) i-pr ester
+*  95 CT   492    6     0.25000    3.50000    0.06600     C(OS) t-bu ester
+*  96 CT   498    6    -0.03500    3.50000    0.06600     CH3 all-atom C: sulfoxide
+*  97 CT   499    6     0.02500    3.50000    0.06600     CH2 all-atom C: sulfoxide
+*  98 CT   505    6    -0.00500    3.50000    0.06600     CB in HIS
+*  99 CT   515    6     0.05500    3.50000    0.06600     all-atom C: CH, isopropyl benzene
+* 100 CT   516    6     0.11500    3.50000    0.06600     all-atom C: C,  t-butyl benzene
+* 101 CT   645    6     0.05200    3.50000    0.06600     C on C3 in serotonin
+* 102 CT   662    6    -0.19900    3.50000    0.06600     C1  in 1-methylimidazole
+* 103 CT   667    6    -0.13900    3.50000    0.06600     C1  in 1-ethylimidazole
+* 104 CT   668    6    -0.07900    3.50000    0.06600     C1  in 1-isopropylimidazole
+* 105 CT   669    6     0.09900    3.50000    0.06600     C1  in 1-MeO-Me-imidazole
+* 106 CT   670    6    -0.16800    3.50000    0.06600     CH3, 2-methyl pyridine
+* 107 CT   671    6    -0.10800    3.50000    0.06600     CH2, 2-ethyl pyridine
+* 108 CT   672    6    -0.18900    3.50000    0.06600     CH3, 3-methyl pyridazine
+* 109 CT   673    6    -0.12900    3.50000    0.06600     CH2, 3-ethyl pyridazine
+* 110 CT   674    6    -0.16900    3.50000    0.06600     CH3, 4-methyl pyrimidine
+* 111 CT   675    6    -0.10900    3.50000    0.06600     CH2, 4-ethyl pyrimidine
+* 112 CT   676    6    -0.13800    3.50000    0.06600     CH3, 2-methyl pyrazine
+* 113 CT   677    6    -0.07800    3.50000    0.06600     CH2, 2-ethyl pyrazine
+* 114 CT   678    6    -0.02500    3.50000    0.06600     CH3, 2-methyl pyrrole
+* 115 CT   679    6     0.03500    3.50000    0.06600     CH2, 2-ethyl pyrrole
+* 116 CT   680    6    -0.03800    3.50000    0.06600     CH3, 2-methyl furan
+* 117 CT   681    6     0.02200    3.50000    0.06600     CH2, 2-ethyl furan
+* 118 CT   689    6    -0.00800    3.50000    0.06600     CH3, 3-methyl indole
+* 119 CT   701    6    -0.39500    3.50000    0.06600     C   in t-butyl+   charges
+* 120 CT   725    6     0.45000    3.25000    0.06200     CF3           "
+* 121 CT   747    6    -0.02000    3.50000    0.06600     CH3 in neutral MeGDN
+* 122 CT   748    6     0.04000    3.50000    0.06600     CD of neutral ARG
+* 123 CT   755    6    -0.08000    3.30000    0.06600     C of CH3 in  CH3CN
+* 124 CT   756    6    -0.02000    3.30000    0.06600     C of CH2 in RCH2CN
+* 125 CT   757    6     0.04000    3.30000    0.06600     C of CH  in R2CHCN
+* 126 CT   758    6     0.10000    3.30000    0.06600     C of C   in R3CCN
+* 127 CT   762    6     0.02000    3.50000    0.06600     CT-NO2 nitromethane
+* 128 CT   764    6     0.08000    3.50000    0.06600     CT-NO2 nitroethane
+* 129 CT   765    6     0.14000    3.50000    0.06600     CT-NO2 2-nitropropane
+* 130 CT   766    6     0.20000    3.50000    0.06600     CT-NO2 2-methyl-2-nitropropane
+* 131 CT   769    6     0.03500    3.30000    0.06600     C of CH2 in PhCH2CN
+* 132 CT   774    6     0.21000    3.50000    0.06600     " C in CH2
+* 133 CT   775    6     0.16000    3.50000    0.06600     " C in CH
+* 134 CT   776    6    -0.10000    3.50000    0.06600     " C in CH3
+* 135 CT   782    6    -0.50810    3.50000    0.06600     CH3PR3+ 6-31G* CHELPG
+* 136 CT   783    6    -0.00800    3.50000    0.06600     RCH2PR3+
+* 137 CT   791    6     0.45000    3.25000    0.06200     CF3           " test
+* 138 CT   903    6     0.00000    3.50000    0.06600     CH3(N) primary   aliphatic amines, H(C) type 911
+* 139 CT   904    6     0.02000    3.50000    0.06600     CH3(N) secondary aliphatic amines, H(C) type 911
+* 140 CT   905    6     0.03000    3.50000    0.06600     CH3(N) tertiary  aliphatic amines, H(C) type 911
+* 141 CT   906    6     0.06000    3.50000    0.06600     CH2(N) primary   aliphatic amines, H(C) type 911
+* 142 CT   907    6     0.08000    3.50000    0.06600     CH2(N) secondary aliphatic amines, H(C) type 911
+* 143 CT   908    6     0.09000    3.50000    0.06600     CH2(N) tertiary  aliphatic amines, H(C) type 911
+* 144 CT   912    6     0.12000    3.50000    0.06600     CH     primary isopropyl amine
+* 145 CT   913    6     0.18000    3.50000    0.06600     C      primary t-butyl amine
+* 146 CT   914    6     0.14000    3.50000    0.06600     CH     secondary isopropyl amine
+* 147 CT   915    6     0.15000    3.50000    0.06600     CH     tertiary  isopropyl amine
+* 148 CT   919    6     0.11500    3.50000    0.06600     C in CH2NH2 - benzyl amines; C(CH2NH2) is #221
+* 149 CT   920    6     0.17500    3.50000    0.06600     C in CHRNH2 - benzyl amines
+* 150 CT   921    6     0.23500    3.50000    0.06600     C in CR2NH2 - benzyl amines
+* 151 CT   922    6     0.19500    3.50000    0.06600     C in CH2OR  - benzyl ethers; C(CH2OR) is #221
+* 152 CT   923    6     0.15250    3.50000    0.06600     C in CH2SR  - benzyl sulfides; C(CH2SR) is #221
+* 153 CT   924    6     0.13500    3.50000    0.06600     C in CH2NHR - benzyl amines; C(CH2NH2) is #221
+* 154 CT   942    6     0.09000    3.50000    0.06600     C in  CH3NHR2+
+* 155 CT   943    6     0.15000    3.50000    0.06600     C in  RCH2NHR2+
+* 156 CT   944    6     0.21000    3.50000    0.06600     C in  R2CHNHR2+
+* 157 CT   945    6     0.27000    3.50000    0.06600     C in  R3CNHR2+
+* 158 CT   951    6    -0.02900    3.50000    0.06600     glycine zwit. 6-31G* CHELPG charges
+* 159 CT   957    6     0.02000    3.50000    0.06600     RCH2F  "     "
+* 160 CT   959    6     0.12000    3.50000    0.06600     R2CHF  "     "
+* 161 CT   960    6     0.22000    3.50000    0.06600     R3CF  "     "
+* 162 CT   961    6     0.36000    3.50000    0.06600     CF3    perfluoroalkanes JPC A, 105, 4118
+* 163 CT   962    6     0.24000    3.50000    0.06600     CF2    perfluoroalkanes       "
+* 164 CT   963    6     0.12000    3.50000    0.06600     CF     perfluoroalkanes       "
+* 165 CT   964    6     0.48000    3.50000    0.09700     CF4                           "
+* 166 CT   966    6     0.25000    3.25000    0.06200     CF2H   difluoromethylbenzene
+* 167 CT   968    6    -0.08000    3.50000    0.06600     FCH2COO-  fluoroacetate tentative
+* 168 CT   969    6    -0.10600    3.50000    0.06600     ClCH2COO- chloroacetate  "
+* 169 CT   971    6    -0.00600    3.50000    0.06600     RCH2Cl "     "                  152
+* 170 CT   973    6     0.09700    3.50000    0.06600     R2CHCl  "     "
+* 171 CT   974    6     0.20000    3.50000    0.06600     R3CCl   "     "
+* 172 CT   976    6    -0.00600    3.50000    0.06600     RCH2Br "     "
+* 173 CT   978    6     0.09700    3.50000    0.06600     R2CHBr  "     "
+* 174 CT   979    6     0.20000    3.50000    0.06600     R3CBr   "     "
+* 175 CT   985    6     0.60000    3.50000    0.06600     C in CF3: trifluoroanisole
+* 176 CT   989    6     0.14500    3.50000    0.06600     C in CH2NR2 - benzyl amines; C(CH2NH2) is #221
+* 177 CT   997    6     0.22500    3.50000    0.06600     C in CHROR  - benzyl ethers; C(CHROR) is #221
+* 178 CT   998    6     0.25500    3.50000    0.06600     C in CRROR  - benzyl ethers; C(CRROR) is #221
+* 179 CT  1011    6    -0.07000    3.50000    0.06600     C(I)  iodoalkane  - primary
+* 180 CT  1012    6     0.03000    3.50000    0.06600     C(I)  iodoalkane  - secondary
+* 181 CT  1013    6     0.13000    3.50000    0.06600     C(I)  iodoalkane  - tertiary
+* 182 CT  1038    6     0.00000    3.50000    0.06600     C on N: tertiary amide CH3
+* 183 CT  1039    6     0.06000    3.50000    0.06600     C on N: tertiary amide CH2R
+* 184 CT  1040    6     0.12000    3.50000    0.06600     C on N: tertiary amide CHR2
+* 185 CT  1041    6     0.18000    3.50000    0.06600     C on N: tertiary amide CR3
+* 186 CT  1120    6    -0.05000    3.50000    0.06600     C in  CH3NR3+    July 2005
+* 187 CT  1121    6     0.05000    3.50000    0.06600     C in  RCH2NR3+   WLJ
+* 188 CT  1122    6     0.15000    3.50000    0.06600     C in  R2CHNR3+
+* 189 CT  1123    6     0.25000    3.50000    0.06600     C in  R3CNR3+
+* 190 CT  1200    6     0.08800    3.50000    0.06600     CB in N-Me HIS
+#
+# . CU
+#
+*   0 CU   550    6     0.24600    3.55000    0.07000     C3  in pyrazole
+*   1 CU   581    6     0.40500    3.55000    0.07000     C3  in isoxazole
+#
+# . CV
+#
+*   0 CV   507    6    -0.01500    3.55000    0.07000     CD2 in HID, CG in HIE
+*   1 CV   560    6     0.18500    3.55000    0.07000     C4  in imidazole
+*   2 CV   574    6     0.16900    3.55000    0.07000     C4  in oxazole
+*   3 CV   636    6     0.22800    3.55000    0.07000     C4  in thiazole
+*   4 CV   660    6     0.17300    3.55000    0.07000     C4  in 1-methylimidazole
+*   5 CV  1236    6     0.00000    3.55000    0.07000     C4  thiazole jlj0003
+#
+# . CW
+#
+*   0 CW   508    6     0.01500    3.55000    0.07000     CG in HID, CD2 in HIE
+*   1 CW   514    6    -0.11500    3.55000    0.07000     CD1 in TRP
+*   2 CW   543    6    -0.16300    3.55000    0.07000     C2  in pyrrole
+*   3 CW   552    6    -0.03400    3.55000    0.07000     C5  in pyrazole
+*   4 CW   561    6    -0.28600    3.55000    0.07000     C5  in imidazole
+*   5 CW   567    6    -0.01900    3.55000    0.07000     C2  in furan
+*   6 CW   575    6    -0.14800    3.55000    0.07000     C5  in oxazole
+*   7 CW   583    6     0.25000    3.55000    0.07000     C5  in isoxazole
+*   8 CW   588    6     0.00100    3.55000    0.07000     C2  in indole
+*   9 CW   637    6    -0.29900    3.55000    0.07000     C5  in thiazole
+*  10 CW   661    6    -0.39500    3.55000    0.07000     C5  in 1-methylimidazole
+*  11 CW   946    6     0.09600    3.55000    0.07000     C2  in 2-phenylfuran
+*  12 CW  1237    6    -0.15000    3.55000    0.07000     C5  thiazole jlj0003
+#
+# . CX
+#
+*   0 CX   510    6     0.21500    3.55000    0.07000     CG, CD2 in HIP
+#
+# . CY
+#
+*   0 CY   687    6     0.22750    3.50000    0.06600     CH(N):  penicillin
+*   1 CY   688    6     0.14000    3.50000    0.06600     CH(CO): penicillin
+*   2 CY   711    6    -0.12000    3.50000    0.06600     CH2    C: cyclopropane
+*   3 CY   712    6    -0.06000    3.50000    0.06600     CHR    C: cyclopropane
+*   4 CY   713    6     0.00000    3.50000    0.06600     CR2    C: cyclopropane
+*   5 CY   733    6     0.05500    3.50000    0.06600     all-atom C: CH, cyclopropyl/butyl benzene
+#
+# . CZ
+#
+*   0 CZ    95    6     0.28000    3.65000    0.15000     C IN CH3CN           "
+*   1 CZ   261    6     0.39500    3.65000    0.15000     C(N)   benzonitrile
+*   2 CZ   423    6     0.51000    3.65000    0.15000     C2 in  CH2CN-   JACS 111,
+*   3 CZ   754    6     0.46000    3.30000    0.06600     C IN RCN     "
+*   4 CZ   925    6    -0.21000    3.30000    0.08600     alkyne RC%CH terminal C   acetylene
+*   5 CZ   927    6     0.01000    3.30000    0.21000     alkyne RC%CH C2 R-with 2 or 3 H
+*   6 CZ   928    6     0.01000    3.30000    0.13500     alkyne RC%CH C2 R-with 1 H
+*   7 CZ   929    6     0.01000    3.30000    0.10000     alkyne RC%CH C2 R-with no H or R=Phenyl
+*   8 CZ   939    6     0.00000    3.30000    0.21000     alkyne RC%CR - only did MC for MeCCMe
+#
+# . Ca
+#
+*   0 Ca   412   20     2.00000    2.41203    0.44966     Ca++
+*   1 Ca  1112   20     2.00000    3.47000    0.44966     Ca++
+#
+# . Cl
+#
+*   0 Cl    17   17     0.00000    3.40000    0.30000
+*   1 Cl   119   17    -0.25000    3.40000    0.30000     Cl  Methylenechloride  ClCCl = 111.8
+*   2 Cl   121   17    -0.14000    3.47000    0.30000     Cl  Chloroform C-Cl=1.758 ClCCl = 111.3
+*   3 Cl   123   17    -0.06200    3.47000    0.26600     Cl  CCl4
+*   4 Cl   151   17    -0.20000    3.40000    0.30000     Cl in alkyl chlorides
+*   5 Cl   226   17    -0.12000    3.40000    0.30000     chloroalkene Cl (ClH-C=) - see also 398
+*   6 Cl   264   17    -0.18000    3.40000    0.30000     Cl     chlorobenzene
+*   7 Cl   398   17    -0.06000    3.40000    0.30000     chloroalkene Cl (Cl2-C=) - tentative
+*   8 Cl   401   17    -1.00000    4.41724    0.11779     Cl- JACS 106, 903 (1984)
+*   9 Cl   709   17    -0.62800    3.40000    0.30000     Cl charges: JACS 117,2024 (95)
+*  10 Cl   970   17    -0.20000    3.40000    0.30000     Cl in alkyl chlorides repeat of 151
+*  11 Cl   981   17    -0.08000    3.40000    0.30000     Cl in  acyl chloride   tentative
+*  12 Cl  1101   17    -1.00000    4.18000    0.11779     Cl-  sigmas that yield the
+#
+# . Cs
+#
+*   0 Cs   410   55     1.00000    6.71600    0.00008     Cs+
+*   1 Cs  1110   55     1.00000    4.82000    0.00008     Cs+
+#
+# . DM
+#
+*   0 DM   100   99     0.00000    0.00000    0.00000     DUMMY ATOM
+#
+# . Eu
+#
+*   0 Eu   705   63     3.00000    3.30000    0.05000     Eu+3 F. van Veggel, Chem Eur J
+#
+# . F
+#
+*   0 F      9    9     0.00000    2.90000    0.06000     places need verification, e.g., Be, B.
+*   1 F     54    9    -0.22000    2.94000    0.06100     F     alkyl fluoride (UA)
+*   2 F    164    9    -0.20570    2.94000    0.06100     F             "
+*   3 F    400    9    -1.00000    2.73295    0.72000     F-  JACS 106, 903 (1984)
+*   4 F    719    9    -0.22000    2.85000    0.06100     F     fluorobenzene
+*   5 F    721    9    -0.13000    2.85000    0.06100     F     hexafluorobenzene
+*   6 F    726    9    -0.20000    2.94000    0.06100     F             "
+*   7 F    728    9    -0.20000    2.85000    0.06100     F     difluorobenzenes
+*   8 F    786    9    -0.39000    3.11810    0.06100     F in PF6-
+*   9 F    792    9    -0.20000    2.94000    0.06100     F             " test
+*  10 F    956    9    -0.22000    2.94000    0.06100     F  in monoalkyl fluorides
+*  11 F    965    9    -0.12000    2.95000    0.05300     F      F in perfluoroalkanes  "
+*  12 F    980    9    -0.08000    2.94000    0.06100     F  in  acyl fluoride   tentative
+*  13 F    986    9    -0.15000    2.90000    0.06000     F: trifluoroanisole
+*  14 F   1100    9    -1.00000    3.08000    0.72000     F-   1100-1114 provide
+#
+# . Gd
+#
+*   0 Gd   706   64     3.00000    3.30000    0.05000     Gd+3              5, 90 (1999).
+#
+# . H
+#
+*   0 H      1    1     0.00000    2.46000    0.03000     Types 1-18, 35, 53 give generic L-J
+*   1 H    128    1     0.34000    0.00000    0.00000     Ammonia
+*   2 H    240    1     0.38000    0.00000    0.00000     H on N: primary amide     see 1035-1045
+*   3 H    241    1     0.30000    0.00000    0.00000     H on N: secondary amide
+*   4 H    250    1     0.33300    0.00000    0.00000     H in O=C(NH2)2  Urea
+*   5 H    254    1     0.37000    0.00000    0.00000     H(N) in imide
+*   6 H    314    1     0.37000    0.00000    0.00000     DAP H-amine
+*   7 H    325    1     0.41000    0.00000    0.00000     Uracil H-N1
+*   8 H    327    1     0.36000    0.00000    0.00000     Uracil H-N3
+*   9 H    339    1     0.38000    0.00000    0.00000     Cytosine H-N1
+*  10 H    342    1     0.38500    0.00000    0.00000     Cytosine H-NC4/N3
+*  11 H    343    1     0.35500    0.00000    0.00000     Cytosine H-NC4/C5
+*  12 H    357    1     0.38500    0.00000    0.00000     Adenine H-NC6/N1
+*  13 H    358    1     0.35500    0.00000    0.00000     Adenine H-NC6/C5
+*  14 H    360    1     0.35000    0.00000    0.00000     Adenine H-N9 Guanine
+*  15 H    367    1     0.38000    0.00000    0.00000     Guanine H-N1
+*  16 H    369    1     0.40000    0.00000    0.00000     Guanine H-NC2
+*  17 H    383    1     0.49000    0.00000    0.00000     CytH+ H-N1
+*  18 H    385    1     0.48000    0.00000    0.00000     CytH+ H-N3
+*  19 H    387    1     0.46000    0.00000    0.00000     CytH+ H-NC4/N3
+*  20 H    388    1     0.43000    0.00000    0.00000     CytH+ H-NC4/C5
+*  21 H    428    1     0.40000    2.50000    0.05000     HN in  CH3NH-
+*  22 H    479    1     0.44000    0.00000    0.00000     H on N: primary sulfonamide
+*  23 H    481    1     0.41000    0.00000    0.00000     H on N: secondary sulfonamide
+*  24 H    504    1     0.42000    0.00000    0.00000     H on NE in TRP
+*  25 H    513    1     0.46000    0.00000    0.00000     H on N in HIP
+*  26 H    545    1     0.31700    0.00000    0.00000     H1  in pyrrole
+*  27 H    553    1     0.30100    0.00000    0.00000     H1  in pyrazole
+*  28 H    562    1     0.30600    0.00000    0.00000     H1  in imidazole
+*  29 H    596    1     0.37600    0.00000    0.00000     H1  in indole
+*  30 H    632    1     0.41300    0.00000    0.00000     H9  in purine
+*  31 H    744    1     0.42600    0.00000    0.00000     H1-N of Benzamidine
+*  32 H    745    1     0.46500    0.00000    0.00000     H2-N of Benzamidine
+*  33 H    909    1     0.36000    0.00000    0.00000     H(N)   primary   amines
+*  34 H    910    1     0.38000    0.00000    0.00000     H(N)   secondary amines
+*  35 H    994    1     0.41100    0.00000    0.00000     HN in hydroxamic acid
+#
+# . H3
+#
+*   0 H3   289    1     0.35000    0.00000    0.00000     H (NH4+)        "  see also 940-945,
+*   1 H3   290    1     0.33000    0.00000    0.00000     H (RNH3+)       "  1120-1130, 309-310
+*   2 H3   301    1     0.46000    0.00000    0.00000     H: guanidinium NH2
+*   3 H3   304    1     0.44000    0.00000    0.00000     H: guanidinium NHR
+*   4 H3   310    1     0.31000    0.00000    0.00000     H (R2NH2+)
+*   5 H3   941    1     0.29000    0.00000    0.00000     H (R3NH+)
+*   6 H3   955    1     0.31700    0.00000    0.00000     glycine zwit. 6-31G* CHELPG charges
+#
+# . H4
+#
+*   0 H4   345    1     0.10000    2.50000    0.05000     Cytosine H-C6
+*   1 H4   390    1     0.14000    2.50000    0.05000     CytH+ H-C6
+#
+# . H5
+#
+*   0 H5   355    1     0.20000    2.50000    0.05000     Adenine H-C2        nucleoside
+*   1 H5   359    1     0.20000    2.50000    0.05000     Adenine H-C8 Guanine
+#
+# . HA
+#
+*   0 HA   146    1     0.11500    2.42000    0.03000     Benzene H - 12 site        "
+*   1 HA   316    1     0.10000    2.50000    0.05000     DAP H3
+*   2 HA   318    1     0.10000    2.50000    0.05000     DAP H4
+*   3 HA   389    1     0.14000    2.50000    0.05000     CytH+ H-C5
+*   4 HA   524    1     0.01200    2.42000    0.03000     H1  in pyridine 520-656
+*   5 HA   525    1     0.15500    2.42000    0.03000     H2  in pyridine
+*   6 HA   526    1     0.06500    2.42000    0.03000     H3  in pyridine
+*   7 HA   529    1     0.04200    2.42000    0.03000     H   in pyrazine
+*   8 HA   534    1    -0.03200    2.42000    0.03000     H2  in pyrimidine
+*   9 HA   535    1     0.01100    2.42000    0.03000     H4  in pyrimidine
+*  10 HA   536    1     0.19700    2.42000    0.03000     H5  in pyrimidine
+*  11 HA   540    1    -0.00900    2.42000    0.03000     H3  in pyridazine
+*  12 HA   541    1     0.12200    2.42000    0.03000     H4  in pyridazine
+*  13 HA   546    1     0.15500    2.42000    0.03000     H2  in pyrrole
+*  14 HA   547    1     0.11800    2.42000    0.03000     H3  in pyrrole
+*  15 HA   554    1     0.07200    2.42000    0.03000     H3  in pyrazole
+*  16 HA   555    1     0.15000    2.42000    0.03000     H4  in pyrazole
+*  17 HA   556    1     0.13500    2.42000    0.03000     H5  in pyrazole
+*  18 HA   563    1     0.07800    2.42000    0.03000     H2  in imidazole
+*  19 HA   564    1     0.07500    2.42000    0.03000     H4  in imidazole
+*  20 HA   565    1     0.18700    2.42000    0.03000     H5  in imidazole
+*  21 HA   569    1     0.14200    2.42000    0.03000     H2  in furan
+*  22 HA   570    1     0.12600    2.42000    0.03000     H3  in furan
+*  23 HA   576    1     0.04300    2.42000    0.03000     H2  in oxazole
+*  24 HA   577    1     0.09100    2.42000    0.03000     H4  in oxazole
+*  25 HA   578    1     0.18100    2.42000    0.03000     H5  in oxazole
+*  26 HA   584    1     0.05300    2.42000    0.03000     H3  in isoxazole
+*  27 HA   585    1     0.18400    2.42000    0.03000     H4  in isoxazole
+*  28 HA   586    1     0.09800    2.42000    0.03000     H5  in isoxazole
+*  29 HA   597    1     0.14700    2.42000    0.03000     H2  in indole
+*  30 HA   598    1     0.17200    2.42000    0.03000     H3  in indole
+*  31 HA   599    1     0.15500    2.42000    0.03000     H4  in indole
+*  32 HA   600    1     0.10700    2.42000    0.03000     H5  in indole
+*  33 HA   601    1     0.11000    2.42000    0.03000     H6  in indole
+*  34 HA   602    1     0.14000    2.42000    0.03000     H7  in indole
+*  35 HA   613    1     0.02800    2.42000    0.03000     H2  in quinoline
+*  36 HA   614    1     0.14600    2.42000    0.03000     H3  in quinoline
+*  37 HA   615    1     0.11900    2.42000    0.03000     H4  in quinoline
+*  38 HA   616    1     0.13300    2.42000    0.03000     H5  in quinoline
+*  39 HA   617    1     0.11300    2.42000    0.03000     H6  in quinoline
+*  40 HA   618    1     0.11400    2.42000    0.03000     H7  in quinoline
+*  41 HA   619    1     0.15700    2.42000    0.03000     H8  in quinoline
+*  42 HA   629    1     0.02400    2.42000    0.03000     H2  in purine
+*  43 HA   630    1     0.10100    2.42000    0.03000     H6  in purine
+*  44 HA   631    1     0.08600    2.42000    0.03000     H8  in purine
+*  45 HA   638    1     0.10100    2.42000    0.03000     H2  in thiazole
+*  46 HA   639    1     0.06800    2.42000    0.03000     H4  in thiazole
+*  47 HA   640    1     0.20500    2.42000    0.03000     H5  in thiazole
+*  48 HA   643    1    -0.01400    2.42000    0.03000     H   in 1,3,5-triazine
+*  49 HA   653    1     0.03200    2.42000    0.03000     H2  in 1,10-phenanthroline
+*  50 HA   654    1     0.14600    2.42000    0.03000     H3  in 1,10-phenanthroline
+*  51 HA   655    1     0.10800    2.42000    0.03000     H4  in 1,10-phenanthroline
+*  52 HA   656    1     0.14000    2.42000    0.03000     H5  in 1,10-phenanthroline
+*  53 HA   663    1     0.11800    2.42000    0.03000     H2  in 1-methylimidazole
+*  54 HA   664    1     0.09300    2.42000    0.03000     H4  in 1-methylimidazole
+*  55 HA   665    1     0.20800    2.42000    0.03000     H5  in 1-methylimidazole
+*  56 HA   715    1     0.03000    2.42000    0.03000     H in C5H5- cyclopentadienyl anion
+*  57 HA   717    1     0.09900    2.42000    0.03000     H in C5H5  cyclopentadienyl radical
+*  58 HA   740    1     0.14100    2.42000    0.03000     HD of Benzamidine
+*  59 HA   741    1     0.12900    2.42000    0.03000     HE of Benzamidine
+*  60 HA   746    1     0.11900    2.42000    0.03000     H-CG of Benzamidine
+*  61 HA  1239    1     0.20000    2.42000    0.03000     H4  thiazole jlj0003
+*  62 HA  1240    1     0.20000    2.42000    0.03000     H5  thiazole jlj0003
+#
+# . HC
+#
+*   0 HC   140    1     0.06000    2.50000    0.03000     H      all-atom H: alkanes
+*   1 HC   144    1     0.11500    2.42000    0.03000     alkene H (H-C=)  all atom
+*   2 HC   153    1     0.10300    2.50000    0.03000     H in RCH2Cl
+*   3 HC   156    1     0.04000    2.50000    0.03000     all-atom H(C): methanol
+*   4 HC   165    1     0.08250    2.50000    0.03000     H             "
+*   5 HC   176    1     0.06000    2.50000    0.03000     H(CXOH):   "
+*   6 HC   185    1     0.03000    2.50000    0.03000     H(COR): alpha H ether
+*   7 HC   190    1     0.10000    2.50000    0.03000     H(CHO2): acetal OCH2O
+*   8 HC   192    1     0.10000    2.50000    0.03000     H(CHO2): hemiacetal OCH2OH
+*   9 HC   194    1     0.10000    2.50000    0.03000     H(CHO2): acetal OCHRO
+*  10 HC   196    1     0.10000    2.50000    0.03000     H(C2O2): hemiacetal OCHROH
+*  11 HC   255    1     0.06000    2.50000    0.02000     H(C) in formimide
+*  12 HC   279    1     0.00000    2.42000    0.01500     AA H-alpha in aldehyde & formamide
+*  13 HC   282    1     0.06000    2.42000    0.01500     AA H on C-alpha in ketone & aldehyde & acyl halide
+*  14 HC   329    1     0.10000    2.50000    0.05000     Uracil H-C5
+*  15 HC   330    1     0.10000    2.50000    0.05000     Uracil H-C6  Thymine
+*  16 HC   332    1     0.08000    2.50000    0.05000     Thymine H-CC5
+*  17 HC   344    1     0.10000    2.50000    0.05000     Cytosine H-C5
+*  18 HC   372    1     0.12000    2.50000    0.05000     9-Me A or G H-CN9
+*  19 HC   374    1     0.14000    2.50000    0.05000     1-Me U or T H-CN1
+*  20 HC   376    1     0.13000    2.50000    0.05000     1-Me Cytosine H-CN1
+*  21 HC   392    1     0.16000    2.50000    0.05000     1-Me CytH+ H-CN1
+*  22 HC   416    1     0.10000    2.50000    0.05000     H  in  CH3S-
+*  23 HC   419    1     0.06000    2.50000    0.05000     H  in  CH3O-
+*  24 HC   422    1     0.19000    2.50000    0.05000     H  in  CH2CN-
+*  25 HC   426    1     0.07000    2.50000    0.05000     HC in  CH3NH-  RNH-
+*  26 HC   430    1     0.08000    2.50000    0.05000     H  in  CH3CH2-
+*  27 HC   432    1     0.07000    2.50000    0.05000     H1 in  CH3CH2-
+*  28 HC   444    1    -0.03000    2.50000    0.03000     H  in   "     6-31+G* CHELPG
+*  29 HC   449    1    -0.10000    2.50000    0.03000     H  in   "
+*  30 HC   454    1    -0.02000    2.50000    0.03000     H(CO)   "     6-31+G* CHELPG
+*  31 HC   456    1     0.08000    2.50000    0.03000     H(CP)   "
+*  32 HC   459    1     0.02000    2.50000    0.03000     H(CO)   "           "
+*  33 HC   462    1     0.12000    2.50000    0.03000     H(CP)   "           "
+*  34 HC   469    1     0.03000    2.42000    0.01500     alkoxy H's in esters
+*  35 HC   477    1     0.18000    2.50000    0.03000     H of Me attached to S of sulfonamide
+*  36 HC   483    1     0.03000    2.50000    0.03000     H of alpha CH3-N of sulfonamide
+*  37 HC   485    1    -0.06000    2.50000    0.03000     H of alpha CH2-N of sulfonamide
+*  38 HC   487    1     0.06000    2.50000    0.03000     H of beta CH3 of N-ethyl sulfonamide
+*  39 HC   666    1     0.09800    2.50000    0.03000     HC1 in 1-methylimidazole
+*  40 HC   702    1     0.17400    2.50000    0.03000     H   in t-butyl+
+*  41 HC   710    1     0.20000    2.42000    0.03000     H  in Cl..CH3..Cl- TS
+*  42 HC   759    1     0.06000    2.50000    0.01500     HC-CT-CN alpha-H in nitriles
+*  43 HC   763    1     0.06000    2.50000    0.01500     HC-CT-NO2 alpha-H in nitroalkanes
+*  44 HC   777    1     0.03000    2.42000    0.01500     " H in CH2
+*  45 HC   778    1     0.03000    2.42000    0.01500     " H in CH
+*  46 HC   779    1     0.06000    2.42000    0.01500     " H in CH3
+*  47 HC   784    1     0.17200    2.50000    0.03000     H in CH3PR3+
+*  48 HC   911    1     0.06000    2.50000    0.01500     H(C) for Carbons directly bonded to N in amines, diamine
+*  49 HC   926    1     0.20000    2.42000    0.01500     alkyne RC%CH terminal H
+*  50 HC   930    1     0.06000    2.50000    0.01500     alkyne RC%CH H on C3 (for C3 use 135-139)
+*  51 HC   950    1     0.07400    2.50000    0.03000     glycine zwit. 6-31G* CHELPG charges
+*  52 HC   958    1     0.10000    2.50000    0.03000     H in RCHF
+*  53 HC   967    1     0.15000    2.50000    0.03000     H in CF2H     "
+*  54 HC   972    1     0.10300    2.50000    0.03000     H in RCHCl                      153
+*  55 HC   977    1     0.10300    2.50000    0.03000     H in RCHBr
+*  56 HC  1015    1     0.10000    2.50000    0.03000     H in  RCHI
+*  57 HC  1042    1     0.06000    2.42000    0.01500     H on CT:tertiary amide
+*  58 HC  1045    1     0.00000    2.42000    0.01500     H on CO:  tert formamide
+*  59 HC  1124    1     0.10000    2.50000    0.03000     H in  CH3NR3+
+#
+# . HO
+#
+*   0 HO    65    1     0.45000    0.00000    0.00000     H  in CCOOH
+*   1 HO    79    1     0.43500    0.00000    0.00000     H(O) ALCOHOLS        "
+*   2 HO   155    1     0.41800    0.00000    0.00000     all-atom H(O): mono alcohols
+*   3 HO   163    1     0.42860    0.00000    0.00000     HO            "
+*   4 HO   168    1     0.43500    0.00000    0.00000     H      phenol  145 & 146
+*   5 HO   170    1     0.43500    0.00000    0.00000     H(O): diols
+*   6 HO   172    1     0.46500    0.00000    0.00000     H(O): triols
+*   7 HO   188    1     0.43500    0.00000    0.00000     H(O): hemiacetal
+*   8 HO   270    1     0.45000    0.00000    0.00000     H  in CCOOH
+*   9 HO   435    1     0.30000    0.00000    0.00000     H in OH-  JACS 108, 2517 (86)
+*  10 HO   935    1     0.39000    0.00000    0.00000     H(3') OH by Deping
+*  11 HO   996    1     0.43500    0.00000    0.00000     HO in hydroxamic acid
+#
+# . HS
+#
+*   0 HS    86    1     0.23500    0.00000    0.00000     H   IN H2S        "
+*   1 HS    87    1     0.27000    0.00000    0.00000     H(S) IN RSH       "
+*   2 HS   204    1     0.15500    0.00000    0.00000     all-atom H(S): thiols  (mod 11/99)
+*   3 HS   205    1     0.23500    0.00000    0.00000     H   IN H2S  JPC,90,6379 (1986)
+*   4 HS   683    1     0.25500    0.00000    0.00000     H(S) in 6-mercaptopurine
+#
+# . HW
+#
+*   0 HW    98    1     0.24100    0.00000    0.00000     H TIP5P Water      "
+*   1 HW   112    1     0.41700    0.00000    0.00000     H TIP3P Water      "
+*   2 HW   114    1     0.52000    0.00000    0.00000     H TIP4P Water      "
+*   3 HW   117    1     0.41100    0.00000    0.00000     H TIP3F Water unpublished
+*   4 HW   134    1     0.41000    0.00000    0.00000     H  SPC  Water
+*   5 HW   796    1     0.51100    0.00000    0.00000     H TIP4F Water      "
+#
+# . He
+#
+*   0 He     2    2     0.00000    2.55600    0.02000     parameters for QM/MM calculations.
+*   1 He   101    2     0.00000    2.55600    0.02000     Helium -     "          "
+#
+# . I
+#
+*   0 I     53   53     0.00000    3.55000    0.58000
+*   1 I    403   53    -1.00000    5.40000    0.07000     I-  JACS 120, 5104(1998)
+*   2 I    732   53    -0.10000    3.75000    0.60000     I     iodobenzene - tentative
+*   3 I   1014   53    -0.13000    3.75000    0.60000     I     iodoalkane
+*   4 I   1103   53    -1.00000    5.15000    0.07000     I-   of hydration for
+#
+# . K
+#
+*   0 K    408   19     1.00000    4.93463    0.00033     K+     parameters:
+*   1 K   1108   19     1.00000    4.06000    0.00033     K+   400-414.
+#
+# . Kr
+#
+*   0 Kr   104   36     0.00000    3.62400    0.31700     Kr - Mol.Phys.,24,1013 (1972)
+#
+# . LP
+#
+*   0 LP    99    2    -0.24100    0.00000    0.00000     M TIP5P Water      "
+*   1 LP   115    2    -1.04000    0.00000    0.00000     M TIP4P Water      "
+*   2 LP   433    2    -0.98000    0.00000    0.00000     LP in  CH3CH2-
+*   3 LP   797   99    -1.02200    0.00000    0.00000     M TIP4F Water      "
+#
+# . La
+#
+*   0 La   703   57     3.00000    3.75000    0.06000     La+3
+#
+# . Li
+#
+*   0 Li     3    3     0.00000    2.12600    0.01800     LJ params for H on heteroatom are set
+*   1 Li   404    3     1.00000    1.25992    6.25000     Li+ JACS 106, 903 (1984)
+*   2 Li   406    3     1.00000    2.12645    0.01828     Li+
+*   3 Li  1106    3     1.00000    2.70000    0.01828     Li+  The epsilons are
+#
+# . Mg
+#
+*   0 Mg    12   12     0.00000    3.40000    0.05000
+*   1 Mg   411   12     2.00000    1.64447    0.87504     Mg++
+*   2 Mg  1111   12     2.00000    2.91000    0.87504     Mg++
+#
+# . N
+#
+*   0 N      7    7     0.00000    3.25000    0.17000
+*   1 N    130    7    -0.57000    3.25000    0.17000     N in DMF - united atom
+*   2 N    237    7    -0.76000    3.25000    0.17000     N: primary amide.  alkane parameters.
+*   3 N    238    7    -0.50000    3.25000    0.17000     N: secondary amide  279 for formyl H.
+*   4 N    239    7    -0.14000    3.25000    0.17000     N: tertiary amide   NEW TERT AMIDE PARAMETERS:
+*   5 N    249    7    -0.54200    3.25000    0.17000     N in O=C(NH2)2  Urea 33, 323 (93)
+*   6 N    251    7    -0.49000    3.25000    0.17000     N   in imide
+*   7 N    265    7    -0.38500    3.25000    0.17000     N: N-phenylacetamide
+*   8 N    478    7    -1.00000    3.25000    0.17000     N: primary amide of sulfonamide
+*   9 N    480    7    -0.80000    3.25000    0.17000     N secondary amide of sulfonamide
+*  10 N    787    7     0.79400    3.15000    0.17000     N in NO3- F. van Veggel
+*  11 N    987    7    -0.02500    3.25000    0.17000     N: N-methyl,N-phenylacetamide
+*  12 N    993    7    -0.63400    3.25000    0.17000     N  in hydroxamic acid
+*  13 N   1021    7    -0.68500    3.25000    0.17000     N of secondary N-phenyl sulfonamide
+*  14 N   1033    7    -0.42700    3.25000    0.17000     N: N-phenylurea
+#
+# . N$
+#
+*   0 N$   686    7    -0.14000    3.25000    0.17000     N: beta-lactam; O is 236
+#
+# . N*
+#
+*   0 N*   936    7    -0.50000    3.25000    0.17000     Adenine N9 Guanine nucleosides
+*   1 N*   937    7    -0.56000    3.25000    0.17000     Cytosine N1 nucleoside
+*   2 N*   938    7    -0.60000    3.25000    0.17000     Uracil N1 Thymine nucleosides
+#
+# . N2
+#
+*   0 N2   300    7    -0.80000    3.25000    0.17000     N: guanidinium NH2
+*   1 N2   303    7    -0.70000    3.25000    0.17000     N: guanidinium NHR
+*   2 N2   313    7    -0.85000    3.25000    0.17000     DAP N-amine
+*   3 N2   341    7    -0.79000    3.25000    0.17000     Cytosine N-C4
+*   4 N2   356    7    -0.81000    3.25000    0.17000     Adenine N-C6
+*   5 N2   368    7    -0.80000    3.25000    0.17000     Guanine N-C2
+*   6 N2   386    7    -0.81000    3.25000    0.17000     CytH+ N-C4
+*   7 N2   743    7    -0.88500    3.25000    0.17000     N-H2 of Benzamidine
+#
+# . N3
+#
+*   0 N3   286    7    -0.40000    3.25000    0.17000     N (NH4+) JPC,90,2174 (1986)
+*   1 N3   287    7    -0.30000    3.25000    0.17000     N (RNH3+)       "
+*   2 N3   288    7     0.00000    3.25000    0.17000     N (R4N+)        "  Ammonium Ions
+*   3 N3   309    7    -0.20000    3.25000    0.17000     N (R2NH2+)
+*   4 N3   427    7    -1.31000    3.40000    0.25000     N  in  CH3NH-
+*   5 N3   940    7    -0.10000    3.25000    0.17000     N (R3NH+)
+*   6 N3   953    7    -0.35200    3.25000    0.17000     glycine zwit. 6-31G* CHELPG charges
+*   7 N3  1125    7     0.11500    3.25000    0.17000     N (ArNR3+)       Anilinium Ion
+*   8 N3  1127    7     0.01500    3.25000    0.17000     N (ArNR2H+)
+#
+# . NA
+#
+*   0 NA   319    7    -0.60000    3.25000    0.17000     Uracil N1 -use 938 for nucleoside
+*   1 NA   321    7    -0.51000    3.25000    0.17000     Uracil N3
+*   2 NA   333    7    -0.56000    3.25000    0.17000     Cytosine N1 -use 937 for nucleoside
+*   3 NA   354    7    -0.50000    3.25000    0.17000     Adenine N9 Guanine -use 936 for
+*   4 NA   361    7    -0.56000    3.25000    0.17000     Guanine N1
+*   5 NA   377    7    -0.64000    3.25000    0.17000     CytH+ N1 Use AT = N* for nucleoside.
+*   6 NA   379    7    -0.74000    3.25000    0.17000     CytH+ N3    Protonated cytosine.
+*   7 NA   503    7    -0.57000    3.25000    0.17000     NE in TRP
+*   8 NA   512    7    -0.54000    3.25000    0.17000     N in HIP
+*   9 NA   542    7    -0.23900    3.25000    0.17000     N   in pyrrole
+*  10 NA   548    7    -0.05900    3.25000    0.17000     N1  in pyrazole
+*  11 NA   557    7    -0.25700    3.25000    0.17000     N1  in imidazole
+*  12 NA   587    7    -0.50000    3.25000    0.17000     N1  in indole
+*  13 NA   628    7    -0.68200    3.25000    0.17000     N9  in purine
+*  14 NA   657    7     0.12200    3.25000    0.17000     N1  in 1-methylimidazole
+#
+# . NB
+#
+*   0 NB   352    7    -0.49000    3.25000    0.17000     Adenine N7 Guanine
+*   1 NB   511    7    -0.49000    3.25000    0.17000     NE in HID, ND in HIE
+*   2 NB   549    7    -0.49100    3.25000    0.17000     N2  in pyrazole
+*   3 NB   559    7    -0.56300    3.25000    0.17000     N3  in imidazole
+*   4 NB   573    7    -0.59000    3.25000    0.17000     N   in oxazole
+*   5 NB   580    7    -0.41300    3.25000    0.17000     N   in isoxazole
+*   6 NB   626    7    -0.64200    3.25000    0.17000     N7  in purine
+*   7 NB   635    7    -0.51500    3.25000    0.17000     N   in thiazole
+*   8 NB   659    7    -0.58000    3.25000    0.17000     N3  in 1-methylimidazole
+*   9 NB  1235    7    -0.40000    3.25000    0.17000     N   thiazole jlj0003
+#
+# . NC
+#
+*   0 NC   311    7    -0.46000    3.25000    0.17000     DAP N1   Diamino-
+*   1 NC   335    7    -0.54000    3.25000    0.17000     Cytosine N3
+*   2 NC   346    7    -0.53000    3.25000    0.17000     Adenine N1
+*   3 NC   348    7    -0.55000    3.25000    0.17000     Adenine N3
+*   4 NC   363    7    -0.51000    3.25000    0.17000     Guanine N3
+*   5 NC   520    7    -0.67800    3.25000    0.17000     N   in pyridine 6-31G*
+*   6 NC   527    7    -0.46800    3.25000    0.17000     N   in pyrazine
+*   7 NC   530    7    -0.83900    3.25000    0.17000     N   in pyrimidine
+*   8 NC   537    7    -0.33100    3.25000    0.17000     N   in pyridazine
+*   9 NC   603    7    -0.69400    3.25000    0.17000     N1  in quinoline
+*  10 NC   620    7    -0.76000    3.25000    0.17000     N1  in purine (9H)
+*  11 NC   622    7    -0.78800    3.25000    0.17000     N3  in purine
+*  12 NC   641    7    -0.95100    3.25000    0.17000     N   in 1,3,5-triazine
+*  13 NC   646    7    -0.59900    3.25000    0.17000     N   in 1,10-phenanthroline
+*  14 NC   770    7    -0.90000    3.25000    0.17000     N   in neutral benzamidine
+#
+# . NM
+#
+*   0 NM  1037    7    -0.36000    3.25000    0.17000     N: tertiary amide
+#
+# . NO
+#
+*   0 NO   760    7     0.54000    3.25000    0.12000     N in nitro R-NO2
+*   1 NO   767    7     0.65000    3.25000    0.12000     N in nitro Ar-NO2
+#
+# . NT
+#
+*   0 NT   127    7    -1.02000    3.42000    0.17000     Ammonia - OPLS-AA
+*   1 NT   900    7    -0.90000    3.30000    0.17000     N      primary   amines
+*   2 NT   901    7    -0.78000    3.30000    0.17000     N      secondary amines JACS 121, 4827 (1999)
+*   3 NT   902    7    -0.63000    3.30000    0.17000     N      tertiary  amines
+#
+# . NY
+#
+*   0 NY   749    7    -0.62000    3.25000    0.17000     NE  "
+*   1 NY   751    7    -0.78500    3.25000    0.17000     N2  "    "     " (H2N-CZ)
+#
+# . NZ
+#
+*   0 NZ    94    7    -0.43000    3.20000    0.17000     N IN CH3CN  Mol.Phys.,63,547 (1988)
+*   1 NZ   262    7    -0.43000    3.20000    0.17000     N      benzonitrile
+*   2 NZ   424    7    -0.82000    3.40000    0.25000     N  in  CH2CN-   4190 (89)
+*   3 NZ   750    7    -0.78500    3.25000    0.17000     N1  "    "     " (HN=CZ)
+*   4 NZ   753    7    -0.56000    3.20000    0.17000     N IN RCN  all-atom nitriles
+#
+# . Na
+#
+*   0 Na    11   11     0.00000    3.33000    0.00300
+*   1 Na   405   11     1.00000    1.89744    1.60714     Na+ JACS 106, 903 (1984)
+*   2 Na   407   11     1.00000    3.33045    0.00277     Na+    Aqvist's cation
+*   3 Na  1107   11     1.00000    3.35000    0.00277     Na+  unchanged from
+#
+# . Nd
+#
+*   0 Nd   704   60     3.00000    3.47300    0.05400     Nd+3 Lanthanide params -
+#
+# . Ne
+#
+*   0 Ne    10   10     0.00000    2.78000    0.06900
+*   1 Ne    20   10     0.00000    2.00000    0.10000     2-A probe
+*   2 Ne   102   10     0.00000    2.78000    0.06900     Neon -  Hirschfelder (Wiley,1954)
+#
+# . O
+#
+*   0 O      8    8     0.00000    3.00000    0.17000     For types 1-53 entries with 2 decimal
+*   1 O     62    8    -0.50000    2.96000    0.21000     Oc in CCOOH     UA acid
+*   2 O    129    8    -0.50000    2.96000    0.21000     O in DMF - united atom
+*   3 O    236    8    -0.50000    2.96000    0.21000     O: C=O in amide.   is neutral - use
+*   4 O    248    8    -0.39000    2.96000    0.21000     O in O=C(NH2)2  Urea Isr. J. Chem
+*   5 O    253    8    -0.42000    2.96000    0.21000     O   in imide
+*   6 O    269    8    -0.44000    2.96000    0.21000     Oc in CCOOH neutral; use 135-140
+*   7 O    278    8    -0.45000    2.96000    0.21000     AA O: aldehyde & acyl halide - 135-139
+*   8 O    281    8    -0.47000    2.96000    0.21000     AA O: ketone - 135-139
+*   9 O    326    8    -0.40000    2.96000    0.21000     Uracil O-C2
+*  10 O    328    8    -0.42000    2.96000    0.21000     Uracil O-C4
+*  11 O    340    8    -0.48000    2.96000    0.21000     Cytosine O-C2
+*  12 O    370    8    -0.51000    2.96000    0.21000     Guanine O-C6
+*  13 O    384    8    -0.30000    2.96000    0.21000     CytH+ O-C2
+*  14 O    466    8    -0.43000    2.96000    0.21000     AA =O:  esters   ketone params (see 280-282)
+*  15 O    771    8    -0.50000    2.96000    0.21000     propylene carbonate O
+*  16 O    788    8    -0.59800    2.86000    0.21000     O in NO3- r(NO) =
+*  17 O    992    8    -0.65800    2.96000    0.21000     O  in hydroxamic acid
+*  18 O   1036    8    -0.60000    2.96000    0.21000     O: C=O in tert amide.   is neutral - use
+*  19 O   1044    8    -0.57000    2.96000    0.21000     O: C=O in tert formamide.
+#
+# . O2
+#
+*   0 O2   272    8    -0.80000    2.96000    0.21000     O: O in COO- carboxylate
+*   1 O2   394    8    -0.66000    2.96000    0.21000     O(=)          "  OPLS UA
+*   2 O2   441    8    -0.92000    3.15000    0.20000     O= in   "
+*   3 O2   446    8    -1.12000    3.15000    0.20000     O= in   "
+*   4 O2   451    8    -0.97000    3.15000    0.20000     O= in   "
+*   5 O2   954    8    -0.70900    2.96000    0.21000     glycine zwit. 6-31G* CHELPG charges
+#
+# . OH
+#
+*   0 OH    63    8    -0.58000    3.00000    0.17000     Oh in CCOOH
+*   1 OH    78    8    -0.70000    3.07000    0.17000     O   ALCOHOLS   JPC,90,1276 (1986)
+*   2 OH   154    8    -0.68300    3.12000    0.17000     all-atom O: mono alcohols
+*   3 OH   162    8    -0.63510    3.07000    0.17000     OH            "
+*   4 OH   167    8    -0.58500    3.07000    0.17000     O      phenol  atom C, H
+*   5 OH   169    8    -0.70000    3.07000    0.17000     O:    diols
+*   6 OH   171    8    -0.73000    3.07000    0.17000     O:    triols
+*   7 OH   187    8    -0.70000    3.07000    0.17000     O(H): hemiacetal
+*   8 OH   268    8    -0.53000    3.00000    0.17000     Oh in CCOOH R in RCOOH is
+*   9 OH   420    8    -0.98000    3.15000    0.25000     O  in  CH3O-
+*  10 OH   434    8    -1.30000    3.20000    0.25000     O in OH-  Hyroxide O-H = 0.953 A
+*  11 OH   934    8    -0.65500    3.12000    0.17000     O5' by Deping
+*  12 OH   995    8    -0.44200    3.12000    0.17000     OH in hydroxamic acid
+#
+# . ON
+#
+*   0 ON   761    8    -0.37000    2.96000    0.17000     O in nitro R-NO2
+#
+# . OS
+#
+*   0 OS   108    8    -0.50000    3.00000    0.17000     ETHER O  JCC,11,958 (1990) UA
+*   1 OS   177    8    -0.17000    2.90000    0.14000     diphenyl ether
+*   2 OS   179    8    -0.28500    2.90000    0.14000     O: anisole
+*   3 OS   180    8    -0.40000    2.90000    0.14000     O: dialkyl ether
+*   4 OS   186    8    -0.40000    2.90000    0.14000     O: acetal ether O
+*   5 OS   395    8    -0.43000    3.00000    0.17000     O(-)          "  see 440
+*   6 OS   442    8    -0.60000    2.90000    0.14000     O- in   "     dimethyl
+*   7 OS   447    8    -0.70000    2.90000    0.14000     O- in   "     methyl phosphate
+*   8 OS   452    8    -0.63000    2.90000    0.14000     O- in   "     methyl
+*   9 OS   467    8    -0.33000    3.00000    0.17000     AA -OR: ester -
+*  10 OS   473    8    -0.21500    3.00000    0.17000     AA -OR phenyl ester
+*  11 OS   566    8    -0.19000    2.90000    0.14000     O   in furan
+*  12 OS   571    8    -0.25700    2.90000    0.14000     O   in oxazole
+*  13 OS   579    8    -0.12200    2.90000    0.14000     O   in isoxazole
+*  14 OS   773    8    -0.45000    3.00000    0.17000     " OS     parameters
+*  15 OS   984    8    -0.25000    2.90000    0.14000     O: trifluoroanisole
+#
+# . OU
+#
+*   0 OU   437    8    -0.25000    3.11815    0.20000     O in UO2+ r(U-O) = 1.80 A
+#
+# . OW
+#
+*   0 OW    97    8     0.00000    3.12000    0.16000     O TIP5P Water   unpublished
+*   1 OW   111    8    -0.83400    3.15061    0.15210     O TIP3P Water JCP,79,926 (1983)
+*   2 OW   113    8     0.00000    3.15365    0.15500     O TIP4P Water      "
+*   3 OW   116    8    -0.82200    3.17600    0.15000     O TIP3F Water flexible model,
+*   4 OW   133    8    -0.82000    3.16557    0.15540     O  SPC  Water
+*   5 OW   795    8     0.00000    3.27000    0.10000     O TIP4F Water  JCP 115, 10758 (2001)
+#
+# . OY
+#
+*   0 OY   125    8    -0.45900    2.93000    0.28000     DMSO
+*   1 OY   475    8    -0.68000    2.96000    0.17000     O in sulfonamide
+*   2 OY   494    8    -0.68700    2.96000    0.17000     O in sulfone
+*   3 OY   497    8    -0.42000    2.93000    0.28000     sulfoxide - all atom
+#
+# . P
+#
+*   0 P     15   15     0.00000    3.74000    0.20000
+*   1 P    393   15     0.78000    3.74000    0.20000     P    dimethylphosphate anion
+*   2 P    440   15     1.62000    3.74000    0.20000     P  in  Me2PO4-
+*   3 P    445   15     1.92000    3.74000    0.20000     P  in  MeOPO3--
+*   4 P    450   15     1.62000    3.74000    0.20000     P  in  MePO3Me-
+*   5 P    785   15     1.34000    3.74000    0.20000     P in PF6-
+#
+# . P+
+#
+*   0 P+   781   15     0.96840    3.74000    0.20000     phosphonium R4P+
+#
+# . Rb
+#
+*   0 Rb   409   37     1.00000    5.62177    0.00017     Rb+    JPC,94, 8021 (90)
+*   1 Rb  1109   37     1.00000    4.32000    0.00017     Rb+
+#
+# . S
+#
+*   0 S     16   16     0.00000    3.55000    0.25000
+*   1 S     84   16    -0.47000    3.55000    0.25000     S   IN RSR        "
+*   2 S     85   16    -0.30000    3.55000    0.25000     S   IN RSSR       "
+*   3 S    202   16    -0.43500    3.55000    0.25000     all-atom S: sulfides
+*   4 S    203   16    -0.21750    3.55000    0.25000     all-atom S: disulfides
+*   5 S    222   16    -0.32000    3.55000    0.25000     S in thioanisoles
+*   6 S    633   16    -0.03000    3.55000    0.25000     S   in thiazole
+*   7 S    696   16    -0.20500    3.55000    0.25000     S in diphenylthioether
+*   8 S   1233   16     0.00000    3.55000    0.25000     S   thiazole jlj0003
+#
+# . SH
+#
+*   0 SH    82   16    -0.47000    3.70000    0.25000     S   IN H2S  JPC,90,6379 (1986)
+*   1 SH    83   16    -0.45000    3.55000    0.25000     S   IN RSH        "
+*   2 SH   200   16    -0.33500    3.55000    0.25000     all-atom S: thiols     (mod 11/99)
+*   3 SH   201   16    -0.47000    3.70000    0.25000     S   IN H2S  JPC,90,6379 (1986)
+*   4 SH   417   16    -0.90000    4.25000    0.50000     S  in  CH3S-
+*   5 SH   682   16    -0.33400    3.55000    0.25000     S in 6-mercaptopurine
+*   6 SH   734   16    -0.22000    3.55000    0.25000     all-atom S: thiophenol (HS is #204)
+#
+# . SY
+#
+*   0 SY   474   16     1.48000    3.55000    0.25000     S in sulfonamide
+*   1 SY   493   16     1.37400    3.55000    0.25000     S in sulfone
+#
+# . SZ
+#
+*   0 SZ   124   16     0.13900    3.56000    0.39500     DMSO UA unpublished
+*   1 SZ   495   16     0.24500    3.56000    0.39500     alkyl aryl sulfoxide - all atom
+*   2 SZ   496   16     0.13000    3.56000    0.39500     sulfoxide - all atom
+#
+# . Si
+#
+*   0 Si    14   14     0.00000    4.00000    0.10000
+#
+# . Sr
+#
+*   0 Sr   413   38     2.00000    3.10269    0.11823     Sr++
+*   1 Sr  1113   38     2.00000    3.82000    0.11823     Sr++
+#
+# . Th
+#
+*   0 Th   698   90     4.00000    3.30000    0.05000     Th+4
+#
+# . U
+#
+*   0 U    436   92     2.50000    2.81524    0.40000     U in UO2+ J Mol Struct 366, 55 (96)
+#
+# . Xe
+#
+*   0 Xe   105   54     0.00000    3.93500    0.43300     Xe -           "
+#
+# . Yb
+#
+*   0 Yb   707   70     3.00000    2.95000    0.04000     Yb+3 see also JPC-A 104, 7659 (2000)
+#
+# . Zn
+#
+*   0 Zn  1005   30     2.00000    1.96000    0.01250     JACS 113, 8262 (1991)

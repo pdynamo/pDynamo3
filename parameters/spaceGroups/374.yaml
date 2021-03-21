@@ -1,0 +1,28 @@
+# . Space group I422.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : I 4 2
+Hermann-Mauguin    : I422
+Schoenflies        : D4^9
+Space Group Number : 97
+Space Group Symbol : 97
+Setting            : 374
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (y,x,-z)
+    - (-y,-x,-z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-y+1/2,x+1/2,z+1/2)
+    - (y+1/2,-x+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (y+1/2,x+1/2,-z+1/2)
+    - (-y+1/2,-x+1/2,-z+1/2)
+...

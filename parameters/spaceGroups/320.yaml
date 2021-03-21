@@ -1,0 +1,28 @@
+# . Space group Bmcm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -B 2 2c
+Hermann-Mauguin    : Bmcm
+Schoenflies        : D2h^21
+Space Group Number : 67
+Space Group Symbol : 67:bca
+Setting            : 320
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,y,-z)
+    - (x+1/2,-y,-z)
+    - (-x,-y,z)
+    - (-x,-y,-z)
+    - (x+1/2,-y,z)
+    - (-x+1/2,y,z)
+    - (x,y,-z)
+    - (x+1/2,y,z+1/2)
+    - (-x,y,-z+1/2)
+    - (x,-y,-z+1/2)
+    - (-x+1/2,-y,z+1/2)
+    - (-x+1/2,-y,-z+1/2)
+    - (x,-y,z+1/2)
+    - (-x,y,z+1/2)
+    - (x+1/2,y,-z+1/2)
+...

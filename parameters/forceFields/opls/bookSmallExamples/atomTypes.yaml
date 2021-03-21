@@ -1,0 +1,22 @@
+---
+# . !MMAtomTypeContainer
+Label: Book Small Examples
+Parameter Fields:
+    - Label
+    - Atomic Number
+    - Charge
+    - Hydrogen Type
+    - Description
+Parameter Values:
+    - [ H ,   1,   0.300,  null,  Amide hydrogen     ]
+    - [ HC,   1,   0.060,  null,  Aliphatic hydrogen ]
+    - [ HW,   1,   0.417,  null,  Water hydrogen     ]
+    - [ C ,   6,   0.500,  null,  Amide carbon       ]
+    - [ CT,   6,   0.000,  HC  ,  Tetrahedral carbon ]
+    - [ N ,   7,  -0.500,  H   ,  Amide nitrogen     ]
+    - [ O ,   8,  -0.500,  null,  Amide oxygen       ]
+    - [ OW,   8,  -0.834,  HW  ,  Water oxygen       ]
+    - [ Na,  11,   1.000,  null,  Sodium cation      ]
+    - [ Cl,  17,  -1.000,  null,  Chloride anion     ]
+    - [ K ,  19,   1.000,  null,  Potassium cation   ]
+...

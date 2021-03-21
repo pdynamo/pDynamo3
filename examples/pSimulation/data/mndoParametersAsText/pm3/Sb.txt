@@ -1,0 +1,49 @@
+# . Text parameter file for the element Sb.
+
+Sb   atomicNumber                          51
+Sb   iii                                    5
+Sb   iiid                                   5
+Sb   ir016                                  0
+Sb   ir066                                  0
+Sb   ir244                                  0
+Sb   ir266                                  0
+Sb   ir466                                  0
+Sb   qnd                                    0
+Sb   qnp                                    5
+Sb   qns                                    5
+Sb   ad                     0.458889205545466  atomic
+Sb   alp                    2.034301000000000  A^-1
+Sb   am                     0.339500453328661  atomic
+Sb   aq                     0.242343850967802  atomic
+Sb   betad                  0.000000000000000  eV
+Sb   betap                 -2.817948000000000  eV
+Sb   betas                -14.794217000000000  eV
+Sb   dd                     1.409190306048953  atomic
+Sb   eheat                 63.200000000000003  kcal/mole
+Sb   eisol               -148.938288999999997  eV
+Sb   f0sd                   0.000000000000000  eV
+Sb   g2sd                   0.000000000000000  eV
+Sb   gp2                    6.250000000000000  eV
+Sb   gphot                  1.000000000000000  dimensionless
+Sb   gpp                    6.350000000000000  eV
+Sb   gsp                    5.277680000000000  eV
+Sb   gss                    9.238277000000000  eV
+Sb   hsp                    2.424464000000000  eV
+Sb   pcore                  0.000000000000000  atomic
+Sb   qq                     1.352135438324491  atomic
+Sb   udd                    0.000000000000000  eV
+Sb   upp                  -29.434954000000001  eV
+Sb   uss                  -56.432195999999998  eV
+Sb   zcore                  5.000000000000000  atomic
+Sb   zdn                    0.000000000000000  atomic
+Sb   zetad                  0.000000000000000  atomic
+Sb   zetap                  1.899992000000000  atomic
+Sb   zetas                  2.343039000000000  atomic
+Sb   zpn                    0.000000000000000  atomic
+Sb   zsn                    0.000000000000000  atomic
+Sb   fn10                   3.002028000000000  A_eV
+Sb   fn20                   6.005342000000000  A^-2
+Sb   fn30                   0.853060000000000  A
+Sb   fn11                  -0.018892000000000  A_eV
+Sb   fn21                   6.011478000000000  A^-2
+Sb   fn31                   2.793311000000000  A

@@ -1,0 +1,19 @@
+
+# The Gmodel values were calculated for T = 300K
+# They are appropriately recalculated for a given temperature of the model
+# 
+# Acids have their contribution to Gmicro negative, bases positive (is that true?)
+---
+site      : TYR
+atoms     : [CE1, HE1, CE2, HE2, CZ, OH, HH]
+instances :
+  - label   : p
+    Gmodel  : -13.169124
+    protons : 1
+    charges : [-0.12,  0.12, -0.12,  0.12,  0.11, -0.54,  0.43]
+
+  - label   : d
+    Gmodel  : 0.000000
+    protons : 0
+    charges : [-0.17,  0.07, -0.17,  0.07, -0.11, -0.69,  0.00]
+...

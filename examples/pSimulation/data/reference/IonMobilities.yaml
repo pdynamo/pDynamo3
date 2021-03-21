@@ -1,0 +1,16 @@
+# . IonMobilities
+---
+Label : Ion Mobilities
+Real Data Fields :
+  - Label
+  - Value
+  - Absolute Error Tolerance
+  - Percent Error Tolerance
+  - Tolerance Format
+  - Value Format
+Real Data :
+  - [ HS Cross-Section , 1.9802e+02 , 1.9802e+01 , 1.0000e+01 , "{:.4e}" , "{:.4e}" ]
+  - [ HS Mobility      , 2.7130e-04 , 2.7130e-05 , 1.0000e+01 , "{:.4e}" , "{:.4e}" ]
+  - [ PA Cross-Section , 1.7939e+02 , 1.7939e+01 , 1.0000e+01 , "{:.4e}" , "{:.4e}" ]
+  - [ PA Mobility      , 2.9948e-04 , 2.9948e-05 , 1.0000e+01 , "{:.4e}" , "{:.4e}" ]
+...

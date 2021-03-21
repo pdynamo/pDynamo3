@@ -1,0 +1,16 @@
+# . Space group B11m.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : B -2
+Hermann-Mauguin    : B11m
+Schoenflies        : Cs^3
+Space Group Number : 8
+Space Group Symbol : 8:c2
+Setting            : 34
+Transformations :
+    - (x,y,z)
+    - (x,y,-z)
+    - (x+1/2,y,z+1/2)
+    - (x+1/2,y,-z+1/2)
+...

@@ -1,0 +1,14 @@
+---
+# . !MMSequenceLink
+Left Atom : SG
+Right Atom: SG
+Label: Disulfide Bridge
+Left Variant: &id001
+  # . !MMSequenceVariant
+  Atom Fields: [ Label, Type, Charge ]
+  Atoms:
+    - [ SG, SM , -0.08 ]
+    - [ CB, CT2, -0.10 ]
+  Component: CYS
+Right Variant: *id001
+...

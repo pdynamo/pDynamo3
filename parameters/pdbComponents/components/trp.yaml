@@ -1,0 +1,17 @@
+# . !PDBComponent
+{Atom Fields: [Atomic Number, Formal Charge, Label], Atoms: [[7, 0, N],
+    [6, 0, CA], [6, 0, C], [8, 0, O], [6, 0, CB], [6, 0, CG], [6, 0, CD1], [6, 0,
+      CD2], [7, 0, NE1], [6, 0, CE2], [6, 0, CE3], [6, 0, CZ2], [6, 0, CZ3], [6, 0,
+      CH2], [8, 0, OXT], [1, 0, H], [1, 0, H2], [1, 0, HA], [1, 0, HB2], [1, 0, HB3],
+    [1, 0, HD1], [1, 0, HE1], [1, 0, HE3], [1, 0, HZ2], [1, 0, HZ3], [1, 0, HH2],
+    [1, 0, HXT]], Bond Fields: [Atom 1, Atom 2, Type], Bonds: [[N, CA, Single], [N,
+      H, Single], [N, H2, Single], [CA, C, Single], [CA, CB, Single], [CA, HA, Single],
+    [C, O, Double], [C, OXT, Single], [CB, CG, Single], [CB, HB2, Single], [CB, HB3,
+      Single], [CG, CD1, Double], [CG, CD2, Single], [CD1, NE1, Single], [CD1, HD1,
+      Single], [CD2, CE2, Double], [CD2, CE3, Single], [NE1, CE2, Single], [NE1, HE1,
+      Single], [CE2, CZ2, Single], [CE3, CZ3, Double], [CE3, HE3, Single], [CZ2, CH2,
+      Double], [CZ2, HZ2, Single], [CZ3, CH2, Single], [CZ3, HZ3, Single], [CH2, HH2,
+      Single], [OXT, HXT, Single]], Component Class: '"L-Peptide', Formal Charge: 0,
+  Is Heteroatom: false, Is In Chain: true, Label: TRP, Left Link: Peptide, Left Termination: N
+    Terminal, Name: TRYPTOPHAN, PDB Class: Atomp, Right Link: Peptide, Right Termination: C
+    Terminal}

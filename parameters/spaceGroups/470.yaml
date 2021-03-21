@@ -1,0 +1,24 @@
+# . Space group P63/m.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : -P 6c
+Hermann-Mauguin    : P63/m
+Schoenflies        : C6h^2
+Space Group Number : 176
+Space Group Symbol : 176
+Setting            : 470
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-x,-y,z+1/2)
+    - (y,-x+y,z+1/2)
+    - (x-y,x,z+1/2)
+    - (-x,-y,-z)
+    - (y,-x+y,-z)
+    - (x-y,x,-z)
+    - (x,y,-z+1/2)
+    - (-y,x-y,-z+1/2)
+    - (-x+y,-x,-z+1/2)
+...

@@ -1,0 +1,28 @@
+# . Space group F222.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : F 2 2
+Hermann-Mauguin    : F222
+Schoenflies        : D2^7
+Space Group Number : 22
+Space Group Symbol : 22
+Setting            : 122
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (x,y+1/2,z+1/2)
+    - (-x,-y+1/2,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (x,-y+1/2,-z+1/2)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,-y,z+1/2)
+    - (-x+1/2,y,-z+1/2)
+    - (x+1/2,-y,-z+1/2)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,-z)
+...

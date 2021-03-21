@@ -1,0 +1,20 @@
+# . Space group I2mb.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : I -2b 2
+Hermann-Mauguin    : I2mb
+Schoenflies        : C2v^22
+Space Group Number : 46
+Space Group Symbol : 46:cab
+Setting            : 223
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x,y+1/2,-z)
+    - (x,-y+1/2,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y,-z+1/2)
+    - (x+1/2,-y,z+1/2)
+...

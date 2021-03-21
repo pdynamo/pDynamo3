@@ -1,0 +1,20 @@
+# . Space group Pbcm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2c 2b
+Hermann-Mauguin    : Pbcm
+Schoenflies        : D2h^11
+Space Group Number : 57
+Space Group Symbol : 57
+Setting            : 269
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (x,-y+1/2,-z)
+    - (-x,-y,-z)
+    - (x,y,-z+1/2)
+    - (x,-y+1/2,z+1/2)
+    - (-x,y+1/2,z)
+...

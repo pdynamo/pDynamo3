@@ -1,0 +1,28 @@
+# . Space group P4/mbm.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -P 4 2ab
+Hermann-Mauguin    : P4/mbm
+Schoenflies        : D4h^5
+Space Group Number : 127
+Space Group Symbol : 127
+Setting            : 406
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (-x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,-z)
+    - (y+1/2,x+1/2,-z)
+    - (-y+1/2,-x+1/2,-z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,z)
+    - (-y+1/2,-x+1/2,z)
+    - (y+1/2,x+1/2,z)
+...

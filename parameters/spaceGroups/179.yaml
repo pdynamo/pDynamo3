@@ -1,0 +1,20 @@
+# . Space group A21am.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : A -2 2a
+Hermann-Mauguin    : A21am
+Schoenflies        : C2v^12
+Space Group Number : 36
+Space Group Symbol : 36:-cba
+Setting            : 179
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z)
+    - (x+1/2,-y,z)
+    - (x,y,-z)
+    - (x,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (x,y+1/2,-z+1/2)
+...

@@ -1,0 +1,18 @@
+# . Space group P64.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P 64
+Hermann-Mauguin    : P64
+Schoenflies        : C6^5
+Space Group Number : 172
+Space Group Symbol : 172
+Setting            : 466
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z+1/3)
+    - (-x+y,-x,z+2/3)
+    - (-x,-y,z)
+    - (y,-x+y,z+1/3)
+    - (x-y,x,z+2/3)
+...

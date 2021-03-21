@@ -1,0 +1,73 @@
+# . Text parameter file for the element Mo.
+
+Mo   atomicNumber                          42
+Mo   iii                                    5
+Mo   iiid                                   4
+Mo   ir016                                  5
+Mo   ir066                                 10
+Mo   ir244                                  5
+Mo   ir266                                 35
+Mo   ir466                                 35
+Mo   qnd                                    4
+Mo   qnp                                    5
+Mo   qns                                    5
+Mo   ad                     0.257518972164145  atomic
+Mo   alp                    0.000000000000000  A^-1
+Mo   am                     0.315186184176142  atomic
+Mo   aq                     0.300273206795549  atomic
+Mo   betad                -10.941126000000001  eV
+Mo   betap                  7.017762000000000  eV
+Mo   betas                 -0.189344000000000  eV
+Mo   dd                     2.431378381898402  atomic
+Mo   eheat                157.300000000000011  kcal/mole
+Mo   eisol               -332.652613000000031  eV
+Mo   f0sd                  10.000608000000000  eV
+Mo   g2sd                   1.216752000000000  eV
+Mo   gp2                    5.790551610000000  eV
+Mo   gphot                  1.000000000000000  dimensionless
+Mo   gpp                    6.644509470000000  eV
+Mo   gsp                    6.888292730000000  eV
+Mo   gss                    8.576652100000000  eV
+Mo   hsp                    1.317367640000000  eV
+Mo   pcore                  0.000000000000000  atomic
+Mo   qq                     1.902416829629051  atomic
+Mo   udd                  -55.836976999999997  eV
+Mo   upp                  -35.291950999999997  eV
+Mo   uss                  -53.467728000000001  eV
+Mo   zcore                  6.000000000000000  atomic
+Mo   zdn                    1.876231000000000  atomic
+Mo   zetad                  1.827152000000000  atomic
+Mo   zetap                  1.350412000000000  atomic
+Mo   zetas                  1.060429000000000  atomic
+Mo   zpn                    1.355055000000000  atomic
+Mo   zsn                    1.912995000000000  atomic
+Mo   diatomicA      H       2.035748000000000  A^-1
+Mo   diatomicX      H       0.934686000000000  dimensionless
+Mo   diatomicA      C       2.198672000000000  A^-1
+Mo   diatomicX      C       1.190742000000000  dimensionless
+Mo   diatomicA      N       1.869475000000000  A^-1
+Mo   diatomicX      N       0.608268000000000  dimensionless
+Mo   diatomicA      O       1.755424000000000  A^-1
+Mo   diatomicX      O       0.511267000000000  dimensionless
+Mo   diatomicA      F       2.202593000000000  A^-1
+Mo   diatomicX      F       0.610429000000000  dimensionless
+Mo   diatomicA      Na      2.440770000000000  A^-1
+Mo   diatomicX      Na      8.286550000000000  dimensionless
+Mo   diatomicA      P       1.850441000000000  A^-1
+Mo   diatomicX      P       1.522846000000000  dimensionless
+Mo   diatomicA      S       1.939658000000000  A^-1
+Mo   diatomicX      S       0.830428000000000  dimensionless
+Mo   diatomicA      Cl      1.783362000000000  A^-1
+Mo   diatomicX      Cl      0.474325000000000  dimensionless
+Mo   diatomicA      K       3.939420000000000  A^-1
+Mo   diatomicX      K       2.142390000000000  dimensionless
+Mo   diatomicA      Cr      4.438876000000000  A^-1
+Mo   diatomicX      Cr      1.279163000000000  dimensionless
+Mo   diatomicA      Br      1.283334000000000  A^-1
+Mo   diatomicX      Br      0.225918000000000  dimensionless
+Mo   diatomicA      Mo      2.034254000000000  A^-1
+Mo   diatomicX      Mo      0.626462000000000  dimensionless
+Mo   diatomicA      I       0.948461000000000  A^-1
+Mo   diatomicX      I       0.124695000000000  dimensionless
+Mo   diatomicA      Pb      2.000000000000000  A^-1
+Mo   diatomicX      Pb      5.000000000000000  dimensionless

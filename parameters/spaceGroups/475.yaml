@@ -1,0 +1,24 @@
+# . Space group P6422.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P 64 2c (0 0 -1)
+Hermann-Mauguin    : P6422
+Schoenflies        : D6^5
+Space Group Number : 181
+Space Group Symbol : 181
+Setting            : 475
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z+1/3)
+    - (-x+y,-x,z+2/3)
+    - (-x,-y,z)
+    - (y,-x+y,z+1/3)
+    - (x-y,x,z+2/3)
+    - (y,x,-z+1/3)
+    - (x-y,-y,-z)
+    - (-x,-x+y,-z+2/3)
+    - (-y,-x,-z+1/3)
+    - (-x+y,y,-z)
+    - (x,x-y,-z+2/3)
+...

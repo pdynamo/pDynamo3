@@ -1,0 +1,24 @@
+# . Space group P63cm.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P 6c -2
+Hermann-Mauguin    : P63cm
+Schoenflies        : C6v^3
+Space Group Number : 185
+Space Group Symbol : 185
+Setting            : 479
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-x,-y,z+1/2)
+    - (y,-x+y,z+1/2)
+    - (x-y,x,z+1/2)
+    - (-y,-x,z+1/2)
+    - (-x+y,y,z+1/2)
+    - (x,x-y,z+1/2)
+    - (y,x,z)
+    - (x-y,-y,z)
+    - (-x,-x+y,z)
+...

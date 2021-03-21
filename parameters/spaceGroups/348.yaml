@@ -1,0 +1,28 @@
+# . Space group Imam.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -I 2c 2
+Hermann-Mauguin    : Imam
+Schoenflies        : D2h^28
+Space Group Number : 74
+Space Group Symbol : 74:a-cb
+Setting            : 348
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z+1/2)
+    - (-x,-y,z+1/2)
+    - (x,-y,-z)
+    - (-x,-y,-z)
+    - (x,-y,z+1/2)
+    - (x,y,-z+1/2)
+    - (-x,y,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z)
+    - (-x+1/2,-y+1/2,z)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z)
+    - (x+1/2,y+1/2,-z)
+    - (-x+1/2,y+1/2,z+1/2)
+...

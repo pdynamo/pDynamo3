@@ -1,0 +1,20 @@
+# . Space group Cc2a.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : C -2bc -2bc
+Hermann-Mauguin    : Cc2a
+Schoenflies        : C2v^17
+Space Group Number : 41
+Space Group Symbol : 41:bca
+Setting            : 207
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (-x+1/2,y,z+1/2)
+    - (x+1/2,y,-z+1/2)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,y+1/2,-z)
+    - (-x,y+1/2,z+1/2)
+    - (x,y+1/2,-z+1/2)
+...

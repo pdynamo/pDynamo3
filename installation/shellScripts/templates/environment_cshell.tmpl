@@ -1,0 +1,17 @@
+#!/bin/csh
+
+# . Cshell environment variables and paths to be added to a user's ".cshrc" file.
+# . PDYNAMO3_ORCACOMMAND, PDYNAMO3_SCRATCH and PYTHONPATH will likely need modifying.
+
+# . The root of the program.
+setenv PDYNAMO3_HOME             {pDynamoHome}
+
+# . Additional paths.
+setenv PDYNAMO3_ORCACOMMAND      {orcaCommand}  
+setenv PDYNAMO3_PARAMETERS       {parameters}
+setenv PDYNAMO3_PYTHONCOMMAND    python3
+setenv PDYNAMO3_SCRATCH          {scratch}
+setenv PDYNAMO3_STYLE            $PDYNAMO3_PARAMETERS/ccsStyleSheets/defaultStyle.css
+
+# . The python path.
+setenv PYTHONPATH {pythonPath}

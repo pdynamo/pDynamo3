@@ -1,0 +1,20 @@
+# . Space group P42/n:1.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : P 4n -1n
+Hermann-Mauguin    : P42/n:1
+Schoenflies        : C4h^4
+Space Group Number : 86
+Space Group Symbol : 86:1
+Setting            : 361
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y+1/2,x+1/2,z+1/2)
+    - (y+1/2,-x+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (y,-x,-z)
+    - (-y,x,-z)
+...

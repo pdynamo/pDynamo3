@@ -1,0 +1,20 @@
+# . Space group Pccn.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2ab 2ac
+Hermann-Mauguin    : Pccn
+Schoenflies        : D2h^10
+Space Group Number : 56
+Space Group Symbol : 56
+Setting            : 266
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-x,y+1/2,-z+1/2)
+    - (x+1/2,-y,-z+1/2)
+    - (-x,-y,-z)
+    - (x+1/2,y+1/2,-z)
+    - (x,-y+1/2,z+1/2)
+    - (-x+1/2,y,z+1/2)
+...

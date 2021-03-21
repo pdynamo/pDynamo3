@@ -1,0 +1,75 @@
+# . Text parameter file for the element Cr.
+
+Cr   atomicNumber                          24
+Cr   iii                                    4
+Cr   iiid                                   3
+Cr   ir016                                  5
+Cr   ir066                                 10
+Cr   ir244                                  5
+Cr   ir266                                 35
+Cr   ir466                                 35
+Cr   qnd                                    3
+Cr   qnp                                    4
+Cr   qns                                    4
+Cr   ad                     0.344965575548230  atomic
+Cr   alp                    0.000000000000000  A^-1
+Cr   am                     0.319094555479307  atomic
+Cr   aq                     0.266391509853583  atomic
+Cr   betad                  1.966994000000000  eV
+Cr   betap                  6.364295000000000  eV
+Cr   betas                 -5.755066000000000  eV
+Cr   dd                     1.060071711895989  atomic
+Cr   eheat                 95.000000000000000  kcal/mole
+Cr   eisol               -301.744896000000040  eV
+Cr   f0sd                   5.387401000000000  eV
+Cr   g2sd                   1.360784000000000  eV
+Cr   gp2                    4.902150110000000  eV
+Cr   gphot                  1.000000000000000  dimensionless
+Cr   gpp                    5.592247130000000  eV
+Cr   gsp                    6.079114880000000  eV
+Cr   gss                    8.683004290000000  eV
+Cr   hsp                    0.905105080000000  eV
+Cr   pcore                  0.000000000000000  atomic
+Cr   qq                     2.035538672810080  atomic
+Cr   udd                  -54.042181999999997  eV
+Cr   upp                  -29.139126999999998  eV
+Cr   uss                  -31.533985999999999  eV
+Cr   zcore                  6.000000000000000  atomic
+Cr   zdn                    1.424788000000000  atomic
+Cr   zetad                  1.168262000000000  atomic
+Cr   zetap                  1.042142000000000  atomic
+Cr   zetas                  2.006943000000000  atomic
+Cr   zpn                    0.938774000000000  atomic
+Cr   zsn                    1.588287000000000  atomic
+Cr   diatomicA      H       0.727659000000000  A^-1
+Cr   diatomicX      H       0.035940000000000  dimensionless
+Cr   diatomicA      C       3.700035000000000  A^-1
+Cr   diatomicX      C       3.391761000000000  dimensionless
+Cr   diatomicA      N       1.822062000000000  A^-1
+Cr   diatomicX      N       0.181074000000000  dimensionless
+Cr   diatomicA      O       1.531568000000000  A^-1
+Cr   diatomicX      O       0.221554000000000  dimensionless
+Cr   diatomicA      F       1.513304000000000  A^-1
+Cr   diatomicX      F       0.104835000000000  dimensionless
+Cr   diatomicA      Na      2.033327000000000  A^-1
+Cr   diatomicX      Na      8.371465000000001  dimensionless
+Cr   diatomicA      Si      1.860760000000000  A^-1
+Cr   diatomicX      Si      1.029110000000000  dimensionless
+Cr   diatomicA      P       1.278440000000000  A^-1
+Cr   diatomicX      P       0.224026000000000  dimensionless
+Cr   diatomicA      S       1.705562000000000  A^-1
+Cr   diatomicX      S       0.131083000000000  dimensionless
+Cr   diatomicA      Cl      1.494367000000000  A^-1
+Cr   diatomicX      Cl      0.081301000000000  dimensionless
+Cr   diatomicA      K       2.000000000000000  A^-1
+Cr   diatomicX      K       2.000000000000000  dimensionless
+Cr   diatomicA      Cr      5.153212000000000  A^-1
+Cr   diatomicX      Cr      9.752378999999999  dimensionless
+Cr   diatomicA      Br      1.339524000000000  A^-1
+Cr   diatomicX      Br      0.140054000000000  dimensionless
+Cr   diatomicA      Mo      4.438876000000000  A^-1
+Cr   diatomicX      Mo      1.279163000000000  dimensionless
+Cr   diatomicA      I       2.493056000000000  A^-1
+Cr   diatomicX      I       2.834084000000000  dimensionless
+Cr   diatomicA      Pb      1.860760000000000  A^-1
+Cr   diatomicX      Pb      1.029110000000000  dimensionless

@@ -1,0 +1,36 @@
+# . Space group P-43n.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : P -4n 2 3
+Hermann-Mauguin    : P-43n
+Schoenflies        : Td^4
+Space Group Number : 218
+Space Group Symbol : 218
+Setting            : 514
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (z,x,y)
+    - (z,-x,-y)
+    - (-z,-x,y)
+    - (-z,x,-y)
+    - (y,z,x)
+    - (-y,z,-x)
+    - (y,-z,-x)
+    - (-y,-z,x)
+    - (y+1/2,x+1/2,z+1/2)
+    - (-y+1/2,-x+1/2,z+1/2)
+    - (y+1/2,-x+1/2,-z+1/2)
+    - (-y+1/2,x+1/2,-z+1/2)
+    - (x+1/2,z+1/2,y+1/2)
+    - (-x+1/2,z+1/2,-y+1/2)
+    - (-x+1/2,-z+1/2,y+1/2)
+    - (x+1/2,-z+1/2,-y+1/2)
+    - (z+1/2,y+1/2,x+1/2)
+    - (z+1/2,-y+1/2,-x+1/2)
+    - (-z+1/2,y+1/2,-x+1/2)
+    - (-z+1/2,-y+1/2,x+1/2)
+...

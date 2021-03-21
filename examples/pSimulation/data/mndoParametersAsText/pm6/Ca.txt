@@ -1,0 +1,98 @@
+# . Text parameter file for the element Ca.
+
+Ca   atomicNumber                          20
+Ca   iii                                    4
+Ca   iiid                                   3
+Ca   ir016                                  0
+Ca   ir066                                  0
+Ca   ir244                                  0
+Ca   ir266                                  0
+Ca   ir466                                  0
+Ca   qnd                                    0
+Ca   qnp                                    4
+Ca   qns                                    4
+Ca   ad                     0.348517354027388  atomic
+Ca   alp                    0.000000000000000  A^-1
+Ca   am                     0.210418298688923  atomic
+Ca   aq                     0.295963679834979  atomic
+Ca   betad                  0.000000000000000  eV
+Ca   betap                 -1.296612000000000  eV
+Ca   betas                 -4.343881000000000  eV
+Ca   dd                     1.310322427707787  atomic
+Ca   eheat                 42.600000000000001  kcal/mole
+Ca   eisol                -15.814343000000001  eV
+Ca   f0sd                   0.000000000000000  eV
+Ca   g2sd                   0.000000000000000  eV
+Ca   gp2                    7.431876000000000  eV
+Ca   gphot                  1.000000000000000  dimensionless
+Ca   gpp                    7.172103000000000  eV
+Ca   gsp                    4.781065000000000  eV
+Ca   gss                    5.725773000000000  eV
+Ca   hsp                    1.240572000000000  eV
+Ca   pcore                  0.000000000000000  atomic
+Ca   qq                     1.029720169836737  atomic
+Ca   udd                    0.000000000000000  eV
+Ca   upp                   -9.754177000000000  eV
+Ca   uss                  -10.770058000000001  eV
+Ca   zcore                  2.000000000000000  atomic
+Ca   zdn                    0.000000000000000  atomic
+Ca   zetad                  0.000000000000000  atomic
+Ca   zetap                  2.060094000000000  atomic
+Ca   zetas                  1.528258000000000  atomic
+Ca   zpn                    0.000000000000000  atomic
+Ca   zsn                    0.000000000000000  atomic
+Ca   fn10                  -0.025275000000000  A_eV
+Ca   fn20                   0.500017000000000  A^-2
+Ca   fn30                   2.329051000000000  A
+Ca   diatomicA      H       2.141859000000000  A^-1
+Ca   diatomicX      H       7.728606000000000  dimensionless
+Ca   diatomicA      He      1.719847000000000  A^-1
+Ca   diatomicX      He      2.913852000000000  dimensionless
+Ca   diatomicA      B       1.700010000000000  A^-1
+Ca   diatomicX      B       1.700010000000000  dimensionless
+Ca   diatomicA      C       1.035305000000000  A^-1
+Ca   diatomicX      C       0.148450000000000  dimensionless
+Ca   diatomicA      N       2.386600000000000  A^-1
+Ca   diatomicX      N       2.988074000000000  dimensionless
+Ca   diatomicA      O       3.119102000000000  A^-1
+Ca   diatomicX      O      12.282783000000000  dimensionless
+Ca   diatomicA      F       2.645053000000000  A^-1
+Ca   diatomicX      F       3.482821000000000  dimensionless
+Ca   diatomicA      Ne      0.954530000000000  A^-1
+Ca   diatomicX      Ne      0.332586000000000  dimensionless
+Ca   diatomicA      Na      3.107104000000000  A^-1
+Ca   diatomicX      Na      9.657508999999999  dimensionless
+Ca   diatomicA      Mg      2.299800000000000  A^-1
+Ca   diatomicX      Mg      8.599800000000000  dimensionless
+Ca   diatomicA      Al      1.612565000000000  A^-1
+Ca   diatomicX      Al      4.188555000000000  dimensionless
+Ca   diatomicA      Si      1.218788000000000  A^-1
+Ca   diatomicX      Si      0.336233000000000  dimensionless
+Ca   diatomicA      P       1.024142000000000  A^-1
+Ca   diatomicX      P       0.410840000000000  dimensionless
+Ca   diatomicA      S       0.958171000000000  A^-1
+Ca   diatomicX      S       0.325739000000000  dimensionless
+Ca   diatomicA      Cl      2.383391000000000  A^-1
+Ca   diatomicX      Cl      5.956144000000000  dimensionless
+Ca   diatomicA      Ar      1.034881000000000  A^-1
+Ca   diatomicX      Ar      0.291072000000000  dimensionless
+Ca   diatomicA      K       1.119200000000000  A^-1
+Ca   diatomicX      K       1.240320000000000  dimensionless
+Ca   diatomicA      Ca      1.779080000000000  A^-1
+Ca   diatomicX      Ca     27.126165000000000  dimensionless
+Ca   diatomicA      Ti      2.000000000000000  A^-1
+Ca   diatomicX      Ti      4.109141000000000  dimensionless
+Ca   diatomicA      Mn      1.491440000000000  A^-1
+Ca   diatomicX      Mn      0.620180000000000  dimensionless
+Ca   diatomicA      Zn      1.119180000000000  A^-1
+Ca   diatomicX      Zn      1.240290000000000  dimensionless
+Ca   diatomicA      Br      2.078405000000000  A^-1
+Ca   diatomicX      Br      4.052910000000000  dimensionless
+Ca   diatomicA      Kr      1.305197000000000  A^-1
+Ca   diatomicX      Kr      0.878891000000000  dimensionless
+Ca   diatomicA      I       2.196490000000000  A^-1
+Ca   diatomicX      I       7.689921000000000  dimensionless
+Ca   diatomicA      Xe      1.510653000000000  A^-1
+Ca   diatomicX      Xe      1.717121000000000  dimensionless
+Ca   diatomicA      Hf      2.054500000000000  A^-1
+Ca   diatomicX      Hf      4.319510000000000  dimensionless

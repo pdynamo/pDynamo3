@@ -1,0 +1,16 @@
+# . Space group P2nn.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2n 2
+Hermann-Mauguin    : P2nn
+Schoenflies        : C2v^10
+Space Group Number : 34
+Space Group Symbol : 34:cab
+Setting            : 171
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+...

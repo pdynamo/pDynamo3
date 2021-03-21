@@ -1,0 +1,28 @@
+# . Space group Bmam.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -B 2c 2
+Hermann-Mauguin    : Bmam
+Schoenflies        : D2h^21
+Space Group Number : 67
+Space Group Symbol : 67:a-cb
+Setting            : 321
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z+1/2)
+    - (-x,-y,z+1/2)
+    - (x,-y,-z)
+    - (-x,-y,-z)
+    - (x,-y,z+1/2)
+    - (x,y,-z+1/2)
+    - (-x,y,z)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,y,-z)
+    - (-x+1/2,-y,z)
+    - (x+1/2,-y,-z+1/2)
+    - (-x+1/2,-y,-z+1/2)
+    - (x+1/2,-y,z)
+    - (x+1/2,y,-z)
+    - (-x+1/2,y,z+1/2)
+...

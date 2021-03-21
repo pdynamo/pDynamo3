@@ -1,0 +1,20 @@
+# . Space group C222.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : C 2 2
+Hermann-Mauguin    : C222
+Schoenflies        : D2^6
+Space Group Number : 21
+Space Group Symbol : 21
+Setting            : 119
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,-z)
+...

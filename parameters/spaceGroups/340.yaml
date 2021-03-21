@@ -1,0 +1,28 @@
+# . Space group Icma.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -I 2b 2b
+Hermann-Mauguin    : Icma
+Schoenflies        : D2h^26
+Space Group Number : 72
+Space Group Symbol : 72:bca
+Setting            : 340
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (x+1/2,-y,-z+1/2)
+    - (-x+1/2,-y,z+1/2)
+    - (-x,-y,-z)
+    - (x,-y,z)
+    - (-x+1/2,y,z+1/2)
+    - (x+1/2,y,-z+1/2)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x,-y+1/2,-z)
+    - (-x,-y+1/2,z)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x,y+1/2,z)
+    - (x,y+1/2,-z)
+...

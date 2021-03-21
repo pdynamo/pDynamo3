@@ -1,0 +1,21 @@
+
+# C-terminus (from CHARMM force field)
+#    OXT(-)
+#   /
+#  -C
+#   \\
+#    O
+---
+site      : CTR
+atoms     : [C, O, OXT]
+instances :
+  - label   : p
+    Gmodel  : -5.1832
+    protons : 1
+    charges : [ 0.72, -0.36, -0.36]
+
+  - label   : d
+    Gmodel  : 0.000000
+    protons : 0
+    charges : [ 0.34, -0.67, -0.67]
+...

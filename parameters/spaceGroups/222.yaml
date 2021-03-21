@@ -1,0 +1,20 @@
+# . Space group Ibm2.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : I 2 -2b
+Hermann-Mauguin    : Ibm2
+Schoenflies        : C2v^22
+Space Group Number : 46
+Space Group Symbol : 46:ba-c
+Setting            : 222
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y+1/2,z)
+    - (x,-y+1/2,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y,z+1/2)
+    - (x+1/2,-y,z+1/2)
+...

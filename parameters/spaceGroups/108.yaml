@@ -1,0 +1,16 @@
+# . Space group P222.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P 2 2
+Hermann-Mauguin    : P222
+Schoenflies        : D2^1
+Space Group Number : 16
+Space Group Symbol : 16
+Setting            : 108
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+...

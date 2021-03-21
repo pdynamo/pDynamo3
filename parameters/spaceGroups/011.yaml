@@ -1,0 +1,16 @@
+# . Space group I121.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : I 2y
+Hermann-Mauguin    : I121
+Schoenflies        : C2^3
+Space Group Number : 5
+Space Group Symbol : 5:b3
+Setting            : 11
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+...

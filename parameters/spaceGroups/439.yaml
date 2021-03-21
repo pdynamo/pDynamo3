@@ -1,0 +1,18 @@
+# . Space group P321.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : P 3 2"
+Hermann-Mauguin    : P321
+Schoenflies        : D3^2
+Space Group Number : 150
+Space Group Symbol : 150
+Setting            : 439
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (y,x,-z)
+    - (x-y,-y,-z)
+    - (-x,-x+y,-z)
+...

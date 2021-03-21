@@ -1,0 +1,24 @@
+# . Space group P213.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : P 2ac 2ab 3
+Hermann-Mauguin    : P213
+Schoenflies        : T^4
+Space Group Number : 198
+Space Group Symbol : 198
+Setting            : 492
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z)
+    - (z,x,y)
+    - (z+1/2,-x+1/2,-y)
+    - (-z+1/2,-x,y+1/2)
+    - (-z,x+1/2,-y+1/2)
+    - (y,z,x)
+    - (-y,z+1/2,-x+1/2)
+    - (y+1/2,-z+1/2,-x)
+    - (-y+1/2,-z,x+1/2)
+...

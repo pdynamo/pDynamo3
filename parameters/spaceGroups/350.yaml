@@ -1,0 +1,16 @@
+# . Space group P41.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : P 4w
+Hermann-Mauguin    : P41
+Schoenflies        : C4^2
+Space Group Number : 76
+Space Group Symbol : 76
+Setting            : 350
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (-y,x,z+1/4)
+    - (y,-x,z+3/4)
+...

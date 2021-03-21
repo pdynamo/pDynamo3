@@ -1,0 +1,67 @@
+# . Text parameter file for the element Au.
+
+Au   atomicNumber                          79
+Au   iii                                    6
+Au   iiid                                   5
+Au   ir016                                 10
+Au   ir066                                 45
+Au   ir244                                  5
+Au   ir266                                 70
+Au   ir466                                 70
+Au   qnd                                    5
+Au   qnp                                    6
+Au   qns                                    6
+Au   ad                     0.188709120932626  atomic
+Au   alp                    0.000000000000000  A^-1
+Au   am                     0.288160864324156  atomic
+Au   aq                     0.461268269262340  atomic
+Au   betad                -60.582656999999998  eV
+Au   betap                  2.069261000000000  eV
+Au   betas                 -7.422478000000000  eV
+Au   dd                     1.879424473883326  atomic
+Au   eheat                 88.000000000000000  kcal/mole
+Au   eisol               -917.103269000000068  eV
+Au   f0sd                   9.157754000000001  eV
+Au   g2sd                   5.119712000000000  eV
+Au   gp2                   16.168400779999999  eV
+Au   gphot                  1.000000000000000  dimensionless
+Au   gpp                   18.641662799999999  eV
+Au   gsp                    9.282854929999999  eV
+Au   gss                    7.841255760000000  eV
+Au   hsp                    0.473344510000000  eV
+Au   pcore                  0.000000000000000  atomic
+Au   qq                     1.949950760815392  atomic
+Au   udd                  -82.124395000000007  eV
+Au   upp                  -64.760559000000001  eV
+Au   uss                  -95.859318999999999  eV
+Au   zcore                 11.000000000000000  atomic
+Au   zdn                    1.596549000000000  atomic
+Au   zetad                  4.812882000000000  atomic
+Au   zetap                  1.547024000000000  atomic
+Au   zetas                  2.016668000000000  atomic
+Au   zpn                    4.466810000000000  atomic
+Au   zsn                    2.061188000000000  atomic
+Au   diatomicA      H       2.884762000000000  A^-1
+Au   diatomicX      H       1.601508000000000  dimensionless
+Au   diatomicA      C       4.574237000000000  A^-1
+Au   diatomicX      C      21.816305000000000  dimensionless
+Au   diatomicA      N       2.490602000000000  A^-1
+Au   diatomicX      N       0.383148000000000  dimensionless
+Au   diatomicA      O       1.430945000000000  A^-1
+Au   diatomicX      O       0.070957000000000  dimensionless
+Au   diatomicA      F       4.422519000000000  A^-1
+Au   diatomicX      F       9.756399999999999  dimensionless
+Au   diatomicA      Al      1.572570000000000  A^-1
+Au   diatomicX      Al      1.057140000000000  dimensionless
+Au   diatomicA      P       1.618713000000000  A^-1
+Au   diatomicX      P       0.067001000000000  dimensionless
+Au   diatomicA      S       4.109006000000000  A^-1
+Au   diatomicX      S      20.914308999999999  dimensionless
+Au   diatomicA      Cl      3.019391000000000  A^-1
+Au   diatomicX      Cl      0.885574000000000  dimensionless
+Au   diatomicA      Br      0.984642000000000  A^-1
+Au   diatomicX      Br      0.012598000000000  dimensionless
+Au   diatomicA      I       0.535875000000000  A^-1
+Au   diatomicX      I       0.005990000000000  dimensionless
+Au   diatomicA      Au      3.714390000000000  A^-1
+Au   diatomicX      Au      9.651211999999999  dimensionless

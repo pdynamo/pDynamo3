@@ -1,0 +1,22 @@
+---
+# . !Element
+Allen Electronegativity        : 2.300
+Atomic Number                  : 1
+Bragg Radius                   : 0.35
+Covalent Radius                : 0.23
+Group                          : 1
+Mass                           : 1.00794
+Maximum Orbital Quantum Number : 0
+Name                           : Hydrogen
+Pauling Electronegativity      : 2.2
+Period                         : 1
+RGB Color Indices              : [255, 255, 255]
+Single Bond Distances          : {1     : 0.74, 35     : 1.41, 6     : 1.09, 7     : 1.01, 8     : 0.96, 9     : 0.92, 14     : 1.46, 15     : 1.42, 16     : 1.35, 17     : 1.28, 53     : 1.6}
+Symbol                         : H
+Valence Electrons              : 1
+vdW Radius                     : 1.2
+d Quantum Number               : 0
+f Quantum Number               : 0
+p Quantum Number               : 0
+s Quantum Number               : 1
+...

@@ -1,0 +1,21 @@
+---
+# . !UreyBradleyParameterContainer
+Analytic Form:
+    Equation: k * ( b - b0 )**2
+    Symbols:
+        b  : Bond Length
+        b0 : Equilibrium Value 
+        k  : Force Constant
+Label: Book Small Examples
+Units:
+    Equilibrium Value : Angstroms
+    Force Constant    : kcal/mol/Angstroms**2
+Parameter Fields:
+    - Atom Type 1
+    - Atom Type 2
+    - Atom Type 3
+    - Equilibrium Value
+    - Force Constant
+Parameter Values:
+    - [ HW,  OW,  HW,  1.5139,   38.25 ]
+...

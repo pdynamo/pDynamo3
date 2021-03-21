@@ -1,0 +1,20 @@
+# . Space group Ccc2.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : C 2 -2c
+Hermann-Mauguin    : Ccc2
+Schoenflies        : C2v^13
+Space Group Number : 37
+Space Group Symbol : 37
+Setting            : 182
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (x,-y,z+1/2)
+    - (-x,y,z+1/2)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y+1/2,z)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+...

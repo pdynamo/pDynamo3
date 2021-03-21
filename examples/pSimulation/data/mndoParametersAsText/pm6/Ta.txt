@@ -1,0 +1,69 @@
+# . Text parameter file for the element Ta.
+
+Ta   atomicNumber                          73
+Ta   iii                                    6
+Ta   iiid                                   5
+Ta   ir016                                  6
+Ta   ir066                                  3
+Ta   ir244                                  3
+Ta   ir266                                 15
+Ta   ir466                                  8
+Ta   qnd                                    5
+Ta   qnp                                    6
+Ta   qns                                    6
+Ta   ad                     0.345313722059554  atomic
+Ta   alp                    0.000000000000000  A^-1
+Ta   am                     0.243448836195517  atomic
+Ta   aq                     0.820061881042199  atomic
+Ta   betad                 -9.816794000000000  eV
+Ta   betap                 -5.818839000000000  eV
+Ta   betas                -17.199604999999998  eV
+Ta   dd                     0.792790497968634  atomic
+Ta   eheat                186.900000000000006  kcal/mole
+Ta   eisol               -201.194333380000018  eV
+Ta   f0sd                   8.544427000000001  eV
+Ta   g2sd                   2.074254000000000  eV
+Ta   gp2                   12.416053760000000  eV
+Ta   gphot                  1.000000000000000  dimensionless
+Ta   gpp                   14.315323490000001  eV
+Ta   gsp                    7.805320920000000  eV
+Ta   gss                    6.624579620000000  eV
+Ta   hsp                    0.577263300000000  eV
+Ta   pcore                  0.000000000000000  atomic
+Ta   qq                     0.623108569987316  atomic
+Ta   udd                  -43.266314999999999  eV
+Ta   upp                    1.163975000000000  eV
+Ta   uss                  -39.009984000000003  eV
+Ta   zcore                  5.000000000000000  atomic
+Ta   zdn                    2.311198000000000  atomic
+Ta   zetad                  1.838249000000000  atomic
+Ta   zetap                  4.841244000000000  atomic
+Ta   zetas                  4.578087000000000  atomic
+Ta   zpn                    3.430157000000000  atomic
+Ta   zsn                    1.741367000000000  atomic
+Ta   diatomicA      H       2.288014000000000  A^-1
+Ta   diatomicX      H       2.827669000000000  dimensionless
+Ta   diatomicA      C       1.838949000000000  A^-1
+Ta   diatomicX      C       0.847439000000000  dimensionless
+Ta   diatomicA      N       2.053679000000000  A^-1
+Ta   diatomicX      N       1.015461000000000  dimensionless
+Ta   diatomicA      O       2.412629000000000  A^-1
+Ta   diatomicX      O       1.751083000000000  dimensionless
+Ta   diatomicA      F       3.107390000000000  A^-1
+Ta   diatomicX      F       3.146520000000000  dimensionless
+Ta   diatomicA      Na      2.551120000000000  A^-1
+Ta   diatomicX      Na      8.276130000000000  dimensionless
+Ta   diatomicA      P       2.513800000000000  A^-1
+Ta   diatomicX      P       6.261880000000000  dimensionless
+Ta   diatomicA      S       2.246723000000000  A^-1
+Ta   diatomicX      S       2.975980000000000  dimensionless
+Ta   diatomicA      Cl      1.608805000000000  A^-1
+Ta   diatomicX      Cl      0.516413000000000  dimensionless
+Ta   diatomicA      K       4.521470000000000  A^-1
+Ta   diatomicX      K       2.026700000000000  dimensionless
+Ta   diatomicA      Br      1.640376000000000  A^-1
+Ta   diatomicX      Br      0.791445000000000  dimensionless
+Ta   diatomicA      I       2.401053000000000  A^-1
+Ta   diatomicX      I       6.551551000000000  dimensionless
+Ta   diatomicA      Ta      2.082863000000000  A^-1
+Ta   diatomicX      Ta     10.987053000000000  dimensionless

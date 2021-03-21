@@ -1,0 +1,17 @@
+# . Point group O.
+---
+# . !PointGroup
+Label : O
+Symmetry Operations :
+    C2 :  6
+    C3 :  4
+    C4 :  3
+    E  :  1
+Character Symmetry Operations : [ E, C2, C3 ]
+Character Table :
+    A1 : [ 1.000000 ,  1.000000 ,  1.000000 ]
+    A2 : [ 1.000000 , -1.000000 ,  1.000000 ]
+    E  : [ 2.000000 ,  0.000000 , -1.000000 ]
+    T1 : [ 3.000000 , -1.000000 ,  0.000000 ]
+    T2 : [ 3.000000 ,  1.000000 ,  0.000000 ]
+...

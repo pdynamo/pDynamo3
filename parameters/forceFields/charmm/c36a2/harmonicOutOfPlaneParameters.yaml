@@ -1,0 +1,105 @@
+# . These atom type orders are modified from the original CHARMM parameters
+# . and extra zero FC terms have been added to allow automatic assignment of
+# . these out-of-plane terms.
+# . The values of the non-protein impropers need to be checked.
+---
+# . !HarmonicOutOfPlaneParameterContainer
+Analytic Form:
+    Equation: (1/3) * K * ( w_ijkl**2 + w_iklj**2 + w_iljk**2 )
+    Symbols:
+        i      : Central Atom
+        j      : Peripheral Atom 1
+        k      : Peripheral Atom 2
+        l      : Peripheral Atom 3
+        w_ijkl : Dihedral Angle i-j-k-l
+        w_iklj : Dihedral Angle i-k-l-j
+        w_iljk : Dihedral Angle i-l-j-k
+        K      : Force Constant
+Label: Charmm c36a2
+Wild Card: X
+Units:
+    Force Constant : kcal/mol/radians**2
+Parameter Fields:
+    - Central Atom Type
+    - Peripheral Atom Type 1
+    - Peripheral Atom Type 2
+    - Peripheral Atom Type 3
+    - Force Constant
+Parameter Values:
+    - [ C   ,  NC2 ,  X   ,  X   ,   40.0 ]
+    - [ C   ,  O   ,  X   ,  X   ,  120.0 ]
+    - [ CA  ,  CA  ,  X   ,  X   ,    0.0 ]
+    - [ CA  ,  CY  ,  NY  ,  HP  ,    0.0 ]
+    - [ CC  ,  CP1 ,  NH2 ,  O   ,   45.0 ]
+    - [ CC  ,  CT1 ,  NH2 ,  O   ,   45.0 ]
+    - [ CC  ,  CT1 ,  OC  ,  OC  ,   96.0 ]
+    - [ CC  ,  CT1 ,  X   ,  X   ,   96.0 ]
+    - [ CC  ,  CT2 ,  N   ,  O   ,  120.0 ]
+    - [ CC  ,  CT2 ,  NH2 ,  O   ,   90.0 ] # . Multiplied by 2 as double terms in ASN and GLN.
+    - [ CC  ,  CT2 ,  OC  ,  OC  ,   96.0 ]
+    - [ CC  ,  CT2 ,  X   ,  X   ,   96.0 ]
+    - [ CC  ,  CT3 ,  NH2 ,  O   ,   45.0 ]
+    - [ CC  ,  CT3 ,  X   ,  X   ,   96.0 ]
+    - [ CC  ,  HA  ,  NH2 ,  O   ,   45.0 ]
+    - [ CC  ,  OC  ,  X   ,  X   ,   96.0 ]
+    - [ CCL ,  OCL ,  X   ,  X   ,   96.0 ]
+    - [ CD  ,  OB  ,  X   ,  X   ,  100.0 ]
+    - [ CE2 ,  CE2 ,  HE2 ,  HE2 ,    3.0 ]
+    - [ CEL2,  CEL2,  HEL2,  HEL2,    3.0 ]
+    - [ CL  ,  OBL ,  X   ,  X   ,  100.0 ]
+    - [ CL  ,  OCL ,  X   ,  X   ,   96.0 ]
+    - [ CN1 ,  CN3T,  NN2U,  ON1 ,   90.0 ]
+    - [ CN1 ,  CN5G,  NN2G,  ON1 ,   90.0 ]
+    - [ CN1 ,  ON1 ,  X   ,  X   ,   90.0 ]
+    - [ CN1 ,  ON1C,  X   ,  X   ,   80.0 ]
+    - [ CN1A,  ON1 ,  X   ,  X   ,   40.0 ]
+    - [ CN1T,  NN2B,  NN2U,  ON1 ,  110.0 ]
+    - [ CN1T,  ON1 ,  X   ,  X   ,   90.0 ]
+    - [ CN2 ,  CN3 ,  NN1 ,  NN3 ,   60.0 ]
+    - [ CN2 ,  CN5 ,  NN1 ,  NN3A,   40.0 ]
+    - [ CN2 ,  NN1 ,  NN2G,  NN3G,   40.0 ]
+    - [ CN2 ,  NN1 ,  X   ,  X   ,   90.0 ]
+    - [ CN3 ,  CN3C,  CN8 ,  HN6 ,   15.0 ]
+    - [ CN3 ,  HN3B,  X   ,  X   ,   15.0 ]
+    - [ CN3A,  HN3B,  X   ,  X   ,   13.0 ]
+    - [ CN3B,  HN3B,  X   ,  X   ,   13.0 ]
+    - [ CN3C,  HN3 ,  X   ,  X   ,   53.0 ]
+    - [ CN3C,  HN6 ,  X   ,  X   ,   53.0 ]
+    - [ CN4 ,  HN3 ,  NN2G,  NN3I,   39.0 ]
+    - [ CN8 ,  CN3 ,  CN3 ,  HN8 ,   18.0 ]
+    - [ CN9 ,  CN3T,  X   ,  X   ,   14.0 ]
+    - [ CPB ,  CE1 ,  X   ,  X   ,   90.0 ]
+    - [ CPB ,  CPA ,  CPA ,  NPH ,   20.8 ]
+    - [ CPB ,  CT2 ,  X   ,  X   ,   90.0 ]
+    - [ CPB ,  CT3 ,  X   ,  X   ,   90.0 ]
+    - [ CPH1,  CPH1,  HR1 ,  NR3 ,    0.0 ] # . Doubly protonated HIS.
+    - [ CPH1,  CPH1,  HR3 ,  NR1 ,    1.0 ] # . Multiplied by 2 as double terms in delta protonated HIS.
+    - [ CPH1,  CPH1,  HR3 ,  NR2 ,    1.0 ] # . Multiplied by 2 as double terms in epsilon protonated HIS.
+    - [ CPH1,  CPH1,  HR3 ,  NR3 ,    1.0 ]
+    - [ CPH1,  CT2 ,  X   ,  X   ,    0.0 ] # . All HIS.
+    - [ CPH2,  HR1 ,  NR1 ,  NR2 ,    1.0 ] # . Multiplied by 2 as double terms in delta and epsilon protonated HIS.
+    - [ CPH2,  HR2 ,  NR3 ,  NR3 ,    0.0 ] # . Doubly protonated HIS.
+    - [ CPM ,  CPA ,  CPA ,  HA  ,   29.4 ]
+#    - [ CPT ,  CA  ,  CY  ,  NY  ,  100.0 ] # . Does this parameter make sense (TRP)?
+    - [ CPT ,  CPT ,  X   ,  X   ,    0.0 ]
+    - [ CY  ,  CA  ,  CPT ,  CT2 ,    0.0 ]
+    - [ N   ,  C   ,  CP1 ,  CP3 ,    0.0 ]
+    - [ NC2 ,  C   ,  X   ,  X   ,    0.0 ]
+    - [ NH1 ,  H   ,  X   ,  X   ,   20.0 ]
+    - [ NH2 ,  H   ,  X   ,  X   ,    8.0 ] # . Multiplied by 2 as double terms in ASN, GLN and some patches.
+    - [ NN1 ,  CN1A,  HN1 ,  HN1 ,   -5.0 ]
+    - [ NN1 ,  CN2 ,  HN1 ,  HN1 ,    6.0 ]
+    - [ NN1 ,  HN1 ,  X   ,  X   ,    4.0 ]
+    - [ NN2 ,  CN3 ,  CN3B,  HN2 ,   50.0 ]
+    - [ NN2 ,  HN2 ,  X   ,  X   ,    1.0 ]
+    - [ NN2B,  CN4 ,  CN5 ,  HN2 ,    7.0 ]
+    - [ NN2G,  CN1 ,  CN4 ,  HN2 ,    0.8 ]
+    - [ NPH ,  CPA ,  CPA ,  CPM ,   18.3 ]
+    - [ NPH ,  CPA ,  CPA ,  FE  ,  137.4 ]
+    - [ NPH ,  CPA ,  CPB ,  CPB ,   40.6 ]
+    - [ NPH ,  CPA ,  CPB ,  CPM ,   32.7 ]
+    - [ NR1 ,  CN7B,  CPH1,  CPH2,    0.6 ]
+    - [ NR1 ,  CPH1,  CPH2,  H   ,    1.0 ] # . Multiplied by 2 as double terms in delta and epsilon protonated HIS.
+    - [ NR3 ,  CPH1,  CPH2,  H   ,    2.4 ] # . Multiplied by 2 as double terms in doubly protonated HIS.
+    - [ NY  ,  CA  ,  CPT ,  H   ,    0.0 ]
+...

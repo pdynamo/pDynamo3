@@ -1,0 +1,16 @@
+# . Point group C7v.
+---
+# . !PointGroup
+Label : C7v
+Symmetry Operations :
+    C7    :  1
+    E     :  1
+    sigma :  7
+Character Symmetry Operations : [ E, C7, sigma ]
+Character Table :
+    A1 : [ 1.000000 ,      1.000000 ,  1.000000 ]
+    A2 : [ 1.000000 ,      1.000000 , -1.000000 ]
+    E1 : [ 2.000000 , 2*cos(2*pi/7) ,  0.000000 ]
+    E2 : [ 2.000000 , 2*cos(4*pi/7) ,  0.000000 ]
+    E3 : [ 2.000000 , 2*cos(6*pi/7) ,  0.000000 ]
+...

@@ -1,0 +1,22 @@
+---
+# . !Element
+Allen Electronegativity        : 2.253
+Atomic Number                  : 15
+Bragg Radius                   : 1.0
+Covalent Radius                : 0.75
+Group                          : 15
+Mass                           : 30.9738
+Maximum Orbital Quantum Number : 1
+Name                           : Phosphorus
+Pauling Electronegativity      : 2.19
+Period                         : 3
+RGB Color Indices              : [255, 128, 0]
+Single Bond Distances          : {8     : 1.6, 1     : 1.42, 6     : 1.85, 15     : 2.25}
+Symbol                         : P
+Valence Electrons              : 5
+vdW Radius                     : 2.08
+d Quantum Number               : 0
+f Quantum Number               : 0
+p Quantum Number               : 3
+s Quantum Number               : 3
+...

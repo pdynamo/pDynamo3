@@ -1,0 +1,24 @@
+# . Space group P23.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : P 2 2 3
+Hermann-Mauguin    : P23
+Schoenflies        : T^1
+Space Group Number : 195
+Space Group Symbol : 195
+Setting            : 489
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (z,x,y)
+    - (z,-x,-y)
+    - (-z,-x,y)
+    - (-z,x,-y)
+    - (y,z,x)
+    - (-y,z,-x)
+    - (y,-z,-x)
+    - (-y,-z,x)
+...

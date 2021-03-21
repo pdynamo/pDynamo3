@@ -1,0 +1,15 @@
+# . Point group C2v.
+---
+# . !PointGroup
+Label : C2v
+Symmetry Operations :
+    C2    :  1
+    E     :  1
+    sigma :  2
+Character Symmetry Operations : [ E, C2, sigma-m ]
+Character Table :
+    A1 : [ 1.000000 ,  1.000000 ,  1.000000 ]
+    A2 : [ 1.000000 ,  1.000000 , -1.000000 ]
+    B1 : [ 1.000000 , -1.000000 ,  1.000000 ]
+    B2 : [ 1.000000 , -1.000000 , -1.000000 ]
+...

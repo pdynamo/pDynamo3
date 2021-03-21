@@ -1,0 +1,49 @@
+# . Text parameter file for the element Ga.
+
+Ga   atomicNumber                          31
+Ga   iii                                    4
+Ga   iiid                                   4
+Ga   ir016                                  0
+Ga   ir066                                  0
+Ga   ir244                                  0
+Ga   ir266                                  0
+Ga   ir466                                  0
+Ga   qnd                                    0
+Ga   qnp                                    4
+Ga   qns                                    4
+Ga   ad                     0.512924198420440  atomic
+Ga   alp                    1.605115000000000  A^-1
+Ga   am                     0.310846158596994  atomic
+Ga   aq                     0.154618461733351  atomic
+Ga   betad                  0.000000000000000  eV
+Ga   betap                 -0.407053000000000  eV
+Ga   betas                 -4.945618000000000  eV
+Ga   dd                     0.977669153510582  atomic
+Ga   eheat                 65.400000000000006  kcal/mole
+Ga   eisol                -57.328025000000011  eV
+Ga   f0sd                   0.000000000000000  eV
+Ga   g2sd                   0.000000000000000  eV
+Ga   gp2                    4.983045000000000  eV
+Ga   gphot                  1.000000000000000  dimensionless
+Ga   gpp                    5.086855000000000  eV
+Ga   gsp                    8.925618999999999  eV
+Ga   gss                    8.458553999999999  eV
+Ga   hsp                    2.051260000000000  eV
+Ga   pcore                  0.000000000000000  atomic
+Ga   qq                     2.527153377260534  atomic
+Ga   udd                    0.000000000000000  eV
+Ga   upp                  -21.875371000000001  eV
+Ga   uss                  -29.855592999999999  eV
+Ga   zcore                  3.000000000000000  atomic
+Ga   zdn                    0.000000000000000  atomic
+Ga   zetad                  0.000000000000000  atomic
+Ga   zetap                  0.839411000000000  atomic
+Ga   zetas                  1.847040000000000  atomic
+Ga   zpn                    0.000000000000000  atomic
+Ga   zsn                    0.000000000000000  atomic
+Ga   fn10                  -0.560179000000000  A_eV
+Ga   fn20                   5.623273000000000  A^-2
+Ga   fn30                   1.531780000000000  A
+Ga   fn11                  -0.272731000000000  A_eV
+Ga   fn21                   1.991843000000000  A^-2
+Ga   fn31                   2.183864000000000  A

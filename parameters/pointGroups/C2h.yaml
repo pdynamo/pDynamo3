@@ -1,0 +1,16 @@
+# . Point group C2h.
+---
+# . !PointGroup
+Label : C2h
+Symmetry Operations :
+    C2    :  1
+    E     :  1
+    i     :  1
+    sigma :  1
+Character Symmetry Operations : [ E, C2, i ]
+Character Table :
+    Ag : [ 1.000000 ,  1.000000 ,  1.000000 ]
+    Au : [ 1.000000 ,  1.000000 , -1.000000 ]
+    Bg : [ 1.000000 , -1.000000 ,  1.000000 ]
+    Bu : [ 1.000000 , -1.000000 , -1.000000 ]
+...

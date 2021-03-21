@@ -1,0 +1,14 @@
+---
+# . !PDBComponentLink
+Bond Type     : Single
+Label         : Peptide
+Left Atom     : C
+Left Variant  :
+  # . !PDBComponentVariant
+  Atoms To Delete : [HXT, OXT]
+Right Atom    : N
+Right Variant :
+  # . !PDBComponentVariant
+  Atoms To Delete : [H2]
+  Component       : UNK
+...

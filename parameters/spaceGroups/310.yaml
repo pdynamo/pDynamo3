@@ -1,0 +1,28 @@
+# . Space group Cmmm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -C 2 2
+Hermann-Mauguin    : Cmmm
+Schoenflies        : D2h^19
+Space Group Number : 65
+Space Group Symbol : 65
+Setting            : 310
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (x,-y,z)
+    - (-x,y,z)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,-z)
+    - (-x+1/2,-y+1/2,-z)
+    - (x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,z)
+...

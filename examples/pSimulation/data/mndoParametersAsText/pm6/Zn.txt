@@ -1,0 +1,77 @@
+# . Text parameter file for the element Zn.
+
+Zn   atomicNumber                          30
+Zn   iii                                    4
+Zn   iiid                                   3
+Zn   ir016                                  0
+Zn   ir066                                  0
+Zn   ir244                                  0
+Zn   ir266                                  0
+Zn   ir466                                  0
+Zn   qnd                                    0
+Zn   qnp                                    4
+Zn   qns                                    4
+Zn   ad                     0.244887308602402  atomic
+Zn   alp                    0.000000000000000  A^-1
+Zn   am                     0.319991963363392  atomic
+Zn   aq                     1.490703338813938  atomic
+Zn   betad                  0.000000000000000  eV
+Zn   betap                  1.479642000000000  eV
+Zn   betas                -13.276583000000000  eV
+Zn   dd                     1.524397923981019  atomic
+Zn   eheat                 31.170000000000002  kcal/mole
+Zn   eisol                -27.374300000000002  eV
+Zn   f0sd                   0.000000000000000  eV
+Zn   g2sd                   0.000000000000000  eV
+Zn   gp2                    6.782785000000000  eV
+Zn   gphot                  1.000000000000000  dimensionless
+Zn   gpp                   20.000041000000000  eV
+Zn   gsp                    3.436116000000000  eV
+Zn   gss                    8.707424000000000  eV
+Zn   hsp                    0.662036000000000  eV
+Zn   pcore                  0.000000000000000  atomic
+Zn   qq                     1.185438212599871  atomic
+Zn   udd                    0.000000000000000  eV
+Zn   upp                   -7.834895000000000  eV
+Zn   uss                  -18.040862000000001  eV
+Zn   zcore                  2.000000000000000  atomic
+Zn   zdn                    0.000000000000000  atomic
+Zn   zetad                  0.000000000000000  atomic
+Zn   zetap                  1.789482000000000  atomic
+Zn   zetas                  1.512875000000000  atomic
+Zn   zpn                    0.000000000000000  atomic
+Zn   zsn                    0.000000000000000  atomic
+Zn   diatomicA      H       1.987891000000000  A^-1
+Zn   diatomicX      H       3.109193000000000  dimensionless
+Zn   diatomicA      C       1.802327000000000  A^-1
+Zn   diatomicX      C       0.991465000000000  dimensionless
+Zn   diatomicA      N       1.844579000000000  A^-1
+Zn   diatomicX      N       0.952476000000000  dimensionless
+Zn   diatomicA      O       2.335054000000000  A^-1
+Zn   diatomicX      O       2.265313000000000  dimensionless
+Zn   diatomicA      F       2.410021000000000  A^-1
+Zn   diatomicX      F       1.225545000000000  dimensionless
+Zn   diatomicA      Si      1.832058000000000  A^-1
+Zn   diatomicX      Si      3.783905000000000  dimensionless
+Zn   diatomicA      P       1.220480000000000  A^-1
+Zn   diatomicX      P       0.581530000000000  dimensionless
+Zn   diatomicA      S       1.455000000000000  A^-1
+Zn   diatomicX      S       0.648000000000000  dimensionless
+Zn   diatomicA      Cl      1.625176000000000  A^-1
+Zn   diatomicX      Cl      0.721351000000000  dimensionless
+Zn   diatomicA      Ca      1.119180000000000  A^-1
+Zn   diatomicX      Ca      1.240290000000000  dimensionless
+Zn   diatomicA      Zn      0.929000000000000  A^-1
+Zn   diatomicX      Zn      0.465000000000000  dimensionless
+Zn   diatomicA      As      1.459130000000000  A^-1
+Zn   diatomicX      As      3.156571000000000  dimensionless
+Zn   diatomicA      Se      1.186242000000000  A^-1
+Zn   diatomicX      Se      0.511594000000000  dimensionless
+Zn   diatomicA      Br      1.416120000000000  A^-1
+Zn   diatomicX      Br      0.747027000000000  dimensionless
+Zn   diatomicA      Te      1.218929000000000  A^-1
+Zn   diatomicX      Te      1.756070000000000  dimensionless
+Zn   diatomicA      I       1.394762000000000  A^-1
+Zn   diatomicX      I       0.976607000000000  dimensionless
+Zn   diatomicA      Pb      1.500000000000000  A^-1
+Zn   diatomicX      Pb      1.000000000000000  dimensionless

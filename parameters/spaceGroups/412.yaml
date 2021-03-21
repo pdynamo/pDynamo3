@@ -1,0 +1,28 @@
+# . Space group P42/mmc.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -P 4c 2
+Hermann-Mauguin    : P42/mmc
+Schoenflies        : D4h^9
+Space Group Number : 131
+Space Group Symbol : 131
+Setting            : 412
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z+1/2)
+    - (y,-x,z+1/2)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (y,x,-z+1/2)
+    - (-y,-x,-z+1/2)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (y,-x,-z+1/2)
+    - (-y,x,-z+1/2)
+    - (x,-y,z)
+    - (-x,y,z)
+    - (-y,-x,z+1/2)
+    - (y,x,z+1/2)
+...

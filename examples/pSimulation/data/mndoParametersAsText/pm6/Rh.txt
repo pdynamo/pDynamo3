@@ -1,0 +1,73 @@
+# . Text parameter file for the element Rh.
+
+Rh   atomicNumber                          45
+Rh   iii                                    5
+Rh   iiid                                   4
+Rh   ir016                                  8
+Rh   ir066                                 28
+Rh   ir244                                  5
+Rh   ir266                                 50
+Rh   ir466                                 43
+Rh   qnd                                    4
+Rh   qnp                                    5
+Rh   qns                                    5
+Rh   ad                     0.046221255427258  atomic
+Rh   alp                    0.000000000000000  A^-1
+Rh   am                     0.133443390827384  atomic
+Rh   aq                     1.146132309330391  atomic
+Rh   betad                -13.396182000000000  eV
+Rh   betap                -15.556691000000001  eV
+Rh   betas                 -8.222141000000001  eV
+Rh   dd                     0.184764246318226  atomic
+Rh   eheat                133.000000000000000  kcal/mole
+Rh   eisol               -307.061691999999994  eV
+Rh   f0sd                   1.775497000000000  eV
+Rh   g2sd                   1.851571000000000  eV
+Rh   gp2                   29.478305110000001  eV
+Rh   gphot                  1.000000000000000  dimensionless
+Rh   gpp                   33.825599120000000  eV
+Rh   gsp                    4.407819700000000  eV
+Rh   gss                    3.631179270000000  eV
+Rh   hsp                    0.000091710000000  eV
+Rh   pcore                  0.000000000000000  atomic
+Rh   qq                     0.596604805527081  atomic
+Rh   udd                  -35.818491999999999  eV
+Rh   upp                  -40.045431000000001  eV
+Rh   uss                  -20.513756000000001  eV
+Rh   zcore                  9.000000000000000  atomic
+Rh   zdn                    0.643134000000000  atomic
+Rh   zetad                  2.901406000000000  atomic
+Rh   zetap                  4.306111000000000  atomic
+Rh   zetas                  1.324919000000000  atomic
+Rh   zpn                    6.898259000000000  atomic
+Rh   zsn                    0.809923000000000  atomic
+Rh   diatomicA      H       3.104165000000000  A^-1
+Rh   diatomicX      H       2.306107000000000  dimensionless
+Rh   diatomicA      C       3.415991000000000  A^-1
+Rh   diatomicX      C       3.488079000000000  dimensionless
+Rh   diatomicA      N       3.585462000000000  A^-1
+Rh   diatomicX      N       4.000947000000000  dimensionless
+Rh   diatomicA      O       3.927830000000000  A^-1
+Rh   diatomicX      O      10.298676000000000  dimensionless
+Rh   diatomicA      F       4.051654000000000  A^-1
+Rh   diatomicX      F       9.065384000000000  dimensionless
+Rh   diatomicA      Si      2.776490000000000  A^-1
+Rh   diatomicX      Si      0.850010000000000  dimensionless
+Rh   diatomicA      P       2.334607000000000  A^-1
+Rh   diatomicX      P       1.038141000000000  dimensionless
+Rh   diatomicA      S       3.154006000000000  A^-1
+Rh   diatomicX      S       4.816410000000000  dimensionless
+Rh   diatomicA      Cl      3.300130000000000  A^-1
+Rh   diatomicX      Cl      3.586865000000000  dimensionless
+Rh   diatomicA      Ge      2.852900000000000  A^-1
+Rh   diatomicX      Ge      2.152140000000000  dimensionless
+Rh   diatomicA      Se      2.523740000000000  A^-1
+Rh   diatomicX      Se      2.202700000000000  dimensionless
+Rh   diatomicA      Br      2.928082000000000  A^-1
+Rh   diatomicX      Br      1.510149000000000  dimensionless
+Rh   diatomicA      Rh      2.497328000000000  A^-1
+Rh   diatomicX      Rh      2.070114000000000  dimensionless
+Rh   diatomicA      Sb      2.204930000000000  A^-1
+Rh   diatomicX      Sb      2.276340000000000  dimensionless
+Rh   diatomicA      I       3.708170000000000  A^-1
+Rh   diatomicX      I       2.357944000000000  dimensionless

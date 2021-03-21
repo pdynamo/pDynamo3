@@ -1,0 +1,20 @@
+# . Space group Pbmm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2 2b
+Hermann-Mauguin    : Pbmm
+Schoenflies        : D2h^5
+Space Group Number : 51
+Space Group Symbol : 51:cab
+Setting            : 241
+Transformations :
+    - (x,y,z)
+    - (x,-y+1/2,-z)
+    - (-x,-y,z)
+    - (-x,y+1/2,-z)
+    - (-x,-y,-z)
+    - (-x,y+1/2,z)
+    - (x,y,-z)
+    - (x,-y+1/2,z)
+...

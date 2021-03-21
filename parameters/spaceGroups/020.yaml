@@ -1,0 +1,14 @@
+# . Space group Pm11.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : P -2x
+Hermann-Mauguin    : Pm11
+Schoenflies        : Cs^1
+Space Group Number : 6
+Space Group Symbol : 6:a
+Setting            : 20
+Transformations :
+    - (x,y,z)
+    - (-x,y,z)
+...

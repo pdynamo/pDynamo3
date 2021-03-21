@@ -1,0 +1,20 @@
+# . !MMSequenceComponent
+Atom Fields: [Label, Type, Charge]
+Atoms:
+- [N, NH2, -0.96]
+- [CA, CT1, 0.19]
+- [C, CD, 0.72]
+- [O, OB, -0.55]
+- [CB, CT2, -0.21]
+- [CG, CD, 0.75]
+- [OD1, OB, -0.55]
+- [OD2, OH1, -0.61]
+- [OXT, OH1, -0.61]
+- [H, H, 0.34]
+- [H2, H, 0.34]
+- [HA, HB, 0.09]
+- [HB2, HA, 0.09]
+- [HB3, HA, 0.09]
+- [HD2, H, 0.44]
+- [HXT, H, 0.44]
+Label: ASP

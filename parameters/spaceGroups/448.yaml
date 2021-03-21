@@ -1,0 +1,18 @@
+# . Space group P3c1.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : P 3 -2"c
+Hermann-Mauguin    : P3c1
+Schoenflies        : C3v^3
+Space Group Number : 158
+Space Group Symbol : 158
+Setting            : 448
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-y,-x,z+1/2)
+    - (-x+y,y,z+1/2)
+    - (x,x-y,z+1/2)
+...

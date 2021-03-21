@@ -1,0 +1,49 @@
+# . Text parameter file for the element Te.
+
+Te   atomicNumber                          52
+Te   iii                                    5
+Te   iiid                                   5
+Te   ir016                                  0
+Te   ir066                                  0
+Te   ir244                                  0
+Te   ir266                                  0
+Te   ir466                                  0
+Te   qnd                                    0
+Te   qnp                                    5
+Te   qns                                    5
+Te   ad                     1.196048527915173  atomic
+Te   alp                    2.485019000000000  A^-1
+Te   am                     0.376867021027678  atomic
+Te   aq                     0.218475520163922  atomic
+Te   betad                  0.000000000000000  eV
+Te   betap                 -3.895430000000000  eV
+Te   betas                 -2.665146000000000  eV
+Te   dd                     0.348417726007396  atomic
+Te   eheat                 47.000000000000000  kcal/mole
+Te   eisol               -168.094592500000033  eV
+Te   f0sd                   0.000000000000000  eV
+Te   g2sd                   0.000000000000000  eV
+Te   gp2                    7.755121000000000  eV
+Te   gphot                  1.000000000000000  dimensionless
+Te   gpp                    7.777592000000000  eV
+Te   gsp                    8.169145000000000  eV
+Te   gss                   10.255072999999999  eV
+Te   hsp                    3.772462000000000  eV
+Te   pcore                  0.000000000000000  atomic
+Te   qq                     1.559308500009423  atomic
+Te   udd                    0.000000000000000  eV
+Te   upp                  -46.314098999999999  eV
+Te   uss                  -44.938035999999997  eV
+Te   zcore                  6.000000000000000  atomic
+Te   zdn                    0.000000000000000  atomic
+Te   zetad                  0.000000000000000  atomic
+Te   zetap                  1.647555000000000  atomic
+Te   zetas                  4.165492000000000  atomic
+Te   zpn                    0.000000000000000  atomic
+Te   zsn                    0.000000000000000  atomic
+Te   fn10                   0.033391000000000  A_eV
+Te   fn20                   5.956379000000000  A^-2
+Te   fn30                   2.277575000000000  A
+Te   fn11                  -1.921867000000000  A_eV
+Te   fn21                   4.973219000000000  A^-2
+Te   fn31                   0.524243000000000  A

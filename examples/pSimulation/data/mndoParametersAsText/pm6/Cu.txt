@@ -1,0 +1,65 @@
+# . Text parameter file for the element Cu.
+
+Cu   atomicNumber                          29
+Cu   iii                                    4
+Cu   iiid                                   3
+Cu   ir016                                 10
+Cu   ir066                                 45
+Cu   ir244                                  5
+Cu   ir266                                 70
+Cu   ir466                                 70
+Cu   qnd                                    3
+Cu   qnp                                    4
+Cu   qns                                    4
+Cu   ad                     1.382299294111372  atomic
+Cu   alp                    0.000000000000000  A^-1
+Cu   am                     0.392898758686411  atomic
+Cu   aq                     1.179939794432474  atomic
+Cu   betad                -21.437291999999999  eV
+Cu   betap                -16.450493999999999  eV
+Cu   betas                 -8.164452000000001  eV
+Cu   dd                     0.180121202093522  atomic
+Cu   eheat                 80.700000000000003  kcal/mole
+Cu   eisol              -1195.285386000000017  eV
+Cu   f0sd                  10.000332000000000  eV
+Cu   g2sd                   7.706529000000000  eV
+Cu   gp2                   16.809608260000001  eV
+Cu   gphot                  1.000000000000000  dimensionless
+Cu   gpp                   19.175970020000001  eV
+Cu   gsp                   12.603298420000000  eV
+Cu   gss                   10.691318760000000  eV
+Cu   hsp                    1.971826150000000  eV
+Cu   pcore                  0.000000000000000  atomic
+Cu   qq                     0.402985162575426  atomic
+Cu   udd                 -109.357633000000007  eV
+Cu   upp                 -126.051011000000003  eV
+Cu   uss                 -101.709056000000004  eV
+Cu   zcore                 11.000000000000000  atomic
+Cu   zdn                    1.444230000000000  atomic
+Cu   zetad                  6.002236000000000  atomic
+Cu   zetap                  5.264016000000000  atomic
+Cu   zetas                  1.655973000000000  atomic
+Cu   zpn                    3.219082000000000  atomic
+Cu   zsn                    1.955646000000000  atomic
+Cu   diatomicA      H       2.128349000000000  A^-1
+Cu   diatomicX      H       0.380934000000000  dimensionless
+Cu   diatomicA      C       4.585954000000000  A^-1
+Cu   diatomicX      C       4.216069000000000  dimensionless
+Cu   diatomicA      N       3.483138000000000  A^-1
+Cu   diatomicX      N       0.574249000000000  dimensionless
+Cu   diatomicA      O       1.913241000000000  A^-1
+Cu   diatomicX      O       0.045699000000000  dimensionless
+Cu   diatomicA      F       2.594939000000000  A^-1
+Cu   diatomicX      F       0.052492000000000  dimensionless
+Cu   diatomicA      P       0.210640000000000  A^-1
+Cu   diatomicX      P       0.020126000000000  dimensionless
+Cu   diatomicA      S       1.007457000000000  A^-1
+Cu   diatomicX      S       0.016712000000000  dimensionless
+Cu   diatomicA      Cl      2.792274000000000  A^-1
+Cu   diatomicX      Cl      0.162637000000000  dimensionless
+Cu   diatomicA      Cu      3.375840000000000  A^-1
+Cu   diatomicX      Cu      2.536743000000000  dimensionless
+Cu   diatomicA      Br      6.000023000000000  A^-1
+Cu   diatomicX      Br      0.049829000000000  dimensionless
+Cu   diatomicA      I       0.299853000000000  A^-1
+Cu   diatomicX      I       0.001737000000000  dimensionless

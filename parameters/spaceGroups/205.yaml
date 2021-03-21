@@ -1,0 +1,20 @@
+# . Space group B2cb.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : B -2bc 2
+Hermann-Mauguin    : B2cb
+Schoenflies        : C2v^17
+Space Group Number : 41
+Space Group Symbol : 41:cab
+Setting            : 205
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x,y+1/2,-z+1/2)
+    - (x,-y+1/2,z+1/2)
+    - (x+1/2,y,z+1/2)
+    - (x+1/2,-y,-z+1/2)
+    - (x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,z)
+...

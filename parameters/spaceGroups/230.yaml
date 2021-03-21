@@ -1,0 +1,20 @@
+# . Space group Pccm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2 2c
+Hermann-Mauguin    : Pccm
+Schoenflies        : D2h^3
+Space Group Number : 49
+Space Group Symbol : 49
+Setting            : 230
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z+1/2)
+    - (x,-y,-z+1/2)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (x,-y,z+1/2)
+    - (-x,y,z+1/2)
+...

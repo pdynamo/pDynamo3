@@ -1,0 +1,30 @@
+# . Space group R3c:H.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : R 3 -2"c
+Hermann-Mauguin    : R3c:H
+Schoenflies        : C3v^6
+Space Group Number : 161
+Space Group Symbol : 161:H
+Setting            : 452
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-y,-x,z+1/2)
+    - (-x+y,y,z+1/2)
+    - (x,x-y,z+1/2)
+    - (x+2/3,y+1/3,z+1/3)
+    - (-y+2/3,x-y+1/3,z+1/3)
+    - (-x+y+2/3,-x+1/3,z+1/3)
+    - (-y+2/3,-x+1/3,z+5/6)
+    - (-x+y+2/3,y+1/3,z+5/6)
+    - (x+2/3,x-y+1/3,z+5/6)
+    - (x+1/3,y+2/3,z+2/3)
+    - (-y+1/3,x-y+2/3,z+2/3)
+    - (-x+y+1/3,-x+2/3,z+2/3)
+    - (-y+1/3,-x+2/3,z+1/6)
+    - (-x+y+1/3,y+2/3,z+1/6)
+    - (x+1/3,x-y+2/3,z+1/6)
+...

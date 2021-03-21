@@ -1,0 +1,49 @@
+# . Text parameter file for the element Ge.
+
+Ge   atomicNumber                          32
+Ge   iii                                    4
+Ge   iiid                                   4
+Ge   ir016                                  0
+Ge   ir066                                  0
+Ge   ir244                                  0
+Ge   ir266                                  0
+Ge   ir466                                  0
+Ge   qnd                                    0
+Ge   qnp                                    4
+Ge   qns                                    4
+Ge   ad                     0.379809793434164  atomic
+Ge   alp                    1.972337000000000  A^-1
+Ge   am                     0.197599784654829  atomic
+Ge   aq                     0.362060838666037  atomic
+Ge   betad                  0.000000000000000  eV
+Ge   betap                 -2.250156700000000  eV
+Ge   betas                 -5.325002400000000  eV
+Ge   dd                     1.192030397269913  atomic
+Ge   eheat                 89.500000000000000  kcal/mole
+Ge   eisol                -84.015600600000027  eV
+Ge   f0sd                   0.000000000000000  eV
+Ge   g2sd                   0.000000000000000  eV
+Ge   gp2                    6.924266300000000  eV
+Ge   gphot                  1.000000000000000  dimensionless
+Ge   gpp                    7.671864700000000  eV
+Ge   gsp                   10.209529300000000  eV
+Ge   gss                    5.376963500000000  eV
+Ge   hsp                    1.337020400000000  eV
+Ge   pcore                  0.000000000000000  atomic
+Ge   qq                     1.332126255169620  atomic
+Ge   udd                    0.000000000000000  eV
+Ge   upp                  -31.586358300000001  eV
+Ge   uss                  -35.467195500000003  eV
+Ge   zcore                  4.000000000000000  atomic
+Ge   zdn                    0.000000000000000  atomic
+Ge   zetad                  0.000000000000000  atomic
+Ge   zetap                  1.592431900000000  atomic
+Ge   zetas                  2.237352600000000  atomic
+Ge   zpn                    0.000000000000000  atomic
+Ge   zsn                    0.000000000000000  atomic
+Ge   fn10                   0.963172600000000  A_eV
+Ge   fn20                   6.012013400000000  A^-2
+Ge   fn30                   2.163365500000000  A
+Ge   fn11                  -0.959389100000000  A_eV
+Ge   fn21                   5.749180200000000  A^-2
+Ge   fn31                   2.169372400000000  A

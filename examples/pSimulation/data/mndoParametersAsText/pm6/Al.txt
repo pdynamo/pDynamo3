@@ -1,0 +1,128 @@
+# . Text parameter file for the element Al.
+
+Al   atomicNumber                          13
+Al   iii                                    3
+Al   iiid                                   3
+Al   ir016                                  0
+Al   ir066                                  0
+Al   ir244                                  0
+Al   ir266                                  0
+Al   ir466                                  0
+Al   qnd                                    3
+Al   qnp                                    3
+Al   qns                                    3
+Al   ad                     0.285337863797850  atomic
+Al   alp                    0.000000000000000  A^-1
+Al   am                     0.244462212825240  atomic
+Al   aq                     0.496831132623433  atomic
+Al   betad                -20.840474000000000  eV
+Al   betap                 -9.382700000000000  eV
+Al   betas                -18.375229000000001  eV
+Al   dd                     0.907731529491470  atomic
+Al   eheat                 79.489999999999995  kcal/mole
+Al   eisol                -48.062025000000006  eV
+Al   f0sd                  38.847608360000002  eV
+Al   g2sd                  16.484131340000001  eV
+Al   gp2                    6.673299000000000  eV
+Al   gphot                  1.000000000000000  dimensionless
+Al   gpp                    7.668857000000000  eV
+Al   gsp                    7.459435000000000  eV
+Al   gss                    6.652155000000000  eV
+Al   hsp                    0.435060000000000  eV
+Al   pcore                  0.000000000000000  atomic
+Al   qq                     0.956673797793468  atomic
+Al   udd                    8.004394000000000  eV
+Al   upp                  -20.104434000000001  eV
+Al   uss                  -24.546778000000000  eV
+Al   zcore                  3.000000000000000  atomic
+Al   zdn                    7.131138000000000  atomic
+Al   zetad                  1.269384000000000  atomic
+Al   zetap                  1.749102000000000  atomic
+Al   zetas                  2.364264000000000  atomic
+Al   zpn                    4.669626000000000  atomic
+Al   zsn                    4.742341000000000  atomic
+Al   fn10                   1.002222000000000  A_eV
+Al   fn20                   1.517400000000000  A^-2
+Al   fn30                   0.659101000000000  A
+Al   diatomicA      H       2.025996000000000  A^-1
+Al   diatomicX      H       2.958379000000000  dimensionless
+Al   diatomicA      He      2.255830000000000  A^-1
+Al   diatomicX      He      2.701400000000000  dimensionless
+Al   diatomicA      Li      1.581593000000000  A^-1
+Al   diatomicX      Li      1.106819000000000  dimensionless
+Al   diatomicA      Be      1.938237000000000  A^-1
+Al   diatomicX      Be      5.037214000000000  dimensionless
+Al   diatomicA      B       2.059569000000000  A^-1
+Al   diatomicX      B       2.741479000000000  dimensionless
+Al   diatomicA      C       2.267440000000000  A^-1
+Al   diatomicX      C       2.928056000000000  dimensionless
+Al   diatomicA      N       2.009754000000000  A^-1
+Al   diatomicX      N       1.345202000000000  dimensionless
+Al   diatomicA      O       2.498660000000000  A^-1
+Al   diatomicX      O       2.131396000000000  dimensionless
+Al   diatomicA      F       3.084258000000000  A^-1
+Al   diatomicX      F       1.975635000000000  dimensionless
+Al   diatomicA      Ne      2.447869000000000  A^-1
+Al   diatomicX      Ne      1.709200000000000  dimensionless
+Al   diatomicA      Na      1.202871000000000  A^-1
+Al   diatomicX      Na      2.071847000000000  dimensionless
+Al   diatomicA      Mg      1.972530000000000  A^-1
+Al   diatomicX      Mg     13.472443000000000  dimensionless
+Al   diatomicA      Al      1.387714000000000  A^-1
+Al   diatomicX      Al      2.139200000000000  dimensionless
+Al   diatomicA      Si      1.900000000000000  A^-1
+Al   diatomicX      Si      2.000000000000000  dimensionless
+Al   diatomicA      P       1.980727000000000  A^-1
+Al   diatomicX      P       5.050816000000000  dimensionless
+Al   diatomicA      S       1.976705000000000  A^-1
+Al   diatomicX      S       2.347384000000000  dimensionless
+Al   diatomicA      Cl      2.125939000000000  A^-1
+Al   diatomicX      Cl      2.153451000000000  dimensionless
+Al   diatomicA      Ar      2.645165000000000  A^-1
+Al   diatomicX      Ar      1.852009000000000  dimensionless
+Al   diatomicA      K       1.976076000000000  A^-1
+Al   diatomicX      K      29.944707999999999  dimensionless
+Al   diatomicA      Ca      1.612565000000000  A^-1
+Al   diatomicX      Ca      4.188555000000000  dimensionless
+Al   diatomicA      Sc      1.003550000000000  A^-1
+Al   diatomicX      Sc      0.500620000000000  dimensionless
+Al   diatomicA      Ti      1.369486000000000  A^-1
+Al   diatomicX      Ti      2.091841000000000  dimensionless
+Al   diatomicA      Mn      1.768360000000000  A^-1
+Al   diatomicX      Mn      1.040790000000000  dimensionless
+Al   diatomicA      As      1.152786000000000  A^-1
+Al   diatomicX      As      1.003580000000000  dimensionless
+Al   diatomicA      Br      1.894141000000000  A^-1
+Al   diatomicX      Br      2.357130000000000  dimensionless
+Al   diatomicA      Kr      2.467131000000000  A^-1
+Al   diatomicX      Kr      5.091716000000000  dimensionless
+Al   diatomicA      Rb      0.798774000000000  A^-1
+Al   diatomicX      Rb      2.992457000000000  dimensionless
+Al   diatomicA      Y       1.003500000000000  A^-1
+Al   diatomicX      Y       0.500670000000000  dimensionless
+Al   diatomicA      Zr      1.270620000000000  A^-1
+Al   diatomicX      Zr      0.874060000000000  dimensionless
+Al   diatomicA      Pd      1.572720000000000  A^-1
+Al   diatomicX      Pd      1.057290000000000  dimensionless
+Al   diatomicA      Ag      1.928800000000000  A^-1
+Al   diatomicX      Ag      0.896514000000000  dimensionless
+Al   diatomicA      Sb      1.422641000000000  A^-1
+Al   diatomicX      Sb      1.616690000000000  dimensionless
+Al   diatomicA      Te      1.387541000000000  A^-1
+Al   diatomicX      Te      2.106812000000000  dimensionless
+Al   diatomicA      I       1.816068000000000  A^-1
+Al   diatomicX      I       2.929080000000000  dimensionless
+Al   diatomicA      Xe      2.412039000000000  A^-1
+Al   diatomicX      Xe      7.404465000000000  dimensionless
+Al   diatomicA      Ba      2.105924000000000  A^-1
+Al   diatomicX      Ba      9.539099000000000  dimensionless
+Al   diatomicA      La      1.003510000000000  A^-1
+Al   diatomicX      La      0.500540000000000  dimensionless
+Al   diatomicA      Gd      1.003510000000000  A^-1
+Al   diatomicX      Gd      0.500540000000000  dimensionless
+Al   diatomicA      Hf      0.949150000000000  A^-1
+Al   diatomicX      Hf      0.622520000000000  dimensionless
+Al   diatomicA      Pt      1.572360000000000  A^-1
+Al   diatomicX      Pt      1.056930000000000  dimensionless
+Al   diatomicA      Au      1.572570000000000  A^-1
+Al   diatomicX      Au      1.057140000000000  dimensionless

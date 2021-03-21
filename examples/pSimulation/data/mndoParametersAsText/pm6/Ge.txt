@@ -1,0 +1,85 @@
+# . Text parameter file for the element Ge.
+
+Ge   atomicNumber                          32
+Ge   iii                                    4
+Ge   iiid                                   4
+Ge   ir016                                  0
+Ge   ir066                                  0
+Ge   ir244                                  0
+Ge   ir266                                  0
+Ge   ir466                                  0
+Ge   qnd                                    0
+Ge   qnp                                    4
+Ge   qns                                    4
+Ge   ad                     0.228045911659282  atomic
+Ge   alp                    0.000000000000000  A^-1
+Ge   am                     0.276292494559464  atomic
+Ge   aq                     0.381887336308525  atomic
+Ge   betad                  0.000000000000000  eV
+Ge   betap                 -2.591260000000000  eV
+Ge   betas                -14.854297000000001  eV
+Ge   dd                     1.022482249715378  atomic
+Ge   eheat                 89.500000000000000  kcal/mole
+Ge   eisol                -76.672599000000005  eV
+Ge   f0sd                   0.000000000000000  eV
+Ge   g2sd                   0.000000000000000  eV
+Ge   gp2                    5.305947000000000  eV
+Ge   gphot                  1.000000000000000  dimensionless
+Ge   gpp                    6.066801000000000  eV
+Ge   gsp                    6.594443000000000  eV
+Ge   gss                    7.518301000000000  eV
+Ge   hsp                    0.290742000000000  eV
+Ge   pcore                  0.000000000000000  atomic
+Ge   qq                     1.241169684903806  atomic
+Ge   udd                    0.000000000000000  eV
+Ge   upp                  -24.709015999999998  eV
+Ge   uss                  -32.747337999999999  eV
+Ge   zcore                  4.000000000000000  atomic
+Ge   zdn                    0.000000000000000  atomic
+Ge   zetad                  0.000000000000000  atomic
+Ge   zetap                  1.709130000000000  atomic
+Ge   zetas                  2.546073000000000  atomic
+Ge   zpn                    0.000000000000000  atomic
+Ge   zsn                    0.000000000000000  atomic
+Ge   diatomicA      H       2.206793000000000  A^-1
+Ge   diatomicX      H       1.733226000000000  dimensionless
+Ge   diatomicA      C       2.257469000000000  A^-1
+Ge   diatomicX      C       1.297510000000000  dimensionless
+Ge   diatomicA      N       1.988226000000000  A^-1
+Ge   diatomicX      N       0.637506000000000  dimensionless
+Ge   diatomicA      O       2.139413000000000  A^-1
+Ge   diatomicX      O       0.826964000000000  dimensionless
+Ge   diatomicA      F       2.384777000000000  A^-1
+Ge   diatomicX      F       0.651977000000000  dimensionless
+Ge   diatomicA      Si      0.299721000000000  A^-1
+Ge   diatomicX      Si      0.178680000000000  dimensionless
+Ge   diatomicA      P       2.469291000000000  A^-1
+Ge   diatomicX      P       5.616349000000000  dimensionless
+Ge   diatomicA      S       2.024588000000000  A^-1
+Ge   diatomicX      S       1.160957000000000  dimensionless
+Ge   diatomicA      Cl      1.771228000000000  A^-1
+Ge   diatomicX      Cl      0.545239000000000  dimensionless
+Ge   diatomicA      Mn      2.382834000000000  A^-1
+Ge   diatomicX      Mn      2.255151000000000  dimensionless
+Ge   diatomicA      Co      2.852610000000000  A^-1
+Ge   diatomicX      Co      2.151850000000000  dimensionless
+Ge   diatomicA      Ge      2.019000000000000  A^-1
+Ge   diatomicX      Ge      3.023000000000000  dimensionless
+Ge   diatomicA      Se      2.669057000000000  A^-1
+Ge   diatomicX      Se      5.872051000000000  dimensionless
+Ge   diatomicA      Br      1.602366000000000  A^-1
+Ge   diatomicX      Br      0.627737000000000  dimensionless
+Ge   diatomicA      Tc      2.852820000000000  A^-1
+Ge   diatomicX      Tc      2.152060000000000  dimensionless
+Ge   diatomicA      Ru      2.852320000000000  A^-1
+Ge   diatomicX      Ru      2.151560000000000  dimensionless
+Ge   diatomicA      Rh      2.852900000000000  A^-1
+Ge   diatomicX      Rh      2.152140000000000  dimensionless
+Ge   diatomicA      Sn      2.524633000000000  A^-1
+Ge   diatomicX      Sn     12.343411000000000  dimensionless
+Ge   diatomicA      Te      2.342372000000000  A^-1
+Ge   diatomicX      Te      7.019049000000000  dimensionless
+Ge   diatomicA      I       1.817425000000000  A^-1
+Ge   diatomicX      I       1.323267000000000  dimensionless
+Ge   diatomicA      Re      2.852340000000000  A^-1
+Ge   diatomicX      Re      2.151580000000000  dimensionless

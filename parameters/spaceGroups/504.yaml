@@ -1,0 +1,36 @@
+# . Space group P4232.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : P 4n 2 3
+Hermann-Mauguin    : P4232
+Schoenflies        : O^2
+Space Group Number : 208
+Space Group Symbol : 208
+Setting            : 504
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (z,x,y)
+    - (z,-x,-y)
+    - (-z,-x,y)
+    - (-z,x,-y)
+    - (y,z,x)
+    - (-y,z,-x)
+    - (y,-z,-x)
+    - (-y,-z,x)
+    - (y+1/2,x+1/2,-z+1/2)
+    - (-y+1/2,-x+1/2,-z+1/2)
+    - (y+1/2,-x+1/2,z+1/2)
+    - (-y+1/2,x+1/2,z+1/2)
+    - (x+1/2,z+1/2,-y+1/2)
+    - (-x+1/2,z+1/2,y+1/2)
+    - (-x+1/2,-z+1/2,-y+1/2)
+    - (x+1/2,-z+1/2,y+1/2)
+    - (z+1/2,y+1/2,-x+1/2)
+    - (z+1/2,-y+1/2,x+1/2)
+    - (-z+1/2,y+1/2,x+1/2)
+    - (-z+1/2,-y+1/2,-x+1/2)
+...

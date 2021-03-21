@@ -1,0 +1,873 @@
+HEADER    PLANT SEED PROTEIN                      11-OCT-91   1CBN      1CBN   2
+TITLE     CRAMBIN
+COMPND    CRAMBIN                                                       1CBN   3
+SOURCE    ABYSSINIAN CABBAGE (CRAMBE ABYSSINICA) SEED                   1CBN   4
+AUTHOR    M.M.TEETER,S.M.ROE,N.H.HEO                                    1CBN   5
+REVDAT   1   31-JAN-94 1CBN    0                                        1CBN   6
+JRNL        AUTH   M.M.TEETER,S.M.ROE,N.H.HEO                           1CBN   7
+JRNL        TITL   ATOMIC RESOLUTION (0.83 ANGSTROMS) CRYSTAL           1CBN   8
+JRNL        TITL 2 STRUCTURE OF THE HYDROPHOBIC PROTEIN CRAMBIN AT      1CBN   9
+JRNL        TITL 3 130 K                                                1CBN  10
+JRNL        REF    J.MOL.BIOL.                   V. 230   292 1993      1CBN  11
+JRNL        REFN   ASTM JMOBAK  UK ISSN 0022-2836                  070  1CBN  12
+REMARK   1                                                              1CBN  13
+REMARK   1 REFERENCE 1                                                  1CBN  14
+REMARK   1  AUTH   H.HOPE                                               1CBN  15
+REMARK   1  TITL   CRYOCRYSTALLOGRAPHY OF BIOLOGICAL MACROMOLECULES:    1CBN  16
+REMARK   1  TITL 2 A GENERALLY APPLICABLE METHOD                        1CBN  17
+REMARK   1  REF    ACTA CRYSTALLOGR.,SECT.B      V.  44    22 1988      1CBN  18
+REMARK   1  REFN   ASTM ASBSDK  DK ISSN 0108-7681                  622  1CBN  19
+REMARK   1 REFERENCE 2                                                  1CBN  20
+REMARK   1  AUTH   M.WHITLOW,M.M.TEETER                                 1CBN  21
+REMARK   1  TITL   AN EMPIRICAL EXAMINATION OF POTENTIAL ENERGY         1CBN  22
+REMARK   1  TITL 2 MINIMIZATION USING THE WELL-DETERMINED STRUCTURE     1CBN  23
+REMARK   1  TITL 3 OF THE PROTEIN CRAMBIN                               1CBN  24
+REMARK   1  REF    J.AM.CHEM.SOC.                V. 108  7163 1986      1CBN  25
+REMARK   1  REFN   ASTM JACSAT  US ISSN 0002-7863                  004  1CBN  26
+REMARK   1 REFERENCE 3                                                  1CBN  27
+REMARK   1  AUTH   M.M.TEETER,H.HOPE                                    1CBN  28
+REMARK   1  TITL   PROGRESS IN THE WATER STRUCTURE OF THE PROTEIN       1CBN  29
+REMARK   1  TITL 2 CRAMBIN BY X-RAY DIFFRACTION AT 140 K                1CBN  30
+REMARK   1  REF    ANN.N.Y.ACAD.SCI.             V. 482   163 1986      1CBN  31
+REMARK   1  REFN   ASTM ANYAA9  US ISSN 0077-8923                  332  1CBN  32
+REMARK   1 REFERENCE 4                                                  1CBN  33
+REMARK   1  AUTH   M.M.TEETER                                           1CBN  34
+REMARK   1  TITL   WATER STRUCTURE OF A HYDROPHOBIC PROTEIN AT          1CBN  35
+REMARK   1  TITL 2 ATOMIC RESOLUTION.  PENTAGON RINGS OF WATER          1CBN  36
+REMARK   1  TITL 3 MOLECULES IN CRYSTALS OF CRAMBIN                     1CBN  37
+REMARK   1  REF    PROC.NAT.ACAD.SCI.USA         V.  81  6014 1984      1CBN  38
+REMARK   1  REFN   ASTM PNASA6  US ISSN 0027-8424                  040  1CBN  39
+REMARK   1 REFERENCE 5                                                  1CBN  40
+REMARK   1  AUTH   W.A.HENDRICKSON,M.M.TEETER                           1CBN  41
+REMARK   1  TITL   STRUCTURE OF THE HYDROPHOBIC PROTEIN CRAMBIN         1CBN  42
+REMARK   1  TITL 2 DETERMINED DIRECTLY FROM THE ANOMALOUS SCATTERING    1CBN  43
+REMARK   1  TITL 3 OF SULPHUR                                           1CBN  44
+REMARK   1  REF    NATURE                        V. 290   107 1981      1CBN  45
+REMARK   1  REFN   ASTM NATUAS  UK ISSN 0028-0836                  006  1CBN  46
+REMARK   1 REFERENCE 6                                                  1CBN  47
+REMARK   1  AUTH   M.M.TEETER,W.A.HENDRICKSON                           1CBN  48
+REMARK   1  TITL   HIGHLY ORDERED CRYSTALS OF THE PLANT SEED PROTEIN    1CBN  49
+REMARK   1  TITL 2 CRAMBIN                                              1CBN  50
+REMARK   1  REF    J.MOL.BIOL.                   V. 127   219 1979      1CBN  51
+REMARK   1  REFN   ASTM JMOBAK  UK ISSN 0022-2836                  070  1CBN  52
+REMARK   2                                                              1CBN  53
+REMARK   2 RESOLUTION. 0.83 ANGSTROMS.                                  1CBN  54
+REMARK   3                                                              1CBN  55
+REMARK   3 REFINEMENT.                                                  1CBN  56
+REMARK   3   PROGRAM                    PROLSQ                          1CBN  57
+REMARK   3   AUTHORS                    KONNERT,HENDRICKSON             1CBN  58
+REMARK   3   R VALUE                    0.106                           1CBN  59
+REMARK   3   RMSD BOND DISTANCES        0.020  ANGSTROMS                1CBN  60
+REMARK   3   RMSD BOND ANGLE DISTANCES  0.041  ANGSTROMS                1CBN  61
+REMARK   4                                                              1CBN  62
+REMARK   4 SEQUENCE ADVISORY NOTICE:                                    1CBN  63
+REMARK   4 THERE IS SEQUENCE MICROHETEROGENEITY FOR RESIDUES 22 AND     1CBN  64
+REMARK   4 25.  RESIDUE 22 CAN BE PRO OR SER AND RESIDUE 25 CAN BE LEU  1CBN  65
+REMARK   4 OR ILE.  THE MOST LIKELY COMPOSITIONS FOR CRAMBIN IN THE     1CBN  66
+REMARK   4 CRYSTAL USED IN THIS STUDY IS PRO 22 - LEU 25 AND            1CBN  67
+REMARK   4 SER 22 - ILE 25.  BECAUSE OF LIMITATIONS IN PROTEIN DATA     1CBN  68
+REMARK   4 FORMAT, ONLY PRO 22 AND LEU 22 ARE SHOWN ON THE SEQRES       1CBN  69
+REMARK   4 RECORDS BELOW.  IN ADDITION RESIDUES SER 22 AND ILE 25 ARE   1CBN  70
+REMARK   4 PRESENTED AS RESIDUES SER 22B AND ILE 25B ON THE ATOM        1CBN  71
+REMARK   4 RECORDS BELOW, IMMEDIATELY FOLLOWING PRO 22 AND LEU 25,      1CBN  72
+REMARK   4 RESPECTIVELY.                                                1CBN  73
+REMARK   5                                                              1CBN  74
+REMARK   5 IN SHEET *S1*, STRAND 3 IS QUESTIONABLY A STRAND.            1CBN  75
+REMARK   6                                                              1CBN  76
+REMARK   6 IN SHEET *S2*, STRAND 1 HAS NO HYDROGEN BONDS.  THE          1CBN  77
+REMARK   6 BACKBONE ATOMS ARE IN BETA CONFORMATION.                     1CBN  78
+SEQRES   1     46  THR THR CYS CYS PRO SER ILE VAL ALA ARG SER ASN PHE  1CBN  79
+SEQRES   2     46  ASN VAL CYS ARG LEU PRO GLY THR PRO GLU ALA LEU CYS  1CBN  80
+SEQRES   3     46  ALA THR TYR THR GLY CYS ILE ILE ILE PRO GLY ALA THR  1CBN  81
+SEQRES   4     46  CYS PRO GLY ASP TYR ALA ASN                          1CBN  82
+HET    EOH     66       5     ETHANOL                                   1CBN  83
+FORMUL   2  EOH    C2 H6 O1                                             1CBN  84
+HELIX    1 H1  ILE      7  PRO     19  1 3/10 CONFORMATION RESID 17-19  1CBN  85
+HELIX    2 H2  GLU     23  THR     30  1 ALPHA-N DISTORTION AT START    1CBN  86
+SHEET    1 S1  3 CYS    32  ILE    35  0                                1CBN  87
+SHEET    2 S1  3 THR     1  CYS     4 -1                                1CBN  88
+SHEET    3 S1  3 ASN    46  ASN    46 -1                                1CBN  89
+SHEET    1 S2  1 THR    39  PRO    41  0                                1CBN  90
+TURN     1 T1  ARG    17  GLY    20                                     1CBN  91
+TURN     2 T2  PRO    41  TYR    44                                     1CBN  92
+SSBOND   1 CYS      3    CYS     40                                     1CBN  93
+SSBOND   2 CYS      4    CYS     32                                     1CBN  94
+SSBOND   3 CYS     16    CYS     26                                     1CBN  95
+CRYST1   40.763   18.492   22.333  90.00  90.61  90.00 P 21          2  1CBN  96
+ORIGX1      1.000000  0.000000  0.000000        0.00000                 1CBN  97
+ORIGX2      0.000000  1.000000  0.000000        0.00000                 1CBN  98
+ORIGX3      0.000000  0.000000  1.000000        0.00000                 1CBN  99
+SCALE1      0.024532  0.000000  0.000261        0.00000                 1CBN 100
+SCALE2      0.000000  0.054077  0.000000        0.00000                 1CBN 101
+SCALE3      0.000000  0.000000  0.044779        0.00000                 1CBN 102
+ATOM      1  N  ATHR     1      16.864  14.059   3.442  0.80  6.22      1CBN 103
+ATOM      2  N  BTHR     1      17.633  14.126   4.146  0.20  8.40      1CBN 104
+ATOM      3  CA ATHR     1      16.868  12.814   4.233  0.80  4.45      1CBN 105
+ATOM      4  CA BTHR     1      17.282  12.671   4.355  0.20  7.82      1CBN 106
+ATOM      5  C   THR     1      15.583  12.775   4.990  1.00  4.39      1CBN 107
+ATOM      6  O   THR     1      15.112  13.824   5.431  1.00  7.04      1CBN 108
+ATOM      7  CB ATHR     1      18.060  12.807   5.200  0.80  5.42      1CBN 109
+ATOM      8  CB BTHR     1      18.202  11.709   5.108  0.20 11.07      1CBN 110
+ATOM      9  OG1ATHR     1      19.233  12.892   4.380  0.80  7.87      1CBN 111
+ATOM     10  OG1BTHR     1      17.662  10.381   4.831  0.20 14.39      1CBN 112
+ATOM     11  CG2ATHR     1      18.117  11.578   6.092  0.80  6.88      1CBN 113
+ATOM     12  CG2BTHR     1      17.973  11.955   6.599  0.20 19.74      1CBN 114
+ATOM     13 1H  ATHR     1      16.007  14.241   3.093  0.80  6.17      1CBN 115
+ATOM     14 2H  ATHR     1      17.087  14.800   3.997  0.80  5.69      1CBN 116
+ATOM     15 3H  ATHR     1      17.481  14.013   2.750  0.80  5.69      1CBN 117
+ATOM     16  HA ATHR     1      16.940  12.048   3.605  0.80  4.30      1CBN 118
+ATOM     17  HB ATHR     1      18.008  13.641   5.765  0.80  5.82      1CBN 119
+ATOM     18  HG1ATHR     1      19.761  13.553   4.647  0.80  6.62      1CBN 120
+ATOM     19 1HG2ATHR     1      17.940  10.768   5.540  0.80  6.36      1CBN 121
+ATOM     20 2HG2ATHR     1      18.983  11.488   6.531  0.80  6.13      1CBN 122
+ATOM     21 3HG2ATHR     1      17.391  11.604   6.799  0.80  5.68      1CBN 123
+ATOM     22  N   THR     2      15.050  11.574   5.153  1.00  4.23      1CBN 124
+ATOM     23  CA  THR     2      13.832  11.480   5.936  1.00  4.30      1CBN 125
+ATOM     24  C   THR     2      14.140  10.771   7.259  1.00  3.57      1CBN 126
+ATOM     25  O   THR     2      14.981   9.844   7.352  1.00  4.45      1CBN 127
+ATOM     26  CB ATHR     2      12.704  10.758   5.178  0.80  6.48      1CBN 128
+ATOM     27  CB BTHR     2      12.892  10.382   5.108  0.20  7.31      1CBN 129
+ATOM     28  OG1ATHR     2      13.216   9.504   4.842  0.80  6.62      1CBN 130
+ATOM     29  OG1BTHR     2      12.711  10.718   3.818  0.20  4.34      1CBN 131
+ATOM     30  CG2ATHR     2      12.269  11.573   3.957  0.80  7.05      1CBN 132
+ATOM     31  CG2BTHR     2      11.621   9.921   5.913  0.20  4.84      1CBN 133
+ATOM     32  H   THR     2      15.438  10.820   4.856  1.00  3.41      1CBN 134
+ATOM     33  HA  THR     2      13.491  12.378   6.134  1.00  3.88      1CBN 135
+ATOM     34  HB ATHR     2      11.919  10.668   5.811  0.80  6.19      1CBN 136
+ATOM     35  HG1ATHR     2      13.260   9.363   3.966  0.80  6.05      1CBN 137
+ATOM     36 1HG2ATHR     2      11.950  12.485   4.227  0.80  6.77      1CBN 138
+ATOM     37 2HG2ATHR     2      13.054  11.692   3.362  0.80  6.63      1CBN 139
+ATOM     38 3HG2ATHR     2      11.560  11.107   3.470  0.80  7.49      1CBN 140
+ATOM     39  N   CYS     3      13.415  11.193   8.281  1.00  3.32      1CBN 141
+ATOM     40  CA  CYS     3      13.564  10.664   9.653  1.00  3.69      1CBN 142
+ATOM     41  C   CYS     3      12.179  10.373  10.192  1.00  3.13      1CBN 143
+ATOM     42  O   CYS     3      11.303  11.249   9.999  1.00  3.95      1CBN 144
+ATOM     43  CB  CYS     3      14.253  11.707  10.547  1.00  3.67      1CBN 145
+ATOM     44  SG  CYS     3      15.804  12.398   9.921  1.00  4.70      1CBN 146
+ATOM     45  H   CYS     3      12.845  11.899   8.208  1.00  2.69      1CBN 147
+ATOM     46  HA  CYS     3      14.118   9.887   9.650  1.00  3.08      1CBN 148
+ATOM     47 1HB  CYS     3      13.651  12.471  10.670  1.00  2.92      1CBN 149
+ATOM     48 2HB  CYS     3      14.442  11.331  11.426  1.00  3.39      1CBN 150
+ATOM     49  N   CYS     4      11.998   9.281  10.858  1.00  2.95      1CBN 151
+ATOM     50  CA  CYS     4      10.657   8.927  11.341  1.00  2.76      1CBN 152
+ATOM     51  C   CYS     4      10.648   8.749  12.842  1.00  2.67      1CBN 153
+ATOM     52  O   CYS     4      11.615   8.257  13.440  1.00  3.24      1CBN 154
+ATOM     53  CB  CYS     4      10.137   7.678  10.634  1.00  3.20      1CBN 155
+ATOM     54  SG  CYS     4       9.804   7.928   8.865  1.00  3.15      1CBN 156
+ATOM     55  H   CYS     4      12.658   8.660  10.951  1.00  2.05      1CBN 157
+ATOM     56  HA  CYS     4      10.037   9.642  11.092  1.00  2.84      1CBN 158
+ATOM     57 1HB  CYS     4      10.790   6.963  10.692  1.00  2.94      1CBN 159
+ATOM     58 2HB  CYS     4       9.300   7.373  11.036  1.00  2.33      1CBN 160
+ATOM     59  N   PRO     5       9.529   9.075  13.506  1.00  2.81      1CBN 161
+ATOM     60  CA  PRO     5       9.474   9.025  14.942  1.00  3.11      1CBN 162
+ATOM     61  C   PRO     5       9.335   7.680  15.544  1.00  3.30      1CBN 163
+ATOM     62  O   PRO     5       9.599   7.511  16.761  1.00  4.77      1CBN 164
+ATOM     63  CB  PRO     5       8.247   9.901  15.266  1.00  3.52      1CBN 165
+ATOM     64  CG  PRO     5       7.322   9.733  14.055  1.00  3.44      1CBN 166
+ATOM     65  CD  PRO     5       8.316   9.745  12.912  1.00  2.86      1CBN 167
+ATOM     66  HA  PRO     5      10.272   9.410  15.343  1.00  3.20      1CBN 168
+ATOM     67 1HB  PRO     5       7.828   9.705  16.029  1.00  2.63      1CBN 169
+ATOM     68 2HB  PRO     5       8.508  10.814  15.358  1.00  2.54      1CBN 170
+ATOM     69 1HG  PRO     5       6.930   8.993  14.102  1.00  2.88      1CBN 171
+ATOM     70 2HG  PRO     5       6.681  10.453  13.977  1.00  3.25      1CBN 172
+ATOM     71 1HD  PRO     5       7.995   9.225  12.148  1.00  3.05      1CBN 173
+ATOM     72 2HD  PRO     5       8.592  10.611  12.555  1.00  2.71      1CBN 174
+ATOM     73  N   SER     6       8.903   6.701  14.772  1.00  2.75      1CBN 175
+ATOM     74  CA  SER     6       8.706   5.341  15.230  1.00  2.94      1CBN 176
+ATOM     75  C   SER     6       8.791   4.422  14.009  1.00  3.08      1CBN 177
+ATOM     76  O   SER     6       8.722   4.876  12.867  1.00  3.29      1CBN 178
+ATOM     77  CB  SER     6       7.376   5.151  15.947  1.00  3.38      1CBN 179
+ATOM     78  OG  SER     6       6.327   5.254  14.943  1.00  3.48      1CBN 180
+ATOM     79  H   SER     6       8.760   6.855  13.874  1.00  5.06      1CBN 181
+ATOM     80  HA  SER     6       9.380   5.087  15.880  1.00  3.01      1CBN 182
+ATOM     81 1HB  SER     6       7.323   4.248  16.309  1.00  2.78      1CBN 183
+ATOM     82 2HB  SER     6       7.229   5.831  16.635  1.00  2.84      1CBN 184
+ATOM     83  HG  SER     6       5.605   4.995  15.359  1.00  3.13      1CBN 185
+ATOM     84  N   ILE     7       8.887   3.129  14.301  1.00  3.60      1CBN 186
+ATOM     85  CA  ILE     7       8.941   2.087  13.267  1.00  4.98      1CBN 187
+ATOM     86  C   ILE     7       7.653   2.106  12.395  1.00  3.75      1CBN 188
+ATOM     87  O   ILE     7       7.752   2.109  11.182  1.00  5.13      1CBN 189
+ATOM     88  CB  ILE     7       9.193   0.736  13.880  1.00  7.27      1CBN 190
+ATOM     89  CG1 ILE     7      10.659   0.726  14.337  1.00 11.19      1CBN 191
+ATOM     90  CG2 ILE     7       8.877  -0.425  12.927  1.00 10.39      1CBN 192
+ATOM     91  CD1AILE     7      11.293  -0.460  15.011  0.70 10.78      1CBN 193
+ATOM     92  CD1BILE     7      11.538   0.178  13.256  0.30  7.65      1CBN 194
+ATOM     93  H   ILE     7       8.885   2.833  15.164  1.00  2.71      1CBN 195
+ATOM     94  HA  ILE     7       9.687   2.293  12.658  1.00  5.28      1CBN 196
+ATOM     95  HB  ILE     7       8.615   0.637  14.674  1.00  8.32      1CBN 197
+ATOM     96 1HG1AILE     7      11.182   0.915  13.495  0.70  8.99      1CBN 198
+ATOM     97 1HG1BILE     7      10.893   1.657  14.542  0.30  9.15      1CBN 199
+ATOM     98 2HG1AILE     7      10.782   1.519  14.934  0.70  9.14      1CBN 200
+ATOM     99 2HG1BILE     7      10.723   0.161  15.142  0.30  9.59      1CBN 201
+ATOM    100 1HG2 ILE     7       8.879  -1.259  13.461  1.00  9.84      1CBN 202
+ATOM    101 2HG2 ILE     7       9.581  -0.446  12.230  1.00  9.69      1CBN 203
+ATOM    102 3HG2 ILE     7       7.993  -0.280  12.525  1.00  9.37      1CBN 204
+ATOM    103 1HD1AILE     7      10.589  -0.934  15.540  0.70 12.06      1CBN 205
+ATOM    104 1HD1BILE     7      10.967  -0.201  12.521  0.30  9.32      1CBN 206
+ATOM    105 2HD1AILE     7      11.690  -1.087  14.327  0.70 12.32      1CBN 207
+ATOM    106 2HD1BILE     7      12.061   0.936  12.858  0.30  9.70      1CBN 208
+ATOM    107 3HD1AILE     7      11.998  -0.148  15.646  0.70 11.78      1CBN 209
+ATOM    108 3HD1BILE     7      12.163  -0.521  13.603  0.30  9.35      1CBN 210
+ATOM    109  N   VAL     8       6.505   2.137  13.069  1.00  3.96      1CBN 211
+ATOM    110  CA  VAL     8       5.250   2.180  12.300  1.00  5.07      1CBN 212
+ATOM    111  C   VAL     8       5.175   3.359  11.395  1.00  3.68      1CBN 213
+ATOM    112  O   VAL     8       4.668   3.265  10.240  1.00  3.64      1CBN 214
+ATOM    113  CB AVAL     8       3.957   2.254  13.261  0.60  5.58      1CBN 215
+ATOM    114  CB BVAL     8       4.174   1.582  12.950  0.40  2.81      1CBN 216
+ATOM    115  CG1AVAL     8       2.665   2.911  12.693  0.60  5.82      1CBN 217
+ATOM    116  CG1BVAL     8       3.616   2.843  13.602  0.40  3.79      1CBN 218
+ATOM    117  CG2AVAL     8       3.659   0.894  13.887  0.60  8.05      1CBN 219
+ATOM    118  CG2BVAL     8       3.075   1.033  12.033  0.40  6.73      1CBN 220
+ATOM    119  H   VAL     8       6.484   2.127  13.965  1.00  6.85      1CBN 221
+ATOM    120  HA  VAL     8       5.101   1.339  11.865  1.00  4.27      1CBN 222
+ATOM    121  HB AVAL     8       4.284   2.883  13.950  0.60  6.29      1CBN 223
+ATOM    122  HB BVAL     8       4.427   0.942  13.616  0.40  4.02      1CBN 224
+ATOM    123 1HG1AVAL     8       2.389   2.434  11.897  0.60  5.75      1CBN 225
+ATOM    124 1HG1BVAL     8       4.251   3.444  14.157  0.40  3.07      1CBN 226
+ATOM    125 2HG1AVAL     8       1.960   2.846  13.364  0.60  5.43      1CBN 227
+ATOM    126 2HG1BVAL     8       3.125   3.648  13.099  0.40  3.56      1CBN 228
+ATOM    127 3HG1AVAL     8       2.817   3.843  12.491  0.60  5.26      1CBN 229
+ATOM    128 3HG1BVAL     8       2.887   2.704  14.316  0.40  3.46      1CBN 230
+ATOM    129 1HG2AVAL     8       4.432   0.305  13.922  0.60  6.74      1CBN 231
+ATOM    130 1HG2BVAL     8       2.839   1.577  11.147  0.40  6.43      1CBN 232
+ATOM    131 2HG2AVAL     8       3.296   0.983  14.780  0.60  7.19      1CBN 233
+ATOM    132 2HG2BVAL     8       3.364   0.159  11.448  0.40  6.85      1CBN 234
+ATOM    133 3HG2AVAL     8       2.964   0.427  13.373  0.60  7.51      1CBN 235
+ATOM    134 3HG2BVAL     8       2.150   0.667  12.403  0.40  6.81      1CBN 236
+ATOM    135  N   ALA     9       5.634   4.542  11.860  1.00  3.24      1CBN 237
+ATOM    136  CA  ALA     9       5.600   5.711  11.016  1.00  3.11      1CBN 238
+ATOM    137  C   ALA     9       6.440   5.499   9.776  1.00  2.70      1CBN 239
+ATOM    138  O   ALA     9       6.036   5.882   8.649  1.00  3.38      1CBN 240
+ATOM    139  CB  ALA     9       6.029   6.950  11.787  1.00  3.51      1CBN 241
+ATOM    140  H   ALA     9       5.951   4.587  12.702  1.00  3.00      1CBN 242
+ATOM    141  HA  ALA     9       4.665   5.887  10.728  1.00  3.42      1CBN 243
+ATOM    142 1HB  ALA     9       6.923   6.820  12.173  1.00  3.52      1CBN 244
+ATOM    143 2HB  ALA     9       6.054   7.738  11.201  1.00  3.07      1CBN 245
+ATOM    144 3HB  ALA     9       5.400   7.134  12.528  1.00  2.62      1CBN 246
+ATOM    145  N   ARG    10       7.637   4.885   9.916  1.00  2.69      1CBN 247
+ATOM    146  CA  ARG    10       8.470   4.577   8.764  1.00  2.61      1CBN 248
+ATOM    147  C   ARG    10       7.775   3.580   7.827  1.00  2.43      1CBN 249
+ATOM    148  O   ARG    10       7.808   3.737   6.593  1.00  2.82      1CBN 250
+ATOM    149  CB  ARG    10       9.822   3.990   9.196  1.00  2.94      1CBN 251
+ATOM    150  CG AARG    10      10.732   3.590   8.052  0.80  2.97      1CBN 252
+ATOM    151  CG BARG    10      10.713   3.459   8.107  0.20  3.59      1CBN 253
+ATOM    152  CD AARG    10      11.194   4.706   7.145  0.80  2.79      1CBN 254
+ATOM    153  CD BARG    10      11.425   4.457   7.238  0.20  5.21      1CBN 255
+ATOM    154  NE AARG    10      12.089   5.611   7.863  0.80  3.32      1CBN 256
+ATOM    155  NE BARG    10      12.316   5.298   8.078  0.20  2.97      1CBN 257
+ATOM    156  CZ AARG    10      12.640   6.702   7.332  0.80  3.87      1CBN 258
+ATOM    157  CZ BARG    10      13.075   6.268   7.555  0.20  2.73      1CBN 259
+ATOM    158  NH1AARG    10      12.441   7.029   6.064  0.80  4.92      1CBN 260
+ATOM    159  NH1BARG    10      13.122   6.503   6.231  0.20  3.58      1CBN 261
+ATOM    160  NH2AARG    10      13.388   7.493   8.101  0.80  4.97      1CBN 262
+ATOM    161  NH2BARG    10      13.785   7.023   8.391  0.20  4.93      1CBN 263
+ATOM    162  H   ARG    10       7.871   4.588  10.735  1.00  1.95      1CBN 264
+ATOM    163  HA  ARG    10       8.669   5.391   8.264  1.00  2.29      1CBN 265
+ATOM    164 1HB  ARG    10      10.239   4.653   9.793  1.00  3.15      1CBN 266
+ATOM    165 2HB  ARG    10       9.617   3.218   9.762  1.00  2.55      1CBN 267
+ATOM    166 1HG AARG    10      11.534   3.148   8.395  0.80  2.67      1CBN 268
+ATOM    167 2HG AARG    10      10.327   2.918   7.498  0.80  2.69      1CBN 269
+ATOM    168 1HD AARG    10      11.684   4.281   6.425  0.80  2.38      1CBN 270
+ATOM    169 2HD AARG    10      10.468   5.161   6.745  0.80  2.66      1CBN 271
+ATOM    170  HE AARG    10      12.210   5.489   8.766  0.80  2.93      1CBN 272
+ATOM    171 1HH1AARG    10      11.957   6.523   5.482  0.80  8.11      1CBN 273
+ATOM    172 2HH1AARG    10      12.852   7.791   5.726  0.80  7.14      1CBN 274
+ATOM    173 1HH2AARG    10      13.560   7.299   8.972  0.80  3.39      1CBN 275
+ATOM    174 2HH2AARG    10      13.776   8.233   7.727  0.80  6.90      1CBN 276
+ATOM    175  N   SER    11       7.183   2.517   8.387  1.00  2.90      1CBN 277
+ATOM    176  CA  SER    11       6.494   1.547   7.538  1.00  2.84      1CBN 278
+ATOM    177  C   SER    11       5.361   2.225   6.739  1.00  2.70      1CBN 279
+ATOM    178  O   SER    11       5.188   1.983   5.519  1.00  3.03      1CBN 280
+ATOM    179  CB  SER    11       5.949   0.424   8.348  1.00  3.49      1CBN 281
+ATOM    180  OG  SER    11       7.013  -0.267   9.018  1.00  5.04      1CBN 282
+ATOM    181  H   SER    11       7.178   2.429   9.284  1.00  3.37      1CBN 283
+ATOM    182  HA  SER    11       7.126   1.170   6.894  1.00  2.60      1CBN 284
+ATOM    183 1HB  SER    11       5.344   0.759   9.056  1.00  2.32      1CBN 285
+ATOM    184 2HB  SER    11       5.439  -0.233   7.795  1.00  2.81      1CBN 286
+ATOM    185  HG  SER    11       6.647  -0.871   9.521  1.00  4.30      1CBN 287
+ATOM    186  N   ASN    12       4.630   3.104   7.400  1.00  2.76      1CBN 288
+ATOM    187  CA  ASN    12       3.543   3.842   6.717  1.00  3.12      1CBN 289
+ATOM    188  C   ASN    12       4.090   4.782   5.676  1.00  2.92      1CBN 290
+ATOM    189  O   ASN    12       3.493   4.948   4.577  1.00  3.54      1CBN 291
+ATOM    190  CB  ASN    12       2.688   4.568   7.729  1.00  3.60      1CBN 292
+ATOM    191  CG  ASN    12       1.850   3.647   8.580  1.00  5.26      1CBN 293
+ATOM    192  OD1 ASN    12       1.578   2.481   8.193  1.00  7.10      1CBN 294
+ATOM    193  ND2 ASN    12       1.432   4.110   9.735  1.00  6.76      1CBN 295
+ATOM    194  H   ASN    12       4.792   3.299   8.265  1.00  3.38      1CBN 296
+ATOM    195  HA  ASN    12       2.937   3.196   6.322  1.00  2.23      1CBN 297
+ATOM    196 1HB  ASN    12       3.234   5.141   8.320  1.00  3.53      1CBN 298
+ATOM    197 2HB  ASN    12       2.073   5.217   7.267  1.00  3.29      1CBN 299
+ATOM    198 1HD2 ASN    12       0.895   3.591  10.299  1.00  6.69      1CBN 300
+ATOM    199 2HD2 ASN    12       1.604   4.977   9.991  1.00  4.31      1CBN 301
+ATOM    200  N   PHE    13       5.227   5.418   5.949  1.00  2.96      1CBN 302
+ATOM    201  CA  PHE    13       5.885   6.300   5.014  1.00  2.71      1CBN 303
+ATOM    202  C   PHE    13       6.279   5.536   3.743  1.00  2.93      1CBN 304
+ATOM    203  O   PHE    13       6.056   6.010   2.603  1.00  3.28      1CBN 305
+ATOM    204  CB APHE    13       7.101   6.931   5.710  0.60  3.23      1CBN 306
+ATOM    205  CB BPHE    13       7.132   6.950   5.643  0.40  4.18      1CBN 307
+ATOM    206  CG APHE    13       7.866   7.849   4.809  0.60  3.26      1CBN 308
+ATOM    207  CG BPHE    13       7.776   8.047   4.855  0.40  3.08      1CBN 309
+ATOM    208  CD1APHE    13       7.543   9.222   4.758  0.60  3.78      1CBN 310
+ATOM    209  CD1BPHE    13       8.747   7.750   3.876  0.40  2.92      1CBN 311
+ATOM    210  CD2APHE    13       8.937   7.382   4.029  0.60  3.97      1CBN 312
+ATOM    211  CD2BPHE    13       7.472   9.396   5.135  0.40  3.36      1CBN 313
+ATOM    212  CE1APHE    13       8.255  10.084   3.930  0.60  4.75      1CBN 314
+ATOM    213  CE1BPHE    13       9.384   8.762   3.166  0.40  3.02      1CBN 315
+ATOM    214  CE2APHE    13       9.612   8.210   3.148  0.60  4.40      1CBN 316
+ATOM    215  CE2BPHE    13       8.041  10.413   4.369  0.40  2.84      1CBN 317
+ATOM    216  CZ APHE    13       9.288   9.572   3.132  0.60  4.73      1CBN 318
+ATOM    217  CZ BPHE    13       8.934  10.075   3.351  0.40  3.12      1CBN 319
+ATOM    218  H   PHE    13       5.644   5.258   6.749  1.00  3.94      1CBN 320
+ATOM    219  HA  PHE    13       5.367   7.076   4.792  1.00  1.65      1CBN 321
+ATOM    220 1HB APHE    13       6.761   7.405   6.491  0.60  3.34      1CBN 322
+ATOM    221 1HB BPHE    13       6.850   7.271   6.525  0.40  2.91      1CBN 323
+ATOM    222 2HB APHE    13       7.663   6.190   6.032  0.60  3.56      1CBN 324
+ATOM    223 2HB BPHE    13       7.772   6.210   5.807  0.40  2.66      1CBN 325
+ATOM    224  HD1APHE    13       6.835   9.545   5.332  0.60  3.63      1CBN 326
+ATOM    225  HD1BPHE    13       9.103   6.878   3.883  0.40  3.67      1CBN 327
+ATOM    226  HD2APHE    13       9.119   6.462   4.064  0.60  3.14      1CBN 328
+ATOM    227  HD2BPHE    13       6.728   9.575   5.732  0.40  2.91      1CBN 329
+ATOM    228  HE1APHE    13       8.059  10.985   3.876  0.60  3.69      1CBN 330
+ATOM    229  HE1BPHE    13       9.985   8.546   2.473  0.40  3.06      1CBN 331
+ATOM    230  HE2APHE    13      10.316   7.874   2.617  0.60  3.45      1CBN 332
+ATOM    231  HE2BPHE    13       7.706  11.281   4.395  0.40  2.96      1CBN 333
+ATOM    232  HZ APHE    13       9.782  10.158   2.546  0.60  3.55      1CBN 334
+ATOM    233  HZ BPHE    13       9.319  10.770   2.797  0.40  3.20      1CBN 335
+ATOM    234  N   ASN    14       6.845   4.343   3.922  1.00  2.65      1CBN 336
+ATOM    235  CA  ASN    14       7.273   3.580   2.775  1.00  2.56      1CBN 337
+ATOM    236  C   ASN    14       6.104   3.126   1.890  1.00  2.66      1CBN 338
+ATOM    237  O   ASN    14       6.232   3.101   0.670  1.00  3.37      1CBN 339
+ATOM    238  CB  ASN    14       8.155   2.389   3.190  1.00  3.11      1CBN 340
+ATOM    239  CG  ASN    14       9.536   2.864   3.685  1.00  3.45      1CBN 341
+ATOM    240  OD1 ASN    14      10.012   3.918   3.277  1.00  4.47      1CBN 342
+ATOM    241  ND2 ASN    14      10.151   2.008   4.516  1.00  4.53      1CBN 343
+ATOM    242  H   ASN    14       7.001   4.035   4.759  1.00  4.28      1CBN 344
+ATOM    243  HA  ASN    14       7.890   4.099   2.224  1.00  2.82      1CBN 345
+ATOM    244 1HB  ASN    14       7.726   1.896   3.916  1.00  2.47      1CBN 346
+ATOM    245 2HB  ASN    14       8.295   1.773   2.442  1.00  2.12      1CBN 347
+ATOM    246 1HD2 ASN    14      10.997   2.238   4.826  1.00  7.78      1CBN 348
+ATOM    247 2HD2 ASN    14       9.771   1.223   4.752  1.00  4.73      1CBN 349
+ATOM    248  N   VAL    15       4.963   2.811   2.510  1.00  2.63      1CBN 350
+ATOM    249  CA  VAL    15       3.781   2.488   1.703  1.00  2.85      1CBN 351
+ATOM    250  C   VAL    15       3.285   3.755   0.984  1.00  2.90      1CBN 352
+ATOM    251  O   VAL    15       2.956   3.709  -0.226  1.00  2.96      1CBN 353
+ATOM    252  CB  VAL    15       2.703   1.817   2.546  1.00  3.12      1CBN 354
+ATOM    253  CG1 VAL    15       1.368   1.773   1.780  1.00  4.20      1CBN 355
+ATOM    254  CG2 VAL    15       3.143   0.415   2.947  1.00  3.59      1CBN 356
+ATOM    255  H   VAL    15       4.885   2.897   3.403  1.00  1.57      1CBN 357
+ATOM    256  HA  VAL    15       4.029   1.826   1.029  1.00  2.09      1CBN 358
+ATOM    257  HB  VAL    15       2.559   2.378   3.337  1.00  2.67      1CBN 359
+ATOM    258 1HG1 VAL    15       1.506   1.443   0.879  1.00  3.93      1CBN 360
+ATOM    259 2HG1 VAL    15       0.738   1.194   2.244  1.00  3.61      1CBN 361
+ATOM    260 3HG1 VAL    15       0.975   2.670   1.733  1.00  3.74      1CBN 362
+ATOM    261 1HG2 VAL    15       4.013   0.378   3.373  1.00  3.54      1CBN 363
+ATOM    262 2HG2 VAL    15       2.498   0.003   3.550  1.00  3.12      1CBN 364
+ATOM    263 3HG2 VAL    15       3.168  -0.175   2.166  1.00  2.91      1CBN 365
+ATOM    264  N   CYS    16       3.233   4.889   1.679  1.00  2.51      1CBN 366
+ATOM    265  CA  CYS    16       2.845   6.154   1.083  1.00  2.48      1CBN 367
+ATOM    266  C   CYS    16       3.666   6.477  -0.167  1.00  2.73      1CBN 368
+ATOM    267  O   CYS    16       3.145   7.030  -1.136  1.00  2.91      1CBN 369
+ATOM    268  CB  CYS    16       2.955   7.268   2.139  1.00  3.25      1CBN 370
+ATOM    269  SG  CYS    16       2.550   8.915   1.589  1.00  3.42      1CBN 371
+ATOM    270  H   CYS    16       3.478   4.872   2.560  1.00  2.47      1CBN 372
+ATOM    271  HA  CYS    16       1.903   6.142   0.832  1.00  2.77      1CBN 373
+ATOM    272 1HB  CYS    16       2.372   7.046   2.892  1.00  2.68      1CBN 374
+ATOM    273 2HB  CYS    16       3.878   7.291   2.477  1.00  3.48      1CBN 375
+ATOM    274  N   ARG    17       4.963   6.146  -0.123  1.00  2.46      1CBN 376
+ATOM    275  CA  ARG    17       5.821   6.448  -1.247  1.00  2.61      1CBN 377
+ATOM    276  C   ARG    17       5.621   5.550  -2.467  1.00  2.80      1CBN 378
+ATOM    277  O   ARG    17       6.034   5.916  -3.548  1.00  3.46      1CBN 379
+ATOM    278  CB  ARG    17       7.303   6.407  -0.775  1.00  2.73      1CBN 380
+ATOM    279  CG  ARG    17       7.664   7.571   0.145  1.00  3.00      1CBN 381
+ATOM    280  CD  ARG    17       7.896   8.879  -0.557  1.00  3.08      1CBN 382
+ATOM    281  NE  ARG    17       9.136   8.827  -1.327  1.00  3.27      1CBN 383
+ATOM    282  CZ  ARG    17       9.468   9.576  -2.373  1.00  3.22      1CBN 384
+ATOM    283  NH1 ARG    17       8.599  10.415  -2.939  1.00  3.72      1CBN 385
+ATOM    284  NH2 ARG    17      10.720   9.534  -2.859  1.00  3.73      1CBN 386
+ATOM    285  H   ARG    17       5.310   5.755   0.616  1.00  5.13      1CBN 387
+ATOM    286  HA  ARG    17       5.686   7.382  -1.534  1.00  2.42      1CBN 388
+ATOM    287 1HB  ARG    17       7.426   5.541  -0.332  1.00  2.38      1CBN 389
+ATOM    288 2HB  ARG    17       7.849   6.404  -1.571  1.00  2.10      1CBN 390
+ATOM    289 1HG  ARG    17       6.961   7.704   0.809  1.00  2.29      1CBN 391
+ATOM    290 2HG  ARG    17       8.438   7.366   0.666  1.00  2.78      1CBN 392
+ATOM    291 1HD  ARG    17       7.150   9.011  -1.156  1.00  3.02      1CBN 393
+ATOM    292 2HD  ARG    17       7.873   9.616   0.048  1.00  1.86      1CBN 394
+ATOM    293  HE  ARG    17       9.722   8.120  -1.159  1.00  2.50      1CBN 395
+ATOM    294 1HH1 ARG    17       7.748  10.523  -2.633  1.00  5.54      1CBN 396
+ATOM    295 2HH1 ARG    17       8.876  10.943  -3.645  1.00  1.78      1CBN 397
+ATOM    296 1HH2 ARG    17      11.325   8.943  -2.534  1.00  4.64      1CBN 398
+ATOM    297 2HH2 ARG    17      10.924  10.033  -3.590  1.00  2.28      1CBN 399
+ATOM    298  N   LEU    18       5.045   4.338  -2.269  1.00  2.83      1CBN 400
+ATOM    299  CA  LEU    18       4.945   3.388  -3.380  1.00  2.89      1CBN 401
+ATOM    300  C   LEU    18       4.311   4.002  -4.664  1.00  2.93      1CBN 402
+ATOM    301  O   LEU    18       4.863   3.777  -5.745  1.00  3.08      1CBN 403
+ATOM    302  CB  LEU    18       4.200   2.125  -2.975  1.00  3.55      1CBN 404
+ATOM    303  CG  LEU    18       4.927   1.186  -2.013  1.00  3.41      1CBN 405
+ATOM    304  CD1 LEU    18       3.983   0.075  -1.617  1.00  4.60      1CBN 406
+ATOM    305  CD2 LEU    18       6.163   0.587  -2.633  1.00  4.42      1CBN 407
+ATOM    306  H   LEU    18       4.777   4.111  -1.440  1.00  1.90      1CBN 408
+ATOM    307  HA  LEU    18       5.867   3.129  -3.647  1.00  2.89      1CBN 409
+ATOM    308 1HB  LEU    18       3.347   2.368  -2.520  1.00  3.60      1CBN 410
+ATOM    309 2HB  LEU    18       3.989   1.597  -3.800  1.00  3.25      1CBN 411
+ATOM    310  HG  LEU    18       5.194   1.691  -1.211  1.00  3.63      1CBN 412
+ATOM    311 1HD1 LEU    18       3.141   0.465  -1.293  1.00  3.53      1CBN 413
+ATOM    312 2HD1 LEU    18       3.823  -0.495  -2.408  1.00  2.93      1CBN 414
+ATOM    313 3HD1 LEU    18       4.403  -0.462  -0.895  1.00  3.98      1CBN 415
+ATOM    314 1HD2 LEU    18       5.912   0.118  -3.502  1.00  3.64      1CBN 416
+ATOM    315 2HD2 LEU    18       6.829   1.286  -2.865  1.00  3.45      1CBN 417
+ATOM    316 3HD2 LEU    18       6.585  -0.093  -2.060  1.00  3.47      1CBN 418
+ATOM    317  N   PRO    19       3.209   4.747  -4.564  1.00  2.60      1CBN 419
+ATOM    318  CA  PRO    19       2.650   5.343  -5.802  1.00  3.03      1CBN 420
+ATOM    319  C   PRO    19       3.421   6.525  -6.312  1.00  3.32      1CBN 421
+ATOM    320  O   PRO    19       3.076   7.056  -7.383  1.00  4.90      1CBN 422
+ATOM    321  CB  PRO    19       1.229   5.759  -5.431  1.00  3.72      1CBN 423
+ATOM    322  CG  PRO    19       1.238   5.886  -3.917  1.00  4.80      1CBN 424
+ATOM    323  CD  PRO    19       2.257   4.868  -3.439  1.00  3.71      1CBN 425
+ATOM    324  HA  PRO    19       2.654   4.669  -6.499  1.00  2.27      1CBN 426
+ATOM    325 1HB  PRO    19       0.931   6.514  -5.817  1.00  3.93      1CBN 427
+ATOM    326 2HB  PRO    19       0.597   5.095  -5.715  1.00  4.72      1CBN 428
+ATOM    327 1HG  PRO    19       1.467   6.662  -3.694  1.00  4.23      1CBN 429
+ATOM    328 2HG  PRO    19       0.362   5.689  -3.520  1.00  4.37      1CBN 430
+ATOM    329 1HD  PRO    19       2.682   5.159  -2.609  1.00  3.57      1CBN 431
+ATOM    330 2HD  PRO    19       1.889   3.968  -3.230  1.00  3.77      1CBN 432
+ATOM    331  N   GLY    20       4.425   7.011  -5.556  1.00  2.87      1CBN 433
+ATOM    332  CA  GLY    20       5.230   8.154  -5.956  1.00  3.44      1CBN 434
+ATOM    333  C   GLY    20       4.902   9.450  -5.259  1.00  3.01      1CBN 435
+ATOM    334  O   GLY    20       5.441  10.510  -5.634  1.00  4.02      1CBN 436
+ATOM    335  H   GLY    20       4.619   6.588  -4.776  1.00  5.67      1CBN 437
+ATOM    336 1HA  GLY    20       6.185   7.935  -5.797  1.00  3.75      1CBN 438
+ATOM    337 2HA  GLY    20       5.168   8.262  -6.958  1.00  3.12      1CBN 439
+ATOM    338  N   THR    21       4.065   9.392  -4.234  1.00  2.42      1CBN 440
+ATOM    339  CA  THR    21       3.677  10.559  -3.462  1.00  2.82      1CBN 441
+ATOM    340  C   THR    21       4.903  11.355  -3.019  1.00  2.63      1CBN 442
+ATOM    341  O   THR    21       5.844  10.709  -2.465  1.00  3.41      1CBN 443
+ATOM    342  CB  THR    21       2.945  10.108  -2.197  1.00  2.66      1CBN 444
+ATOM    343  OG1 THR    21       1.965   9.112  -2.559  1.00  3.02      1CBN 445
+ATOM    344  CG2 THR    21       2.287  11.257  -1.482  1.00  3.34      1CBN 446
+ATOM    345  H   THR    21       3.688   8.587  -3.997  1.00  1.89      1CBN 447
+ATOM    346  HA  THR    21       3.077  11.128  -3.963  1.00  2.61      1CBN 448
+ATOM    347  HB  THR    21       3.618   9.655  -1.589  1.00  2.44      1CBN 449
+ATOM    348  HG1 THR    21       2.135   8.347  -2.156  1.00  4.77      1CBN 450
+ATOM    349 1HG2 THR    21       2.939  12.020  -1.308  1.00  1.75      1CBN 451
+ATOM    350 2HG2 THR    21       1.573  11.647  -2.059  1.00  2.95      1CBN 452
+ATOM    351 3HG2 THR    21       1.902  10.997  -0.619  1.00  2.63      1CBN 453
+ATOM    352  N   PRO    22       4.909  12.659  -3.127  0.60  3.03      1CBN 454
+ATOM    353  CA  PRO    22       6.035  13.459  -2.622  0.60  3.04      1CBN 455
+ATOM    354  C   PRO    22       6.362  13.139  -1.174  0.60  3.08      1CBN 456
+ATOM    355  O   PRO    22       5.473  12.959  -0.323  0.60  3.67      1CBN 457
+ATOM    356  CB  PRO    22       5.528  14.895  -2.825  0.60  4.19      1CBN 458
+ATOM    357  CG  PRO    22       4.614  14.846  -4.059  0.60  3.91      1CBN 459
+ATOM    358  CD  PRO    22       3.904  13.493  -3.885  0.60  3.25      1CBN 460
+ATOM    359  HA  PRO    22       6.808  13.304  -3.209  0.60  3.46      1CBN 461
+ATOM    360 1HB  PRO    22       5.093  15.252  -2.128  0.60  3.86      1CBN 462
+ATOM    361 2HB  PRO    22       6.254  15.492  -2.981  0.60  4.22      1CBN 463
+ATOM    362 1HG  PRO    22       4.063  15.462  -4.030  0.60  3.83      1CBN 464
+ATOM    363 2HG  PRO    22       5.119  14.843  -4.884  0.60  3.68      1CBN 465
+ATOM    364 1HD  PRO    22       3.086  13.595  -3.383  0.60  3.65      1CBN 466
+ATOM    365 2HD  PRO    22       3.686  13.019  -4.709  0.60  3.25      1CBN 467
+ATOM    366  N   SER    22B      4.909  12.659  -3.127  0.40  3.03      1CBN 468
+ATOM    367  CA  SER    22B      6.035  13.459  -2.622  0.40  3.04      1CBN 469
+ATOM    368  C   SER    22B      6.362  13.139  -1.174  0.40  3.08      1CBN 470
+ATOM    369  O   SER    22B      5.473  12.959  -0.323  0.40  3.67      1CBN 471
+ATOM    370  CB  SER    22B      5.644  14.934  -2.679  0.40  3.96      1CBN 472
+ATOM    371  OG ASER    22B      4.712  15.250  -1.677  0.20  3.53      1CBN 473
+ATOM    372  OG BSER    22B      6.688  15.800  -2.315  0.20  7.09      1CBN 474
+ATOM    373  H   SER    22B      4.323  13.093  -3.663  0.40  2.42      1CBN 475
+ATOM    374  HA  SER    22B      6.808  13.304  -3.209  0.40  3.46      1CBN 476
+ATOM    375 1HB ASER    22B      6.463  15.471  -2.534  0.20  3.82      1CBN 477
+ATOM    376 1HB BSER    22B      5.381  15.136  -3.616  0.20  5.09      1CBN 478
+ATOM    377 2HB ASER    22B      5.292  15.151  -3.585  0.20  3.90      1CBN 479
+ATOM    378 2HB BSER    22B      4.838  15.084  -2.107  0.20  4.66      1CBN 480
+ATOM    379  N   GLU    23       7.674  13.184  -0.854  1.00  3.14      1CBN 481
+ATOM    380  CA  GLU    23       8.080  12.987   0.542  1.00  3.02      1CBN 482
+ATOM    381  C   GLU    23       7.376  13.933   1.480  1.00  2.84      1CBN 483
+ATOM    382  O   GLU    23       7.035  13.564   2.601  1.00  3.00      1CBN 484
+ATOM    383  CB  GLU    23       9.625  13.151   0.698  1.00  3.53      1CBN 485
+ATOM    384  CG AGLU    23      10.387  12.021   0.058  0.80  3.74      1CBN 486
+ATOM    385  CG BGLU    23      10.421  12.092   0.015  0.20  5.25      1CBN 487
+ATOM    386  CD AGLU    23      11.885  12.048   0.399  0.80  4.38      1CBN 488
+ATOM    387  CD BGLU    23      11.899  12.484   0.296  0.20  7.30      1CBN 489
+ATOM    388  OE1AGLU    23      12.428  13.096   0.743  0.80  5.50      1CBN 490
+ATOM    389  OE1BGLU    23      12.243  13.657   0.425  0.20  7.49      1CBN 491
+ATOM    390  OE2AGLU    23      12.521  10.923   0.293  0.80  6.59      1CBN 492
+ATOM    391  OE2BGLU    23      12.751  11.501   0.211  0.20  5.04      1CBN 493
+ATOM    392  H   GLU    23       8.294  13.350  -1.476  1.00  1.89      1CBN 494
+ATOM    393  HA  GLU    23       7.869  12.057   0.794  1.00  2.16      1CBN 495
+ATOM    394 1HB AGLU    23       9.878  14.005   0.271  0.80  2.06      1CBN 496
+ATOM    395 2HB AGLU    23       9.787  13.219   1.653  0.80  2.19      1CBN 497
+ATOM    396 1HG AGLU    23      10.085  11.130   0.299  0.80  3.21      1CBN 498
+ATOM    397 2HG AGLU    23      10.354  12.099  -0.918  0.80  3.94      1CBN 499
+ATOM    398  N   ALA    24       7.160  15.194   1.059  1.00  2.99      1CBN 500
+ATOM    399  CA  ALA    24       6.592  16.184   1.972  1.00  2.64      1CBN 501
+ATOM    400  C   ALA    24       5.175  15.818   2.410  1.00  2.55      1CBN 502
+ATOM    401  O   ALA    24       4.777  16.010   3.540  1.00  3.06      1CBN 503
+ATOM    402  CB  ALA    24       6.626  17.598   1.373  1.00  3.59      1CBN 504
+ATOM    403  H   ALA    24       7.505  15.460   0.262  1.00  2.30      1CBN 505
+ATOM    404  HA  ALA    24       7.153  16.232   2.780  1.00  2.94      1CBN 506
+ATOM    405 1HB  ALA    24       7.543  17.842   1.137  1.00  2.49      1CBN 507
+ATOM    406 2HB  ALA    24       6.076  17.631   0.563  1.00  2.50      1CBN 508
+ATOM    407 3HB  ALA    24       6.263  18.240   2.020  1.00  2.15      1CBN 509
+ATOM    408  N   LEU    25       4.377  15.265   1.447  0.60  2.82      1CBN 510
+ATOM    409  CA  LEU    25       3.033  14.786   1.800  0.60  2.71      1CBN 511
+ATOM    410  C   LEU    25       3.077  13.514   2.641  0.60  2.38      1CBN 512
+ATOM    411  O   LEU    25       2.310  13.367   3.581  0.60  2.92      1CBN 513
+ATOM    412  CB  LEU    25       2.186  14.577   0.518  0.60  2.90      1CBN 514
+ATOM    413  CG  LEU    25       1.814  15.965  -0.117  0.60  4.43      1CBN 515
+ATOM    414  CD1 LEU    25       1.222  15.717  -1.500  0.60  5.09      1CBN 516
+ATOM    415  CD2 LEU    25       0.623  16.572   0.761  0.60  4.11      1CBN 517
+ATOM    416  H   LEU    25       4.728  15.070   0.644  0.60  1.70      1CBN 518
+ATOM    417  HA  LEU    25       2.573  15.480   2.312  0.60  2.56      1CBN 519
+ATOM    418 1HB  LEU    25       2.832  14.186  -0.175  0.60  3.74      1CBN 520
+ATOM    419 2HB  LEU    25       1.312  14.093   0.720  0.60  3.27      1CBN 521
+ATOM    420  HG  LEU    25       2.617  16.584  -0.248  0.60  2.73      1CBN 522
+ATOM    421 1HD1 LEU    25       0.515  15.030  -1.466  0.60  4.69      1CBN 523
+ATOM    422 2HD1 LEU    25       0.829  16.587  -1.836  0.60  4.59      1CBN 524
+ATOM    423 3HD1 LEU    25       1.946  15.436  -2.128  0.60  4.44      1CBN 525
+ATOM    424 1HD2 LEU    25      -0.170  15.974   0.843  0.60  2.83      1CBN 526
+ATOM    425 2HD2 LEU    25       0.989  16.789   1.668  0.60  3.14      1CBN 527
+ATOM    426 3HD2 LEU    25       0.344  17.402   0.282  0.60  3.79      1CBN 528
+ATOM    427  N   ILE    25B      4.377  15.265   1.447  0.40  2.82      1CBN 529
+ATOM    428  CA  ILE    25B      3.033  14.786   1.800  0.40  2.71      1CBN 530
+ATOM    429  C   ILE    25B      3.077  13.514   2.641  0.40  2.38      1CBN 531
+ATOM    430  O   ILE    25B      2.310  13.367   3.581  0.40  2.92      1CBN 532
+ATOM    431  CB  ILE    25B      2.186  14.577   0.518  0.40  2.90      1CBN 533
+ATOM    432  CG1 ILE    25B      1.658  15.855  -0.086  0.40  2.48      1CBN 534
+ATOM    433  CG2 ILE    25B      0.962  13.694   0.784  0.40  4.13      1CBN 535
+ATOM    434  CD1AILE    25B      0.623  16.572   0.761  0.20  4.11      1CBN 536
+ATOM    435  CD1BILE    25B      1.222  15.717  -1.500  0.20  5.09      1CBN 537
+ATOM    436  H   ILE    25B      4.728  15.070   0.644  0.40  1.70      1CBN 538
+ATOM    437  HA  ILE    25B      2.573  15.480   2.312  0.40  2.56      1CBN 539
+ATOM    438  HB  ILE    25B      2.769  14.106  -0.118  0.40  3.37      1CBN 540
+ATOM    439 1HG1AILE    25B      2.432  16.460  -0.225  0.20  2.73      1CBN 541
+ATOM    440 1HG1BILE    25B      1.075  16.325   0.437  0.20  3.30      1CBN 542
+ATOM    441 2HG1AILE    25B      1.243  15.658  -0.968  0.20  2.96      1CBN 543
+ATOM    442 2HG1BILE    25B      2.432  16.460  -0.225  0.20  2.73      1CBN 544
+ATOM    443 1HG2 ILE    25B      0.423  14.095   1.506  0.40  3.33      1CBN 545
+ATOM    444 2HG2 ILE    25B      0.451  13.622  -0.059  0.40  3.57      1CBN 546
+ATOM    445 3HG2 ILE    25B      1.278  12.796   1.059  0.40  3.60      1CBN 547
+ATOM    446 1HD1AILE    25B      0.989  16.789   1.668  0.20  3.14      1CBN 548
+ATOM    447 1HD1BILE    25B      0.515  15.030  -1.466  0.20  4.69      1CBN 549
+ATOM    448 2HD1AILE    25B      0.344  17.402   0.282  0.20  3.79      1CBN 550
+ATOM    449 2HD1BILE    25B      0.829  16.587  -1.836  0.20  4.59      1CBN 551
+ATOM    450 3HD1AILE    25B     -0.170  15.974   0.843  0.20  2.83      1CBN 552
+ATOM    451 3HD1BILE    25B      1.946  15.436  -2.128  0.20  4.44      1CBN 553
+ATOM    452  N   CYS    26       4.010  12.607   2.307  1.00  2.74      1CBN 554
+ATOM    453  CA  CYS    26       4.116  11.434   3.161  1.00  2.53      1CBN 555
+ATOM    454  C   CYS    26       4.590  11.790   4.576  1.00  2.43      1CBN 556
+ATOM    455  O   CYS    26       4.222  11.090   5.540  1.00  3.18      1CBN 557
+ATOM    456  CB  CYS    26       5.022  10.378   2.542  1.00  3.03      1CBN 558
+ATOM    457  SG  CYS    26       4.343   9.677   1.004  1.00  3.12      1CBN 559
+ATOM    458  H   CYS    26       4.562  12.745   1.613  1.00  1.80      1CBN 560
+ATOM    459  HA  CYS    26       3.236  11.004   3.234  1.00  1.94      1CBN 561
+ATOM    460 1HB  CYS    26       5.874  10.780   2.294  1.00  2.78      1CBN 562
+ATOM    461 2HB  CYS    26       5.169   9.629   3.135  1.00  2.77      1CBN 563
+ATOM    462  N   ALA    27       5.387  12.845   4.701  1.00  2.59      1CBN 564
+ATOM    463  CA  ALA    27       5.818  13.340   6.023  1.00  2.75      1CBN 565
+ATOM    464  C   ALA    27       4.648  13.792   6.870  1.00  2.87      1CBN 566
+ATOM    465  O   ALA    27       4.466  13.329   7.986  1.00  3.23      1CBN 567
+ATOM    466  CB  ALA    27       6.882  14.427   5.838  1.00  2.94      1CBN 568
+ATOM    467  H   ALA    27       5.625  13.325   3.972  1.00  1.96      1CBN 569
+ATOM    468  HA  ALA    27       6.280  12.595   6.477  1.00  2.97      1CBN 570
+ATOM    469 1HB  ALA    27       7.628  14.068   5.304  1.00  2.23      1CBN 571
+ATOM    470 2HB  ALA    27       6.502  15.193   5.354  1.00  2.32      1CBN 572
+ATOM    471 3HB  ALA    27       7.213  14.737   6.702  1.00  2.45      1CBN 573
+ATOM    472  N   THR    28       3.829  14.741   6.338  1.00  2.95      1CBN 574
+ATOM    473  CA  THR    28       2.708  15.163   7.150  1.00  3.39      1CBN 575
+ATOM    474  C   THR    28       1.696  14.058   7.401  1.00  3.24      1CBN 576
+ATOM    475  O   THR    28       0.984  14.051   8.406  1.00  4.36      1CBN 577
+ATOM    476  CB  THR    28       2.009  16.426   6.567  1.00  3.18      1CBN 578
+ATOM    477  OG1 THR    28       1.678  16.122   5.199  1.00  3.69      1CBN 579
+ATOM    478  CG2 THR    28       2.878  17.654   6.666  1.00  4.26      1CBN 580
+ATOM    479  H   THR    28       3.973  15.030   5.506  1.00  1.94      1CBN 581
+ATOM    480  HA  THR    28       3.045  15.474   8.031  1.00  2.87      1CBN 582
+ATOM    481  HB  THR    28       1.157  16.545   7.086  1.00  3.39      1CBN 583
+ATOM    482  HG1 THR    28       1.024  16.666   4.925  1.00  3.53      1CBN 584
+ATOM    483 1HG2 THR    28       3.741  17.490   6.189  1.00  3.21      1CBN 585
+ATOM    484 2HG2 THR    28       2.457  18.446   6.263  1.00  3.51      1CBN 586
+ATOM    485 3HG2 THR    28       3.108  17.877   7.623  1.00  3.98      1CBN 587
+ATOM    486  N   TYR    29       1.598  13.082   6.455  1.00  2.82      1CBN 588
+ATOM    487  CA  TYR    29       0.682  12.007   6.659  1.00  3.10      1CBN 589
+ATOM    488  C   TYR    29       1.063  11.059   7.808  1.00  3.15      1CBN 590
+ATOM    489  O   TYR    29       0.203  10.507   8.463  1.00  4.59      1CBN 591
+ATOM    490  CB ATYR    29       0.567  11.223   5.288  0.60  4.44      1CBN 592
+ATOM    491  CB BTYR    29       0.577  11.266   5.295  0.40  3.95      1CBN 593
+ATOM    492  CG ATYR    29       0.020   9.814   5.251  0.60  4.59      1CBN 594
+ATOM    493  CG BTYR    29      -0.542  10.270   5.306  0.40  4.03      1CBN 595
+ATOM    494  CD1ATYR    29      -1.332   9.554   5.514  0.60  5.34      1CBN 596
+ATOM    495  CD1BTYR    29      -1.816  10.563   5.826  0.40  4.48      1CBN 597
+ATOM    496  CD2ATYR    29       0.845   8.736   4.934  0.60  5.36      1CBN 598
+ATOM    497  CD2BTYR    29      -0.265   8.932   5.005  0.40 10.03      1CBN 599
+ATOM    498  CE1ATYR    29      -1.821   8.250   5.516  0.60  5.27      1CBN 600
+ATOM    499  CE1BTYR    29      -2.831   9.612   5.845  0.40  4.38      1CBN 601
+ATOM    500  CE2ATYR    29       0.385   7.429   4.942  0.60  5.82      1CBN 602
+ATOM    501  CE2BTYR    29      -1.269   7.949   5.037  0.40  9.90      1CBN 603
+ATOM    502  CZ ATYR    29      -0.944   7.198   5.246  0.60  5.21      1CBN 604
+ATOM    503  CZ BTYR    29      -2.536   8.310   5.477  0.40  7.71      1CBN 605
+ATOM    504  OH ATYR    29      -1.387   5.915   5.236  0.60  6.27      1CBN 606
+ATOM    505  OH BTYR    29      -3.511   7.365   5.278  0.40 15.00      1CBN 607
+ATOM    506  H   TYR    29       2.114  13.148   5.713  1.00  3.31      1CBN 608
+ATOM    507  HA  TYR    29      -0.229  12.330   6.824  1.00  3.36      1CBN 609
+ATOM    508 1HB ATYR    29      -0.017  11.808   4.732  0.60  4.12      1CBN 610
+ATOM    509 1HB BTYR    29       0.421  11.960   4.614  0.40  3.37      1CBN 611
+ATOM    510 2HB ATYR    29       1.469  11.262   4.877  0.60  4.15      1CBN 612
+ATOM    511 2HB BTYR    29       1.448  10.843   5.107  0.40  3.43      1CBN 613
+ATOM    512  HD1ATYR    29      -1.936  10.295   5.754  0.60  4.54      1CBN 614
+ATOM    513  HD1BTYR    29      -2.032  11.508   6.031  0.40  5.23      1CBN 615
+ATOM    514  HD2ATYR    29       1.800   8.912   4.709  0.60  5.78      1CBN 616
+ATOM    515  HD2BTYR    29       0.573   8.709   4.512  0.40  7.39      1CBN 617
+ATOM    516  HE1ATYR    29      -2.761   8.080   5.752  0.60  7.88      1CBN 618
+ATOM    517  HE1BTYR    29      -3.769   9.894   5.975  0.40  8.10      1CBN 619
+ATOM    518  HE2ATYR    29       0.976   6.676   4.710  0.60  4.05      1CBN 620
+ATOM    519  HE2BTYR    29      -1.015   6.997   4.985  0.40  7.98      1CBN 621
+ATOM    520  N   THR    30       2.412  10.870   7.986  1.00  2.81      1CBN 622
+ATOM    521  CA  THR    30       2.910   9.891   8.934  1.00  3.45      1CBN 623
+ATOM    522  C   THR    30       3.530  10.406  10.229  1.00  4.22      1CBN 624
+ATOM    523  O   THR    30       3.690   9.603  11.128  1.00  5.38      1CBN 625
+ATOM    524  CB  THR    30       4.022   9.025   8.261  1.00  4.10      1CBN 626
+ATOM    525  OG1 THR    30       5.076   9.886   7.858  1.00  3.55      1CBN 627
+ATOM    526  CG2 THR    30       3.492   8.238   7.078  1.00  5.98      1CBN 628
+ATOM    527  H   THR    30       2.981  11.285   7.426  1.00  3.36      1CBN 629
+ATOM    528  HA  THR    30       2.207   9.243   9.153  1.00  3.21      1CBN 630
+ATOM    529  HB  THR    30       4.357   8.393   8.974  1.00  4.95      1CBN 631
+ATOM    530  HG1 THR    30       5.140   9.936   6.972  1.00  5.09      1CBN 632
+ATOM    531 1HG2 THR    30       2.677   7.698   7.344  1.00  4.37      1CBN 633
+ATOM    532 2HG2 THR    30       3.222   8.851   6.357  1.00  3.77      1CBN 634
+ATOM    533 3HG2 THR    30       4.175   7.612   6.737  1.00  4.49      1CBN 635
+ATOM    534  N   GLY    31       3.897  11.670  10.231  1.00  3.82      1CBN 636
+ATOM    535  CA  GLY    31       4.718  12.221  11.316  1.00  4.22      1CBN 637
+ATOM    536  C   GLY    31       6.221  12.143  11.061  1.00  3.59      1CBN 638
+ATOM    537  O   GLY    31       6.985  12.680  11.889  1.00  3.95      1CBN 639
+ATOM    538  H   GLY    31       3.822  12.190   9.480  1.00  5.94      1CBN 640
+ATOM    539 1HA  GLY    31       4.472  13.159  11.455  1.00  4.08      1CBN 641
+ATOM    540 2HA  GLY    31       4.485  11.749  12.170  1.00  4.31      1CBN 642
+ATOM    541  N   CYS    32       6.646  11.509   9.971  1.00  2.98      1CBN 643
+ATOM    542  CA  CYS    32       8.050  11.589   9.560  1.00  3.06      1CBN 644
+ATOM    543  C   CYS    32       8.352  13.008   9.148  1.00  3.34      1CBN 645
+ATOM    544  O   CYS    32       7.461  13.875   8.946  1.00  3.62      1CBN 646
+ATOM    545  CB  CYS    32       8.361  10.618   8.453  1.00  2.76      1CBN 647
+ATOM    546  SG  CYS    32       7.987   8.859   8.836  1.00  3.14      1CBN 648
+ATOM    547  H   CYS    32       6.035  11.197   9.377  1.00  1.95      1CBN 649
+ATOM    548  HA  CYS    32       8.618  11.329  10.318  1.00  3.22      1CBN 650
+ATOM    549 1HB  CYS    32       7.816  10.812   7.661  1.00  2.96      1CBN 651
+ATOM    550 2HB  CYS    32       9.294  10.628   8.186  1.00  3.15      1CBN 652
+ATOM    551  N   ILE    33       9.654  13.314   8.969  1.00  3.36      1CBN 653
+ATOM    552  CA  ILE    33      10.151  14.634   8.671  1.00  3.27      1CBN 654
+ATOM    553  C   ILE    33      11.203  14.521   7.578  1.00  3.43      1CBN 655
+ATOM    554  O   ILE    33      11.841  13.471   7.380  1.00  3.88      1CBN 656
+ATOM    555  CB  ILE    33      10.736  15.348   9.924  1.00  3.95      1CBN 657
+ATOM    556  CG1 ILE    33      11.979  14.637  10.477  1.00  4.77      1CBN 658
+ATOM    557  CG2 ILE    33       9.649  15.463  10.971  1.00  5.30      1CBN 659
+ATOM    558  CD1 ILE    33      12.660  15.418  11.582  1.00  5.76      1CBN 660
+ATOM    559  H   ILE    33      10.281  12.653   9.095  1.00  2.22      1CBN 661
+ATOM    560  HA  ILE    33       9.428  15.223   8.371  1.00  2.92      1CBN 662
+ATOM    561  HB  ILE    33      10.991  16.246   9.614  1.00  4.02      1CBN 663
+ATOM    562 1HG1 ILE    33      11.669  13.770  10.830  1.00  4.48      1CBN 664
+ATOM    563 2HG1 ILE    33      12.617  14.502   9.739  1.00  4.12      1CBN 665
+ATOM    564 1HG2 ILE    33       9.212  14.584  11.111  1.00  4.28      1CBN 666
+ATOM    565 2HG2 ILE    33      10.054  15.788  11.819  1.00  5.40      1CBN 667
+ATOM    566 3HG2 ILE    33       8.966  16.124  10.675  1.00  4.25      1CBN 668
+ATOM    567 1HD1 ILE    33      12.764  16.361  11.267  1.00  5.24      1CBN 669
+ATOM    568 2HD1 ILE    33      12.117  15.393  12.422  1.00  4.85      1CBN 670
+ATOM    569 3HD1 ILE    33      13.568  15.031  11.724  1.00  5.23      1CBN 671
+ATOM    570  N   ILE    34      11.425  15.638   6.910  1.00  3.69      1CBN 672
+ATOM    571  CA  ILE    34      12.463  15.803   5.900  1.00  3.76      1CBN 673
+ATOM    572  C   ILE    34      13.471  16.800   6.492  1.00  3.62      1CBN 674
+ATOM    573  O   ILE    34      13.052  17.902   6.909  1.00  4.98      1CBN 675
+ATOM    574  CB  ILE    34      11.956  16.343   4.560  1.00  4.88      1CBN 676
+ATOM    575  CG1 ILE    34      10.858  15.447   4.003  1.00  6.53      1CBN 677
+ATOM    576  CG2 ILE    34      13.117  16.476   3.580  1.00  7.15      1CBN 678
+ATOM    577  CD1AILE    34      10.207  16.140   2.798  0.80  5.67      1CBN 679
+ATOM    578  CD1BILE    34      10.824  13.923   4.274  0.20  8.60      1CBN 680
+ATOM    579  H   ILE    34      10.996  16.424   7.142  1.00  2.35      1CBN 681
+ATOM    580  HA  ILE    34      12.915  14.960   5.731  1.00  2.71      1CBN 682
+ATOM    581  HB  ILE    34      11.597  17.246   4.734  1.00  4.40      1CBN 683
+ATOM    582 1HG1AILE    34      11.278  14.615   3.693  1.00  5.78      1CBN 684
+ATOM    583 2HG1AILE    34      10.172  15.283   4.673  1.00  5.13      1CBN 685
+ATOM    584 1HG2 ILE    34      12.827  17.053   2.827  1.00  6.95      1CBN 686
+ATOM    585 2HG2 ILE    34      13.372  15.574   3.260  1.00  6.75      1CBN 687
+ATOM    586 3HG2 ILE    34      13.880  16.903   4.043  1.00  7.68      1CBN 688
+ATOM    587 1HD1AILE    34      10.896  16.297   2.090  0.80  6.07      1CBN 689
+ATOM    588 1HD1BILE    34      11.261  13.756   5.155  0.20  6.36      1CBN 690
+ATOM    589 2HD1AILE    34       9.481  15.543   2.475  0.80  6.75      1CBN 691
+ATOM    590 2HD1BILE    34       9.870  13.633   4.288  0.20  5.93      1CBN 692
+ATOM    591 3HD1AILE    34       9.820  16.993   3.119  0.80  6.31      1CBN 693
+ATOM    592 3HD1BILE    34      11.323  13.468   3.539  0.20  6.18      1CBN 694
+ATOM    593  N   ILE    35      14.767  16.445   6.437  1.00  4.08      1CBN 695
+ATOM    594  CA  ILE    35      15.801  17.362   6.845  1.00  4.16      1CBN 696
+ATOM    595  C   ILE    35      16.810  17.529   5.720  1.00  4.11      1CBN 697
+ATOM    596  O   ILE    35      16.973  16.619   4.917  1.00  5.31      1CBN 698
+ATOM    597  CB  ILE    35      16.531  16.882   8.157  1.00  5.52      1CBN 699
+ATOM    598  CG1 ILE    35      17.204  15.538   7.959  1.00  6.18      1CBN 700
+ATOM    599  CG2 ILE    35      15.537  16.889   9.316  1.00  7.65      1CBN 701
+ATOM    600  CD1 ILE    35      18.114  15.146   9.129  1.00  8.44      1CBN 702
+ATOM    601  H   ILE    35      14.991  15.665   6.035  1.00  3.30      1CBN 703
+ATOM    602  HA  ILE    35      15.436  18.236   7.082  1.00  3.51      1CBN 704
+ATOM    603  HB  ILE    35      17.205  17.581   8.316  1.00  5.85      1CBN 705
+ATOM    604 1HG1 ILE    35      16.492  14.856   7.893  1.00  6.10      1CBN 706
+ATOM    605 2HG1 ILE    35      17.750  15.542   7.145  1.00  5.97      1CBN 707
+ATOM    606 1HG2 ILE    35      15.151  17.788   9.415  1.00  6.61      1CBN 708
+ATOM    607 2HG2 ILE    35      14.825  16.222   9.134  1.00  6.92      1CBN 709
+ATOM    608 3HG2 ILE    35      16.029  16.643  10.145  1.00  7.79      1CBN 710
+ATOM    609 1HD1 ILE    35      17.575  15.097   9.969  1.00  7.10      1CBN 711
+ATOM    610 2HD1 ILE    35      18.535  14.275   8.903  1.00  7.86      1CBN 712
+ATOM    611 3HD1 ILE    35      18.820  15.841   9.194  1.00  7.34      1CBN 713
+ATOM    612  N   PRO    36      17.543  18.643   5.681  1.00  4.84      1CBN 714
+ATOM    613  CA  PRO    36      18.540  18.829   4.633  1.00  5.34      1CBN 715
+ATOM    614  C   PRO    36      19.818  18.040   4.846  1.00  5.30      1CBN 716
+ATOM    615  O   PRO    36      20.544  17.789   3.880  1.00  7.24      1CBN 717
+ATOM    616  CB  PRO    36      18.745  20.337   4.624  1.00  7.45      1CBN 718
+ATOM    617  CG  PRO    36      18.297  20.867   5.945  1.00  8.65      1CBN 719
+ATOM    618  CD  PRO    36      17.243  19.870   6.449  1.00  6.63      1CBN 720
+ATOM    619  HA  PRO    36      18.210  18.499   3.784  1.00  6.20      1CBN 721
+ATOM    620 1HB  PRO    36      19.592  20.600   4.409  1.00  8.10      1CBN 722
+ATOM    621 2HB  PRO    36      18.240  20.735   3.892  1.00  8.31      1CBN 723
+ATOM    622 1HG  PRO    36      18.927  20.893   6.503  1.00  8.15      1CBN 724
+ATOM    623 2HG  PRO    36      17.882  21.757   5.897  1.00  8.29      1CBN 725
+ATOM    624 1HD  PRO    36      17.347  19.740   7.412  1.00  6.01      1CBN 726
+ATOM    625 2HD  PRO    36      16.310  20.129   6.314  1.00  6.24      1CBN 727
+ATOM    626  N   GLY    37      20.088  17.758   6.098  1.00  6.46      1CBN 728
+ATOM    627  CA  GLY    37      21.289  16.992   6.487  1.00  7.04      1CBN 729
+ATOM    628  C   GLY    37      21.016  15.521   6.385  1.00  6.61      1CBN 730
+ATOM    629  O   GLY    37      20.006  15.069   5.807  1.00  8.90      1CBN 731
+ATOM    630  H   GLY    37      19.561  18.020   6.792  1.00  4.89      1CBN 732
+ATOM    631 1HA  GLY    37      22.026  17.252   5.901  1.00  8.12      1CBN 733
+ATOM    632 2HA  GLY    37      21.551  17.269   7.412  1.00  8.35      1CBN 734
+ATOM    633  N   ALA    38      21.918  14.714   6.937  1.00  5.85      1CBN 735
+ATOM    634  CA  ALA    38      21.880  13.278   6.877  1.00  6.90      1CBN 736
+ATOM    635  C   ALA    38      21.763  12.582   8.249  1.00  6.58      1CBN 737
+ATOM    636  O   ALA    38      21.701  11.347   8.325  1.00  9.91      1CBN 738
+ATOM    637  CB  ALA    38      23.123  12.725   6.156  1.00  8.20      1CBN 739
+ATOM    638  H   ALA    38      22.666  15.082   7.350  1.00  8.94      1CBN 740
+ATOM    639  HA  ALA    38      21.117  12.977   6.333  1.00  7.28      1CBN 741
+ATOM    640 1HB  ALA    38      23.931  13.031   6.616  1.00  7.15      1CBN 742
+ATOM    641 2HB  ALA    38      23.101  11.746   6.166  1.00  6.91      1CBN 743
+ATOM    642 3HB  ALA    38      23.141  13.046   5.233  1.00  6.95      1CBN 744
+ATOM    643  N   THR    39      21.717  13.401   9.296  1.00  6.90      1CBN 745
+ATOM    644  CA  THR    39      21.784  12.874  10.644  1.00  6.81      1CBN 746
+ATOM    645  C   THR    39      20.487  13.107  11.371  1.00  6.39      1CBN 747
+ATOM    646  O   THR    39      20.199  14.236  11.815  1.00  8.67      1CBN 748
+ATOM    647  CB ATHR    39      22.955  13.572  11.491  0.70  6.00      1CBN 749
+ATOM    648  CB BTHR    39      23.149  13.198  11.225  0.30 12.82      1CBN 750
+ATOM    649  OG1ATHR    39      24.152  13.569  10.774  0.70  6.46      1CBN 751
+ATOM    650  OG1BTHR    39      24.198  13.029  10.215  0.30  5.56      1CBN 752
+ATOM    651  CG2ATHR    39      23.199  12.887  12.825  0.70  7.42      1CBN 753
+ATOM    652  CG2BTHR    39      23.342  12.014  12.191  0.30  7.04      1CBN 754
+ATOM    653  H   THR    39      21.817  14.302   9.189  1.00  5.93      1CBN 755
+ATOM    654  HA ATHR    39      22.042  11.945  10.648  0.70  5.50      1CBN 756
+ATOM    655  HB ATHR    39      22.623  14.510  11.636  0.70  6.46      1CBN 757
+ATOM    656  HG1ATHR    39      24.272  12.878  10.240  0.70  4.87      1CBN 758
+ATOM    657 1HG2ATHR    39      23.419  11.927  12.656  0.70  6.52      1CBN 759
+ATOM    658 2HG2ATHR    39      23.930  13.302  13.317  0.70  6.59      1CBN 760
+ATOM    659 3HG2ATHR    39      22.367  12.887  13.397  0.70  6.52      1CBN 761
+ATOM    660  N   CYS    40      19.717  12.035  11.536  1.00  5.62      1CBN 762
+ATOM    661  CA  CYS    40      18.423  12.147  12.215  1.00  5.16      1CBN 763
+ATOM    662  C   CYS    40      18.631  12.256  13.710  1.00  5.25      1CBN 764
+ATOM    663  O   CYS    40      19.467  11.511  14.266  1.00  6.44      1CBN 765
+ATOM    664  CB  CYS    40      17.558  10.937  11.862  1.00  4.92      1CBN 766
+ATOM    665  SG  CYS    40      17.100  10.848  10.110  1.00  5.11      1CBN 767
+ATOM    666  H   CYS    40      19.946  11.230  11.197  1.00  4.73      1CBN 768
+ATOM    667  HA  CYS    40      17.940  12.925  11.889  1.00  5.94      1CBN 769
+ATOM    668 1HB  CYS    40      18.028  10.113  12.072  1.00  5.06      1CBN 770
+ATOM    669 2HB  CYS    40      16.722  10.954  12.373  1.00  5.59      1CBN 771
+ATOM    670  N   PRO    41      17.809  13.041  14.396  1.00  5.81      1CBN 772
+ATOM    671  CA  PRO    41      17.905  13.205  15.847  1.00  6.63      1CBN 773
+ATOM    672  C   PRO    41      17.324  12.026  16.567  1.00  5.41      1CBN 774
+ATOM    673  O   PRO    41      16.595  11.189  15.991  1.00  5.35      1CBN 775
+ATOM    674  CB  PRO    41      17.191  14.514  16.108  1.00  8.12      1CBN 776
+ATOM    675  CG  PRO    41      16.050  14.459  15.051  1.00  7.55      1CBN 777
+ATOM    676  CD  PRO    41      16.770  13.954  13.805  1.00  6.57      1CBN 778
+ATOM    677  HA  PRO    41      18.840  13.240  16.116  1.00  7.55      1CBN 779
+ATOM    678 1HB  PRO    41      16.850  14.668  16.907  1.00  7.02      1CBN 780
+ATOM    679 2HB  PRO    41      17.739  15.274  15.915  1.00  7.62      1CBN 781
+ATOM    680 1HG  PRO    41      15.481  13.913  15.312  1.00  7.00      1CBN 782
+ATOM    681 2HG  PRO    41      15.676  15.335  14.901  1.00  7.26      1CBN 783
+ATOM    682 1HD  PRO    41      16.170  13.468  13.218  1.00  7.51      1CBN 784
+ATOM    683 2HD  PRO    41      17.220  14.624  13.256  1.00  7.09      1CBN 785
+ATOM    684  N   GLY    42      17.604  11.965  17.896  1.00  6.23      1CBN 786
+ATOM    685  CA  GLY    42      17.204  10.808  18.701  1.00  6.27      1CBN 787
+ATOM    686  C   GLY    42      15.709  10.570  18.862  1.00  5.33      1CBN 788
+ATOM    687  O   GLY    42      15.280   9.476  19.238  1.00  7.26      1CBN 789
+ATOM    688  H   GLY    42      18.134  12.580  18.275  1.00  9.82      1CBN 790
+ATOM    689 1HA  GLY    42      17.599   9.997  18.288  1.00  5.83      1CBN 791
+ATOM    690 2HA  GLY    42      17.640  10.875  19.602  1.00  5.77      1CBN 792
+ATOM    691  N   ASP    43      14.925  11.677  18.645  1.00  4.79      1CBN 793
+ATOM    692  CA  ASP    43      13.469  11.536  18.728  1.00  4.90      1CBN 794
+ATOM    693  C   ASP    43      12.829  11.273  17.308  1.00  3.83      1CBN 795
+ATOM    694  O   ASP    43      11.608  11.118  17.270  1.00  4.14      1CBN 796
+ATOM    695  CB AASP    43      12.776  12.653  19.456  0.70  5.60      1CBN 797
+ATOM    696  CB BASP    43      13.158  13.152  19.100  0.30  5.43      1CBN 798
+ATOM    697  CG AASP    43      13.083  14.013  18.900  0.70  3.14      1CBN 799
+ATOM    698  CG BASP    43      13.396  14.539  18.545  0.30  6.85      1CBN 800
+ATOM    699  OD1AASP    43      14.052  14.180  18.165  0.70  4.24      1CBN 801
+ATOM    700  OD1BASP    43      14.372  14.407  17.675  0.30  7.29      1CBN 802
+ATOM    701  OD2AASP    43      12.244  14.902  19.239  0.70  4.53      1CBN 803
+ATOM    702  OD2BASP    43      12.859  15.429  18.905  0.30  5.90      1CBN 804
+ATOM    703  H   ASP    43      15.289  12.435  18.380  1.00  3.68      1CBN 805
+ATOM    704  HA  ASP    43      13.263  10.724  19.250  1.00  5.00      1CBN 806
+ATOM    705 1HB  ASP    43      11.795  12.538  19.513  1.00  4.72      1CBN 807
+ATOM    706 2HB  ASP    43      13.056  12.655  20.409  1.00  4.76      1CBN 808
+ATOM    707  N   TYR    44      13.661  11.165  16.299  1.00  3.41      1CBN 809
+ATOM    708  CA  TYR    44      13.244  10.734  14.972  1.00  3.45      1CBN 810
+ATOM    709  C   TYR    44      14.220   9.671  14.485  1.00  3.21      1CBN 811
+ATOM    710  O   TYR    44      14.905   9.801  13.471  1.00  4.09      1CBN 812
+ATOM    711  CB  TYR    44      13.122  11.879  13.955  1.00  3.86      1CBN 813
+ATOM    712  CG  TYR    44      11.964  12.785  14.273  1.00  3.52      1CBN 814
+ATOM    713  CD1 TYR    44      12.048  13.838  15.198  1.00  3.87      1CBN 815
+ATOM    714  CD2 TYR    44      10.735  12.574  13.626  1.00  3.68      1CBN 816
+ATOM    715  CE1 TYR    44      10.972  14.654  15.465  1.00  4.52      1CBN 817
+ATOM    716  CE2 TYR    44       9.626  13.383  13.922  1.00  3.62      1CBN 818
+ATOM    717  CZ  TYR    44       9.756  14.389  14.841  1.00  4.19      1CBN 819
+ATOM    718  OH  TYR    44       8.682  15.211  15.107  1.00  4.45      1CBN 820
+ATOM    719  H   TYR    44      14.567  11.238  16.450  1.00  6.56      1CBN 821
+ATOM    720  HA  TYR    44      12.348  10.328  15.033  1.00  3.02      1CBN 822
+ATOM    721 1HB  TYR    44      13.968  12.389  13.969  1.00  2.93      1CBN 823
+ATOM    722 2HB  TYR    44      13.040  11.485  13.047  1.00  3.16      1CBN 824
+ATOM    723  HD1 TYR    44      12.927  14.010  15.626  1.00  7.33      1CBN 825
+ATOM    724  HD2 TYR    44      10.624  11.815  13.011  1.00  2.85      1CBN 826
+ATOM    725  HE1 TYR    44      11.080  15.414  16.094  1.00  5.65      1CBN 827
+ATOM    726  HE2 TYR    44       8.758  13.221  13.493  1.00  6.80      1CBN 828
+ATOM    727  HH  TYR    44       8.359  15.024  15.914  1.00  7.59      1CBN 829
+ATOM    728  N   ALA    45      14.317   8.609  15.302  1.00  3.74      1CBN 830
+ATOM    729  CA  ALA    45      15.393   7.618  15.200  1.00  3.69      1CBN 831
+ATOM    730  C   ALA    45      15.157   6.498  14.218  1.00  3.60      1CBN 832
+ATOM    731  O   ALA    45      16.055   5.682  13.992  1.00  4.67      1CBN 833
+ATOM    732  CB  ALA    45      15.600   7.011  16.599  1.00  4.78      1CBN 834
+ATOM    733  H   ALA    45      13.860   8.589  16.099  1.00  2.13      1CBN 835
+ATOM    734  HA  ALA    45      16.228   8.087  14.984  1.00  3.51      1CBN 836
+ATOM    735 1HB  ALA    45      14.745   6.682  16.950  1.00  3.44      1CBN 837
+ATOM    736 2HB  ALA    45      16.225   6.261  16.546  1.00  4.00      1CBN 838
+ATOM    737 3HB  ALA    45      15.947   7.697  17.201  1.00  4.18      1CBN 839
+ATOM    738  N   ASN    46      13.925   6.435  13.670  1.00  3.39      1CBN 840
+ATOM    739  CA  ASN    46      13.501   5.329  12.797  1.00  3.70      1CBN 841
+ATOM    740  C   ASN    46      13.281   5.771  11.349  1.00  3.70      1CBN 842
+ATOM    741  O   ASN    46      13.691   6.901  11.001  1.00  4.09      1CBN 843
+ATOM    742  CB  ASN    46      12.252   4.651  13.386  1.00  4.58      1CBN 844
+ATOM    743  CG  ASN    46      12.526   4.138  14.764  1.00  5.34      1CBN 845
+ATOM    744  OD1 ASN    46      13.443   3.218  14.924  1.00  9.98      1CBN 846
+ATOM    745  ND2 ASN    46      11.916   4.601  15.746  1.00  5.99      1CBN 847
+ATOM    746  OXT ASN    46      12.678   4.980  10.600  1.00  4.99      1CBN 848
+ATOM    747  H   ASN    46      13.288   7.025  13.931  1.00  7.58      1CBN 849
+ATOM    748  HA  ASN    46      14.199   4.633  12.824  1.00  3.68      1CBN 850
+ATOM    749 1HB  ASN    46      11.525   5.317  13.418  1.00  4.22      1CBN 851
+ATOM    750 2HB  ASN    46      11.960   3.924  12.790  1.00  4.74      1CBN 852
+ATOM    751 1HD2 ASN    46      12.053   4.334  16.647  1.00  7.82      1CBN 853
+ATOM    752 2HD2 ASN    46      11.317   5.324  15.663  1.00  7.54      1CBN 854
+TER     753      ASN    46                                              1CBN 855
+HETATM  754  C1 AEOH    66      14.823  -0.159  13.271  0.70 13.49      1CBN 856
+HETATM  755  C1 BEOH    66      15.763  -0.521  12.803  0.30 10.99      1CBN 857
+HETATM  756  C2  EOH    66      15.702   0.904  12.771  1.00 17.90      1CBN 858
+HETATM  757  O  AEOH    66      15.029   2.134  12.501  0.70  7.21      1CBN 859
+HETATM  758  O  BEOH    66      14.540   1.708  12.931  0.30  6.09      1CBN 860
+CONECT   44   43  665                                                   1CBN 861
+CONECT   54   53  546                                                   1CBN 862
+CONECT  269  268  457                                                   1CBN 863
+CONECT  457  269  456                                                   1CBN 864
+CONECT  546   54  545                                                   1CBN 865
+CONECT  665   44  664                                                   1CBN 866
+CONECT  754  756                                                        1CBN 867
+CONECT  755  756                                                        1CBN 868
+CONECT  756  755  758                                                   1CBN 869
+CONECT  757  756                                                        1CBN 870
+CONECT  758  756                                                        1CBN 871
+MASTER       66    0    1    2    4    2    0    6  757    1   11    4  1CBN 872
+END                                                                     1CBN 873

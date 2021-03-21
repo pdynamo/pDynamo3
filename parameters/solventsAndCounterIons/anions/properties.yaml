@@ -1,0 +1,11 @@
+---
+
+# . Properties for anions.
+
+chloride :
+    label        : "Chloride Anion"
+    pdbComponent : CL
+    pdbAtoms     : [ CL ]
+    symbol       : "Cl-"
+
+...

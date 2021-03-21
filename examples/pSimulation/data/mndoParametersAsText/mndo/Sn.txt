@@ -1,0 +1,43 @@
+# . Text parameter file for the element Sn.
+
+Sn   atomicNumber                          50
+Sn   iii                                    5
+Sn   iiid                                   5
+Sn   ir016                                  0
+Sn   ir066                                  0
+Sn   ir244                                  0
+Sn   ir266                                  0
+Sn   ir466                                  0
+Sn   qnd                                    0
+Sn   qnp                                    5
+Sn   qns                                    5
+Sn   ad                     0.321992390720593  atomic
+Sn   alp                    1.800814000000000  A^-1
+Sn   am                     0.360143394988143  atomic
+Sn   aq                     0.371376403785448  atomic
+Sn   betad                  0.000000000000000  eV
+Sn   betap                 -4.290416000000000  eV
+Sn   betas                 -3.235147000000000  eV
+Sn   dd                     1.569776616155292  atomic
+Sn   eheat                 72.200000000000003  kcal/mole
+Sn   eisol                -92.324101999999968  eV
+Sn   f0sd                   0.000000000000000  eV
+Sn   g2sd                   0.000000000000000  eV
+Sn   gp2                    6.500000000000000  eV
+Sn   gphot                  1.000000000000000  dimensionless
+Sn   gpp                    7.300000000000000  eV
+Sn   gsp                    8.300000000000001  eV
+Sn   gss                    9.800000000000001  eV
+Sn   hsp                    1.300000000000000  eV
+Sn   pcore                  0.000000000000000  atomic
+Sn   qq                     1.326229187113677  atomic
+Sn   udd                    0.000000000000000  eV
+Sn   upp                  -28.560248999999999  eV
+Sn   uss                  -40.851801999999999  eV
+Sn   zcore                  4.000000000000000  atomic
+Sn   zdn                    0.000000000000000  atomic
+Sn   zetad                  0.000000000000000  atomic
+Sn   zetap                  1.937106000000000  atomic
+Sn   zetas                  2.080380000000000  atomic
+Sn   zpn                    0.000000000000000  atomic
+Sn   zsn                    0.000000000000000  atomic

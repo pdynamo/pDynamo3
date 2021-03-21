@@ -1,0 +1,13 @@
+---
+# . !MMSequenceVariant
+Atom Fields: [ Label, Type, Charge ]
+Atoms:
+  - [ CG , CT2, -0.28 ]
+  - [ HG2, HA ,  0.09 ]
+  - [ HG3, HA ,  0.09 ]
+  - [ CD , CC ,  0.62 ]
+  - [ OE1, OC , -0.76 ]
+  - [ OE2, OC , -0.76 ]
+Component: GLU
+Label: Deprotonated
+...

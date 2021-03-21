@@ -1,0 +1,20 @@
+# . Space group C2mm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : C -2 2
+Hermann-Mauguin    : C2mm
+Schoenflies        : C2v^14
+Space Group Number : 38
+Space Group Symbol : 38:-cba
+Setting            : 188
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x,-y,z)
+    - (x,y,-z)
+    - (x+1/2,y+1/2,z)
+    - (x+1/2,-y+1/2,-z)
+    - (x+1/2,-y+1/2,z)
+    - (x+1/2,y+1/2,-z)
+...

@@ -1,0 +1,16 @@
+# . Space group P21am.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2 2a
+Hermann-Mauguin    : P21am
+Schoenflies        : C2v^2
+Space Group Number : 26
+Space Group Symbol : 26:-cba
+Setting            : 131
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z)
+    - (x+1/2,-y,z)
+    - (x,y,-z)
+...

@@ -1,0 +1,36 @@
+# . Space group Pn-3:2.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : -P 2ab 2bc 3
+Hermann-Mauguin    : Pn-3:2
+Schoenflies        : Th^2
+Space Group Number : 201
+Space Group Symbol : 201:2
+Setting            : 496
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-x+1/2,y,-z+1/2)
+    - (x,-y+1/2,-z+1/2)
+    - (z,x,y)
+    - (z,-x+1/2,-y+1/2)
+    - (-z+1/2,-x+1/2,y)
+    - (-z+1/2,x,-y+1/2)
+    - (y,z,x)
+    - (-y+1/2,z,-x+1/2)
+    - (y,-z+1/2,-x+1/2)
+    - (-y+1/2,-z+1/2,x)
+    - (-x,-y,-z)
+    - (x+1/2,y+1/2,-z)
+    - (x+1/2,-y,z+1/2)
+    - (-x,y+1/2,z+1/2)
+    - (-z,-x,-y)
+    - (-z,x+1/2,y+1/2)
+    - (z+1/2,x+1/2,-y)
+    - (z+1/2,-x,y+1/2)
+    - (-y,-z,-x)
+    - (y+1/2,-z,x+1/2)
+    - (-y,z+1/2,x+1/2)
+    - (y+1/2,z+1/2,-x)
+...

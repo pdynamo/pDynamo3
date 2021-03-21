@@ -1,0 +1,19 @@
+# . Bad input cases (on purpose).
+# . Some cases will be interpreted (guessed) by other programs (e.g. assuming extra hydrogens or suppressing input aromaticity or extra multiple bonds).
+---
+Aromatic 8 : "CCCCn1c(c2c(c3c(c4ccccc4c(c3c(c2c1=O)N)=O)=O)N)=O"
+Test 05    : "((C@@)C(C@@@@(#C)((=C@@@)CC)))C((/C)-C)"
+Test 08    : "c=9ccccc=9"
+Test 09    : "C1%1000(C1(C%1000))"
+Test 10    : "[99Co@@@H4---]#[Xe@AL2H2]"
+Test 13    : "((C)C(C(#C)((=C)CC)))=C((/C)-C)"
+Test 14    : "()"
+Test 15    : "C())"
+Test 17    : "Cn1c(=O)[nH]c(=Occ1"
+Test 18    : "((C)C(C(C)((C)CC)))C((C))"
+Test 19    : "c9ccccc"
+Test 22    : "c12c3c4c5c1c6c7c2c8c3c9c4c%10c5c6c%11c7c8c9c%10%11"
+Test 35    : "opsin"
+Test 36    : "C1(C(N(C=N)c2(c(O)nc(N)nc(N1)2))CNc3(ccc(cc3)C(=O)nc(c(=O)o)CCC(O)=O))"
+Test 44    : "C=9=CCCCC=9"
+...

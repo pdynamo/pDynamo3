@@ -1,0 +1,20 @@
+# . Space group Bb21m.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : B -2 -2b
+Hermann-Mauguin    : Bb21m
+Schoenflies        : C2v^12
+Space Group Number : 36
+Space Group Symbol : 36:bca
+Setting            : 180
+Transformations :
+    - (x,y,z)
+    - (-x,y+1/2,-z)
+    - (-x,y+1/2,z)
+    - (x,y,-z)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (x+1/2,y,-z+1/2)
+...

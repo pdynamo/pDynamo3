@@ -1,0 +1,20 @@
+# . Space group Am2a.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : A -2a -2a
+Hermann-Mauguin    : Am2a
+Schoenflies        : C2v^16
+Space Group Number : 40
+Space Group Symbol : 40:a-cb
+Setting            : 202
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (x+1/2,y,-z)
+    - (-x+1/2,y,z)
+    - (x,y+1/2,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+...

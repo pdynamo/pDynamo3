@@ -1,0 +1,14 @@
+# . Space group P1a1.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : P -2ya
+Hermann-Mauguin    : P1a1
+Schoenflies        : Cs^2
+Space Group Number : 7
+Space Group Symbol : 7:b3
+Setting            : 23
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,z)
+...

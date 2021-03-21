@@ -1,0 +1,20 @@
+# . !GaussianBasis
+Atomic Number: 34
+Basis Type: Coulomb
+Is Spherical: true
+Normalization Type: Symmetric
+Normalized Primitives: true
+Primitive Fields: [Exponent, Coefficients]
+Shells: [{Primitives: [[28424.0794, [2.90097726]], [11965.443, [3.55041308]], [5109.12776,
+        [11.6734971]], [2210.86522, [23.7222947]], [968.680873, [32.7407785]], [429.330471,
+        [17.2858406]], [192.295776, [-9.0727913]], [86.951123, [21.2940426]], [39.651109,
+        [25.9200243]], [18.215688, [-11.4028431]]], Type: S}, {Primitives: [[8.421136,
+        [9.35370129]], [3.913329, [9.27835933]]], Type: S}, {Primitives: [[1.825915,
+        [-0.11953816]]], Type: S}, {Primitives: [[0.854427, [0.36555754]]], Type: S},
+  {Primitives: [[0.400523, [0.57919518]]], Type: S}, {Primitives: [[0.18786, [0.13324768]]],
+    Type: S}, {Primitives: [[4.45082971, [1.0]]], Type: P}, {Primitives: [[1.66772696,
+        [1.0]]], Type: P}, {Primitives: [[0.67595937, [1.0]]], Type: P}, {Primitives: [
+      [0.281649738, [1.0]]], Type: P}, {Primitives: [[19.421546, [0.01122967]], [
+        6.308195, [0.02619541]], [2.206202, [-0.03894025]], [0.80884, [0.06357082]]],
+    Type: D}, {Primitives: [[0.301388, [0.03421231]]], Type: D}, {Primitives: [[0.617351598,
+        [1.0]]], Type: F}, {Primitives: [[0.676, [1.0]]], Type: G}]

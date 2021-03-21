@@ -1,0 +1,110 @@
+# . Text parameter file for the element Na.
+
+Na   atomicNumber                          11
+Na   iii                                    3
+Na   iiid                                   3
+Na   ir016                                  0
+Na   ir066                                  0
+Na   ir244                                  0
+Na   ir266                                  0
+Na   ir466                                  0
+Na   qnd                                    0
+Na   qnp                                    3
+Na   qns                                    3
+Na   ad                     0.192545278379160  atomic
+Na   alp                    0.000000000000000  A^-1
+Na   am                     0.149201234656816  atomic
+Na   aq                     0.200065181620865  atomic
+Na   betad                  0.000000000000000  eV
+Na   betap                  0.491998000000000  eV
+Na   betas                  0.244853000000000  eV
+Na   dd                     2.252384050880970  atomic
+Na   eheat                 25.649999999999999  kcal/mole
+Na   eisol                 -4.537153000000000  eV
+Na   f0sd                   0.000000000000000  eV
+Na   g2sd                   0.000000000000000  eV
+Na   gp2                   17.034977999999999  eV
+Na   gphot                  1.000000000000000  dimensionless
+Na   gpp                    9.283540000000000  eV
+Na   gsp                    7.061183000000000  eV
+Na   gss                    4.059972000000000  eV
+Na   hsp                    0.640715000000000  eV
+Na   pcore                  0.000000000000000  atomic
+Na   qq                     1.761263460160905  atomic
+Na   udd                    0.000000000000000  eV
+Na   upp                   -2.433015000000000  eV
+Na   uss                   -4.537153000000000  eV
+Na   zcore                  1.000000000000000  atomic
+Na   zdn                    0.000000000000000  atomic
+Na   zetad                  0.000000000000000  atomic
+Na   zetap                  0.950068000000000  atomic
+Na   zetas                  0.686327000000000  atomic
+Na   zpn                    0.000000000000000  atomic
+Na   zsn                    0.000000000000000  atomic
+Na   fn10                  -1.026036000000000  A_eV
+Na   fn20                   2.014506000000000  A^-2
+Na   fn30                   1.271202000000000  A
+Na   diatomicA      H       0.500326000000000  A^-1
+Na   diatomicX      H       0.207831000000000  dimensionless
+Na   diatomicA      He      1.703029000000000  A^-1
+Na   diatomicX      He      4.282517000000000  dimensionless
+Na   diatomicA      Li      1.267299000000000  A^-1
+Na   diatomicX      Li      0.881482000000000  dimensionless
+Na   diatomicA      Be      1.255480000000000  A^-1
+Na   diatomicX      Be      3.121620000000000  dimensionless
+Na   diatomicA      B       1.569961000000000  A^-1
+Na   diatomicX      B       3.188608000000000  dimensionless
+Na   diatomicA      C       2.196050000000000  A^-1
+Na   diatomicX      C       4.520429000000000  dimensionless
+Na   diatomicA      N       2.494384000000000  A^-1
+Na   diatomicX      N       8.586387000000000  dimensionless
+Na   diatomicA      O       1.981449000000000  A^-1
+Na   diatomicX      O       3.270079000000000  dimensionless
+Na   diatomicA      F       2.619551000000000  A^-1
+Na   diatomicX      F       7.047351000000000  dimensionless
+Na   diatomicA      Ne      1.774236000000000  A^-1
+Na   diatomicX      Ne      1.343037000000000  dimensionless
+Na   diatomicA      Na      0.446435000000000  A^-1
+Na   diatomicX      Na      0.287137000000000  dimensionless
+Na   diatomicA      Mg      1.506773000000000  A^-1
+Na   diatomicX      Mg      8.675618999999999  dimensionless
+Na   diatomicA      Al      1.202871000000000  A^-1
+Na   diatomicX      Al      2.071847000000000  dimensionless
+Na   diatomicA      Si      2.007615000000000  A^-1
+Na   diatomicX      Si      9.237644000000000  dimensionless
+Na   diatomicA      P       1.500320000000000  A^-1
+Na   diatomicX      P       2.837095000000000  dimensionless
+Na   diatomicA      S       1.400850000000000  A^-1
+Na   diatomicX      S       0.852434000000000  dimensionless
+Na   diatomicA      Cl      1.816429000000000  A^-1
+Na   diatomicX      Cl      1.357894000000000  dimensionless
+Na   diatomicA      Ar      2.167677000000000  A^-1
+Na   diatomicX      Ar      3.398138000000000  dimensionless
+Na   diatomicA      K       0.884307000000000  A^-1
+Na   diatomicX      K       5.563027000000000  dimensionless
+Na   diatomicA      Ca      3.107104000000000  A^-1
+Na   diatomicX      Ca      9.657508999999999  dimensionless
+Na   diatomicA      V       2.551010000000000  A^-1
+Na   diatomicX      V       8.276020000000001  dimensionless
+Na   diatomicA      Cr      2.033327000000000  A^-1
+Na   diatomicX      Cr      8.371465000000001  dimensionless
+Na   diatomicA      Br      1.622218000000000  A^-1
+Na   diatomicX      Br      1.752937000000000  dimensionless
+Na   diatomicA      Kr      2.480598000000000  A^-1
+Na   diatomicX      Kr      8.354448000000000  dimensionless
+Na   diatomicA      Nb      2.551010000000000  A^-1
+Na   diatomicX      Nb      8.276020000000001  dimensionless
+Na   diatomicA      Mo      2.440770000000000  A^-1
+Na   diatomicX      Mo      8.286550000000000  dimensionless
+Na   diatomicA      I       1.403090000000000  A^-1
+Na   diatomicX      I       1.986112000000000  dimensionless
+Na   diatomicA      Xe      2.103003000000000  A^-1
+Na   diatomicX      Xe      8.368204000000000  dimensionless
+Na   diatomicA      Ta      2.551120000000000  A^-1
+Na   diatomicX      Ta      8.276130000000000  dimensionless
+Na   diatomicA      W       2.551030000000000  A^-1
+Na   diatomicX      W       8.276040000000000  dimensionless
+Na   diatomicA      Os      2.550740000000000  A^-1
+Na   diatomicX      Os      8.275750000000000  dimensionless
+Na   diatomicA      Ir      2.550820000000000  A^-1
+Na   diatomicX      Ir      8.275829999999999  dimensionless

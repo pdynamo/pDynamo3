@@ -1,0 +1,77 @@
+# . Text parameter file for the element Mn.
+
+Mn   atomicNumber                          25
+Mn   iii                                    4
+Mn   iiid                                   3
+Mn   ir016                                 10
+Mn   ir066                                 10
+Mn   ir244                                  5
+Mn   ir266                                 35
+Mn   ir466                                 35
+Mn   qnd                                    3
+Mn   qnp                                    4
+Mn   qns                                    4
+Mn   ad                     0.390967001346244  atomic
+Mn   alp                    0.000000000000000  A^-1
+Mn   am                     0.227514692986906  atomic
+Mn   aq                     0.391662144688178  atomic
+Mn   betad                -13.473190000000001  eV
+Mn   betap                 -3.479630000000000  eV
+Mn   betas                 -4.185290000000000  eV
+Mn   dd                     1.253510602589700  atomic
+Mn   eheat                 67.700000000000003  kcal/mole
+Mn   eisol               -335.005860460000008  eV
+Mn   f0sd                   7.690920000000000  eV
+Mn   g2sd                   1.105330000000000  eV
+Mn   gp2                    7.262255070000000  eV
+Mn   gphot                  1.000000000000000  dimensionless
+Mn   gpp                    8.284594350000001  eV
+Mn   gsp                    6.757427010000000  eV
+Mn   gss                    6.190989540000000  eV
+Mn   hsp                    1.520518230000000  eV
+Mn   pcore                  0.000000000000000  atomic
+Mn   qq                     1.390227503840173  atomic
+Mn   udd                  -47.655369999999998  eV
+Mn   upp                  -37.543990000000001  eV
+Mn   uss                  -51.460000000000001  eV
+Mn   zcore                  7.000000000000000  atomic
+Mn   zdn                    0.962550000000000  atomic
+Mn   zetad                  2.607800000000000  atomic
+Mn   zetap                  1.525880000000000  atomic
+Mn   zetas                  2.131680000000000  atomic
+Mn   zpn                    1.390740000000000  atomic
+Mn   zsn                    1.132450000000000  atomic
+Mn   diatomicA      H       2.309940000000000  A^-1
+Mn   diatomicX      H       1.269210000000000  dimensionless
+Mn   diatomicA      C       3.000750000000000  A^-1
+Mn   diatomicX      C       2.583110000000000  dimensionless
+Mn   diatomicA      N       2.921470000000000  A^-1
+Mn   diatomicX      N       1.956750000000000  dimensionless
+Mn   diatomicA      O       2.577540000000000  A^-1
+Mn   diatomicX      O       1.285620000000000  dimensionless
+Mn   diatomicA      F       2.791950000000000  A^-1
+Mn   diatomicX      F       1.113070000000000  dimensionless
+Mn   diatomicA      Al      1.768360000000000  A^-1
+Mn   diatomicX      Al      1.040790000000000  dimensionless
+Mn   diatomicA      Si      1.937959000000000  A^-1
+Mn   diatomicX      Si      0.950580000000000  dimensionless
+Mn   diatomicA      P       1.947020000000000  A^-1
+Mn   diatomicX      P       1.130320000000000  dimensionless
+Mn   diatomicA      S       2.482510000000000  A^-1
+Mn   diatomicX      S       1.612650000000000  dimensionless
+Mn   diatomicA      Cl      1.657010000000000  A^-1
+Mn   diatomicX      Cl      0.201850000000000  dimensionless
+Mn   diatomicA      Ca      1.491440000000000  A^-1
+Mn   diatomicX      Ca      0.620180000000000  dimensionless
+Mn   diatomicA      Mn      2.665420000000000  A^-1
+Mn   diatomicX      Mn      2.460040000000000  dimensionless
+Mn   diatomicA      Ge      2.382834000000000  A^-1
+Mn   diatomicX      Ge      2.255151000000000  dimensionless
+Mn   diatomicA      Se      2.648038000000000  A^-1
+Mn   diatomicX      Se      2.180720000000000  dimensionless
+Mn   diatomicA      Br      2.283820000000000  A^-1
+Mn   diatomicX      Br      1.183580000000000  dimensionless
+Mn   diatomicA      Sb      2.400320000000000  A^-1
+Mn   diatomicX      Sb      2.236710000000000  dimensionless
+Mn   diatomicA      I       2.266600000000000  A^-1
+Mn   diatomicX      I       1.193410000000000  dimensionless

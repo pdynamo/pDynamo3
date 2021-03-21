@@ -1,0 +1,14 @@
+# . Space group P11n.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : P -2ab
+Hermann-Mauguin    : P11n
+Schoenflies        : Cs^2
+Space Group Number : 7
+Space Group Symbol : 7:c2
+Setting            : 25
+Transformations :
+    - (x,y,z)
+    - (x+1/2,y+1/2,-z)
+...

@@ -1,0 +1,20 @@
+# . Space group Pman.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2ab 2
+Hermann-Mauguin    : Pman
+Schoenflies        : D2h^7
+Space Group Number : 53
+Space Group Symbol : 53:a-cb
+Setting            : 256
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,y+1/2,-z)
+    - (-x+1/2,-y+1/2,z)
+    - (x,-y,-z)
+    - (-x,-y,-z)
+    - (x+1/2,-y+1/2,z)
+    - (x+1/2,y+1/2,-z)
+    - (-x,y,z)
+...

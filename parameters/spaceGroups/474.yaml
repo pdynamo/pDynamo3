@@ -1,0 +1,24 @@
+# . Space group P6222.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P 62 2c (0 0 1)
+Hermann-Mauguin    : P6222
+Schoenflies        : D6^4
+Space Group Number : 180
+Space Group Symbol : 180
+Setting            : 474
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z+2/3)
+    - (-x+y,-x,z+1/3)
+    - (-x,-y,z)
+    - (y,-x+y,z+2/3)
+    - (x-y,x,z+1/3)
+    - (y,x,-z+2/3)
+    - (x-y,-y,-z)
+    - (-x,-x+y,-z+1/3)
+    - (-y,-x,-z+2/3)
+    - (-x+y,y,-z)
+    - (x,x-y,-z+1/3)
+...

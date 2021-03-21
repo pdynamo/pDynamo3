@@ -1,0 +1,16 @@
+# . Space group P21nm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2 2ac
+Hermann-Mauguin    : P21nm
+Schoenflies        : C2v^7
+Space Group Number : 31
+Space Group Symbol : 31:-cba
+Setting            : 158
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z+1/2)
+    - (x+1/2,-y,z+1/2)
+    - (x,y,-z)
+...

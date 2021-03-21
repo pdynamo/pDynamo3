@@ -1,0 +1,16 @@
+# . Space group P21ma.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2a 2a
+Hermann-Mauguin    : P21ma
+Schoenflies        : C2v^2
+Space Group Number : 26
+Space Group Symbol : 26:cab
+Setting            : 130
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z)
+    - (x+1/2,y,-z)
+    - (x,-y,z)
+...

@@ -1,0 +1,49 @@
+# . Text parameter file for the element Hg.
+
+Hg   atomicNumber                          80
+Hg   iii                                    6
+Hg   iiid                                   5
+Hg   ir016                                  0
+Hg   ir066                                  0
+Hg   ir244                                  0
+Hg   ir266                                  0
+Hg   ir466                                  0
+Hg   qnd                                    0
+Hg   qnp                                    6
+Hg   qns                                    6
+Hg   ad                     0.451536299334346  atomic
+Hg   alp                    1.529377000000000  A^-1
+Hg   am                     0.243453995065903  atomic
+Hg   aq                     0.261835888179270  atomic
+Hg   betad                  0.000000000000000  eV
+Hg   betap                 -3.464031000000000  eV
+Hg   betas                 -3.101365000000000  eV
+Hg   dd                     1.231781085195804  atomic
+Hg   eheat                 14.690000000000000  kcal/mole
+Hg   eisol                -28.899738000000003  eV
+Hg   f0sd                   0.000000000000000  eV
+Hg   g2sd                   0.000000000000000  eV
+Hg   gp2                   16.000740000000000  eV
+Hg   gphot                  1.000000000000000  dimensionless
+Hg   gpp                   14.709282999999999  eV
+Hg   gsp                   10.639296999999999  eV
+Hg   gss                    6.624720000000000  eV
+Hg   hsp                    2.036311000000000  eV
+Hg   pcore                  0.000000000000000  atomic
+Hg   qq                     1.216403318371884  atomic
+Hg   udd                    0.000000000000000  eV
+Hg   upp                  -18.330750999999999  eV
+Hg   uss                  -17.762229000000001  eV
+Hg   zcore                  2.000000000000000  atomic
+Hg   zdn                    0.000000000000000  atomic
+Hg   zetad                  0.000000000000000  atomic
+Hg   zetap                  2.479951000000000  atomic
+Hg   zetas                  1.476885000000000  atomic
+Hg   zpn                    0.000000000000000  atomic
+Hg   zsn                    0.000000000000000  atomic
+Hg   fn10                   1.082720000000000  A_eV
+Hg   fn20                   6.496598000000000  A^-2
+Hg   fn30                   1.195146000000000  A
+Hg   fn11                  -0.096553000000000  A_eV
+Hg   fn21                   3.926281000000000  A^-2
+Hg   fn31                   2.627160000000000  A

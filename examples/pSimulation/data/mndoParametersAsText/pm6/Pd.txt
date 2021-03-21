@@ -1,0 +1,69 @@
+# . Text parameter file for the element Pd.
+
+Pd   atomicNumber                          46
+Pd   iii                                    5
+Pd   iiid                                   4
+Pd   ir016                                  0
+Pd   ir066                                 45
+Pd   ir244                                  0
+Pd   ir266                                 70
+Pd   ir466                                 70
+Pd   qnd                                    4
+Pd   qnp                                    5
+Pd   qns                                    5
+Pd   ad                     0.099318477364897  atomic
+Pd   alp                    0.000000000000000  A^-1
+Pd   am                     0.295594502556603  atomic
+Pd   aq                     0.548961180083759  atomic
+Pd   betad                 -2.394498000000000  eV
+Pd   betap                  0.740037000000000  eV
+Pd   betas                 -8.038245000000000  eV
+Pd   dd                     1.888872930181325  atomic
+Pd   eheat                 90.000000000000000  kcal/mole
+Pd   eisol               -853.253009999999904  eV
+Pd   f0sd                   8.004447000000001  eV
+Pd   g2sd                   2.613148000000000  eV
+Pd   gp2                   26.318283640000001  eV
+Pd   gphot                  1.000000000000000  dimensionless
+Pd   gpp                   30.199555530000001  eV
+Pd   gsp                    9.755041660000000  eV
+Pd   gss                    8.043535340000000  eV
+Pd   hsp                    0.086121360000000  eV
+Pd   pcore                  0.000000000000000  atomic
+Pd   qq                     2.220979111359057  atomic
+Pd   udd                  -85.325300999999996  eV
+Pd   upp                  -21.073361999999999  eV
+Pd   uss                  -76.140196000000003  eV
+Pd   zcore                 10.000000000000000  atomic
+Pd   zdn                    1.630913000000000  atomic
+Pd   zetad                  2.219861000000000  atomic
+Pd   zetap                  1.156718000000000  atomic
+Pd   zetas                  1.658503000000000  atomic
+Pd   zpn                    6.158778000000000  atomic
+Pd   zsn                    1.794085000000000  atomic
+Pd   diatomicA      H       2.183761000000000  A^-1
+Pd   diatomicX      H       0.443269000000000  dimensionless
+Pd   diatomicA      C       4.777192000000000  A^-1
+Pd   diatomicX      C       9.853714999999999  dimensionless
+Pd   diatomicA      N       2.328046000000000  A^-1
+Pd   diatomicX      N       0.249703000000000  dimensionless
+Pd   diatomicA      O       2.154867000000000  A^-1
+Pd   diatomicX      O       0.216403000000000  dimensionless
+Pd   diatomicA      F       4.237312000000000  A^-1
+Pd   diatomicX      F       6.945312000000000  dimensionless
+Pd   diatomicA      Al      1.572720000000000  A^-1
+Pd   diatomicX      Al      1.057290000000000  dimensionless
+Pd   diatomicA      Si      2.948200000000000  A^-1
+Pd   diatomicX      Si      2.225104000000000  dimensionless
+Pd   diatomicA      P       0.803630000000000  A^-1
+Pd   diatomicX      P       0.045017000000000  dimensionless
+Pd   diatomicA      S       2.177801000000000  A^-1
+Pd   diatomicX      S       0.255229000000000  dimensionless
+Pd   diatomicA      Cl      3.871243000000000  A^-1
+Pd   diatomicX      Cl      2.969891000000000  dimensionless
+Pd   diatomicA      Br      5.994879000000000  A^-1
+Pd   diatomicX      Br      4.638051000000000  dimensionless
+Pd   diatomicA      Pd      1.064375000000000  A^-1
+Pd   diatomicX      Pd      0.051956000000000  dimensionless
+Pd   diatomicA      I       5.144544000000000  A^-1
+Pd   diatomicX      I       3.522017000000000  dimensionless

@@ -1,0 +1,20 @@
+# . Space group Pbnm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2c 2ab
+Hermann-Mauguin    : Pbnm
+Schoenflies        : D2h^16
+Space Group Number : 62
+Space Group Symbol : 62:cab
+Setting            : 294
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y+1/2,-z)
+    - (-x,-y,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (-x,-y,-z)
+    - (-x+1/2,y+1/2,z)
+    - (x,y,-z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+...

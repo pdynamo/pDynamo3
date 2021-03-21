@@ -1,0 +1,32 @@
+---
+# . !LennardJonesParameterContainer
+Analytic Form:
+    Equation: 4 * e_ij * ( ( s_ij / r )**12 - ( s_ij / r )**6 )
+    Symbols:
+        e_ij : Epsilon
+        i    : Atom Index 1
+        j    : Atom Index 2
+        r    : Distance
+        s_ij : Sigma
+Label: Book Small Examples
+Style: OPLS
+Units:
+    Epsilon : kcal/mol
+    Sigma   : Angstroms
+Parameter Fields:
+    - Atom Type
+    - Epsilon
+    - Sigma
+Parameter Values:
+    - [ H ,  0.0    ,  0.0     ]
+    - [ HC,  0.03   ,  2.5     ]
+    - [ HW,  0.00   ,  0.0     ]
+    - [ CT,  0.066  ,  3.5     ]
+    - [ C ,  0.105  ,  3.75    ]
+    - [ N ,  0.170  ,  3.25    ]
+    - [ O ,  0.210  ,  2.96    ]
+    - [ OW,  0.1521 ,  3.15061 ]
+    - [ Na,  0.00277,  3.35    ]
+    - [ Cl,  0.11779,  4.18    ]
+    - [ K ,  0.00033,  4.06    ]
+...

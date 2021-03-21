@@ -1,0 +1,28 @@
+# . Space group Fmm2.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : F 2 -2
+Hermann-Mauguin    : Fmm2
+Schoenflies        : C2v^18
+Space Group Number : 42
+Space Group Symbol : 42
+Setting            : 209
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (x,-y,z)
+    - (-x,y,z)
+    - (x,y+1/2,z+1/2)
+    - (-x,-y+1/2,z+1/2)
+    - (x,-y+1/2,z+1/2)
+    - (-x,y+1/2,z+1/2)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,-y,z+1/2)
+    - (x+1/2,-y,z+1/2)
+    - (-x+1/2,y,z+1/2)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y+1/2,z)
+    - (x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,z)
+...

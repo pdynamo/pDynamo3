@@ -1,0 +1,93 @@
+# . Text parameter file for the element Li.
+
+Li   atomicNumber                           3
+Li   iii                                    2
+Li   iiid                                   3
+Li   ir016                                  0
+Li   ir066                                  0
+Li   ir244                                  0
+Li   ir266                                  0
+Li   ir466                                  0
+Li   qnd                                    0
+Li   qnp                                    2
+Li   qns                                    2
+Li   ad                     0.844494264417462  atomic
+Li   alp                    0.000000000000000  A^-1
+Li   am                     0.405562144260552  atomic
+Li   aq                     1.176211654537614  atomic
+Li   betad                  0.000000000000000  eV
+Li   betap                 -7.535573000000000  eV
+Li   betas                 -2.283946000000000  eV
+Li   dd                     0.355853665400326  atomic
+Li   eheat                 38.409999999999997  kcal/mole
+Li   eisol                 -4.709912000000000  eV
+Li   f0sd                   0.000000000000000  eV
+Li   g2sd                   0.000000000000000  eV
+Li   gp2                    9.059036000000001  eV
+Li   gphot                  1.000000000000000  dimensionless
+Li   gpp                   11.543650000000000  eV
+Li   gsp                   19.998646999999998  eV
+Li   gss                   11.035907000000000  eV
+Li   hsp                    1.641886000000000  eV
+Li   pcore                  0.000000000000000  atomic
+Li   qq                     0.414683487043635  atomic
+Li   udd                    0.000000000000000  eV
+Li   upp                   -2.722581000000000  eV
+Li   uss                   -4.709912000000000  eV
+Li   zcore                  1.000000000000000  atomic
+Li   zdn                    0.000000000000000  atomic
+Li   zetad                  0.000000000000000  atomic
+Li   zetap                  2.953445000000000  atomic
+Li   zetas                  0.981041000000000  atomic
+Li   zpn                    0.000000000000000  atomic
+Li   zsn                    0.000000000000000  atomic
+Li   diatomicA      H       2.136265000000000  A^-1
+Li   diatomicX      H       2.191985000000000  dimensionless
+Li   diatomicA      He      3.112403000000000  A^-1
+Li   diatomicX      He      9.273676000000000  dimensionless
+Li   diatomicA      Li      4.714674000000000  A^-1
+Li   diatomicX      Li     16.116384000000000  dimensionless
+Li   diatomicA      Be      2.236728000000000  A^-1
+Li   diatomicX      Be      3.287165000000000  dimensionless
+Li   diatomicA      B       3.759397000000000  A^-1
+Li   diatomicX      B       7.886018000000000  dimensionless
+Li   diatomicA      C       3.241874000000000  A^-1
+Li   diatomicX      C      16.180002000000002  dimensionless
+Li   diatomicA      N       2.640623000000000  A^-1
+Li   diatomicX      N       2.823403000000000  dimensionless
+Li   diatomicA      O       2.584442000000000  A^-1
+Li   diatomicX      O       1.968598000000000  dimensionless
+Li   diatomicA      F       3.043901000000000  A^-1
+Li   diatomicX      F       1.975985000000000  dimensionless
+Li   diatomicA      Ne      2.193666000000000  A^-1
+Li   diatomicX      Ne      0.704958000000000  dimensionless
+Li   diatomicA      Na      1.267299000000000  A^-1
+Li   diatomicX      Na      0.881482000000000  dimensionless
+Li   diatomicA      Mg      1.184380000000000  A^-1
+Li   diatomicX      Mg      2.490250000000000  dimensionless
+Li   diatomicA      Al      1.581593000000000  A^-1
+Li   diatomicX      Al      1.106819000000000  dimensionless
+Li   diatomicA      Si      1.789609000000000  A^-1
+Li   diatomicX      Si      3.090791000000000  dimensionless
+Li   diatomicA      P       1.394544000000000  A^-1
+Li   diatomicX      P       1.122950000000000  dimensionless
+Li   diatomicA      S       2.294275000000000  A^-1
+Li   diatomicX      S       2.642502000000000  dimensionless
+Li   diatomicA      Cl      2.783001000000000  A^-1
+Li   diatomicX      Cl      4.227794000000000  dimensionless
+Li   diatomicA      Ar      3.122895000000000  A^-1
+Li   diatomicX      Ar      3.362910000000000  dimensionless
+Li   diatomicA      K       1.036487000000000  A^-1
+Li   diatomicX      K       4.374567000000000  dimensionless
+Li   diatomicA      Br      2.074441000000000  A^-1
+Li   diatomicX      Br      1.858866000000000  dimensionless
+Li   diatomicA      Kr      3.314562000000000  A^-1
+Li   diatomicX      Kr      8.758697000000000  dimensionless
+Li   diatomicA      I       2.121251000000000  A^-1
+Li   diatomicX      I       4.168599000000000  dimensionless
+Li   diatomicA      Xe      2.466895000000000  A^-1
+Li   diatomicX      Xe      4.582081000000000  dimensionless
+Li   diatomicA      Pb      1.001810000000000  A^-1
+Li   diatomicX      Pb      1.285064000000000  dimensionless
+Li   diatomicA      Bi      0.340140000000000  A^-1
+Li   diatomicX      Bi      0.695320000000000  dimensionless

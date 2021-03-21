@@ -1,0 +1,28 @@
+# . Space group Imma.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -I 2b 2
+Hermann-Mauguin    : Imma
+Schoenflies        : D2h^28
+Space Group Number : 74
+Space Group Symbol : 74
+Setting            : 343
+Transformations :
+    - (x,y,z)
+    - (-x,-y+1/2,z)
+    - (-x,y+1/2,-z)
+    - (x,-y,-z)
+    - (-x,-y,-z)
+    - (x,y+1/2,-z)
+    - (x,-y+1/2,z)
+    - (-x,y,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y,z+1/2)
+    - (-x+1/2,y,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y,-z+1/2)
+    - (x+1/2,-y,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+...

@@ -1,0 +1,28 @@
+---
+# . !LennardJonesParameterContainer
+Analytic Form:
+    Equation: 4 * e_ij * ( ( s_ij / r )**12 - ( s_ij / r )**6 )
+    Symbols:
+        e_ij : Epsilon
+        i    : Atom Index 1
+        j    : Atom Index 2
+        r    : Distance
+        s_ij : Sigma
+Label: Lennard Jones
+Style: OPLS
+Units:
+    Epsilon : kJ/mol
+    Sigma   : Angstroms
+Parameter Fields:
+    - Atom Type
+    - Epsilon
+    - Sigma
+Parameter Values:
+    - [ LJ, 1.0, 1.0 ]
+...
+
+# . Need overall style (e.g. AMBER, Mixed, OPLS) and input style (e.g. AMBER, Mixed, OPLS).
+
+#    Equation: 4 * e_ij * ( ( s_ij / r )**12 - ( s_ij / r )**6 )
+#    Equation: e_ij * ( ( s_ij / r )**12 - 2 * ( s_ij / r )**6 )
+#    Equation: A_ij / r**12 - B_ij / r**6

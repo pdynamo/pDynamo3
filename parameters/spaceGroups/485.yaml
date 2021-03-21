@@ -1,0 +1,36 @@
+# . Space group P6/mmm.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : -P 6 2
+Hermann-Mauguin    : P6/mmm
+Schoenflies        : D6h^1
+Space Group Number : 191
+Space Group Symbol : 191
+Setting            : 485
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-x,-y,z)
+    - (y,-x+y,z)
+    - (x-y,x,z)
+    - (y,x,-z)
+    - (x-y,-y,-z)
+    - (-x,-x+y,-z)
+    - (-y,-x,-z)
+    - (-x+y,y,-z)
+    - (x,x-y,-z)
+    - (-x,-y,-z)
+    - (y,-x+y,-z)
+    - (x-y,x,-z)
+    - (x,y,-z)
+    - (-y,x-y,-z)
+    - (-x+y,-x,-z)
+    - (-y,-x,z)
+    - (-x+y,y,z)
+    - (x,x-y,z)
+    - (y,x,z)
+    - (x-y,-y,z)
+    - (-x,-x+y,z)
+...

@@ -1,0 +1,12 @@
+# . Point group Cs.
+---
+# . !PointGroup
+Label : Cs
+Symmetry Operations :
+    E     :  1
+    sigma :  1
+Character Symmetry Operations : [ E, sigma ]
+Character Table :
+    A" : [ 1.000000 , -1.000000 ]
+    A' : [ 1.000000 ,  1.000000 ]
+...

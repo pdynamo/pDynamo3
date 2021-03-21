@@ -1,0 +1,53 @@
+# . Text parameter file for the element O.
+
+O    atomicNumber                           8
+O    iii                                    2
+O    iiid                                   3
+O    ir016                                  0
+O    ir066                                  0
+O    ir244                                  0
+O    ir266                                  0
+O    ir466                                  0
+O    qnd                                    0
+O    qnp                                    2
+O    qns                                    2
+O    ad                     0.534026393296834  atomic
+O    alp                    3.225308820365000  A^-1
+O    am                     0.579013560920243  atomic
+O    aq                     0.800896682975411  atomic
+O    betad                  0.000000000000000  eV
+O    betap                -24.601939339720001  eV
+O    betas                -44.874553472210998  eV
+O    dd                     0.403741105195964  atomic
+O    eheat                 59.558999999999997  kcal/mole
+O    eisol               -292.188765640229974  eV
+O    f0sd                   0.000000000000000  eV
+O    g2sd                   0.000000000000000  eV
+O    gp2                   12.406095000000001  eV
+O    gphot                  1.000000000000000  dimensionless
+O    gpp                   13.654016000000000  eV
+O    gsp                   10.621160000000000  eV
+O    gss                   15.755760000000000  eV
+O    hsp                    0.593883000000000  eV
+O    pcore                  0.000000000000000  atomic
+O    qq                     0.528360199445518  atomic
+O    udd                    0.000000000000000  eV
+O    upp                  -72.183069806392993  eV
+O    uss                  -87.412505208248007  eV
+O    zcore                  6.000000000000000  atomic
+O    zdn                    0.000000000000000  atomic
+O    zetad                  0.000000000000000  atomic
+O    zetap                  2.318011221656900  atomic
+O    zetas                  3.814565310950800  atomic
+O    zpn                    0.000000000000000  atomic
+O    zsn                    0.000000000000000  atomic
+O    fn10                  -1.138455430040000  A_eV
+O    fn20                   6.000042544737300  A^-2
+O    fn30                   1.622361676390000  A
+O    fn11                   1.146007027440000  A_eV
+O    fn21                   5.963493834867600  A^-2
+O    fn31                   1.614788037990000  A
+O    pddgc0                -0.000999626774000  eV
+O    pddge0                 1.360685029870200  A
+O    pddgc1                -0.001521613505000  eV
+O    pddge1                 1.366406595385300  A

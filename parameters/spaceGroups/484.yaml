@@ -1,0 +1,24 @@
+# . Space group P-62c.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P -6c -2c
+Hermann-Mauguin    : P-62c
+Schoenflies        : D3h^4
+Space Group Number : 190
+Space Group Symbol : 190
+Setting            : 484
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (x,y,-z+1/2)
+    - (-y,x-y,-z+1/2)
+    - (-x+y,-x,-z+1/2)
+    - (y,x,-z)
+    - (x-y,-y,-z)
+    - (-x,-x+y,-z)
+    - (y,x,z+1/2)
+    - (x-y,-y,z+1/2)
+    - (-x,-x+y,z+1/2)
+...

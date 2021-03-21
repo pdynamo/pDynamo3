@@ -1,0 +1,12 @@
+---
+# . !MMSequenceVariant
+Atom Fields: [ Label, Type, Charge ]
+Atoms:
+- [ N , NH3, -0.30 ]
+- [ CA, CT1,  0.21 ]
+- [ H1, HC ,  0.33 ]
+- [ H2, HC ,  0.33 ]
+- [ H3, HC ,  0.33 ]
+- [ HA, HB ,  0.10 ]
+Label: N Terminal
+...

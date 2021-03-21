@@ -1,0 +1,16 @@
+# . Space group Pca21.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P 2c -2ac
+Hermann-Mauguin    : Pca21
+Schoenflies        : C2v^5
+Space Group Number : 29
+Space Group Symbol : 29
+Setting            : 143
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (x+1/2,-y,z)
+    - (-x+1/2,y,z+1/2)
+...

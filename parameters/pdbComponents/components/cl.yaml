@@ -1,0 +1,4 @@
+# . !PDBComponent
+{Atom Fields: [Atomic Number, Formal Charge, Label], Atoms: [[17, -1,
+      CL]], Component Class: Non-Polymer, Formal Charge: -1, Is Heteroatom: true,
+  Label: CL, Name: '"CHLORIDE ION"', PDB Class: Hetai}

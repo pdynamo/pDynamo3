@@ -1,0 +1,12 @@
+# . !GaussianBasis
+Atomic Number: 15
+Basis Type: Orbital
+Is Spherical: false
+Normalization Type: Symmetric
+Normalized Primitives: true
+Primitive Fields: [Exponent, Coefficients]
+Shells: [{Primitives: [[1054.9, [0.065541]], [159.195, [0.384036]], [34.5304, [0.674541]]],
+    Type: S}, {Primitives: [[44.2866, [-0.10213, 0.110851]], [10.1019, [0.081592,
+          0.456495]], [2.73997, [0.969788, 0.606936]]], Type: SP}, {Primitives: [
+      [1.21865, [-0.371495, 0.091582]], [0.395546, [1.27099, 0.934924]]], Type: SP},
+  {Primitives: [[0.122811, [1.0, 1.0]]], Type: SP}]

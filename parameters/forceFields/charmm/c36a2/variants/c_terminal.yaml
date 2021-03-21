@@ -1,0 +1,9 @@
+---
+# . !MMSequenceVariant
+Atom Fields: [ Label, Type, Charge ]
+Atoms:
+  - [ C  , CC,  0.34 ]
+  - [ O  , OC, -0.67 ]
+  - [ OXT, OC, -0.67 ]
+Label: C Terminal
+...

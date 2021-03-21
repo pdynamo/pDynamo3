@@ -1,0 +1,20 @@
+# . Space group I-4.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : I -4
+Hermann-Mauguin    : I-4
+Schoenflies        : S4^2
+Space Group Number : 82
+Space Group Symbol : 82
+Setting            : 356
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (y+1/2,-x+1/2,-z+1/2)
+    - (-y+1/2,x+1/2,-z+1/2)
+...

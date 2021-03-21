@@ -1,0 +1,16 @@
+# . !GaussianBasis
+Atomic Number: 50
+Basis Type: Coulomb
+Is Spherical: true
+Normalization Type: Symmetric
+Normalized Primitives: true
+Primitive Fields: [Exponent, Coefficients]
+Shells: [{Primitives: [[1.63491, [0.18462982]], [0.831686, [-0.56706446]]], Type: S},
+  {Primitives: [[0.429717, [0.32757066]]], Type: S}, {Primitives: [[0.224136, [0.16911216]]],
+    Type: S}, {Primitives: [[0.117278, [0.07906556]]], Type: S}, {Primitives: [[2.069103,
+        [-0.01212238]], [0.815525, [0.00895817]]], Type: P}, {Primitives: [[0.335016,
+        [0.01978109]]], Type: P}, {Primitives: [[0.13959, [0.00261012]]], Type: P},
+  {Primitives: [[2.662512, [-0.00120082]], [0.996546, [0.01427633]]], Type: D}, {
+    Primitives: [[0.389458, [-0.03765449]]], Type: D}, {Primitives: [[0.154476, [
+          -0.01771634]]], Type: D}, {Primitives: [[0.365999, [1.0]]], Type: F}, {
+    Primitives: [[0.366, [1.0]]], Type: G}]

@@ -1,0 +1,21 @@
+---
+
+# . Properties for solvents.
+# . Values are representative values only (where appropriate at 298 K).
+# . Units (K, kg m^-3, N m^-1, Cp = 10^-3 Pa s).
+
+water :
+    label              : "Water"
+    pdbComponent       : HOH
+    pdbAtoms           : [ O, H1, H2 ]
+    symbol             : "H2O"
+
+    boilingPoint       : 373.15
+    density            : 997.0
+    dielectricConstant : 78.54
+    meltingPoint       : 273.15
+    refractiveIndex    : 1.332
+    surfaceTension     : 0.072
+    viscosity          : 0.89
+
+...

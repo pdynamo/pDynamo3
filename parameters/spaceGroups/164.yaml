@@ -1,0 +1,16 @@
+# . Space group Pna21.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P 2c -2n
+Hermann-Mauguin    : Pna21
+Schoenflies        : C2v^9
+Space Group Number : 33
+Space Group Symbol : 33
+Setting            : 164
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,z+1/2)
+...

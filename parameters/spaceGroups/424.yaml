@@ -1,0 +1,44 @@
+# . Space group I4/mmm.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -I 4 2
+Hermann-Mauguin    : I4/mmm
+Schoenflies        : D4h^17
+Space Group Number : 139
+Space Group Symbol : 139
+Setting            : 424
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (y,x,-z)
+    - (-y,-x,-z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x,-y,z)
+    - (-x,y,z)
+    - (-y,-x,z)
+    - (y,x,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-y+1/2,x+1/2,z+1/2)
+    - (y+1/2,-x+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (y+1/2,x+1/2,-z+1/2)
+    - (-y+1/2,-x+1/2,-z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (y+1/2,-x+1/2,-z+1/2)
+    - (-y+1/2,x+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (-y+1/2,-x+1/2,z+1/2)
+    - (y+1/2,x+1/2,z+1/2)
+...

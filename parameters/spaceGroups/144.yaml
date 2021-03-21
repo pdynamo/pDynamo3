@@ -1,0 +1,16 @@
+# . Space group Pbc21.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P 2c -2b
+Hermann-Mauguin    : Pbc21
+Schoenflies        : C2v^5
+Space Group Number : 29
+Space Group Symbol : 29:ba-c
+Setting            : 144
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (-x,y+1/2,z)
+    - (x,-y+1/2,z+1/2)
+...

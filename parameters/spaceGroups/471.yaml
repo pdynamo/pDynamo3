@@ -1,0 +1,24 @@
+# . Space group P622.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P 6 2
+Hermann-Mauguin    : P622
+Schoenflies        : D6^1
+Space Group Number : 177
+Space Group Symbol : 177
+Setting            : 471
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-x,-y,z)
+    - (y,-x+y,z)
+    - (x-y,x,z)
+    - (y,x,-z)
+    - (x-y,-y,-z)
+    - (-x,-x+y,-z)
+    - (-y,-x,-z)
+    - (-x+y,y,-z)
+    - (x,x-y,-z)
+...

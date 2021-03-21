@@ -1,0 +1,16 @@
+# . Space group P1121/b.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : -P 2bc
+Hermann-Mauguin    : P1121/b
+Schoenflies        : C2h^5
+Space Group Number : 14
+Space Group Symbol : 14:c3
+Setting            : 86
+Transformations :
+    - (x,y,z)
+    - (-x,-y+1/2,z+1/2)
+    - (-x,-y,-z)
+    - (x,y+1/2,-z+1/2)
+...

@@ -1,0 +1,9 @@
+---
+# . !MMAtomTypeContainer
+Label: Lennard-Jones
+Parameter Fields:
+    - Label
+    - Atomic Number
+Parameter Values:
+    - [ LJ, 18 ]
+...

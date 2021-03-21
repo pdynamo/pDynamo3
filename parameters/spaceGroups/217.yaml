@@ -1,0 +1,20 @@
+# . Space group Im2m.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : I -2 -2
+Hermann-Mauguin    : Im2m
+Schoenflies        : C2v^20
+Space Group Number : 44
+Space Group Symbol : 44:bca
+Setting            : 217
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (-x,y,z)
+    - (x,y,-z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+...

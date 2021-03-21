@@ -1,0 +1,71 @@
+# . Text parameter file for the element Ba.
+
+Ba   atomicNumber                          56
+Ba   iii                                    6
+Ba   iiid                                   5
+Ba   ir016                                  0
+Ba   ir066                                  0
+Ba   ir244                                  0
+Ba   ir266                                  0
+Ba   ir466                                  0
+Ba   qnd                                    0
+Ba   qnp                                    6
+Ba   qns                                    6
+Ba   ad                     0.207932201883278  atomic
+Ba   alp                    0.000000000000000  A^-1
+Ba   am                     0.132327818364428  atomic
+Ba   aq                     0.176388114688945  atomic
+Ba   betad                  0.000000000000000  eV
+Ba   betap                 -6.335160000000000  eV
+Ba   betas                 10.003125000000001  eV
+Ba   dd                     2.653733977146536  atomic
+Ba   eheat                 42.500000000000000  kcal/mole
+Ba   eisol                -15.013146999999998  eV
+Ba   f0sd                   0.000000000000000  eV
+Ba   g2sd                   0.000000000000000  eV
+Ba   gp2                    3.142783000000000  eV
+Ba   gphot                  1.000000000000000  dimensionless
+Ba   gpp                    3.345166000000000  eV
+Ba   gsp                    4.740579000000000  eV
+Ba   gss                    3.600823000000000  eV
+Ba   hsp                    0.929429000000000  eV
+Ba   pcore                  0.000000000000000  atomic
+Ba   qq                     2.109319881353960  atomic
+Ba   udd                    0.000000000000000  eV
+Ba   upp                   -8.826713000000000  eV
+Ba   uss                   -9.306984999999999  eV
+Ba   zcore                  2.000000000000000  atomic
+Ba   zdn                    0.000000000000000  atomic
+Ba   zetad                  0.000000000000000  atomic
+Ba   zetap                  1.430139000000000  atomic
+Ba   zetas                  1.395379000000000  atomic
+Ba   zpn                    0.000000000000000  atomic
+Ba   zsn                    0.000000000000000  atomic
+Ba   diatomicA      H       6.000135000000000  A^-1
+Ba   diatomicX      H       2.040004000000000  dimensionless
+Ba   diatomicA      C       0.770626000000000  A^-1
+Ba   diatomicX      C       0.119793000000000  dimensionless
+Ba   diatomicA      N       1.148233000000000  A^-1
+Ba   diatomicX      N       0.207934000000000  dimensionless
+Ba   diatomicA      O       1.283018000000000  A^-1
+Ba   diatomicX      O       0.348945000000000  dimensionless
+Ba   diatomicA      F       3.000618000000000  A^-1
+Ba   diatomicX      F       5.575255000000000  dimensionless
+Ba   diatomicA      Al      2.105924000000000  A^-1
+Ba   diatomicX      Al      9.539099000000000  dimensionless
+Ba   diatomicA      Si      1.240420000000000  A^-1
+Ba   diatomicX      Si      1.212660000000000  dimensionless
+Ba   diatomicA      S       0.705188000000000  A^-1
+Ba   diatomicX      S       0.215386000000000  dimensionless
+Ba   diatomicA      Cl      1.071044000000000  A^-1
+Ba   diatomicX      Cl      0.160177000000000  dimensionless
+Ba   diatomicA      Ti      2.176040000000000  A^-1
+Ba   diatomicX      Ti      9.493530000000000  dimensionless
+Ba   diatomicA      Br      1.190346000000000  A^-1
+Ba   diatomicX      Br      0.828794000000000  dimensionless
+Ba   diatomicA      I       0.982528000000000  A^-1
+Ba   diatomicX      I       0.835597000000000  dimensionless
+Ba   diatomicA      Ba      0.339269000000000  A^-1
+Ba   diatomicX      Ba      0.356186000000000  dimensionless
+Ba   diatomicA      Hf      2.264830000000000  A^-1
+Ba   diatomicX      Hf      9.022520000000000  dimensionless

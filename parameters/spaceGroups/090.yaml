@@ -1,0 +1,20 @@
+# . Space group C12/c1.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : -C 2yc
+Hermann-Mauguin    : C12/c1
+Schoenflies        : C2h^6
+Space Group Number : 15
+Space Group Symbol : 15:b1
+Setting            : 90
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z+1/2)
+    - (-x,-y,-z)
+    - (x,-y,z+1/2)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (-x+1/2,-y+1/2,-z)
+    - (x+1/2,-y+1/2,z+1/2)
+...

@@ -1,0 +1,20 @@
+# . Space group Pnmm:1.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P 2bc 2 -1bc
+Hermann-Mauguin    : Pnmm:1
+Schoenflies        : D2h^13
+Space Group Number : 59
+Space Group Symbol : 59:1cab
+Setting            : 280
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (-x,-y+1/2,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (-x,-y+1/2,-z+1/2)
+    - (-x,y+1/2,z+1/2)
+    - (x,y,-z)
+    - (x,-y,z)
+...

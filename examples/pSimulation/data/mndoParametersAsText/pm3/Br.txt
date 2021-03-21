@@ -1,0 +1,49 @@
+# . Text parameter file for the element Br.
+
+Br   atomicNumber                          35
+Br   iii                                    4
+Br   iiid                                   4
+Br   ir016                                  0
+Br   ir066                                  0
+Br   ir244                                  0
+Br   ir266                                  0
+Br   ir466                                  0
+Br   qnd                                    0
+Br   qnp                                    4
+Br   qns                                    4
+Br   ad                     0.675526054230990  atomic
+Br   alp                    2.511842000000000  A^-1
+Br   am                     0.585910123187636  atomic
+Br   aq                     0.382366239103764  atomic
+Br   betad                  0.000000000000000  eV
+Br   betap                 -6.814013000000000  eV
+Br   betas                -31.171341999999999  eV
+Br   dd                     0.275902498421409  atomic
+Br   eheat                 26.739999999999998  kcal/mole
+Br   eisol               -352.539896999999939  eV
+Br   f0sd                   0.000000000000000  eV
+Br   g2sd                   0.000000000000000  eV
+Br   gp2                    7.816849000000000  eV
+Br   gphot                  1.000000000000000  dimensionless
+Br   gpp                    8.282762999999999  eV
+Br   gsp                   16.061679999999999  eV
+Br   gss                   15.943425000000000  eV
+Br   hsp                    0.578869000000000  eV
+Br   pcore                  0.000000000000000  atomic
+Br   qq                     0.997053165111531  atomic
+Br   udd                    0.000000000000000  eV
+Br   upp                  -74.227129000000005  eV
+Br   uss                 -116.619310999999996  eV
+Br   zcore                  7.000000000000000  atomic
+Br   zdn                    0.000000000000000  atomic
+Br   zetad                  0.000000000000000  atomic
+Br   zetap                  2.127590000000000  atomic
+Br   zetas                  5.348457000000000  atomic
+Br   zpn                    0.000000000000000  atomic
+Br   zsn                    0.000000000000000  atomic
+Br   fn10                   0.960458000000000  A_eV
+Br   fn20                   5.976508000000000  A^-2
+Br   fn30                   2.321654000000000  A
+Br   fn11                  -0.954916000000000  A_eV
+Br   fn21                   5.944703000000000  A^-2
+Br   fn31                   2.328142000000000  A

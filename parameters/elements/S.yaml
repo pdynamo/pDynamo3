@@ -1,0 +1,23 @@
+---
+# . !Element
+Allen Electronegativity        : 2.589
+Atomic Number                  : 16
+Bragg Radius                   : 1.0
+Coordination Angles            : {2     : 105.0, 3     : 120.0}
+Covalent Radius                : 1.02
+Group                          : 16
+Mass                           : 32.066
+Maximum Orbital Quantum Number : 1
+Name                           : Sulfur
+Pauling Electronegativity      : 2.58
+Period                         : 3
+RGB Color Indices              : [255, 255, 48]
+Single Bond Distances          : {8     : 1.57, 1     : 1.35, 6     : 1.82, 16     : 2.05}
+Symbol                         : S
+Valence Electrons              : 6
+vdW Radius                     : 2.0
+d Quantum Number               : 0
+f Quantum Number               : 0
+p Quantum Number               : 3
+s Quantum Number               : 3
+...

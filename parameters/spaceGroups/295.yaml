@@ -1,0 +1,20 @@
+# . Space group Pcmn.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2n 2ac
+Hermann-Mauguin    : Pcmn
+Schoenflies        : D2h^16
+Space Group Number : 62
+Space Group Symbol : 62:-cba
+Setting            : 295
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z+1/2)
+    - (-x,y+1/2,-z)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-x,-y,-z)
+    - (-x+1/2,y,z+1/2)
+    - (x,-y+1/2,z)
+    - (x+1/2,y+1/2,-z+1/2)
+...

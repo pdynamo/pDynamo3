@@ -1,0 +1,16 @@
+# . Space group Pnn2.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P 2 -2n
+Hermann-Mauguin    : Pnn2
+Schoenflies        : C2v^10
+Space Group Number : 34
+Space Group Symbol : 34
+Setting            : 170
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+...

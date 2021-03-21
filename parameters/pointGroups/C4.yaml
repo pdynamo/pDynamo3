@@ -1,0 +1,13 @@
+# . Point group C4.
+---
+# . !PointGroup
+Label : C4
+Symmetry Operations :
+    C4 :  1
+    E  :  1
+Character Symmetry Operations : [ E, C4 ]
+Character Table :
+    A : [ 1.000000 ,  1.000000 ]
+    B : [ 1.000000 , -1.000000 ]
+    E : [ 2.000000 ,  0.000000 ]
+...

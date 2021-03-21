@@ -1,0 +1,28 @@
+# . Space group P4/ncc:2.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -P 4a 2ac
+Hermann-Mauguin    : P4/ncc:2
+Schoenflies        : D4h^8
+Space Group Number : 130
+Space Group Symbol : 130:2
+Setting            : 411
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-y+1/2,x,z)
+    - (y,-x+1/2,z)
+    - (-x,y+1/2,-z+1/2)
+    - (x+1/2,-y,-z+1/2)
+    - (y+1/2,x+1/2,-z+1/2)
+    - (-y,-x,-z+1/2)
+    - (-x,-y,-z)
+    - (x+1/2,y+1/2,-z)
+    - (y+1/2,-x,-z)
+    - (-y,x+1/2,-z)
+    - (x,-y+1/2,z+1/2)
+    - (-x+1/2,y,z+1/2)
+    - (-y+1/2,-x+1/2,z+1/2)
+    - (y,x,z+1/2)
+...

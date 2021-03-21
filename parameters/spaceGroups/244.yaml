@@ -1,0 +1,20 @@
+# . Space group Pmam.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2 2a
+Hermann-Mauguin    : Pmam
+Schoenflies        : D2h^5
+Space Group Number : 51
+Space Group Symbol : 51:a-cb
+Setting            : 244
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,y,-z)
+    - (-x,-y,z)
+    - (x+1/2,-y,-z)
+    - (-x,-y,-z)
+    - (x+1/2,-y,z)
+    - (x,y,-z)
+    - (-x+1/2,y,z)
+...

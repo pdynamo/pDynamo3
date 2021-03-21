@@ -1,0 +1,350 @@
+Br  C      1.98000  300.00000
+Br  CA     1.87000  300.00000     wlj
+Br  CM     1.90000  300.00000     wlj
+Br  CT     1.94500  245.00000     wlj
+Br  CZ     1.78400  330.00000     wlj
+Br  DM     0.30000  300.00000     wlj
+Br  Si     2.19000  151.00000     wlj
+C   C      1.51000  350.00000     wlj oxalic acid, etc.
+C   C!     1.46000  385.00000     wlj
+C   C2     1.52200  317.00000     GLY,ASP,GLU
+C   C3     1.52200  317.00000     END
+C   C=     1.46000  385.00000     wlj acrolein
+C   CA     1.49000  400.00000     wlj 8/97
+C   CB     1.41900  447.00000     GUA
+C   CD     1.40000  469.00000     TYR
+C   CH     1.52200  317.00000     AA
+C   CJ     1.44400  410.00000     URA
+C   CM     1.44400  410.00000     THY
+C   CT     1.52200  317.00000
+C   CW     1.49000  400.00000     bhap,                   copy from C -CA         rcr HIVRT
+C   Cl     1.79000  300.00000     wlj
+C   F      1.35700  420.00000     wlj
+C   HC     1.09000  340.00000     wlj 7/96
+C   N      1.33500  490.00000     AA
+C   N*     1.38300  424.00000     CYT,URA
+C   N=     1.29000  457.00000     imine
+C   NA     1.38800  418.00000     URAGUA
+C   NC     1.35800  457.00000     CYT
+C   NM     1.33500  490.00000     AA
+C   NT     1.52200  317.00000     nev,                    copy from C -CT         rcr HIVRT
+C   O      1.22900  570.00000     URAGUA,CYT,AA
+C   O2     1.25000  656.00000     GLU,ASP
+C   OH     1.36400  450.00000     TYR
+C   OS     1.32700  214.00000     J.Comp.Chem.1990,11,1181 SKF8
+C   S=     1.64000  400.00000     wlj thioamide, etc.
+C!  C!     1.46000  385.00000     wlj
+C!  CA     1.40000  469.00000
+C!  CM     1.46000  385.00000     wlj
+C!  CR     1.46000  385.00000     wlj
+C!  CS     1.46000  385.00000     wlj
+C!  CU     1.46000  385.00000     wlj
+C!  CV     1.46000  385.00000     wlj
+C!  CW     1.46000  385.00000     wlj
+C!  NA     1.44000  385.00000     wlj
+C!  NC     1.33900  483.00000     wlj
+C$  CY     1.52200  317.00000     wj
+C$  N$     1.33500  490.00000     wj
+C$  O      1.22900  570.00000     wj
+C*  C2     1.49500  317.00000     TRP(OL)
+C*  CB     1.45900  388.00000     TRP
+C*  CC     1.35200  546.00000     TRP
+C*  CG     1.35200  546.00000     TRP
+C*  CT     1.49500  317.00000     TRP(OL)
+C*  CW     1.35200  546.00000     TRP
+C*  HC     1.08000  340.00000
+C+  CT     1.46000  532.80000     wlj - JACS 94, 4632 (1972)
+C+  HC     1.08400  532.80000     wlj -      "
+C2  C2     1.52600  260.00000     AA(OL)
+C2  C3     1.52600  260.00000     ILE(OL)
+C2  C7     1.50000  317.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C8     1.50000  317.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  CA     1.51000  317.00000     PHE,TYR
+C2  CC     1.50400  317.00000     HIS
+C2  CD     1.51000  317.00000     PHE,TYR
+C2  CH     1.52600  260.00000     AA,SUG
+C2  CO     1.52600  260.00000     "
+C2  CT     1.52600  260.00000     Added DSM (from C2-CH)
+C2  F      1.38000  367.00000     wlj
+C2  N      1.44900  337.00000     GLY(OL)
+C2  N2     1.46300  337.00000     ARG(OL)
+C2  N3     1.47100  367.00000     LYS(OL)
+C2  NT     1.44800  382.00000     JACS 112, 8314 (90)
+C2  OH     1.42500  386.00000     SUG(OL),SER
+C2  OS     1.42500  320.00000     SUG(OL)
+C2  S      1.81000  222.00000     CYX(OL)
+C2  SH     1.81000  222.00000     CYS(OL)
+C3  C3     1.52600  260.00000     Ethane
+C3  C7     1.50000  317.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  C8     1.50000  317.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  CH     1.52600  260.00000     ALA
+C3  CM     1.51000  317.00000     THY(use std C-C)
+C3  CO     1.52600  260.00000     "
+C3  CT     1.52600  260.00000     Added DSM (from C3-CH)
+C3  N      1.44900  337.00000     TEST!!!!
+C3  N*     1.47500  337.00000     9 methyl bases
+C3  N2     1.46300  337.00000     ARG(OL)
+C3  N3     1.47100  367.00000
+C3  NT     1.44800  382.00000     "
+C3  OH     1.42500  386.00000     SUG(OL),SER
+C3  OS     1.42500  320.00000     DMP
+C3  S      1.81000  222.00000     MET(OL)
+C3  SH     1.81000  222.00000     CYS(OL)
+C3  SY     1.81000  222.00000
+C7  C7     1.34000  530.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C7  C8     1.34000  530.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C7  C9     1.34000  530.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C7  CH     1.50000  317.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C7  CT     1.50000  317.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  C8     1.34000  530.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  C9     1.34000  530.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  CH     1.50000  317.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  CT     1.50000  317.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  SY     1.76000  222.00000
+C9  C9     1.34000  530.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C=  C=     1.46000  385.00000     wlj 1,3-diene 3/97
+C=  CM     1.34000  549.00000     wlj
+C=  CT     1.51000  317.00000     wlj
+C=  CW     1.36500  549.00000
+C=  HC     1.08000  340.00000     wlj
+C=  N=     1.42800  415.00000     wlj azadiene 9/02
+CA  CA     1.40000  469.00000     TRP,TYR,PHE
+CA  CB     1.40400  469.00000     ADE
+CA  CC     1.40000  469.00000     TRP
+CA  CD     1.40000  469.00000     PHE,TYR
+CA  CJ     1.43300  427.00000     CYT
+CA  CM     1.43300  427.00000
+CA  CN     1.40000  469.00000     TRP
+CA  CT     1.51000  317.00000     PHE,TYR
+CA  CU     1.42100  469.00000     "
+CA  CW     1.36700  546.00000     pyrrole - wlj
+CA  CY     1.49000  317.00000     wlj
+CA  CZ     1.45100  400.00000     wlj 9/98
+CA  Cl     1.72500  300.00000     wlj
+CA  DM     0.30000  367.00000     wlj
+CA  F      1.35400  420.00000     wlj
+CA  HA     1.08000  367.00000     PHE, etc.
+CA  I      2.08000  250.00000     wlj
+CA  N      1.38100  427.00000     Added DSM (from GUA)
+CA  N2     1.34000  481.00000     ARG
+CA  N3     1.45000  400.00000     LYS(OL)
+CA  NA     1.38100  427.00000     GUA
+CA  NB     1.39100  414.00000     Added DSM (from CB-NB)
+CA  NC     1.33900  483.00000     ADE,GUA,CYT
+CA  NO     1.46000  400.00000     wlj nitro
+CA  NT     1.34000  481.00000     wj/rr anilines
+CA  NY     1.38500  382.00000     jtr - neutral Arg; MLL
+CA  NZ     1.41000  400.00000     wlj 10/04  isonitrile
+CA  OH     1.36400  450.00000
+CA  OS     1.36400  450.00000     wlj
+CA  P      1.78000  220.00000
+CA  S      1.76000  250.00000     thioanisole             copy from CW-S          rcr HIVRT
+CA  SH     1.74000  250.00000     wlj
+CA  SY     1.77000  340.00000
+CB  CB     1.37000  520.00000     ADE,GUA
+CB  CC     1.37000  520.00000     Added DSM (from CB-CB)
+CB  CD     1.40000  469.00000     TRP
+CB  CN     1.41900  447.00000     TRP
+CB  CS     1.42400  469.00000     "
+CB  CT     1.51000  317.00000     Added DSM (from CA-CT)
+CB  N*     1.37400  436.00000     ADE,GUA
+CB  NA     1.37400  436.00000     wlj
+CB  NB     1.39100  414.00000     ADE,GUA,HIS
+CB  NC     1.35400  461.00000     ADE,GUA
+CB  OS     1.36000  340.00000     wlj
+CC  CD     1.40000  469.00000     TRP
+CC  CF     1.37500  512.00000     HIS
+CC  CG     1.37100  518.00000     HIS
+CC  CT     1.50400  317.00000     HIS
+CC  CV     1.37500  512.00000     HIS
+CC  CW     1.37100  518.00000     HIS
+CC  NA     1.38500  422.00000     HIS
+CC  NB     1.39400  410.00000     ADE,GUA,HIS
+CD  CD     1.40000  469.00000     TRP,TYR,PHE
+CD  CN     1.40000  469.00000     TRP
+CE  N*     1.37100  440.00000     ADE,GUA
+CE  NB     1.30400  529.00000     ADE,GUA
+CF  NB     1.39400  410.00000     ADE,GUA,HIS
+CG  NA     1.38100  427.00000     TRP,HIS
+CH  CH     1.52600  260.00000     SUG(as in CH-C2),ILE
+CH  N      1.44900  337.00000     AA
+CH  N*     1.47500  337.00000     ADE,GUA,CYT,URA
+CH  NT     1.44800  382.00000     wlj - MM3 based
+CH  OH     1.42500  386.00000     RSUG,THR
+CH  OS     1.42500  320.00000     SUG
+CI  NC     1.32400  502.00000     ADE
+CJ  CJ     1.35000  549.00000     URA,CYT
+CJ  CM     1.35000  549.00000     THY
+CJ  N*     1.36500  448.00000     URA,CYT
+CK  H5     1.08000  367.00000
+CK  HA     1.08000  340.00000
+CK  N*     1.37100  440.00000
+CK  NA     1.37100  440.00000
+CK  NB     1.30400  529.00000
+CM  CM     1.34000  549.00000     wlj
+CM  CT     1.51000  317.00000     wlj
+CM  CY     1.51000  317.00000     hept,                   copy from CM-CT         rcr HIVRT
+CM  Cl     1.72500  300.00000     wlj
+CM  F      1.34000  420.00000     wlj
+CM  H4     1.08000  367.00000
+CM  HC     1.08000  340.00000     wlj
+CM  N*     1.36500  448.00000
+CM  NA     1.36500  448.00000     copy from above for CytH+ (jtr 5-14-91)
+CM  OH     1.37000  450.00000     wlj
+CM  OS     1.37000  450.00000     wlj
+CM  S      1.76000  250.00000     hept,                   copy from CW-S          rcr HIVRT
+CN  NA     1.38000  428.00000     TRP
+CO  CT     1.52900  268.00000     =CT-CT - wd 3/95
+CO  HC     1.09000  340.00000     =CT-HC - wd 3/95
+CO  N*     1.47500  337.00000     jtr (12/7/01)
+CO  OH     1.38000  320.00000     =CO-OS - wd 3/96
+CO  OS     1.38000  320.00000     Acetal - wlj 2/93
+CP  NA     1.34300  477.00000     HIS
+CP  NB     1.33500  488.00000     HIS(MOD)
+CQ  H5     1.08000  367.00000
+CQ  HA     1.08000  367.00000
+CQ  N      1.38100  427.00000     wlj
+CQ  N2     1.34000  481.00000     wlj
+CQ  NC     1.32400  502.00000
+CR  CS     1.37000  520.00000     wj
+CR  H5     1.08000  367.00000
+CR  HA     1.08000  367.00000
+CR  N2     1.34000  481.00000     wlj
+CR  NA     1.34300  477.00000     HIS
+CR  NB     1.33500  488.00000     HIS(MOD)
+CR  NC     1.35400  461.00000     wj
+CR  OS     1.35700  462.00000     "
+CR  S      1.76000  250.00000     wlj
+CS  CS     1.42400  469.00000     "
+CS  CT     1.49500  317.00000     wlj
+CS  CW     1.36700  546.00000     wj/nm
+CS  HA     1.08000  367.00000     "
+CT  CT     1.52900  268.00000     CHARMM 22 parameter file
+CT  CV     1.50400  317.00000     jtr: HIE CB-CG
+CT  CW     1.50400  317.00000     jtr: HID CB-CG
+CT  CX     1.50400  317.00000     jtr: HIP CB-CG
+CT  CY     1.51000  280.00000     "
+CT  CZ     1.47000  390.00000     wlj 9/98 do 11/98
+CT  Cl     1.78100  245.00000     wlj - from MM2 (Tet 31, 1971 (75))
+CT  DM     0.30000  340.00000     wlj
+CT  F      1.33200  367.00000     PAK CT-F for CHF3 (emd 5-09-94)
+CT  HC     1.09000  340.00000     CHARMM 22 parameter file
+CT  I      2.19000  200.00000     wlj see JPOC 7, 420 (1994)
+CT  N      1.44900  337.00000
+CT  N$     1.44900  337.00000     wj
+CT  N*     1.47500  337.00000
+CT  N2     1.46300  337.00000     ARG(OL)
+CT  N3     1.47100  367.00000     LYS(OL)
+CT  NA     1.47500  337.00000     copy from above for CytH+ (jtr 5-14-91)
+CT  NC     1.44900  337.00000     wj azide
+CT  NM     1.44900  337.00000
+CT  NO     1.49000  375.00000     wlj nitro
+CT  NT     1.44800  382.00000     "
+CT  NY     1.44800  382.00000     jtr - neutral Arg; MLL
+CT  NZ     1.43000  390.00000     wlj 10/04  isonitrile
+CT  OH     1.41000  320.00000
+CT  OS     1.41000  320.00000
+CT  P      1.84300  212.00000     wlj 11/95 MM3 based JACS 114, 8536 (92)
+CT  P+     1.82000  212.00000     wlj 9/97
+CT  S      1.81000  222.00000     CYX(OL)
+CT  SH     1.81000  222.00000     CYS(OL)
+CT  SY     1.77000  340.00000
+CT  SZ     1.79000  340.00000
+CT  Si     1.86000  187.00000     wlj MMFF-based
+CU  CW     1.37000  520.00000     wlj
+CU  HA     1.08000  367.00000     "
+CU  NB     1.32000  410.00000     "
+CV  CW     1.37000  520.00000     wlj imidazole
+CV  H4     1.08000  367.00000
+CV  HA     1.08000  367.00000
+CV  NB     1.39400  410.00000     ADE,GUA,HIS
+CW  CW     1.37500  512.00000
+CW  H4     1.08000  367.00000
+CW  HA     1.08000  367.00000     pyrrole - wlj
+CW  NA     1.38100  427.00000     TRP,HIS
+CW  NB     1.39400  410.00000
+CW  OS     1.36000  340.00000     Furan  - wlj 4/97
+CW  S      1.74000  250.00000     wlj
+CX  CX     1.37000  520.00000     copy from CV-CW for HIP
+CX  HA     1.08000  367.00000     jtr - HIP
+CX  NA     1.38100  427.00000     jtr - HIP
+CY  CY     1.52000  260.00000     cyclopropanes, cyclobutanes - wlj
+CY  CZ     1.45100  400.00000     wlj
+CY  HC     1.08800  340.00000     "
+CY  N      1.44900  337.00000     wj
+CY  N$     1.44900  337.00000     wj
+CY  NT     1.44800  382.00000     nev,                    copy from CT-NT         rcr HIVRT
+CY  S      1.81000  222.00000     wj
+CZ  CZ     1.21000 1150.00000     do 11/98 - JPOC, 9, 191 (1996)
+CZ  Cl     1.63700  330.00000     wlj
+CZ  F      1.27900  450.00000     wlj
+CZ  HC     1.08000  420.00000     do 01/99 - JPOC, 9, 191 (1996)
+CZ  NZ     1.15700  650.00000     wlj 9/98
+Cl  DM     0.30000  300.00000     wlj
+Cl  OS     1.69000  200.00000     wlj
+Cl  Si     2.02000  223.00000     wlj
+DM  F      0.30000  300.00000     wlj
+DM  HA     0.30000  340.00000     wlj
+DM  HC     0.30000  340.00000     wlj
+DM  HO     0.10000  340.00000     wlj
+DM  HS     0.10000  340.00000     wlj
+DM  NB     0.30000  367.00000     wlj
+DM  NC     0.30000  367.00000     wlj
+DM  OH     0.30000  340.00000     wlj
+DM  OS     0.30000  340.00000     wlj
+DM  OY     0.30000  340.00000     wlj
+DM  S      0.50000  340.00000     wlj
+DM  SZ     0.50000  340.00000     wlj
+F   Si     1.57000  461.00000     wlj
+H   N      1.01000  434.00000     AA
+H   N*     1.01000  434.00000
+H   N2     1.01000  434.00000     URA,GUA,HIS
+H   N3     1.01000  434.00000
+H   NA     1.01000  434.00000     URA,GUA,HIS
+H   NT     1.01000  434.00000
+H   NY     1.01000  434.00000     jtr - neutral Arg; MLL
+H   NZ     1.01000  434.00000     jtr - neutral Arg; MLL
+H   Si     1.48000  166.00000     wlj
+H2  N      1.01000  434.00000     AA
+H2  N2     1.01000  434.00000     ADE,GUA,CYT,GLN,ASN,ARG
+H3  N2     1.01000  434.00000     ADE,GUA,CYT,GLN,ASN,ARG
+H3  N3     1.01000  434.00000     LYS(OL)
+HC  Si     1.48000  166.00000     wlj stretching
+HO  OH     0.94500  553.00000     SUG(OL) wlj mod 0.96 -> 0.945
+HO  OS     0.94500  553.00000     SUG(OL)      6/6/94
+HS  SH     1.33600  274.00000     CYS(OL)
+HW  HW     1.51390   38.25000     "        "      "        for TIP3F (HW-HW)
+HW  OW     0.95720  529.60000     J Phys Chem 91, 3349 (1987) for TIP3F (OW-HW)
+I   Si     2.44000  108.00000     wlj
+N   OH     1.38000  400.00000     wlj
+N   SY     1.67000  434.00000
+N   Zn     2.05000   40.00000     Merz, JACS 113, 8262 (1991)
+NA  NB     1.34900  400.00000     "
+NB  NB     1.28000  400.00000     " could be N-N or N=N
+NB  OS     1.39900  462.00000     "
+NC  NC     1.32000  500.00000     wlj pyridazine
+NC  NZ     1.24000  550.00000     wlj  azide
+NO  ON     1.22500  550.00000     wlj nitro
+NT  NT     1.44500  350.00000     wlj
+NT  OH     1.45000  320.00000     wlj
+NT  OS     1.45000  320.00000     wlj
+NT  SY     1.77000  340.00000     nev,                    copy from SY-CT         rcr HIVRT
+NT  Si     1.74000  266.00000     wlj
+NZ  NZ     1.12000  550.00000     wlj  azide
+O   P      1.48000  525.00000
+O2  P      1.48000  525.00000     SUG(OL)
+OH  OS     1.47000  250.00000     wlj
+OH  P      1.61000  230.00000     SUG(OL)
+OH  Si     1.64000  374.00000     wlj
+OH  Zn     1.80000   94.00000     "
+OS  OS     1.47000  250.00000     wlj
+OS  P      1.61000  230.00000     SUG(OL)
+OS  Si     1.64000  374.00000     wlj
+OU  U      1.80000  500.00000     J Phys Chem 97, 5685 (1993)
+OW  Zn     2.05000   40.00000     "
+OY  SY     1.44000  700.00000
+OY  SZ     1.53000  700.00000
+P   Si     2.25000  108.00000     wlj
+S   S      2.03800  166.00000     CYX(OL)  SCHERAGA
+S   Si     2.15000  144.00000     wlj
+Si  Si     2.32000   94.00000     wlj for all Si

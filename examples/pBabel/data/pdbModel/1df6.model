@@ -1,0 +1,12 @@
+Entities:
+- Components: [SER.1, CYS.2, VAL.3, TYR.4, ILE.5, PRO.6, CYS.7, THR.8, VAL.9, THR.10,
+    ALA.11, LEU.12, LEU.13, GLY.14, CYS.15, SER.16, CYS.17, SER.18, ASN.19, ARG.20,
+    VAL.21, CYS.22, TYR.23, ASN.24, GLY.25, ILE.26, PRO.27, CYS.28, ALA.29, GLU.30]
+  Label: A
+  Links:
+  - {Label: Disulfide_Bridge, Left Component: CYS.2, Right Component: CYS.17}
+  - {Label: Disulfide_Bridge, Left Component: CYS.7, Right Component: CYS.22}
+  - {Label: Disulfide_Bridge, Left Component: CYS.15, Right Component: CYS.28}
+Label: Cycloviolacin O1
+Linear Polymers:
+- {Left Terminal Component: 'A:SER.1', Right Terminal Component: 'A:GLU.30'}

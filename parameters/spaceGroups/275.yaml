@@ -1,0 +1,20 @@
+# . Space group Pnnm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2 2n
+Hermann-Mauguin    : Pnnm
+Schoenflies        : D2h^12
+Space Group Number : 58
+Space Group Symbol : 58
+Setting            : 275
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+...

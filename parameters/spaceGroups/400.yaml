@@ -1,0 +1,28 @@
+# . Space group P4/mmm.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -P 4 2
+Hermann-Mauguin    : P4/mmm
+Schoenflies        : D4h^1
+Space Group Number : 123
+Space Group Symbol : 123
+Setting            : 400
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (y,x,-z)
+    - (-y,-x,-z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x,-y,z)
+    - (-x,y,z)
+    - (-y,-x,z)
+    - (y,x,z)
+...

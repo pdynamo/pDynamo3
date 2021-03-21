@@ -1,0 +1,16 @@
+# . Space group A1m1.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : A -2y
+Hermann-Mauguin    : A1m1
+Schoenflies        : Cs^3
+Space Group Number : 8
+Space Group Symbol : 8:b2
+Setting            : 31
+Transformations :
+    - (x,y,z)
+    - (x,-y,z)
+    - (x,y+1/2,z+1/2)
+    - (x,-y+1/2,z+1/2)
+...

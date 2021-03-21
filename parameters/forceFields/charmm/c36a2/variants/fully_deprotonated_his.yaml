@@ -1,0 +1,17 @@
+---
+# . !MMSequenceVariant
+Atom Fields: [ Label, Type, Charge ]
+Atoms:
+- [ CB , '??', 0.0 ]
+- [ HB1, '??', 0.0 ]
+- [ HB2, '??', 0.0 ]
+- [ ND1, '??', 0.0 ]
+- [ CG , '??', 0.0 ]
+- [ CE1, '??', 0.0 ]
+- [ HE1, '??', 0.0 ] 
+- [ NE2, '??', 0.0 ]
+- [ CD2, '??', 0.0 ]
+- [ HD2, '??', 0.0 ]
+Component: HIS
+Label: Fully Deprotonated
+...

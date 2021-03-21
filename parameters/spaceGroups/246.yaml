@@ -1,0 +1,20 @@
+# . Space group Pnnb.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2b 2n
+Hermann-Mauguin    : Pnnb
+Schoenflies        : D2h^6
+Space Group Number : 52
+Space Group Symbol : 52:ba-c
+Setting            : 246
+Transformations :
+    - (x,y,z)
+    - (-x,-y+1/2,z)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,y,-z+1/2)
+    - (-x,-y,-z)
+    - (x,y+1/2,-z)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (x+1/2,-y,z+1/2)
+...

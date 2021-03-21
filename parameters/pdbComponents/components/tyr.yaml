@@ -1,0 +1,15 @@
+# . !PDBComponent
+{Atom Fields: [Atomic Number, Formal Charge, Label], Atoms: [[7, 0, N],
+    [6, 0, CA], [6, 0, C], [8, 0, O], [6, 0, CB], [6, 0, CG], [6, 0, CD1], [6, 0,
+      CD2], [6, 0, CE1], [6, 0, CE2], [6, 0, CZ], [8, 0, OH], [8, 0, OXT], [1, 0,
+      H], [1, 0, H2], [1, 0, HA], [1, 0, HB2], [1, 0, HB3], [1, 0, HD1], [1, 0, HD2],
+    [1, 0, HE1], [1, 0, HE2], [1, 0, HH], [1, 0, HXT]], Bond Fields: [Atom 1, Atom 2,
+    Type], Bonds: [[N, CA, Single], [N, H, Single], [N, H2, Single], [CA, C, Single],
+    [CA, CB, Single], [CA, HA, Single], [C, O, Double], [C, OXT, Single], [CB, CG,
+      Single], [CB, HB2, Single], [CB, HB3, Single], [CG, CD1, Double], [CG, CD2,
+      Single], [CD1, CE1, Single], [CD1, HD1, Single], [CD2, CE2, Double], [CD2, HD2,
+      Single], [CE1, CZ, Double], [CE1, HE1, Single], [CE2, CZ, Single], [CE2, HE2,
+      Single], [CZ, OH, Single], [OH, HH, Single], [OXT, HXT, Single]], Component Class: '"L-Peptide',
+  Formal Charge: 0, Is Heteroatom: false, Is In Chain: true, Label: TYR, Left Link: Peptide,
+  Left Termination: N Terminal, Name: TYROSINE, PDB Class: Atomp, Right Link: Peptide,
+  Right Termination: C Terminal}

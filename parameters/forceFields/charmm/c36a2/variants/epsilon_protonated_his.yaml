@@ -1,0 +1,18 @@
+---
+# . !MMSequenceVariant
+Atom Fields: [ Label, Type, Charge ]
+Atoms:
+- [ CB , CT2 , -0.08 ]
+- [ HB1, HA  ,  0.09 ]
+- [ HB2, HA  ,  0.09 ]
+- [ ND1, NR2 , -0.70 ]
+- [ CG , CPH1,  0.22 ]
+- [ CE1, CPH2,  0.25 ]
+- [ HE1, HR1 ,  0.13 ]
+- [ NE2, NR1 , -0.36 ] 
+- [ HE2, H   ,  0.32 ]
+- [ CD2, CPH1, -0.05 ]
+- [ HD2, HR3 ,  0.09 ]
+Component: HIS
+Label: Epsilon Protonated
+...

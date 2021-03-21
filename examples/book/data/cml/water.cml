@@ -1,0 +1,11 @@
+<molecule title="Water - CML format.">
+<atomArray>
+<atom id="a1" elementType="O" x3="0" y3="0" z3="0"/>
+<atom id="a2" elementType="H" x3="0.58" y3="0.75" z3="0"/>
+<atom id="a3" elementType="H" x3="0.58" y3="-0.75" z3="0"/>
+</atomArray>
+<bondArray>
+<bond atomRefs2="a1 a2" order="1"/>
+<bond atomRefs2="a1 a3" order="1"/>
+</bondArray>
+</molecule>

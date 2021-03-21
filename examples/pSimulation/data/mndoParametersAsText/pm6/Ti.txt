@@ -1,0 +1,83 @@
+# . Text parameter file for the element Ti.
+
+Ti   atomicNumber                          22
+Ti   iii                                    4
+Ti   iiid                                   3
+Ti   ir016                                  4
+Ti   ir066                                  1
+Ti   ir244                                  2
+Ti   ir266                                  8
+Ti   ir466                                  1
+Ti   qnd                                    3
+Ti   qnp                                    4
+Ti   qns                                    4
+Ti   ad                     2.166660117030540  atomic
+Ti   alp                    0.000000000000000  A^-1
+Ti   am                     0.210127182287983  atomic
+Ti   aq                     0.300367574834387  atomic
+Ti   betad                 -1.842829000000000  eV
+Ti   betap                 -3.355350000000000  eV
+Ti   betas                  3.389142000000000  eV
+Ti   dd                     0.073881691300164  atomic
+Ti   eheat                112.299999999999997  kcal/mole
+Ti   eisol                -92.917066680000005  eV
+Ti   f0sd                   6.560562000000000  eV
+Ti   g2sd                   3.396235000000000  eV
+Ti   gp2                    5.623132870000000  eV
+Ti   gphot                  1.000000000000000  dimensionless
+Ti   gpp                    6.414725770000000  eV
+Ti   gsp                    5.800014980000000  eV
+Ti   gss                    5.717851320000000  eV
+Ti   hsp                    1.403731640000000  eV
+Ti   pcore                  0.000000000000000  atomic
+Ti   qq                     1.822333698340339  atomic
+Ti   udd                  -23.809486000000000  eV
+Ti   upp                  -17.260909000000002  eV
+Ti   uss                  -25.507973000000000  eV
+Ti   zcore                  4.000000000000000  atomic
+Ti   zdn                    0.717945000000000  atomic
+Ti   zetad                  1.418280000000000  atomic
+Ti   zetap                  1.164068000000000  atomic
+Ti   zetas                  5.324777000000000  atomic
+Ti   zpn                    1.076844000000000  atomic
+Ti   zsn                    1.045904000000000  atomic
+Ti   diatomicA      H       0.832669000000000  A^-1
+Ti   diatomicX      H       0.143722000000000  dimensionless
+Ti   diatomicA      B       1.628710000000000  A^-1
+Ti   diatomicX      B       0.649360000000000  dimensionless
+Ti   diatomicA      C       1.597973000000000  A^-1
+Ti   diatomicX      C       0.416706000000000  dimensionless
+Ti   diatomicA      N       1.678686000000000  A^-1
+Ti   diatomicX      N       0.545461000000000  dimensionless
+Ti   diatomicA      O       1.789118000000000  A^-1
+Ti   diatomicX      O       0.799486000000000  dimensionless
+Ti   diatomicA      F       2.307087000000000  A^-1
+Ti   diatomicX      F       1.085742000000000  dimensionless
+Ti   diatomicA      Mg      1.911340000000000  A^-1
+Ti   diatomicX      Mg      4.330240000000000  dimensionless
+Ti   diatomicA      Al      1.369486000000000  A^-1
+Ti   diatomicX      Al      2.091841000000000  dimensionless
+Ti   diatomicA      Si      2.856038000000000  A^-1
+Ti   diatomicX      Si      6.773815000000000  dimensionless
+Ti   diatomicA      P       2.151929000000000  A^-1
+Ti   diatomicX      P       4.150500000000000  dimensionless
+Ti   diatomicA      S       1.846439000000000  A^-1
+Ti   diatomicX      S       0.943784000000000  dimensionless
+Ti   diatomicA      Cl      1.461034000000000  A^-1
+Ti   diatomicX      Cl      0.333297000000000  dimensionless
+Ti   diatomicA      Ca      2.000000000000000  A^-1
+Ti   diatomicX      Ca      4.109141000000000  dimensionless
+Ti   diatomicA      Ti      2.648597000000000  A^-1
+Ti   diatomicX      Ti      2.000000000000000  dimensionless
+Ti   diatomicA      As      1.932911000000000  A^-1
+Ti   diatomicX      As      1.581317000000000  dimensionless
+Ti   diatomicA      Br      1.674847000000000  A^-1
+Ti   diatomicX      Br      0.883434000000000  dimensionless
+Ti   diatomicA      Sr      2.880030000000000  A^-1
+Ti   diatomicX      Sr      2.817250000000000  dimensionless
+Ti   diatomicA      I       1.933469000000000  A^-1
+Ti   diatomicX      I       2.426747000000000  dimensionless
+Ti   diatomicA      Ba      2.176040000000000  A^-1
+Ti   diatomicX      Ba      9.493530000000000  dimensionless
+Ti   diatomicA      Hg      3.414630000000000  A^-1
+Ti   diatomicX      Hg      2.957200000000000  dimensionless

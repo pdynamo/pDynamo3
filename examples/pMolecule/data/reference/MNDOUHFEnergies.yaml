@@ -1,0 +1,67 @@
+# . MNDOUHFEnergies
+---
+Label : MNDO UHF Energies
+Children :
+  - Label : AM1 Cardinal Restricted
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ Tyrosine Dipeptide Singlet , -313.349 , 1.000 , "{:.3f}" , "{:.3f}" ]
+  - Label : AM1 Cardinal Unrestricted
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ Allyl Radical              , 128.030  , 1.000 , "{:.3f}" , "{:.3f}" ]
+      - [ Methylene Radical          , 328.468  , 1.000 , "{:.3f}" , "{:.3f}" ]
+      - [ Tyrosine Dipeptide Singlet , -313.349 , 1.000 , "{:.3f}" , "{:.3f}" ]
+      - [ Tyrosine Dipeptide Triplet , -82.981  , 1.000 , "{:.3f}" , "{:.3f}" ]
+  - Label : AM1 Fractional Fixed Restricted
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ Tyrosine Dipeptide Singlet , -313.349 , 1.000 , "{:.3f}" , "{:.3f}" ]
+  - Label : AM1 Fractional Fixed Unrestricted
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ Allyl Radical              , 128.030  , 1.000 , "{:.3f}" , "{:.3f}" ]
+      - [ Methylene Radical          , 328.468  , 1.000 , "{:.3f}" , "{:.3f}" ]
+      - [ Tyrosine Dipeptide Singlet , -313.349 , 1.000 , "{:.3f}" , "{:.3f}" ]
+      - [ Tyrosine Dipeptide Triplet , -82.981  , 1.000 , "{:.3f}" , "{:.3f}" ]
+  - Label : AM1 Fractional Variable Restricted
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ Tyrosine Dipeptide Singlet , -313.349 , 1.000 , "{:.3f}" , "{:.3f}" ]
+  - Label : AM1 Fractional Variable Unrestricted
+    Real Data Fields :
+      - Label
+      - Value
+      - Absolute Error Tolerance
+      - Tolerance Format
+      - Value Format
+    Real Data :
+      - [ Allyl Radical              , 128.030  , 1.000 , "{:.3f}" , "{:.3f}" ]
+      - [ Methylene Radical          , 328.468  , 1.000 , "{:.3f}" , "{:.3f}" ]
+      - [ Tyrosine Dipeptide Singlet , -313.349 , 1.000 , "{:.3f}" , "{:.3f}" ]
+...

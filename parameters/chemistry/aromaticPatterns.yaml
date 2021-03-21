@@ -1,0 +1,156 @@
+# . Patterns matched in order with first match chosen.
+# . No matches mean the ring atoms in the pattern cannot be aromatic.
+---
+# . !AromaticPatternContainer
+Atom Fields:
+    - Key
+    - Atomic Number
+    - Connections
+    - Donated Electrons # . As a [ donated electron, intra-ring pi-bond ] pair.
+    - Formal Charge
+    - In Ring
+    - Is Supporting
+Atom Result Fields:
+    - Donated Electrons
+Bond Fields:
+    - Atom Key 1
+    - Atom Key 2
+    - Type
+Label: Aromatic Patterns
+Patterns:
+
+    # . Boron.
+    - Label: Boron2
+      Atom Patterns:
+          - [ 0, 5, 2, [ 1, 1 ], 0, True, False ]
+
+    - Label: Boron3
+      Atom Patterns:
+          - [ 0, 5, 3, [ 0, 0 ], 0, True, False ]
+
+    # . Carbon.
+    - Label: Carbon3 Extracyclic Double Carbon
+      Atom Patterns:
+          - [ 0, 6, 3, [ 1, 0 ], 0, True , False ]
+          - [ 1, 6, ., ., ., False, True  ]
+      Bond Patterns:
+          - [ 0, 1, Double ]
+
+    - Label: Carbon3 Extracyclic Double Other
+      Atom Patterns:
+          - [ 0, 6, 3, [ 0, 0 ], 0, True , False ]
+          - [ 1, ., ., ., ., False, True  ]
+      Bond Patterns:
+          - [ 0, 1, Double ]
+
+    - Label: Carbon3
+      Atom Patterns:
+          - [ 0, 6, 3, [ 1, 1 ], 0, True, False ]
+
+    - Label: Carbon2 # . E.g. 1,8-Bisdehydro[14]annulene.
+      Atom Patterns:
+          - [ 0, 6, 2, [ 1, 2 ], 0, True, False ]
+
+    - Label: Carbon+2
+      Atom Patterns:
+          - [ 0, 6, 2, [ 1, 1 ], 1, True, False ]
+
+    - Label: Carbon+3
+      Atom Patterns:
+          - [ 0, 6, 3, [ 0, 0 ], 1, True, False ]
+
+    - Label: Carbon-2
+      Atom Patterns:
+          - [ 0, 6, 2, [ 1, 1 ], -1, True, False ]
+
+    - Label: Carbon-3
+      Atom Patterns:
+          - [ 0, 6, 3, [ 2, 0 ], -1, True, False ]
+
+    # . Nitrogen.
+    - Label: Nitrogen3 Extracyclic Double Oxygen
+      Atom Patterns:
+          - [ 0, 7, 3, [ 1, 0 ], 0, True , False ]
+          - [ 1, 8, 1, ., ., False, True  ]
+      Bond Patterns:
+          - [ 0, 1, Double ]
+
+    - Label: Nitrogen2
+      Atom Patterns:
+          - [ 0, 7, 2, [ 1, 1 ], 0, True, False ]
+
+    - Label: Nitrogen3
+      Atom Patterns:
+          - [ 0, 7, 3, [ 2, 0 ], 0, True, False ]
+
+    - Label: Nitrogen+3
+      Atom Patterns:
+          - [ 0, 7, 3, [ 1, 1 ], 1, True, False ]
+
+    - Label: Nitrogen-2
+      Atom Patterns:
+          - [ 0, 7, 2, [ 2, 0 ], -1, True, False ]
+
+    # . Oxygen.
+    - Label: Oxygen2
+      Atom Patterns:
+          - [ 0, 8, 2, [ 2, 0 ], 0, True, False ]
+
+    - Label: Oxygen+2
+      Atom Patterns:
+          - [ 0, 8, 2, [ 1, 0 ], 1, True, False ]
+
+    # . Phosphorus.
+    - Label: Phosphorus3 Intracyclic Oxygens
+      Atom Patterns:
+          - [ 0, 16, 3, [ 0, 0 ], 0, True, False ]
+          - [ 1,  8, 2, [ 0, 0 ], 0, True, False ]
+          - [ 2,  8, 2, [ 0, 0 ], 0, True, False ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 0, 2, Single ]
+
+    - Label: Phosphorus2
+      Atom Patterns:
+          - [ 0, 15, 2, [ 1, 1 ], 0, True, False ]
+
+    - Label: Phosphorus3
+      Atom Patterns:
+          - [ 0, 15, 3, [ 2, 0 ], 0, True, False ]
+
+    # . Sulfur.
+    - Label: Sulfur3 Extracyclic Double Oxygen
+      Atom Patterns:
+          - [ 0, 16, 3, [ 2, 0 ], 0, True , False ]
+          - [ 1,  8, 1, ., ., False, True  ]
+      Bond Patterns:
+          - [ 0, 1, Double ]
+
+    - Label: Sulfur2
+      Atom Patterns:
+          - [ 0, 16, 2, [ 2, 0 ], 0, True, False ]
+
+    - Label: Sulfur+2
+      Atom Patterns:
+          - [ 0, 16, 2, [ 1, 1 ], 1, True, False ]
+
+    # . Arsenic.
+    - Label: Arsenic3
+      Atom Patterns:
+          - [ 0, 33, 3, [ 2, 0 ], 0, True, False ]
+
+    # . Selenium.
+    - Label: Selenium2
+      Atom Patterns:
+          - [ 0, 34, 2, [ 2, 0 ], 0, True, False ]
+
+    # . Antimony.
+    - Label: Antimony3
+      Atom Patterns:
+          - [ 0, 51, 3, [ 2, 0 ], 0, True, False ]
+
+    # . Tellurium.
+    - Label: Tellurium2
+      Atom Patterns:
+          - [ 0, 52, 2, [ 2, 0 ], 0, True, False ]
+...

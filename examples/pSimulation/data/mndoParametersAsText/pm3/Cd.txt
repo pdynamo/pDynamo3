@@ -1,0 +1,43 @@
+# . Text parameter file for the element Cd.
+
+Cd   atomicNumber                          48
+Cd   iii                                    5
+Cd   iiid                                   4
+Cd   ir016                                  0
+Cd   ir066                                  0
+Cd   ir244                                  0
+Cd   ir266                                  0
+Cd   ir466                                  0
+Cd   qnd                                    0
+Cd   qnp                                    5
+Cd   qns                                    5
+Cd   ad                     0.357020370559229  atomic
+Cd   alp                    1.525382000000000  A^-1
+Cd   am                     0.338349574685718  atomic
+Cd   aq                     0.282054229684536  atomic
+Cd   betad                  0.000000000000000  eV
+Cd   betap                 -0.601034000000000  eV
+Cd   betas                 -8.581944000000000  eV
+Cd   dd                     1.598268068874060  atomic
+Cd   eheat                 26.719999999999999  kcal/mole
+Cd   eisol                -22.450207999999996  eV
+Cd   f0sd                   0.000000000000000  eV
+Cd   g2sd                   0.000000000000000  eV
+Cd   gp2                    4.669656000000000  eV
+Cd   gphot                  1.000000000000000  dimensionless
+Cd   gpp                    4.948104000000000  eV
+Cd   gsp                    8.231539000000000  eV
+Cd   gss                    9.206960000000000  eV
+Cd   hsp                    1.656234000000000  eV
+Cd   pcore                  0.000000000000000  atomic
+Cd   qq                     1.243240223020881  atomic
+Cd   udd                    0.000000000000000  eV
+Cd   upp                    8.749795000000001  eV
+Cd   uss                  -15.828583999999999  eV
+Cd   zcore                  2.000000000000000  atomic
+Cd   zdn                    0.000000000000000  atomic
+Cd   zetad                  0.000000000000000  atomic
+Cd   zetap                  2.066412000000000  atomic
+Cd   zetas                  1.679351000000000  atomic
+Cd   zpn                    0.000000000000000  atomic
+Cd   zsn                    0.000000000000000  atomic

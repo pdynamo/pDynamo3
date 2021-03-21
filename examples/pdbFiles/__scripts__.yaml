@@ -1,0 +1,21 @@
+---
+Long Scripts:
+  - [ step8  , MakeSolventBox                ]
+  - [ step8  , SolvateSystem                 ]
+  - [ step9  , EquilibrateSolvatedStructure  ]
+Scripts:
+  - [ step1  , PDBFileToModel                ]
+  - [ step3  , PDBModelToSystem_0            ]
+  - [ step3a , MakePDBComponentLibrary       ]
+  - [ step3  , PDBModelToSystem_1            ]
+  - [ step4  , GenerateMMModel_0             ]
+  - [ step4  , GenerateMMModel_1             ]
+  - [ step6  , IdentifyUndefinedCoordinates3 ]
+  - [ step6  , HandBuild                     ]
+  - [ step7  , RefineVacuumStructure         ]
+  - [ step8  , GetSolvationInformation       ]
+  - [ step8  , AddCounterIons                ]
+  - [ step8  , MakeSolventBox                ]
+  - [ step8  , SolvateSystem                 ]
+  - [ step9  , EquilibrateSolvatedStructure  ]
+...

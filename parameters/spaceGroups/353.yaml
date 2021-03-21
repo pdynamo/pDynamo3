@@ -1,0 +1,20 @@
+# . Space group I4.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : I 4
+Hermann-Mauguin    : I4
+Schoenflies        : C4^5
+Space Group Number : 79
+Space Group Symbol : 79
+Setting            : 353
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-y+1/2,x+1/2,z+1/2)
+    - (y+1/2,-x+1/2,z+1/2)
+...

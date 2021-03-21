@@ -1,0 +1,43 @@
+# . Text parameter file for the element Al.
+
+Al   atomicNumber                          13
+Al   iii                                    3
+Al   iiid                                   3
+Al   ir016                                  0
+Al   ir066                                  0
+Al   ir244                                  0
+Al   ir266                                  0
+Al   ir466                                  0
+Al   qnd                                    0
+Al   qnp                                    3
+Al   qns                                    3
+Al   ad                     0.263551964940680  atomic
+Al   alp                    1.868839400000000  A^-1
+Al   am                     0.297302047495314  atomic
+Al   aq                     0.367350257943845  atomic
+Al   betad                  0.000000000000000  eV
+Al   betap                 -2.670284000000000  eV
+Al   betas                 -2.670284000000000  eV
+Al   dd                     1.399238687489615  atomic
+Al   eheat                 79.489999999999995  kcal/mole
+Al   eisol                -44.484072000000005  eV
+Al   f0sd                   0.000000000000000  eV
+Al   g2sd                   0.000000000000000  eV
+Al   gp2                    5.400000000000000  eV
+Al   gphot                  1.000000000000000  dimensionless
+Al   gpp                    5.980000000000000  eV
+Al   gsp                    6.630000000000000  eV
+Al   gss                    8.090000000000000  eV
+Al   hsp                    0.700000000000000  eV
+Al   pcore                  0.000000000000000  atomic
+Al   qq                     1.158679713043179  atomic
+Al   udd                    0.000000000000000  eV
+Al   upp                  -17.519877999999999  eV
+Al   uss                  -23.807096999999999  eV
+Al   zcore                  3.000000000000000  atomic
+Al   zdn                    0.000000000000000  atomic
+Al   zetad                  0.000000000000000  atomic
+Al   zetap                  1.444161000000000  atomic
+Al   zetas                  1.444161000000000  atomic
+Al   zpn                    0.000000000000000  atomic
+Al   zsn                    0.000000000000000  atomic

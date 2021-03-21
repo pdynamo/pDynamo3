@@ -1,0 +1,1002 @@
+Br  C   CT   109.00000   75.00000     wlj
+Br  C   O    119.00000   75.00000     wlj
+Br  CA  CA   120.00000   75.00000     wlj
+Br  CM  CM   120.00000   75.00000     wlj
+Br  CM  HC   114.00000   60.00000     wlj
+Br  CT  Br   111.70000   78.00000     wlj
+Br  CT  C    109.80000   69.00000     wlj
+Br  CT  CA   110.00000   69.00000     wlj
+Br  CT  CT   110.00000   69.00000     wlj
+Br  CT  HC   107.60000   51.00000     wlj
+Br  Si  CT   110.50000   35.00000     wlj
+C   C   CT   117.20000   80.00000     (JP 1-6-91)  SKF8
+C   C   N    116.60000   70.00000     (JP 1-5-91) SKF8
+C   C   O    121.40000   80.00000     ketone (JP 1-5-91) SKF8
+C   C2  C2   112.40000   63.00000     GLU
+C   C2  CH   112.40000   63.00000     ASP
+C   C2  N    110.30000   80.00000     GLY   WORK DONE ON 6/23/82
+C   C2  NT   111.20000   80.00000     GLY   JCP 76, 1439
+C   C=  CM   118.70000   70.00000     wlj
+C   CA  CA   120.00000   85.00000     TYR(OL)
+C   CA  CT   119.70000   70.00000     wlj
+C   CA  HA   120.00000   35.00000
+C   CB  CB   119.20000   85.00000     GUA
+C   CB  CW   130.00000   70.00000     wj
+C   CB  NB   130.00000   70.00000     GUA
+C   CD  CD   120.00000   85.00000     TYR(OL)
+C   CH  C2   111.10000   63.00000     AA
+C   CH  C3   111.10000   63.00000     ALA
+C   CH  CH   111.10000   63.00000     ILE
+C   CH  N    110.10000   63.00000     AA     WORK DONE ON 6/23/82
+C   CH  NT   109.70000   80.00000     AA
+C   CJ  CJ   120.70000   85.00000     URA
+C   CM  C3   119.70000   85.00000     THY
+C   CM  CJ   120.70000   85.00000     THY
+C   CM  CM   120.70000   85.00000
+C   CM  CT   119.70000   70.00000
+C   CM  CY   119.70000   70.00000     hept,                   copy from C -CM-CT      rcr HIVRT
+C   CM  F    121.50000   80.00000     wlj
+C   CM  HC   119.70000   35.00000
+C   CS  CW   130.00000   70.00000     wj
+C   CT  C    111.10000   63.00000     lac,                    copy from C -CT-CT      rcr HIVRT
+C   CT  C2   111.10000   63.00000     Added DSM (from C3-CT-C )
+C   CT  C3   109.50000   63.00000     from CA-CT-CT
+C   CT  CA   112.00000   63.00000     wlj
+C   CT  CT   111.10000   63.00000     AA
+C   CT  Cl   109.80000   69.00000     wlj
+C   CT  F    109.50000   50.00000     bhap,                   copy from CT-CT-F       rcr HIVRT
+C   CT  HC   109.50000   35.00000
+C   CT  N    110.10000   63.00000     AA     WORK DONE ON 6/23/82
+C   CT  N$   113.00000   80.00000     "
+C   CT  N3   111.20000   80.00000     Amino terminal residues
+C   CT  NC   110.10000   63.00000     wj
+C   CT  NT   111.20000   80.00000     wlj
+C   CT  OS   109.50000   50.00000     lac,                    copy from CT-CT-OS      rcr HIVRT
+C   CW  CS   120.00000   85.00000     bhap,                   copy from C -CA-CA      rcr HIVRT
+C   CW  NA   120.00000   85.00000     bhap,                   copy from C -CA-CA      rcr HIVRT
+C   N   C    126.40000   70.00000     wlj
+C   N   C2   121.90000   50.00000     PRO(OL)
+C   N   C3   121.90000   50.00000     TEST!!!!!!!!
+C   N   CA   121.90000   50.00000     wlj
+C   N   CH   121.90000   50.00000     AA(OL)
+C   N   CQ   125.20000   70.00000     wj
+C   N   CT   121.90000   50.00000
+C   N   CY   128.00000   55.00000     "
+C   N   H    119.80000   35.00000     AA(OL)
+C   N   H2   120.00000   35.00000     GLN,ASN                 **
+C   N   OH   115.70000   46.00000     wlj
+C   N   Zn   126.00000   20.00000     Merz, JACS 113, 8262 (1991)
+C   N*  CH   117.60000   70.00000     URA,CYT
+C   N*  CJ   121.60000   70.00000     URA,CYT
+C   N*  CM   121.60000   70.00000
+C   N*  CO   117.60000   70.00000     jtr 12/11/01
+C   N*  CT   117.60000   70.00000
+C   N*  H    119.20000   35.00000
+C   NA  C    126.40000   70.00000     URA
+C   NA  CA   125.20000   70.00000     GUA
+C   NA  CM   121.60000   70.00000     copy from above for CytH+ (jtr 5-14-91)
+C   NA  H    116.80000   35.00000     GUA,URA(2)
+C   NC  CA   120.50000   70.00000     CYT
+C   NM  CT   121.90000   50.00000
+C   NT  CA   112.00000   63.00000     nev,                    copy from CA-CT-C       rcr HIVRT
+C   NT  CT   111.10000   63.00000     bhap,                   copy from C -CT-CT      rcr HIVRT
+C   OH  HO   113.00000   35.00000     TYR(PHENOL)     HARMONY MEOH
+C   OS  C2   116.90000   83.00000
+C   OS  C3   116.90000   83.00000
+C   OS  CA   116.90000   83.00000     wlj
+C   OS  CH   116.90000   83.00000     from FK506 C -OS-CZ for SKF8
+C   OS  CT   116.90000   83.00000     "
+C!  C!  CA   120.00000   63.00000     wlj
+C!  C!  NC   124.00000   70.00000     wlj   "     "    "     "
+C!  CA  CA   120.00000   63.00000     wlj
+C!  CA  HA   120.00000   35.00000     wlj
+C!  CA  NC   124.00000   70.00000     wlj   "     "    "     "
+C!  CS  CS   127.50000   70.00000     "
+C!  CS  CW   125.70000   70.00000     "
+C!  CW  CS   132.10000   70.00000     "
+C!  CW  NA   121.60000   70.00000     wlj
+C!  CW  OS   121.60000   70.00000     wlj
+C!  NC  CA   117.00000   70.00000     wlj   "     "    "     "
+C$  CY  CY    85.00000   63.00000     "
+C$  CY  HC   110.00000   37.50000     "
+C$  CY  N    117.00000   70.00000     "
+C$  N$  CT   127.00000   55.00000     "
+C$  N$  CY    94.00000   50.00000     "
+C*  C2  CH   115.60000   63.00000     TRP(OL)
+C*  CB  CA   134.90000   85.00000     TRP(OL)
+C*  CB  CC   108.80000   85.00000     TRP(OL)
+C*  CB  CD   134.90000   85.00000     TRP(OL)
+C*  CB  CN   108.80000   85.00000     TRP(OL)
+C*  CC  NA   108.70000   70.00000     TRP(OL)
+C*  CG  NA   108.70000   70.00000     TRP(OL)
+C*  CT  CT   115.60000   63.00000     TRP(OL)
+C*  CT  HC   109.50000   35.00000
+C*  CW  HA   120.00000   35.00000
+C*  CW  NA   108.70000   70.00000     TRP(OL)
+C+  CT  CT   105.00000   63.00000     wlj
+C+  CT  HC   105.00000   35.00000     wlj
+C2  C   N    116.60000   70.00000     GLY             GELIN
+C2  C   O    120.40000   80.00000     ASN(OL)         GELIN
+C2  C   O2   117.00000   70.00000     GLU(OL)          SCH JPC 79,2379
+C2  C*  CB   128.60000   70.00000     TRP(OL)
+C2  C*  CC   125.00000   70.00000     TRP(OL)
+C2  C*  CG   125.00000   70.00000     TRP(OL)
+C2  C*  CW   125.00000   70.00000     TRP(OL)
+C2  C2  C2   112.40000   63.00000     PRO,LYS
+C2  C2  C3   112.40000   63.00000     alkanes
+C2  C2  CA   112.40000   63.00000     from C2-C2-C3 alkanes for SKF8
+C2  C2  CH   112.40000   63.00000     MET
+C2  C2  CO   112.40000   63.00000     "
+C2  C2  F    109.50000   50.00000
+C2  C2  N    111.20000   80.00000     PRO   JCP 76, 1439
+C2  C2  N2   111.20000   80.00000     ARG   JCP 76, 1439
+C2  C2  N3   111.20000   80.00000     LYS(OL)   JCP 76, 1439
+C2  C2  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+C2  C2  OH   109.50000   80.00000     alcohols
+C2  C2  OS   109.50000   80.00000     THF fit
+C2  C2  S    114.70000   50.00000     MET            SCHERAGA  JPC 79,1428
+C2  C7  C2   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C7  C3   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C7  C7   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C7  C8   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C7  C9   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C7  CH   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C7  CT   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C8  C2   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C8  C3   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C8  C8   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C8  C9   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C8  CH   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  C8  CT   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C2  CA  CA   120.00000   70.00000     PHE(OL)
+C2  CA  CB   128.60000   70.00000     TRP(OL)
+C2  CA  CD   120.00000   70.00000     PHE(OL)
+C2  CC  CF   131.90000   70.00000     HIS(OL)
+C2  CC  CG   129.05000   70.00000     HIS(OL)
+C2  CC  CV   131.90000   70.00000     HIS(OL)
+C2  CC  CW   129.05000   70.00000     HIS(OL)
+C2  CC  NA   122.20000   70.00000     HIS(OL)
+C2  CC  NB   121.05000   70.00000     HIS(OL)
+C2  CD  CD   120.00000   70.00000     PHE(OL)
+C2  CH  C2   112.40000   63.00000     alkanes
+C2  CH  C3   112.40000   63.00000     alkanes
+C2  CH  CA   112.40000   63.00000     from C2-CH-C3 alkanes for SKF8
+C2  CH  CH   111.50000   63.00000     SUG,ILE
+C2  CH  N    109.70000   80.00000     ALA    JACS 94, 2657
+C2  CH  N*   109.50000   80.00000     SUG
+C2  CH  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+C2  CH  OH   109.50000   80.00000     alcohols
+C2  CH  OS   109.50000   80.00000     SUG
+C2  CO  OS   109.50000   80.00000     "
+C2  CS  CC   125.00000   70.00000
+C2  CS  CG   125.00000   70.00000
+C2  CS  CW   125.00000   70.00000
+C2  CT  C2   109.50000   40.00000
+C2  CT  C3   109.50000   40.00000
+C2  CT  CA   114.00000   63.00000     "
+C2  CT  HC   109.50000   35.00000     Added DSM (from C -CT-HC)
+C2  CT  N    109.70000   80.00000     Added DSM (from N -CT-C3)
+C2  CT  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+C2  N   C3   121.90000   50.00000
+C2  N   CH   118.00000   50.00000     PRO(OL)         DETAR JACS 99,1232
+C2  N   H    118.40000   38.00000     AA(OL)
+C2  N2  CA   123.20000   50.00000     ARG(OL)
+C2  N2  H2   118.40000   35.00000     ARG(OL)
+C2  N2  H3   118.40000   35.00000     ARG(OL)
+C2  N3  H3   109.50000   35.00000     LYS
+C2  NT  C2   107.20000   51.80000     "
+C2  NT  C3   107.20000   51.80000     "
+C2  NT  CH   107.20000   51.80000     "
+C2  NT  CT   107.20000   51.80000     "
+C2  NT  H    108.10000   43.20000     wlj MM3 based
+C2  OH  HO   108.50000   55.00000     SUG,SER(OL,mod)
+C2  OS  C2   111.80000  100.00000     DME based
+C2  OS  C3   111.80000  100.00000     DME based
+C2  OS  CA   111.80000  100.00000     AMBER(MMOD) 9/9/91
+C2  OS  CO   113.00000  100.00000     "
+C2  OS  HO   108.50000   55.00000     SUG
+C2  OS  P    120.50000  100.00000     SUG(OL)
+C2  S   C3    98.90000   62.00000     MET(OL)
+C2  S   LP    96.70000  150.00000
+C2  S   S    103.70000   68.00000     CYX(OL)        SCHERAGA  JPC 79,1428
+C2  SH  HS    96.00000   44.00000     CYS(OL)
+C2  SH  LP    96.70000  150.00000
+C3  C   N    116.60000   70.00000     ACET(OL)        BENEDETTI
+C3  C   O    120.40000   80.00000     ACET(OL)
+C3  C   O2   117.00000   70.00000     GLU(OL)          SCH JPC 79,2379
+C3  C2  C3   112.40000   63.00000     alkanes
+C3  C2  CH   112.40000   63.00000     ILE
+C3  C2  CO   112.40000   63.00000     "
+C3  C2  CT   112.40000   63.00000     from C3-C2-CH ILE, alkanes for SKF8
+C3  C2  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+C3  C2  OH   109.50000   80.00000     alcohols
+C3  C2  OS   109.50000   80.00000     MEE
+C3  C7  C3   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  C7  C7   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  C7  C8   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  C7  C9   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  C7  CH   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  C7  CT   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  C8  C3   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  C8  C8   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  C8  C9   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  C8  CH   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  C8  CT   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C3  CH  C3   111.50000   63.00000     VAL
+C3  CH  CH   111.50000   63.00000     ILE
+C3  CH  N    109.50000   80.00000     **
+C3  CH  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+C3  CH  OH   109.50000   80.00000     THR
+C3  CH  OS   109.50000   80.00000     wlj - guess
+C3  CM  CJ   119.70000   85.00000     THY
+C3  CO  C3   109.50000   40.00000     "
+C3  CO  OS   109.50000   80.00000     "
+C3  CT  C3   109.50000   40.00000
+C3  CT  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+C3  N   H    118.40000   38.00000     TEST!!!!!!!
+C3  N*  CB   125.80000   70.00000     9 methylated guan,aden
+C3  N*  CE   128.80000   70.00000     Methylated purines
+C3  N*  CK   128.80000   70.00000
+C3  N2  CA   123.20000   50.00000     ARG(OL)
+C3  N2  H2   118.40000   35.00000     ARG(OL)
+C3  N3  H3   109.50000   35.00000
+C3  NT  C3   107.20000   51.80000     "
+C3  NT  CH   107.20000   51.80000     "
+C3  NT  CT   107.20000   51.80000     "
+C3  NT  H    108.10000   43.20000     wlj MM3 based
+C3  OH  HO   108.50000   55.00000     SUG,SER(OL,mod)
+C3  OS  CO   113.00000  100.00000     "
+C3  OS  P    120.50000  100.00000     DMPhos based
+C3  S   LP    96.70000  150.00000
+C3  S   S    103.70000   68.00000     CYX(OL)        SCHERAGA  JPC 79,1428
+C3  SH  HS    96.00000   44.00000     CYS(OL)
+C3  SH  LP    96.70000  150.00000
+C3  SY  C8    98.90000   62.00000
+C7  C7  C7   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C7  C7  C8   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C7  C7  C9   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C7  C7  CH   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C7  C7  CT   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C7  C8  C8   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C7  C8  C9   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  C7  C8   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  C7  C9   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  C7  CH   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  C7  CT   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  C8  C8   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  C8  C9   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  C8  CH   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C8  C8  CT   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C9  C7  CH   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C9  C7  CT   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C9  C8  CH   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C9  C8  CT   118.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+C9  C8  SY   118.00000   70.00000
+C=  C   CT   116.00000   70.00000     wlj
+C=  C   HC   116.00000   80.00000     wlj
+C=  C   O    124.00000   80.00000     wlj
+C=  C=  CM   124.00000   70.00000     wlj
+C=  C=  CT   124.00000   70.00000     wlj
+C=  C=  CW   106.00000   35.00000     wlj
+C=  C=  HC   120.00000   35.00000     wlj
+C=  CM  CT   124.00000   70.00000     mwm
+C=  CM  HC   120.00000   35.00000     wlj
+C=  CM  OH   123.00000   70.00000     wlj
+C=  CM  OS   123.00000   70.00000     wlj
+C=  CT  HC   109.50000   35.00000     wlj
+C=  CW  HA   130.70000   35.00000     wlj
+C=  CW  OS   110.00000   70.00000     wlj  furan
+CA  C   CA   120.00000   85.00000     TYR(OL)         GELIN
+CA  C   CT   116.00000   70.00000     wlj
+CA  C   HC   115.00000   35.00000     wlj
+CA  C   N    115.50000   70.00000     wlj 8/97 benzamide
+CA  C   O    120.40000   80.00000     wlj
+CA  C   O2   117.00000   70.00000     GLU(OL)     SCH JPC 79,2379
+CA  C   OH   120.00000   70.00000     TYR(OL)        GELIN
+CA  C   OS   111.40000   81.00000     wlj
+CA  C!  CA   120.00000   63.00000     wlj
+CA  C!  CR   120.00000   63.00000     wlj
+CA  C!  CS   120.00000   63.00000     wlj
+CA  C!  CU   120.00000   63.00000     wlj
+CA  C!  CV   120.00000   63.00000     wlj
+CA  C!  CW   120.00000   63.00000     wlj
+CA  C!  NC   124.00000   70.00000     wlj   "     "    "     "
+CA  C2  CH   114.00000   63.00000     PHE(OL)         SCH JPC  79,2379
+CA  CA  CA   120.00000   63.00000     PHE(OL)
+CA  CA  CB   120.00000   63.00000     TRP(OL)
+CA  CA  CC   120.00000   85.00000     Added DSM (from CA-CA-CA)
+CA  CA  CH   120.00000   70.00000     from C2-CA-CA PHE(OL) for SKF8
+CA  CA  CM   124.00000   70.00000     wlj/mp
+CA  CA  CN   120.00000   85.00000     TRP(OL)
+CA  CA  CT   120.00000   70.00000     PHE(OL)
+CA  CA  CW   107.40000   70.00000     wlj  1/97 based on pyrrole
+CA  CA  CZ   120.00000   70.00000     wlj
+CA  CA  Cl   120.00000   75.00000     wlj
+CA  CA  DM    90.00000   35.00000     dummy
+CA  CA  F    120.00000   80.00000     wlj
+CA  CA  HA   120.00000   35.00000
+CA  CA  I    120.00000   75.00000     wlj
+CA  CA  N    120.00000   70.00000     Added DSM (from CA-CA-NA)
+CA  CA  N2   120.10000   70.00000     wlj
+CA  CA  N3   120.10000   70.00000     wlj    anilinium
+CA  CA  NA   108.70000   70.00000     TRP(OL)
+CA  CA  NB   108.70000   70.00000     Added DSM (from CA-CA-NA)
+CA  CA  NC   124.00000   70.00000     wlj   "     "    "     "
+CA  CA  NO   120.00000   85.00000     wlj  nitro
+CA  CA  NT   120.10000   70.00000     wlj/rr anilines
+CA  CA  NZ   120.00000   80.00000     wlj  10/04   "
+CA  CA  OH   120.00000   70.00000
+CA  CA  OS   120.00000   70.00000     wlj
+CA  CA  P    119.40000   85.00000
+CA  CA  S    119.40000   85.00000     thioanisole             copy from SY-CA-CA      rcr HIVRT
+CA  CA  SH   120.00000   70.00000     wlj
+CA  CA  SY   119.40000   85.00000
+CA  CB  CA   134.90000   85.00000     TRP(OL)
+CA  CB  CB   117.30000   85.00000     ADE
+CA  CB  CC   108.80000   85.00000     TRP(OL)
+CA  CB  CN   116.20000   85.00000     TRP
+CA  CB  CS   134.90000   85.00000
+CA  CB  CT   120.00000   70.00000     Added DSM (from CA-CA-CT)
+CA  CB  NB   132.40000   70.00000     ADE
+CA  CC  CB   122.70000   85.00000     TRP
+CA  CC  NA   132.80000   70.00000     TRP(OL)
+CA  CD  CD   120.00000   85.00000     PHE
+CA  CH  OS   109.50000   80.00000     SUG from AMBER/BOSS for SKF8
+CA  CJ  CJ   117.00000   85.00000     CYT
+CA  CM  CM   117.00000   85.00000
+CA  CM  CT   119.70000   85.00000     wlj/mp
+CA  CM  HC   123.30000   35.00000
+CA  CN  CB   122.70000   85.00000     TRP
+CA  CN  NA   132.80000   70.00000     TRP(OL)
+CA  CT  CA   109.50000   40.00000     "
+CA  CT  CM   109.50000   40.00000     hept,                   copy from CA-CT-CA      rcr HIVRT
+CA  CT  CT   114.00000   63.00000     PHE(OL)         SCH JPC  79,2379
+CA  CT  F    109.50000   50.00000     wlj
+CA  CT  HC   109.50000   35.00000
+CA  CT  NA   111.20000   80.00000     wlj
+CA  CT  NT   111.20000   80.00000     wlj
+CA  CT  OH   109.50000   50.00000     wlj
+CA  CT  OS   109.50000   50.00000
+CA  CT  P    109.50000   43.00000     "
+CA  CT  S    114.70000   50.00000     wlj
+CA  CU  HA   128.60000   35.00000     "
+CA  CV  NB   111.00000   70.00000     wlj
+CA  CW  CS   132.10000   70.00000     "
+CA  CW  HA   130.70000   35.00000     wlj
+CA  CW  NA   121.60000   70.00000     wlj
+CA  CZ  CZ   180.00000  160.00000     wlj
+CA  CZ  NZ   180.00000  150.00000     wlj
+CA  N   CT   118.00000   50.00000     wj
+CA  N   H    119.80000   35.00000     Added DSM (from C -N -H)
+CA  N2  CT   123.20000   50.00000     ARG(OL)
+CA  N2  H    120.00000   35.00000     ARG(OL)
+CA  N2  H2   120.00000   35.00000     ADE,CYT,GUA,ARG
+CA  N2  H3   120.00000   35.00000     ADE,CYT,GUA,ARG
+CA  N3  CT   114.00000   55.00000     wlj
+CA  N3  H3   109.50000   35.00000     wlj anilinium
+CA  NA  CA   125.20000   70.00000     Added DSM (from C -NA-CA)
+CA  NA  CC   111.60000   70.00000     TRP(OL)
+CA  NA  CK   109.80000   70.00000     wlj
+CA  NA  H    118.00000   35.00000     GUA
+CA  NA  NB   118.40000   70.00000     "
+CA  NB  CA   125.20000   70.00000     Added DSM (from C -NA-CA)
+CA  NC  CA   117.00000   70.00000     wlj   "     "    "     "
+CA  NC  CB   112.20000   70.00000     GUA
+CA  NC  CI   118.60000   70.00000     ADE
+CA  NC  CQ   118.60000   70.00000
+CA  NC  CT   118.00000   50.00000     wj
+CA  NC  NC   117.00000   70.00000     wlj  pyridazine
+CA  NO  ON   117.50000   80.00000     wlj  nitro
+CA  NT  CA   109.50000   40.00000     nev,                    copy from CA-CT-CA      rcr HIVRT
+CA  NT  CT   109.50000   50.00000     "
+CA  NT  CY   109.50000   50.00000     nev,                    copy from CA-NT-CT      rcr HIVRT
+CA  NT  H    111.00000   35.00000     wlj/rr anilines
+CA  NT  SY   108.60000   50.00000     nev,                    copy from CT-CT-SY      rcr HIVRT
+CA  NY  CT   120.50000   50.00000     jtr: neutral ARG
+CA  NY  H    112.50000   50.00000     jtr: neutral ARG
+CA  NZ  CZ   180.00000  170.00000     wlj  10/04   "
+CA  NZ  H    113.00000   35.00000     jtr: neutral ARG
+CA  OH  HO   113.00000   35.00000
+CA  OS  CM   111.00000   75.00000     hept,                   copy from CT-S -CT      rcr HIVRT
+CA  OS  CT   111.00000   75.00000     wlj 9/97
+CA  OS  P    120.50000  100.00000     mll
+CA  P   O    109.50000   45.00000     wlj 11/95
+CA  P   OH   109.50000   45.00000     wlj 11/95
+CA  P   OS   109.50000   45.00000     wlj 11/95
+CA  S   CM   104.20000   62.00000     hept,                   adjusted from CT-S -CT  rcr HIVRT
+CA  S   CT   104.20000   62.00000     thioanisole             adjusted from CT-S -CT  rcr HIVRT
+CA  SH  HS    96.00000   50.00000     wlj
+CA  SY  CT   102.00000   62.00000
+CA  SY  N    103.00000  100.00000
+CA  SY  OY   107.20000   74.00000
+CB  C   N    111.30000   70.00000     wlj
+CB  C   NA   111.30000   70.00000     GUA
+CB  C   O    128.80000   80.00000     GUA
+CB  C*  CG   106.40000   85.00000     TRP(OL)
+CB  C*  CT   128.60000   70.00000     TRP(OL)
+CB  C*  CW   106.40000   85.00000     TRP(OL)
+CB  C*  HC   126.80000   35.00000
+CB  CA  CT   128.60000   70.00000
+CB  CA  CW   106.40000   63.00000
+CB  CA  HA   120.00000   35.00000
+CB  CA  N2   123.50000   70.00000     ADE
+CB  CA  NA   108.70000   70.00000     Added DSM (from CA-CA-NA)
+CB  CA  NC   117.30000   70.00000     ADE
+CB  CB  CC   120.00000   85.00000     Added DSM (from CA-CA-CA)
+CB  CB  CT   120.00000   70.00000     Added DSM (from CA-CA-CT)
+CB  CB  N    127.70000   70.00000     wj
+CB  CB  N*   106.20000   70.00000     GUA,ADE
+CB  CB  NA   106.20000   70.00000     wlj
+CB  CB  NB   111.00000   70.00000     GUA,ADE
+CB  CB  NC   127.70000   70.00000     GUA,ADE
+CB  CC  CD   122.70000   85.00000     TRP
+CB  CC  NA   104.40000   70.00000
+CB  CD  CD   120.00000   85.00000     TRP(OL)
+CB  CN  CD   122.70000   85.00000     TRP
+CB  CN  NA   104.40000   70.00000
+CB  CS  CG   106.40000   85.00000
+CB  CS  CT   128.60000   70.00000
+CB  CS  CW   106.40000   85.00000
+CB  CS  HA   120.00000   35.00000     bhap,                   copy from CB-CA-HA      rcr HIVRT
+CB  CS  HC   126.80000   35.00000
+CB  CT  CT   114.00000   63.00000     Added DSM (from CA-CT-CT)
+CB  CT  HC   109.50000   35.00000     Added DSM (from CA-CT-HC)
+CB  N*  CE   105.40000   70.00000     GUA,ADE
+CB  N*  CH   125.80000   70.00000     GUA,ADE
+CB  N*  CK   105.40000   70.00000
+CB  N*  CO   125.80000   70.00000     jtr (12/7/01)
+CB  N*  CT   125.80000   70.00000
+CB  N*  H    125.80000   30.00000
+CB  NA  CK   105.40000   70.00000     wlj
+CB  NA  CR   109.80000   70.00000     wlj
+CB  NA  CT   125.80000   70.00000     wlj
+CB  NA  H    125.80000   30.00000     wlj
+CB  NA  NB   113.10000   56.00000     "
+CB  NB  CE   103.80000   70.00000     GUA,ADE
+CB  NB  CK   103.80000   70.00000
+CB  NB  CR   110.00000   70.00000     wlj
+CB  NC  CI   111.00000   70.00000     ADE
+CB  NC  CQ   111.00000   70.00000
+CB  OS  CR   106.50000   70.00000     wlj  furan
+CB  OS  CW   106.50000   70.00000     wlj  furan
+CC  C2  CH   113.10000   63.00000     HIS(OL)
+CC  CA  HA   120.00000   35.00000
+CC  CB  CS   108.80000   85.00000
+CC  CD  CD   120.00000   85.00000     TRP(OL)
+CC  CF  NB   109.90000   70.00000     HIS(OL)
+CC  CG  NA   105.90000   70.00000     HIS(OL)
+CC  CT  CT   113.10000   63.00000     HIS(OL)
+CC  CT  HC   109.50000   35.00000
+CC  CV  HA   120.00000   35.00000
+CC  CV  NB   120.00000   70.00000     HIS(OL)
+CC  CW  HA   120.00000   35.00000
+CC  CW  NA   120.00000   70.00000     HIS(OL)
+CC  NA  CC   111.60000   70.00000     TRP(OL)
+CC  NA  CP   107.30000   70.00000     HIS(OL)
+CC  NA  CR   120.00000   70.00000     HIS(OL)
+CC  NA  H    120.00000   35.00000     HIS(OL)
+CC  NB  CP   105.30000   70.00000     HIS(OL)
+CC  NB  CR   117.00000   70.00000     HIS(OL)
+CD  C   CD   120.00000   85.00000     TYR(OL)         GELIN
+CD  C   OH   120.00000   70.00000     TYR(OL)        GELIN
+CD  C2  CH   114.00000   63.00000     PHE(OL)         SCH JPC  79,2379
+CD  CA  CD   120.00000   85.00000     PHE(OL)
+CD  CB  CN   116.20000   85.00000     TRP
+CD  CB  CS   134.90000   85.00000
+CD  CC  NA   132.80000   70.00000     TRP(OL)
+CD  CD  CD   120.00000   85.00000     PHE(OL)
+CD  CD  CN   120.00000   85.00000     TRP(OL)
+CD  CN  NA   132.80000   70.00000     TRP(OL)
+CE  N*  CH   128.80000   70.00000     GUA,ADE
+CE  N*  CT   128.80000   70.00000
+CE  N*  H    127.30000   35.00000
+CF  CC  NA   105.90000   70.00000     HIS(OL)
+CF  NB  CP   105.30000   70.00000     HIS(OL)
+CF  NB  CR   105.30000   70.00000     HIS(OL)
+CG  CC  NA   108.75000   70.00000     HIS(OL)
+CG  CC  NB   109.90000   70.00000     HIS(OL)
+CG  NA  CN   111.60000   70.00000     TRP(OL)
+CG  NA  CP   107.30000   70.00000     HIS(OL)
+CG  NA  CR   107.30000   70.00000     HIS(OL)
+CG  NA  H    126.35000   35.00000     HIS(OL)
+CH  C   N    116.60000   70.00000     AA(OL)
+CH  C   O    120.40000   80.00000     AA(OL)
+CH  C   O2   117.00000   65.00000     AA(OL)          SCH JPC 79,2379
+CH  C   OH   115.00000   70.00000     ACID(OL)        SCH JPC 79,2379
+CH  C   OS   111.40000   81.00000     from FK506, SKF8
+CH  C2  CH   112.40000   63.00000     SUG,LEU
+CH  C2  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+CH  C2  OH   109.50000   80.00000     SER,end sugar
+CH  C2  OS   109.50000   80.00000     SUG
+CH  C2  S    114.70000   50.00000     CYX            SCHERAGA  JPC 79,1428
+CH  C2  SH   108.60000   50.00000     CYS
+CH  C7  CH   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+CH  C7  CT   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+CH  C8  CH   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+CH  C8  CT   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+CH  CH  CH   111.50000   63.00000     SUG
+CH  CH  N    109.70000   80.00000     ILE    JACS 94, 2657
+CH  CH  N*   109.50000   80.00000     SUG
+CH  CH  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+CH  CH  OH   109.50000   80.00000     THR,end sugar
+CH  CH  OS   109.50000   80.00000     SUG
+CH  CT  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+CH  N   H    118.40000   38.00000     AA(OL)
+CH  N*  CJ   121.20000   70.00000     URA,CYT
+CH  N*  CK   128.80000   70.00000
+CH  NT  CH   107.20000   51.80000     "
+CH  NT  CT   107.20000   51.80000     "
+CH  NT  H    108.10000   43.20000     wlj MM3 based
+CH  OH  HO   108.50000   55.00000     THR(OL),SUG
+CH  OS  CH   111.80000  100.00000     SUG(dme based)
+CH  OS  CO   113.00000  100.00000     "
+CH  OS  HO   108.50000   55.00000     SUG
+CH  OS  P    120.50000  100.00000     SUG
+CJ  C   NA   114.10000   70.00000     URA
+CJ  C   O    125.30000   80.00000     URA
+CJ  CA  N2   120.10000   70.00000     CYT
+CJ  CA  NC   121.50000   70.00000     CYT
+CJ  CJ  N*   121.20000   70.00000     CYT
+CJ  CM  CT   119.70000   85.00000
+CJ  N*  CT   121.20000   70.00000
+CJ  N*  H    119.20000   35.00000
+CK  N*  CO   128.80000   70.00000     jtr (12/7/01)
+CK  N*  CT   128.80000   70.00000
+CK  N*  H    128.80000   30.00000
+CK  NA  CT   128.80000   70.00000     wlj
+CK  NA  H    128.80000   30.00000     wlj
+CM  C   N    115.50000   70.00000     wlj
+CM  C   NA   114.10000   70.00000     THY
+CM  C   O    125.30000   80.00000     THY
+CM  C=  CT   124.00000   70.00000     wlj
+CM  C=  HC   120.00000   35.00000     wlj
+CM  CA  N2   120.10000   70.00000
+CM  CA  NA   121.50000   70.00000     copy from above for CytH+ (jtr 5-14-91)
+CM  CA  NC   121.50000   70.00000
+CM  CJ  N*   121.20000   70.00000     THY
+CM  CM  CT   124.00000   70.00000     wlj
+CM  CM  CY   124.00000   70.00000     hept,                   copy from CM-CM-CT      rcr HIVRT
+CM  CM  Cl   121.50000   75.00000     wlj
+CM  CM  F    121.50000   80.00000     wlj
+CM  CM  H4   119.70000   35.00000
+CM  CM  HC   120.00000   35.00000     wlj
+CM  CM  N*   121.20000   70.00000
+CM  CM  NA   121.20000   70.00000     copy from above for CytH+ (jtr 5-14-91)
+CM  CM  OH   123.00000   70.00000     wlj
+CM  CM  OS   123.00000   70.00000     wlj
+CM  CM  S    119.40000   85.00000     hept,                   copy from SY-CA-CA      rcr HIVRT
+CM  CT  CM   112.40000   63.00000     mwm
+CM  CT  CT   111.10000   63.00000     " wlj
+CM  CT  F    109.50000   50.00000     wlj
+CM  CT  HC   109.50000   35.00000
+CM  CY  CY   114.00000   63.00000     hept,                   copy from CA-CT-CT      rcr HIVRT
+CM  CY  HC   109.50000   35.00000     hept,                   copy from CM-CT-HC      rcr HIVRT
+CM  N*  CO   121.20000   70.00000     jtr 12/11/01
+CM  N*  CT   121.20000   70.00000
+CM  N*  H    119.20000   35.00000
+CM  NA  H    119.20000   35.00000     copy from above for CytH+ (jtr 5-14-91)
+CM  OH  HO   109.00000   35.00000     wj
+CM  OS  CT   111.00000   75.00000     wlj
+CN  CA  HA   120.00000   35.00000
+CN  CB  CS   108.80000   85.00000
+CN  NA  CW   111.60000   70.00000     TRP(OL)
+CN  NA  H    123.10000   35.00000     TRP
+CO  CT  CT   112.70000   58.35000     "            :  CT-CT-CT - wd 6/95 Glucose
+CO  CT  HC   110.70000   37.50000     "            :  CT-CT-HC - wd 6/95 Glucose
+CO  CT  OH   109.50000   50.00000     "            :  CT-CT-OH - wd 6/95 Glucose
+CO  OH  HO   108.50000   55.00000     "            :  CT-OH-HO - wd 6/95 Glucose
+CO  OS  CT   109.50000   60.00000     "            :  CT-OS-CT - wd 6/95 Glucose
+CP  NA  H    126.35000   35.00000     HIS(OL)
+CQ  N   H    118.00000   35.00000     wlj
+CQ  N2  H    120.00000   35.00000     wlj
+CQ  NC  CQ   118.60000   70.00000     wlj 1,3,5-triazine
+CQ  NC  CR   111.00000   70.00000     wj
+CR  CS  CW   110.40000   70.00000     wj
+CR  NA  CW   109.80000   70.00000     wlj   "     "    "
+CR  NA  CX   109.80000   70.00000     jtr - copy from CW-NA-CR for HIP
+CR  NA  H    120.00000   35.00000     HIS(OL)
+CR  NA  NB   113.10000   56.00000     "
+CR  NB  CV   110.00000   70.00000     HIS(OL) wlj 1/97
+CR  NB  CW   110.00000   70.00000
+CR  OS  CW   104.00000   70.00000     "
+CR  S   CW    90.00000   74.00000     wlj
+CR  SY  CT   102.00000   62.00000
+CS  C   O    128.20000   80.00000     wj
+CS  CR  NA   106.20000   70.00000     wj
+CS  CR  NC   127.70000   70.00000     wj
+CS  CS  CW   107.30000   70.00000     "
+CS  CS  HA   127.50000   35.00000     "
+CS  CT  CT   115.60000   63.00000     wj
+CS  CT  HC   109.50000   35.00000     wj
+CS  CU  NB   111.90000   70.00000     "
+CS  CW  CT   132.10000   70.00000     "
+CS  CW  HA   132.10000   35.00000     "
+CS  CW  NA   107.70000   70.00000     wj/nm
+CS  CW  NB   111.90000   70.00000     "
+CS  CW  OS   110.60000   70.00000     wlj
+CS  CW  S    111.00000   70.00000     wlj
+CT  C   CT   116.00000   70.00000     wlj 7/96
+CT  C   Cl   109.00000   75.00000     wlj
+CT  C   F    111.00000   80.00000     wlj
+CT  C   HC   115.00000   35.00000     wlj
+CT  C   N    116.60000   70.00000
+CT  C   NM   116.60000   70.00000
+CT  C   NT   116.00000   70.00000     nev,                    copy from CT-C -CT      rcr HIVRT
+CT  C   O    120.40000   80.00000
+CT  C   O2   117.00000   70.00000     GLU(OL)     SCH JPC 79,2379
+CT  C   OH   108.00000   70.00000     RCOOH  wlj 2/15/95
+CT  C   OS   111.40000   81.00000     "
+CT  C   S=   125.00000   70.00000     wlj
+CT  C*  CW   125.00000   70.00000     TRP(OL)
+CT  C+  CT   120.00000  172.80000     wlj JACS 94, 4632 (1972)
+CT  C+  HC   120.00000  144.00000     wlj          "
+CT  C2  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+CT  C7  CT   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+CT  C8  CT   124.00000   70.00000     OPLS hydrocarbons ff (jtr 5-14-91)
+CT  CA  NA   120.00000   70.00000     Added DSM (from CT-CC-NA)
+CT  CA  NC   116.00000   70.00000     wlj
+CT  CC  CV   120.00000   70.00000     HIS(OL)
+CT  CC  CW   120.00000   70.00000     HIS(OL)
+CT  CC  NA   120.00000   70.00000     HIS(OL)
+CT  CC  NB   120.00000   70.00000     HIS(OL)
+CT  CH  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+CT  CM  CT   130.00000   70.00000     wlj
+CT  CM  HC   117.00000   35.00000     wlj
+CT  CM  N*   120.00000   70.00000     hept,                   copy from PHE(OL)       rcr HIVRT
+CT  CM  NA   120.00000   70.00000     hept,                   copy from PHE(OL)       rcr HIVRT
+CT  CO  HC   110.70000   37.50000     "            :  CT-CT-HC - wd 6/95 Glucose
+CT  CO  N*   109.50000   50.00000     jtr (12/7/01)
+CT  CO  OH   109.50000   50.00000     "            :  CT-CT-OH - wd 6/95 Glucose
+CT  CO  OS   109.50000   50.00000     hexopyranoses :  CT-CT-OS - wd 3/95 Glucose
+CT  CQ  NC   115.50000   70.00000     wlj
+CT  CR  NA   125.00000   70.00000     wlj
+CT  CR  NB   125.00000   70.00000     wlj
+CT  CS  CW   125.00000   70.00000     TRP(OL)
+CT  CT  CT   112.70000   58.35000     CHARMM 22 parameter file
+CT  CT  CV   114.00000   63.00000     jtr: HIE CA-CB-CG
+CT  CT  CW   114.00000   63.00000     jtr: HID CA-CB-CG
+CT  CT  CX   114.00000   63.00000     jtr: HIP CA-CB-CG
+CT  CT  CZ   112.70000   58.35000     wlj
+CT  CT  Cl   109.80000   69.00000     wlj - from MM2
+CT  CT  F    109.50000   50.00000     PAK F-CT-HC (emd 5-09-94)
+CT  CT  HC   110.70000   37.50000     CHARMM 22 parameter file
+CT  CT  I    112.00000   75.00000     wlj
+CT  CT  N    109.70000   80.00000     ALA    JACS 94, 2657
+CT  CT  N$   110.00000   80.00000     "
+CT  CT  N*   109.50000   50.00000
+CT  CT  N2   111.20000   80.00000     ARG   JCP 76, 1439
+CT  CT  N3   111.20000   80.00000     LYS(OL)   JCP 76, 1439
+CT  CT  NC   109.00000   65.00000     wlj azide
+CT  CT  NM   109.70000   80.00000     ALA    JACS 94, 2657
+CT  CT  NO   111.10000   63.00000     wlj  nitro
+CT  CT  NT   109.47000   56.20000     wlj - MM3 based - JACS 112, 8314 (90)
+CT  CT  NY   111.20000   80.00000     jtr: neutral ARG
+CT  CT  OH   109.50000   50.00000
+CT  CT  OS   109.50000   50.00000
+CT  CT  P    109.50000   43.00000     "
+CT  CT  P+   109.50000   43.00000     wlj 9/97
+CT  CT  S    114.70000   50.00000     CYX            SCHERAGA  JPC 79,1428
+CT  CT  SH   108.60000   50.00000     CYS
+CT  CT  SY   108.60000   50.00000
+CT  CT  SZ   108.60000   50.00000
+CT  CT  Si   112.00000   60.00000     wlj
+CT  CU  NB   118.90000   70.00000     "
+CT  CV  CW   130.70000   70.00000     jtr: HIE CB-CG-CD2
+CT  CV  NB   124.50000   70.00000     wlj
+CT  CW  CV   130.70000   70.00000     jtr: HID CB-CG-CD2
+CT  CW  CW   120.00000   70.00000
+CT  CW  NA   121.60000   70.00000     wlj
+CT  CW  NB   118.90000   70.00000     "
+CT  CW  OS   121.60000   70.00000     wlj
+CT  CX  CX   130.70000   70.00000     jtr: HIP CB-CG-CD2
+CT  CX  NA   121.60000   70.00000     jtr - copy from CT-CW-NA for HIP
+CT  CY  CY   117.20000   37.50000     "
+CT  CY  HC   114.30000   35.00000     "
+CT  CY  O$   117.20000   37.50000     "
+CT  CZ  CZ   180.00000  150.00000     do 11/98 - JPOC, 9, 191(1996)
+CT  CZ  NZ   180.00000  150.00000     wlj
+CT  HC  DM   109.47000   37.50000     wlj
+CT  N   CT   118.00000   50.00000     PRO(OL)         DETAR JACS 99,1232
+CT  N   H    118.40000   38.00000
+CT  N   SY   120.00000   50.00000
+CT  N$  CY   126.00000   50.00000     "
+CT  N2  CT   118.00000   50.00000
+CT  N2  H    118.40000   35.00000
+CT  N2  H3   118.40000   35.00000     ARG(OL)
+CT  N3  CT   113.00000   50.00000     proline j.phys chem 1979 p 2361
+CT  N3  H3   109.50000   35.00000     LYS
+CT  NA  NB   118.40000   70.00000     "
+CT  NC  NC   117.00000   70.00000     wlj  azo
+CT  NC  NZ   120.00000   70.00000     wlj azide
+CT  NM  CT   118.00000   50.00000     PRO(OL)
+CT  NO  ON   117.50000   80.00000     wlj  nitro
+CT  NT  CT   107.20000   51.80000     wlj - MM3 based JACS 112, 8314 (90)
+CT  NT  H    109.50000   35.00000
+CT  NT  SY   108.60000   50.00000     bhap,                   copy from CT-CT-SY      rcr HIVRT
+CT  NY  H    109.50000   35.00000     jtr: neutral ARG
+CT  NZ  CZ   180.00000  150.00000     wlj  10/04   "
+CT  OH  DM   109.47000   10.00000     wlj
+CT  OH  HO   108.50000   55.00000
+CT  OH  P    120.50000  100.00000     jtr 12/10/01
+CT  OS  CT   109.50000   60.00000
+CT  OS  DM   109.47000   10.00000     wlj
+CT  OS  P    120.50000  100.00000
+CT  OS  Si   130.00000   40.00000     wlj
+CT  P   O    109.50000   45.00000     wlj 11/95
+CT  P   O2   109.50000   45.00000     wlj 11/95
+CT  P   OS   109.50000   45.00000     wlj 11/95
+CT  P+  CT   109.50000   45.00000     " AMBER OS-P-OS
+CT  S   CT    98.90000   62.00000     MET(OL)
+CT  S   CY    94.00000   62.00000     "
+CT  S   DM   109.47000   10.00000     wlj
+CT  S   LP    96.70000  150.00000
+CT  S   S    103.70000   68.00000     CYX(OL)        SCHERAGA  JPC 79,1428
+CT  SH  DM   109.47000   10.00000     wlj
+CT  SH  HS    96.00000   44.00000     CYS(OL)
+CT  SH  LP    96.70000  150.00000
+CT  SY  CT   102.00000   62.00000
+CT  SY  N    103.00000  100.00000
+CT  SY  NT   102.00000   62.00000     nev,                    copy from CT-SY-CT      rcr HIVRT
+CT  SY  OY   108.90000   74.00000
+CT  SZ  CT    96.00000   62.00000
+CT  SZ  OY   107.00000   74.00000
+CT  Si  CT   110.00000   60.00000     wlj
+CT  Si  Cl   110.50000   35.00000     wlj
+CT  Si  F    110.50000   35.00000     wlj
+CT  Si  H    110.50000   35.00000     wlj
+CT  Si  HC   110.50000   35.00000     wlj
+CT  Si  I    110.50000   35.00000     wlj
+CT  Si  OS   100.00000   60.00000     wlj
+CU  CA  HA   128.20000   35.00000     "
+CU  CS  CW   103.80000   70.00000     "
+CU  NB  NA   104.10000   70.00000     "
+CU  NB  OS   105.30000   70.00000     "
+CV  CC  NA   120.00000   70.00000     HIS(OL)
+CV  CT  HC   109.50000   35.00000     jtr: HIE HB-CB-CG
+CV  CW  HA   130.70000   35.00000     wlj - imidazole
+CV  CW  NA   106.30000   70.00000     wlj   "     "  imidazole
+CV  CW  OS   108.00000   70.00000     "
+CV  CW  S    111.00000   70.00000     wlj
+CW  C   NT   116.00000   70.00000     bhap,                   copy from CT-C -CT      rcr HIVRT
+CW  C   O    120.40000   80.00000     bhap,                   copy from CA-C -O       rcr HIVRT
+CW  C*  HC   126.80000   35.00000
+CW  C=  HC   122.00000   35.00000     wlj
+CW  CA  HA   126.90000   35.00000     wlj - pyrrole
+CW  CC  NA   120.00000   70.00000     HIS(OL)
+CW  CC  NB   120.00000   70.00000     HIS(OL)
+CW  CS  CW   103.80000   70.00000     "
+CW  CS  HA   125.70000   35.00000     "
+CW  CS  HC   126.80000   35.00000
+CW  CT  HC   109.50000   35.00000     jtr: HID HB-CB-CG
+CW  CT  S    114.70000   50.00000     wlj
+CW  CV  HA   128.20000   35.00000     wlj
+CW  CV  NB   111.00000   70.00000     wlj   "     "    "
+CW  CW  NA   120.00000   70.00000
+CW  CW  NB   120.00000   70.00000
+CW  NA  CW   109.80000   70.00000     wlj   "     "    "     "
+CW  NA  H    120.00000   35.00000     HIS(OL)
+CW  NA  NB   113.10000   56.00000     "
+CW  NB  NA   104.10000   70.00000     "
+CW  OS  CW   106.50000   70.00000     wlj  furan
+CW  OS  NB   108.90000   70.00000     "
+CW  S   CW    97.00000   74.00000     wlj
+CX  CT  HC   109.50000   35.00000     jtr: HIP HB-CB-CG
+CX  CX  HA   130.70000   35.00000     jtr - copy from HA-CW-CV for HIP
+CX  CX  NA   106.30000   70.00000     jtr - copy from CV-CW-NA for HIP
+CX  NA  H    120.00000   35.00000     jtr HIP
+CY  C$  N$    91.00000   70.00000     "
+CY  C$  O    134.00000   80.00000     "
+CY  CT  HC   110.70000   37.50000     "
+CY  CY  CY    79.20000   30.00000     "
+CY  CY  HC   117.20000   37.50000     cyclopropanes - wlj  10/97
+CY  CY  N    126.00000   37.50000     "
+CY  CY  N$    89.00000   80.00000     small rings - wj
+CY  CY  NT   117.20000   37.50000     nev,                    copy from CY-CY-CT      rcr HIVRT
+CY  CY  O$    90.00000   50.00000     "
+CY  CY  S    128.00000   55.00000     "
+CY  N   H    113.00000   40.00000     "
+CY  O$  CY    90.00000   60.00000     "
+CZ  CT  HC   108.50000   35.00000     wlj
+CZ  CZ  HC   180.00000  112.00000     do 1/99  - JPOC, 9, 191(1996)
+Cl  C   O    119.00000   75.00000     wlj
+Cl  CA  NC   120.00000   75.00000     nev,                    copy from CA-CA-Cl      rcr HIVRT
+Cl  CM  HC   114.00000   60.00000     wlj
+Cl  CT  Cl   111.70000   78.00000     " Tet 31, 1971 (75)
+Cl  CT  HC   107.60000   51.00000     " see also JACS 121,9198
+DM  Br  DM   109.47000   33.00000     wlj
+DM  CA  HA    90.00000   10.00000     dummy
+DM  CZ  NZ    90.00000   10.00000     wlj
+DM  Cl  DM   109.47000   33.00000     wlj
+DM  F   DM   109.47000   33.00000     wlj
+DM  HC  DM   109.47000   33.00000     wlj
+DM  HO  DM   109.47000   33.00000     wlj
+DM  HO  OH   109.47000   10.00000     wlj
+DM  HS  DM   109.47000   33.00000     wlj
+DM  HS  SH   109.47000   10.00000     wlj
+DM  I   DM   109.47000   33.00000     wlj
+DM  OH  DM   109.47000   33.00000     wlj
+DM  OS  DM   109.47000   33.00000     wlj
+DM  S   DM   109.47000   33.00000     wlj
+DM  SH  DM   109.47000   33.00000     wlj
+DM  SZ  OY    90.00000   10.00000     dummy
+F   C   O    121.00000   80.00000     wlj
+F   CM  F    108.00000   80.00000     wlj
+F   CM  HC   112.00000   50.00000     wlj
+F   CT  F    109.10000   77.00000     PAK F-CT-F  (emd 5-09-94)
+F   CT  HC   107.00000   40.00000     wlj
+F   CT  SY   109.50000   50.00000     bhap,                   copy from CT-CT-F       rcr HIVRT
+H   N   H    120.00000   35.00000     ADE,CYT,GUA,GLN,ASN     **
+H   N   OH   110.20000   35.00000     wlj
+H   N   SY   111.00000  100.00000
+H   N2  H    113.00000   35.00000     wlj
+H   N3  H    109.50000   43.60000     wlj
+H   NA  NB   118.40000   56.00000     "
+H   NT  H    106.40000   43.60000     wlj MM3 based
+H   NT  SY   115.00000   35.00000     bhap,                   adjusted from CT-NT-H   rcr HIVRT
+H   NY  H    106.40000   43.60000     jtr: neutral ARG
+H   Si  H    109.50000   35.00000     wlj
+H2  N2  H2   120.00000   35.00000     ADE,CYT,GUA,GLN,ASN,ARG
+H3  N   H3   120.00000   35.00000     ADE,CYT,GUA,GLN,ASN     **
+H3  N2  H3   120.00000   35.00000     ADE,CYT,GUA,GLN,ASN,ARG
+H3  N3  H3   109.50000   35.00000     LYS
+H4  CM  N*   119.10000   35.00000     jtr 12/11/01
+H4  CM  NA   119.10000   35.00000
+H4  CW  NA   120.00000   35.00000
+H5  CK  N*   123.05000   35.00000
+H5  CK  NA   123.05000   35.00000
+H5  CK  NB   123.05000   35.00000
+H5  CQ  NC   115.45000   35.00000
+HA  CA  N    119.10000   35.00000     wlj
+HA  CA  NA   120.00000   35.00000
+HA  CA  NB   119.10000   35.00000     Added DSM (from HC-CM-NA)
+HA  CA  NC   116.00000   35.00000     wlj 12/96 based on pyridine
+HA  CK  N*   120.00000   35.00000
+HA  CK  NA   120.00000   35.00000     wlj
+HA  CK  NB   120.00000   35.00000     wlj
+HA  CQ  NC   115.45000   35.00000
+HA  CR  NA   120.00000   35.00000
+HA  CR  NB   120.00000   35.00000
+HA  CR  OS   117.00000   35.00000     "
+HA  CR  S    113.40000   35.00000     wlj
+HA  CU  NB   118.90000   35.00000     "
+HA  CV  NB   120.00000   35.00000
+HA  CW  NA   121.60000   35.00000     wlj
+HA  CW  OS   113.40000   35.00000     wlj  furan
+HA  CW  S    113.40000   35.00000     wlj
+HA  CX  NA   120.00000   35.00000     jtr: HIP HD2-CD2-NE2
+HC  C   N    114.00000   40.00000     wlj
+HC  C   NC   122.00000   35.00000     wlj
+HC  C   O    123.00000   35.00000     wlj
+HC  C   OH   115.00000   40.00000     "
+HC  C   OS   115.00000   40.00000     "
+HC  C   S=   127.00000   35.00000     wlj
+HC  CM  HC   117.00000   35.00000     wlj
+HC  CM  N*   119.10000   35.00000
+HC  CM  NA   119.10000   35.00000     copy from above for CytH+ (jtr 5-14-91)
+HC  CM  OS   114.50000   35.00000
+HC  CO  HC   109.50000   33.00000     "            :  HC-CT-HC - wd 6/95
+HC  CO  N*   109.50000   35.00000
+HC  CO  OH   109.50000   35.00000     "            :  HC-CT-OS - wd 6/95 Glucose
+HC  CO  OS   109.50000   35.00000     "            :  HC-CT-OS - wd 6/95 Glucose
+HC  CT  HC   107.80000   33.00000     CHARMM 22 parameter file
+HC  CT  I    111.00000   75.00000     wlj
+HC  CT  N    109.50000   35.00000
+HC  CT  N$   109.50000   35.00000     "
+HC  CT  N*   109.50000   35.00000     jtr (12/7/01)
+HC  CT  N2   109.50000   35.00000
+HC  CT  N3   109.50000   35.00000
+HC  CT  NA   109.50000   35.00000     copy from above for CytH+ (jtr 5-14-91)
+HC  CT  NC   109.50000   35.00000
+HC  CT  NM   109.50000   35.00000
+HC  CT  NO   105.00000   35.00000     wlj  nitro
+HC  CT  NT   109.50000   35.00000     JACS 115, 9620 (93)
+HC  CT  NY   109.50000   35.00000     jtr: neutral ARG
+HC  CT  NZ   108.50000   35.00000     wlj  10/04 isonitrile
+HC  CT  OH   109.50000   35.00000
+HC  CT  OS   109.50000   35.00000     SUG
+HC  CT  P    109.50000   41.00000     wlj 11/95 MM3 based JACS 114, 8536 (92)
+HC  CT  P+   109.50000   41.00000     "
+HC  CT  S    109.50000   35.00000
+HC  CT  SH   109.50000   35.00000
+HC  CT  SY   109.50000   35.00000
+HC  CT  SZ   109.50000   35.00000
+HC  CT  Si   109.50000   35.00000     wlj
+HC  CY  HC   114.30000   35.00000     "
+HC  CY  N    108.00000   35.00000     "
+HC  CY  N$   111.00000   35.00000     "
+HC  CY  NT   114.30000   35.00000     nev,                    copy from HC-CY-CT      rcr HIVRT
+HC  CY  O$   117.20000   37.50000     "
+HC  CY  S    108.00000   37.50000     "
+HC  Si  HC   109.50000   35.00000     wlj
+HO  OH  N    105.40000   49.00000     wlj
+HO  OH  P    108.50000   55.00000     SUG(OL)
+HO  OH  Zn   126.00000  100.00000
+HS  SH  HS    92.07000   35.00000
+HS  SH  LP    96.70000  150.00000
+HW  HW  OW     0.00000    0.00000     MJF
+HW  OW  HW   104.52000   34.05000     J Phys Chem 91, 3349 (1987) -For TIP3F Water (HW-OW-HW)
+LP  S   LP   160.00000    0.00000
+LP  S   S     96.70000  150.00000
+LP  SH  LP   160.00000    0.00000
+N   C   N    114.20000   70.00000     copy from above for Urea (jtr 5-14-91)
+N   C   O    122.90000   80.00000     AA(OL)
+N   C   OS   111.40000   81.00000     bhap,                   copy from OS-C -CT      rcr HIVRT
+N   C   S=   125.00000   70.00000     wlj
+N   CB  NB   126.20000   70.00000     wj
+N   CQ  N2   116.00000   70.00000     wlj
+N   CQ  NC   123.30000   70.00000     wlj
+N   CR  NB   126.20000   70.00000     wj
+N   CT  OS   109.50000   50.00000     lac,                    copy from CT-CT-OS      rcr HIVRT
+N   SY  OY   107.00000  120.00000
+N   Zn  N    109.50000   20.00000
+N   Zn  O    109.50000   20.00000
+N$  C$  O    134.00000   80.00000     "
+N$  CY  S    109.00000   55.00000     "
+N*  C   NA   115.40000   70.00000     URA
+N*  C   NC   118.60000   70.00000     CYT
+N*  C   O    120.90000   80.00000     URA,CYT
+N*  CB  NC   126.20000   70.00000     GUA,ADE
+N*  CE  NB   113.90000   70.00000     ADE,GUA
+N*  CH  OS   109.50000   80.00000     SUG
+N*  CK  NB   113.90000   70.00000
+N*  CM  OS   120.00000   70.00000     hept,                   copy from CA-CA-OS      rcr HIVRT
+N*  CM  S    119.40000   85.00000     hept,                   copy from SY-CA-CA      rcr HIVRT
+N*  CO  OS   109.50000   50.00000     jtr (12/7/01)
+N*  CT  OS   109.50000   50.00000
+N2  CA  N2   120.00000   70.00000     ARG(OL)
+N2  CA  NA   116.00000   70.00000     GUA
+N2  CA  NC   119.30000   70.00000     ADE,GUA
+N2  CQ  NC   119.30000   70.00000     wlj
+N2  CZ  NZ   180.00000  150.00000     wlj
+NA  C   NA   118.60000   70.00000     copy from above for CytH+ (jtr 5-14-91)
+NA  C   NC   118.60000   70.00000
+NA  C   O    120.60000   80.00000     URA(2),GUA
+NA  CA  NB   123.30000   70.00000     Added DSM (from NA-CA-NC)
+NA  CA  NC   123.30000   70.00000     GUA
+NA  CB  NC   126.20000   70.00000     wlj
+NA  CK  NB   113.90000   70.00000     wlj
+NA  CM  OS   120.00000   70.00000     hept,                   copy from CA-CA-OS      rcr HIVRT
+NA  CM  S    119.40000   85.00000     hept,                   copy from SY-CA-CA      rcr HIVRT
+NA  CP  NA   110.75000   70.00000     HISP(OL)
+NA  CP  NB   111.60000   70.00000     HIS(OL)
+NA  CR  NA   120.00000   70.00000     HISP(OL)
+NA  CR  NB   120.00000   70.00000     HIS(OL)
+NA  CR  NC   126.20000   70.00000     wj
+NA  CR  SY   120.00000   70.00000     wlj
+NB  CR  NT   126.10000   70.00000     wlj
+NB  CR  OS   115.00000   70.00000     "
+NB  CR  S    113.60000   70.00000     wlj # . MJF Duplicate
+NB  CR  SY   120.00000   70.00000     wlj
+NC  C   O    122.50000   80.00000     CYT
+NC  CA  NT   116.00000   70.00000     nev,                    copy from NC-CA-CT      rcr HIVRT
+NC  CI  NC   129.10000   70.00000     ADE
+NC  CQ  NC   129.10000   70.00000
+NC  NZ  NZ   180.00000  100.00000     wlj azide
+NM  C   O    122.90000   80.00000
+NT  C   O    120.40000   80.00000     nev,                    copy from CT-C -O       rcr HIVRT
+NT  CR  S    120.20000   70.00000     wlj
+NT  CT  S    114.70000   50.00000     nev,                    copy from CT-CT-S       rcr HIVRT
+NT  SY  OY   108.90000   74.00000     nev,                    copy from OY-SY-CT      rcr HIVRT
+NY  CA  NY   111.80000   70.00000     jtr: neutral ARG
+NY  CA  NZ   124.10000   70.00000     jtr: neutral ARG
+O   C   O    126.00000   80.00000     COO- terminal residues
+O   C   O2   126.00000   80.00000     adk
+O   C   OH   121.00000   80.00000     RCOOH  wlj 2/15/95
+O   C   OS   123.40000   83.00000     J.Comp.Chem.1990,11,1181 for SKF8
+O   P   OH   108.23000  100.00000     SUG(OL)
+O   P   OS   108.23000  100.00000     SUG(OL)
+O2  C   O2   126.00000   80.00000     GLU(OL)      SCH JPC 79,2379
+O2  P   O2   119.90000  140.00000     SUG(OL)
+O2  P   OH   108.23000   45.00000     SUG(OL)
+O2  P   OS   108.23000  100.00000     SUG(OL)
+OH  CO  OS   111.55000   92.60000     Ha,CarbRes 180,207(88)Merz,JCC 15,1019 (94)
+OH  P   OH   102.60000   45.00000     SUG(OL)
+OH  P   OS   102.60000   45.00000     SUG(OL)
+ON  NO  ON   125.00000   80.00000     wlj  nitro
+OS  CO  OS   111.55000   92.60000     ACETAL - wlj 2/93
+OS  P   OS   102.60000   45.00000     SUG(OL)
+OS  Si  OS   110.00000   60.00000     wlj
+OU  U   OU   180.00000  150.00000     J Phys Chem 97, 5685 (1993)
+OY  SY  OY   119.00000  104.00000
+P   OS  P    120.50000  100.00000
+Si  OS  Si   145.00000   20.00000     wlj

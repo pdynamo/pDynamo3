@@ -1,0 +1,49 @@
+# . Text parameter file for the element Tl.
+
+Tl   atomicNumber                          81
+Tl   iii                                    6
+Tl   iiid                                   6
+Tl   ir016                                  0
+Tl   ir066                                  0
+Tl   ir244                                  0
+Tl   ir266                                  0
+Tl   ir466                                  0
+Tl   qnd                                    0
+Tl   qnp                                    6
+Tl   qns                                    6
+Tl   ad                     2.574134572756841  atomic
+Tl   alp                    1.340951000000000  A^-1
+Tl   am                     0.384413090883134  atomic
+Tl   aq                     0.221323312988383  atomic
+Tl   betad                  0.000000000000000  eV
+Tl   betap                 -7.946799000000000  eV
+Tl   betas                 -1.084495000000000  eV
+Tl   dd                     0.078136210719602  atomic
+Tl   eheat                 43.549999999999997  kcal/mole
+Tl   eisol                -56.649204999999995  eV
+Tl   f0sd                   0.000000000000000  eV
+Tl   g2sd                   0.000000000000000  eV
+Tl   gp2                    8.962726999999999  eV
+Tl   gphot                  1.000000000000000  dimensionless
+Tl   gpp                    4.992785000000000  eV
+Tl   gsp                   11.223883000000001  eV
+Tl   gss                   10.460412000000000  eV
+Tl   hsp                    2.530406000000000  eV
+Tl   pcore                  0.000000000000000  atomic
+Tl   qq                     1.531711028132124  atomic
+Tl   udd                    0.000000000000000  eV
+Tl   upp                  -26.920636999999999  eV
+Tl   uss                  -30.053170000000001  eV
+Tl   zcore                  3.000000000000000  atomic
+Tl   zdn                    0.000000000000000  atomic
+Tl   zetad                  0.000000000000000  atomic
+Tl   zetap                  1.969445000000000  atomic
+Tl   zetas                  6.867921000000000  atomic
+Tl   zpn                    0.000000000000000  atomic
+Tl   zsn                    0.000000000000000  atomic
+Tl   fn10                  -1.361399000000000  A_eV
+Tl   fn20                   3.557226000000000  A^-2
+Tl   fn30                   1.092802000000000  A
+Tl   fn11                  -0.045401000000000  A_eV
+Tl   fn21                   2.306995000000000  A^-2
+Tl   fn31                   2.965029000000000  A

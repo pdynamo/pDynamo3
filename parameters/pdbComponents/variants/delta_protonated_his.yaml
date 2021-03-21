@@ -1,0 +1,4 @@
+# . !PDBComponentVariant
+{Atoms To Delete: [HE2], Bond Types: [[CE1, ND1, Single], [CE1,
+      NE2, Double]], Bond Type Fields: [Atom 1, Atom 2, Type], Component: HIS, Formal Charges: {
+    ND1: 0, NE2: 0}, Label: Delta Protonated}

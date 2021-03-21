@@ -1,0 +1,16 @@
+# . Space group Pb21m.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2 -2b
+Hermann-Mauguin    : Pb21m
+Schoenflies        : C2v^2
+Space Group Number : 26
+Space Group Symbol : 26:bca
+Setting            : 132
+Transformations :
+    - (x,y,z)
+    - (-x,y+1/2,-z)
+    - (-x,y+1/2,z)
+    - (x,y,-z)
+...

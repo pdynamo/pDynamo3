@@ -1,0 +1,20 @@
+# . Space group C2221.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : C 2c 2
+Hermann-Mauguin    : C2221
+Schoenflies        : D2^5
+Space Group Number : 20
+Space Group Symbol : 20
+Setting            : 116
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (-x,y,-z+1/2)
+    - (x,-y,-z)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z)
+...

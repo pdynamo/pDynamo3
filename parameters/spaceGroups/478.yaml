@@ -1,0 +1,24 @@
+# . Space group P6cc.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P 6 -2c
+Hermann-Mauguin    : P6cc
+Schoenflies        : C6v^2
+Space Group Number : 184
+Space Group Symbol : 184
+Setting            : 478
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-x,-y,z)
+    - (y,-x+y,z)
+    - (x-y,x,z)
+    - (-y,-x,z+1/2)
+    - (-x+y,y,z+1/2)
+    - (x,x-y,z+1/2)
+    - (y,x,z+1/2)
+    - (x-y,-y,z+1/2)
+    - (-x,-x+y,z+1/2)
+...

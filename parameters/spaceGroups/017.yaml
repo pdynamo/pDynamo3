@@ -1,0 +1,16 @@
+# . Space group I211.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : I 2x
+Hermann-Mauguin    : I211
+Schoenflies        : C2^3
+Space Group Number : 5
+Space Group Symbol : 5:a3
+Setting            : 17
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+...

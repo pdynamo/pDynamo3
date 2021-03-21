@@ -1,0 +1,4 @@
+# . !PDBComponent
+{Atom Fields: [Atomic Number, Formal Charge, Label], Atoms: [[11, 1, NA]],
+  Component Class: Non-Polymer, Formal Charge: 1, Is Heteroatom: true, Label: NA,
+  Name: '"SODIUM ION"', PDB Class: Hetai}

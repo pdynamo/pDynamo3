@@ -1,0 +1,28 @@
+# . Space group Ccca:1.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : C 2 2 -1bc
+Hermann-Mauguin    : Ccca:1
+Schoenflies        : D2h^22
+Space Group Number : 68
+Space Group Symbol : 68:1
+Setting            : 322
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-x,y,-z)
+    - (x+1/2,-y+1/2,-z)
+    - (-x,-y+1/2,-z+1/2)
+    - (x+1/2,y,-z+1/2)
+    - (x,-y+1/2,z+1/2)
+    - (-x+1/2,y,z+1/2)
+    - (x+1/2,y+1/2,z)
+    - (-x,-y,z)
+    - (-x+1/2,y+1/2,-z)
+    - (x,-y,-z)
+    - (-x+1/2,-y,-z+1/2)
+    - (x,y+1/2,-z+1/2)
+    - (x+1/2,-y,z+1/2)
+    - (-x,y+1/2,z+1/2)
+...

@@ -1,0 +1,22 @@
+---
+# . !Element
+Allen Electronegativity        : 2.685
+Atomic Number                  : 35
+Bragg Radius                   : 1.15
+Covalent Radius                : 1.21
+Group                          : 17
+Mass                           : 79.904
+Maximum Orbital Quantum Number : 1
+Name                           : Bromine
+Pauling Electronegativity      : 2.96
+Period                         : 4
+RGB Color Indices              : [166, 41, 41]
+Single Bond Distances          : {1     : 1.41, 35     : 2.28, 6     : 1.94}
+Symbol                         : Br
+Valence Electrons              : 7
+vdW Radius                     : 2.1
+d Quantum Number               : 0
+f Quantum Number               : 0
+p Quantum Number               : 4
+s Quantum Number               : 4
+...

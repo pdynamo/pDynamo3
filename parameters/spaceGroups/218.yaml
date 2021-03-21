@@ -1,0 +1,20 @@
+# . Space group Iba2.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : I 2 -2c
+Hermann-Mauguin    : Iba2
+Schoenflies        : C2v^21
+Space Group Number : 45
+Space Group Symbol : 45
+Setting            : 218
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (x,-y,z+1/2)
+    - (-x,y,z+1/2)
+...

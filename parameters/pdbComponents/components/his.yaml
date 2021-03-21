@@ -1,0 +1,14 @@
+# . !PDBComponent
+{Atom Fields: [Atomic Number, Formal Charge, Label], Atoms: [[7, 0, N],
+    [6, 0, CA], [6, 0, C], [8, 0, O], [6, 0, CB], [6, 0, CG], [7, 1, ND1], [6, 0,
+      CD2], [6, 0, CE1], [7, 0, NE2], [8, 0, OXT], [1, 0, H], [1, 0, H2], [1, 0, HA],
+    [1, 0, HB2], [1, 0, HB3], [1, 0, HD1], [1, 0, HD2], [1, 0, HE1], [1, 0, HE2],
+    [1, 0, HXT]], Bond Fields: [Atom 1, Atom 2, Type], Bonds: [[N, CA, Single], [N,
+      H, Single], [N, H2, Single], [CA, C, Single], [CA, CB, Single], [CA, HA, Single],
+    [C, O, Double], [C, OXT, Single], [CB, CG, Single], [CB, HB2, Single], [CB, HB3,
+      Single], [CG, ND1, Single], [CG, CD2, Double], [ND1, CE1, Double], [ND1, HD1,
+      Single], [CD2, NE2, Single], [CD2, HD2, Single], [CE1, NE2, Single], [CE1, HE1,
+      Single], [NE2, HE2, Single], [OXT, HXT, Single]], Component Class: '"L-Peptide',
+  Formal Charge: 1, Is Heteroatom: false, Is In Chain: true, Label: HIS, Left Link: Peptide,
+  Left Termination: N Terminal, Name: HISTIDINE, PDB Class: Atomp, Right Link: Peptide,
+  Right Termination: C Terminal, Variants: [Delta Protonated]}

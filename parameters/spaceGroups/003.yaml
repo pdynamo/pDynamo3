@@ -1,0 +1,14 @@
+# . Space group P121.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : P 2y
+Hermann-Mauguin    : P121
+Schoenflies        : C2^1
+Space Group Number : 3
+Space Group Symbol : 3:b
+Setting            : 3
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+...

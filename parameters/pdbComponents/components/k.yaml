@@ -1,0 +1,4 @@
+# . !PDBComponent
+{Atom Fields: [Atomic Number, Formal Charge, Label], Atoms: [[19, 1, K]],
+  Component Class: Non-Polymer, Formal Charge: 1, Is Heteroatom: true, Label: K, Name: '"POTASSIUM
+    ION"', PDB Class: Hetai}

@@ -1,0 +1,36 @@
+# . Space group Pa-3.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : -P 2ac 2ab 3
+Hermann-Mauguin    : Pa-3
+Schoenflies        : Th^6
+Space Group Number : 205
+Space Group Symbol : 205
+Setting            : 501
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z)
+    - (z,x,y)
+    - (z+1/2,-x+1/2,-y)
+    - (-z+1/2,-x,y+1/2)
+    - (-z,x+1/2,-y+1/2)
+    - (y,z,x)
+    - (-y,z+1/2,-x+1/2)
+    - (y+1/2,-z+1/2,-x)
+    - (-y+1/2,-z,x+1/2)
+    - (-x,-y,-z)
+    - (x+1/2,y,-z+1/2)
+    - (x,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z)
+    - (-z,-x,-y)
+    - (-z+1/2,x+1/2,y)
+    - (z+1/2,x,-y+1/2)
+    - (z,-x+1/2,y+1/2)
+    - (-y,-z,-x)
+    - (y,-z+1/2,x+1/2)
+    - (-y+1/2,z+1/2,x)
+    - (y+1/2,z,-x+1/2)
+...

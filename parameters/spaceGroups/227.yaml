@@ -1,0 +1,20 @@
+# . Space group Pmmm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2 2
+Hermann-Mauguin    : Pmmm
+Schoenflies        : D2h^1
+Space Group Number : 47
+Space Group Symbol : 47
+Setting            : 227
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (x,-y,z)
+    - (-x,y,z)
+...

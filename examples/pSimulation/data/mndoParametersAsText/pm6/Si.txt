@@ -1,0 +1,146 @@
+# . Text parameter file for the element Si.
+
+Si   atomicNumber                          14
+Si   iii                                    3
+Si   iiid                                   3
+Si   ir016                                  0
+Si   ir066                                  0
+Si   ir244                                  0
+Si   ir266                                  0
+Si   ir466                                  0
+Si   qnd                                    3
+Si   qnp                                    3
+Si   qns                                    3
+Si   ad                     0.387748683604097  atomic
+Si   alp                    0.000000000000000  A^-1
+Si   am                     0.190905582551161  atomic
+Si   aq                     0.291510839343507  atomic
+Si   betad                 -6.360627000000000  eV
+Si   betap                 -1.856482000000000  eV
+Si   betas                 -8.686909000000000  eV
+Si   dd                     1.207667279417170  atomic
+Si   eheat                108.390000000000001  kcal/mole
+Si   eisol                -68.428267499999990  eV
+Si   f0sd                   6.427188280000000  eV
+Si   g2sd                   0.002725700000000  eV
+Si   gp2                    4.769775000000000  eV
+Si   gphot                  1.000000000000000  dimensionless
+Si   gpp                    5.185150000000000  eV
+Si   gsp                    5.090534000000000  eV
+Si   gss                    5.194805000000000  eV
+Si   hsp                    1.425012000000000  eV
+Si   pcore                  0.000000000000000  atomic
+Si   qq                     1.396279957800985  atomic
+Si   udd                  -22.751899999999999  eV
+Si   upp                  -20.490577999999999  eV
+Si   uss                  -27.358058000000000  eV
+Si   zcore                  4.000000000000000  atomic
+Si   zdn                    0.708600000000000  atomic
+Si   zetad                  2.128593000000000  atomic
+Si   zetap                  1.198413000000000  atomic
+Si   zetas                  1.752741000000000  atomic
+Si   zpn                    1.843048000000000  atomic
+Si   zsn                    8.388111000000000  atomic
+Si   fn10                   0.208571000000000  A_eV
+Si   fn20                   6.000483000000000  A^-2
+Si   fn30                   1.185245000000000  A
+Si   diatomicA      H       1.896950000000000  A^-1
+Si   diatomicX      H       0.924196000000000  dimensionless
+Si   diatomicA      He      2.040498000000000  A^-1
+Si   diatomicX      He      1.853583000000000  dimensionless
+Si   diatomicA      Li      1.789609000000000  A^-1
+Si   diatomicX      Li      3.090791000000000  dimensionless
+Si   diatomicA      Be      1.263132000000000  A^-1
+Si   diatomicX      Be      0.623433000000000  dimensionless
+Si   diatomicA      B       1.982653000000000  A^-1
+Si   diatomicX      B       1.028287000000000  dimensionless
+Si   diatomicA      C       1.984498000000000  A^-1
+Si   diatomicX      C       0.785745000000000  dimensionless
+Si   diatomicA      N       1.818988000000000  A^-1
+Si   diatomicX      N       0.592972000000000  dimensionless
+Si   diatomicA      O       1.923600000000000  A^-1
+Si   diatomicX      O       0.751095000000000  dimensionless
+Si   diatomicA      F       2.131028000000000  A^-1
+Si   diatomicX      F       0.543516000000000  dimensionless
+Si   diatomicA      Ne      2.867784000000000  A^-1
+Si   diatomicX      Ne     14.378676000000000  dimensionless
+Si   diatomicA      Na      2.007615000000000  A^-1
+Si   diatomicX      Na      9.237644000000000  dimensionless
+Si   diatomicA      Mg      3.139749000000000  A^-1
+Si   diatomicX      Mg     29.994520000000001  dimensionless
+Si   diatomicA      Al      1.900000000000000  A^-1
+Si   diatomicX      Al      2.000000000000000  dimensionless
+Si   diatomicA      Si      1.329000000000000  A^-1
+Si   diatomicX      Si      0.273477000000000  dimensionless
+Si   diatomicA      P       3.313466000000000  A^-1
+Si   diatomicX      P      13.239121000000001  dimensionless
+Si   diatomicA      S       1.885916000000000  A^-1
+Si   diatomicX      S       0.876658000000000  dimensionless
+Si   diatomicA      Cl      1.684978000000000  A^-1
+Si   diatomicX      Cl      0.513000000000000  dimensionless
+Si   diatomicA      Ar      1.780350000000000  A^-1
+Si   diatomicX      Ar      1.067890000000000  dimensionless
+Si   diatomicA      K       1.675930000000000  A^-1
+Si   diatomicX      K       8.279199999999999  dimensionless
+Si   diatomicA      Ca      1.218788000000000  A^-1
+Si   diatomicX      Ca      0.336233000000000  dimensionless
+Si   diatomicA      Sc      2.016870000000000  A^-1
+Si   diatomicX      Sc      3.219070000000000  dimensionless
+Si   diatomicA      Ti      2.856038000000000  A^-1
+Si   diatomicX      Ti      6.773815000000000  dimensionless
+Si   diatomicA      Cr      1.860760000000000  A^-1
+Si   diatomicX      Cr      1.029110000000000  dimensionless
+Si   diatomicA      Mn      1.937959000000000  A^-1
+Si   diatomicX      Mn      0.950580000000000  dimensionless
+Si   diatomicA      Co      2.469805000000000  A^-1
+Si   diatomicX      Co      1.090240000000000  dimensionless
+Si   diatomicA      Ni      2.068881000000000  A^-1
+Si   diatomicX      Ni      0.938646000000000  dimensionless
+Si   diatomicA      Zn      1.832058000000000  A^-1
+Si   diatomicX      Zn      3.783905000000000  dimensionless
+Si   diatomicA      Ga      1.913780000000000  A^-1
+Si   diatomicX      Ga      1.002290000000000  dimensionless
+Si   diatomicA      Ge      0.299721000000000  A^-1
+Si   diatomicX      Ge      0.178680000000000  dimensionless
+Si   diatomicA      As      1.915600000000000  A^-1
+Si   diatomicX      As      1.430706000000000  dimensionless
+Si   diatomicA      Se      1.529817000000000  A^-1
+Si   diatomicX      Se      0.518227000000000  dimensionless
+Si   diatomicA      Br      1.570825000000000  A^-1
+Si   diatomicX      Br      0.589511000000000  dimensionless
+Si   diatomicA      Kr      1.764100000000000  A^-1
+Si   diatomicX      Kr      0.554250000000000  dimensionless
+Si   diatomicA      Sr      2.969780000000000  A^-1
+Si   diatomicX      Sr      2.764750000000000  dimensionless
+Si   diatomicA      Y       2.016820000000000  A^-1
+Si   diatomicX      Y       3.219030000000000  dimensionless
+Si   diatomicA      Zr      1.750833000000000  A^-1
+Si   diatomicX      Zr      1.723343000000000  dimensionless
+Si   diatomicA      Ru      2.775910000000000  A^-1
+Si   diatomicX      Ru      0.849430000000000  dimensionless
+Si   diatomicA      Rh      2.776490000000000  A^-1
+Si   diatomicX      Rh      0.850010000000000  dimensionless
+Si   diatomicA      Pd      2.948200000000000  A^-1
+Si   diatomicX      Pd      2.225104000000000  dimensionless
+Si   diatomicA      Cd      1.371225000000000  A^-1
+Si   diatomicX      Cd      2.253346000000000  dimensionless
+Si   diatomicA      Sb      2.686590000000000  A^-1
+Si   diatomicX      Sb      8.713749000000000  dimensionless
+Si   diatomicA      I       1.559579000000000  A^-1
+Si   diatomicX      I       0.700299000000000  dimensionless
+Si   diatomicA      Xe      3.087060000000000  A^-1
+Si   diatomicX      Xe     16.091999999999999  dimensionless
+Si   diatomicA      Ba      1.240420000000000  A^-1
+Si   diatomicX      Ba      1.212660000000000  dimensionless
+Si   diatomicA      La      2.016820000000000  A^-1
+Si   diatomicX      La      3.219030000000000  dimensionless
+Si   diatomicA      Gd      2.016820000000000  A^-1
+Si   diatomicX      Gd      3.219030000000000  dimensionless
+Si   diatomicA      Hf      2.189300000000000  A^-1
+Si   diatomicX      Hf      3.382300000000000  dimensionless
+Si   diatomicA      Re      2.775930000000000  A^-1
+Si   diatomicX      Re      0.849450000000000  dimensionless
+Si   diatomicA      Pt      0.999990000000000  A^-1
+Si   diatomicX      Pt      0.099990000000000  dimensionless
+Si   diatomicA      Hg      2.770860000000000  A^-1
+Si   diatomicX      Hg      3.680740000000000  dimensionless

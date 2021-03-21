@@ -1,0 +1,67 @@
+# . Text parameter file for the element Bi.
+
+Bi   atomicNumber                          83
+Bi   iii                                    6
+Bi   iiid                                   6
+Bi   ir016                                  0
+Bi   ir066                                  0
+Bi   ir244                                  0
+Bi   ir266                                  0
+Bi   ir466                                  0
+Bi   qnd                                    0
+Bi   qnp                                    6
+Bi   qns                                    6
+Bi   ad                     0.308845940014263  atomic
+Bi   alp                    0.000000000000000  A^-1
+Bi   am                     0.215049816247123  atomic
+Bi   aq                     0.306733093673412  atomic
+Bi   betad                  0.000000000000000  eV
+Bi   betap                 -7.359060000000000  eV
+Bi   betas                -34.951577999999998  eV
+Bi   dd                     0.641612030596350  atomic
+Bi   eheat                 50.100000000000001  kcal/mole
+Bi   eisol               -126.116286500000001  eV
+Bi   f0sd                   0.000000000000000  eV
+Bi   g2sd                   0.000000000000000  eV
+Bi   gp2                    7.724219000000000  eV
+Bi   gphot                  1.000000000000000  dimensionless
+Bi   gpp                    8.389442000000001  eV
+Bi   gsp                    6.790583000000000  eV
+Bi   gss                    5.851803000000000  eV
+Bi   hsp                    0.295606000000000  eV
+Bi   pcore                  0.000000000000000  atomic
+Bi   qq                     1.611161205173921  atomic
+Bi   udd                    0.000000000000000  eV
+Bi   upp                  -36.393746000000000  eV
+Bi   uss                  -42.409177000000000  eV
+Bi   zcore                  5.000000000000000  atomic
+Bi   zdn                    0.000000000000000  atomic
+Bi   zetad                  0.000000000000000  atomic
+Bi   zetap                  1.872327000000000  atomic
+Bi   zetas                  3.702377000000000  atomic
+Bi   zpn                    0.000000000000000  atomic
+Bi   zsn                    0.000000000000000  atomic
+Bi   diatomicA      H       1.679905000000000  A^-1
+Bi   diatomicX      H       1.397462000000000  dimensionless
+Bi   diatomicA      Li      0.340140000000000  A^-1
+Bi   diatomicX      Li      0.695320000000000  dimensionless
+Bi   diatomicA      C       1.534025000000000  A^-1
+Bi   diatomicX      C       0.576179000000000  dimensionless
+Bi   diatomicA      N       1.143876000000000  A^-1
+Bi   diatomicX      N       0.152738000000000  dimensionless
+Bi   diatomicA      O       1.553297000000000  A^-1
+Bi   diatomicX      O       0.333042000000000  dimensionless
+Bi   diatomicA      F       2.355400000000000  A^-1
+Bi   diatomicX      F       1.035324000000000  dimensionless
+Bi   diatomicA      S       1.466879000000000  A^-1
+Bi   diatomicX      S       0.620997000000000  dimensionless
+Bi   diatomicA      Cl      1.272975000000000  A^-1
+Bi   diatomicX      Cl      0.326871000000000  dimensionless
+Bi   diatomicA      Se      1.344746000000000  A^-1
+Bi   diatomicX      Se      0.651208000000000  dimensionless
+Bi   diatomicA      Br      1.146233000000000  A^-1
+Bi   diatomicX      Br      0.381170000000000  dimensionless
+Bi   diatomicA      I       1.302171000000000  A^-1
+Bi   diatomicX      I       0.862377000000000  dimensionless
+Bi   diatomicA      Bi      1.074064000000000  A^-1
+Bi   diatomicX      Bi      1.168214000000000  dimensionless

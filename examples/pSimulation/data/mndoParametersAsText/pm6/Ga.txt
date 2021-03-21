@@ -1,0 +1,71 @@
+# . Text parameter file for the element Ga.
+
+Ga   atomicNumber                          31
+Ga   iii                                    4
+Ga   iiid                                   4
+Ga   ir016                                  0
+Ga   ir066                                  0
+Ga   ir244                                  0
+Ga   ir266                                  0
+Ga   ir466                                  0
+Ga   qnd                                    0
+Ga   qnp                                    4
+Ga   qns                                    4
+Ga   ad                     0.381799432239890  atomic
+Ga   alp                    0.000000000000000  A^-1
+Ga   am                     0.380535044756306  atomic
+Ga   aq                     0.260256833698030  atomic
+Ga   betad                  0.000000000000000  eV
+Ga   betap                 -4.185500000000000  eV
+Ga   betas                -10.808320000000000  eV
+Ga   dd                     1.153127690842176  atomic
+Ga   eheat                 65.400000000000006  kcal/mole
+Ga   eisol                -57.186618000000010  eV
+Ga   f0sd                   0.000000000000000  eV
+Ga   g2sd                   0.000000000000000  eV
+Ga   gp2                    6.299226000000000  eV
+Ga   gphot                  1.000000000000000  dimensionless
+Ga   gpp                    6.090184000000000  eV
+Ga   gsp                    7.993674000000000  eV
+Ga   gss                   10.354884999999999  eV
+Ga   hsp                    1.295974000000000  eV
+Ga   pcore                  0.000000000000000  atomic
+Ga   qq                     1.226485982566780  atomic
+Ga   udd                    0.000000000000000  eV
+Ga   upp                  -21.032425000000000  eV
+Ga   uss                  -30.600225999999999  eV
+Ga   zcore                  3.000000000000000  atomic
+Ga   zdn                    0.000000000000000  atomic
+Ga   zetad                  0.000000000000000  atomic
+Ga   zetap                  1.729592000000000  atomic
+Ga   zetas                  2.339067000000000  atomic
+Ga   zpn                    0.000000000000000  atomic
+Ga   zsn                    0.000000000000000  atomic
+Ga   diatomicA      H       1.847350000000000  A^-1
+Ga   diatomicX      H       1.386652000000000  dimensionless
+Ga   diatomicA      C       2.325410000000000  A^-1
+Ga   diatomicX      C       1.962990000000000  dimensionless
+Ga   diatomicA      N       2.121820000000000  A^-1
+Ga   diatomicX      N       1.188338000000000  dimensionless
+Ga   diatomicA      O       2.348347000000000  A^-1
+Ga   diatomicX      O       1.523644000000000  dimensionless
+Ga   diatomicA      F       2.679869000000000  A^-1
+Ga   diatomicX      F       1.416942000000000  dimensionless
+Ga   diatomicA      Si      1.913780000000000  A^-1
+Ga   diatomicX      Si      1.002290000000000  dimensionless
+Ga   diatomicA      P       2.979650000000000  A^-1
+Ga   diatomicX      P       0.500000000000000  dimensionless
+Ga   diatomicA      S       2.232108000000000  A^-1
+Ga   diatomicX      S       2.456284000000000  dimensionless
+Ga   diatomicA      Cl      2.024710000000000  A^-1
+Ga   diatomicX      Cl      1.186661000000000  dimensionless
+Ga   diatomicA      Ga      1.334643000000000  A^-1
+Ga   diatomicX      Ga      1.198394000000000  dimensionless
+Ga   diatomicA      As      1.730977000000000  A^-1
+Ga   diatomicX      As      1.686298000000000  dimensionless
+Ga   diatomicA      Br      1.819105000000000  A^-1
+Ga   diatomicX      Br      1.261036000000000  dimensionless
+Ga   diatomicA      In      1.628870000000000  A^-1
+Ga   diatomicX      In      2.421987000000000  dimensionless
+Ga   diatomicA      I       1.671729000000000  A^-1
+Ga   diatomicX      I       1.252168000000000  dimensionless

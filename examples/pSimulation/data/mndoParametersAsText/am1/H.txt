@@ -1,0 +1,52 @@
+# . Text parameter file for the element H.
+
+H    atomicNumber                           1
+H    iii                                    1
+H    iiid                                   3
+H    ir016                                  0
+H    ir066                                  0
+H    ir244                                  0
+H    ir266                                  0
+H    ir466                                  0
+H    qnd                                    0
+H    qnp                                    0
+H    qns                                    1
+H    ad                     0.472155340694659  atomic
+H    alp                    2.882324000000000  A^-1
+H    am                     0.472155340694659  atomic
+H    aq                     0.472155340694659  atomic
+H    betad                  0.000000000000000  eV
+H    betap                  0.000000000000000  eV
+H    betas                 -6.173787000000000  eV
+H    dd                     0.000000000000000  atomic
+H    eheat                 52.101999999999997  kcal/mole
+H    eisol                -11.396426999999999  eV
+H    f0sd                   0.000000000000000  eV
+H    g2sd                   0.000000000000000  eV
+H    gp2                    0.000000000000000  eV
+H    gphot                  1.000000000000000  dimensionless
+H    gpp                    0.000000000000000  eV
+H    gsp                    0.000000000000000  eV
+H    gss                   12.848000000000001  eV
+H    hsp                    0.000000000000000  eV
+H    pcore                  0.000000000000000  atomic
+H    qq                     0.000000000000000  atomic
+H    udd                    0.000000000000000  eV
+H    upp                    0.000000000000000  eV
+H    uss                  -11.396426999999999  eV
+H    zcore                  1.000000000000000  atomic
+H    zdn                    0.000000000000000  atomic
+H    zetad                  0.000000000000000  atomic
+H    zetap                  0.000000000000000  atomic
+H    zetas                  1.188078000000000  atomic
+H    zpn                    0.000000000000000  atomic
+H    zsn                    0.000000000000000  atomic
+H    fn10                   0.122796000000000  A_eV
+H    fn20                   5.000000000000000  A^-2
+H    fn30                   1.200000000000000  A
+H    fn11                   0.005090000000000  A_eV
+H    fn21                   5.000000000000000  A^-2
+H    fn31                   1.800000000000000  A
+H    fn12                  -0.018336000000000  A_eV
+H    fn22                   2.000000000000000  A^-2
+H    fn32                   2.100000000000000  A

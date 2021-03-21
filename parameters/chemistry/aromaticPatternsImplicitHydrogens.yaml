@@ -1,0 +1,71 @@
+# . Patterns for cases in which an atom may or may not have an implicit hydrogen
+# . and so there is uncertainty about the number of electrons donated.
+# . By definition only atoms with two connections are relevant.
+# . An atom may have no matches here but could match one of the full patterns.
+---
+# . !AromaticPatternContainer
+Atom Fields:
+    - Key
+    - Atomic Number
+    - Connections
+    - Donated Electrons # . As a list of [ donated electron, intra-ring pi-bond, implicit hydrogen ] triples.
+    - Formal Charge
+    - In Ring
+    - Is Supporting
+Atom Result Fields:
+    - Donated Electrons
+Bond Fields:
+    - Atom Key 1
+    - Atom Key 2
+    - Type
+Label: Aromatic Patterns
+Patterns:
+
+    # . Boron.
+    - Label: Boron23I
+      Atom Patterns:
+          - [ 0, 5, 2, [ [ 1, 1, 0 ], [ 0, 0, 1 ] ], 0, True, False ]
+
+    # . Carbon.
+    # . Carbon2 cases (e.g. =C= or -C#) must be treated explicitly.
+    - Label: Carbon3I
+      Atom Patterns:
+          - [ 0, 6, 2, [ [ 1, 1, 1 ] ], 0, True, False ]
+
+    - Label: Carbon+23I
+      Atom Patterns:
+          - [ 0, 6, 2, [ [ 1, 1, 0 ], [ 0, 0, 1 ] ], 1, True, False ]
+
+    - Label: Carbon-23I
+      Atom Patterns:
+          - [ 0, 6, 2, [ [ 1, 1, 0 ], [ 2, 0, 1 ] ], -1, True, False ]
+
+    # . Nitrogen.
+    - Label: Nitrogen23I
+      Atom Patterns:
+          - [ 0, 7, 2, [ [ 1, 1, 0 ], [ 2, 0, 1 ] ], 0, True, False ]
+
+    # . Phosphorus.
+    - Label: Phosphorus3I Intracyclic Oxygens
+      Atom Patterns:
+          - [ 0, 16, 2, [ [ -4, 0, 1 ] ], 0, True, False ] # . To counter normal oxygen donation of 2.
+          - [ 1,  8, 2, ., 0, True, True  ]
+          - [ 2,  8, 2, ., 0, True, True  ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 0, 2, Single ]
+
+    - Label: Phosphorus23I
+      Atom Patterns:
+          - [ 0, 15, 2, [ [ 1, 1, 0 ], [ 2, 0, 1 ] ], 0, True, False ]
+
+    # . Arsenic.
+    - Label: Arsenic3I
+      Atom Patterns:
+          - [ 0, 33, 2, [ [ 2, 0, 1 ] ], 0, True, False ]
+
+    # . Antimony.
+    - Label: Antimony3I
+      Atom Patterns:
+          - [ 0, 51, 2, [ [ 2, 0, 1 ] ], 0, True, False ]
+...

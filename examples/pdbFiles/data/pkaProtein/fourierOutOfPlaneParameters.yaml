@@ -1,0 +1,61 @@
+---
+# . !FourierOutOfPlaneParameterContainer
+Analytic Form:
+    Equation: (1/3) * K * ( cos ( 2 * phi_jkil - 180 ) + cos ( 2 * phi_klij - 180 ) + cos ( 2 * phi_ljik - 180 ) + 3 )
+    Symbols:
+        i        : Central Atom
+        j        : Peripheral Atom 1
+        k        : Peripheral Atom 2
+        l        : Peripheral Atom 3
+        phi_jkil : Dihedral Angle j-k-i-l
+        phi_klij : Dihedral Angle k-l-i-j
+        phi_ljik : Dihedral Angle l-j-i-k
+        K        : Force Constant
+Label: Protein
+Units:
+    Force Constant : kcal/mol
+Parameter Fields:
+    - Central Atom Type
+    - Peripheral Atom Type 1
+    - Peripheral Atom Type 2
+    - Peripheral Atom Type 3
+    - Force Constant
+Parameter Values:
+    - [ C               ,  CA            ,  CA              ,  OH              ,  10.5000 ]
+    - [ C               ,  CT            ,  N               ,  O               ,  10.5000 ]
+    - [ C               ,  CT            ,  "N.PRIMARYAMIDE",  O               ,  10.5000 ]
+    - [ C               ,  CT            ,  O2              ,  O2              ,  10.5000 ]
+    - [ C*              ,  CA            ,  CB              ,  CT              ,   1.1000 ]
+    - [ CA              ,  C*            ,  HA              ,  "NA.TRP"        ,   1.1000 ]
+    - [ CA              ,  CA            ,  CA              ,  CT              ,   1.1000 ]
+    - [ CA              ,  CA            ,  CA              ,  HA              ,   1.1000 ]
+    - [ CA              ,  CA            ,  CA              ,  "OH.PHENOL"     ,   1.1000 ]
+    - [ CA              ,  CA            ,  CB              ,  HA              ,   1.1000 ]
+    - [ CA              ,  CA            ,  CN              ,  HA              ,   1.1000 ]
+    - [ "CA.GUA"        ,  "N2.GUANH2"   ,  "N2.GUANH2"     ,  "N2.GUANHR"     ,  10.5000 ]
+    - [ CB              ,  C*            ,  CA              ,  CN              ,   1.1000 ]
+    - [ CN              ,  CA            ,  CB              ,  "NA.TRP"        ,   1.1000 ]
+    - [ CR              ,  HA            ,  "NA.HIP"        ,  "NA.HIP"        ,   1.1000 ]
+    - [ CR              ,  HA            ,  "NA.TRP"        ,  NB              ,   1.1000 ]
+    - [ CV              ,  CT            ,  CW              ,  NB              ,   1.1000 ]
+    - [ CV              ,  CW            ,  HA              ,  NB              ,   1.1000 ]
+    - [ CW              ,  CT            ,  CV              ,  "NA.TRP"        ,   1.1000 ]
+    - [ CW              ,  CV            ,  HA              ,  "NA.TRP"        ,   1.1000 ]
+    - [ CX              ,  CT            ,  CX              ,  "NA.HIP"        ,   1.1000 ]
+    - [ CX              ,  CX            ,  HA              ,  "NA.HIP"        ,   1.1000 ]
+    - [ N               ,  C             ,  CT              ,  CT              ,   1.0000 ]
+    - [ N               ,  C             ,  CT              ,  H               ,   1.0000 ]
+    - [ "N2.GUANH2"     ,  "CA.GUA"      ,  "H3.GUANH2"     ,  "H3.GUANH2"     ,   1.0000 ]
+    - [ "N2.GUANHR"     ,  "CA.GUA"      ,  CT              ,  "H3.GUANHR"     ,   1.0000 ]
+    - [ "N.PRIMARYAMIDE",  C             ,  "H.PRIMARYAMIDE",  "H.PRIMARYAMIDE",   1.0000 ]
+    - [ "NA.HIP"        ,  CR            ,  CX              ,  "H.HIP"         ,   1.0000 ]
+    - [ "NA.TRP"        ,  CA            ,  CN              ,  "H.TRP"         ,   1.0000 ]
+    - [ "NA.TRP"        ,  CR            ,  CW              ,  "H.TRP"         ,   1.0000 ]
+    - [ CA              ,  CB            ,  "N2.ADENINE"    ,  NC              ,   1.1000 ]
+    - [ CB              ,  CA            ,  CB              ,  NB              ,   1.1000 ]
+    - [ CB              ,  CB            ,  N*              ,  NC              ,   1.1000 ]
+    - [ CK              ,  "HA.PURINE"   ,  N*              ,  NB              ,   1.1000 ]
+    - [ CQ              ,  "HA.PURINE"   ,  NC              ,  NC              ,   1.1000 ]
+    - [ N*              ,  CB            ,  CK              ,  "CT.RIBOSE"     ,   1.1000 ]
+    - [ "N2.ADENINE"    ,  CA            ,  "H.ADENINE"     ,  "H.ADENINE"     ,   1.1000 ]
+...

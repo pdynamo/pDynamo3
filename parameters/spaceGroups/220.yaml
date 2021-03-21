@@ -1,0 +1,20 @@
+# . Space group Ic2a.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : I -2b -2b
+Hermann-Mauguin    : Ic2a
+Schoenflies        : C2v^21
+Space Group Number : 45
+Space Group Symbol : 45:bca
+Setting            : 220
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (-x+1/2,y,z+1/2)
+    - (x+1/2,y,-z+1/2)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (-x,y+1/2,z)
+    - (x,y+1/2,-z)
+...

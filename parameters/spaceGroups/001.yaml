@@ -1,0 +1,13 @@
+# . Space group P1.
+---
+# . !SpaceGroup
+Crystal System     : Triclinic
+Hall               : P 1
+Hermann-Mauguin    : P1
+Schoenflies        : C1^1
+Space Group Number : 1
+Space Group Symbol : 1
+Setting            : 1
+Transformations :
+    - (x,y,z)
+...

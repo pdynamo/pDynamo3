@@ -1,0 +1,16 @@
+# . Space group P2221.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P 2c 2
+Hermann-Mauguin    : P2221
+Schoenflies        : D2^2
+Space Group Number : 17
+Space Group Symbol : 17
+Setting            : 109
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (-x,y,-z+1/2)
+    - (x,-y,-z)
+...

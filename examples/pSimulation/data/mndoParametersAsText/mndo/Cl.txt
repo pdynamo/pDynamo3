@@ -1,0 +1,43 @@
+# . Text parameter file for the element Cl.
+
+Cl   atomicNumber                          17
+Cl   iii                                    3
+Cl   iiid                                   3
+Cl   ir016                                  0
+Cl   ir066                                  0
+Cl   ir244                                  0
+Cl   ir266                                  0
+Cl   ir466                                  0
+Cl   qnd                                    0
+Cl   qnp                                    3
+Cl   qns                                    3
+Cl   ad                     0.806104848111510  atomic
+Cl   alp                    2.542201000000000  A^-1
+Cl   am                     0.552342370068550  atomic
+Cl   aq                     0.605333148783977  atomic
+Cl   betad                  0.000000000000000  eV
+Cl   betap                -14.262320000000001  eV
+Cl   betas                -14.262320000000001  eV
+Cl   dd                     0.498687021968821  atomic
+Cl   eheat                 28.989999999999998  kcal/mole
+Cl   eisol               -353.117667000000040  eV
+Cl   f0sd                   0.000000000000000  eV
+Cl   g2sd                   0.000000000000000  eV
+Cl   gp2                    9.970000000000001  eV
+Cl   gphot                  1.000000000000000  dimensionless
+Cl   gpp                   11.300000000000001  eV
+Cl   gsp                   13.160000000000000  eV
+Cl   gss                   15.029999999999999  eV
+Cl   hsp                    2.420000000000000  eV
+Cl   pcore                  0.000000000000000  atomic
+Cl   qq                     0.821760280016948  atomic
+Cl   udd                    0.000000000000000  eV
+Cl   upp                  -77.378666999999993  eV
+Cl   uss                 -100.227165999999997  eV
+Cl   zcore                  7.000000000000000  atomic
+Cl   zdn                    0.000000000000000  atomic
+Cl   zetad                  0.000000000000000  atomic
+Cl   zetap                  2.036263000000000  atomic
+Cl   zetas                  3.784645000000000  atomic
+Cl   zpn                    0.000000000000000  atomic
+Cl   zsn                    0.000000000000000  atomic

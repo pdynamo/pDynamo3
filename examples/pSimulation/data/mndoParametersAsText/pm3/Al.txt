@@ -1,0 +1,49 @@
+# . Text parameter file for the element Al.
+
+Al   atomicNumber                          13
+Al   iii                                    3
+Al   iiid                                   3
+Al   ir016                                  0
+Al   ir066                                  0
+Al   ir244                                  0
+Al   ir266                                  0
+Al   ir466                                  0
+Al   qnd                                    0
+Al   qnp                                    3
+Al   qns                                    3
+Al   ad                     0.641840608956782  atomic
+Al   alp                    1.521703000000000  A^-1
+Al   am                     0.212291191340165  atomic
+Al   aq                     0.226280633531434  atomic
+Al   betad                  0.000000000000000  eV
+Al   betap                 -0.956550000000000  eV
+Al   betas                 -0.594301000000000  eV
+Al   dd                     1.210279851040569  atomic
+Al   eheat                 79.489999999999995  kcal/mole
+Al   eisol                -46.864763000000004  eV
+Al   f0sd                   0.000000000000000  eV
+Al   g2sd                   0.000000000000000  eV
+Al   gp2                    6.121077000000000  eV
+Al   gphot                  1.000000000000000  dimensionless
+Al   gpp                    6.347790000000000  eV
+Al   gsp                   11.659856000000000  eV
+Al   gss                    5.776737000000000  eV
+Al   hsp                    4.006245000000000  eV
+Al   pcore                  0.000000000000000  atomic
+Al   qq                     1.558564506983466  atomic
+Al   udd                    0.000000000000000  eV
+Al   upp                  -22.264158999999999  eV
+Al   uss                  -24.845403999999998  eV
+Al   zcore                  3.000000000000000  atomic
+Al   zdn                    0.000000000000000  atomic
+Al   zetad                  0.000000000000000  atomic
+Al   zetap                  1.073629000000000  atomic
+Al   zetas                  1.702888000000000  atomic
+Al   zpn                    0.000000000000000  atomic
+Al   zsn                    0.000000000000000  atomic
+Al   fn10                  -0.473090000000000  A_eV
+Al   fn20                   1.915825000000000  A^-2
+Al   fn30                   1.451728000000000  A
+Al   fn11                  -0.154051000000000  A_eV
+Al   fn21                   6.005086000000000  A^-2
+Al   fn31                   2.519997000000000  A

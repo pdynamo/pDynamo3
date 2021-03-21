@@ -1,0 +1,21 @@
+
+# Regular N-terminus (from CHARMM force field)
+#         H1
+#      (+)/
+#  --CA--N--H2
+#    |    \
+#    HA   H3
+---
+site      : NTR
+atoms     : [N, H1, H2, H3, CA, HA]
+instances :
+  - label   : p
+    Gmodel  : -16.461405
+    protons : 1
+    charges : [-0.30,  0.33,  0.33,  0.33,  0.21,  0.10]
+
+  - label   : d
+    Gmodel  : 0.000000
+    protons : 0
+    charges : [-0.35,  0.00,  0.00,  0.00,  0.20,  0.15]
+...

@@ -1,0 +1,20 @@
+# . Space group Pmcb.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2bc 2
+Hermann-Mauguin    : Pmcb
+Schoenflies        : D2h^9
+Space Group Number : 55
+Space Group Symbol : 55:cab
+Setting            : 264
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (-x,-y+1/2,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (-x,-y,-z)
+    - (-x,y,z)
+    - (x,y+1/2,-z+1/2)
+    - (x,-y+1/2,z+1/2)
+...

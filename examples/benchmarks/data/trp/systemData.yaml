@@ -1,0 +1,13 @@
+---
+# . System data.
+Crystal Class       : Orthorhombic
+Label               : Tryptophan
+Symmetry Parameters : { a : 32.7333, b: 29.9334, c: 27.6361 }
+# . Large QC Region.
+Large QC Region     : { Charge : 0 ,
+                        Atoms  :  [ "SOLU:TRP.1:C"   , "SOLU:TRP.1:O"   , "SOLU:TRP.1:OXT" , "SOLU:TRP.1:N"   , "SOLU:TRP.1:H1"  , "SOLU:TRP.1:H2"  ,
+                                    "SOLU:TRP.1:H3"  , "SOLU:TRP.1:CA"  , "SOLU:TRP.1:HA"  , "SOLU:TRP.1:CB"  , "SOLU:TRP.1:HB1" , "SOLU:TRP.1:HB2" ,
+                                    "SOLU:TRP.1:CG"  , "SOLU:TRP.1:CD1" , "SOLU:TRP.1:HD1" , "SOLU:TRP.1:NE1" , "SOLU:TRP.1:HE1" , "SOLU:TRP.1:CE2" ,
+                                    "SOLU:TRP.1:CD2" , "SOLU:TRP.1:CE3" , "SOLU:TRP.1:HE3" , "SOLU:TRP.1:CZ3" , "SOLU:TRP.1:HZ3" , "SOLU:TRP.1:CZ2" ,
+                                    "SOLU:TRP.1:HZ2" , "SOLU:TRP.1:CH2" , "SOLU:TRP.1:HH2" ] }
+...

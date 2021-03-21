@@ -1,0 +1,43 @@
+# . Text parameter file for the element B.
+
+B    atomicNumber                           5
+B    iii                                    2
+B    iiid                                   3
+B    ir016                                  0
+B    ir066                                  0
+B    ir244                                  0
+B    ir266                                  0
+B    ir466                                  0
+B    qnd                                    0
+B    qnp                                    2
+B    qns                                    2
+B    ad                     0.504503949795563  atomic
+B    alp                    2.446909000000000  A^-1
+B    am                     0.389175362543310  atomic
+B    aq                     0.567876512828491  atomic
+B    betad                  0.000000000000000  eV
+B    betap                 -6.273757000000000  eV
+B    betas                 -9.599114000000000  eV
+B    dd                     0.910762158637726  atomic
+B    eheat                135.699999999999989  kcal/mole
+B    eisol                -63.717264999999998  eV
+B    f0sd                   0.000000000000000  eV
+B    g2sd                   0.000000000000000  eV
+B    gp2                    7.860000000000000  eV
+B    gphot                  1.000000000000000  dimensionless
+B    gpp                    8.859999999999999  eV
+B    gsp                    9.560000000000000  eV
+B    gss                   10.590000000000000  eV
+B    hsp                    1.810000000000000  eV
+B    pcore                  0.000000000000000  atomic
+B    qq                     0.787422323985116  atomic
+B    udd                    0.000000000000000  eV
+B    upp                  -22.631525000000000  eV
+B    uss                  -34.492870000000003  eV
+B    zcore                  3.000000000000000  atomic
+B    zdn                    0.000000000000000  atomic
+B    zetad                  0.000000000000000  atomic
+B    zetap                  1.555385000000000  atomic
+B    zetas                  1.611709000000000  atomic
+B    zpn                    0.000000000000000  atomic
+B    zsn                    0.000000000000000  atomic

@@ -1,0 +1,16 @@
+# . Space group P22121.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P 2bc 2
+Hermann-Mauguin    : P22121
+Schoenflies        : D2^3
+Space Group Number : 18
+Space Group Symbol : 18:cab
+Setting            : 113
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (-x,-y+1/2,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+...

@@ -1,0 +1,71 @@
+# . Text parameter file for the element Hg.
+
+Hg   atomicNumber                          80
+Hg   iii                                    6
+Hg   iiid                                   5
+Hg   ir016                                  0
+Hg   ir066                                  0
+Hg   ir244                                  0
+Hg   ir266                                  0
+Hg   ir466                                  0
+Hg   qnd                                    0
+Hg   qnp                                    6
+Hg   qns                                    6
+Hg   ad                     0.261322182556676  atomic
+Hg   alp                    0.000000000000000  A^-1
+Hg   am                     0.234196913340319  atomic
+Hg   aq                     0.183298562332011  atomic
+Hg   betad                  0.000000000000000  eV
+Hg   betap                 -5.693556000000000  eV
+Hg   betas                 -3.045239000000000  eV
+Hg   dd                     1.741588297425256  atomic
+Hg   eheat                 14.690000000000000  kcal/mole
+Hg   eisol                -28.844642000000000  eV
+Hg   f0sd                   0.000000000000000  eV
+Hg   g2sd                   0.000000000000000  eV
+Hg   gp2                   14.794055999999999  eV
+Hg   gphot                  1.000000000000000  dimensionless
+Hg   gpp                   10.397392999999999  eV
+Hg   gsp                   10.143176000000000  eV
+Hg   gss                    6.372822000000000  eV
+Hg   hsp                    0.926128000000000  eV
+Hg   pcore                  0.000000000000000  atomic
+Hg   qq                     1.989470785527383  atomic
+Hg   udd                    0.000000000000000  eV
+Hg   upp                  -18.369416999999999  eV
+Hg   uss                  -17.608732000000000  eV
+Hg   zcore                  2.000000000000000  atomic
+Hg   zdn                    0.000000000000000  atomic
+Hg   zetad                  0.000000000000000  atomic
+Hg   zetap                  1.516293000000000  atomic
+Hg   zetas                  2.104896000000000  atomic
+Hg   zpn                    0.000000000000000  atomic
+Hg   zsn                    0.000000000000000  atomic
+Hg   diatomicA      H       1.136587000000000  A^-1
+Hg   diatomicX      H       0.799399000000000  dimensionless
+Hg   diatomicA      C       0.795816000000000  A^-1
+Hg   diatomicX      C       0.147128000000000  dimensionless
+Hg   diatomicA      N       0.332152000000000  A^-1
+Hg   diatomicX      N       0.050240000000000  dimensionless
+Hg   diatomicA      O       1.052145000000000  A^-1
+Hg   diatomicX      O       0.240720000000000  dimensionless
+Hg   diatomicA      F       1.240572000000000  A^-1
+Hg   diatomicX      F       0.113827000000000  dimensionless
+Hg   diatomicA      Si      2.770860000000000  A^-1
+Hg   diatomicX      Si      3.680740000000000  dimensionless
+Hg   diatomicA      P       0.608604000000000  A^-1
+Hg   diatomicX      P       0.214951000000000  dimensionless
+Hg   diatomicA      S       1.041682000000000  A^-1
+Hg   diatomicX      S       0.347383000000000  dimensionless
+Hg   diatomicA      Cl      0.430731000000000  A^-1
+Hg   diatomicX      Cl      0.053660000000000  dimensionless
+Hg   diatomicA      Ti      3.414630000000000  A^-1
+Hg   diatomicX      Ti      2.957200000000000  dimensionless
+Hg   diatomicA      Br      0.638717000000000  A^-1
+Hg   diatomicX      Br      0.172363000000000  dimensionless
+Hg   diatomicA      Te      0.291500000000000  A^-1
+Hg   diatomicX      Te      0.212732000000000  dimensionless
+Hg   diatomicA      I       0.758162000000000  A^-1
+Hg   diatomicX      I       0.342058000000000  dimensionless
+Hg   diatomicA      Hg      0.474413000000000  A^-1
+Hg   diatomicX      Hg      0.423276000000000  dimensionless

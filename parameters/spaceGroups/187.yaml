@@ -1,0 +1,20 @@
+# . Space group B2mm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : B -2 2
+Hermann-Mauguin    : B2mm
+Schoenflies        : C2v^14
+Space Group Number : 38
+Space Group Symbol : 38:cab
+Setting            : 187
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x,y,-z)
+    - (x,-y,z)
+    - (x+1/2,y,z+1/2)
+    - (x+1/2,-y,-z+1/2)
+    - (x+1/2,y,-z+1/2)
+    - (x+1/2,-y,z+1/2)
+...

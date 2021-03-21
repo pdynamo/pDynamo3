@@ -1,0 +1,21 @@
+
+# Glycine N-terminus (from CHARMM force field)
+#    HA1   HT1
+#    | (+)/
+#  --CA--N--HT2
+#    |    \
+#    HA2   HT3
+---
+site      : NGL
+atoms     : [N, HT1, HT2, HT3, CA, HA1]
+instances :
+  - label   : p
+    Gmodel  : -16.461405
+    protons : 1
+    charges : [-0.30,  0.33,  0.33,  0.33,  0.13,  0.09]
+
+  - label   : d
+    Gmodel  : 0.000000
+    protons : 0
+    charges : [-0.35,  0.00,  0.00,  0.00,  0.20,  0.15]
+...

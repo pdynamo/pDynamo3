@@ -1,0 +1,28 @@
+# . Space group Abmm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -A 2c 2c
+Hermann-Mauguin    : Abmm
+Schoenflies        : D2h^21
+Space Group Number : 67
+Space Group Symbol : 67:cab
+Setting            : 318
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z+1/2)
+    - (-x,-y,z+1/2)
+    - (-x,y,-z)
+    - (-x,-y,-z)
+    - (-x,y,z+1/2)
+    - (x,y,-z+1/2)
+    - (x,-y,z)
+    - (x,y+1/2,z+1/2)
+    - (x,-y+1/2,-z)
+    - (-x,-y+1/2,z)
+    - (-x,y+1/2,-z+1/2)
+    - (-x,-y+1/2,-z+1/2)
+    - (-x,y+1/2,z)
+    - (x,y+1/2,-z)
+    - (x,-y+1/2,z+1/2)
+...

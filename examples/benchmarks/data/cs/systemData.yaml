@@ -1,0 +1,52 @@
+---
+# . System data.
+Crystal Class       : Cubic
+Label               : Citrate Synthase
+Symmetry Parameters : { a : 69.2 }
+# . Large QC Region.
+Large QC Region     : { Charge : 1 ,
+                        Atoms  :  [ "AAAA:ASP.375:CB"  , "AAAA:ASP.375:HB1" , "AAAA:ASP.375:HB2" , "AAAA:ASP.375:CG"  , "AAAA:ASP.375:OD1" , "AAAA:ASP.375:OD2" ,
+                                    "COA1:COA.1:CH3"   , "COA1:COA.1:H11"   , "COA1:COA.1:H21"   , "COA1:COA.1:H31"   , "COA1:COA.1:C"     , "COA1:COA.1:O"     ,
+                                    "COA1:COA.1:S1P"   , "COA1:COA.1:C2P"   , "COA1:COA.1:H12"   , "COA1:COA.1:H22"   ,
+                                    "OAA1:OAA.1:C4"    , "OAA1:OAA.1:O4A"   , "OAA1:OAA.1:O4B"   , "OAA1:OAA.1:C3"    , "OAA1:OAA.1:H3A"   , "OAA1:OAA.1:H3B"   ,
+                                    "OAA1:OAA.1:C2"    , "OAA1:OAA.1:O2"    , "OAA1:OAA.1:C1"    , "OAA1:OAA.1:O1A"   , "OAA1:OAA.1:O1B"   ,
+                                    "AAAA:HSD.274:CB"  , "AAAA:HSD.274:HB1" , "AAAA:HSD.274:HB2" , "AAAA:HSD.274:CD2" , "AAAA:HSD.274:HD2" , "AAAA:HSD.274:CG"  ,
+                                    "AAAA:HSD.274:NE2" , "AAAA:HSD.274:ND1" , "AAAA:HSD.274:HD1" , "AAAA:HSD.274:CE1" , "AAAA:HSD.274:HE1" ,
+                                    "AAAW:WP3.584:OH2" , "AAAW:WP3.584:H1"  , "AAAW:WP3.584:H2"  ,
+                                    "AAAW:WP3.585:OH2" , "AAAW:WP3.585:H1"  , "AAAW:WP3.585:H2"  ,
+                                    "AAAW:WP3.586:OH2" , "AAAW:WP3.586:H1"  , "AAAW:WP3.586:H2"  ,
+                                    "AAAW:WP3.596:OH2" , "AAAW:WP3.596:H1"  , "AAAW:WP3.596:H2"  ,
+                                    "AAAA:SER.378:CB"  , "AAAA:SER.378:HB1" , "AAAA:SER.378:HB2" , "AAAA:SER.378:OG"  , "AAAA:SER.378:HG1" ,
+                                    "AAAA:HSD.235:CB"  , "AAAA:HSD.235:HB1" , "AAAA:HSD.235:HB2" , "AAAA:HSD.235:ND1" , "AAAA:HSD.235:HD1" , "AAAA:HSD.235:CG"  ,
+                                    "AAAA:HSD.235:CE1" , "AAAA:HSD.235:HE1" , "AAAA:HSD.235:NE2" , "AAAA:HSD.235:CD2" , "AAAA:HSD.235:HD2" ,
+                                    "AAAA:ARG.329:CG"  , "AAAA:ARG.329:HG1" , "AAAA:ARG.329:HG2" , "AAAA:ARG.329:CD"  , "AAAA:ARG.329:HD1" , "AAAA:ARG.329:HD2" ,
+                                    "AAAA:ARG.329:NE"  , "AAAA:ARG.329:HE"  , "AAAA:ARG.329:CZ"  , "AAAA:ARG.329:NH1" , "AAAA:ARG.329:HH11", "AAAA:ARG.329:HH12",
+                                    "AAAA:ARG.329:NH2" , "AAAA:ARG.329:HH21", "AAAA:ARG.329:HH22",
+                                    "AAAA:ARG.401:CG"  , "AAAA:ARG.401:HG1" , "AAAA:ARG.401:HG2" , "AAAA:ARG.401:CD"  , "AAAA:ARG.401:HD1" , "AAAA:ARG.401:HD2" ,
+                                    "AAAA:ARG.401:NE"  , "AAAA:ARG.401:HE"  , "AAAA:ARG.401:CZ"  , "AAAA:ARG.401:NH1" , "AAAA:ARG.401:HH11", "AAAA:ARG.401:HH12",
+                                    "AAAA:ARG.401:NH2" , "AAAA:ARG.401:HH21", "AAAA:ARG.401:HH22",
+                                    "AABA:ARG.421:CG"  , "AABA:ARG.421:HG1" , "AABA:ARG.421:HG2" , "AABA:ARG.421:CD"  , "AABA:ARG.421:HD1" , "AABA:ARG.421:HD2" ,
+                                    "AABA:ARG.421:NE"  , "AABA:ARG.421:HE"  , "AABA:ARG.421:CZ"  , "AABA:ARG.421:NH1" , "AABA:ARG.421:HH11", "AABA:ARG.421:HH12",
+                                    "AABA:ARG.421:NH2" , "AABA:ARG.421:HH21", "AABA:ARG.421:HH22",
+                                    "AAAA:HSP.238:CB"  , "AAAA:HSP.238:HB1" , "AAAA:HSP.238:HB2" , "AAAA:HSP.238:CD2" , "AAAA:HSP.238:HD2" , "AAAA:HSP.238:CG"  ,
+                                    "AAAA:HSP.238:NE2" , "AAAA:HSP.238:HE2" , "AAAA:HSP.238:ND1" , "AAAA:HSP.238:HD1" , "AAAA:HSP.238:CE1" , "AAAA:HSP.238:HE1" ] }
+# . Small QC Region.
+Small QC Region     : { Charge : -2 ,
+                        Atoms  : [ "AAAA:ASP.375:CB"  , "AAAA:ASP.375:HB1" , "AAAA:ASP.375:HB2" , "AAAA:ASP.375:CG"  , "AAAA:ASP.375:OD1" , "AAAA:ASP.375:OD2" ,
+                                   "COA1:COA.1:CH3"   , "COA1:COA.1:H11"   , "COA1:COA.1:H21"   , "COA1:COA.1:H31"   , "COA1:COA.1:C"     , "COA1:COA.1:O"     ,
+                                   "COA1:COA.1:S1P"   , "COA1:COA.1:C2P"   , "COA1:COA.1:H12"   , "COA1:COA.1:H22"   ,
+                                   "OAA1:OAA.1:C4"    , "OAA1:OAA.1:O4A"   , "OAA1:OAA.1:O4B"   , "OAA1:OAA.1:C3"    , "OAA1:OAA.1:H3A"   , "OAA1:OAA.1:H3B"   ,
+                                   "OAA1:OAA.1:C2"    , "OAA1:OAA.1:O2"    , "OAA1:OAA.1:C1"    , "OAA1:OAA.1:O1A"   , "OAA1:OAA.1:O1B"   ,
+                                   "AAAA:HSD.274:CB"  , "AAAA:HSD.274:HB1" , "AAAA:HSD.274:HB2" , "AAAA:HSD.274:CD2" , "AAAA:HSD.274:HD2" , "AAAA:HSD.274:CG"  ,
+                                   "AAAA:HSD.274:NE2" , "AAAA:HSD.274:ND1" , "AAAA:HSD.274:HD1" , "AAAA:HSD.274:CE1" , "AAAA:HSD.274:HE1" ,
+                                   "AAAW:WP3.584:OH2" , "AAAW:WP3.584:H1"  , "AAAW:WP3.584:H2"  ,
+                                   "AAAW:WP3.585:OH2" , "AAAW:WP3.585:H1"  , "AAAW:WP3.585:H2"  ,
+                                   "AAAW:WP3.586:OH2" , "AAAW:WP3.586:H1"  , "AAAW:WP3.586:H2"  ,
+                                   "AAAW:WP3.596:OH2" , "AAAW:WP3.596:H1"  , "AAAW:WP3.596:H2"  ,
+                                   "AAAA:SER.378:CB"  , "AAAA:SER.378:HB1" , "AAAA:SER.378:HB2" , "AAAA:SER.378:OG"  , "AAAA:SER.378:HG1" ,
+                                   "AAAA:HSD.235:CB"  , "AAAA:HSD.235:HB1" , "AAAA:HSD.235:HB2" , "AAAA:HSD.235:ND1" , "AAAA:HSD.235:HD1" , "AAAA:HSD.235:CG"  ,
+                                   "AAAA:HSD.235:CE1" , "AAAA:HSD.235:HE1" , "AAAA:HSD.235:NE2" , "AAAA:HSD.235:CD2" , "AAAA:HSD.235:HD2" ,
+                                   "AAAA:ARG.329:CG"  , "AAAA:ARG.329:HG1" , "AAAA:ARG.329:HG2" , "AAAA:ARG.329:CD"  , "AAAA:ARG.329:HD1" , "AAAA:ARG.329:HD2" ,
+                                   "AAAA:ARG.329:NE"  , "AAAA:ARG.329:HE"  , "AAAA:ARG.329:CZ"  , "AAAA:ARG.329:NH1" , "AAAA:ARG.329:HH11", "AAAA:ARG.329:HH12",
+                                   "AAAA:ARG.329:NH2" , "AAAA:ARG.329:HH21", "AAAA:ARG.329:HH22" ] }
+...

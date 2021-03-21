@@ -1,0 +1,69 @@
+# . Text parameter file for the element Os.
+
+Os   atomicNumber                          76
+Os   iii                                    6
+Os   iiid                                   5
+Os   ir016                                 12
+Os   ir066                                 15
+Os   ir244                                  6
+Os   ir266                                 35
+Os   ir466                                 35
+Os   qnd                                    5
+Os   qnp                                    6
+Os   qns                                    6
+Os   ad                     0.488930699026248  atomic
+Os   alp                    0.000000000000000  A^-1
+Os   am                     0.257895129653717  atomic
+Os   aq                     0.302823367826902  atomic
+Os   betad                  5.164360000000000  eV
+Os   betap                  0.846880000000000  eV
+Os   betas                -12.508730000000000  eV
+Os   dd                     0.838827659578191  atomic
+Os   eheat                188.000000000000000  kcal/mole
+Os   eisol               -380.877756750000003  eV
+Os   f0sd                   2.021170000000000  eV
+Os   g2sd                   1.392130000000000  eV
+Os   gp2                    5.661968130000000  eV
+Os   gphot                  1.000000000000000  dimensionless
+Os   gpp                    6.528073000000000  eV
+Os   gsp                    6.384199820000000  eV
+Os   gss                    7.017683250000000  eV
+Os   hsp                    1.508925800000000  eV
+Os   pcore                  0.000000000000000  atomic
+Os   qq                     1.892532200180476  atomic
+Os   udd                  -55.837879999999998  eV
+Os   upp                  -48.739500000000000  eV
+Os   uss                  -26.434080000000002  eV
+Os   zcore                  8.000000000000000  atomic
+Os   zdn                    1.770010000000000  atomic
+Os   zetad                  1.775570000000000  atomic
+Os   zetap                  1.593960000000000  atomic
+Os   zetas                  3.031000000000000  atomic
+Os   zpn                    1.564220000000000  atomic
+Os   zsn                    1.844700000000000  atomic
+Os   diatomicA      H       3.404180000000000  A^-1
+Os   diatomicX      H       4.393870000000000  dimensionless
+Os   diatomicA      C       2.336500000000000  A^-1
+Os   diatomicX      C       0.498410000000000  dimensionless
+Os   diatomicA      N       1.143090000000000  A^-1
+Os   diatomicX      N       0.080870000000000  dimensionless
+Os   diatomicA      O       1.350360000000000  A^-1
+Os   diatomicX      O       0.184300000000000  dimensionless
+Os   diatomicA      F       1.507620000000000  A^-1
+Os   diatomicX      F       0.140050000000000  dimensionless
+Os   diatomicA      Na      2.550740000000000  A^-1
+Os   diatomicX      Na      8.275750000000000  dimensionless
+Os   diatomicA      P       2.836090000000000  A^-1
+Os   diatomicX      P       6.058300000000000  dimensionless
+Os   diatomicA      S       2.809500000000000  A^-1
+Os   diatomicX      S       4.186050000000000  dimensionless
+Os   diatomicA      Cl      1.833070000000000  A^-1
+Os   diatomicX      Cl      0.327920000000000  dimensionless
+Os   diatomicA      K       4.521090000000000  A^-1
+Os   diatomicX      K       2.026320000000000  dimensionless
+Os   diatomicA      Br      1.766880000000000  A^-1
+Os   diatomicX      Br      0.382430000000000  dimensionless
+Os   diatomicA      I       2.203760000000000  A^-1
+Os   diatomicX      I       2.199190000000000  dimensionless
+Os   diatomicA      Os      2.021630000000000  A^-1
+Os   diatomicX      Os      0.830440000000000  dimensionless

@@ -1,0 +1,20 @@
+# . Space group P-4m2.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : P -4 -2
+Hermann-Mauguin    : P-4m2
+Schoenflies        : D2d^5
+Space Group Number : 115
+Space Group Symbol : 115
+Setting            : 392
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x,-y,z)
+    - (-x,y,z)
+    - (y,x,-z)
+    - (-y,-x,-z)
+...

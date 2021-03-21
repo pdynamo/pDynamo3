@@ -1,0 +1,93 @@
+# . Text parameter file for the element Ne.
+
+Ne   atomicNumber                          10
+Ne   iii                                    2
+Ne   iiid                                   3
+Ne   ir016                                  0
+Ne   ir066                                  0
+Ne   ir244                                  0
+Ne   ir266                                  0
+Ne   ir466                                  0
+Ne   qnd                                    0
+Ne   qnp                                    2
+Ne   qns                                    3
+Ne   ad                     1.059185506681724  atomic
+Ne   alp                    0.000000000000000  A^-1
+Ne   am                     0.734970865171081  atomic
+Ne   aq                     0.713209896260660  atomic
+Ne   betad                  0.000000000000000  eV
+Ne   betap                -33.261961999999997  eV
+Ne   betas                -69.793475000000001  eV
+Ne   dd                     0.259229070000000  atomic
+Ne   eheat                  0.000000000000000  kcal/mole
+Ne   eisol               -272.229722999999979  eV
+Ne   f0sd                   0.000000000000000  eV
+Ne   g2sd                   0.000000000000000  eV
+Ne   gp2                   16.027799000000002  eV
+Ne   gphot                  1.000000000000000  dimensionless
+Ne   gpp                    8.963559999999999  eV
+Ne   gsp                   16.896951000000001  eV
+Ne   gss                   19.999573999999999  eV
+Ne   hsp                    1.779280000000000  eV
+Ne   pcore                  0.000000000000000  atomic
+Ne   qq                     0.319399120671850  atomic
+Ne   udd                    0.000000000000000  eV
+Ne   upp                  -85.441118000000003  eV
+Ne   uss                   -2.978729000000000  eV
+Ne   zcore                  6.000000000000000  atomic
+Ne   zdn                    0.000000000000000  atomic
+Ne   zetad                  0.000000000000000  atomic
+Ne   zetap                  3.834528000000000  atomic
+Ne   zetas                  6.000148000000000  atomic
+Ne   zpn                    0.000000000000000  atomic
+Ne   zsn                    0.000000000000000  atomic
+Ne   diatomicA      H       5.999680000000000  A^-1
+Ne   diatomicX      H       5.535021000000000  dimensionless
+Ne   diatomicA      He      3.677758000000000  A^-1
+Ne   diatomicX      He      1.960924000000000  dimensionless
+Ne   diatomicA      Li      2.193666000000000  A^-1
+Ne   diatomicX      Li      0.704958000000000  dimensionless
+Ne   diatomicA      Be      1.316588000000000  A^-1
+Ne   diatomicX      Be      0.392628000000000  dimensionless
+Ne   diatomicA      B       2.756190000000000  A^-1
+Ne   diatomicX      B       2.764140000000000  dimensionless
+Ne   diatomicA      C       3.441188000000000  A^-1
+Ne   diatomicX      C       5.468780000000000  dimensionless
+Ne   diatomicA      N       4.426370000000000  A^-1
+Ne   diatomicX      N      29.999609000000000  dimensionless
+Ne   diatomicA      O       2.889587000000000  A^-1
+Ne   diatomicX      O       0.763899000000000  dimensionless
+Ne   diatomicA      F       3.675611000000000  A^-1
+Ne   diatomicX      F       2.706754000000000  dimensionless
+Ne   diatomicA      Ne      3.974567000000000  A^-1
+Ne   diatomicX      Ne      2.794830000000000  dimensionless
+Ne   diatomicA      Na      1.774236000000000  A^-1
+Ne   diatomicX      Na      1.343037000000000  dimensionless
+Ne   diatomicA      Mg      2.031676000000000  A^-1
+Ne   diatomicX      Mg      1.214859000000000  dimensionless
+Ne   diatomicA      Al      2.447869000000000  A^-1
+Ne   diatomicX      Al      1.709200000000000  dimensionless
+Ne   diatomicA      Si      2.867784000000000  A^-1
+Ne   diatomicX      Si     14.378676000000000  dimensionless
+Ne   diatomicA      P       2.219036000000000  A^-1
+Ne   diatomicX      P       0.774954000000000  dimensionless
+Ne   diatomicA      S       2.787058000000000  A^-1
+Ne   diatomicX      S       3.296160000000000  dimensionless
+Ne   diatomicA      Cl      1.703151000000000  A^-1
+Ne   diatomicX      Cl      0.125133000000000  dimensionless
+Ne   diatomicA      Ar      2.963747000000000  A^-1
+Ne   diatomicX      Ar      1.304697000000000  dimensionless
+Ne   diatomicA      K       1.138021000000000  A^-1
+Ne   diatomicX      K       0.233995000000000  dimensionless
+Ne   diatomicA      Ca      0.954530000000000  A^-1
+Ne   diatomicX      Ca      0.332586000000000  dimensionless
+Ne   diatomicA      Br      2.464172000000000  A^-1
+Ne   diatomicX      Br      1.006159000000000  dimensionless
+Ne   diatomicA      Kr      2.813679000000000  A^-1
+Ne   diatomicX      Kr      1.433722000000000  dimensionless
+Ne   diatomicA      Rb      2.267591000000000  A^-1
+Ne   diatomicX      Rb      7.736563000000000  dimensionless
+Ne   diatomicA      I       2.414415000000000  A^-1
+Ne   diatomicX      I       1.503568000000000  dimensionless
+Ne   diatomicA      Xe      1.330202000000000  A^-1
+Ne   diatomicX      Xe      0.293862000000000  dimensionless

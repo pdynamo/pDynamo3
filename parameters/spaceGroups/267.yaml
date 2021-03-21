@@ -1,0 +1,20 @@
+# . Space group Pnaa.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2ac 2bc
+Hermann-Mauguin    : Pnaa
+Schoenflies        : D2h^10
+Space Group Number : 56
+Space Group Symbol : 56:cab
+Setting            : 267
+Transformations :
+    - (x,y,z)
+    - (x,-y+1/2,-z+1/2)
+    - (-x+1/2,-y,z+1/2)
+    - (-x+1/2,y+1/2,-z)
+    - (-x,-y,-z)
+    - (-x,y+1/2,z+1/2)
+    - (x+1/2,y,-z+1/2)
+    - (x+1/2,-y+1/2,z)
+...

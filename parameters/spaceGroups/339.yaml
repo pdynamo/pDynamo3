@@ -1,0 +1,28 @@
+# . Space group Imcb.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -I 2a 2
+Hermann-Mauguin    : Imcb
+Schoenflies        : D2h^26
+Space Group Number : 72
+Space Group Symbol : 72:cab
+Setting            : 339
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (-x,-y+1/2,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (-x,-y,-z)
+    - (-x,y,z)
+    - (x,y+1/2,-z+1/2)
+    - (x,-y+1/2,z+1/2)
+    - (x+1/2,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,-y,z)
+    - (-x+1/2,y,-z)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (x+1/2,y,-z)
+    - (x+1/2,-y,z)
+...

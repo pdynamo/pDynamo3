@@ -1,0 +1,28 @@
+# . Space group Cmmb.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -C 2b 2b
+Hermann-Mauguin    : Cmmb
+Schoenflies        : D2h^21
+Space Group Number : 67
+Space Group Symbol : 67:ba-c
+Setting            : 317
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y,z)
+    - (x+1/2,-y,-z)
+    - (-x,y,-z)
+    - (-x,-y,-z)
+    - (x+1/2,y,-z)
+    - (-x+1/2,y,z)
+    - (x,-y,z)
+    - (x+1/2,y+1/2,z)
+    - (-x,-y+1/2,z)
+    - (x,-y+1/2,-z)
+    - (-x+1/2,y+1/2,-z)
+    - (-x+1/2,-y+1/2,-z)
+    - (x,y+1/2,-z)
+    - (-x,y+1/2,z)
+    - (x+1/2,-y+1/2,z)
+...

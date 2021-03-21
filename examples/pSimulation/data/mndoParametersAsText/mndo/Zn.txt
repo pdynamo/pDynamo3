@@ -1,0 +1,43 @@
+# . Text parameter file for the element Zn.
+
+Zn   atomicNumber                          30
+Zn   iii                                    4
+Zn   iiid                                   3
+Zn   ir016                                  0
+Zn   ir066                                  0
+Zn   ir244                                  0
+Zn   ir266                                  0
+Zn   ir466                                  0
+Zn   qnd                                    0
+Zn   qnp                                    4
+Zn   qns                                    4
+Zn   ad                     0.237586482337174  atomic
+Zn   alp                    1.506457000000000  A^-1
+Zn   am                     0.433642047026540  atomic
+Zn   aq                     0.273881627213628  atomic
+Zn   betad                  0.000000000000000  eV
+Zn   betap                 -2.000000000000000  eV
+Zn   betas                 -1.000000000000000  eV
+Zn   dd                     1.303782550674035  atomic
+Zn   eheat                 31.170000000000002  kcal/mole
+Zn   eisol                -29.879431999999998  eV
+Zn   f0sd                   0.000000000000000  eV
+Zn   g2sd                   0.000000000000000  eV
+Zn   gp2                   12.930520000000000  eV
+Zn   gphot                  1.000000000000000  dimensionless
+Zn   gpp                   13.300000000000001  eV
+Zn   gsp                   11.182017999999999  eV
+Zn   gss                   11.800000000000001  eV
+Zn   hsp                    0.484606000000000  eV
+Zn   pcore                  0.000000000000000  atomic
+Zn   qq                     1.452018311121453  atomic
+Zn   udd                    0.000000000000000  eV
+Zn   upp                  -19.625223999999999  eV
+Zn   uss                  -20.839715999999999  eV
+Zn   zcore                  2.000000000000000  atomic
+Zn   zdn                    0.000000000000000  atomic
+Zn   zetad                  0.000000000000000  atomic
+Zn   zetap                  1.460946000000000  atomic
+Zn   zetas                  2.047359000000000  atomic
+Zn   zpn                    0.000000000000000  atomic
+Zn   zsn                    0.000000000000000  atomic

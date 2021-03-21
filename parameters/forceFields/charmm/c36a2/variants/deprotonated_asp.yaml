@@ -1,0 +1,13 @@
+---
+# . !MMSequenceVariant
+Atom Fields: [ Label, Type, Charge ]
+Atoms:
+  - [ CB , CT2, -0.28 ]
+  - [ HB2, HA ,  0.09 ]
+  - [ HB3, HA ,  0.09 ]
+  - [ CG , CC ,  0.62 ]
+  - [ OD1, OC , -0.76 ]
+  - [ OD2, OC , -0.76 ]
+Component: ASP
+Label: Deprotonated
+...

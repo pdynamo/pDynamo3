@@ -1,0 +1,16 @@
+# . Space group Bb11.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : B -2xb
+Hermann-Mauguin    : Bb11
+Schoenflies        : Cs^4
+Space Group Number : 9
+Space Group Symbol : 9:a1
+Setting            : 51
+Transformations :
+    - (x,y,z)
+    - (-x,y+1/2,z)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+...

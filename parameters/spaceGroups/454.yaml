@@ -1,0 +1,24 @@
+# . Space group P-31m.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : -P 3 2
+Hermann-Mauguin    : P-31m
+Schoenflies        : D3d^1
+Space Group Number : 162
+Space Group Symbol : 162
+Setting            : 454
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-y,-x,-z)
+    - (-x+y,y,-z)
+    - (x,x-y,-z)
+    - (-x,-y,-z)
+    - (y,-x+y,-z)
+    - (x-y,x,-z)
+    - (y,x,z)
+    - (x-y,-y,z)
+    - (-x,-x+y,z)
+...

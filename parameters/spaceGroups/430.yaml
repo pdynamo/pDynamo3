@@ -1,0 +1,15 @@
+# . Space group P3.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : P 3
+Hermann-Mauguin    : P3
+Schoenflies        : C3^1
+Space Group Number : 143
+Space Group Symbol : 143
+Setting            : 430
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+...

@@ -1,0 +1,18 @@
+# . Point group C8v.
+---
+# . !PointGroup
+Label : C8v
+Symmetry Operations :
+    C8    :  1
+    E     :  1
+    sigma :  8
+Character Symmetry Operations : [ E, C8, sigma-m ]
+Character Table :
+    A1 : [ 1.000000 ,      1.000000 ,  1.000000 ]
+    A2 : [ 1.000000 ,      1.000000 , -1.000000 ]
+    B1 : [ 1.000000 ,     -1.000000 ,  1.000000 ]
+    B2 : [ 1.000000 ,     -1.000000 , -1.000000 ]
+    E1 : [ 2.000000 ,   2*cos(pi/4) ,  0.000000 ]
+    E2 : [ 2.000000 ,      0.000000 ,  0.000000 ]
+    E3 : [ 2.000000 , 2*cos(3*pi/4) ,  0.000000 ]
+...

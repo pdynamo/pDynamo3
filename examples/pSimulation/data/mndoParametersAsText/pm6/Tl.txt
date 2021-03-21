@@ -1,0 +1,65 @@
+# . Text parameter file for the element Tl.
+
+Tl   atomicNumber                          81
+Tl   iii                                    6
+Tl   iiid                                   6
+Tl   ir016                                  0
+Tl   ir066                                  0
+Tl   ir244                                  0
+Tl   ir266                                  0
+Tl   ir466                                  0
+Tl   qnd                                    0
+Tl   qnp                                    6
+Tl   qns                                    6
+Tl   ad                     0.273999730997230  atomic
+Tl   alp                    0.000000000000000  A^-1
+Tl   am                     0.184302206406750  atomic
+Tl   aq                     0.204542906453235  atomic
+Tl   betad                  0.000000000000000  eV
+Tl   betap                 -7.575544000000000  eV
+Tl   betas                 -7.230170000000000  eV
+Tl   dd                     0.770748867512442  atomic
+Tl   eheat                 43.549999999999997  kcal/mole
+Tl   eisol                -56.278692999999997  eV
+Tl   f0sd                   0.000000000000000  eV
+Tl   g2sd                   0.000000000000000  eV
+Tl   gp2                   10.526198000000001  eV
+Tl   gphot                  1.000000000000000  dimensionless
+Tl   gpp                   10.495551000000001  eV
+Tl   gsp                   13.932048999999999  eV
+Tl   gss                    5.015118000000000  eV
+Tl   hsp                    0.293760000000000  eV
+Tl   pcore                  0.000000000000000  atomic
+Tl   qq                     1.708029328235781  atomic
+Tl   udd                    0.000000000000000  eV
+Tl   upp                  -29.826906999999999  eV
+Tl   uss                  -29.518621000000000  eV
+Tl   zcore                  3.000000000000000  atomic
+Tl   zdn                    0.000000000000000  atomic
+Tl   zetad                  0.000000000000000  atomic
+Tl   zetap                  1.766141000000000  atomic
+Tl   zetas                  3.335883000000000  atomic
+Tl   zpn                    0.000000000000000  atomic
+Tl   zsn                    0.000000000000000  atomic
+Tl   diatomicA      H       0.673658000000000  A^-1
+Tl   diatomicX      H       0.138205000000000  dimensionless
+Tl   diatomicA      B       1.528347000000000  A^-1
+Tl   diatomicX      B      10.504338000000001  dimensionless
+Tl   diatomicA      C       1.390345000000000  A^-1
+Tl   diatomicX      C       0.582895000000000  dimensionless
+Tl   diatomicA      N       0.982335000000000  A^-1
+Tl   diatomicX      N       0.158812000000000  dimensionless
+Tl   diatomicA      O       1.550068000000000  A^-1
+Tl   diatomicX      O       0.636906000000000  dimensionless
+Tl   diatomicA      F       1.469516000000000  A^-1
+Tl   diatomicX      F       0.226166000000000  dimensionless
+Tl   diatomicA      S       0.994851000000000  A^-1
+Tl   diatomicX      S       0.303426000000000  dimensionless
+Tl   diatomicA      Cl      0.846193000000000  A^-1
+Tl   diatomicX      Cl      0.162037000000000  dimensionless
+Tl   diatomicA      Br      0.874419000000000  A^-1
+Tl   diatomicX      Br      0.296836000000000  dimensionless
+Tl   diatomicA      I       0.902012000000000  A^-1
+Tl   diatomicX      I       0.430033000000000  dimensionless
+Tl   diatomicA      Tl      1.191684000000000  A^-1
+Tl   diatomicX      Tl      9.535126999999999  dimensionless

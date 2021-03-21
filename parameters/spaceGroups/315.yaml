@@ -1,0 +1,28 @@
+# . Space group Bbmb.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -B 2b 2b
+Hermann-Mauguin    : Bbmb
+Schoenflies        : D2h^20
+Space Group Number : 66
+Space Group Symbol : 66:bca
+Setting            : 315
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (x,-y+1/2,-z)
+    - (-x,-y+1/2,z)
+    - (-x,-y,-z)
+    - (x,-y,z)
+    - (-x,y+1/2,z)
+    - (x,y+1/2,-z)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,y,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,-y,-z+1/2)
+    - (x+1/2,-y,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+...

@@ -1,0 +1,93 @@
+# . Text parameter file for the element He.
+
+He   atomicNumber                           2
+He   iii                                    1
+He   iiid                                   3
+He   ir016                                  0
+He   ir066                                  0
+He   ir244                                  0
+He   ir266                                  0
+He   ir466                                  0
+He   qnd                                    0
+He   qnp                                    2
+He   qns                                    1
+He   ad                     0.575612166705158  atomic
+He   alp                    0.000000000000000  A^-1
+He   am                     0.347108372299807  atomic
+He   aq                     0.976860766882201  atomic
+He   betad                  0.000000000000000  eV
+He   betap                -37.039974000000001  eV
+He   betas                -58.903773999999999  eV
+He   dd                     0.247581910000000  atomic
+He   eheat                  0.000000000000000  kcal/mole
+He   eisol                -54.096639000000003  eV
+He   f0sd                   0.000000000000000  eV
+He   g2sd                   0.000000000000000  eV
+He   gp2                   13.046115000000000  eV
+He   gphot                  1.000000000000000  dimensionless
+He   gpp                    9.214548000000001  eV
+He   gsp                   11.201419000000000  eV
+He   gss                    9.445299000000000  eV
+He   hsp                    0.299954000000000  eV
+He   pcore                  0.000000000000000  atomic
+He   qq                     0.211804346931427  atomic
+He   udd                    0.000000000000000  eV
+He   upp                   -5.856382000000000  eV
+He   uss                  -31.770969000000001  eV
+He   zcore                  2.000000000000000  atomic
+He   zdn                    0.000000000000000  atomic
+He   zetad                  0.000000000000000  atomic
+He   zetap                  3.657133000000000  atomic
+He   zetas                  3.313204000000000  atomic
+He   zpn                    0.000000000000000  atomic
+He   zsn                    0.000000000000000  atomic
+He   diatomicA      H       2.989881000000000  A^-1
+He   diatomicX      H       2.371199000000000  dimensionless
+He   diatomicA      He      3.783559000000000  A^-1
+He   diatomicX      He      3.450900000000000  dimensionless
+He   diatomicA      Li      3.112403000000000  A^-1
+He   diatomicX      Li      9.273676000000000  dimensionless
+He   diatomicA      Be      3.306702000000000  A^-1
+He   diatomicX      Be     12.544878000000001  dimensionless
+He   diatomicA      B       3.163140000000000  A^-1
+He   diatomicX      B       1.974170000000000  dimensionless
+He   diatomicA      C       3.042705000000000  A^-1
+He   diatomicX      C       3.213971000000000  dimensionless
+He   diatomicA      N       2.814339000000000  A^-1
+He   diatomicX      N       1.077861000000000  dimensionless
+He   diatomicA      O       3.653775000000000  A^-1
+He   diatomicX      O       6.684525000000000  dimensionless
+He   diatomicA      F       2.856543000000000  A^-1
+He   diatomicX      F       0.745107000000000  dimensionless
+He   diatomicA      Ne      3.677758000000000  A^-1
+He   diatomicX      Ne      1.960924000000000  dimensionless
+He   diatomicA      Na      1.703029000000000  A^-1
+He   diatomicX      Na      4.282517000000000  dimensionless
+He   diatomicA      Mg      2.210603000000000  A^-1
+He   diatomicX      Mg      3.725850000000000  dimensionless
+He   diatomicA      Al      2.255830000000000  A^-1
+He   diatomicX      Al      2.701400000000000  dimensionless
+He   diatomicA      Si      2.040498000000000  A^-1
+He   diatomicX      Si      1.853583000000000  dimensionless
+He   diatomicA      P       2.093158000000000  A^-1
+He   diatomicX      P       1.490218000000000  dimensionless
+He   diatomicA      S       1.959149000000000  A^-1
+He   diatomicX      S       0.437618000000000  dimensionless
+He   diatomicA      Cl      1.671677000000000  A^-1
+He   diatomicX      Cl      0.272964000000000  dimensionless
+He   diatomicA      Ar      2.716562000000000  A^-1
+He   diatomicX      Ar      1.177211000000000  dimensionless
+He   diatomicA      K       1.418501000000000  A^-1
+He   diatomicX      K       2.895045000000000  dimensionless
+He   diatomicA      Ca      1.719847000000000  A^-1
+He   diatomicX      Ca      2.913852000000000  dimensionless
+He   diatomicA      Br      2.128275000000000  A^-1
+He   diatomicX      Br      1.062043000000000  dimensionless
+He   diatomicA      Kr      1.996943000000000  A^-1
+He   diatomicX      Kr      0.627701000000000  dimensionless
+He   diatomicA      Rb      1.270741000000000  A^-1
+He   diatomicX      Rb      1.862585000000000  dimensionless
+He   diatomicA      I       2.172984000000000  A^-1
+He   diatomicX      I       1.630721000000000  dimensionless
+He   diatomicA      Xe      2.497832000000000  A^-1
+He   diatomicX      Xe      2.599471000000000  dimensionless

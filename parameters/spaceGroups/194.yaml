@@ -1,0 +1,20 @@
+# . Space group C2mb.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : C -2b 2
+Hermann-Mauguin    : C2mb
+Schoenflies        : C2v^15
+Space Group Number : 39
+Space Group Symbol : 39:-cba
+Setting            : 194
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x,-y+1/2,z)
+    - (x,y+1/2,-z)
+    - (x+1/2,y+1/2,z)
+    - (x+1/2,-y+1/2,-z)
+    - (x+1/2,-y,z)
+    - (x+1/2,y,-z)
+...

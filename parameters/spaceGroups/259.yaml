@@ -1,0 +1,20 @@
+# . Space group Pbaa.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2a 2b
+Hermann-Mauguin    : Pbaa
+Schoenflies        : D2h^8
+Space Group Number : 54
+Space Group Symbol : 54:cab
+Setting            : 259
+Transformations :
+    - (x,y,z)
+    - (x,-y+1/2,-z)
+    - (-x+1/2,-y,z)
+    - (-x+1/2,y+1/2,-z)
+    - (-x,-y,-z)
+    - (-x,y+1/2,z)
+    - (x+1/2,y,-z)
+    - (x+1/2,-y+1/2,z)
+...

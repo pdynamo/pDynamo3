@@ -1,0 +1,16 @@
+# . Space group A1a1.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : A -2ya
+Hermann-Mauguin    : A1a1
+Schoenflies        : Cs^4
+Space Group Number : 9
+Space Group Symbol : 9:-b1
+Setting            : 42
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,z)
+    - (x,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+...

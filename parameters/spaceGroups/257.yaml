@@ -1,0 +1,20 @@
+# . Space group Pcca.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2a 2ac
+Hermann-Mauguin    : Pcca
+Schoenflies        : D2h^8
+Space Group Number : 54
+Space Group Symbol : 54
+Setting            : 257
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y,z)
+    - (-x,y,-z+1/2)
+    - (x+1/2,-y,-z+1/2)
+    - (-x,-y,-z)
+    - (x+1/2,y,-z)
+    - (x,-y,z+1/2)
+    - (-x+1/2,y,z+1/2)
+...

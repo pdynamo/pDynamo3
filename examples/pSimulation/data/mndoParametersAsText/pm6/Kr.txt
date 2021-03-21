@@ -1,0 +1,89 @@
+# . Text parameter file for the element Kr.
+
+Kr   atomicNumber                          36
+Kr   iii                                    4
+Kr   iiid                                   4
+Kr   ir016                                  0
+Kr   ir066                                  0
+Kr   ir244                                  0
+Kr   ir266                                  0
+Kr   ir466                                  0
+Kr   qnd                                    0
+Kr   qnp                                    4
+Kr   qns                                    5
+Kr   ad                     0.709742671722381  atomic
+Kr   alp                    0.000000000000000  A^-1
+Kr   am                     0.734981265230345  atomic
+Kr   aq                     0.529915750471786  atomic
+Kr   betad                  0.000000000000000  eV
+Kr   betap                -16.142951000000000  eV
+Kr   betas                 -2.727088000000000  eV
+Kr   dd                     0.179779320000000  atomic
+Kr   eheat                  0.000000000000000  kcal/mole
+Kr   eisol               -259.001706000000013  eV
+Kr   f0sd                   0.000000000000000  eV
+Kr   g2sd                   0.000000000000000  eV
+Kr   gp2                   14.926947999999999  eV
+Kr   gphot                  1.000000000000000  dimensionless
+Kr   gpp                    9.174784000000001  eV
+Kr   gsp                    1.175304000000000  eV
+Kr   gss                   19.999856999999999  eV
+Kr   hsp                    0.299867000000000  eV
+Kr   pcore                  0.000000000000000  atomic
+Kr   qq                     0.472310201842520  atomic
+Kr   udd                    0.000000000000000  eV
+Kr   upp                  -80.484320999999994  eV
+Kr   uss                    8.535384000000001  eV
+Kr   zcore                  6.000000000000000  atomic
+Kr   zdn                    0.000000000000000  atomic
+Kr   zetad                  0.000000000000000  atomic
+Kr   zetap                  4.491371000000000  atomic
+Kr   zetas                  1.312248000000000  atomic
+Kr   zpn                    0.000000000000000  atomic
+Kr   zsn                    0.000000000000000  atomic
+Kr   diatomicA      H       3.770453000000000  A^-1
+Kr   diatomicX      H       5.125897000000000  dimensionless
+Kr   diatomicA      He      1.996943000000000  A^-1
+Kr   diatomicX      He      0.627701000000000  dimensionless
+Kr   diatomicA      Li      3.314562000000000  A^-1
+Kr   diatomicX      Li      8.758697000000000  dimensionless
+Kr   diatomicA      Be      3.253048000000000  A^-1
+Kr   diatomicX      Be     10.237795999999999  dimensionless
+Kr   diatomicA      B       2.363169000000000  A^-1
+Kr   diatomicX      B       2.946781000000000  dimensionless
+Kr   diatomicA      C       2.076738000000000  A^-1
+Kr   diatomicX      C       0.652623000000000  dimensionless
+Kr   diatomicA      N       1.644052000000000  A^-1
+Kr   diatomicX      N       0.199606000000000  dimensionless
+Kr   diatomicA      O       0.292300000000000  A^-1
+Kr   diatomicX      O       0.006733000000000  dimensionless
+Kr   diatomicA      F       3.452321000000000  A^-1
+Kr   diatomicX      F       4.134407000000000  dimensionless
+Kr   diatomicA      Ne      2.813679000000000  A^-1
+Kr   diatomicX      Ne      1.433722000000000  dimensionless
+Kr   diatomicA      Na      2.480598000000000  A^-1
+Kr   diatomicX      Na      8.354448000000000  dimensionless
+Kr   diatomicA      Mg      1.391487000000000  A^-1
+Kr   diatomicX      Mg      0.888436000000000  dimensionless
+Kr   diatomicA      Al      2.467131000000000  A^-1
+Kr   diatomicX      Al      5.091716000000000  dimensionless
+Kr   diatomicA      Si      1.764100000000000  A^-1
+Kr   diatomicX      Si      0.554250000000000  dimensionless
+Kr   diatomicA      Cl      1.884974000000000  A^-1
+Kr   diatomicX      Cl      0.520217000000000  dimensionless
+Kr   diatomicA      Ar      1.995125000000000  A^-1
+Kr   diatomicX      Ar      0.554874000000000  dimensionless
+Kr   diatomicA      K       2.182487000000000  A^-1
+Kr   diatomicX      K       8.609781999999999  dimensionless
+Kr   diatomicA      Ca      1.305197000000000  A^-1
+Kr   diatomicX      Ca      0.878891000000000  dimensionless
+Kr   diatomicA      Br      1.529006000000000  A^-1
+Kr   diatomicX      Br      0.308098000000000  dimensionless
+Kr   diatomicA      Kr      1.135319000000000  A^-1
+Kr   diatomicX      Kr      0.052099000000000  dimensionless
+Kr   diatomicA      Rb      2.268753000000000  A^-1
+Kr   diatomicX      Rb     15.307503000000001  dimensionless
+Kr   diatomicA      I       1.238574000000000  A^-1
+Kr   diatomicX      I       0.201136000000000  dimensionless
+Kr   diatomicA      Xe      0.551561000000000  A^-1
+Kr   diatomicX      Xe      0.049793000000000  dimensionless

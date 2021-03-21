@@ -1,0 +1,36 @@
+# . Space group P63/mcm.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : -P 6c 2
+Hermann-Mauguin    : P63/mcm
+Schoenflies        : D6h^3
+Space Group Number : 193
+Space Group Symbol : 193
+Setting            : 487
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-x,-y,z+1/2)
+    - (y,-x+y,z+1/2)
+    - (x-y,x,z+1/2)
+    - (y,x,-z+1/2)
+    - (x-y,-y,-z+1/2)
+    - (-x,-x+y,-z+1/2)
+    - (-y,-x,-z)
+    - (-x+y,y,-z)
+    - (x,x-y,-z)
+    - (-x,-y,-z)
+    - (y,-x+y,-z)
+    - (x-y,x,-z)
+    - (x,y,-z+1/2)
+    - (-y,x-y,-z+1/2)
+    - (-x+y,-x,-z+1/2)
+    - (-y,-x,z+1/2)
+    - (-x+y,y,z+1/2)
+    - (x,x-y,z+1/2)
+    - (y,x,z)
+    - (x-y,-y,z)
+    - (-x,-x+y,z)
+...

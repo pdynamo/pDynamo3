@@ -1,0 +1,4 @@
+f2c        df2c        ThirdParty
+f2cblas    df2cblas    ThirdParty  FullOptimization
+cblas      dcblas      ThirdParty  FullOptimization
+csource    dcArrays

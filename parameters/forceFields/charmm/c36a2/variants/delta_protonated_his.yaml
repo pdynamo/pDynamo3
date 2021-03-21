@@ -1,0 +1,18 @@
+---
+# . !MMSequenceVariant
+Atom Fields: [ Label, Type, Charge ]
+Atoms:
+- [ CB , CT2 , -0.09 ]
+- [ HB1, HA  ,  0.09 ]
+- [ HB2, HA  ,  0.09 ]
+- [ ND1, NR1 , -0.36 ]
+- [ HD1, H   ,  0.32 ]
+- [ CG , CPH1, -0.05 ]
+- [ CE1, CPH2,  0.25 ]
+- [ HE1, HR1 ,  0.13 ] 
+- [ NE2, NR2 , -0.70 ]
+- [ CD2, CPH1,  0.22 ]
+- [ HD2, HR3 ,  0.10 ]
+Component: HIS
+Label: Delta Protonated
+...

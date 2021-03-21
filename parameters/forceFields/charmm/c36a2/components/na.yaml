@@ -1,0 +1,5 @@
+# . !MMSequenceComponent
+Atom Fields: [Label, Type, Charge]
+Atoms:
+- [NA, SOD, 1.0]
+Label: NA

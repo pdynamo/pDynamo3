@@ -1,0 +1,16 @@
+# . Space group P21221.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P 2ac 2ac
+Hermann-Mauguin    : P21221
+Schoenflies        : D2^3
+Space Group Number : 18
+Space Group Symbol : 18:bca
+Setting            : 114
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (x+1/2,-y,-z+1/2)
+    - (-x+1/2,-y,z+1/2)
+...

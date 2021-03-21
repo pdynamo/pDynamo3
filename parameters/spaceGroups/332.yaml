@@ -1,0 +1,28 @@
+# . Space group Bbab:1.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : B 2 2 -1bc
+Hermann-Mauguin    : Bbab:1
+Schoenflies        : D2h^22
+Space Group Number : 68
+Space Group Symbol : 68:1a-cb
+Setting            : 332
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,y,-z+1/2)
+    - (-x,-y,z)
+    - (x+1/2,-y,-z+1/2)
+    - (-x,-y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z)
+    - (x,y+1/2,-z+1/2)
+    - (-x+1/2,y+1/2,z)
+    - (x+1/2,y,z+1/2)
+    - (-x,y,-z)
+    - (-x+1/2,-y,z+1/2)
+    - (x,-y,-z)
+    - (-x+1/2,-y+1/2,-z)
+    - (x,-y+1/2,z+1/2)
+    - (x+1/2,y+1/2,-z)
+    - (-x,y+1/2,z+1/2)
+...

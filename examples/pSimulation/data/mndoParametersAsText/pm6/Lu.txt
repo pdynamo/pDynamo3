@@ -1,0 +1,59 @@
+# . Text parameter file for the element Lu.
+
+Lu   atomicNumber                          71
+Lu   iii                                    6
+Lu   iiid                                   5
+Lu   ir016                                  0
+Lu   ir066                                  0
+Lu   ir244                                  0
+Lu   ir266                                  0
+Lu   ir466                                  0
+Lu   qnd                                    5
+Lu   qnp                                    6
+Lu   qns                                    6
+Lu   ad                     0.774522662168793  atomic
+Lu   alp                    0.000000000000000  A^-1
+Lu   am                     0.228205804119463  atomic
+Lu   aq                     0.464205587535958  atomic
+Lu   betad                 -7.737752000000000  eV
+Lu   betap                 -0.937679000000000  eV
+Lu   betas                 -5.590778000000000  eV
+Lu   dd                     0.130524265022227  atomic
+Lu   eheat               1031.200000000000045  kcal/mole
+Lu   eisol                -38.750248369999994  eV
+Lu   f0sd                   3.924927000000000  eV
+Lu   g2sd                   1.000946000000000  eV
+Lu   gp2                   14.598612859999999  eV
+Lu   gphot                  1.000000000000000  dimensionless
+Lu   gpp                   16.831746190000000  eV
+Lu   gsp                    7.379102330000000  eV
+Lu   gss                    6.209795630000000  eV
+Lu   hsp                    0.209008160000000  eV
+Lu   pcore                  2.743262000000000  atomic
+Lu   qq                     1.761740158126674  atomic
+Lu   udd                  -13.050056000000000  eV
+Lu   upp                  -11.606213000000000  eV
+Lu   uss                  -15.954993999999999  eV
+Lu   zcore                  3.000000000000000  atomic
+Lu   zdn                    0.921999000000000  atomic
+Lu   zetad                  2.225892000000000  atomic
+Lu   zetap                  1.712296000000000  atomic
+Lu   zetas                  5.471741000000000  atomic
+Lu   zpn                    4.033128000000000  atomic
+Lu   zsn                    1.632335000000000  atomic
+Lu   diatomicA      H       1.415790000000000  A^-1
+Lu   diatomicX      H       0.787920000000000  dimensionless
+Lu   diatomicA      C       2.312813000000000  A^-1
+Lu   diatomicX      C       4.453825000000000  dimensionless
+Lu   diatomicA      N       2.141302000000000  A^-1
+Lu   diatomicX      N       2.860828000000000  dimensionless
+Lu   diatomicA      O       2.192486000000000  A^-1
+Lu   diatomicX      O       2.917076000000000  dimensionless
+Lu   diatomicA      P       5.618820000000000  A^-1
+Lu   diatomicX      P       0.500000000000000  dimensionless
+Lu   diatomicA      Cl      2.753636000000000  A^-1
+Lu   diatomicX      Cl     12.757099000000000  dimensionless
+Lu   diatomicA      Br      2.322618000000000  A^-1
+Lu   diatomicX      Br      8.648274000000001  dimensionless
+Lu   diatomicA      I       2.248348000000000  A^-1
+Lu   diatomicX      I      10.082314999999999  dimensionless

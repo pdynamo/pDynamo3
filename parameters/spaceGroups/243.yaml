@@ -1,0 +1,20 @@
+# . Space group Pmcm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2c 2
+Hermann-Mauguin    : Pmcm
+Schoenflies        : D2h^5
+Space Group Number : 51
+Space Group Symbol : 51:bca
+Setting            : 243
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z+1/2)
+    - (x,-y,-z)
+    - (-x,-y,z+1/2)
+    - (-x,-y,-z)
+    - (x,-y,z+1/2)
+    - (-x,y,z)
+    - (x,y,-z+1/2)
+...

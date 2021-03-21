@@ -1,0 +1,49 @@
+# . Text parameter file for the element Be.
+
+Be   atomicNumber                           4
+Be   iii                                    2
+Be   iiid                                   3
+Be   ir016                                  0
+Be   ir066                                  0
+Be   ir244                                  0
+Be   ir266                                  0
+Be   ir466                                  0
+Be   qnd                                    0
+Be   qnp                                    2
+Be   qns                                    2
+Be   ad                     0.290893912566825  atomic
+Be   alp                    1.593536000000000  A^-1
+Be   am                     0.331216199761457  atomic
+Be   aq                     0.352996185638827  atomic
+Be   betad                  0.000000000000000  eV
+Be   betap                 -2.780684000000000  eV
+Be   betas                 -3.962053000000000  eV
+Be   dd                     1.009053050359844  atomic
+Be   eheat                 76.959999999999994  kcal/mole
+Be   eisol                -25.516653000000005  eV
+Be   f0sd                   0.000000000000000  eV
+Be   g2sd                   0.000000000000000  eV
+Be   gp2                    9.005219000000000  eV
+Be   gphot                  1.000000000000000  dimensionless
+Be   gpp                    6.057182000000000  eV
+Be   gsp                    6.576199000000000  eV
+Be   gss                    9.012851000000000  eV
+Be   hsp                    0.544679000000000  eV
+Be   pcore                  0.000000000000000  atomic
+Be   qq                     0.811758616469598  atomic
+Be   udd                    0.000000000000000  eV
+Be   upp                  -11.304243000000000  eV
+Be   uss                  -17.264752000000001  eV
+Be   zcore                  2.000000000000000  atomic
+Be   zdn                    0.000000000000000  atomic
+Be   zetad                  0.000000000000000  atomic
+Be   zetap                  1.508755000000000  atomic
+Be   zetas                  0.877439000000000  atomic
+Be   zpn                    0.000000000000000  atomic
+Be   zsn                    0.000000000000000  atomic
+Be   fn10                   1.631572000000000  A_eV
+Be   fn20                   2.672962000000000  A^-2
+Be   fn30                   1.791686000000000  A
+Be   fn11                  -2.110959000000000  A_eV
+Be   fn21                   1.968594000000000  A^-2
+Be   fn31                   1.755871000000000  A

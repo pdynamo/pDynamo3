@@ -1,0 +1,13 @@
+# . Point group C5.
+---
+# . !PointGroup
+Label : C5
+Symmetry Operations :
+    C5 :  1
+    E  :  1
+Character Symmetry Operations : [ E, C5 ]
+Character Table :
+    A  : [ 1.000000 ,      1.000000 ]
+    E1 : [ 2.000000 , 2*cos(2*pi/5) ]
+    E2 : [ 2.000000 , 2*cos(4*pi/5) ]
+...

@@ -1,0 +1,67 @@
+# . Text parameter file for the element Cd.
+
+Cd   atomicNumber                          48
+Cd   iii                                    5
+Cd   iiid                                   4
+Cd   ir016                                  0
+Cd   ir066                                  0
+Cd   ir244                                  0
+Cd   ir266                                  0
+Cd   ir466                                  0
+Cd   qnd                                    0
+Cd   qnp                                    5
+Cd   qns                                    5
+Cd   ad                     0.259776308888932  atomic
+Cd   alp                    0.000000000000000  A^-1
+Cd   am                     0.245385686638776  atomic
+Cd   aq                     1.106375479752263  atomic
+Cd   betad                  0.000000000000000  eV
+Cd   betap                  1.663178000000000  eV
+Cd   betas                -11.613182999999999  eV
+Cd   dd                     1.612575776175212  atomic
+Cd   eheat                 26.719999999999999  kcal/mole
+Cd   eisol                -22.614300000000000  eV
+Cd   f0sd                   0.000000000000000  eV
+Cd   g2sd                   0.000000000000000  eV
+Cd   gp2                    9.917452000000001  eV
+Cd   gphot                  1.000000000000000  dimensionless
+Cd   gpp                   18.729842999999999  eV
+Cd   gsp                    5.953373000000000  eV
+Cd   gss                    6.677284000000000  eV
+Cd   hsp                    0.825192000000000  eV
+Cd   pcore                  0.000000000000000  atomic
+Cd   qq                     1.312470345161203  atomic
+Cd   udd                    0.000000000000000  eV
+Cd   upp                   -9.318664000000000  eV
+Cd   uss                  -14.645792000000000  eV
+Cd   zcore                  2.000000000000000  atomic
+Cd   zdn                    0.000000000000000  atomic
+Cd   zetad                  0.000000000000000  atomic
+Cd   zetap                  1.957413000000000  atomic
+Cd   zetas                  1.384108000000000  atomic
+Cd   zpn                    0.000000000000000  atomic
+Cd   zsn                    0.000000000000000  atomic
+Cd   diatomicA      H       2.628748000000000  A^-1
+Cd   diatomicX      H      11.914201000000000  dimensionless
+Cd   diatomicA      C       1.425678000000000  A^-1
+Cd   diatomicX      C       0.603441000000000  dimensionless
+Cd   diatomicA      N       0.970423000000000  A^-1
+Cd   diatomicX      N       0.180663000000000  dimensionless
+Cd   diatomicA      O       1.696673000000000  A^-1
+Cd   diatomicX      O       0.926146000000000  dimensionless
+Cd   diatomicA      F       2.312135000000000  A^-1
+Cd   diatomicX      F       1.353665000000000  dimensionless
+Cd   diatomicA      Si      1.371225000000000  A^-1
+Cd   diatomicX      Si      2.253346000000000  dimensionless
+Cd   diatomicA      S       1.182202000000000  A^-1
+Cd   diatomicX      S       0.361389000000000  dimensionless
+Cd   diatomicA      Cl      0.943547000000000  A^-1
+Cd   diatomicX      Cl      0.140424000000000  dimensionless
+Cd   diatomicA      Br      1.001451000000000  A^-1
+Cd   diatomicX      Br      0.272267000000000  dimensionless
+Cd   diatomicA      Cd      1.564044000000000  A^-1
+Cd   diatomicX      Cd     18.617999000000001  dimensionless
+Cd   diatomicA      Te      1.307262000000000  A^-1
+Cd   diatomicX      Te      1.085919000000000  dimensionless
+Cd   diatomicA      I       0.996238000000000  A^-1
+Cd   diatomicX      I       0.396784000000000  dimensionless

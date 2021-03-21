@@ -1,0 +1,24 @@
+# . Space group P-3c1.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : -P 3 2"c
+Hermann-Mauguin    : P-3c1
+Schoenflies        : D3d^4
+Space Group Number : 165
+Space Group Symbol : 165
+Setting            : 457
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (y,x,-z+1/2)
+    - (x-y,-y,-z+1/2)
+    - (-x,-x+y,-z+1/2)
+    - (-x,-y,-z)
+    - (y,-x+y,-z)
+    - (x-y,x,-z)
+    - (-y,-x,z+1/2)
+    - (-x+y,y,z+1/2)
+    - (x,x-y,z+1/2)
+...

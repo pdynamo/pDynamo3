@@ -1,0 +1,28 @@
+# . Space group I-4c2.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : I -4 -2c
+Hermann-Mauguin    : I-4c2
+Schoenflies        : D2d^10
+Space Group Number : 120
+Space Group Symbol : 120
+Setting            : 397
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x,-y,z+1/2)
+    - (-x,y,z+1/2)
+    - (y,x,-z+1/2)
+    - (-y,-x,-z+1/2)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (y+1/2,-x+1/2,-z+1/2)
+    - (-y+1/2,x+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,z)
+    - (y+1/2,x+1/2,-z)
+    - (-y+1/2,-x+1/2,-z)
+...

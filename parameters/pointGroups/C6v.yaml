@@ -1,0 +1,17 @@
+# . Point group C6v.
+---
+# . !PointGroup
+Label : C6v
+Symmetry Operations :
+    C6    :  1
+    E     :  1
+    sigma :  6
+Character Symmetry Operations : [ E, C6, sigma-m ]
+Character Table :
+    A1 : [ 1.000000 ,  1.000000 ,  1.000000 ]
+    A2 : [ 1.000000 ,  1.000000 , -1.000000 ]
+    B1 : [ 1.000000 , -1.000000 ,  1.000000 ]
+    B2 : [ 1.000000 , -1.000000 , -1.000000 ]
+    E1 : [ 2.000000 ,  1.000000 ,  0.000000 ]
+    E2 : [ 2.000000 , -1.000000 ,  0.000000 ]
+...

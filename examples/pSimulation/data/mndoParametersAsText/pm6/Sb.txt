@@ -1,0 +1,81 @@
+# . Text parameter file for the element Sb.
+
+Sb   atomicNumber                          51
+Sb   iii                                    5
+Sb   iiid                                   5
+Sb   ir016                                  0
+Sb   ir066                                  0
+Sb   ir244                                  0
+Sb   ir266                                  0
+Sb   ir466                                  0
+Sb   qnd                                    5
+Sb   qnp                                    5
+Sb   qns                                    5
+Sb   ad                     0.281352253550395  atomic
+Sb   alp                    0.000000000000000  A^-1
+Sb   am                     0.389132439330519  atomic
+Sb   aq                     0.264749061648912  atomic
+Sb   betad                 -3.979108000000000  eV
+Sb   betap                 -5.940750000000000  eV
+Sb   betas                 -7.472322000000000  eV
+Sb   dd                     1.349194898309220  atomic
+Sb   eheat                 63.200000000000003  kcal/mole
+Sb   eisol               -123.518712999999991  eV
+Sb   f0sd                  26.188011750000001  eV
+Sb   g2sd                  15.254842249999999  eV
+Sb   gp2                    8.954081000000000  eV
+Sb   gphot                  1.000000000000000  dimensionless
+Sb   gpp                    9.281609000000000  eV
+Sb   gsp                    7.310023000000000  eV
+Sb   gss                   10.588832000000000  eV
+Sb   hsp                    0.779112000000000  eV
+Sb   pcore                  0.000000000000000  atomic
+Sb   qq                     1.448977902913485  atomic
+Sb   udd                   -6.581663000000000  eV
+Sb   upp                  -39.541179999999997  eV
+Sb   uss                  -41.688879000000000  eV
+Sb   zcore                  5.000000000000000  atomic
+Sb   zdn                    5.704031000000000  atomic
+Sb   zetad                  2.465590000000000  atomic
+Sb   zetap                  1.773006000000000  atomic
+Sb   zetas                  2.391178000000000  atomic
+Sb   zpn                    6.145086000000000  atomic
+Sb   zsn                    5.993591000000000  atomic
+Sb   diatomicA      H       1.571272000000000  A^-1
+Sb   diatomicX      H       0.795343000000000  dimensionless
+Sb   diatomicA      C       1.696206000000000  A^-1
+Sb   diatomicX      C       0.579212000000000  dimensionless
+Sb   diatomicA      N       0.676115000000000  A^-1
+Sb   diatomicX      N       0.082065000000000  dimensionless
+Sb   diatomicA      O       1.846384000000000  A^-1
+Sb   diatomicX      O       0.634234000000000  dimensionless
+Sb   diatomicA      F       2.182922000000000  A^-1
+Sb   diatomicX      F       0.650277000000000  dimensionless
+Sb   diatomicA      Al      1.422641000000000  A^-1
+Sb   diatomicX      Al      1.616690000000000  dimensionless
+Sb   diatomicA      Si      2.686590000000000  A^-1
+Sb   diatomicX      Si      8.713749000000000  dimensionless
+Sb   diatomicA      S       1.418837000000000  A^-1
+Sb   diatomicX      S       0.396969000000000  dimensionless
+Sb   diatomicA      Cl      1.117287000000000  A^-1
+Sb   diatomicX      Cl      0.156475000000000  dimensionless
+Sb   diatomicA      Mn      2.400320000000000  A^-1
+Sb   diatomicX      Mn      2.236710000000000  dimensionless
+Sb   diatomicA      Co      2.204630000000000  A^-1
+Sb   diatomicX      Co      2.276050000000000  dimensionless
+Sb   diatomicA      Br      1.063916000000000  A^-1
+Sb   diatomicX      Br      0.198044000000000  dimensionless
+Sb   diatomicA      Tc      2.204850000000000  A^-1
+Sb   diatomicX      Tc      2.276260000000000  dimensionless
+Sb   diatomicA      Ru      2.204350000000000  A^-1
+Sb   diatomicX      Ru      2.275760000000000  dimensionless
+Sb   diatomicA      Rh      2.204930000000000  A^-1
+Sb   diatomicX      Rh      2.276340000000000  dimensionless
+Sb   diatomicA      In      2.141933000000000  A^-1
+Sb   diatomicX      In      6.660801000000000  dimensionless
+Sb   diatomicA      Sb      1.348535000000000  A^-1
+Sb   diatomicX      Sb      0.724885000000000  dimensionless
+Sb   diatomicA      I       1.155315000000000  A^-1
+Sb   diatomicX      I       0.318190000000000  dimensionless
+Sb   diatomicA      Re      2.204360000000000  A^-1
+Sb   diatomicX      Re      2.275780000000000  dimensionless

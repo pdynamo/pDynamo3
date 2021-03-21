@@ -1,0 +1,67 @@
+# . Text parameter file for the element Fe.
+
+Fe   atomicNumber                          26
+Fe   iii                                    4
+Fe   iiid                                   3
+Fe   ir016                                 12
+Fe   ir066                                 15
+Fe   ir244                                  6
+Fe   ir266                                 35
+Fe   ir466                                 35
+Fe   qnd                                    3
+Fe   qnp                                    4
+Fe   qns                                    4
+Fe   ad                     2.119082773924772  atomic
+Fe   alp                    0.000000000000000  A^-1
+Fe   am                     0.293150708023172  atomic
+Fe   aq                     1.004510639471442  atomic
+Fe   betad                 -3.507531000000000  eV
+Fe   betap                 -1.125760000000000  eV
+Fe   betas                  8.027621000000000  eV
+Fe   dd                     0.089658702792213  atomic
+Fe   eheat                 99.299999999999997  kcal/mole
+Fe   eisol               -754.843797689999860  eV
+Fe   f0sd                   9.300165000000000  eV
+Fe   g2sd                   1.601345000000000  eV
+Fe   gp2                    7.272040850000000  eV
+Fe   gphot                  1.000000000000000  dimensionless
+Fe   gpp                    8.295757710000000  eV
+Fe   gsp                    7.786867210000000  eV
+Fe   gss                    7.977036310000000  eV
+Fe   hsp                    1.880189280000000  eV
+Fe   pcore                  1.272092000000000  atomic
+Fe   qq                     0.353421093297349  atomic
+Fe   udd                 -103.631789999999995  eV
+Fe   upp                  -62.963068999999997  eV
+Fe   uss                  -70.515046999999996  eV
+Fe   zcore                  8.000000000000000  atomic
+Fe   zdn                    2.161909000000000  atomic
+Fe   zetad                  1.080747000000000  atomic
+Fe   zetap                  6.002246000000000  atomic
+Fe   zetas                  1.479150000000000  atomic
+Fe   zpn                    1.392614000000000  atomic
+Fe   zsn                    1.459152000000000  atomic
+Fe   diatomicA      H       0.854488000000000  A^-1
+Fe   diatomicX      H       0.025195000000000  dimensionless
+Fe   diatomicA      C       3.991343000000000  A^-1
+Fe   diatomicX      C       0.366835000000000  dimensionless
+Fe   diatomicA      N       2.500486000000000  A^-1
+Fe   diatomicX      N       0.155342000000000  dimensionless
+Fe   diatomicA      O       1.726313000000000  A^-1
+Fe   diatomicX      O       0.136422000000000  dimensionless
+Fe   diatomicA      F       4.294707000000000  A^-1
+Fe   diatomicX      F       3.657350000000000  dimensionless
+Fe   diatomicA      P       2.567534000000000  A^-1
+Fe   diatomicX      P       0.431291000000000  dimensionless
+Fe   diatomicA      S       0.988991000000000  A^-1
+Fe   diatomicX      S       0.033478000000000  dimensionless
+Fe   diatomicA      Cl      1.229793000000000  A^-1
+Fe   diatomicX      Cl      0.019473000000000  dimensionless
+Fe   diatomicA      K       2.000000000000000  A^-1
+Fe   diatomicX      K       6.000000000000000  dimensionless
+Fe   diatomicA      Fe      2.720785000000000  A^-1
+Fe   diatomicX      Fe      1.846890000000000  dimensionless
+Fe   diatomicA      Br      3.641782000000000  A^-1
+Fe   diatomicX      Br      6.061921000000000  dimensionless
+Fe   diatomicA      I       1.912829000000000  A^-1
+Fe   diatomicX      I       0.532622000000000  dimensionless

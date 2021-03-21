@@ -1,0 +1,9 @@
+---
+# . !MMSequenceComponent
+Atom Fields: [Label, Type, Charge]
+Atoms:
+- [ O , OCTIP3, -0.834 ]
+- [ H1, HCTIP3,  0.417 ]
+- [ H2, HCTIP3,  0.417 ]
+Label: HOH
+...

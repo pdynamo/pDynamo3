@@ -1,0 +1,28 @@
+# . Space group P42/ncm:1.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : P 4n 2ab -1n
+Hermann-Mauguin    : P42/ncm:1
+Schoenflies        : D4h^16
+Space Group Number : 138
+Space Group Symbol : 138:1
+Setting            : 422
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y+1/2,x+1/2,z+1/2)
+    - (y+1/2,-x+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,-z)
+    - (y,x,-z+1/2)
+    - (-y,-x,-z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x,-y,z+1/2)
+    - (-x,y,z+1/2)
+    - (-y+1/2,-x+1/2,z)
+    - (y+1/2,x+1/2,z)
+...

@@ -1,0 +1,28 @@
+# . Space group P42/mnm.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -P 4n 2n
+Hermann-Mauguin    : P42/mnm
+Schoenflies        : D4h^14
+Space Group Number : 136
+Space Group Symbol : 136
+Setting            : 419
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y+1/2,x+1/2,z+1/2)
+    - (y+1/2,-x+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (y,x,-z)
+    - (-y,-x,-z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (y+1/2,-x+1/2,-z+1/2)
+    - (-y+1/2,x+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (-y,-x,z)
+    - (y,x,z)
+...

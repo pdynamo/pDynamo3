@@ -1,0 +1,20 @@
+# . Space group Pnna.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2a 2bc
+Hermann-Mauguin    : Pnna
+Schoenflies        : D2h^6
+Space Group Number : 52
+Space Group Symbol : 52
+Setting            : 245
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y,z)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x,-y+1/2,-z+1/2)
+    - (-x,-y,-z)
+    - (x+1/2,y,-z)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x,y+1/2,z+1/2)
+...

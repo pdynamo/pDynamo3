@@ -1,0 +1,485 @@
+---
+# . !MMPatternContainer
+Atom Fields:
+    - Key
+    - Atomic Number
+    - Connections
+    - Formal Charge
+    - Hydrogens
+    - Is Aromatic
+    - Atom Type Label
+    - Charge
+Atom Result Fields:
+    - Atom Type Label
+    - Charge
+Bond Fields:
+    - Atom Key 1
+    - Atom Key 2
+    - Type
+Label: Protein
+Patterns:
+
+    # . Phosphates.
+
+    - Label: Aliphatic Monophosphate
+      Atom Patterns:
+          - [ 0, 15, 4,  0, 0, False, P             ,  1.92 ]
+          - [ 1,  8, 1, -1, 0, False, OP            , -1.12 ]
+          - [ 2,  8, 1, -1, 0, False, OP            , -1.12 ]
+          - [ 3,  8, 1,  0, 0, False, OP            , -1.12 ]
+          - [ 4,  8, 2,  0, 0, False, "OS.PHOSPHATE", -0.70 ]
+          - [ 5,  6, 4,  0, ., False, CT            ,  0.14 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 0, 2, Single ]
+          - [ 0, 3, Double ]
+          - [ 0, 4, Single ]
+          - [ 4, 5, Single ]
+
+    - Label: Aliphatic Diphosphate
+      Atom Patterns:
+          - [ 0, 15, 4,  0, 0, False, P             ,  1.98 ]
+          - [ 1,  8, 1, -1, 0, False, OP            , -1.15 ]
+          - [ 2,  8, 1, -1, 0, False, OP            , -1.15 ]
+          - [ 3,  8, 1,  0, 0, False, OP            , -1.15 ]
+          - [ 4,  8, 2,  0, 0, False, "OS.PHOSPHATE", -0.74 ]
+          - [ 5, 15, 4,  0, 0, False, P             ,  1.90 ]
+          - [ 6,  8, 1, -1, 0, False, OP            , -1.08 ]
+          - [ 7,  8, 1,  0, 0, False, OP            , -1.08 ]
+          - [ 8,  8, 2,  0, 0, False, "OS.PHOSPHATE", -0.71 ]
+          - [ 9,  6, 4,  0, ., False, CT            ,  0.18 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 0, 2, Single ]
+          - [ 0, 3, Double ]
+          - [ 0, 4, Single ]
+          - [ 4, 5, Single ]
+          - [ 5, 6, Single ]
+          - [ 5, 7, Double ]
+          - [ 5, 8, Single ]
+          - [ 8, 9, Single ]
+
+    - Label: Aliphatic Triphosphate
+      Atom Patterns:
+          - [  0, 15, 4,  0, 0, False, P             ,  2.04 ]
+          - [  1,  8, 1, -1, 0, False, OP            , -1.18 ]
+          - [  2,  8, 1, -1, 0, False, OP            , -1.18 ]
+          - [  3,  8, 1,  0, 0, False, OP            , -1.18 ]
+          - [  4,  8, 2,  0, 0, False, "OS.PHOSPHATE", -0.74 ]
+          - [  5, 15, 4,  0, 0, False, P             ,  1.98 ]
+          - [  6,  8, 1, -1, 0, False, OP            , -1.09 ]
+          - [  7,  8, 1,  0, 0, False, OP            , -1.09 ]
+          - [  8,  8, 2,  0, 0, False, "OS.PHOSPHATE", -0.78 ]
+          - [  9, 15, 4,  0, 0, False, P             ,  1.85 ]
+          - [ 10,  8, 1, -1, 0, False, OP            , -1.07 ]
+          - [ 11,  8, 1,  0, 0, False, OP            , -1.07 ]
+          - [ 12,  8, 2,  0, 0, False, "OS.PHOSPHATE", -0.71 ]
+          - [ 13,  6, 4,  0, ., False, CT            ,  0.22 ]
+      Bond Patterns:
+          - [  0,  1, Single ]
+          - [  0,  2, Single ]
+          - [  0,  3, Double ]
+          - [  0,  4, Single ]
+          - [  4,  5, Single ]
+          - [  5,  6, Single ]
+          - [  5,  7, Double ]
+          - [  5,  8, Single ]
+          - [  8,  9, Single ]
+          - [  9, 10, Single ]
+          - [  9, 11, Double ]
+          - [  9, 12, Single ]
+          - [ 12, 13, Single ]
+
+    # . Thiols - primary, secondary, tertiary.
+
+    - Label: Hydrogen Sulfide
+      Atom Patterns:
+          - [ 0, 16, 2, 0, 2, False, "SH.H2S", 0.0 ]
+
+    - Label: Thiol
+      Atom Patterns:
+          - [ 0, 16, 2, 0, 1, False, SH, -0.18 ]
+          - [ 1,  6, 4, 0, ., False, CT,  0.18 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    # . Sulfides.
+
+    - Label: Sulfide
+      Atom Patterns:
+          - [ 0, 16, 2, 0, 0, False, S , -0.435  ]
+          - [ 1,  6, 4, 0, ., False, CT,  0.2175 ]
+          - [ 2,  6, 4, 0, ., False, CT,  0.2175 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 0, 2, Single ]
+
+    # . Disulfides.
+
+    - Label: Disulfide
+      Atom Patterns:
+          - [ 0, 16, 2, 0, 0, False, S , -0.2175 ]
+          - [ 1, 16, 2, 0, 0, False, S , -0.2175 ]
+          - [ 2,  6, 4, 0, ., False, CT,  0.2175 ]
+          - [ 3,  6, 4, 0, ., False, CT,  0.2175 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 0, 2, Single ]
+          - [ 1, 3, Single ]
+
+    # . Guanidinium cation.
+
+    - Label: Guanidinium Cation
+      Atom Patterns:
+          - [ 0, 7, 3, 1, 2, False, "N2.GUANH2",  0.12 ]
+          - [ 1, 6, 3, 0, 0, False, "CA.GUA"   ,  0.64 ]
+          - [ 2, 7, 3, 0, 2, False, "N2.GUANH2",  0.12 ]
+          - [ 3, 7, 3, 0, 1, False, "N2.GUANHR", -0.26 ]
+          - [ 4, 6, 4, 0, ., False, CT         ,  0.31 ]
+          - [ 5, 6, 4, 0, ., False, CT         ,  0.07 ]
+      Bond Patterns:
+          - [ 0, 1, Double ]
+          - [ 1, 2, Single ]
+          - [ 1, 3, Single ]
+          - [ 3, 4, Single ]
+          - [ 4, 5, Single ]
+
+    # . Histidines.
+
+    - Label: Delta-Protonated Histidine
+      Atom Patterns:
+          - [ 0, 7, 3, 0, 1, True , "NA.TRP", -0.150 ]
+          - [ 1, 6, 3, 0, 1, True , CR      ,  0.410 ]
+          - [ 2, 7, 2, 0, 0, True , NB      , -0.490 ]
+          - [ 3, 6, 3, 0, 1, True , CV      ,  0.100 ]
+          - [ 4, 6, 3, 0, 0, True , CW      ,  0.015 ]
+          - [ 5, 6, 4, 0, ., False, CT      ,  0.115 ]
+      Bond Patterns:
+          - [ 0, 1, Undefined ]
+          - [ 0, 4, Undefined ]
+          - [ 1, 2, Undefined ]
+          - [ 2, 3, Undefined ]
+          - [ 3, 4, Undefined ]
+          - [ 4, 5, Single    ]
+
+    - Label: Epsilon-Protonated Histidine
+      Atom Patterns:
+          - [ 0, 7, 2, 0, 0, True , NB      , -0.490 ]
+          - [ 1, 6, 3, 0, 1, True , CR      ,  0.410 ]
+          - [ 2, 7, 3, 0, 1, True , "NA.TRP", -0.150 ]
+          - [ 3, 6, 3, 0, 1, True , CW      ,  0.130 ]
+          - [ 4, 6, 3, 0, 0, True , CV      , -0.015 ]
+          - [ 5, 6, 4, 0, ., False, CT      ,  0.115 ]
+      Bond Patterns:
+          - [ 0, 1, Undefined ]
+          - [ 0, 4, Undefined ]
+          - [ 1, 2, Undefined ]
+          - [ 2, 3, Undefined ]
+          - [ 3, 4, Undefined ]
+          - [ 4, 5, Single    ]
+
+    - Label: Histidine Cation
+      Atom Patterns:
+          - [ 0, 7, 3, 0, 1, True , "NA.HIP", -0.080 ]
+          - [ 1, 6, 3, 0, 1, True , CR      ,  0.500 ]
+          - [ 2, 7, 3, 1, 1, True , "NA.HIP", -0.080 ]
+          - [ 3, 6, 3, 0, 1, True , CX      ,  0.330 ]
+          - [ 4, 6, 3, 0, 0, True , CX      ,  0.215 ]
+          - [ 5, 6, 4, 0, ., False, CT      ,  0.115 ]
+      Bond Patterns:
+          - [ 0, 1, Undefined ]
+          - [ 0, 4, Undefined ]
+          - [ 1, 2, Undefined ]
+          - [ 2, 3, Undefined ]
+          - [ 3, 4, Undefined ]
+          - [ 4, 5, Single    ]
+
+    # . Tryptophan.
+
+    # . Atoms are Nepsilon Cdelta(H) Cgamma Cdelta(no H) Cepsilon(no H), remaining four CAs of six-membered ring and Cbeta.
+
+    - Label: Tryptophan Side Chain
+      Atom Patterns:
+          - [ 0, 7, 3, 0, 1, True , "NA.TRP", -0.150 ]
+          - [ 1, 6, 3, 0, 1, True , CA      ,  0.000 ]
+          - [ 2, 6, 3, 0, 0, True , "C*"    ,  0.075 ]
+          - [ 3, 6, 3, 0, 0, True , CB      , -0.055 ]
+          - [ 4, 6, 3, 0, 0, True , CN      ,  0.130 ]
+          - [ 5, 6, 3, 0, 1, True , CA      ,  0.000 ]
+          - [ 6, 6, 3, 0, 1, True , CA      ,  0.000 ]
+          - [ 7, 6, 3, 0, 1, True , CA      ,  0.000 ]
+          - [ 8, 6, 3, 0, 1, True , CA      ,  0.000 ]
+          - [ 9, 6, 4, 0, ., False, CT      ,  0.000 ]
+      Bond Patterns:
+          - [ 0, 1, Undefined ]
+          - [ 0, 4, Undefined ]
+          - [ 1, 2, Undefined ]
+          - [ 2, 3, Undefined ]
+          - [ 2, 9, Single    ]
+          - [ 3, 4, Undefined ]
+          - [ 3, 5, Undefined ]
+          - [ 4, 8, Undefined ]
+          - [ 5, 6, Undefined ]
+          - [ 6, 7, Undefined ]
+          - [ 7, 8, Undefined ]
+
+    # . Amino-acid zwitterions.
+
+    - Label: Amino Acid Zwitterion
+      Atom Patterns:
+          - [ 0, 7, 4,  1, 3, False, "N3.NH3R+",  0.69 ]
+          - [ 1, 6, 4,  0, ., False, CT        ,  0.21 ]
+          - [ 2, 8, 1,  0, 0, False, O2        , -0.80 ]
+          - [ 3, 8, 1, -1, 0, False, O2        , -0.80 ]
+          - [ 4, 6, 3,  0, 0, False, C         ,  0.70 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 1, 4, Single ]
+          - [ 2, 4, Double ]
+          - [ 3, 4, Single ]
+
+    - Label: Proline Zwitterion
+      Atom Patterns:
+          - [ 0, 7, 4,  1, 2, False, "N3.NH2R2+",  0.42 ]
+          - [ 1, 6, 4,  0, ., False, CT         ,  0.29 ]
+          - [ 2, 6, 4,  0, ., False, CT         ,  0.19 ]
+          - [ 3, 8, 1,  0, 0, False, O2         , -0.80 ]
+          - [ 4, 8, 1, -1, 0, False, O2         , -0.80 ]
+          - [ 5, 6, 3,  0, 0, False, C          ,  0.70 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 0, 2, Single ]
+          - [ 2, 5, Single ]
+          - [ 3, 5, Double ]
+          - [ 4, 5, Single ]
+
+    # . Amine cations including amino-acid N-termini.
+
+    - Label: Ammonium Cation
+      Atom Patterns:
+          - [ 0, 7, 4, 1, 4, False, "N3.NH4+", 0.0 ]
+
+    - Label: Primary Amine Cation
+      Atom Patterns:
+          - [ 0, 7, 4, 1, 3, False, "N3.NH3R+", 0.69 ]
+          - [ 1, 6, 4, 0, ., False, CT        , 0.31 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    - Label: Secondary Amine Cation
+      Atom Patterns:
+          - [ 0, 7, 4, 1, 2, False, "N3.NH2R2+", 0.42 ]
+          - [ 1, 6, 4, 0, ., False, CT         , 0.29 ]
+          - [ 2, 6, 4, 0, ., False, CT         , 0.29 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 0, 2, Single ]
+
+    # . Amino-acid C-Termini.
+
+    - Label: Proline C-Terminus
+      Atom Patterns:
+          - [ 0, 7, 3,  0, 0, False, N , -0.14 ]
+          - [ 1, 6, 3,  0, 0, False, C ,  0.50 ]
+          - [ 2, 8, 1,  0, 0, False, O , -0.50 ]
+          - [ 3, 6, 4,  0, ., False, CT,  0.07 ]
+          - [ 4, 6, 4,  0, 1, False, CT, -0.03 ]
+          - [ 5, 8, 1,  0, 0, False, O2, -0.80 ]
+          - [ 6, 8, 1, -1, 0, False, O2, -0.80 ]
+          - [ 7, 6, 3,  0, 0, False, C ,  0.70 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 1, 2, Double ]
+          - [ 0, 3, Single ]
+          - [ 0, 4, Single ]
+          - [ 4, 7, Single ]
+          - [ 5, 7, Double ]
+          - [ 6, 7, Single ]
+
+    - Label: Amino Acid C-Terminus
+      Atom Patterns:
+          - [ 0, 7, 3,  0, 1, False, N , -0.2 ]
+          - [ 1, 6, 3,  0, 0, False, C ,  0.5 ]
+          - [ 2, 8, 1,  0, 0, False, O , -0.5 ]
+          - [ 3, 6, 4,  0, ., False, CT,  0.1 ]
+          - [ 4, 8, 1,  0, 0, False, O2, -0.8 ]
+          - [ 5, 8, 1, -1, 0, False, O2, -0.8 ]
+          - [ 6, 6, 3,  0, 0, False, C ,  0.7 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 1, 2, Double ]
+          - [ 0, 3, Single ]
+          - [ 3, 6, Single ]
+          - [ 4, 6, Double ]
+          - [ 5, 6, Single ]
+
+    # . Basic nucleic acids.
+
+    # . Atoms are C4, N3, N9, C5, C8, N7, C2, N1, C6, N6, C1(ribose).
+    - Label: Adenine Ribose C1
+      Atom Patterns:
+          - [  0, 6, 3, 0, 0, True , CB          ,  0.38 ]
+          - [  1, 7, 2, 0, 0, True , NC          , -0.55 ]
+          - [  2, 7, 3, 0, 0, True , N*          , -0.50 ]
+          - [  3, 6, 3, 0, 0, True , CB          ,  0.15 ]
+          - [  4, 6, 3, 0, 1, True , CK          ,  0.40 ]
+          - [  5, 7, 2, 0, 0, True , NB          , -0.49 ]
+          - [  6, 6, 3, 0, 1, True , CQ          ,  0.42 ]
+          - [  7, 7, 2, 0, 0, True , NC          , -0.53 ]
+          - [  8, 6, 3, 0, 0, True , CA          ,  0.44 ]
+          - [  9, 7, 3, 0, 2, False, "N2.ADENINE", -0.07 ]
+          - [ 10, 6, 4, 0, ., False, "CT.RIBOSE" ,  0.35 ]
+      Bond Patterns:
+          - [ 0,  1, Undefined ]
+          - [ 0,  2, Undefined ]
+          - [ 0,  3, Undefined ]
+          - [ 1,  6, Undefined ]
+          - [ 2,  4, Undefined ]
+          - [ 2, 10, Single    ]
+          - [ 3,  5, Undefined ]
+          - [ 3,  8, Undefined ]
+          - [ 4,  5, Undefined ]
+          - [ 6,  7, Undefined ]
+          - [ 7,  8, Undefined ]
+          - [ 8,  9, Single    ]
+
+    - Label: Ribose Minus C1
+      Atom Patterns:
+          - [ 0, 8, 2, 0, 0, False, OS         , -0.400 ]
+          - [ 1, 6, 4, 0, 1, False, "CT.RIBOSE",  0.330 ]
+          - [ 2, 6, 4, 0, 1, False, "CT.RIBOSE",  0.300 ]
+          - [ 3, 8, 2, 0, 1, False, "OH.PHENOL", -0.265 ]
+          - [ 4, 6, 4, 0, 1, False, "CT.RIBOSE",  0.300 ]
+          - [ 5, 8, 2, 0, 1, False, "OH.PHENOL", -0.265 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 1, 2, Single ]
+          - [ 2, 3, Single ]
+          - [ 2, 4, Single ]
+          - [ 4, 5, Single ]
+
+    # . Alcohols - primary, secondary, tertiary and phenol.
+
+    - Label: Methanol
+      Atom Patterns:
+          - [ 0, 8, 2, 0, 1, False, OH           , -0.265 ]
+          - [ 1, 6, 4, 0, 3, False, "CT.METHANOL",  0.265 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    - Label: Primary Alcohol
+      Atom Patterns:
+          - [ 0, 8, 2, 0, 1, False, OH, -0.265 ]
+          - [ 1, 6, 4, 0, ., False, CT,  0.265 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    - Label: Phenol
+      Atom Patterns:
+          - [ 0, 8, 2, 0, 1, False, "OH.PHENOL", -0.15 ]
+          - [ 1, 6, 3, 0, 0, True , CA         ,  0.15 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    # . Carboxylates - primary, secondary, tertiary.
+
+    - Label: Carboxylate Anion
+      Atom Patterns:
+          - [ 0, 8, 1,  0, 0, False, O2, -0.8 ]
+          - [ 1, 8, 1, -1, 0, False, O2, -0.8 ]
+          - [ 2, 6, 3,  0, 0, False, C ,  0.7 ]
+          - [ 3, 6, 4,  0, ., False, CT, -0.1 ]
+      Bond Patterns:
+          - [ 0, 2, Double ]
+          - [ 1, 2, Single ]
+          - [ 2, 3, Single ]
+
+    # . Amides - primary, secondary, tertiary.
+
+    - Label: Urea
+      Atom Patterns:
+          - [ 0, 7, 3, 0, 2, False, "N.UREA",  0.124 ]
+          - [ 1, 6, 3, 0, 0, False, C       ,  0.142 ]
+          - [ 2, 7, 3, 0, 2, False, "N.UREA",  0.124 ]
+          - [ 3, 8, 1, 0, 0, False, O       , -0.390 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 1, 2, Single ]
+          - [ 1, 3, Double ]
+
+    - Label: Primary Amide
+      Atom Patterns:
+          - [ 0, 7, 3, 0, 2, False, "N.PRIMARYAMIDE",  0.0 ]
+          - [ 1, 6, 3, 0, ., False, C               ,  0.5 ]
+          - [ 2, 8, 1, 0, 0, False, O               , -0.5 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 1, 2, Double ]
+
+    - Label: Secondary Amide
+      Atom Patterns:
+          - [ 0, 7, 3, 0, 1, False, N , -0.2 ]
+          - [ 1, 6, 3, 0, ., False, C ,  0.5 ]
+          - [ 2, 8, 1, 0, 0, False, O , -0.5 ]
+          - [ 3, 6, 4, 0, ., False, CT,  0.2 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 1, 2, Double ]
+          - [ 0, 3, Single ]
+
+    - Label: Tertiary Amide
+      Atom Patterns:
+          - [ 0, 7, 3, 0, 0, False, N , -0.14 ]
+          - [ 1, 6, 3, 0, ., False, C ,  0.50 ]
+          - [ 2, 8, 1, 0, 0, False, O , -0.50 ]
+          - [ 3, 6, 4, 0, ., False, CT,  0.07 ]
+          - [ 4, 6, 4, 0, ., False, CT,  0.07 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 1, 2, Double ]
+          - [ 0, 3, Single ]
+          - [ 0, 4, Single ]
+
+    # . Simple species.
+
+    - Label: Chloride Anion
+      Atom Patterns:
+          - [ 0, 17, 0, -1, 0, False, Cl, -1.0 ]
+
+    - Label: Hydrogen Fluoride
+      Atom Patterns:
+          - [ 0, 9, 1, 0, 1, False, F, 0.0 ]
+
+    - Label: Magnesium Dication
+      Atom Patterns:
+          - [ 0, 12, 0, 2, 0, False, Mg, 2.0 ]
+
+    - Label: Potassium Cation
+      Atom Patterns:
+          - [ 0, 19, 0, 1, 0, False, K, 1.0 ]
+
+    - Label: Sodium Cation
+      Atom Patterns:
+          - [ 0, 11, 0, 1, 0, False, Na, 1.0 ]
+
+    - Label: Water
+      Atom Patterns:
+          - [ 0, 8, 2, 0, 2, False, OW, 0.0 ]
+
+    # . Catch-alls.
+
+    - Label: Aromatic Aliphatic Link
+      Atom Patterns:
+          - [ 0, 6, 3, 0, 0, True , CA, -0.115 ]
+          - [ 1, 6, 4, 0, ., False, CT,  0.115 ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    - Label: Aromatic Carbon
+      Atom Patterns:
+          - [ 0, 6, 3, 0, 1, True, CA, 0.0 ]
+
+    - Label: Tetrahedral Carbon
+      Atom Patterns:
+          - [ 0, 6, 4, 0, ., False, CT, 0.0 ]
+...

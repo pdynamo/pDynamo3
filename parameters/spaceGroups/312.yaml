@@ -1,0 +1,28 @@
+# . Space group Bmmm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -B 2 2
+Hermann-Mauguin    : Bmmm
+Schoenflies        : D2h^19
+Space Group Number : 65
+Space Group Symbol : 65:bca
+Setting            : 312
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (-x,-y,z)
+    - (-x,-y,-z)
+    - (x,-y,z)
+    - (-x,y,z)
+    - (x,y,-z)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,y,-z+1/2)
+    - (x+1/2,-y,-z+1/2)
+    - (-x+1/2,-y,z+1/2)
+    - (-x+1/2,-y,-z+1/2)
+    - (x+1/2,-y,z+1/2)
+    - (-x+1/2,y,z+1/2)
+    - (x+1/2,y,-z+1/2)
+...

@@ -1,0 +1,24 @@
+# . Space group P6/m.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : -P 6
+Hermann-Mauguin    : P6/m
+Schoenflies        : C6h^1
+Space Group Number : 175
+Space Group Symbol : 175
+Setting            : 469
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-x,-y,z)
+    - (y,-x+y,z)
+    - (x-y,x,z)
+    - (-x,-y,-z)
+    - (y,-x+y,-z)
+    - (x-y,x,-z)
+    - (x,y,-z)
+    - (-y,x-y,-z)
+    - (-x+y,-x,-z)
+...

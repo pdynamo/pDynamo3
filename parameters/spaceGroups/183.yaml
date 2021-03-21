@@ -1,0 +1,20 @@
+# . Space group A2aa.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : A -2a 2
+Hermann-Mauguin    : A2aa
+Schoenflies        : C2v^13
+Space Group Number : 37
+Space Group Symbol : 37:cab
+Setting            : 183
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x+1/2,y,-z)
+    - (x+1/2,-y,z)
+    - (x,y+1/2,z+1/2)
+    - (x,-y+1/2,-z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+...

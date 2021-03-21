@@ -1,0 +1,16 @@
+# . Space group Pb2n.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2ab -2ab
+Hermann-Mauguin    : Pb2n
+Schoenflies        : C2v^6
+Space Group Number : 30
+Space Group Symbol : 30:bca
+Setting            : 153
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (-x+1/2,y+1/2,z)
+    - (x+1/2,y+1/2,-z)
+...

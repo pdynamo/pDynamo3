@@ -1,0 +1,4 @@
+f2cdlamch  df2cdlamch  ThirdParty  NoOptimization
+f2clapack  df2clapack  ThirdParty  FullOptimization
+cprimme    dcprimme    ThirdParty
+csource    dcLinearAlgebra

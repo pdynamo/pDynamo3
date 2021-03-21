@@ -1,0 +1,28 @@
+# . Space group Icab.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -I 2a 2b
+Hermann-Mauguin    : Icab
+Schoenflies        : D2h^27
+Space Group Number : 73
+Space Group Symbol : 73:ba-c
+Setting            : 342
+Transformations :
+    - (x,y,z)
+    - (-x,-y+1/2,z+1/2)
+    - (x+1/2,-y,-z+1/2)
+    - (-x+1/2,y+1/2,-z)
+    - (-x,-y,-z)
+    - (x,y+1/2,-z+1/2)
+    - (-x+1/2,y,z+1/2)
+    - (x+1/2,-y+1/2,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y,z)
+    - (x,-y+1/2,-z)
+    - (-x,y,-z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y,-z)
+    - (-x,y+1/2,z)
+    - (x,-y,z+1/2)
+...

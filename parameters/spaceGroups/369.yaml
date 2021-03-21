@@ -1,0 +1,20 @@
+# . Space group P41212.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : P 4abw 2nw
+Hermann-Mauguin    : P41212
+Schoenflies        : D4^4
+Space Group Number : 92
+Space Group Symbol : 92
+Setting            : 369
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (-y+1/2,x+1/2,z+1/4)
+    - (y+1/2,-x+1/2,z+3/4)
+    - (-x+1/2,y+1/2,-z+1/4)
+    - (x+1/2,-y+1/2,-z+3/4)
+    - (y,x,-z)
+    - (-y,-x,-z+1/2)
+...

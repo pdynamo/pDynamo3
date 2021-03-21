@@ -1,0 +1,20 @@
+# . Space group Ccm21.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : C 2c -2c
+Hermann-Mauguin    : Ccm21
+Schoenflies        : C2v^12
+Space Group Number : 36
+Space Group Symbol : 36:ba-c
+Setting            : 177
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (-x,y,z+1/2)
+    - (x,-y,z)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,z)
+...

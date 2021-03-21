@@ -1,0 +1,20 @@
+# . Space group Pmca.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2ac 2a
+Hermann-Mauguin    : Pmca
+Schoenflies        : D2h^11
+Space Group Number : 57
+Space Group Symbol : 57:cab
+Setting            : 271
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z)
+    - (-x+1/2,-y,z+1/2)
+    - (-x,y,-z+1/2)
+    - (-x,-y,-z)
+    - (-x+1/2,y,z)
+    - (x+1/2,y,-z+1/2)
+    - (x,-y,z+1/2)
+...

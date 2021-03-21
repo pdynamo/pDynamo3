@@ -1,0 +1,28 @@
+# . Space group P4/nnc:1.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : P 4 2 -1n
+Hermann-Mauguin    : P4/nnc:1
+Schoenflies        : D4h^4
+Space Group Number : 126
+Space Group Symbol : 126:1
+Setting            : 404
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (y,x,-z)
+    - (-y,-x,-z)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (y+1/2,-x+1/2,-z+1/2)
+    - (-y+1/2,x+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (-y+1/2,-x+1/2,z+1/2)
+    - (y+1/2,x+1/2,z+1/2)
+...

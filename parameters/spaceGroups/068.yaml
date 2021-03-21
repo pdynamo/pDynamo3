@@ -1,0 +1,20 @@
+# . Space group I112/m.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : -I 2
+Hermann-Mauguin    : I112/m
+Schoenflies        : C2h^3
+Space Group Number : 12
+Space Group Symbol : 12:c3
+Setting            : 68
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+...

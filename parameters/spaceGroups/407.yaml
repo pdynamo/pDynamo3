@@ -1,0 +1,28 @@
+# . Space group P4/mnc.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -P 4 2n
+Hermann-Mauguin    : P4/mnc
+Schoenflies        : D4h^6
+Space Group Number : 128
+Space Group Symbol : 128
+Setting            : 407
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (y+1/2,x+1/2,-z+1/2)
+    - (-y+1/2,-x+1/2,-z+1/2)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (-y+1/2,-x+1/2,z+1/2)
+    - (y+1/2,x+1/2,z+1/2)
+...

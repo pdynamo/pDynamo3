@@ -1,0 +1,28 @@
+# . Space group Ccmm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -C 2c 2c
+Hermann-Mauguin    : Ccmm
+Schoenflies        : D2h^17
+Space Group Number : 63
+Space Group Symbol : 63:ba-c
+Setting            : 299
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z+1/2)
+    - (x,-y,-z+1/2)
+    - (-x,y,-z)
+    - (-x,-y,-z)
+    - (x,y,-z+1/2)
+    - (-x,y,z+1/2)
+    - (x,-y,z)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,y+1/2,-z)
+    - (-x+1/2,-y+1/2,-z)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,z)
+...

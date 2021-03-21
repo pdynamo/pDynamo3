@@ -1,0 +1,54 @@
+---
+# . !FourierDihedralParameterContainer
+Analytic Form:
+    Equation: k * ( cos ( n * phi - delta ) + 1 )
+    Symbols:
+        phi   : Dihedral Angle
+        k     : Force Constant
+        n     : Periodicity
+        delta : Phase
+Label: Book Small Examples
+Units:
+    Force Constant : kcal/mol
+    Periodicity    : dimensionless
+    Phase          : degrees
+Parameter Fields:
+    - Atom Type 1
+    - Atom Type 2
+    - Atom Type 3
+    - Atom Type 4
+    - Force Constant
+    - Periodicity
+    - Phase
+Parameter Values:
+    - [ CT,  CT,  C ,  N ,   1.1730,  1,    0.0 ]
+    - [ CT,  CT,  C ,  N ,   0.1890,  2,  180.0 ]
+    - [ CT,  CT,  C ,  N ,  -1.2000,  3,    0.0 ]
+    - [ CT,  CT,  C ,  O ,   0.0000,  0,    0.0 ]
+    - [ HC,  CT,  C ,  N ,   0.0000,  0,    0.0 ]
+    - [ HC,  CT,  C ,  O ,   0.0000,  0,    0.0 ]
+    - [ N ,  CT,  C ,  N ,   1.8160,  1,    0.0 ]
+    - [ N ,  CT,  C ,  N ,   1.2220,  2,  180.0 ]
+    - [ N ,  CT,  C ,  N ,   1.5810,  3,    0.0 ]
+    - [ N ,  CT,  C ,  O ,   0.0000,  0,    0.0 ]
+    - [ CT,  CT,  CT,  CT,   1.7400,  1,    0.0 ]
+    - [ CT,  CT,  CT,  CT,  -0.1570,  2,  180.0 ]
+    - [ CT,  CT,  CT,  CT,   0.2790,  3,    0.0 ]
+    - [ HC,  CT,  CT,  C ,  -0.0760,  3,    0.0 ]
+    - [ HC,  CT,  CT,  CT,   0.3660,  3,    0.0 ]
+    - [ HC,  CT,  CT,  HC,   0.3180,  3,    0.0 ]
+    - [ N ,  CT,  CT,  HC,   0.4640,  3,    0.0 ]
+    - [ CT,  N ,  C ,  CT,   2.8000,  1,    0.0 ]
+    - [ CT,  N ,  C ,  CT,   6.0890,  2,  180.0 ]
+    - [ CT,  N ,  C ,  O ,   6.0890,  2,  180.0 ]
+    - [ H ,  N ,  C ,  CT,   4.9000,  2,  180.0 ]
+    - [ H ,  N ,  C ,  O ,   4.9000,  2,  180.0 ]
+    - [ C ,  N ,  CT,  C ,  -2.3650,  1,    0.0 ]
+    - [ C ,  N ,  CT,  C ,   0.9120,  2,  180.0 ]
+    - [ C ,  N ,  CT,  C ,  -0.8500,  3,    0.0 ]
+    - [ C ,  N ,  CT,  CT,   0.4620,  2,  180.0 ]
+    - [ C ,  N ,  CT,  HC,   0.0000,  0,    0.0 ]
+    - [ H ,  N ,  CT,  C ,   0.0000,  0,    0.0 ]
+    - [ H ,  N ,  CT,  CT,   0.0000,  0,    0.0 ]
+    - [ H ,  N ,  CT,  HC,   0.0000,  0,    0.0 ]
+...

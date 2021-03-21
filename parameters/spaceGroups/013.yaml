@@ -1,0 +1,16 @@
+# . Space group B112.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : B 2
+Hermann-Mauguin    : B112
+Schoenflies        : C2^3
+Space Group Number : 5
+Space Group Symbol : 5:c2
+Setting            : 13
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (x+1/2,y,z+1/2)
+    - (-x+1/2,-y,z+1/2)
+...

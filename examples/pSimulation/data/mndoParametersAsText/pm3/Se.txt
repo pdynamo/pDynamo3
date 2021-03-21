@@ -1,0 +1,49 @@
+# . Text parameter file for the element Se.
+
+Se   atomicNumber                          34
+Se   iii                                    4
+Se   iiid                                   4
+Se   ir016                                  0
+Se   ir066                                  0
+Se   ir244                                  0
+Se   ir266                                  0
+Se   ir466                                  0
+Se   qnd                                    0
+Se   qnp                                    4
+Se   qns                                    4
+Se   ad                     0.750950402730530  atomic
+Se   alp                    3.043957000000000  A^-1
+Se   am                     0.273142709826359  atomic
+Se   aq                     0.528363096765941  atomic
+Se   betad                  0.000000000000000  eV
+Se   betap                 -5.493039000000000  eV
+Se   betas                 -6.157822000000000  eV
+Se   dd                     0.871981285397105  atomic
+Se   eheat                 54.299999999999997  kcal/mole
+Se   eisol               -192.774811499999998  eV
+Se   f0sd                   0.000000000000000  eV
+Se   g2sd                   0.000000000000000  eV
+Se   gp2                    7.724289000000000  eV
+Se   gphot                  1.000000000000000  dimensionless
+Se   gpp                    9.568326000000001  eV
+Se   gsp                   10.060461000000000  eV
+Se   gss                    7.432591000000000  eV
+Se   hsp                    4.016558000000000  eV
+Se   pcore                  0.000000000000000  atomic
+Se   qq                     1.224401884612869  atomic
+Se   udd                    0.000000000000000  eV
+Se   upp                  -49.823076000000000  eV
+Se   uss                  -55.378135000000000  eV
+Se   zcore                  6.000000000000000  atomic
+Se   zdn                    0.000000000000000  atomic
+Se   zetad                  0.000000000000000  atomic
+Se   zetap                  1.732536000000000  atomic
+Se   zetas                  2.828051000000000  atomic
+Se   zpn                    0.000000000000000  atomic
+Se   zsn                    0.000000000000000  atomic
+Se   fn10                   0.047873000000000  A_eV
+Se   fn20                   6.007400000000000  A^-2
+Se   fn30                   2.081717000000000  A
+Se   fn11                   0.114720000000000  A_eV
+Se   fn21                   6.008672000000000  A^-2
+Se   fn31                   1.516423000000000  A

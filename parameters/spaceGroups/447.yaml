@@ -1,0 +1,18 @@
+# . Space group P31m.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : P 3 -2
+Hermann-Mauguin    : P31m
+Schoenflies        : C3v^2
+Space Group Number : 157
+Space Group Symbol : 157
+Setting            : 447
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (y,x,z)
+    - (x-y,-y,z)
+    - (-x,-x+y,z)
+...

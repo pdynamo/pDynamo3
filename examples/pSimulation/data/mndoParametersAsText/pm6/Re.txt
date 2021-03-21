@@ -1,0 +1,73 @@
+# . Text parameter file for the element Re.
+
+Re   atomicNumber                          75
+Re   iii                                    6
+Re   iiid                                   5
+Re   ir016                                 10
+Re   ir066                                 10
+Re   ir244                                  5
+Re   ir266                                 35
+Re   ir466                                 35
+Re   qnd                                    5
+Re   qnp                                    6
+Re   qns                                    6
+Re   ad                     0.314280226499499  atomic
+Re   alp                    0.000000000000000  A^-1
+Re   am                     0.234984585899444  atomic
+Re   aq                     0.311136529279101  atomic
+Re   betad                 -1.414411000000000  eV
+Re   betap                 -1.638530000000000  eV
+Re   betas                  3.830075000000000  eV
+Re   dd                     1.557958567506839  atomic
+Re   eheat                185.000000000000000  kcal/mole
+Re   eisol               -297.083353340000031  eV
+Re   f0sd                   5.442818000000000  eV
+Re   g2sd                   2.376279000000000  eV
+Re   gp2                    4.818576600000000  eV
+Re   gphot                  1.000000000000000  dimensionless
+Re   gpp                    5.555668820000000  eV
+Re   gsp                    5.555570530000000  eV
+Re   gss                    6.394255660000000  eV
+Re   hsp                    1.220912940000000  eV
+Re   pcore                  0.000000000000000  atomic
+Re   qq                     1.661728572490759  atomic
+Re   udd                  -44.178984999999997  eV
+Re   upp                  -35.089592000000003  eV
+Re   uss                  -41.291342000000000  eV
+Re   zcore                  7.000000000000000  atomic
+Re   zdn                    1.490623000000000  atomic
+Re   zetad                  2.522766000000000  atomic
+Re   zetap                  1.815351000000000  atomic
+Re   zetas                  2.411839000000000  atomic
+Re   zpn                    1.331218000000000  atomic
+Re   zsn                    1.680823000000000  atomic
+Re   diatomicA      H       1.634500000000000  A^-1
+Re   diatomicX      H       0.345894000000000  dimensionless
+Re   diatomicA      C       2.306285000000000  A^-1
+Re   diatomicX      C       0.690687000000000  dimensionless
+Re   diatomicA      N       1.918332000000000  A^-1
+Re   diatomicX      N       0.445213000000000  dimensionless
+Re   diatomicA      O       1.967747000000000  A^-1
+Re   diatomicX      O       0.635960000000000  dimensionless
+Re   diatomicA      F       2.154219000000000  A^-1
+Re   diatomicX      F       0.535966000000000  dimensionless
+Re   diatomicA      Si      2.775930000000000  A^-1
+Re   diatomicX      Si      0.849450000000000  dimensionless
+Re   diatomicA      P       1.804168000000000  A^-1
+Re   diatomicX      P       0.966942000000000  dimensionless
+Re   diatomicA      S       1.083919000000000  A^-1
+Re   diatomicX      S       0.068874000000000  dimensionless
+Re   diatomicA      Cl      1.433875000000000  A^-1
+Re   diatomicX      Cl      0.146319000000000  dimensionless
+Re   diatomicA      Ge      2.852340000000000  A^-1
+Re   diatomicX      Ge      2.151580000000000  dimensionless
+Re   diatomicA      Se      2.523170000000000  A^-1
+Re   diatomicX      Se      2.202140000000000  dimensionless
+Re   diatomicA      Br      1.603060000000000  A^-1
+Re   diatomicX      Br      0.287528000000000  dimensionless
+Re   diatomicA      Sb      2.204360000000000  A^-1
+Re   diatomicX      Sb      2.275780000000000  dimensionless
+Re   diatomicA      I       2.610119000000000  A^-1
+Re   diatomicX      I       3.559286000000000  dimensionless
+Re   diatomicA      Re      6.000258000000000  A^-1
+Re   diatomicX      Re      4.488852000000000  dimensionless

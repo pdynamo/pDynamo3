@@ -1,0 +1,16 @@
+# . Space group Ic11.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : I -2xc
+Hermann-Mauguin    : Ic11
+Schoenflies        : Cs^4
+Space Group Number : 9
+Space Group Symbol : 9:a3
+Setting            : 53
+Transformations :
+    - (x,y,z)
+    - (-x,y,z+1/2)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z)
+...

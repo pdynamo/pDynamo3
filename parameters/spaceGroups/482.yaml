@@ -1,0 +1,24 @@
+# . Space group P-6c2.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P -6c 2
+Hermann-Mauguin    : P-6c2
+Schoenflies        : D3h^2
+Space Group Number : 188
+Space Group Symbol : 188
+Setting            : 482
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (x,y,-z+1/2)
+    - (-y,x-y,-z+1/2)
+    - (-x+y,-x,-z+1/2)
+    - (-y,-x,z+1/2)
+    - (-x+y,y,z+1/2)
+    - (x,x-y,z+1/2)
+    - (-y,-x,-z)
+    - (-x+y,y,-z)
+    - (x,x-y,-z)
+...

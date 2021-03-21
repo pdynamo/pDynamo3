@@ -1,0 +1,44 @@
+# . Space group I4/mcm.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -I 4 2c
+Hermann-Mauguin    : I4/mcm
+Schoenflies        : D4h^18
+Space Group Number : 140
+Space Group Symbol : 140
+Setting            : 425
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z)
+    - (y,-x,z)
+    - (-x,y,-z+1/2)
+    - (x,-y,-z+1/2)
+    - (y,x,-z+1/2)
+    - (-y,-x,-z+1/2)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x,-y,z+1/2)
+    - (-x,y,z+1/2)
+    - (-y,-x,z+1/2)
+    - (y,x,z+1/2)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-y+1/2,x+1/2,z+1/2)
+    - (y+1/2,-x+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z)
+    - (x+1/2,-y+1/2,-z)
+    - (y+1/2,x+1/2,-z)
+    - (-y+1/2,-x+1/2,-z)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (y+1/2,-x+1/2,-z+1/2)
+    - (-y+1/2,x+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z)
+    - (-x+1/2,y+1/2,z)
+    - (-y+1/2,-x+1/2,z)
+    - (y+1/2,x+1/2,z)
+...

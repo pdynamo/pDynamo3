@@ -1,0 +1,16 @@
+# . Space group Pn2n.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2n -2n
+Hermann-Mauguin    : Pn2n
+Schoenflies        : C2v^10
+Space Group Number : 34
+Space Group Symbol : 34:bca
+Setting            : 172
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+...

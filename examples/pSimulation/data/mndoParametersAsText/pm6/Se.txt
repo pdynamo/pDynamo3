@@ -1,0 +1,93 @@
+# . Text parameter file for the element Se.
+
+Se   atomicNumber                          34
+Se   iii                                    4
+Se   iiid                                   4
+Se   ir016                                  0
+Se   ir066                                  0
+Se   ir244                                  0
+Se   ir266                                  0
+Se   ir466                                  0
+Se   qnd                                    0
+Se   qnp                                    4
+Se   qns                                    4
+Se   ad                     0.590529860157951  atomic
+Se   alp                    0.000000000000000  A^-1
+Se   am                     0.202942861038076  atomic
+Se   aq                     0.510153591944077  atomic
+Se   betad                  0.000000000000000  eV
+Se   betap                 -9.557700000000001  eV
+Se   betas                  2.636001000000000  eV
+Se   dd                     1.086476369775027  atomic
+Se   eheat                 54.299999999999997  kcal/mole
+Se   eisol               -139.274366499999985  eV
+Se   f0sd                   0.000000000000000  eV
+Se   g2sd                   0.000000000000000  eV
+Se   gp2                    6.735106000000000  eV
+Se   gphot                  1.000000000000000  dimensionless
+Se   gpp                    8.042391000000000  eV
+Se   gsp                    2.907562000000000  eV
+Se   gss                    5.522356000000000  eV
+Se   hsp                    3.095789000000000  eV
+Se   pcore                  0.000000000000000  atomic
+Se   qq                     1.056657552969174  atomic
+Se   udd                    0.000000000000000  eV
+Se   upp                  -32.522219999999997  eV
+Se   uss                  -32.671087999999997  eV
+Se   zcore                  6.000000000000000  atomic
+Se   zdn                    0.000000000000000  atomic
+Se   zetad                  0.000000000000000  atomic
+Se   zetap                  2.007576000000000  atomic
+Se   zetas                  2.512366000000000  atomic
+Se   zpn                    0.000000000000000  atomic
+Se   zsn                    0.000000000000000  atomic
+Se   diatomicA      H       2.035068000000000  A^-1
+Se   diatomicX      H       0.847998000000000  dimensionless
+Se   diatomicA      C       2.387118000000000  A^-1
+Se   diatomicX      C       1.114787000000000  dimensionless
+Se   diatomicA      N       1.937764000000000  A^-1
+Se   diatomicX      N       0.482840000000000  dimensionless
+Se   diatomicA      O       2.484263000000000  A^-1
+Se   diatomicX      O       0.955161000000000  dimensionless
+Se   diatomicA      F       2.302180000000000  A^-1
+Se   diatomicX      F       0.444806000000000  dimensionless
+Se   diatomicA      Si      1.529817000000000  A^-1
+Se   diatomicX      Si      0.518227000000000  dimensionless
+Se   diatomicA      P       1.048183000000000  A^-1
+Se   diatomicX      P       0.292052000000000  dimensionless
+Se   diatomicA      S       1.479606000000000  A^-1
+Se   diatomicX      S       0.391721000000000  dimensionless
+Se   diatomicA      Cl      2.128861000000000  A^-1
+Se   diatomicX      Cl      0.981067000000000  dimensionless
+Se   diatomicA      Mn      2.648038000000000  A^-1
+Se   diatomicX      Mn      2.180720000000000  dimensionless
+Se   diatomicA      Co      2.523450000000000  A^-1
+Se   diatomicX      Co      2.202410000000000  dimensionless
+Se   diatomicA      Zn      1.186242000000000  A^-1
+Se   diatomicX      Zn      0.511594000000000  dimensionless
+Se   diatomicA      Ge      2.669057000000000  A^-1
+Se   diatomicX      Ge      5.872051000000000  dimensionless
+Se   diatomicA      As      1.665280000000000  A^-1
+Se   diatomicX      As      0.711261000000000  dimensionless
+Se   diatomicA      Se      1.795894000000000  A^-1
+Se   diatomicX      Se      0.821823000000000  dimensionless
+Se   diatomicA      Br      1.483713000000000  A^-1
+Se   diatomicX      Br      0.319342000000000  dimensionless
+Se   diatomicA      Tc      2.523660000000000  A^-1
+Se   diatomicX      Tc      2.202620000000000  dimensionless
+Se   diatomicA      Ru      2.523160000000000  A^-1
+Se   diatomicX      Ru      2.202120000000000  dimensionless
+Se   diatomicA      Rh      2.523740000000000  A^-1
+Se   diatomicX      Rh      2.202700000000000  dimensionless
+Se   diatomicA      In      1.906572000000000  A^-1
+Se   diatomicX      In      2.319323000000000  dimensionless
+Se   diatomicA      Sn      2.127377000000000  A^-1
+Se   diatomicX      Sn      3.061885000000000  dimensionless
+Se   diatomicA      Te      1.566008000000000  A^-1
+Se   diatomicX      Te      1.187826000000000  dimensionless
+Se   diatomicA      Re      2.523170000000000  A^-1
+Se   diatomicX      Re      2.202140000000000  dimensionless
+Se   diatomicA      Pb      0.460797000000000  A^-1
+Se   diatomicX      Pb      0.111195000000000  dimensionless
+Se   diatomicA      Bi      1.344746000000000  A^-1
+Se   diatomicX      Bi      0.651208000000000  dimensionless

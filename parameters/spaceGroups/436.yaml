@@ -1,0 +1,30 @@
+# . Space group R-3:H.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : -R 3
+Hermann-Mauguin    : R-3:H
+Schoenflies        : C3i^2
+Space Group Number : 148
+Space Group Symbol : 148:H
+Setting            : 436
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-x,-y,-z)
+    - (y,-x+y,-z)
+    - (x-y,x,-z)
+    - (x+2/3,y+1/3,z+1/3)
+    - (-y+2/3,x-y+1/3,z+1/3)
+    - (-x+y+2/3,-x+1/3,z+1/3)
+    - (-x+2/3,-y+1/3,-z+1/3)
+    - (y+2/3,-x+y+1/3,-z+1/3)
+    - (x-y+2/3,x+1/3,-z+1/3)
+    - (x+1/3,y+2/3,z+2/3)
+    - (-y+1/3,x-y+2/3,z+2/3)
+    - (-x+y+1/3,-x+2/3,z+2/3)
+    - (-x+1/3,-y+2/3,-z+2/3)
+    - (y+1/3,-x+y+2/3,-z+2/3)
+    - (x-y+1/3,x+2/3,-z+2/3)
+...

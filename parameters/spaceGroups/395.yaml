@@ -1,0 +1,20 @@
+# . Space group P-4n2.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : P -4 -2n
+Hermann-Mauguin    : P-4n2
+Schoenflies        : D2d^8
+Space Group Number : 118
+Space Group Symbol : 118
+Setting            : 395
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+    - (y+1/2,x+1/2,-z+1/2)
+    - (-y+1/2,-x+1/2,-z+1/2)
+...

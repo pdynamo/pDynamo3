@@ -1,0 +1,95 @@
+# . Text parameter file for the element Mg.
+
+Mg   atomicNumber                          12
+Mg   iii                                    3
+Mg   iiid                                   3
+Mg   ir016                                  0
+Mg   ir066                                  0
+Mg   ir244                                  0
+Mg   ir266                                  0
+Mg   ir466                                  0
+Mg   qnd                                    0
+Mg   qnp                                    3
+Mg   qns                                    3
+Mg   ad                     0.278758543579696  atomic
+Mg   alp                    0.000000000000000  A^-1
+Mg   am                     0.261483508405530  atomic
+Mg   aq                     0.263684741421231  atomic
+Mg   betad                  0.000000000000000  eV
+Mg   betap                  3.416908000000000  eV
+Mg   betas                 -9.604932000000000  eV
+Mg   dd                     1.492608893320877  atomic
+Mg   eheat                 35.000000000000000  kcal/mole
+Mg   eisol                -22.033124000000001  eV
+Mg   f0sd                   0.000000000000000  eV
+Mg   g2sd                   0.000000000000000  eV
+Mg   gp2                    8.428485000000000  eV
+Mg   gphot                  1.000000000000000  dimensionless
+Mg   gpp                    4.737311000000000  eV
+Mg   gsp                    3.253024000000000  eV
+Mg   gss                    7.115328000000000  eV
+Mg   hsp                    0.877379000000000  eV
+Mg   pcore                  0.000000000000000  atomic
+Mg   qq                     1.204783402273999  atomic
+Mg   udd                    0.000000000000000  eV
+Mg   upp                   -7.583850000000000  eV
+Mg   uss                  -14.574225999999999  eV
+Mg   zcore                  2.000000000000000  atomic
+Mg   zdn                    0.000000000000000  atomic
+Mg   zetad                  0.000000000000000  atomic
+Mg   zetap                  1.388897000000000  atomic
+Mg   zetas                  1.310830000000000  atomic
+Mg   zpn                    0.000000000000000  atomic
+Mg   zsn                    0.000000000000000  atomic
+Mg   diatomicA      H       2.651594000000000  A^-1
+Mg   diatomicX      H       7.758237000000000  dimensionless
+Mg   diatomicA      He      2.210603000000000  A^-1
+Mg   diatomicX      He      3.725850000000000  dimensionless
+Mg   diatomicA      Li      1.184380000000000  A^-1
+Mg   diatomicX      Li      2.490250000000000  dimensionless
+Mg   diatomicA      Be      1.557591000000000  A^-1
+Mg   diatomicX      Be      2.066392000000000  dimensionless
+Mg   diatomicA      B       2.527441000000000  A^-1
+Mg   diatomicX      B       6.146701000000000  dimensionless
+Mg   diatomicA      C       3.040946000000000  A^-1
+Mg   diatomicX      C      10.517690000000000  dimensionless
+Mg   diatomicA      N       2.079125000000000  A^-1
+Mg   diatomicX      N       1.208075000000000  dimensionless
+Mg   diatomicA      O       2.251520000000000  A^-1
+Mg   diatomicX      O       1.535734000000000  dimensionless
+Mg   diatomicA      F       3.362208000000000  A^-1
+Mg   diatomicX      F       5.859023000000000  dimensionless
+Mg   diatomicA      Ne      2.031676000000000  A^-1
+Mg   diatomicX      Ne      1.214859000000000  dimensionless
+Mg   diatomicA      Na      1.506773000000000  A^-1
+Mg   diatomicX      Na      8.675618999999999  dimensionless
+Mg   diatomicA      Mg      1.093573000000000  A^-1
+Mg   diatomicX      Mg      0.465645000000000  dimensionless
+Mg   diatomicA      Al      1.972530000000000  A^-1
+Mg   diatomicX      Al     13.472443000000000  dimensionless
+Mg   diatomicA      Si      3.139749000000000  A^-1
+Mg   diatomicX      Si     29.994520000000001  dimensionless
+Mg   diatomicA      P       1.383773000000000  A^-1
+Mg   diatomicX      P       1.177881000000000  dimensionless
+Mg   diatomicA      S       1.500163000000000  A^-1
+Mg   diatomicX      S       0.500748000000000  dimensionless
+Mg   diatomicA      Cl      2.391806000000000  A^-1
+Mg   diatomicX      Cl      2.430856000000000  dimensionless
+Mg   diatomicA      Ar      2.092664000000000  A^-1
+Mg   diatomicX      Ar      1.970638000000000  dimensionless
+Mg   diatomicA      K       0.884810000000000  A^-1
+Mg   diatomicX      K       3.290502000000000  dimensionless
+Mg   diatomicA      Ca      2.299800000000000  A^-1
+Mg   diatomicX      Ca      8.599800000000000  dimensionless
+Mg   diatomicA      Ti      1.911340000000000  A^-1
+Mg   diatomicX      Ti      4.330240000000000  dimensionless
+Mg   diatomicA      Br      2.195697000000000  A^-1
+Mg   diatomicX      Br      2.916280000000000  dimensionless
+Mg   diatomicA      Kr      1.391487000000000  A^-1
+Mg   diatomicX      Kr      0.888436000000000  dimensionless
+Mg   diatomicA      I       2.045137000000000  A^-1
+Mg   diatomicX      I       3.276914000000000  dimensionless
+Mg   diatomicA      Xe      2.698414000000000  A^-1
+Mg   diatomicX      Xe      9.723572000000001  dimensionless
+Mg   diatomicA      Hf      1.911350000000000  A^-1
+Mg   diatomicX      Hf      4.330250000000000  dimensionless

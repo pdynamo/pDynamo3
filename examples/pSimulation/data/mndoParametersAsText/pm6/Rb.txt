@@ -1,0 +1,77 @@
+# . Text parameter file for the element Rb.
+
+Rb   atomicNumber                          37
+Rb   iii                                    5
+Rb   iiid                                   4
+Rb   ir016                                  0
+Rb   ir066                                  0
+Rb   ir244                                  0
+Rb   ir266                                  0
+Rb   ir466                                  0
+Rb   qnd                                    0
+Rb   qnp                                    5
+Rb   qns                                    5
+Rb   ad                     3.086021447932838  atomic
+Rb   alp                    0.000000000000000  A^-1
+Rb   am                     0.245515779252884  atomic
+Rb   aq                     0.450676298712824  atomic
+Rb   betad                  0.000000000000000  eV
+Rb   betap                  1.343004000000000  eV
+Rb   betas                  9.998744000000000  eV
+Rb   dd                     0.071827130801534  atomic
+Rb   eheat                 19.600000000000001  kcal/mole
+Rb   eisol                 -3.636505000000000  eV
+Rb   f0sd                   0.000000000000000  eV
+Rb   g2sd                   0.000000000000000  eV
+Rb   gp2                    2.747860000000000  eV
+Rb   gphot                  1.000000000000000  dimensionless
+Rb   gpp                    5.068874000000000  eV
+Rb   gsp                   20.001097999999999  eV
+Rb   gss                    6.680824000000000  eV
+Rb   hsp                    3.602834000000000  eV
+Rb   pcore                  0.000000000000000  atomic
+Rb   qq                     1.924134391675237  atomic
+Rb   udd                    0.000000000000000  eV
+Rb   upp                   -2.500671000000000  eV
+Rb   uss                   -3.636505000000000  eV
+Rb   zcore                  1.000000000000000  atomic
+Rb   zdn                    0.000000000000000  atomic
+Rb   zetad                  0.000000000000000  atomic
+Rb   zetap                  1.335170000000000  atomic
+Rb   zetas                  5.510145000000000  atomic
+Rb   zpn                    0.000000000000000  atomic
+Rb   zsn                    0.000000000000000  atomic
+Rb   diatomicA      H       2.443556000000000  A^-1
+Rb   diatomicX      H      29.861632000000000  dimensionless
+Rb   diatomicA      He      1.270741000000000  A^-1
+Rb   diatomicX      He      1.862585000000000  dimensionless
+Rb   diatomicA      B       5.532239000000000  A^-1
+Rb   diatomicX      B       9.040493000000000  dimensionless
+Rb   diatomicA      C       2.765830000000000  A^-1
+Rb   diatomicX      C      29.974031000000000  dimensionless
+Rb   diatomicA      N       0.761047000000000  A^-1
+Rb   diatomicX      N       0.024636000000000  dimensionless
+Rb   diatomicA      O       1.334908000000000  A^-1
+Rb   diatomicX      O       1.125350000000000  dimensionless
+Rb   diatomicA      F       3.638122000000000  A^-1
+Rb   diatomicX      F      28.815277999999999  dimensionless
+Rb   diatomicA      Ne      2.267591000000000  A^-1
+Rb   diatomicX      Ne      7.736563000000000  dimensionless
+Rb   diatomicA      Al      0.798774000000000  A^-1
+Rb   diatomicX      Al      2.992457000000000  dimensionless
+Rb   diatomicA      S       1.303184000000000  A^-1
+Rb   diatomicX      S       0.964411000000000  dimensionless
+Rb   diatomicA      Cl      2.274411000000000  A^-1
+Rb   diatomicX      Cl     10.384486000000001  dimensionless
+Rb   diatomicA      Ar      2.510977000000000  A^-1
+Rb   diatomicX      Ar     18.433329000000001  dimensionless
+Rb   diatomicA      Br      1.797766000000000  A^-1
+Rb   diatomicX      Br      5.176214000000000  dimensionless
+Rb   diatomicA      Kr      2.268753000000000  A^-1
+Rb   diatomicX      Kr     15.307503000000001  dimensionless
+Rb   diatomicA      Rb      1.180818000000000  A^-1
+Rb   diatomicX      Rb     20.147610000000000  dimensionless
+Rb   diatomicA      I       1.432675000000000  A^-1
+Rb   diatomicX      I       4.092446000000000  dimensionless
+Rb   diatomicA      Xe      1.087823000000000  A^-1
+Rb   diatomicX      Xe      0.974965000000000  dimensionless

@@ -1,0 +1,20 @@
+# . Space group A2122.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : A 2a 2a
+Hermann-Mauguin    : A2122
+Schoenflies        : D2^5
+Space Group Number : 20
+Space Group Symbol : 20:cab
+Setting            : 117
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z)
+    - (-x+1/2,-y,z)
+    - (-x,y,-z)
+    - (x,y+1/2,z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+...

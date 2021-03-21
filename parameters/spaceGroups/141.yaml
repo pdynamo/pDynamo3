@@ -1,0 +1,16 @@
+# . Space group Pc2m.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2c -2c
+Hermann-Mauguin    : Pc2m
+Schoenflies        : C2v^4
+Space Group Number : 28
+Space Group Symbol : 28:bca
+Setting            : 141
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (-x,y,z+1/2)
+    - (x,y,-z+1/2)
+...

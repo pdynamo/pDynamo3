@@ -1,0 +1,75 @@
+# . Text parameter file for the element Co.
+
+Co   atomicNumber                          27
+Co   iii                                    4
+Co   iiid                                   3
+Co   ir016                                 14
+Co   ir066                                 21
+Co   ir244                                  7
+Co   ir266                                 43
+Co   ir466                                 36
+Co   qnd                                    3
+Co   qnp                                    4
+Co   qns                                    4
+Co   ad                     0.545495145645871  atomic
+Co   alp                    0.000000000000000  A^-1
+Co   am                     0.098320219912083  atomic
+Co   aq                     0.518046369711703  atomic
+Co   betad                 -2.680780000000000  eV
+Co   betap                  2.769188000000000  eV
+Co   betas                 -7.338912000000000  eV
+Co   dd                     0.400952690128887  atomic
+Co   eheat                102.400000000000006  kcal/mole
+Co   eisol               -228.228698799999989  eV
+Co   f0sd                   1.234899000000000  eV
+Co   g2sd                   1.549479000000000  eV
+Co   gp2                    3.454022800000000  eV
+Co   gphot                  1.000000000000000  dimensionless
+Co   gpp                    3.940260630000000  eV
+Co   gsp                    3.011780080000000  eV
+Co   gss                    2.675429200000000  eV
+Co   hsp                    0.622105680000000  eV
+Co   pcore                  0.000000000000000  atomic
+Co   qq                     0.663890393432465  atomic
+Co   udd                  -27.520598000000000  eV
+Co   upp                  -29.513259999999999  eV
+Co   uss                  -19.129971000000001  eV
+Co   zcore                  9.000000000000000  atomic
+Co   zdn                    0.348463000000000  atomic
+Co   zetad                  1.861136000000000  atomic
+Co   zetap                  3.195287000000000  atomic
+Co   zetas                  1.171688000000000  atomic
+Co   zpn                    0.661454000000000  atomic
+Co   zsn                    0.489387000000000  atomic
+Co   diatomicA      H       3.316203000000000  A^-1
+Co   diatomicX      H       3.552503000000000  dimensionless
+Co   diatomicA      C       3.393944000000000  A^-1
+Co   diatomicX      C       2.787255000000000  dimensionless
+Co   diatomicA      N       3.249807000000000  A^-1
+Co   diatomicX      N       2.639287000000000  dimensionless
+Co   diatomicA      O       3.373533000000000  A^-1
+Co   diatomicX      O       4.374219000000000  dimensionless
+Co   diatomicA      F       3.785977000000000  A^-1
+Co   diatomicX      F       5.101153000000000  dimensionless
+Co   diatomicA      Si      2.469805000000000  A^-1
+Co   diatomicX      Si      1.090240000000000  dimensionless
+Co   diatomicA      P       1.655915000000000  A^-1
+Co   diatomicX      P       0.396676000000000  dimensionless
+Co   diatomicA      S       2.223894000000000  A^-1
+Co   diatomicX      S       0.521139000000000  dimensionless
+Co   diatomicA      Cl      2.703903000000000  A^-1
+Co   diatomicX      Cl      0.936122000000000  dimensionless
+Co   diatomicA      Co      3.612354000000000  A^-1
+Co   diatomicX      Co      3.872024000000000  dimensionless
+Co   diatomicA      Ge      2.852610000000000  A^-1
+Co   diatomicX      Ge      2.151850000000000  dimensionless
+Co   diatomicA      As      3.368140000000000  A^-1
+Co   diatomicX      As      1.675240000000000  dimensionless
+Co   diatomicA      Se      2.523450000000000  A^-1
+Co   diatomicX      Se      2.202410000000000  dimensionless
+Co   diatomicA      Br      1.630415000000000  A^-1
+Co   diatomicX      Br      0.177243000000000  dimensionless
+Co   diatomicA      Sb      2.204630000000000  A^-1
+Co   diatomicX      Sb      2.276050000000000  dimensionless
+Co   diatomicA      I       1.819353000000000  A^-1
+Co   diatomicX      I       0.292999000000000  dimensionless

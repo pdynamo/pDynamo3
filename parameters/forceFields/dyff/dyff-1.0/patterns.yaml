@@ -1,0 +1,1114 @@
+# . DYFF patterns.
+# . Order is important with specific before general patterns.
+---
+# . !MMPatternContainer
+Atom Fields:
+    - Key
+    - Atomic Number
+    - Charge
+    - Connections
+    - Formal Charge
+    - Geometry
+    - Hydrogens
+    - Is Aromatic
+    - Is Supporting
+    - Oxidation State
+    - Atom Type Label
+Atom Result Fields:
+    - Atom Type Label
+    - Charge
+Bond Fields:
+    - Atom Key 1
+    - Atom Key 2
+    - Type
+Label: DYFF-1.0
+Patterns:
+
+    # . Group patterns.
+    # . Amide.
+    - Label: Amide
+      Atom Patterns:
+          - [ 0, 7, 0.0, 3, 0,   ., ., False, False, ., "N:Tri" ]
+          - [ 1, 6, 0.0, 3, 0, Tri, ., False, False, ., "C:Tri" ]
+          - [ 2, 8, 0.0, 1, 0,   ., ., False, False, ., "O:Tri" ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+          - [ 1, 2, Double ]
+
+    # . N-Car.
+    - Label: N-Car
+      Atom Patterns:
+          - [ 0, 7, 0.0, 3, 0, ., ., False, False, ., "N:Tri" ]
+          - [ 1, 6, 0.0, 3, 0, ., ., True , True , ., .       ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    # . N-Csp2.
+    - Label: N-Csp2
+      Atom Patterns:
+          - [ 0, 7, 0.0, 3, 0,   ., ., False, False, ., "N:Tri" ]
+          - [ 1, 6, 0.0, ., ., Tri, ., False, True , ., .       ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    # . O-Car.
+    - Label: O-Car
+      Atom Patterns:
+          - [ 0, 8, 0.0, 2, 0, ., ., False, False, ., "O:Tri" ]
+          - [ 1, 6, 0.0, 3, 0, ., ., True , True , ., .       ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    # . O-Csp2.
+    - Label: O-Csp2
+      Atom Patterns:
+          - [ 0, 8, 0.0, 2, 0,   ., ., False, False, ., "O:Tri" ]
+          - [ 1, 6, 0.0, ., ., Tri, ., False, True , ., .       ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    # . O--Csp2.
+    - Label: O-Csp2
+      Atom Patterns:
+          - [ 0, 8, 0.0, 1, -1,   ., ., False, False, ., "O:Tri" ]
+          - [ 1, 6, 0.0, .,  ., Tri, ., False, True , ., .       ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    # . Si-O.
+    - Label: Si-O
+      Atom Patterns:
+          - [ 0,  8, 0.0, 2, 0, ., ., False, False, ., "O:Tet::z" ]
+          - [ 0, 14, 0.0, ., 0, ., ., False, True , ., .          ]
+      Bond Patterns:
+          - [ 0, 1, Single ]
+
+    # . Si=O.
+    - Label: Si=O
+      Atom Patterns:
+          - [ 0,  8, 0.0, 1, 0, ., ., False, False, ., "O:Tri::z" ]
+          - [ 0, 14, 0.0, ., 0, ., ., False, True , ., .          ]
+      Bond Patterns:
+          - [ 0, 1, Double ]
+
+    # . Element patterns.
+    # . Unknown element.
+    - Label: "Qq"
+      Atom Patterns:
+          - [ 0, 0, 0.0, ., ., ., ., ., ., "Qq" ]
+
+    # . Hydrogen - bridging and then all others.
+    - Label: "H:::b"
+      Atom Patterns:
+          - [ 0, 1, 0.0, 2, ., ., ., False, False, ., "H:::b" ]
+
+    - Label: "H"
+      Atom Patterns:
+          - [ 0, 1, 0.0, ., ., ., ., False, False, ., "H" ]
+
+    # . Helium.
+    - Label: "He:SPl:+4"
+      Atom Patterns:
+          - [ 0, 2, 0.0, ., ., ., ., False, False, ., "He:SPl:+4" ]
+
+    # . Lithium.
+    - Label: "Li"
+      Atom Patterns:
+          - [ 0, 3, 0.0, ., ., ., ., False, False, ., "Li" ]
+
+    - Label: "Li:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 3, 0.0, ., ., Tet, ., False, False, ., "Li:Tet:+2:f" ] # . To resolve.
+
+    # . Beryllium.
+    - Label: "Be:Tet:+2"
+      Atom Patterns:
+          - [ 0, 4, 0.0, ., ., ., ., False, False, ., "Be:Tet:+2" ]
+
+    # . Boron.
+    - Label: "B:Tet"
+      Atom Patterns:
+          - [ 0, 5, 0.0, ., ., Tet, ., False, False, ., "B:Tet" ]
+
+    - Label: "B:Tri"
+      Atom Patterns:
+          - [ 0, 5, 0.0, ., ., Tri, ., False, False, ., "B:Tri" ]
+
+    # . Carbon.
+    - Label: "C:Lin"
+      Atom Patterns:
+          - [ 0, 6, 0.0, ., ., Lin, ., False, False, ., "C:Lin" ]
+
+    - Label: "C:Res"
+      Atom Patterns:
+          - [ 0, 6, 0.0, ., ., Res, ., True, False, ., "C:Res" ]
+
+    - Label: "C:Tet"
+      Atom Patterns:
+          - [ 0, 6, 0.0, ., ., Tet, ., False, False, ., "C:Tet" ]
+
+    - Label: "C:Tri"
+      Atom Patterns:
+          - [ 0, 6, 0.0, ., ., Tri, ., False, False, ., "C:Tri" ]
+
+    # . Nitrogen.
+    - Label: "N:Lin"
+      Atom Patterns:
+          - [ 0, 7, 0.0, ., ., Lin, ., False, False, ., "N:Lin" ]
+
+    - Label: "N:Res"
+      Atom Patterns:
+          - [ 0, 7, 0.0, ., ., Res, ., True, False, ., "N:Res" ]
+
+    - Label: "N:Tet"
+      Atom Patterns:
+          - [ 0, 7, 0.0, ., ., Tet, ., False, False, ., "N:Tet" ]
+
+    - Label: "N:Tri"
+      Atom Patterns:
+          - [ 0, 7, 0.0, ., ., Tri, ., False, False, ., "N:Tri" ]
+
+    - Label: "N:Tet4"
+      Atom Patterns:
+          - [ 0, 7, 0.0, 4, ., ., ., False, False, ., "N:Tet" ] # . A catch-all for 4-coordinate nitrogen.
+
+    - Label: "N:Tri3"
+      Atom Patterns:
+          - [ 0, 7, 0.0, 3, ., ., ., False, False, ., "N:Tri" ] # . A catch-all for 3-coordinate nitrogen.
+
+    # . Oxygen.
+    - Label: "O:Lin"
+      Atom Patterns:
+          - [ 0, 8, 0.0, ., ., Lin, ., False, False, ., "O:Lin" ]
+
+    - Label: "O:Res"
+      Atom Patterns:
+          - [ 0, 8, 0.0, ., ., Res, ., True, False, ., "O:Res" ]
+
+    - Label: "O:Tet"
+      Atom Patterns:
+          - [ 0, 8, 0.0, ., ., Tet, ., False, False, ., "O:Tet" ]
+
+    - Label: "O:Tet::f"
+      Atom Patterns:
+          - [ 0, 8, 0.0, ., ., Tet, ., False, False, ., "O:Tet::f" ] # . To resolve.
+
+    - Label: "O:Tet::z"
+      Atom Patterns:
+          - [ 0, 8, 0.0, ., ., Tet, ., False, False, ., "O:Tet::z" ] # . To resolve.
+
+    - Label: "O:Tri"
+      Atom Patterns:
+          - [ 0, 8, 0.0, ., ., Tri, ., False, False, ., "O:Tri" ]
+
+    - Label: "O:Tri::z"
+      Atom Patterns:
+          - [ 0, 8, 0.0, ., ., Tri, ., False, False, ., "O:Tri::z" ] # . To resolve.
+
+    # . Fluorine.
+    - Label: "F"
+      Atom Patterns:
+          - [ 0, 9, 0.0, ., ., ., ., False, False, ., "F" ]
+
+    # . Neon.
+    - Label: "Ne:SPl:+4"
+      Atom Patterns:
+          - [ 0, 10, 0.0, ., ., ., ., False, False, ., "Ne:SPl:+4" ]
+
+    # . Sodium.
+    - Label: "Na"
+      Atom Patterns:
+          - [ 0, 11, 0.0, ., ., ., ., False, False, ., "Na" ]
+
+    - Label: "Na:SPl:+2:f"
+      Atom Patterns:
+          - [ 0, 11, 0.0, ., ., SPl, ., False, False, ., "Na:SPl:+2:f" ] # . To resolve.
+
+    - Label: "Na:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 11, 0.0, ., ., Tet, ., False, False, ., "Na:Tet:+2:f" ] # . To resolve.
+
+    # . Magnesium.
+    - Label: "Mg:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 12, 0.0, ., ., Oct, ., False, False, ., "Mg:Oct:+3:f" ] # . To resolve.
+
+    - Label: "Mg:Tet:+2"
+      Atom Patterns:
+          - [ 0, 12, 0.0, ., ., Tet, ., False, False, ., "Mg:Tet:+2" ]
+
+    # . Aluminium.
+    - Label: "Al:Oct:+3"
+      Atom Patterns:
+          - [ 0, 13, 0.0, ., ., Oct, ., False, False, ., "Al:Oct:+3" ]
+
+    - Label: "Al:Tet"
+      Atom Patterns:
+          - [ 0, 13, 0.0, ., ., Tet, ., False, False, ., "Al:Tet" ]
+
+    - Label: "Al:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 13, 0.0, ., ., Tet, ., False, False, ., "Al:Tet:+2:f" ] # . To resolve.
+
+    # . Silicon.
+    - Label: "Si:Tet"
+      Atom Patterns:
+          - [ 0, 14, 0.0, ., ., ., ., False, False, ., "Si:Tet" ]
+
+    # . Phosphorus.
+    - Label: "P:Tet:+3"
+      Atom Patterns:
+          - [ 0, 15, 0.0, ., ., ., ., False, False, 3, "P:Tet:+3" ]
+
+    - Label: "P:Tet:+5"
+      Atom Patterns:
+          - [ 0, 15, 0.0, ., ., ., ., False, False, 5, "P:Tet:+5" ]
+
+    - Label: "P:Hypervalent"
+      Atom Patterns:
+          - [ 0, 15, 0.0, ., ., ., ., False, False, ., "P:Tet:+3" ] # . A catch-all for hypervalent phosphorus.
+
+    - Label: "P:Tet::q"
+      Atom Patterns:
+          - [ 0, 15, 0.0, ., ., Tet, ., False, False, ., "P:Tet::q" ] # . To resolve.
+
+    # . Sulfur.
+    - Label: "S:Res"
+      Atom Patterns:
+          - [ 0, 16, 0.0, ., ., Res, ., True, False, ., "S:Res" ]
+
+    - Label: "S:Tet:+2"
+      Atom Patterns:
+          - [ 0, 16, 0.0, ., ., Tet, ., False, False, 2, "S:Tet:+2" ]
+
+    - Label: "S:Tet:+4"
+      Atom Patterns:
+          - [ 0, 16, 0.0, ., ., Tet, ., False, False, 4, "S:Tet:+4" ]
+
+    - Label: "S:Tri"
+      Atom Patterns:
+          - [ 0, 16, 0.0, ., ., Tri, ., False, False, ., "S:Tri" ]
+
+    - Label: "S:Tet:+6"
+      Atom Patterns:
+          - [ 0, 16, 0.0, ., ., ., ., False, False, ., "S:Tet:+2" ] # . A catch-all for hypervalent sulfur.
+
+    - Label: "S:Tet::f"
+      Atom Patterns:
+          - [ 0, 16, 0.0, ., ., Tet, ., False, False, ., "S:Tet::f" ] # . To resolve.
+
+    # . Chlorine.
+    - Label: "Cl"
+      Atom Patterns:
+          - [ 0, 17, 0.0, ., ., ., ., False, False, ., "Cl" ]
+
+    # . Argon.
+    - Label: "Ar:SPl:+4"
+      Atom Patterns:
+          - [ 0, 18, 0.0,., ., ., ., False, False, ., "Ar:SPl:+4" ]
+
+    # . Potassium.
+    - Label: "K"
+      Atom Patterns:
+          - [ 0, 19, 0.0, ., ., ., ., False, False, ., "K" ]
+
+    - Label: "K:SPl:+2:f"
+      Atom Patterns:
+          - [ 0, 19, 0.0, ., ., ., ., False, False, ., "K:SPl:+2:f" ] # . To resolve.
+
+    - Label: "K:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 19, 0.0, ., ., ., ., False, False, ., "K:Tet:+2:f" ] # . To resolve.
+
+    # . Calcium.
+    - Label: "Ca:Oct:+2"
+      Atom Patterns:
+          - [ 0, 20, 0.0, ., ., Oct, ., False, False, ., "Ca:Oct:+2" ]
+
+    - Label: "Ca:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 20, 0.0, ., ., Tet, ., False, False, ., "Ca:Tet:+2:f" ] # . To resolve.
+
+    # . Scandium.
+    - Label: "Sc:Oct:+3"
+      Atom Patterns:
+          - [ 0, 21, 0.0, ., ., Oct, ., False, False, ., "Sc:Oct:+3" ]
+
+    - Label: "Sc:Tet:+3"
+      Atom Patterns:
+          - [ 0, 21, 0.0, ., ., Tet, ., False, False, ., "Sc:Tet:+3" ]
+
+    # . Titanium.
+    - Label: "Ti:Oct:+4"
+      Atom Patterns:
+          - [ 0, 22, 0.0, ., ., Oct, ., False, False, ., "Ti:Oct:+4" ]
+
+    - Label: "Ti:SPl:+2"
+      Atom Patterns:
+          - [ 0, 22, 0.0, ., ., SPl, ., False, False, ., "Ti:SPl:+2" ]
+
+    - Label: "Ti:Tet:+4"
+      Atom Patterns:
+          - [ 0, 22, 0.0, ., ., Tet, ., False, False, ., "Ti:Tet:+4" ]
+
+    # . Vanadium.
+    - Label: "V:Oct:+3"
+      Atom Patterns:
+          - [ 0, 23, 0.0, ., ., Oct, ., False, False, ., "V:Oct:+3" ]
+
+    - Label: "V:SPl:+2"
+      Atom Patterns:
+          - [ 0, 23, 0.0, ., ., SPl, ., False, False, ., "V:SPl:+2" ]
+
+    - Label: "V:Tet:+5"
+      Atom Patterns:
+          - [ 0, 23, 0.0, ., ., Tet, ., False, False, ., "V:Tet:+5" ]
+
+    - Label: "V:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 23, 0.0, ., ., Tet, ., False, False, ., "V:Tet:+2:f" ] # . To resolve.
+
+    # . Chromium.
+    - Label: "Cr:Oct:+3"
+      Atom Patterns:
+          - [ 0, 24, 0.0, ., ., Oct, ., False, False, ., "Cr:Oct:+3" ]
+
+    - Label: "Cr:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 24, 0.0, ., ., Oct, ., False, False, ., "Cr:Oct:+3:f" ] # . To resolve.
+
+    - Label: "Cr:SPl:+2"
+      Atom Patterns:
+          - [ 0, 24, 0.0, ., ., SPl, ., False, False, ., "Cr:SPl:+2" ]
+
+    # . Manganese.
+    - Label: "Mn:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 25, 0.0, ., ., CAp, ., False, False, ., "Mn:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Mn:Lin:+1:f"
+      Atom Patterns:
+          - [ 0, 25, 0.0, ., ., Lin, ., False, False, ., "Mn:Lin:+1:f" ] # . To resolve.
+
+    - Label: "Mn:Oct:+2"
+      Atom Patterns:
+          - [ 0, 25, 0.0, ., ., Oct, ., False, False, ., "Mn:Oct:+2" ] # . To resolve.
+
+    - Label: "Mn:Oct:+3"
+      Atom Patterns:
+          - [ 0, 25, 0.0, ., ., Oct, ., False, False, ., "Mn:Oct:+3" ] # . To resolve.
+
+    - Label: "Mn:SPl:+2"
+      Atom Patterns:
+          - [ 0, 25, 0.0, ., ., SPl, ., False, False, ., "Mn:SPl:+2" ]
+
+    - Label: "Mn:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 25, 0.0, ., ., Tet, ., False, False, ., "Mn:Tet:+2:f" ] # . To resolve.
+
+    # . Iron.
+    - Label: "Fe:Oct:+2"
+      Atom Patterns:
+          - [ 0, 26, 0.0, ., ., Oct, ., False, False, 2, "Fe:Oct:+2" ]
+
+    - Label: "Fe:Oct:+3"
+      Atom Patterns:
+          - [ 0, 26, 0.0, ., ., Oct, ., False, False, 3, "Fe:Oct:+3" ]
+
+    - Label: "Fe:SPl:+2"
+      Atom Patterns:
+          - [ 0, 26, 0.0, ., ., SPl, ., False, False, 2, "Fe:SPl:+2" ]
+
+    - Label: "Fe:Tet:+2"
+      Atom Patterns:
+          - [ 0, 26, 0.0, ., ., Tet, ., False, False, 2, "Fe:Tet:+2" ]
+
+    - Label: "Fe:Oct:+2"
+      Atom Patterns:
+          - [ 0, 26, 0.0, ., 2, ., ., False, False, ., "Fe:Oct:+2" ] # . A catch-all for Fe2+.
+
+    - Label: "Fe:Oct:+3"
+      Atom Patterns:
+          - [ 0, 26, 0.0, ., 3, ., ., False, False, ., "Fe:Oct:+3" ] # . A catch-all for Fe3+.
+
+    - Label: "Fe:Oct:+2"
+      Atom Patterns:
+          - [ 0, 26, 0.0, ., ., ., ., False, False, ., "Fe:Oct:+2" ] # . A catch-all for Fe.
+
+    # . Cobalt.
+    - Label: "Co:Lin:+1:f"
+      Atom Patterns:
+          - [ 0, 27, 0.0, ., ., Lin, ., False, False, ., "Co:Lin:+1:f" ] # . To resolve.
+
+    - Label: "Co:Oct:+3"
+      Atom Patterns:
+          - [ 0, 27, 0.0, ., ., Oct, ., False, False, ., "Co:Oct:+3" ]
+
+    - Label: "Co:SPl:+2"
+      Atom Patterns:
+          - [ 0, 27, 0.0, ., ., SPl, ., False, False, ., "Co:SPl:+2" ]
+
+    - Label: "Co:Tet:+2"
+      Atom Patterns:
+          - [ 0, 27, 0.0, ., ., Tet, ., False, False, ., "Co:Tet:+2" ]
+
+    # . Nickel.
+    - Label: "Ni:SPl:+2"
+      Atom Patterns:
+          - [ 0, 28, 0.0, ., ., ., ., False, False, ., "Ni:SPl:+2" ]
+
+    # . Copper.
+    - Label: "Cu:Lin:+1:f"
+      Atom Patterns:
+          - [ 0, 29, 0.0, ., ., Lin, ., False, False, ., "Cu:Lin:+1:f" ] # . To resolve.
+
+    - Label: "Cu:SPl:+2"
+      Atom Patterns:
+          - [ 0, 29, 0.0, ., ., SPl, ., False, False, ., "Cu:SPl:+2" ]
+
+    - Label: "Cu:Tet:+1"
+      Atom Patterns:
+          - [ 0, 29, 0.0, ., ., Tet, ., False, False, ., "Cu:Tet:+1" ]
+
+    - Label: "Cu:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 29, 0.0, ., ., Tet, ., False, False, ., "Cu:Tet:+2:f" ] # . To resolve.
+
+    - Label: "Cu:Tri:+2:f"
+      Atom Patterns:
+          - [ 0, 29, 0.0, ., ., Tri, ., False, False, ., "Cu:Tri:+2:f" ] # . To resolve.
+
+    # . Zinc.
+    - Label: "Zn:Lin:+1:f"
+      Atom Patterns:
+          - [ 0, 30, 0.0, ., ., Lin, ., False, False, ., "Zn:Lin:+1:f" ] # . To resolve.
+
+    - Label: "Zn:SPl:+2"
+      Atom Patterns:
+          - [ 0, 30, 0.0, ., ., SPl, ., False, False, ., "Zn:SPl:+2" ]
+
+    - Label: "Zn:Tet:+2"
+      Atom Patterns:
+          - [ 0, 30, 0.0, ., ., Tet, ., False, False, ., "Zn:Tet:+2" ]
+
+    - Label: "Zn:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 30, 0.0, ., ., Tet, ., False, False, ., "Zn:Tet:+2:f" ] # . To resolve.
+
+    - Label: "Zn:Tri:+2:f"
+      Atom Patterns:
+          - [ 0, 30, 0.0, ., ., Tri, ., False, False, ., "Zn:Tri:+2:f" ] # . To resolve.
+
+    - Label: "Zn2+"
+      Atom Patterns:
+          - [ 0, 30, 0.0, 0, 2, ., ., False, False, ., "Zn:Tet:+2" ]
+
+    # . Gallium.
+    - Label: "Ga:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 31, 0.0, ., ., Oct, ., False, False, ., "Ga:Oct:+3:f" ] # . To resolve.
+
+    - Label: "Ga:Tet:+3"
+      Atom Patterns:
+          - [ 0, 31, 0.0, ., ., Tet, ., False, False, ., "Ga:Tet:+3" ]
+
+    - Label: "Ga:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 31, 0.0, ., ., Tet, ., False, False, ., "Ga:Tet:+2:f" ] # . To resolve.
+
+    # . Germanium.
+    - Label: "Ge:Tet"
+      Atom Patterns:
+          - [ 0, 32, 0.0, ., ., ., ., False, False, ., "Ge:Tet" ]
+
+    # . Arsenic.
+    - Label: "As:Tet:+3"
+      Atom Patterns:
+          - [ 0, 33, 0.0, ., ., ., ., False, False, ., "As:Tet:+3" ]
+
+    # . Selenium.
+    - Label: "Se:Tet:+2"
+      Atom Patterns:
+          - [ 0, 34, 0.0, ., ., ., ., False, False, ., "Se:Tet:+2" ]
+
+    # . Bromine.
+    - Label: "Br"
+      Atom Patterns:
+          - [ 0, 35, 0.0, ., ., ., ., False, False, ., "Br" ]
+
+    # . Krypton.
+    - Label: "Kr:SPl:+4"
+      Atom Patterns:
+          - [ 0, 36, 0.0, ., ., ., ., False, False, ., "Kr:SPl:+4" ]
+
+    # . Rubidium.
+    - Label: "Rb"
+      Atom Patterns:
+          - [ 0, 37, 0.0, ., ., ., ., False, False, ., "Rb" ]
+
+    # . Strontium.
+    - Label: "Sr:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 38, 0.0, ., ., CAp, ., False, False, ., "Sr:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Sr:Oct:+2"
+      Atom Patterns:
+          - [ 0, 38, 0.0, ., ., ., ., False, False, ., "Sr:Oct:+2" ]
+
+    # . Yttrium.
+    - Label: "Y:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 39, 0.0, ., ., CAp, ., False, False, ., "Y:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Y:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 39, 0.0, ., ., Oct, ., False, False, ., "Y:Oct:+3:f" ] # . To resolve.
+
+    - Label: "Y:Tet:+3"
+      Atom Patterns:
+          - [ 0, 39, 0.0, ., ., Tet, ., False, False, ., "Y:Tet:+3" ]
+
+    # . Zirconium.
+    - Label: "Zr:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 40, 0.0, ., ., CAp, ., False, False, ., "Zr:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Zr:Tet:+4"
+      Atom Patterns:
+          - [ 0, 40, 0.0, ., ., Tet, ., False, False, ., "Zr:Tet:+4" ]
+
+    # . Niobium.
+    - Label: "Nb:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 41, 0.0, ., ., CAp, ., False, False, ., "Nb:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Nb:Tet:+5"
+      Atom Patterns:
+          - [ 0, 41, 0.0, ., ., Tet, ., False, False, ., "Nb:Tet:+5" ]
+
+    # . Molybdenum.
+    - Label: "Mo:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 42, 0.0, ., ., CAp, ., False, False, ., "Mo:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Mo:Oct:+6"
+      Atom Patterns:
+          - [ 0, 42, 0.0, ., ., Oct, ., False, False, ., "Mo:Oct:+6" ]
+
+    - Label: "Mo:SPl:+2:f"
+      Atom Patterns:
+          - [ 0, 42, 0.0, ., ., SPl, ., False, False, ., "Mo:SPl:+2:f" ] # . To resolve.
+
+    - Label: "Mo:Tet:+6"
+      Atom Patterns:
+          - [ 0, 42, 0.0, ., ., Tet, ., False, False, ., "Mo:Tet:+6" ]
+
+    - Label: "Mo:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 42, 0.0, ., ., Tet, ., False, False, ., "Mo:Tet:+2:f" ] # . To resolve.
+
+    - Label: "Mo:Tet:+6"
+      Atom Patterns:
+          - [ 0, 42, 0.0, ., ., ., ., False, False, ., "Mo:Tet:+6" ] # . A catch-all.
+
+    # . Technetium.
+    - Label: "Tc:Oct:+5"
+      Atom Patterns:
+          - [ 0, 43, 0.0, ., ., Oct, ., False, False, ., "Tc:Oct:+5" ]
+
+    - Label: "Tc:SPl:+2:f"
+      Atom Patterns:
+          - [ 0, 43, 0.0, ., ., SPl, ., False, False, ., "Tc:SPl:+2:f" ] # . To resolve.
+
+    # . Ruthenium.
+    - Label: "Ru:Oct:+2"
+      Atom Patterns:
+          - [ 0, 44, 0.0, ., ., Oct, ., False, False, ., "Ru:Oct:+2" ]
+
+    - Label: "Ru:SPl:+2:f"
+      Atom Patterns:
+          - [ 0, 44, 0.0, ., ., SPl, ., False, False, ., "Ru:SPl:+2:f" ] # . To resolve.
+
+    # . Rhodium.
+    - Label: "Rh:Oct:+3"
+      Atom Patterns:
+          - [ 0, 45, 0.0, ., ., ., ., False, False, ., "Rh:Oct:+3" ]
+
+    # . Palladium.
+    - Label: "Pd:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 46, 0.0, ., ., Oct, ., False, False, ., "Pd:Oct:+3:f" ] # . To resolve.
+
+    - Label: "Pd:SPl:+2"
+      Atom Patterns:
+          - [ 0, 46, 0.0, ., ., SPl, ., False, False, ., "Pd:SPl:+2" ]
+
+    # . Silver.
+    - Label: "Ag:Lin:+1"
+      Atom Patterns:
+          - [ 0, 47, 0.0, ., ., Lin, ., False, False, ., "Ag:Lin:+1" ]
+
+    - Label: "Ag:Lin:+1:f"
+      Atom Patterns:
+          - [ 0, 47, 0.0, ., ., Lin, ., False, False, ., "Ag:Lin:+1:f" ] # . To resolve.
+
+    - Label: "Ag:SPl:+2:f"
+      Atom Patterns:
+          - [ 0, 47, 0.0, ., ., SPl, ., False, False, ., "Ag:SPl:+2:f" ] # . To resolve.
+
+    - Label: "Ag:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 47, 0.0, ., ., Tet, ., False, False, ., "Ag:Tet:+2:f" ] # . To resolve.
+
+    - Label: "Ag:Tri:+2:f"
+      Atom Patterns:
+          - [ 0, 47, 0.0, ., ., Tri, ., False, False, ., "Ag:Tri:+2:f" ] # . To resolve.
+
+    # . Cadmium.
+    - Label: "Cd:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 48, 0.0, ., ., CAp, ., False, False, ., "Cd:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Cd:Lin:+1:f"
+      Atom Patterns:
+          - [ 0, 48, 0.0, ., ., Lin, ., False, False, ., "Cd:Lin:+1:f" ] # . To resolve.
+
+    - Label: "Cd:SPl:+2:f"
+      Atom Patterns:
+          - [ 0, 48, 0.0, ., ., SPl, ., False, False, ., "Cd:SPl:+2:f" ] # . To resolve.
+
+    - Label: "Cd:Tet:+2"
+      Atom Patterns:
+          - [ 0, 48, 0.0, ., ., Tet, ., False, False, ., "Cd:Tet:+2" ]
+
+    - Label: "Cd:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 48, 0.0, ., ., Tet, ., False, False, ., "Cd:Tet:+2:f" ] # . To resolve.
+
+    # . Indium.
+    - Label: "In:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 49, 0.0, ., ., CAp, ., False, False, ., "In:CAp:+4:f" ] # . To resolve.
+
+    - Label: "In:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 49, 0.0, ., ., Oct, ., False, False, ., "In:Oct:+3:f" ] # . To resolve.
+
+    - Label: "In:Tet:+3"
+      Atom Patterns:
+          - [ 0, 49, 0.0, ., ., Tet, ., False, False, ., "In:Tet:+3" ]
+
+    - Label: "In:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 49, 0.0, ., ., Tet, ., False, False, ., "In:Tet:+2:f" ] # . To resolve.
+
+    # . Tin.
+    - Label: "Sn:Tet"
+      Atom Patterns:
+          - [ 0, 50, 0.0, ., ., ., ., False, False, ., "Sn:Tet" ]
+
+    # . Antimony.
+    - Label: "Sb:Tet:+3"
+      Atom Patterns:
+          - [ 0, 51, 0.0, ., ., ., ., False, False, ., "Sb:Tet:+3" ]
+
+    # . Tellurium.
+    - Label: "Te:Tet:+2"
+      Atom Patterns:
+          - [ 0, 52, 0.0, ., ., ., ., False, False, ., "Te:Tet:+2" ]
+
+    # . Iodine.
+    - Label: "I"
+      Atom Patterns:
+          - [ 0, 53, 0.0, ., ., ., ., False, False, ., "I" ]
+
+    # . Xenon.
+    - Label: "Xe:SPl:+4"
+      Atom Patterns:
+          - [ 0, 54, 0.0, ., ., ., ., False, False, ., "Xe:SPl:+4" ]
+
+    # . Cesium.
+    - Label: "Cs"
+      Atom Patterns:
+          - [ 0, 55, 0.0, ., ., ., ., False, False, ., "Cs" ]
+
+    # . Barium.
+    - Label: "Ba:Oct:+2"
+      Atom Patterns:
+          - [ 0, 56, 0.0, ., ., Oct, ., False, False, ., "Ba:Oct:+2" ]
+
+    - Label: "Ba:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 56, 0.0, ., ., Tet, ., False, False, ., "Ba:Tet:+2:f" ] # . To resolve.
+
+    # . Lanthanum.
+    - Label: "La:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 57, 0.0, ., ., CAp, ., False, False, ., "La:CAp:+4:f" ] # . To resolve.
+
+    - Label: "La:Tet:+3"
+      Atom Patterns:
+          - [ 0, 57, 0.0, ., ., Tet, ., False, False, ., "La:Tet:+3" ]
+
+    # . Cerium.
+    - Label: "Ce:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 58, 0.0, ., ., CAp, ., False, False, ., "Ce:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Ce:Oct:+3"
+      Atom Patterns:
+          - [ 0, 58, 0.0, ., ., Oct, ., False, False, ., "Ce:Oct:+3" ]
+
+    # . Praseodymium.
+    - Label: "Pr:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 59, 0.0, ., ., CAp, ., False, False, ., "Pr:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Pr:Oct:+3"
+      Atom Patterns:
+          - [ 0, 59, 0.0, ., ., Oct, ., False, False, ., "Pr:Oct:+3" ]
+
+    # . Neodymium.
+    - Label: "Nd:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 60, 0.0, ., ., CAp, ., False, False, ., "Nd:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Nd:Oct:+3"
+      Atom Patterns:
+          - [ 0, 60, 0.0, ., ., Oct, ., False, False, ., "Nd:Oct:+3" ]
+
+    # . Promethium.
+    - Label: "Pm:Oct:+3"
+      Atom Patterns:
+          - [ 0, 61, 0.0, ., ., ., ., False, False, ., "Pm:Oct:+3" ]
+
+    # . Samarium.
+    - Label: "Sm:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 62, 0.0, ., ., CAp, ., False, False, ., "Sm:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Sm:Oct:+3"
+      Atom Patterns:
+          - [ 0, 62, 0.0, ., ., Oct, ., False, False, ., "Sm:Oct:+3" ]
+
+    # . Europium.
+    - Label: "Eu:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 63, 0.0, ., ., CAp, ., False, False, ., "Eu:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Eu:Oct:+3"
+      Atom Patterns:
+          - [ 0, 63, 0.0, ., ., Oct, ., False, False, ., "Eu:Oct:+3" ]
+
+    - Label: "Eu:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 63, 0.0, ., ., Oct, ., False, False, ., "Eu:Oct:+3:f" ] # . To resolve.
+
+    # . Gadolinium.
+    - Label: "Gd:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 64, 0.0, ., ., CAp, ., False, False, ., "Gd:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Gd:Oct:+3"
+      Atom Patterns:
+          - [ 0, 64, 0.0, ., ., Oct, ., False, False, ., "Gd:Oct:+3" ]
+
+    - Label: "Gd:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 64, 0.0, ., ., Oct, ., False, False, ., "Gd:Oct:+3:f" ] # . To resolve.
+
+    # . Terbium.
+    - Label: "Tb:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 65, 0.0, ., ., CAp, ., False, False, ., "Tb:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Tb:Oct:+3"
+      Atom Patterns:
+          - [ 0, 65, 0.0, ., ., Oct, ., False, False, ., "Tb:Oct:+3" ]
+
+    # . Dysprosium.
+    - Label: "Dy:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 66, 0.0, ., ., CAp, ., False, False, ., "Dy:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Dy:Oct:+3"
+      Atom Patterns:
+          - [ 0, 66, 0.0, ., ., Oct, ., False, False, ., "Dy:Oct:+3" ]
+
+    - Label: "Dy:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 66, 0.0, ., ., Oct, ., False, False, ., "Dy:Oct:+3:f" ] # . To resolve.
+
+    # . Holmium.
+    - Label: "Ho:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 67, 0.0, ., ., CAp, ., False, False, ., "Ho:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Ho:Oct:+3"
+      Atom Patterns:
+          - [ 0, 67, 0.0, ., ., Oct, ., False, False, ., "Ho:Oct:+3" ]
+
+    # . Erbium.
+    - Label: "Er:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 68, 0.0, ., ., CAp, ., False, False, ., "Er:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Er:Oct:+3"
+      Atom Patterns:
+          - [ 0, 68, 0.0, ., ., Oct, ., False, False, ., "Er:Oct:+3" ]
+
+    # . Thulium.
+    - Label: "Tm:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 69, 0.0, ., ., CAp, ., False, False, ., "Tm:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Tm:Oct:+3"
+      Atom Patterns:
+          - [ 0, 69, 0.0, ., ., Oct, ., False, False, ., "Tm:Oct:+3" ]
+
+    # . Ytterbium.
+    - Label: "Yb:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 70, 0.0, ., ., CAp, ., False, False, ., "Yb:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Yb:Oct:+3"
+      Atom Patterns:
+          - [ 0, 70, 0.0, ., ., Oct, ., False, False, ., "Yb:Oct:+3" ]
+
+    - Label: "Yb:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 70, 0.0, ., ., Oct, ., False, False, ., "Yb:Oct:+3:f" ] # . To resolve.
+
+    # . Lutetium.
+    - Label: "Lu:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 71, 0.0, ., ., CAp, ., False, False, ., "Lu:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Lu:Oct:+3"
+      Atom Patterns:
+          - [ 0, 71, 0.0, ., ., Oct, ., False, False, ., "Lu:Oct:+3" ]
+
+    # . Hafnium.
+    - Label: "Hf:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 72, 0.0, ., ., CAp, ., False, False, ., "Hf:CAp:+4:f" ] # . To resolve.
+
+    - Label: "Hf:Tet:+4"
+      Atom Patterns:
+          - [ 0, 72, 0.0, ., ., Tet, ., False, False, ., "Hf:Tet:+4" ]
+
+    # . Tantalum.
+    - Label: "Ta:Tet:+5"
+      Atom Patterns:
+          - [ 0, 73, 0.0, ., ., ., ., False, False, ., "Ta:Tet:+5" ]
+
+    # . Tungsten.
+    - Label: "W:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 74, 0.0, ., ., CAp, ., False, False, ., "W:CAp:+4:f" ] # . To resolve.
+
+    - Label: "W:Oct:+6"
+      Atom Patterns:
+          - [ 0, 74, 0.0, ., ., Oct, ., False, False, ., "W:Oct:+6" ]
+
+    - Label: "W:SPl:+2:f"
+      Atom Patterns:
+          - [ 0, 74, 0.0, ., ., SPl, ., False, False, ., "W:SPl:+2:f" ] # . To resolve.
+
+    - Label: "W:Tet:+4"
+      Atom Patterns:
+          - [ 0, 74, 0.0, ., ., Tet, ., False, False, ., "W:Tet:+4" ] # . To resolve.
+
+    - Label: "W:Tet:+6"
+      Atom Patterns:
+          - [ 0, 74, 0.0, ., ., Tet, ., False, False, ., "W:Tet:+6" ] # . To resolve.
+
+    - Label: "W:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 74, 0.0, ., ., Tet, ., False, False, ., "W:Tet:+2:f" ] # . To resolve.
+
+    # . Rhenium.
+    - Label: "Re:Oct:+5"
+      Atom Patterns:
+          - [ 0, 75, 0.0, ., ., Oct, ., False, False, ., "Re:Oct:+5" ]
+
+    - Label: "Re:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 75, 0.0, ., ., Oct, ., False, False, ., "Re:Oct:+3:f" ] # . To resolve.
+
+    - Label: "Re:Tet:+7"
+      Atom Patterns:
+          - [ 0, 75, 0.0, ., ., Tet, ., False, False, ., "Re:Tet:+7" ]
+
+    # . Osmium.
+    - Label: "Os:Oct:+6"
+      Atom Patterns:
+          - [ 0, 76, 0.0, ., ., Oct, ., False, False, ., "Os:Oct:+6" ]
+
+    - Label: "Os:SPl:+2:f"
+      Atom Patterns:
+          - [ 0, 76, 0.0, ., ., SPl, ., False, False, ., "Os:SPl:+2:f" ] # . To resolve.
+
+    # . Iridium.
+    - Label: "Ir:Oct:+3"
+      Atom Patterns:
+          - [ 0, 77, 0.0, ., ., ., ., False, False, ., "Ir:Oct:+3" ]
+
+    # . Platinum.
+    - Label: "Pt:SPl:+2"
+      Atom Patterns:
+          - [ 0, 78, 0.0, ., ., SPl, ., False, False, ., "Pt:SPl:+2" ]
+
+    - Label: "Pt:SPl:+2"
+      Atom Patterns:
+          - [ 0, 78, 0.0, 4, ., ., ., False, False, ., "Pt:SPl:+2" ] # . A catch-all for 4-coordinate platinum.
+
+    - Label: "Pt:SPl:+2:f"
+      Atom Patterns:
+          - [ 0, 78, 0.0, ., ., SPl, ., False, False, ., "Pt:SPl:+2:f" ] # . To resolve.
+
+    # . Gold.
+    - Label: "Au:Lin:+1:f"
+      Atom Patterns:
+          - [ 0, 79, 0.0, ., ., Lin, ., False, False, ., "Au:Lin:+1:f" ] # . To resolve.
+
+    - Label: "Au:SPl:+3"
+      Atom Patterns:
+          - [ 0, 79, 0.0, ., ., SPl, ., False, False, ., "Au:SPl:+3" ]
+
+    # . Mercury.
+    - Label: "Hg:Lin:+2"
+      Atom Patterns:
+          - [ 0, 80, 0.0, ., ., Lin, ., False, False, ., "Hg:Lin:+2" ]
+
+    - Label: "Hg:Tet:+2:f"
+      Atom Patterns:
+          - [ 0, 80, 0.0, ., ., Tet, ., False, False, ., "Hg:Tet:+2:f" ] # . To resolve.
+
+    # . Thallium.
+    - Label: "Tl:Tet:+3"
+      Atom Patterns:
+          - [ 0, 81, 0.0, ., ., ., ., False, False, ., "Tl:Tet:+3" ]
+
+    # . Lead.
+    - Label: "Pb:SPl:+2:f"
+      Atom Patterns:
+          - [ 0, 82, 0.0, ., ., SPl, ., False, False, ., "Pb:SPl:+2:f" ] # . To resolve.
+
+    - Label: "Pb:Tet"
+      Atom Patterns:
+          - [ 0, 82, 0.0, ., ., Tet, ., False, False, ., "Pb:Tet" ]
+
+    # . Bismuth.
+    - Label: "Bi:Tet:+3"
+      Atom Patterns:
+          - [ 0, 83, 0.0, ., ., ., ., False, False, ., "Bi:Tet:+3" ]
+
+    # . Polonium.
+    - Label: "Po:Tet:+2"
+      Atom Patterns:
+          - [ 0, 84, 0.0, ., ., ., ., False, False, ., "Po:Tet:+2" ]
+
+    # . Astatine.
+    - Label: "At"
+      Atom Patterns:
+          - [ 0, 85, 0.0, ., ., ., ., False, False, ., "At" ]
+
+    # . Radon.
+    - Label: "Rn:SPl:+4"
+      Atom Patterns:
+          - [ 0, 86, 0.0, ., ., ., ., False, False, ., "Rn:SPl:+4" ]
+
+    # . Francium.
+    - Label: "Fr"
+      Atom Patterns:
+          - [ 0, 87, 0.0, ., ., ., ., False, False, ., "Fr" ]
+
+    # . Radon.
+    - Label: "Ra:Oct:+2"
+      Atom Patterns:
+          - [ 0, 88, 0.0, ., ., ., ., False, False, ., "Ra:Oct:+2" ]
+
+    # . Actinium.
+    - Label: "Ac:Oct:+3"
+      Atom Patterns:
+          - [ 0, 89, 0.0, ., ., ., ., False, False, ., "Ac:Oct:+3" ]
+
+    # . Thorium.
+    - Label: "Th:Oct:+4"
+      Atom Patterns:
+          - [ 0, 90, 0.0, ., ., ., ., False, False, ., "Th:Oct:+4" ]
+
+    # . Protactinium.
+    - Label: "Pa:Oct:+4"
+      Atom Patterns:
+          - [ 0, 91, 0.0, ., ., ., ., False, False, ., "Pa:Oct:+4" ]
+
+    # . Uranium.
+    - Label: "U:CAp:+4:f"
+      Atom Patterns:
+          - [ 0, 92, 0.0, ., ., CAp, ., False, False, ., "U:CAp:+4:f" ] # . To resolve.
+
+    - Label: "U:Oct:+4"
+      Atom Patterns:
+          - [ 0, 92, 0.0, ., ., Oct, ., False, False, ., "U:Oct:+4" ]
+
+    - Label: "U:Oct:+3:f"
+      Atom Patterns:
+          - [ 0, 92, 0.0, ., ., Oct, ., False, False, ., "U:Oct:+3:f" ] # . To resolve.
+
+    # . Neptunium.
+    - Label: "Np:Oct:+4"
+      Atom Patterns:
+          - [ 0, 93, 0.0, ., ., ., ., False, False, ., "Np:Oct:+4" ]
+
+    # . Plutonium.
+    - Label: "Pu:Oct:+4"
+      Atom Patterns:
+          - [ 0, 94, 0.0, ., ., ., ., False, False, ., "Pu:Oct:+4" ]
+
+    # . Americium.
+    - Label: "Am:Oct:+4"
+      Atom Patterns:
+          - [ 0, 95, 0.0, ., ., ., ., False, False, ., "Am:Oct:+4" ]
+
+    # . Curium.
+    - Label: "Cm:Oct:+3"
+      Atom Patterns:
+          - [ 0, 96, 0.0, ., ., ., ., False, False, ., "Cm:Oct:+3" ]
+
+    # . Berkelium.
+    - Label: "Bk:Oct:+3"
+      Atom Patterns:
+          - [ 0, 97, 0.0, ., ., ., ., False, False, ., "Bk:Oct:+3" ]
+
+    # . Californium.
+    - Label: "Cf:Oct:+3"
+      Atom Patterns:
+          - [ 0, 98, 0.0, ., ., ., ., False, False, ., "Cf:Oct:+3" ]
+
+    # . Einsteinium.
+    - Label: "Es:Oct:+3"
+      Atom Patterns:
+          - [ 0, 99, 0.0, ., ., ., ., False, False, ., "Es:Oct:+3" ]
+
+    # . Fermium. 
+    - Label: "Fm:Oct:+3"
+      Atom Patterns:
+          - [ 0, 100, 0.0, ., ., ., ., False, False, ., "Fm:Oct:+3" ]
+
+    # . Mendelevium.
+    - Label: "Md:Oct:+3"
+      Atom Patterns:
+          - [ 0, 101, 0.0, ., ., ., ., False, False, ., "Md:Oct:+3" ]
+
+    # . Nobelium.
+    - Label: "No:Oct:+3"
+      Atom Patterns:
+          - [ 0, 102, 0.0, ., ., ., ., False, False, ., "No:Oct:+3" ]
+
+    # . Lawrencium.
+    - Label: "Lr:Oct:+3"
+      Atom Patterns:
+          - [ 0, 103, 0.0, ., ., ., ., False, False, ., "Lr:Oct:+3" ]
+...

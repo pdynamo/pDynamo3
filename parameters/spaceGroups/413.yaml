@@ -1,0 +1,28 @@
+# . Space group P42/mcm.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -P 4c 2c
+Hermann-Mauguin    : P42/mcm
+Schoenflies        : D4h^10
+Space Group Number : 132
+Space Group Symbol : 132
+Setting            : 413
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-y,x,z+1/2)
+    - (y,-x,z+1/2)
+    - (-x,y,-z+1/2)
+    - (x,-y,-z+1/2)
+    - (y,x,-z)
+    - (-y,-x,-z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (y,-x,-z+1/2)
+    - (-y,x,-z+1/2)
+    - (x,-y,z+1/2)
+    - (-x,y,z+1/2)
+    - (-y,-x,z)
+    - (y,x,z)
+...

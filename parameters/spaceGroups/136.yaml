@@ -1,0 +1,16 @@
+# . Space group Pb2b.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2b -2b
+Hermann-Mauguin    : Pb2b
+Schoenflies        : C2v^3
+Space Group Number : 27
+Space Group Symbol : 27:bca
+Setting            : 136
+Transformations :
+    - (x,y,z)
+    - (-x,y,-z)
+    - (-x,y+1/2,z)
+    - (x,y+1/2,-z)
+...

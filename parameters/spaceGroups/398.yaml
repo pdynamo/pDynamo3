@@ -1,0 +1,28 @@
+# . Space group I-42m.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : I -4 2
+Hermann-Mauguin    : I-42m
+Schoenflies        : D2d^11
+Space Group Number : 121
+Space Group Symbol : 121
+Setting            : 398
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (-y,-x,z)
+    - (y,x,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (y+1/2,-x+1/2,-z+1/2)
+    - (-y+1/2,x+1/2,-z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-y+1/2,-x+1/2,z+1/2)
+    - (y+1/2,x+1/2,z+1/2)
+...

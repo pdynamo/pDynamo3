@@ -1,0 +1,188 @@
+# . Text parameter file for the element Br.
+
+Br   atomicNumber                          35
+Br   iii                                    4
+Br   iiid                                   4
+Br   ir016                                  0
+Br   ir066                                  0
+Br   ir244                                  0
+Br   ir266                                  0
+Br   ir466                                  0
+Br   qnd                                    4
+Br   qnp                                    4
+Br   qns                                    4
+Br   ad                     1.317805258801072  atomic
+Br   alp                    0.000000000000000  A^-1
+Br   am                     0.279911935679095  atomic
+Br   aq                     0.514512226772746  atomic
+Br   betad                 -9.839124000000000  eV
+Br   betap                 -9.514483999999999  eV
+Br   betas                -32.131664999999998  eV
+Br   dd                     0.364308019403979  atomic
+Br   eheat                 26.739999999999998  kcal/mole
+Br   eisol               -226.960907000000049  eV
+Br   f0sd                  16.099710959999999  eV
+Br   g2sd                   8.883866760000000  eV
+Br   gp2                    8.343792000000001  eV
+Br   gphot                  1.000000000000000  dimensionless
+Br   gpp                    9.649215999999999  eV
+Br   gsp                    5.010425000000000  eV
+Br   gss                    7.616791000000000  eV
+Br   hsp                    4.996553000000000  eV
+Br   pcore                  0.000000000000000  atomic
+Br   qq                     1.042097292704869  atomic
+Br   udd                    7.086738000000000  eV
+Br   upp                  -50.293675000000000  eV
+Br   uss                  -45.834364000000001  eV
+Br   zcore                  7.000000000000000  atomic
+Br   zdn                    2.820003000000000  atomic
+Br   zetad                  1.521031000000000  atomic
+Br   zetap                  2.035626000000000  atomic
+Br   zetas                  4.670684000000000  atomic
+Br   zpn                    3.065764000000000  atomic
+Br   zsn                    3.094777000000000  atomic
+Br   fn10                  -0.004996000000000  A_eV
+Br   fn20                   6.001292000000000  A^-2
+Br   fn30                   2.895153000000000  A
+Br   diatomicA      H       2.192803000000000  A^-1
+Br   diatomicX      H       0.850378000000000  dimensionless
+Br   diatomicA      He      2.128275000000000  A^-1
+Br   diatomicX      He      1.062043000000000  dimensionless
+Br   diatomicA      Li      2.074441000000000  A^-1
+Br   diatomicX      Li      1.858866000000000  dimensionless
+Br   diatomicA      Be      2.367146000000000  A^-1
+Br   diatomicX      Be      1.940933000000000  dimensionless
+Br   diatomicA      B       2.307890000000000  A^-1
+Br   diatomicX      B       1.226420000000000  dimensionless
+Br   diatomicA      C       2.015086000000000  A^-1
+Br   diatomicX      C       0.570686000000000  dimensionless
+Br   diatomicA      N       4.224901000000000  A^-1
+Br   diatomicX      N      30.000133000000002  dimensionless
+Br   diatomicA      O       2.283046000000000  A^-1
+Br   diatomicX      O       0.706584000000000  dimensionless
+Br   diatomicA      F       2.031765000000000  A^-1
+Br   diatomicX      F       0.293500000000000  dimensionless
+Br   diatomicA      Ne      2.464172000000000  A^-1
+Br   diatomicX      Ne      1.006159000000000  dimensionless
+Br   diatomicA      Na      1.622218000000000  A^-1
+Br   diatomicX      Na      1.752937000000000  dimensionless
+Br   diatomicA      Mg      2.195697000000000  A^-1
+Br   diatomicX      Mg      2.916280000000000  dimensionless
+Br   diatomicA      Al      1.894141000000000  A^-1
+Br   diatomicX      Al      2.357130000000000  dimensionless
+Br   diatomicA      Si      1.570825000000000  A^-1
+Br   diatomicX      Si      0.589511000000000  dimensionless
+Br   diatomicA      P       1.402139000000000  A^-1
+Br   diatomicX      P       0.456521000000000  dimensionless
+Br   diatomicA      S       1.509874000000000  A^-1
+Br   diatomicX      S       0.286688000000000  dimensionless
+Br   diatomicA      Cl      1.710331000000000  A^-1
+Br   diatomicX      Cl      0.389238000000000  dimensionless
+Br   diatomicA      Ar      2.450801000000000  A^-1
+Br   diatomicX      Ar      3.262668000000000  dimensionless
+Br   diatomicA      K       1.616093000000000  A^-1
+Br   diatomicX      K       3.322795000000000  dimensionless
+Br   diatomicA      Ca      2.078405000000000  A^-1
+Br   diatomicX      Ca      4.052910000000000  dimensionless
+Br   diatomicA      Sc      1.793486000000000  A^-1
+Br   diatomicX      Sc      2.098251000000000  dimensionless
+Br   diatomicA      Ti      1.674847000000000  A^-1
+Br   diatomicX      Ti      0.883434000000000  dimensionless
+Br   diatomicA      V       1.902904000000000  A^-1
+Br   diatomicX      V       0.612698000000000  dimensionless
+Br   diatomicA      Cr      1.339524000000000  A^-1
+Br   diatomicX      Cr      0.140054000000000  dimensionless
+Br   diatomicA      Mn      2.283820000000000  A^-1
+Br   diatomicX      Mn      1.183580000000000  dimensionless
+Br   diatomicA      Fe      3.641782000000000  A^-1
+Br   diatomicX      Fe      6.061921000000000  dimensionless
+Br   diatomicA      Co      1.630415000000000  A^-1
+Br   diatomicX      Co      0.177243000000000  dimensionless
+Br   diatomicA      Ni      2.772136000000000  A^-1
+Br   diatomicX      Ni      0.632145000000000  dimensionless
+Br   diatomicA      Cu      6.000023000000000  A^-1
+Br   diatomicX      Cu      0.049829000000000  dimensionless
+Br   diatomicA      Zn      1.416120000000000  A^-1
+Br   diatomicX      Zn      0.747027000000000  dimensionless
+Br   diatomicA      Ga      1.819105000000000  A^-1
+Br   diatomicX      Ga      1.261036000000000  dimensionless
+Br   diatomicA      Ge      1.602366000000000  A^-1
+Br   diatomicX      Ge      0.627737000000000  dimensionless
+Br   diatomicA      As      1.520170000000000  A^-1
+Br   diatomicX      As      0.514153000000000  dimensionless
+Br   diatomicA      Se      1.483713000000000  A^-1
+Br   diatomicX      Se      0.319342000000000  dimensionless
+Br   diatomicA      Br      1.758146000000000  A^-1
+Br   diatomicX      Br      0.615308000000000  dimensionless
+Br   diatomicA      Kr      1.529006000000000  A^-1
+Br   diatomicX      Kr      0.308098000000000  dimensionless
+Br   diatomicA      Rb      1.797766000000000  A^-1
+Br   diatomicX      Rb      5.176214000000000  dimensionless
+Br   diatomicA      Sr      1.524316000000000  A^-1
+Br   diatomicX      Sr      2.766567000000000  dimensionless
+Br   diatomicA      Y       1.401208000000000  A^-1
+Br   diatomicX      Y       1.054316000000000  dimensionless
+Br   diatomicA      Zr      1.446868000000000  A^-1
+Br   diatomicX      Zr      0.858909000000000  dimensionless
+Br   diatomicA      Nb      2.006678000000000  A^-1
+Br   diatomicX      Nb      1.921269000000000  dimensionless
+Br   diatomicA      Mo      1.283334000000000  A^-1
+Br   diatomicX      Mo      0.225918000000000  dimensionless
+Br   diatomicA      Tc      2.828264000000000  A^-1
+Br   diatomicX      Tc      3.820130000000000  dimensionless
+Br   diatomicA      Ru      2.584735000000000  A^-1
+Br   diatomicX      Ru      0.659881000000000  dimensionless
+Br   diatomicA      Rh      2.928082000000000  A^-1
+Br   diatomicX      Rh      1.510149000000000  dimensionless
+Br   diatomicA      Pd      5.994879000000000  A^-1
+Br   diatomicX      Pd      4.638051000000000  dimensionless
+Br   diatomicA      Ag      3.677491000000000  A^-1
+Br   diatomicX      Ag      1.714369000000000  dimensionless
+Br   diatomicA      Cd      1.001451000000000  A^-1
+Br   diatomicX      Cd      0.272267000000000  dimensionless
+Br   diatomicA      In      2.257957000000000  A^-1
+Br   diatomicX      In      3.728598000000000  dimensionless
+Br   diatomicA      Sn      1.535089000000000  A^-1
+Br   diatomicX      Sn      0.668798000000000  dimensionless
+Br   diatomicA      Sb      1.063916000000000  A^-1
+Br   diatomicX      Sb      0.198044000000000  dimensionless
+Br   diatomicA      Te      1.250940000000000  A^-1
+Br   diatomicX      Te      0.394202000000000  dimensionless
+Br   diatomicA      I       1.579376000000000  A^-1
+Br   diatomicX      I       0.483054000000000  dimensionless
+Br   diatomicA      Xe      1.439618000000000  A^-1
+Br   diatomicX      Xe      0.475116000000000  dimensionless
+Br   diatomicA      Cs      1.167189000000000  A^-1
+Br   diatomicX      Cs      1.658427000000000  dimensionless
+Br   diatomicA      Ba      1.190346000000000  A^-1
+Br   diatomicX      Ba      0.828794000000000  dimensionless
+Br   diatomicA      La      0.758184000000000  A^-1
+Br   diatomicX      La      0.238582000000000  dimensionless
+Br   diatomicA      Gd      0.715810000000000  A^-1
+Br   diatomicX      Gd      0.240740000000000  dimensionless
+Br   diatomicA      Lu      2.322618000000000  A^-1
+Br   diatomicX      Lu      8.648274000000001  dimensionless
+Br   diatomicA      Hf      1.090759000000000  A^-1
+Br   diatomicX      Hf      0.692456000000000  dimensionless
+Br   diatomicA      Ta      1.640376000000000  A^-1
+Br   diatomicX      Ta      0.791445000000000  dimensionless
+Br   diatomicA      W       1.293260000000000  A^-1
+Br   diatomicX      W       0.372390000000000  dimensionless
+Br   diatomicA      Re      1.603060000000000  A^-1
+Br   diatomicX      Re      0.287528000000000  dimensionless
+Br   diatomicA      Os      1.766880000000000  A^-1
+Br   diatomicX      Os      0.382430000000000  dimensionless
+Br   diatomicA      Ir      2.038142000000000  A^-1
+Br   diatomicX      Ir      0.171879000000000  dimensionless
+Br   diatomicA      Pt      2.185307000000000  A^-1
+Br   diatomicX      Pt      0.520361000000000  dimensionless
+Br   diatomicA      Au      0.984642000000000  A^-1
+Br   diatomicX      Au      0.012598000000000  dimensionless
+Br   diatomicA      Hg      0.638717000000000  A^-1
+Br   diatomicX      Hg      0.172363000000000  dimensionless
+Br   diatomicA      Tl      0.874419000000000  A^-1
+Br   diatomicX      Tl      0.296836000000000  dimensionless
+Br   diatomicA      Pb      0.865550000000000  A^-1
+Br   diatomicX      Pb      0.148229000000000  dimensionless
+Br   diatomicA      Bi      1.146233000000000  A^-1
+Br   diatomicX      Bi      0.381170000000000  dimensionless

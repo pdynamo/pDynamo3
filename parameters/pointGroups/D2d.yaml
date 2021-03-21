@@ -1,0 +1,17 @@
+# . Point group D2d.
+---
+# . !PointGroup
+Label : D2d
+Symmetry Operations :
+    C2    :  2
+    E     :  1
+    S4    :  1
+    sigma :  2
+Character Symmetry Operations : [ E, S4, sigma ]
+Character Table :
+    A1 : [ 1.000000 ,  1.000000 ,  1.000000 ]
+    A2 : [ 1.000000 ,  1.000000 , -1.000000 ]
+    B1 : [ 1.000000 , -1.000000 , -1.000000 ]
+    B2 : [ 1.000000 , -1.000000 ,  1.000000 ]
+    E  : [ 2.000000 ,  0.000000 ,  0.000000 ]
+...

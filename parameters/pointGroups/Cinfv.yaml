@@ -1,0 +1,18 @@
+# . Point group Cinfv.
+---
+# . !PointGroup
+Label : Cinfv
+Symmetry Operations :
+    CInfinity :  1
+    E         :  1
+    sigma     :  1
+CInfinity Rotations : [ C6, C7 ]
+Character Symmetry Operations : [ E, C7, C6, sigma ]
+Character Table :
+    Del  : [ 2.000000 , 2*cos(4*pi/7) , -1.000000 ,  0.000000 ]
+    Gam  : [ 2.000000 , 2*cos(8*pi/7) , -1.000000 ,  0.000000 ]
+    Phi  : [ 2.000000 , 2*cos(6*pi/7) , -2.000000 ,  0.000000 ]
+    Pi   : [ 2.000000 , 2*cos(2*pi/7) ,  1.000000 ,  0.000000 ]
+    Sig+ : [ 1.000000 ,      1.000000 ,  1.000000 ,  1.000000 ]
+    Sig- : [ 1.000000 ,      1.000000 ,  1.000000 , -1.000000 ]
+...

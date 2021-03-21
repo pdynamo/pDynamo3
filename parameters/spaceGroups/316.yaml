@@ -1,0 +1,28 @@
+# . Space group Cmma.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -C 2b 2
+Hermann-Mauguin    : Cmma
+Schoenflies        : D2h^21
+Space Group Number : 67
+Space Group Symbol : 67
+Setting            : 316
+Transformations :
+    - (x,y,z)
+    - (-x,-y+1/2,z)
+    - (-x,y+1/2,-z)
+    - (x,-y,-z)
+    - (-x,-y,-z)
+    - (x,y+1/2,-z)
+    - (x,-y+1/2,z)
+    - (-x,y,z)
+    - (x+1/2,y+1/2,z)
+    - (-x+1/2,-y,z)
+    - (-x+1/2,y,-z)
+    - (x+1/2,-y+1/2,-z)
+    - (-x+1/2,-y+1/2,-z)
+    - (x+1/2,y,-z)
+    - (x+1/2,-y,z)
+    - (-x+1/2,y+1/2,z)
+...

@@ -1,0 +1,36 @@
+# . Space group I23.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : I 2 2 3
+Hermann-Mauguin    : I23
+Schoenflies        : T^3
+Space Group Number : 197
+Space Group Symbol : 197
+Setting            : 491
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (z,x,y)
+    - (z,-x,-y)
+    - (-z,-x,y)
+    - (-z,x,-y)
+    - (y,z,x)
+    - (-y,z,-x)
+    - (y,-z,-x)
+    - (-y,-z,x)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (z+1/2,x+1/2,y+1/2)
+    - (z+1/2,-x+1/2,-y+1/2)
+    - (-z+1/2,-x+1/2,y+1/2)
+    - (-z+1/2,x+1/2,-y+1/2)
+    - (y+1/2,z+1/2,x+1/2)
+    - (-y+1/2,z+1/2,-x+1/2)
+    - (y+1/2,-z+1/2,-x+1/2)
+    - (-y+1/2,-z+1/2,x+1/2)
+...

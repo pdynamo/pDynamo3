@@ -1,0 +1,14 @@
+# . Space group P2111.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : P 2xa
+Hermann-Mauguin    : P2111
+Schoenflies        : C2^2
+Space Group Number : 4
+Space Group Symbol : 4:a
+Setting            : 8
+Transformations :
+    - (x,y,z)
+    - (x+1/2,-y,-z)
+...

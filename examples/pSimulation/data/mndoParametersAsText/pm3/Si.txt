@@ -1,0 +1,49 @@
+# . Text parameter file for the element Si.
+
+Si   atomicNumber                          14
+Si   iii                                    3
+Si   iiid                                   3
+Si   ir016                                  0
+Si   ir066                                  0
+Si   ir244                                  0
+Si   ir266                                  0
+Si   ir466                                  0
+Si   qnd                                    0
+Si   qnp                                    3
+Si   qns                                    3
+Si   ad                     0.306064968088540  atomic
+Si   alp                    2.135809000000000  A^-1
+Si   am                     0.185481051286793  atomic
+Si   aq                     0.487733664508886  atomic
+Si   betad                  0.000000000000000  eV
+Si   betap                 -3.933148000000000  eV
+Si   betas                 -2.862145000000000  eV
+Si   dd                     1.314455047948946  atomic
+Si   eheat                108.390000000000001  kcal/mole
+Si   eisol                -67.788213999999996  eV
+Si   f0sd                   0.000000000000000  eV
+Si   g2sd                   0.000000000000000  eV
+Si   gp2                    5.161297000000000  eV
+Si   gphot                  1.000000000000000  dimensionless
+Si   gpp                    6.759367000000000  eV
+Si   gsp                    5.949057000000000  eV
+Si   gss                    5.047196000000000  eV
+Si   hsp                    0.919832000000000  eV
+Si   pcore                  0.000000000000000  atomic
+Si   qq                     1.274339612476963  atomic
+Si   udd                    0.000000000000000  eV
+Si   upp                  -22.813635000000001  eV
+Si   uss                  -26.763483000000001  eV
+Si   zcore                  4.000000000000000  atomic
+Si   zdn                    0.000000000000000  atomic
+Si   zetad                  0.000000000000000  atomic
+Si   zetap                  1.313088000000000  atomic
+Si   zetas                  1.635075000000000  atomic
+Si   zpn                    0.000000000000000  atomic
+Si   zsn                    0.000000000000000  atomic
+Si   fn10                  -0.390600000000000  A_eV
+Si   fn20                   6.000054000000000  A^-2
+Si   fn30                   0.632262000000000  A
+Si   fn11                   0.057259000000000  A_eV
+Si   fn21                   6.007183000000000  A^-2
+Si   fn31                   2.019987000000000  A

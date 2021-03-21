@@ -1,0 +1,19 @@
+---
+# . !HarmonicBondParameterContainer
+Analytic Form:
+    Equation: k * ( b - b0 )**2
+    Symbols:
+        b  : Bond Length
+        b0 : Equilibrium Value 
+        k  : Force Constant
+Label: Protein
+Units:
+    Equilibrium Value : Angstroms
+    Force Constant    : kJ/mol/Angstroms**2
+Parameter Fields:
+    - Atom Type 1
+    - Atom Type 2
+    - Equilibrium Value
+    - Force Constant
+Parameter Values:
+...

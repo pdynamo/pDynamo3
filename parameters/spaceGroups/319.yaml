@@ -1,0 +1,28 @@
+# . Space group Acmm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -A 2 2c
+Hermann-Mauguin    : Acmm
+Schoenflies        : D2h^21
+Space Group Number : 67
+Space Group Symbol : 67:-cba
+Setting            : 319
+Transformations :
+    - (x,y,z)
+    - (x,-y+1/2,-z)
+    - (-x,y+1/2,-z)
+    - (-x,-y,z)
+    - (-x,-y,-z)
+    - (-x,y+1/2,z)
+    - (x,-y+1/2,z)
+    - (x,y,-z)
+    - (x,y+1/2,z+1/2)
+    - (x,-y,-z+1/2)
+    - (-x,y,-z+1/2)
+    - (-x,-y+1/2,z+1/2)
+    - (-x,-y+1/2,-z+1/2)
+    - (-x,y,z+1/2)
+    - (x,-y,z+1/2)
+    - (x,y+1/2,-z+1/2)
+...

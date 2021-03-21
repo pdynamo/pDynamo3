@@ -1,0 +1,28 @@
+# . Space group P4/nbm:2.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : -P 4a 2b
+Hermann-Mauguin    : P4/nbm:2
+Schoenflies        : D4h^3
+Space Group Number : 125
+Space Group Symbol : 125:2
+Setting            : 403
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y+1/2,z)
+    - (-y+1/2,x,z)
+    - (y,-x+1/2,z)
+    - (-x+1/2,y,-z)
+    - (x,-y+1/2,-z)
+    - (y,x,-z)
+    - (-y+1/2,-x+1/2,-z)
+    - (-x,-y,-z)
+    - (x+1/2,y+1/2,-z)
+    - (y+1/2,-x,-z)
+    - (-y,x+1/2,-z)
+    - (x+1/2,-y,z)
+    - (-x,y+1/2,z)
+    - (-y,-x,z)
+    - (y+1/2,x+1/2,z)
+...

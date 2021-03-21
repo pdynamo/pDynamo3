@@ -1,0 +1,20 @@
+# . Space group A2mm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : A -2 2
+Hermann-Mauguin    : A2mm
+Schoenflies        : C2v^11
+Space Group Number : 35
+Space Group Symbol : 35:cab
+Setting            : 174
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x,y,-z)
+    - (x,-y,z)
+    - (x,y+1/2,z+1/2)
+    - (x,-y+1/2,-z+1/2)
+    - (x,y+1/2,-z+1/2)
+    - (x,-y+1/2,z+1/2)
+...

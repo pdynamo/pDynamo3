@@ -1,0 +1,49 @@
+# . Text parameter file for the element In.
+
+In   atomicNumber                          49
+In   iii                                    5
+In   iiid                                   5
+In   ir016                                  0
+In   ir066                                  0
+In   ir244                                  0
+In   ir266                                  0
+In   ir466                                  0
+In   qnd                                    0
+In   qnp                                    5
+In   qns                                    5
+In   ad                     0.453253349470209  atomic
+In   alp                    1.418385000000000  A^-1
+In   am                     0.240888157123243  atomic
+In   aq                     0.368973800584367  atomic
+In   betad                  0.000000000000000  eV
+In   betap                 -1.828908000000000  eV
+In   betas                 -2.993319000000000  eV
+In   dd                     1.576624078693866  atomic
+In   eheat                 58.000000000000000  kcal/mole
+In   eisol                -51.975047000000004  eV
+In   f0sd                   0.000000000000000  eV
+In   g2sd                   0.000000000000000  eV
+In   gp2                    4.984211000000000  eV
+In   gphot                  1.000000000000000  dimensionless
+In   gpp                    6.299269000000000  eV
+In   gsp                    8.229873000000000  eV
+In   gss                    6.554900000000000  eV
+In   hsp                    2.631461000000000  eV
+In   pcore                  0.000000000000000  atomic
+In   qq                     1.777456336342772  atomic
+In   udd                    0.000000000000000  eV
+In   upp                  -20.005821999999998  eV
+In   uss                  -26.176205000000000  eV
+In   zcore                  3.000000000000000  atomic
+In   zdn                    0.000000000000000  atomic
+In   zetad                  0.000000000000000  atomic
+In   zetap                  1.445350000000000  atomic
+In   zetas                  2.016116000000000  atomic
+In   zpn                    0.000000000000000  atomic
+In   zsn                    0.000000000000000  atomic
+In   fn10                  -0.343138000000000  A_eV
+In   fn20                   1.994034000000000  A^-2
+In   fn30                   1.625516000000000  A
+In   fn11                  -0.109532000000000  A_eV
+In   fn21                   5.683217000000000  A^-2
+In   fn31                   2.867009000000000  A

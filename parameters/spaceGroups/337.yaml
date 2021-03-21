@@ -1,0 +1,28 @@
+# . Space group Immm.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -I 2 2
+Hermann-Mauguin    : Immm
+Schoenflies        : D2h^25
+Space Group Number : 71
+Space Group Symbol : 71
+Setting            : 337
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (-x,-y,-z)
+    - (x,y,-z)
+    - (x,-y,z)
+    - (-x,y,z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x+1/2,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+...

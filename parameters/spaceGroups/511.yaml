@@ -1,0 +1,36 @@
+# . Space group P-43m.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : P -4 2 3
+Hermann-Mauguin    : P-43m
+Schoenflies        : Td^1
+Space Group Number : 215
+Space Group Symbol : 215
+Setting            : 511
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (-x,y,-z)
+    - (x,-y,-z)
+    - (z,x,y)
+    - (z,-x,-y)
+    - (-z,-x,y)
+    - (-z,x,-y)
+    - (y,z,x)
+    - (-y,z,-x)
+    - (y,-z,-x)
+    - (-y,-z,x)
+    - (y,x,z)
+    - (-y,-x,z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (x,z,y)
+    - (-x,z,-y)
+    - (-x,-z,y)
+    - (x,-z,-y)
+    - (z,y,x)
+    - (z,-y,-x)
+    - (-z,y,-x)
+    - (-z,-y,x)
+...

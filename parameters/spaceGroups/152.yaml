@@ -1,0 +1,16 @@
+# . Space group P2an.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : P -2ab 2
+Hermann-Mauguin    : P2an
+Schoenflies        : C2v^6
+Space Group Number : 30
+Space Group Symbol : 30:-cba
+Setting            : 152
+Transformations :
+    - (x,y,z)
+    - (x,-y,-z)
+    - (x+1/2,-y+1/2,z)
+    - (x+1/2,y+1/2,-z)
+...

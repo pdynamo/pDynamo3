@@ -1,0 +1,20 @@
+# . Space group P-42c.
+---
+# . !SpaceGroup
+Crystal System     : Tetragonal
+Hall               : P -4 2c
+Hermann-Mauguin    : P-42c
+Schoenflies        : D2d^2
+Space Group Number : 112
+Space Group Symbol : 112
+Setting            : 389
+Transformations :
+    - (x,y,z)
+    - (-x,-y,z)
+    - (y,-x,-z)
+    - (-y,x,-z)
+    - (-x,y,-z+1/2)
+    - (x,-y,-z+1/2)
+    - (-y,-x,z+1/2)
+    - (y,x,z+1/2)
+...

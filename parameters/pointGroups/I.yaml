@@ -1,0 +1,17 @@
+# . Point group I.
+---
+# . !PointGroup
+Label : I
+Symmetry Operations :
+    C2 : 15
+    C3 : 10
+    C5 :  6
+    E  :  1
+Character Symmetry Operations : [ E, C2, C5 ]
+Character Table :
+    A  : [ 1.000000 ,  1.000000 ,       1.000000 ]
+    G  : [ 4.000000 ,  0.000000 ,      -1.000000 ]
+    H  : [ 5.000000 ,  1.000000 ,       0.000000 ]
+    T1 : [ 3.000000 , -1.000000 , -2*cos(4*pi/5) ]
+    T2 : [ 3.000000 , -1.000000 , -2*cos(2*pi/5) ]
+...

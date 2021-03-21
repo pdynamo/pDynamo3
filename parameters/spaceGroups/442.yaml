@@ -1,0 +1,18 @@
+# . Space group P3212.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : P 32 2c (0 0 -1)
+Hermann-Mauguin    : P3212
+Schoenflies        : D3^5
+Space Group Number : 153
+Space Group Symbol : 153
+Setting            : 442
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z+2/3)
+    - (-x+y,-x,z+1/3)
+    - (-y,-x,-z+1/3)
+    - (-x+y,y,-z+2/3)
+    - (x,x-y,-z)
+...

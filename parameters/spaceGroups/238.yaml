@@ -1,0 +1,20 @@
+# . Space group Pcna:2.
+---
+# . !SpaceGroup
+Crystal System     : Orthorhombic
+Hall               : -P 2a 2c
+Hermann-Mauguin    : Pcna:2
+Schoenflies        : D2h^4
+Space Group Number : 50
+Space Group Symbol : 50:2bca
+Setting            : 238
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,y,-z+1/2)
+    - (x,-y,-z+1/2)
+    - (-x+1/2,-y,z)
+    - (-x,-y,-z)
+    - (x+1/2,-y,z+1/2)
+    - (-x,y,z+1/2)
+    - (x+1/2,y,-z)
+...

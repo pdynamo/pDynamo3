@@ -1,0 +1,20 @@
+# . Space group B2/b11.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : -B 2xb
+Hermann-Mauguin    : B2/b11
+Schoenflies        : C2h^6
+Space Group Number : 15
+Space Group Symbol : 15:a1
+Setting            : 102
+Transformations :
+    - (x,y,z)
+    - (x,-y+1/2,-z)
+    - (-x,-y,-z)
+    - (-x,y+1/2,z)
+    - (x+1/2,y,z+1/2)
+    - (x+1/2,-y+1/2,-z+1/2)
+    - (-x+1/2,-y,-z+1/2)
+    - (-x+1/2,y+1/2,z+1/2)
+...

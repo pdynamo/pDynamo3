@@ -1,0 +1,14 @@
+# . Point group C7.
+---
+# . !PointGroup
+Label : C7
+Symmetry Operations :
+    C7 :  1
+    E  :  1
+Character Symmetry Operations : [ E, C7 ]
+Character Table :
+    A  : [ 1.000000 ,      1.000000 ]
+    E1 : [ 2.000000 , 2*cos(2*pi/7) ]
+    E2 : [ 2.000000 , 2*cos(4*pi/7) ]
+    E3 : [ 2.000000 , 2*cos(6*pi/7) ]
+...

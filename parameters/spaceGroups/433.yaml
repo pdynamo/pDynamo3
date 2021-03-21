@@ -1,0 +1,21 @@
+# . Space group R3:H.
+---
+# . !SpaceGroup
+Crystal System     : Trigonal
+Hall               : R 3
+Hermann-Mauguin    : R3:H
+Schoenflies        : C3^4
+Space Group Number : 146
+Space Group Symbol : 146:H
+Setting            : 433
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (x+2/3,y+1/3,z+1/3)
+    - (-y+2/3,x-y+1/3,z+1/3)
+    - (-x+y+2/3,-x+1/3,z+1/3)
+    - (x+1/3,y+2/3,z+2/3)
+    - (-y+1/3,x-y+2/3,z+2/3)
+    - (-x+y+1/3,-x+2/3,z+2/3)
+...

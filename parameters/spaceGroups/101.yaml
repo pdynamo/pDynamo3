@@ -1,0 +1,20 @@
+# . Space group I112/a.
+---
+# . !SpaceGroup
+Crystal System     : Monoclinic
+Hall               : -I 2a
+Hermann-Mauguin    : I112/a
+Schoenflies        : C2h^6
+Space Group Number : 15
+Space Group Symbol : 15:-c3
+Setting            : 101
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y,z)
+    - (-x,-y,-z)
+    - (x+1/2,y,-z)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x,-y+1/2,z+1/2)
+    - (-x+1/2,-y+1/2,-z+1/2)
+    - (x,y+1/2,-z+1/2)
+...

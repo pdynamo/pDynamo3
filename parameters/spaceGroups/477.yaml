@@ -1,0 +1,24 @@
+# . Space group P6mm.
+---
+# . !SpaceGroup
+Crystal System     : Hexagonal
+Hall               : P 6 -2
+Hermann-Mauguin    : P6mm
+Schoenflies        : C6v^1
+Space Group Number : 183
+Space Group Symbol : 183
+Setting            : 477
+Transformations :
+    - (x,y,z)
+    - (-y,x-y,z)
+    - (-x+y,-x,z)
+    - (-x,-y,z)
+    - (y,-x+y,z)
+    - (x-y,x,z)
+    - (-y,-x,z)
+    - (-x+y,y,z)
+    - (x,x-y,z)
+    - (y,x,z)
+    - (x-y,-y,z)
+    - (-x,-x+y,z)
+...

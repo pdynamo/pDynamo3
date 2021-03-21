@@ -1,0 +1,7 @@
+??  ??  C   O     23    0.00000    21.00000    0.00000    0.00000     OPLS index 160 + AMBER 4
+CA  CA  C   OH    23    0.00000    21.00000    0.00000    0.00000     AMBER 18
+CT  O2  C   O2    23    0.00000    21.00000    0.00000    0.00000     AMBER 3
+??  ??  C?  ??    23    0.00000     2.20000    0.00000    0.00000     OPLS index 162 + AMBER 5/6/7/19/20/26/29. Designed for CA but also covers CC/CK/CQ/CR/CV/CW/C* - AMBER 8/11/12/13/14/25/27/28/30.
+??  N2  CA  N2    23    0.00000    21.00000    0.00000    0.00000     AMBER 2 - maybe needs checking as OPLS gives 2.2.
+??  ??  CM  ??    23    0.00000    30.00000    0.00000    0.00000     OPLS index 221 - AMBER values are all 2.2 (9/10/22/24)
+??  ??  N?  ??    23    0.00000     2.00000    0.00000    0.00000     OPLS index 161 + AMBER 1/15. Designed for N but also covers NA/N2/N* - AMBER 16/17/21/23.

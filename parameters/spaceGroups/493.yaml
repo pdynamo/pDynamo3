@@ -1,0 +1,36 @@
+# . Space group I213.
+---
+# . !SpaceGroup
+Crystal System     : Cubic
+Hall               : I 2b 2c 3
+Hermann-Mauguin    : I213
+Schoenflies        : T^5
+Space Group Number : 199
+Space Group Symbol : 199
+Setting            : 493
+Transformations :
+    - (x,y,z)
+    - (-x+1/2,-y,z+1/2)
+    - (-x,y+1/2,-z+1/2)
+    - (x+1/2,-y+1/2,-z)
+    - (z,x,y)
+    - (z+1/2,-x+1/2,-y)
+    - (-z+1/2,-x,y+1/2)
+    - (-z,x+1/2,-y+1/2)
+    - (y,z,x)
+    - (-y,z+1/2,-x+1/2)
+    - (y+1/2,-z+1/2,-x)
+    - (-y+1/2,-z,x+1/2)
+    - (x+1/2,y+1/2,z+1/2)
+    - (-x,-y+1/2,z)
+    - (-x+1/2,y,-z)
+    - (x,-y,-z+1/2)
+    - (z+1/2,x+1/2,y+1/2)
+    - (z,-x,-y+1/2)
+    - (-z,-x+1/2,y)
+    - (-z+1/2,x,-y)
+    - (y+1/2,z+1/2,x+1/2)
+    - (-y+1/2,z,-x)
+    - (y,-z,-x+1/2)
+    - (-y,-z+1/2,x)
+...

@@ -78,10 +78,14 @@ The pDynamo3 repository includes third-party extension packages in the ```addOns
 Users should refer to the web pages of these packages for full details about their use.
 
 In addition, several optional modules and add-ons in pDynamo3 employ third-party programs which need to be installed separately if they are to be used. They include the ```pcetk```
-package which requires [extended-MEAD](http://www.bisb.uni-bayreuth.de/index.php?page=downloads), and the QC modules, ```QCModelDFTB```, ```QCModelORCA``` and ```QCModelPySCF```,
-which need  [DFTB+](https://dftbplus.org/), [ORCA](https://orcaforum.kofo.mpg.de/app.php/portal) and [pyscf](https://github.com/pyscf/pyscf), respectively. In general, each of these
-programs will need to have an associated environment variable defined that points to its executable or ```bin``` directory. See the shell scripts generated during pDynamo3's
-installation for examples.
+package which requires [extended-MEAD](http://www.bisb.uni-bayreuth.de/index.php?page=downloads), and the QC modules, ```QCModelDFTB```, ```QCModelORCA``` and ```QCModelPySCF```, which
+need  [DFTB+](https://dftbplus.org/), [ORCA](https://orcaforum.kofo.mpg.de/app.php/portal) and [PySCF](https://github.com/pyscf/pyscf), respectively. Each of these programs also needs
+an associated environment variable to be defined if they are to work with pDynamo3. Currently these extra variables are  ```PDYNAMO3_DFTBCOMMAND``` and ```PDYNAMO3_ORCACOMMAND``` which
+indicate where DFTB+'s and ORCA's executables are located, ```PDYNAMO3_MEADPATH``` which points to extended-MEAD's ```bin``` directory, and ```PDYNAMO3_PYSCFPATH``` which is the path
+to PySCF and which should be added to ```PYTHONPATH```. Using cshell again as example, this can be done as follows: 
+
+    # . The python path with PySCF added.
+    setenv PYTHONPATH .:$PDYNAMO3_HOME/:$PDYNAMO3_PYSCFPATH/
 
 ## Further information
-Please see the [pDynamo web page](https://sites.google.com/site/pdynamomodeling/home) for more detailed instructions and examples of use.
+Please see the [pDynamo website](https://sites.google.com/site/pdynamomodeling/home) for more detailed instructions and examples of use.

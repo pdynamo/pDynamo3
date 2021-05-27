@@ -36,7 +36,7 @@ class QCMMElectrostaticModelDFTB ( QCMMElectrostaticModel ):
     def QCMMPotentials ( self, target ):
         """Write MM data to an external point-charge file."""
         # . X Y Z Q with coordinates in Angstroms.
-        outPath = target.qcModel.paths.get ( "PointCharge", None )
+        outPath = target.qcState.paths.get ( "PointCharge", None )
         if outPath is not None:
             state         = getattr ( target, self.__class__._stateName )
             chargesB      = state.bpCharges

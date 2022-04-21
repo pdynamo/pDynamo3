@@ -43,45 +43,45 @@ def JaguarBondOrders ( inFile, outFile, bondOrdertolerance = _DEFAULTBONDORDERTO
     # . Input.
     atomicNumbersi = getattr ( inFile,  "atomicNumbers", None )
     coordinates3   = getattr ( inFile,  "coordinates3",  None )
-    orbitalsets    = getattr ( inFile,  "orbitalsets",   None )
+    orbitalSets    = getattr ( inFile,  "orbitalSets",   None )
 
     # . Output.
     atomicNumberso = getattr ( outFile, "atomicNumbers", None )
-    nfunctions     = getattr ( outFile, "nfunctions",    None )
+    nFunctions     = getattr ( outFile, "nFunctions",    None )
     overlap        = getattr ( outFile, "overlap",       None )
 
     # . Check for coordinates.
     if coordinates3 is None: raise ValueError ( "The coordinate data is missing from the input file." )
 
     # . Check the orbital data.
-    QOK = ( orbitalsets is not None ) and ( len ( orbitalsets ) > 0 )
+    QOK = ( orbitalSets is not None ) and ( len ( orbitalSets ) > 0 )
     if QOK:
-        if   ( len ( orbitalsets ) == 1 ) and ( ""      in orbitalsets )                               : spinDensitiesRestricted = True
-        elif ( len ( orbitalsets ) == 2 ) and ( "alpha" in orbitalsets ) and ( "beta" in orbitalsets ) : spinDensitiesRestricted = False
+        if   ( len ( orbitalSets ) == 1 ) and ( ""      in orbitalSets )                               : spinDensitiesRestricted = True
+        elif ( len ( orbitalSets ) == 2 ) and ( "alpha" in orbitalSets ) and ( "beta" in orbitalSets ) : spinDensitiesRestricted = False
         else: QOK = False
     if not QOK: raise ValueError ( "Invalid orbital data on input file." )
-    if spinDensitiesRestricted: nbasisi = inFile.orbitalsets[""]     [1]
-    else:                       nbasisi = inFile.orbitalsets["alpha"][1]
+    if spinDensitiesRestricted: nBasisi = inFile.orbitalSets[""]     [1]
+    else:                       nBasisi = inFile.orbitalSets["alpha"][1]
 
     # . Check the overlap.
     if ( overlap is None ): raise ValueError ( "The overlap matrix is missing from the output file." )
-    nbasiso = overlap.Dimension ( )
+    nBasiso = overlap.Dimension ( )
 
     # . Check the array giving the number of functions per atom.
-#    print nfunctions, len ( nfunctions ), len ( atomicNumberso ), sum ( nfunctions ), nbasiso
-    if ( nfunctions is None ) or ( len ( nfunctions ) != len ( atomicNumberso ) or ( sum ( nfunctions ) != nbasiso ) ): raise ValueError ( "Basis function data on the output file is missing or invalid." )
+#    print nFunctions, len ( nFunctions ), len ( atomicNumberso ), sum ( nFunctions ), nBasiso
+    if ( nFunctions is None ) or ( len ( nFunctions ) != len ( atomicNumberso ) or ( sum ( nFunctions ) != nBasiso ) ): raise ValueError ( "Basis function data on the output file is missing or invalid." )
 
     # . Create the function index array.
     findices = []
     first = 0
     last  = 0
-    for f in nfunctions:
+    for f in nFunctions:
         last  += f
         findices.append ( ( first, last ) )
         first += f
 
     # . Check for compatibility between the data.
-    QOK = ( atomicNumbersi is not None ) and ( atomicNumberso is not None ) and ( len ( atomicNumbersi ) == len ( atomicNumberso ) ) and ( nbasisi == nbasiso )
+    QOK = ( atomicNumbersi is not None ) and ( atomicNumberso is not None ) and ( len ( atomicNumbersi ) == len ( atomicNumberso ) ) and ( nBasisi == nBasiso )
     if QOK:
         for ( i, j ) in zip ( atomicNumbersi, atomicNumberso ):
             if i != j:
@@ -96,8 +96,8 @@ def JaguarBondOrders ( inFile, outFile, bondOrdertolerance = _DEFAULTBONDORDERTO
     # . Get the densities multiplied by the overlap.
     ps = {}
     for key in keys:
-        p      = _MakeDensity ( orbitalsets[key] )
-        result = Array.WithExtents ( nbasisi, nbasisi )
+        p      = _MakeDensity ( orbitalSets[key] )
+        result = Array.WithExtents ( nBasisi, nBasisi )
         result.Set ( 999.0 )
         p.PostMultiply ( overlap, result )
         ps[key] = result
@@ -145,7 +145,7 @@ def JaguarBondOrders ( inFile, outFile, bondOrdertolerance = _DEFAULTBONDORDERTO
     # . Add in the core contributions to the Mulliken charges.
     for ( i, q ) in enumerate ( atomicNumbersi ): qmulliken[i] += float ( q )
     if outFile.QECP:
-        for ( i, q ) in enumerate ( outFile.ecpelectrons ): qmulliken[i] -= float ( q )
+        for ( i, q ) in enumerate ( outFile.ecpElectrons ): qmulliken[i] -= float ( q )
 
     # . Output the results.
     if LogFileActive ( log ):
@@ -239,13 +239,13 @@ def _MakeBondOrders ( ps1, ps2, findices ):
 
 def _MakeDensity ( orbitalset ):
     """Make a density."""
-    ( norbitals, nbasis, energies, occupancies, vectors ) = orbitalset
-    p = Array.WithExtent ( nbasis, storageType = StorageType.Symmetric )
+    ( norbitals, nBasis, energies, occupancies, vectors ) = orbitalset
+    p = Array.WithExtent ( nBasis, storageType = StorageType.Symmetric )
     p.Set ( 0.0 )
     for i in range ( norbitals ):
         o = occupancies[i]
         if math.fabs ( o ) > _OCCUPANCYTOLERANCE:
-            for m in range ( nbasis ):
+            for m in range ( nBasis ):
                 for n in range ( m + 1 ):
                     p[m,n] += o * vectors[m,i] * vectors[n,i]
     return p

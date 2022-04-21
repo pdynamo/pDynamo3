@@ -118,7 +118,7 @@ class CosineParameterContainer ( MMParameterContainer ):
                     if pairs is not None: key = newKey
                 # . Automatic generation.
                 if ( pairs is None ) and ( self.parameterFactory is not None ):
-                    pairs = self.parameterFactory ( typeLabels, indices, connectivity )
+                    ( pairs, key ) = self.parameterFactory ( typeLabels, indices, connectivity, key )
                 # . Still no parameters.
                 if pairs is None:
                     if self.useStrictAssignment:

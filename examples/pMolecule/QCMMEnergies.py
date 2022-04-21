@@ -2,40 +2,47 @@
 
 import math, os.path
 
-from Definitions        import _FullVerificationSummary                       , \
-                               outPath
-from pBabel             import ExportSystem
-from pCore              import Align                                          , \
-                               logFile                                        , \
-                               LogFileActive                                  , \
-                               TestDataSet                                    , \
-                               TestReal                                       , \
-                               TestScriptExit_Fail
-from pMolecule          import SystemGeometryObjectiveFunction
-from pMolecule.NBModel  import NBModelCutOff                                  , \
-                               NBModelFull                                    , \
-                               QCMMElectrostaticModelDensityCutOffMNDO        , \
-                               QCMMElectrostaticModelDensityFullGaussianBasis , \
-                               QCMMElectrostaticModelDensityFullMNDO          , \
-                               QCMMElectrostaticModelMultipoleCutOff          , \
-                               QCMMElectrostaticModelMultipoleFull            , \
-                               QCMMLennardJonesModelCutOff                    , \
-                               QCMMLennardJonesModelFull
-from pMolecule.QCModel  import DIISSCFConverger                               , \
-                               LoewdinMultipoleEvaluator                      , \
-                               MullikenMultipoleEvaluator                     , \
-                               OrthogonalizationType                          , \
-                               QCModelDFT                                     , \
-                               QCModelMNDO
-from pScientific.Arrays import ArrayPrint
-from pSimulation        import ConjugateGradientMinimize_SystemGeometry
-from QCMMTestSystems    import qcmmTestSystems
+from Definitions                     import _FullVerificationSummary                       , \
+                                            outPath
+from pBabel                          import ExportSystem
+from pCore                           import Align                                          , \
+                                            logFile                                        , \
+                                            LogFileActive                                  , \
+                                            TestDataSet                                    , \
+                                            TestReal                                       , \
+                                            TestScriptExit_Fail
+from pMolecule                       import SystemGeometryObjectiveFunction
+from pMolecule.NBModel               import NBModelCutOff                                  , \
+                                            NBModelFull                                    , \
+                                            QCMMElectrostaticModelDensityCutOffMNDO        , \
+                                            QCMMElectrostaticModelDensityFitFull           , \
+                                            QCMMElectrostaticModelDensityFullGaussianBasis , \
+                                            QCMMElectrostaticModelDensityFullMNDO          , \
+                                            QCMMElectrostaticModelMultipoleCutOff          , \
+                                            QCMMElectrostaticModelMultipoleFull            , \
+                                            QCMMLennardJonesModelCutOff                    , \
+                                            QCMMLennardJonesModelFull
+from pMolecule.QCModel               import DFTGridAccuracy                                , \
+                                            DFTGridIntegrator                              , \
+                                            DIISSCFConverger                               , \
+                                            LoewdinMultipoleEvaluator                      , \
+                                            MullikenMultipoleEvaluator                     , \
+                                            QCModelDFT                                     , \
+                                            QCModelMNDO
+from pMolecule.QCModel.GaussianBases import GaussianBasisOperator
+from pScientific.Arrays              import ArrayPrint                                     , \
+                                            ArrayPrint2D
+from pSimulation                     import ConjugateGradientMinimize_SystemGeometry
+from QCMMTestSystems                 import qcmmTestSystems
 
 #===================================================================================================================================
 # . Parameters for test.
 #===================================================================================================================================
 # . Models.
 _DensityModelDFTF  = QCMMElectrostaticModelDensityFullGaussianBasis.WithDefaults ( )
+_DensityModelFitA  = QCMMElectrostaticModelDensityFitFull.WithOptions            ( fitBasis = "def2-sv(p)-rifit", fitOperator = GaussianBasisOperator.AntiCoulomb )
+_DensityModelFitC  = QCMMElectrostaticModelDensityFitFull.WithOptions            ( fitBasis = "def2-sv(p)-rifit", fitOperator = GaussianBasisOperator.Coulomb     )
+_DensityModelFitO  = QCMMElectrostaticModelDensityFitFull.WithOptions            ( fitBasis = "def2-sv(p)-rifit", fitOperator = GaussianBasisOperator.Overlap     )
 _DensityModelMNDOC = QCMMElectrostaticModelDensityCutOffMNDO.WithDefaults        ( )
 _DensityModelMNDOF = QCMMElectrostaticModelDensityFullMNDO.WithDefaults          ( )
 _MultipoleModel0F  = QCMMElectrostaticModelMultipoleFull.WithDefaults            ( )
@@ -45,29 +52,38 @@ _NBModelC          = NBModelCutOff.WithDefaults ( )
 _NBModelF          = NBModelFull.WithDefaults   ( )
 _QCMMLJModelC      = QCMMLennardJonesModelCutOff.WithDefaults ( )
 _QCMMLJModelF      = QCMMLennardJonesModelFull.WithDefaults   ( )
-_QCModels          = ( ( "am1/densityFull"       , QCModelMNDO, { "hamiltonian" : "am1" }, _NBModelF, _QCMMLJModelF, _DensityModelMNDOF ) ,
-                       ( "am1/multipoleFull"     , QCModelMNDO, { "hamiltonian" : "am1" }, _NBModelF, _QCMMLJModelF, _MultipoleModel2F  ) ,
-                       ( "am1/densityCutOff"     , QCModelMNDO, { "hamiltonian" : "am1" }, _NBModelC, _QCMMLJModelC, _DensityModelMNDOC ) ,
-                       ( "am1/multipoleCutOff"   , QCModelMNDO, { "hamiltonian" : "am1" }, _NBModelC, _QCMMLJModelC, _MultipoleModel2C  ) ,
-                       ( "pm6/densityFull"       , QCModelMNDO, { "hamiltonian" : "pm6" }, _NBModelF, _QCMMLJModelF, _DensityModelMNDOF ) ,
-                       ( "pm6/multipoleFull"     , QCModelMNDO, { "hamiltonian" : "pm6" }, _NBModelF, _QCMMLJModelF, _MultipoleModel2F  ) ,
-                       ( "pm6/densityCutOff"     , QCModelMNDO, { "hamiltonian" : "pm6" }, _NBModelC, _QCMMLJModelC, _DensityModelMNDOC ) ,
-                       ( "pm6/multipoleCutOff"   , QCModelMNDO, { "hamiltonian" : "pm6" }, _NBModelC, _QCMMLJModelC, _MultipoleModel2C  ) ,
-                       ( "hf/density"            , QCModelDFT , { "functional" : "HF",                                                    "orbitalBasis" : "svp" }, _NBModelF, _QCMMLJModelF, _DensityModelDFTF ) ,
-                       ( "hf/multipole/loewdin"  , QCModelDFT , { "functional" : "HF", "multipoleEvaluator" : LoewdinMultipoleEvaluator , "orbitalBasis" : "svp" }, _NBModelF, _QCMMLJModelF, _MultipoleModel0F ) ,
-                       ( "hf/multipole/mulliken" , QCModelDFT , { "functional" : "HF", "multipoleEvaluator" : MullikenMultipoleEvaluator, "orbitalBasis" : "svp" }, _NBModelF, _QCMMLJModelF, _MultipoleModel0F ) )
+
+_QCModels = ( ( "am1/densityFull"       , QCModelMNDO, { "hamiltonian" : "am1" }, _NBModelF, _QCMMLJModelF, _DensityModelMNDOF ) ,
+              ( "am1/multipoleFull"     , QCModelMNDO, { "hamiltonian" : "am1" }, _NBModelF, _QCMMLJModelF, _MultipoleModel2F  ) ,
+              ( "am1/densityCutOff"     , QCModelMNDO, { "hamiltonian" : "am1" }, _NBModelC, _QCMMLJModelC, _DensityModelMNDOC ) ,
+              ( "am1/multipoleCutOff"   , QCModelMNDO, { "hamiltonian" : "am1" }, _NBModelC, _QCMMLJModelC, _MultipoleModel2C  ) ,
+              ( "pm6/densityFull"       , QCModelMNDO, { "hamiltonian" : "pm6" }, _NBModelF, _QCMMLJModelF, _DensityModelMNDOF ) ,
+              ( "pm6/multipoleFull"     , QCModelMNDO, { "hamiltonian" : "pm6" }, _NBModelF, _QCMMLJModelF, _MultipoleModel2F  ) ,
+              ( "pm6/densityCutOff"     , QCModelMNDO, { "hamiltonian" : "pm6" }, _NBModelC, _QCMMLJModelC, _DensityModelMNDOC ) ,
+              ( "pm6/multipoleCutOff"   , QCModelMNDO, { "hamiltonian" : "pm6" }, _NBModelC, _QCMMLJModelC, _MultipoleModel2C  ) ,
+              ( "hf/density"            , QCModelDFT , { "functional" : "HF", "orbitalBasis" : "def2-sv(p)" }, _NBModelF, _QCMMLJModelF, _DensityModelDFTF ) ,
+              ( "hf/fitC"               , QCModelDFT , { "functional" : "HF", "orbitalBasis" : "def2-sv(p)" }, _NBModelF, _QCMMLJModelF, _DensityModelFitC ) ,
+              ( "hf/fitO"               , QCModelDFT , { "functional" : "HF", "orbitalBasis" : "def2-sv(p)" }, _NBModelF, _QCMMLJModelF, _DensityModelFitO ) ,
+              ( "hf/multipole/loewdin"  , QCModelDFT , { "functional" : "HF", "multipoleEvaluator" : LoewdinMultipoleEvaluator  , "orbitalBasis" : "def2-sv(p)" }, _NBModelF, _QCMMLJModelF, _MultipoleModel0F ) ,
+              ( "hf/multipole/mulliken" , QCModelDFT , { "functional" : "HF", "multipoleEvaluator" : MullikenMultipoleEvaluator , "orbitalBasis" : "def2-sv(p)" }, _NBModelF, _QCMMLJModelF, _MultipoleModel0F ) ,
+              ( "blypA/density"         , QCModelDFT , { "fitBasis" : "dgauss-a1-dftjfit", "fitOperator" : GaussianBasisOperator.AntiCoulomb, "functional" : "blyp", "orbitalBasis" : "dgauss-dzvp" }, _NBModelF, _QCMMLJModelF, _DensityModelDFTF ) ,
+              ( "blypA/fitA"            , QCModelDFT , { "fitBasis" : "dgauss-a1-dftjfit", "fitOperator" : GaussianBasisOperator.AntiCoulomb, "functional" : "blyp", "orbitalBasis" : "dgauss-dzvp" }, _NBModelF, _QCMMLJModelF, _DensityModelFitA ) ,
+              ( "blypC/density"         , QCModelDFT , { "fitBasis" : "dgauss-a1-dftjfit", "fitOperator" : GaussianBasisOperator.Coulomb    , "functional" : "blyp", "orbitalBasis" : "dgauss-dzvp" }, _NBModelF, _QCMMLJModelF, _DensityModelDFTF ) ,
+              ( "blypC/fitC"            , QCModelDFT , { "fitBasis" : "dgauss-a1-dftjfit", "fitOperator" : GaussianBasisOperator.Coulomb    , "functional" : "blyp", "orbitalBasis" : "dgauss-dzvp" }, _NBModelF, _QCMMLJModelF, _DensityModelFitC ) ,
+              ( "blypO/density"         , QCModelDFT , { "fitBasis" : "dgauss-a1-dftjfit", "fitOperator" : GaussianBasisOperator.Overlap    , "functional" : "blyp", "orbitalBasis" : "dgauss-dzvp" }, _NBModelF, _QCMMLJModelF, _DensityModelDFTF ) ,
+              ( "blypO/fitO"            , QCModelDFT , { "fitBasis" : "dgauss-a1-dftjfit", "fitOperator" : GaussianBasisOperator.Overlap    , "functional" : "blyp", "orbitalBasis" : "dgauss-dzvp" }, _NBModelF, _QCMMLJModelF, _DensityModelFitO ) )
 
 # . Options.
-_DoMinimization = True
-_MaximumAtomsG  = 10
+_DoMinimization = False
+_MaximumAtomsG  =  4
 _MaximumAtomsM  = 10
-_TestGradients  = True
+_MaximumGTests  =  5
+_TestGradients  = False
 
 # . Systems.
 _QCMMTestSystems = qcmmTestSystems
 
 # . Tolerances.
-_EnergyTolerance   = 0.1        # . Unused.
 _GradientTolerance = 1.0e-03
 
 # . Paths.
@@ -84,6 +100,7 @@ logFile.Header ( )
 # . Initialization.
 results      = {}
 numberErrors = 0
+numberGTests = 0
 qcLabels     = sorted ( [ label for ( label, _, _, _, _, _ ) in _QCModels ] )
 systemLabels = sorted ( _QCMMTestSystems.keys ( ) )
 if _TestGradients: maximumGradientDeviation = 0.0
@@ -103,8 +120,9 @@ for ( qcLabel, qcModelClass, qcModelOptions, nbModel, qcmmLennardJonesModel, qcm
         # . Get the molecule.
         qcmmModels                  = { "qcmmElectrostatic" : qcmmElectrostaticModel ,
                                         "qcmmLennardJones"  : qcmmLennardJonesModel  }
-        qcModelOptions["converger"] = DIISSCFConverger.WithOptions ( densityTolerance = 1.0e-8, maximumIterations = 250 )
-        qcModel                     = qcModelClass.WithOptions     ( **qcModelOptions )
+        qcModelOptions["converger"] = DIISSCFConverger.WithOptions  ( densityTolerance = 1.0e-8, maximumIterations = 250 )
+        if "blyp" in qcLabel: qcModelOptions["gridIntegrator"] = DFTGridIntegrator.WithOptions ( accuracy = DFTGridAccuracy.Medium, inCore = True )
+        qcModel                     = qcModelClass.WithOptions ( **qcModelOptions )
         molecule                    = testSystem.GetSystem ( log = None, nbModel = nbModel, qcModel = qcModel, qcmmModels = qcmmModels )
         molecule.Summary ( )
         # . Energy.
@@ -119,11 +137,12 @@ for ( qcLabel, qcModelClass, qcModelOptions, nbModel, qcmmLennardJonesModel, qcm
                 ArrayPrint ( spins, itemFormat = "{:.3f}", title = "Spin Densities" )
                 logFile.Paragraph ( "Total Spin Density = {:.3f}".format ( sum ( spins ) ) )
             # . Gradient testing.
-            if _TestGradients and ( len ( molecule.atoms ) < _MaximumAtomsG ):
+            if _TestGradients and ( len ( molecule.atoms ) < _MaximumAtomsG ) and ( numberGTests < _MaximumGTests ):
                 of = SystemGeometryObjectiveFunction.FromSystem ( molecule )
                 gradientDeviation         = of.TestGradients ( delta = 1.0e-04, tolerance = _GradientTolerance )
                 gradientDeviations[label] = gradientDeviation
                 maximumGradientDeviation  = max ( maximumGradientDeviation, gradientDeviation )
+                numberGTests += 1
             # . Minimization.
             if _DoMinimization and ( len ( molecule.atoms ) < _MaximumAtomsM ):
                 ConjugateGradientMinimize_SystemGeometry ( molecule                      ,
@@ -180,7 +199,7 @@ for qcLabel in qcLabels:
 table.Stop ( )
 # . Get the observed and reference data.
 observed      = {}
-referenceData = TestDataSet.WithOptions ( label = "MNDO QC/MM Energies" )
+referenceData = TestDataSet.WithOptions ( label = "QC/MM Energies" )
 if _TestGradients:
     observed["Gradient Error"] = maximumGradientDeviation
     referenceData.AddDatum ( TestReal.WithOptions ( label                  = "Gradient Error"   , 

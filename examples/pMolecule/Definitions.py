@@ -9,10 +9,10 @@ from pCore import TestScript_InputDataPath  , \
 _name = "pMolecule"
 
 # . Paths.
-dataPath          = TestScript_InputDataPath  ( _name )
-outPath           = TestScript_OutputDataPath ( _name )
-referenceDataPath = os.path.join ( dataPath, "reference" )
-structuresPath    = os.path.join ( os.getenv ( "PDYNAMO3_HOME" ), "structures" )
+dataPath       = TestScript_InputDataPath  ( _name )
+outPath        = TestScript_OutputDataPath ( _name )
+structuresPath = os.path.join ( os.getenv ( "PDYNAMO3_HOME" ), "structures" )
+yamlPath       = os.path.join ( dataPath, "yaml" )
 
 # . Other options.
 _FullVerificationSummary = False

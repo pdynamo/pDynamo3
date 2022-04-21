@@ -7,9 +7,12 @@
 # include <stdlib.h>
 # include <string.h>
 
+# include "GaussianBasisIntegrals_f1Xg1.h"
 # include "Memory.h"
 # include "MNDODefinitions.h"
 # include "MNDOParameters.h"
+# include "RealArray2D.h"
+# include "RealUtilities.h"
 # include "Units.h"
 
 /*----------------------------------------------------------------------------------------------------------------------------------
@@ -47,90 +50,91 @@ MNDOParameters *MNDOParameters_Allocate ( void )
     self->qnp            =  0 ;
     self->qns            =  0 ;
     /* . Derived quantities. */
-    self->nocteis      =    0    ;
-    self->octeiindices = NULL    ;
-    self->hpp          = 0.0e+00 ;
-    self->octeivalues  = NULL    ;
+    self->nocteis        =    0    ;
+    self->octeiindices   = NULL    ;
+    self->hpp            = 0.0e+00 ;
+    self->octeivalues    = NULL    ;
     /* . Input parameters. */
-    self->ad0        = 0.0e+00 ;
-    self->alp0       = 0.0e+00 ;
-    self->am0        = 0.0e+00 ;
-    self->aq0        = 0.0e+00 ;
-    self->betad0     = 0.0e+00 ;
-    self->betap0     = 0.0e+00 ;
-    self->betas0     = 0.0e+00 ;
-    self->dd0        = 0.0e+00 ;
-    self->eheat0     = 0.0e+00 ;
-    self->eisol0     = 0.0e+00 ;
-    self->f0sd0      = 0.0e+00 ;
-    self->gphot0     = 1.0e+00 ;
-    self->gpp0       = 0.0e+00 ;
-    self->gp20       = 0.0e+00 ;
-    self->gsp0       = 0.0e+00 ;
-    self->gss0       = 0.0e+00 ;
-    self->g2sd0      = 0.0e+00 ;
-    self->hsp0       = 0.0e+00 ;
-    self->pcore0     = 0.0e+00 ;
-    self->qq0        = 0.0e+00 ;
-    self->udd0       = 0.0e+00 ;
-    self->upp0       = 0.0e+00 ;
-    self->uss0       = 0.0e+00 ;
-    self->zcore0     = 0.0e+00 ;
-    self->zetad0     = 0.0e+00 ;
-    self->zetap0     = 0.0e+00 ;
-    self->zetas0     = 0.0e+00 ;
-    self->zdn0       = 0.0e+00 ;
-    self->zpn0       = 0.0e+00 ;
-    self->zsn0       = 0.0e+00 ;
-    self->beta0      = NULL ;
-    self->diatomica0 = NULL ;
-    self->diatomicx0 = NULL ;
-    self->fn10       = NULL ;
-    self->fn20       = NULL ;
-    self->fn30       = NULL ;
-    self->pddgc0     = NULL ;
-    self->pddge0     = NULL ;
-    self->uspd0      = NULL ;
+    self->ad0            = 0.0e+00 ;
+    self->alp0           = 0.0e+00 ;
+    self->am0            = 0.0e+00 ;
+    self->aq0            = 0.0e+00 ;
+    self->betad0         = 0.0e+00 ;
+    self->betap0         = 0.0e+00 ;
+    self->betas0         = 0.0e+00 ;
+    self->dd0            = 0.0e+00 ;
+    self->eheat0         = 0.0e+00 ;
+    self->eisol0         = 0.0e+00 ;
+    self->f0sd0          = 0.0e+00 ;
+    self->gphot0         = 1.0e+00 ;
+    self->gpp0           = 0.0e+00 ;
+    self->gp20           = 0.0e+00 ;
+    self->gsp0           = 0.0e+00 ;
+    self->gss0           = 0.0e+00 ;
+    self->g2sd0          = 0.0e+00 ;
+    self->hsp0           = 0.0e+00 ;
+    self->pcore0         = 0.0e+00 ;
+    self->qq0            = 0.0e+00 ;
+    self->udd0           = 0.0e+00 ;
+    self->upp0           = 0.0e+00 ;
+    self->uss0           = 0.0e+00 ;
+    self->zcore0         = 0.0e+00 ;
+    self->zetad0         = 0.0e+00 ;
+    self->zetap0         = 0.0e+00 ;
+    self->zetas0         = 0.0e+00 ;
+    self->zdn0           = 0.0e+00 ;
+    self->zpn0           = 0.0e+00 ;
+    self->zsn0           = 0.0e+00 ;
+    self->beta0          = NULL ;
+    self->diatomica0     = NULL ;
+    self->diatomicx0     = NULL ;
+    self->fn10           = NULL ;
+    self->fn20           = NULL ;
+    self->fn30           = NULL ;
+    self->pddgc0         = NULL ;
+    self->pddge0         = NULL ;
+    self->uspd0          = NULL ;
     /* . Internal parameters. */
-    self->ad        = 0.0e+00 ;
-    self->alp       = 0.0e+00 ;
-    self->am        = 0.0e+00 ;
-    self->aq        = 0.0e+00 ;
-    self->betad     = 0.0e+00 ;
-    self->betap     = 0.0e+00 ;
-    self->betas     = 0.0e+00 ;
-    self->dd        = 0.0e+00 ;
-    self->eheat     = 0.0e+00 ;
-    self->eisol     = 0.0e+00 ;
-    self->f0sd      = 0.0e+00 ;
-    self->gphot     = 1.0e+00 ;
-    self->gpp       = 0.0e+00 ;
-    self->gp2       = 0.0e+00 ;
-    self->gsp       = 0.0e+00 ;
-    self->gss       = 0.0e+00 ;
-    self->g2sd      = 0.0e+00 ;
-    self->hsp       = 0.0e+00 ;
-    self->pcore     = 0.0e+00 ;
-    self->qq        = 0.0e+00 ;
-    self->udd       = 0.0e+00 ;
-    self->upp       = 0.0e+00 ;
-    self->uss       = 0.0e+00 ;
-    self->zcore     = 0.0e+00 ;
-    self->zetad     = 0.0e+00 ;
-    self->zetap     = 0.0e+00 ;
-    self->zetas     = 0.0e+00 ;
-    self->zdn       = 0.0e+00 ;
-    self->zpn       = 0.0e+00 ;
-    self->zsn       = 0.0e+00 ;
-    self->beta      = NULL ;
-    self->diatomica = NULL ;
-    self->diatomicx = NULL ;
-    self->fn1       = NULL ;
-    self->fn2       = NULL ;
-    self->fn3       = NULL ;
-    self->pddgc     = NULL ;
-    self->pddge     = NULL ;
-    self->uspd      = NULL ;
+    self->ad             = 0.0e+00 ;
+    self->alp            = 0.0e+00 ;
+    self->am             = 0.0e+00 ;
+    self->aq             = 0.0e+00 ;
+    self->betad          = 0.0e+00 ;
+    self->betap          = 0.0e+00 ;
+    self->betas          = 0.0e+00 ;
+    self->dd             = 0.0e+00 ;
+    self->eheat          = 0.0e+00 ;
+    self->eisol          = 0.0e+00 ;
+    self->f0sd           = 0.0e+00 ;
+    self->gphot          = 1.0e+00 ;
+    self->gpp            = 0.0e+00 ;
+    self->gp2            = 0.0e+00 ;
+    self->gsp            = 0.0e+00 ;
+    self->gss            = 0.0e+00 ;
+    self->g2sd           = 0.0e+00 ;
+    self->hsp            = 0.0e+00 ;
+    self->pcore          = 0.0e+00 ;
+    self->qq             = 0.0e+00 ;
+    self->udd            = 0.0e+00 ;
+    self->upp            = 0.0e+00 ;
+    self->uss            = 0.0e+00 ;
+    self->zcore          = 0.0e+00 ;
+    self->zetad          = 0.0e+00 ;
+    self->zetap          = 0.0e+00 ;
+    self->zetas          = 0.0e+00 ;
+    self->zdn            = 0.0e+00 ;
+    self->zpn            = 0.0e+00 ;
+    self->zsn            = 0.0e+00 ;
+    self->beta           = NULL ;
+    self->diatomica      = NULL ;
+    self->diatomicx      = NULL ;
+    self->fn1            = NULL ;
+    self->fn2            = NULL ;
+    self->fn3            = NULL ;
+    self->normalization  = NULL ;
+    self->pddgc          = NULL ;
+    self->pddge          = NULL ;
+    self->uspd           = NULL ;
     return self ;
 }
 
@@ -649,16 +653,18 @@ MNDOParameters *MNDOParameters_Clone ( const MNDOParameters *self )
         }
         if ( new->norbitals > 0 )
         {
-            new->beta0 = Memory_AllocateArrayOfTypes ( new->norbitals, Real ) ;
-            new->uspd0 = Memory_AllocateArrayOfTypes ( new->norbitals, Real ) ;
-            new->beta  = Memory_AllocateArrayOfTypes ( new->norbitals, Real ) ;
-            new->uspd  = Memory_AllocateArrayOfTypes ( new->norbitals, Real ) ;
+            new->beta0         = Memory_AllocateArrayOfTypes ( new->norbitals, Real ) ;
+            new->uspd0         = Memory_AllocateArrayOfTypes ( new->norbitals, Real ) ;
+            new->beta          = Memory_AllocateArrayOfTypes ( new->norbitals, Real ) ;
+            new->normalization = Memory_AllocateArrayOfTypes ( new->norbitals, Real ) ;
+            new->uspd          = Memory_AllocateArrayOfTypes ( new->norbitals, Real ) ;
             for ( i = 0 ; i < new->norbitals ; i++ )
             {
-                new->beta0 [i] = self->beta0 [i] ;
-                new->uspd0 [i] = self->uspd0 [i] ;
-                new->beta  [i] = self->beta  [i] ;
-                new->uspd  [i] = self->uspd  [i] ;
+                new->beta0         [i] = self->beta0         [i] ;
+                new->uspd0         [i] = self->uspd0         [i] ;
+                new->beta          [i] = self->beta          [i] ;
+                new->normalization [i] = self->normalization [i] ;
+                new->uspd          [i] = self->uspd          [i] ;
             }
         }
         if ( new->nam1pm3g > 0 )
@@ -744,17 +750,64 @@ void MNDOParameters_DeallocateAtomicUnitArrays ( MNDOParameters *self )
 {
     if ( self != NULL )
     {
-        Memory_Deallocate ( self->beta      ) ;
-        Memory_Deallocate ( self->diatomica ) ;
-        Memory_Deallocate ( self->diatomicx ) ;
-        Memory_Deallocate ( self->fn1       ) ;
-        Memory_Deallocate ( self->fn2       ) ;
-        Memory_Deallocate ( self->fn3       ) ;
-        Memory_Deallocate ( self->pddgc     ) ;
-        Memory_Deallocate ( self->pddge     ) ;
-        Memory_Deallocate ( self->uspd      ) ;
+        Memory_Deallocate ( self->beta          ) ;
+        Memory_Deallocate ( self->diatomica     ) ;
+        Memory_Deallocate ( self->diatomicx     ) ;
+        Memory_Deallocate ( self->fn1           ) ;
+        Memory_Deallocate ( self->fn2           ) ;
+        Memory_Deallocate ( self->fn3           ) ;
+        Memory_Deallocate ( self->normalization ) ;
+        Memory_Deallocate ( self->pddgc         ) ;
+        Memory_Deallocate ( self->pddge         ) ;
+        Memory_Deallocate ( self->uspd          ) ;
     }
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------------
+! . Determine the normalization due to the basis.
+!---------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------
+! . Procedure:
+!   - fill the primitive CCBF for the basis ;
+!   - calculate the overlap ;
+!   - make sure it is diagonal ;
+!   - take the inverse square roots.
+!---------------------------------------------------------------------------------------------------------------------------------*/
+# define _Tolerance 1.0e-10
+void MNDOParameters_DetermineNormalization ( MNDOParameters *self, GaussianBasis *basis, Status *status )
+{
+    if ( ( self != NULL ) && ( basis != NULL ) && Status_IsOK ( status ) )
+    {
+        auto Integer d = self->norbitals ;
+        if ( self->normalization != NULL ) Memory_Deallocate ( self->normalization ) ;
+        GaussianBasis_Finalize ( basis, status ) ;
+        if ( d > 0 )
+        {
+            auto Integer      n, s2 ;
+            auto Real                r[3] = { 0.0e+00, 0.0e+00, 0.0e+00 } , /* . Fix to ensure full matrix is calculated. */
+                             *rWork, s[3] = { 0.0e+00, 0.0e+00, 0.0e+00 } ;
+            auto RealArray2D *M = NULL ;
+            self->normalization = Memory_AllocateArrayOfTypes ( d, Real ) ;
+            M                   = RealArray2D_AllocateWithExtents ( d, d, status ) ;
+            n                   = GaussianBasis_LargestShell ( basis, True ) ;
+            s2                  = n*n ;
+            rWork               = Real_Allocate ( 2*s2, status ) ;
+            if ( ( self->normalization != NULL ) && Status_IsOK ( status ) )
+            {
+                 GaussianBasisIntegrals_f1Og1i ( basis, r, basis, s, s2, rWork, M ) ;
+                 if ( RealArray2D_IsDiagonal ( M, _Tolerance ) )
+                 {
+                     auto Integer i ;
+                     for ( i = 0 ; i < d ; i++ ) self->normalization[i] = 1.0e+00 / sqrt ( fabs ( Array2D_Item ( M, i, i ) ) ) ;
+                 }
+                 else Status_Set ( status, Status_AlgorithmError ) ;
+            }
+            Real_Deallocate        ( &rWork ) ;
+            RealArray2D_Deallocate ( &M     ) ;
+        }
+    }
+}
+# undef _Tolerance
 
 /*----------------------------------------------------------------------------------------------------------------------------------
 ! . Fill beta and uspd arrays.

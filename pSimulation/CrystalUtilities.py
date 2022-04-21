@@ -2,13 +2,14 @@
 
 import math
 
-from  pCore                 import Clone              , \
-                                   logFile            , \
-                                   LogFileActive      , \
+from  pCore                 import Clone                      , \
+                                   logFile                    , \
+                                   LogFileActive              , \
                                    SelectionContainer
 from  pMolecule             import System
 from  pScientific.Geometry3 import CrossPairList_FromDoubleCoordinates3
-from  pScientific.Symmetry  import CrystalSystemTriclinic , \
+from  pScientific.Symmetry  import CrystalSystemTriclinic     , \
+                                   PeriodicBoundaryConditions , \
                                    SymmetryError
 from .EditMergePrune        import MergeByAtom
 
@@ -185,8 +186,9 @@ def CrystalExpandToP1 ( system, arange = range ( 1 ), brange = range ( 1 ), cran
             # . Create the new system with the correct symmetry.
             if imposeTriclinic: crystalSystem = CrystalSystemTriclinic ( )
             else:               crystalSystem = system.symmetry.crystalSystem
-            result = MergeByAtom ( images )
-            result.DefineSymmetry ( crystalSystem = crystalSystem, a = a, b = b, c = c, alpha = sp.alpha, beta = sp.beta, gamma = sp.gamma )
+            result                    = MergeByAtom ( images )
+            result.symmetry           = PeriodicBoundaryConditions.WithCrystalSystem ( crystalSystem )
+            result.symmetryParameters = result.symmetry.MakeSymmetryParameters ( a = a, b = b, c = c, alpha = sp.alpha, beta = sp.beta, gamma = sp.gamma )
             if system.label is None: result.label = "P1 Crystal System"
             else:                    result.label = system.label + " - P1 Crystal Symmetry"
             result.Summary ( log = log )

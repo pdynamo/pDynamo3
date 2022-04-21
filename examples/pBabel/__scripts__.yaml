@@ -1,8 +1,8 @@
 ---
 Scripts:
   - AmberTopCrdRead
+  - BSEBasisSetRead
   - CharmmPSFRead
-  - EMSLBasisSetRead
   - GaussianCubeFileWrite
   - GromacsTopCrdRead
   - ImportExportSystems

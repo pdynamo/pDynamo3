@@ -37,6 +37,7 @@ class DIISSCFConvergerState ( AttributableObject ):
                              "numberOfFunctionCalls" : 0     ,
                              "numberOfIterations"    : 0     ,
                              "numberOfSpins"         : 0     ,
+                             "overlapMatrix"         : None  ,
                              "orthogonalizer"        : None  ,
                              "rcaMu"                 : 0.0   ,
                              "rmsDifference"         : 0.0   ,
@@ -137,13 +138,15 @@ class DIISSCFConvergerState ( AttributableObject ):
             densityP.CopyTo ( densityB ) ; densityB.Add ( densityQ, scale = -1.0 ) ; densityB.Scale ( 0.5 )
             self.densitiesAreValid = ( scratch.onePDMP.isValid and scratch.onePDMQ.isValid )
             self.numberOfSpins     = 2
-        # . Set the orthogonalizers.
-        self.orthogonalizer        = scratch.Get ( "orthogonalizer"       , None )
+        # . Set the overlap matrix and orthogonalizers.
         self.inverseOrthogonalizer = scratch.Get ( "inverseOrthogonalizer", None )
+        self.orthogonalizer        = scratch.Get ( "orthogonalizer"       , None )
+        self.overlapMatrix         = scratch.Get ( "overlapMatrix"        , None )
         # . Allocate all necessary space.
         if self.orthogonalizer is None: m = extent
         else:                           m = self.orthogonalizer.shape[1]
         self._Allocate ( m, extent, maximumHistory, useODA )
+        #self._Allocate ( extent, extent, maximumHistory, useODA )
         return self
 
 #===================================================================================================================================
@@ -265,21 +268,30 @@ class DIISSCFConverger ( ObjectiveFunctionIterator ):
         state.history = min ( state.history + 1, self.maximumHistory )
         state.storeDIIS.rotate ( 1 )
         # . Array aliases.
+        s = state.overlapMatrix
         u = state.workMa
         v = state.workMb
         w = state.workMc
         x = state.orthogonalizer
         y = state.inverseOrthogonalizer
         # . Store the matrices and create the error vectors.
+        # . When S == I:
+        #     e = F * D - D * F
+        # . When S != I there are various possibilities (only the last is used):
+        #     e = F * D * S - S * D * F                 - AO basis
+        #     e = X^T * ( F * D * S - S * D * F ) * X   - MO basis
+        #     e = X^T * F * D * Y - Y^T * D * F * X     - MO basis but saving one matrix multiplication
         diisError = 0.0
-        for ( s, ( d, f, _ ) ) in enumerate ( state.currentFrame ):
-            ( d0, f0, e0, c0 ) = state.storeDIIS[0][s]
+        for ( c, ( d, f, _ ) ) in enumerate ( state.currentFrame ):
+            ( d0, f0, e0, c0 ) = state.storeDIIS[0][c]
             d.CopyTo ( d0 )
             f.CopyTo ( f0 )
-            if x is None: e0.MakeCommutatorSS   ( f, d, mA = u, mB = v, mC = w )
+            if s is None: e0.MakeCommutatorSS   ( f, d, mA = u, mB = v, mC = w )
             else:         e0.MakeCommutatorXSSY ( f, d, x, y, u, v, w, xTranspose = True )
+#            else:         e0.MakeCommutatorSSS   ( f, d, s )
+#            else:         e0.MakeCommutatorXSSSX ( f, d, s, x, u, v, w )
             c0.clear ( )
-            c0.extend ( [ - e0.TraceOfProduct ( state.storeDIIS[h][s][2] ) for h in range ( state.history ) ] )
+            c0.extend ( [ - e0.TraceOfProduct ( state.storeDIIS[h][c][2] ) for h in range ( state.history ) ] )
             diisError = max ( diisError, e0.AbsoluteMaximum ( ) )
         return diisError
 

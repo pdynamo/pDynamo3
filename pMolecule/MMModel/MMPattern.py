@@ -51,10 +51,10 @@ class MMPatternContainer ( ConnectivityPatternContainer ):
             for pattern in self.items:
                 pattern.MakeConnections ( )
                 matches = pattern.FindAllMatches ( connectivity, selection = untypedAtoms )
-                # . Maybe here should check that there are not intersecting matches within the same call (selection takes care of the others).
-                # . I.e. an atom has been matched more than once and with different atom types and/or charges - in this case which definition to take?
-                # . Easiest if raise error. No problem if type/charge same.
-                # . THIS NEEDS TO BE DONE.
+# . Maybe here should check that there are not intersecting matches within the same call (selection takes care of the others).
+# . I.e. an atom has been matched more than once and with different atom types and/or charges - in this case which definition to take?
+# . Easiest if raise error. No problem if type/charge same.
+# . THIS NEEDS TO BE DONE.
                 if ( matches is not None ) and ( len ( matches ) > 0 ):
                     charges      = pattern.nodeResults["charge"]
                     matchedAtoms = []
@@ -65,10 +65,14 @@ class MMPatternContainer ( ConnectivityPatternContainer ):
                                 atomCharges[i] = charge
                                 atomTypes  [i] = atomType.label
                                 matchedAtoms.append ( iNode )
-                                hydrogenType   = atomType.hydrogenType
+                                # . Check for implicit hydrogens.
+                                # . Where they exist, the host atom charge includes those of attached implicit hydrogens!
+                                hydrogenType = atomType.hydrogenType
                                 if hydrogenType is not None:
                                     hCharge = hydrogenType.charge
                                     for hNode in connectivity.adjacentNodes[iNode]:
+# . Should check here whether hydrogen is already matched.
+# . This is for cases where hydrogens are explicitly specified.
                                         if hNode.atomicNumber == 1:
                                             h = connectivity.nodeIndices[hNode]
                                             atomCharges[h]  = hCharge

@@ -1,13 +1,13 @@
-from pCore.CPrimitiveTypes                    cimport CBoolean               , \
-                                                      CFalse                 , \
-                                                      CInteger               , \
-                                                      CReal                  , \
-                                                      CTrue
-from pCore.Status                             cimport CStatus
-from pMolecule.QCModel.GaussianBasisContainer cimport GaussianBasisContainer
-from pMolecule.QCModel.MNDOParameters         cimport CMNDOParameters        , \
-                                                      MNDOParameters
-from pScientific.Arrays.RealArray1D           cimport RealArray1D
+from pCore.CPrimitiveTypes                                  cimport CBoolean               , \
+                                                                    CFalse                 , \
+                                                                    CInteger               , \
+                                                                    CReal                  , \
+                                                                    CTrue
+from pCore.Status                                           cimport CStatus
+from pMolecule.QCModel.GaussianBases.GaussianBasisContainer cimport GaussianBasisContainer
+from pMolecule.QCModel.MNDOParameters                       cimport CMNDOParameters        , \
+                                                                    MNDOParameters
+from pScientific.Arrays.RealArray1D                         cimport RealArray1D
 
 #===================================================================================================================================
 # . Declarations.

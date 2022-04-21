@@ -3,7 +3,8 @@
 # . In principle can do the same for all parameter/term containers. E.g. HBPC/HBTC.
 # . Raise error if not analytic form. Have hasAnalyticForm property in LJPC.
 
-from  pCore                import logFile              , \
+from  pCore                import Align                , \
+                                  logFile              , \
                                   LogFileActive
 from  pScientific.Arrays   import ArrayPrint
 from .LJParameterContainer import LJForm               , \
@@ -32,20 +33,21 @@ def _ChangeEpsilonSigma ( ljParameters, label, epsilon, sigma ):
 def _GetSystemLJParameters ( system, mode ):
     """Get the LJ parameters for a system corresponding to a given mode."""
     # . System data structures.
-    mmModel = system.Get ( "MM Model", None )
-    isOK    = ( mmModel is not None )
+    mmModel = getattr ( system, "mmModel", None )
+    mmState = getattr ( system, "mmState", None )
+    isOK    = ( mmModel is not None ) and ( mmState is not None )
     # . Options.
     do14  = ( mode != "1-5+" ) and isOK
     do15P = ( mode != "1-4"  ) and isOK
     # . Get data.
     data = []
     if do14:
-        scale        = mmModel.Get ( "Lennard-Jones Scale 1-4", 1.0  )
-        ljParameters = mmModel.Get ( "LJ Parameters 1-4"      , None )
-        data.append ( ( "LJ Parameters 1-4", ljParameters, scale ) )
+        scale        = getattr ( mmModel, "lennardJonesScale14", 1.0  )
+        ljParameters = getattr ( mmState, "ljParameters14"     , None )
+        data.append ( ( "lennardJonesScale14", ljParameters, scale ) )
     if do15P:
-        ljParameters = mmModel.Get ( "LJ Parameters", None )
-        data.append ( ( "LJ Parameters", ljParameters, 1.0 ) )
+        ljParameters = getattr ( mmState, "ljParameters", None )
+        data.append ( ( "ljParameters", ljParameters, 1.0 ) )
     # . Finish up.
     if len ( data ) > 0: return data
     else:                return None
@@ -68,7 +70,7 @@ def LJUtilities_ChangeParameter ( system, label, epsilon, sigma, mode = None ):
     if data is not None:
         for ( k, p, s ) in data:
             q = _ChangeEpsilonSigma ( p, label, s * epsilon, sigma )
-            system.mmModel[k] = q
+            setattr ( system.mmState, k, q )
 
 def LJUtilities_ChangeSingleAtomParameter ( system, atomIndex, label, epsilon, sigma, mode = None ):
     """Change an LJ parameter for a single atom."""
@@ -97,9 +99,30 @@ def LJUtilities_ChangeSingleAtomParameter ( system, atomIndex, label, epsilon, s
 
 def LJUtilities_PrintParameters ( system, log = logFile, mode = None ):
     """Printing."""
-    data = _GetSystemLJParameters ( system, mode )
-    if data is not None:
-        for ( k, p, s ) in data: ArrayPrint ( p, log = log )
+    if LogFileActive ( log ):
+        data = _GetSystemLJParameters ( system, mode )
+        if data is not None:
+            log.Paragraph ( "Lennard-Jones parameters for System \"{:s}\":".format ( system.label ) )
+            for ( k, p, s ) in data:
+                state    = p.__getstate__ ( )
+                form     = state["analyticForm" ]
+                label    = p.label
+                labels   = state["parameterKeys"]
+                epsilons = state["epsilons"     ]
+                sigmas   = state["sigmas"       ]
+                table    = logFile.GetTable ( columns = [ 10, 20, 20, 20 ] )
+                table.Start  ( )
+                table.Title  ( "{:s} with Form {:s} and Scaling {:.2f}".format ( label, form.name, s ) )
+                table.Heading ( "Index"   )
+                table.Heading ( "Label"   )
+                table.Heading ( "Epsilon" )
+                table.Heading ( "Sigma"   )
+                for ( i, ( l, e, s ) ) in enumerate ( zip ( labels, epsilons, sigmas ) ):
+                    table.Entry ( "{:d}".format   ( i ) , align = Align.Left )
+                    table.Entry (                   l   , align = Align.Left )
+                    table.Entry ( "{:.5f}".format ( e ) )
+                    table.Entry ( "{:.5f}".format ( s ) )
+                table.Stop ( )
 
 #===================================================================================================================================
 # . Testing.

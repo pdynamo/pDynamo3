@@ -28,6 +28,8 @@ cdef extern from "Units.h":
     cdef float Units_Pressure_Atmospheres_To_Kilojoules_Per_Mole
     cdef float Units_Pressure_Atmospheres_To_Pascals
 
+    cdef float Units_Quadrupole_Atomic_Units_To_Buckinghams
+
 #===================================================================================================================================
 # . Declarations into Python.
 #===================================================================================================================================
@@ -48,3 +50,4 @@ Length_Bohrs_To_Angstroms                           = Units_Length_Bohrs_To_Angs
 Mass_AMU_To_Kg                                      = Units_Mass_AMU_To_Kg
 Pressure_Atmospheres_To_Kilojoules_Per_Mole         = Units_Pressure_Atmospheres_To_Kilojoules_Per_Mole
 Pressure_Atmospheres_To_Pascals                     = Units_Pressure_Atmospheres_To_Pascals
+Quadrupole_Atomic_Units_To_Buckinghams              = Units_Quadrupole_Atomic_Units_To_Buckinghams

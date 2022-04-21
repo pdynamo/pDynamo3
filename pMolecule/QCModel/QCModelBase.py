@@ -1,26 +1,26 @@
 """Classes for pDynamo's in-built QC models."""
 
-from   pCore                         import Clone                 , \
-                                            logFile               , \
-                                            LogFileActive
-from   pScientific                   import Units
-from   pScientific.Arrays            import Array                 , \
-                                            StorageType
-from   pScientific.Geometry3         import Vector3
-from  .DIISSCFConverger              import DIISSCFConverger
-from  .ElectronicState               import SpinType
-from  .FockConstruction              import FockConstruction_MakeFromTEIs
-from  .OrthogonalizingTransformation import OrthogonalizingTransformation_Make
-from  .QCDefinitions                 import BasisRepresentation   , \
-                                            ChargeModel           , \
-                                            FockClosurePriority   , \
-                                            OrthogonalizationType
-from  .QCModel                       import QCModel               , \
-                                            QCModelState
-from  .QCModelError                  import QCModelError
-from  .QCOnePDM                      import QCOnePDM
-from  .QCOrbitals                    import QCOrbitals
-from ..EnergyModel                   import EnergyClosurePriority
+from   pCore                     import Clone                   , \
+                                        logFile                 , \
+                                        LogFileActive
+from   pScientific               import Units
+from   pScientific.Arrays        import Array                   , \
+                                        StorageType
+from   pScientific.Geometry3     import Matrix33                , \
+                                        Vector3
+from   pScientific.LinearAlgebra import OrthogonalizationMethod , \
+                                        OrthogonalizingTransformation_Make
+from  .DIISSCFConverger          import DIISSCFConverger
+from  .ElectronicState           import SpinType
+from  .FockConstruction          import FockConstruction_MakeFromTEIs
+from  .QCDefinitions             import ChargeModel             , \
+                                        FockClosurePriority
+from  .QCModel                   import QCModel                 , \
+                                        QCModelState
+from  .QCModelError              import QCModelError
+from  .QCOnePDM                  import QCOnePDM
+from  .QCOrbitals                import QCOrbitals
+from ..EnergyModel               import EnergyClosurePriority
 
 #===================================================================================================================================
 # . Class.
@@ -87,14 +87,14 @@ class QCModelBase ( QCModel ):
     _classLabel   = "Base QC Model"
     _stateObject  = QCModelBaseState
     _summarizable = dict ( QCModel._summarizable )
-    _attributable.update ( { "exchangeScaling"       : 1.0                                    ,
-                             "orthogonalizationType" : OrthogonalizationType.Symmetric        ,
-                             "converger"             : None                                   ,
-                             "integralEvaluator"     : None                                   ,
-                             "multipoleEvaluator"    : None                                   } )
-    _summarizable.update ( { "converger"             :   "SCF Converger"                      ,
-                             "exchangeScaling"       : ( "Exchange Scaling"      , "{:.3f}" ) ,
-                             "orthogonalizationType" :   "Orthogonalization Type"             } )
+    _attributable.update ( { "exchangeScaling"         : 1.0                                    ,
+                             "orthogonalizationMethod" : OrthogonalizationMethod.Symmetric      ,
+                             "converger"               : None                                   ,
+                             "integralEvaluator"       : None                                   ,
+                             "multipoleEvaluator"      : None                                   } )
+    _summarizable.update ( { "converger"               :   "SCF Converger"                      ,
+                             "exchangeScaling"         : ( "Exchange Scaling"      , "{:.3f}" ) ,
+                             "orthogonalizationMethod" :   "Orthogonalization Method"           } )
 
     def AtomicCharges ( self, target, chargeModel = None ):
         """Atomic charges."""
@@ -143,8 +143,6 @@ class QCModelBase ( QCModel ):
         state = super ( QCModelBase, self ).BuildModel ( target, qcSelection = qcSelection )
         self.GetParameters ( target )
         ( state.alphaCharge, state.betaCharge ) = target.electronicState.Verify ( sum ( state.nuclearCharges ) )
-        # . Ensure the basis and evaluator representations are consistent.
-        state.orbitalBases.basisRepresentation = self.integralEvaluator.basisRepresentation
         state.AddFockModel ( self.__class__._classLabel, self                   )
         state.AddFockModel ( "Electronic State"        , target.electronicState )
         if self.converger is None: self.converger = DIISSCFConverger ( )
@@ -164,7 +162,7 @@ class QCModelBase ( QCModel ):
             dX += q * ( coordinates3[i,0] - cX )
             dY += q * ( coordinates3[i,1] - cY )
             dZ += q * ( coordinates3[i,2] - cZ )
-        ( iX, iY, iZ ) = self.integralEvaluator.DipoleIntegrals ( target, center = center )
+        ( iX, iY, iZ ) = self.integralEvaluator.f1Df1i ( target, center = center )
         dX -= dTotal.TraceOfProduct ( iX )
         dY -= dTotal.TraceOfProduct ( iY )
         dZ -= dTotal.TraceOfProduct ( iZ )
@@ -305,47 +303,34 @@ class QCModelBase ( QCModel ):
             else: raise QCModelError ( "Orbital indices out of range." )
         return orbitals
 
-    # . This is not general as it assumes the overlap matrix is in the W-basis.
-    def GetOrthogonalizer ( self, target, orthogonalizationType = None, doInverse = True, doLoewdin = True ):
+    def GetOrthogonalizer ( self, target, orthogonalizationMethod = None, doInverse = True, doLoewdin = True ):
         """Get the orthogonalizing transformation and, optionally, its inverse."""
+        # . Orthogonalizer.
         state = getattr ( target, self.__class__._stateName )
-        if orthogonalizationType is None: orthogonalizationType = self.orthogonalizationType
-        # . Transform the overlap to the proper basis: Sa = U^T * Sw * U.
-        w2a = state.orbitalBases.w2a
-        Sw  = target.scratch.overlapMatrix
-        Sa  = Array.WithExtent ( w2a.shape[1], storageType = StorageType.Symmetric )
-        Sw.Transform ( w2a, Sa )
-        # . Make the transformation: Xa^T * Sa * Xa = I.
-        ( X, eigenValues, eigenVectors ) = OrthogonalizingTransformation_Make ( Sa ,
-                                                                                doCanonical   = ( orthogonalizationType is OrthogonalizationType.Canonical ) ,
-                                                                                preserveInput = False )
-        # . Save the eigenvalues and vectors of Sa.
+        if orthogonalizationMethod is None:
+            orthogonalizationMethod = self.orthogonalizationMethod
+        overlap = target.scratch.overlapMatrix
+        ( orthogonalizer, eigenValues, eigenVectors ) = OrthogonalizingTransformation_Make ( overlap                 ,
+                                                                                             orthogonalizationMethod ,
+                                                                                             preserveInput = True    )
         target.scratch.overlapEigenValues  = eigenValues
         target.scratch.overlapEigenVectors = eigenVectors
-        if ( X.columns != X.rows ) and hasattr ( target.scratch, "qcEnergyReport" ):
-            target.scratch.qcEnergyReport["Basis Linear Dependence"] = abs ( X.columns - X.rows )
-        # . Transform back to the working basis and save: Xw = U * Xa => Xw^T * Sw * Xw = I.
-        orthogonalizer = Array.WithShape ( [ w2a.shape[0], X.shape[1] ] )
-        orthogonalizer.MatrixMultiply ( w2a, X )
+        n = abs ( orthogonalizer.columns - orthogonalizer.rows )
+        if ( n != 0 ) and hasattr ( target.scratch, "qcEnergyReport" ):
+            target.scratch.qcEnergyReport["Basis Linear Dependence"] = n
         target.scratch.orthogonalizer = orthogonalizer
-        # . Make the inverse directly from the orthogonalizer: Yw = Sw * Xw => Yw^T * Xw = I.
+        # . Inverse orthogonalizer directly from the orthogonalizer: Y = S * X => Y^T * X = I.
         if doInverse:
             inverseOrthogonalizer = Array.WithShape ( orthogonalizer.shape )
-            Sw.PostMatrixMultiply ( orthogonalizer, inverseOrthogonalizer )
+            overlap.PostMatrixMultiply ( orthogonalizer, inverseOrthogonalizer )
             target.scratch.inverseOrthogonalizer = inverseOrthogonalizer
-        # . Make the Loewdin transformation.
+        # . Loewdin transformation.
         if doLoewdin:
-            if ( orthogonalizationType is OrthogonalizationType.Symmetric ) and ( target.scratch.Get ( "inverseOrthogonalizer", None ) is not None ):
-                loewdinT = inverseOrthogonalizer
-            else:
-                n           = eigenValues.extent
-                sHalf       = Array.WithExtent ( n, storageType = StorageType.Symmetric )
-                squareRoots = Clone ( eigenValues )
-                squareRoots.Power ( 0.5 )
-                sHalf.MakeFromEigenSystem ( n, squareRoots, eigenVectors )
-                #ArrayPrint2D ( sHalf, itemFormat = "{:.6f}", title = "Sa^(1/2)" )
-                loewdinT    = Array.WithShape ( orthogonalizer.shape )
-                sHalf.PreMatrixMultiply ( state.orbitalBases.a2w, loewdinT )
+            n           = eigenValues.extent
+            loewdinT    = Array.WithExtent ( n, storageType = StorageType.Symmetric )
+            squareRoots = Clone ( eigenValues )
+            squareRoots.Power ( 0.5 )
+            loewdinT.MakeFromEigenSystem ( n, squareRoots, eigenVectors )
             target.scratch.loewdinT = loewdinT
 
     def GetParameters ( self, target ):
@@ -358,7 +343,7 @@ class QCModelBase ( QCModel ):
         density = self.GetNonOrthogonalDensity ( target, spinType = spinType )
         bValues = Array.WithShape ( [ density.shape[0], gridPoints.shape[0] ] )
         values  = Array.WithExtent ( gridPoints.shape[0] )
-        self.gridPointEvaluator.GridValues ( target, gridPoints, bValues )
+        self.gridPointEvaluator.f1Op1i ( target, gridPoints, bValues )
         density.DiagonalOfTransform ( bValues, values )
         return values
 
@@ -369,19 +354,19 @@ class QCModelBase ( QCModel ):
             orbitals = self.GetNonOrthogonalOrbitals ( target, indices = orbitalIndices, spinType = spinType )
             bValues  = Array.WithShape ( [ orbitals.shape[0], gridPoints.shape[0] ] )
             values   = Array.WithShape ( [ gridPoints.shape[0], len ( orbitalIndices ) ] )
-            self.gridPointEvaluator.GridValues ( target, gridPoints, bValues )
+            self.gridPointEvaluator.f1Op1i ( target, gridPoints, bValues )
             values.MatrixMultiply ( bValues, orbitals, xTranspose = True )
         else: raise QCModelError ( "Missing orbital index specification." )
         return values
 
-    def GridPointPotentials ( self, target, gridPoints, spinType = None ):
+    def GridPointPotentials ( self, target, gridPoints, includeNuclear = True, spinType = None ):
         """Electrostatic potentials at grid points."""
         density = self.GetNonOrthogonalDensity ( target, spinType = spinType )
         values  = Array.WithExtent ( gridPoints.shape[0] )
         values.Set ( 0.0 )
-        self.gridPointEvaluator.ElectronPotentials ( target, density, gridPoints, values )
-        if spinType in ( None, SpinType.Total ):
-            self.gridPointEvaluator.NuclearPotentials ( target, gridPoints, values )
+        self.gridPointEvaluator.f2Cp1V ( target, density, gridPoints, values )
+        if includeNuclear and ( spinType in ( None, SpinType.Total ) ):
+            self.gridPointEvaluator.m1Cp1V ( target, gridPoints, values )
         return values
 
     def ModifyElectronicState ( self, target ):
@@ -399,7 +384,7 @@ class QCModelBase ( QCModel ):
         else:            orbitals = target.scratch.orbitalsQ.orbitals
         if selection is None: indices = range ( orbitals.shape[-1] )
         else:                 indices = selection
-        characters = Array.WithExtent ( len ( indices ) )
+        characters = Array.WithExtent ( len ( indices            ) )
         orbitalOut = Array.WithExtent ( len ( state.orbitalBases ) )
         overlap    = target.scratch.Get ( "overlapMatrix", None )
         if overlap is None:
@@ -413,6 +398,45 @@ class QCModelBase ( QCModel ):
             self.RotateOrbital ( rotations, mapping, orbitalIndices, orbitals[:,s], orbitalOut )
             characters[i] = orbitalOut.Dot ( sOrbitals[:,s] )
         return characters
+
+    def QuadrupoleMoment ( self, target, center = None, quadrupole = None ):
+        """The non-traceless quadrupole moment in Buckinghams."""
+        cX  = cY  = cZ  = 0.0
+        qXX = qXY = qXZ = qYY = qYZ = qZZ = 0.0
+        if center is not None:
+            cX = center[0] ; cY = center[1] ; cZ = center[2]
+        state        = getattr ( target, self.__class__._stateName )
+        scratch      = target.scratch
+        coordinates3 = scratch.qcCoordinates3AU
+        dTotal       = state.totalDensity
+        for ( i, q ) in enumerate ( state.nuclearCharges ):
+            dX   = coordinates3[i,0] - cX
+            dY   = coordinates3[i,1] - cY
+            dZ   = coordinates3[i,2] - cZ
+            qXX += q * dX * dX
+            qYY += q * dY * dY
+            qZZ += q * dZ * dZ
+            qXY += q * dX * dY
+            qXZ += q * dX * dZ
+            qYZ += q * dY * dZ
+        ( iXX, iYY, iZZ, iXY, iXZ, iYZ ) = self.integralEvaluator.f1Qf1i ( target, center = center )
+        qXX -= dTotal.TraceOfProduct ( iXX )
+        qYY -= dTotal.TraceOfProduct ( iYY )
+        qZZ -= dTotal.TraceOfProduct ( iZZ )
+        qXY -= dTotal.TraceOfProduct ( iXY )
+        qXZ -= dTotal.TraceOfProduct ( iXZ )
+        qYZ -= dTotal.TraceOfProduct ( iYZ )
+        if quadrupole is None: quadrupole = Matrix33.Null ( )
+        quadrupole[0,0] += ( qXX * Units.Quadrupole_Atomic_Units_To_Buckinghams )
+        quadrupole[0,1] += ( qXY * Units.Quadrupole_Atomic_Units_To_Buckinghams )
+        quadrupole[0,2] += ( qXZ * Units.Quadrupole_Atomic_Units_To_Buckinghams )
+        quadrupole[1,0] += ( qXY * Units.Quadrupole_Atomic_Units_To_Buckinghams )
+        quadrupole[1,1] += ( qYY * Units.Quadrupole_Atomic_Units_To_Buckinghams )
+        quadrupole[1,2] += ( qYZ * Units.Quadrupole_Atomic_Units_To_Buckinghams )
+        quadrupole[2,0] += ( qXZ * Units.Quadrupole_Atomic_Units_To_Buckinghams )
+        quadrupole[2,1] += ( qYZ * Units.Quadrupole_Atomic_Units_To_Buckinghams )
+        quadrupole[2,2] += ( qZZ * Units.Quadrupole_Atomic_Units_To_Buckinghams )
+        return quadrupole
 
     @staticmethod
     def RotateOrbital ( rotations, mapping, orbitalIndices, orbitalIn, orbitalOut ):
@@ -443,18 +467,19 @@ class QCModelBase ( QCModel ):
 
     def SetUpOrbitals ( self, target ):
         """Set up the orbital sets."""
-        state                = getattr ( target, self.__class__._stateName )
-        bases                = state.orbitalBases
-        numberBasisFunctions = len ( bases ) # . A-basis or W-basis depending on integral evaluator.
-        numberOrbitals       = bases._numberOfFunctions[BasisRepresentation.Actual] # . Always A-basis.
-        handlers             = target.electronicState.OccupancyHandlers ( state.alphaCharge, state.betaCharge )
-        scratch              = target.scratch
+        scratch        = target.scratch
+        state          = getattr ( target, self.__class__._stateName )
+        orthogonalizer = scratch.Get ( "orthogonalizer", None )
+        extent0        = len ( state.orbitalBases )
+        if orthogonalizer is None: extent1 = extent0
+        else:                      extent1 = orthogonalizer.shape[1]
+        handlers = target.electronicState.OccupancyHandlers ( state.alphaCharge, state.betaCharge )
         for ( name, handler ) in zip ( ( "orbitalsP", "orbitalsQ" ), handlers ):
             item = scratch.Get ( name, None )
-            if ( item                is None           ) or \
-               ( item.numberOrbitals != numberOrbitals ) or \
+            if ( item                is None    ) or \
+               ( item.numberOrbitals != extent1 ) or \
                ( not isinstance ( item.occupancyHandler, handler.__class__ ) ): # . More reliable checks here ...
-                scratch.Set ( name, QCOrbitals.WithExtents ( numberBasisFunctions, numberOrbitals, handler ) )
+                scratch.Set ( name, QCOrbitals.WithExtents ( extent0, extent1, handler ) )
 
     @property
     def gridPointEvaluator ( self ):

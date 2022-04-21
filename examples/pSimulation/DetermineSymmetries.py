@@ -120,7 +120,7 @@ _ActiveSpace   = { "C2"   : ( 6, 6 ) ,
 
 # . Options for QC models.
 _HFOptions     = { "converger"           : convergerHF             ,
-                   "orbitalBasis"        : "631gs"                 }
+                   "orbitalBasis"        : "6-31g_st"              }
 _MNDOCIOptions = { "ciDiagonalization"   : CIDiagonalization.Dense ,
                    "ciMethod"            : CIMethod.Full           ,
                    "converger"           : convergerCI             ,

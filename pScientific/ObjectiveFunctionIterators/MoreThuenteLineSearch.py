@@ -192,9 +192,7 @@ class MoreThuenteLineSearcher ( UniDimensionalMinimizer ):
             self.FunctionGradient ( state )
             state.fTest = state.f0 + state.x * state.gTest
         except Exception as error:
-            state.error = error.args[0]
-            import traceback, sys
-            traceback.print_exc ( file = sys.stdout )
+            state.HandleError ( error )
         state.numberOfIterations += 1
 
     def NewStep ( self, xB, fB, gB, xE, fE, gE, x, f, g, isBracketed, xMinimum, xMaximum ):

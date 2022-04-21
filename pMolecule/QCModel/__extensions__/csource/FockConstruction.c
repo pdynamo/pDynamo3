@@ -2,6 +2,8 @@
 ! . Functions for Fock construction.
 !=================================================================================================================================*/
 
+# include "stdio.h"
+
 # include "Boolean.h"
 # include "DenseLinearEquationSolvers.h"
 # include "FockConstruction.h"
@@ -19,73 +21,186 @@
 /* . Macros. */
 # define BFINDEX(i) ( i * ( i + 1 ) ) / 2
 
-/* . Inverse fit matrix is less accurate especially for derivatives. */
+/* . Options. */
+/*# define _NOFITCONSTRAINTS*/
 /*# define _USEINVERSEFITMATRIX*/
 
 /*----------------------------------------------------------------------------------------------------------------------------------
-! . Form the fit-integral parts of the Fock matrices.
-! . The fit energy and potential are also computed.
+! . Make the coefficients from the fit matrix and the fit integrals and density.
+! . The b-vector is also returned.
 !---------------------------------------------------------------------------------------------------------------------------------*/
-Real Fock_MakeFromFitIntegrals (       BlockStorage    *fitIntegrals ,
-                                       SymmetricMatrix *fitMatrix    ,
-                                 const Real             totalCharge  ,
-                                       RealArray1D     *fitPotential ,
-                                       SymmetricMatrix *dTotal       ,
-                                       SymmetricMatrix *fTotal       ,
-                                       Status          *status       )
+void Fock_MakeCoefficientsFromFitIntegrals (       SymmetricMatrix *fitMatrix       ,
+                                                   BlockStorage    *fitIntegrals    ,
+                                                   SymmetricMatrix *dTotal          ,
+                                             const Real             totalCharge     ,
+                                                   RealArray1D     *fitCoefficients ,
+                                                   RealArray1D     *bVector         ,
+                                                   Status          *status          )
 {
-    Real eTEI = 0.0e+00 ;
+    if ( ( fitIntegrals    != NULL ) &&
+         ( fitMatrix       != NULL ) &&
+         ( dTotal          != NULL ) &&
+         ( fitCoefficients != NULL ) &&
+         ( bVector         != NULL ) &&
+         Status_IsOK ( status ) )
+    {
+        auto Block   *block ;
+        auto Integer  i ;
+        /* . Scale diagonal elements of the density by 1/2. */
+        SymmetricMatrix_ScaleDiagonal ( dTotal, 0.5e+00 ) ;
+        /* . Determine b. */
+        RealArray1D_Set ( bVector, 0.0e+00 ) ;
+        List_Iterate_Initialize ( fitIntegrals->blocks ) ;
+        while ( ( block = BlockStorage_Iterate ( fitIntegrals ) ) != NULL )
+        {
+            for ( i = 0 ; i < block->count ; i++ ) bVector->data[block->indices16[i]] += dTotal->data[block->indices32[i]] * block->data[i] ;
+        }
+        RealArray1D_Scale ( bVector, 2.0e+00 ) ;
+# ifndef _NOFITCONSTRAINTS
+        Array1D_Item ( bVector, View1D_Extent ( fitCoefficients ) - 1 ) = totalCharge ;
+# endif
+        /* . Find the fit coefficients. */
+# ifdef _USEINVERSEFITMATRIX
+        SymmetricMatrix_VectorMultiply ( fitMatrix, bVector, fitCoefficients, status ) ;
+# else
+        SymmetricMatrix_LinearEquationsSolve ( fitMatrix, bVector, fitCoefficients, status ) ;
+# endif
+        /* . Scale diagonal elements of the density by 2. */
+        SymmetricMatrix_ScaleDiagonal ( dTotal, 2.0e+00 ) ;
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------
+! . Make the Fock matrix from the fit integrals and the fit vector.
+!---------------------------------------------------------------------------------------------------------------------------------*/
+void Fock_MakeFockFromFitIntegrals (       BlockStorage    *fitIntegrals ,
+                                     const RealArray1D     *fitVector    ,
+                                           SymmetricMatrix *fTotal       ,
+                                           Status          *status       )
+{
     if ( ( fitIntegrals != NULL ) &&
-         ( fitPotential != NULL ) &&
-         ( fitMatrix    != NULL ) &&
-         ( dTotal       != NULL ) &&
+         ( fitVector    != NULL ) &&
          ( fTotal       != NULL ) &&
          Status_IsOK ( status ) )
     {
-        auto Integer      n = View1D_Extent ( fitPotential ) ;
-        auto RealArray1D *b = RealArray1D_AllocateWithExtent ( n, status ) ;
-        if ( b != NULL )
+        auto Block   *block ;
+        auto Integer  i ;
+        /* . Construct Fock matrix. */
+        List_Iterate_Initialize ( fitIntegrals->blocks ) ;
+        while ( ( block = BlockStorage_Iterate ( fitIntegrals ) ) != NULL )
         {
-            auto Block   *block ;
-            auto Integer  i ;
-            /* . Initialization -  diagonal elements of density need scaling by 1/2. */
-            /* . SymmetricMatrix_Set           ( fTotal, 0.0e+00 ) ; */
-            SymmetricMatrix_ScaleDiagonal ( dTotal, 0.5e+00 ) ;
-            /* . Determine b. */
-            RealArray1D_Set ( b, 0.0e+00 ) ;
-            List_Iterate_Initialize ( fitIntegrals->blocks ) ;
-            while ( ( block = BlockStorage_Iterate ( fitIntegrals ) ) != NULL )
+            for ( i = 0 ; i < block->count ; i++ )
             {
-                for ( i = 0 ; i < block->count ; i++ ) b->data[block->indices16[i]] += dTotal->data[block->indices32[i]] * block->data[i] ;
+                fTotal->data[block->indices32[i]] += fitVector->data[block->indices16[i]] * block->data[i] ;
             }
-            RealArray1D_Scale ( b, 2.0e+00 ) ;
-/* . Remove following line if no constraint. */
-            Array1D_Item ( b, n-1 ) = totalCharge ;
-            /* . Find the fit potential. */
-# ifdef _USEINVERSEFITMATRIX
-            SymmetricMatrix_VectorMultiply ( fitMatrix, b, fitPotential, NULL ) ;
-# else
-            SymmetricMatrix_LinearEquationsSolve ( fitMatrix, b, fitPotential, status ) ;
-            if ( Status_IsOK ( status ) )
-            {
-# endif
-            /* . Construct Fock matrix. */
-            List_Iterate_Initialize ( fitIntegrals->blocks ) ;
-            while ( ( block = BlockStorage_Iterate ( fitIntegrals ) ) != NULL )
-            {
-                for ( i = 0 ; i < block->count ; i++ ) fTotal->data[block->indices32[i]] += fitPotential->data[block->indices16[i]] * block->data[i] ;
-            }
-            /* . Find the two-electron energy. */
-            eTEI = 0.5e+00 * RealArray1D_Dot ( b, fitPotential, NULL ) ;
-# ifndef _USEINVERSEFITMATRIX
-            }
-# endif
-            /* . Finish up. */
-            SymmetricMatrix_ScaleDiagonal ( dTotal, 2.0e+00 ) ;
-            RealArray1D_Deallocate ( &b ) ;
         }
     }
-    return eTEI ;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------
+! . Form the fit-integral parts of the Fock matrices.
+! . The fit energy and coefficients are also computed.
+! . Fit-integrals computed using the Coulomb operator.
+!---------------------------------------------------------------------------------------------------------------------------------*/
+Real Fock_MakeFromFitIntegralsCoulomb (       BlockStorage    *fitIntegrals    ,
+                                              SymmetricMatrix *fitMatrix       ,
+                                        const Real             totalCharge     ,
+                                              RealArray1D     *fitCoefficients ,
+                                              SymmetricMatrix *dTotal          ,
+                                              SymmetricMatrix *fTotal          ,
+                                              Status          *status          )
+{
+    Real eFit = 0.0e+00 ;
+    if ( ( fitIntegrals    != NULL ) &&
+         ( fitMatrix       != NULL ) &&
+         ( fitCoefficients != NULL ) &&
+         ( dTotal          != NULL ) &&
+         ( fTotal          != NULL ) &&
+         Status_IsOK ( status ) )
+    {
+        auto Integer      n    = View1D_Extent ( fitCoefficients ) ;
+        auto RealArray1D *work = RealArray1D_AllocateWithExtent ( n, status ) ;
+        if ( work != NULL )
+        {
+            /* . Fit coefficients. */
+            Fock_MakeCoefficientsFromFitIntegrals ( fitMatrix       ,
+                                                    fitIntegrals    ,
+                                                    dTotal          ,
+                                                    totalCharge     ,
+                                                    fitCoefficients ,
+                                                    work            ,
+                                                    status          ) ;
+            /* . Fit energy. */
+            eFit = 0.5e+00 * RealArray1D_Dot ( fitCoefficients, work, status ) ;
+            /* . Fit Fock matrix. */
+            Fock_MakeFockFromFitIntegrals ( fitIntegrals    ,
+                                            fitCoefficients ,
+                                            fTotal          ,
+                                            status          ) ;
+            /* . Finish up. */
+            RealArray1D_Deallocate ( &work ) ;
+        }
+    }
+    return eFit ;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------
+! . Form the fit-integral parts of the Fock matrices.
+! . The fit energy and coefficients are also computed.
+! . Fit-integrals computed using a non-Coulomb operator.
+!---------------------------------------------------------------------------------------------------------------------------------*/
+Real Fock_MakeFromFitIntegralsNonCoulomb (       BlockStorage    *fitIntegrals     ,
+                                                 SymmetricMatrix *fitMatrix        ,
+                                                 SymmetricMatrix *fitCoulombMatrix ,
+                                           const Real             totalCharge      ,
+                                                 RealArray1D     *fitCoefficients  ,
+                                                 RealArray1D     *fitVectorD       ,
+                                                 SymmetricMatrix *dTotal           ,
+                                                 SymmetricMatrix *fTotal           ,
+                                                 Status          *status           )
+{
+    Real eFit = 0.0e+00 ;
+    if ( ( fitIntegrals     != NULL ) &&
+         ( fitMatrix        != NULL ) &&
+         ( fitCoulombMatrix != NULL ) &&
+         ( fitCoefficients  != NULL ) &&
+         ( fitVectorD       != NULL ) &&
+         ( dTotal           != NULL ) &&
+         ( fTotal           != NULL ) &&
+         Status_IsOK ( status ) )
+    {
+        auto Integer      n    = View1D_Extent ( fitCoefficients ) ;
+        auto RealArray1D *work = RealArray1D_AllocateWithExtent ( n, status ) ;
+        if ( work != NULL )
+        {
+            /* . Fit coefficients. */
+            Fock_MakeCoefficientsFromFitIntegrals ( fitMatrix       ,
+                                                    fitIntegrals    ,
+                                                    dTotal          ,
+                                                    totalCharge     ,
+                                                    fitCoefficients ,
+                                                    work            ,
+                                                    status          ) ;
+            /* . Compute T = Mc * A. */
+            SymmetricMatrix_VectorMultiply ( fitCoulombMatrix, fitCoefficients, work, status ) ;
+            /* . Fit energy. */
+            eFit = 0.5e+00 * RealArray1D_Dot ( fitCoefficients, work, status ) ;
+            /* . Solve for the fit D-vector. */
+# ifdef _USEINVERSEFITMATRIX
+            SymmetricMatrix_VectorMultiply ( fitMatrix, work, fitVectorD, status ) ;
+# else
+            SymmetricMatrix_LinearEquationsSolve ( fitMatrix, work, fitVectorD, status ) ;
+# endif
+            /* . Fit Fock matrix. */
+            Fock_MakeFockFromFitIntegrals ( fitIntegrals ,
+                                            fitVectorD   ,
+                                            fTotal       ,
+                                            status       ) ;
+            /* . Finish up. */
+            RealArray1D_Deallocate ( &work ) ;
+        }
+    }
+    return eFit ;
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------

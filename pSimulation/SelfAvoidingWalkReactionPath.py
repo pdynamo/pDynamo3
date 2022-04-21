@@ -47,8 +47,8 @@ class SAWObjectiveFunction ( ObjectiveFunction ):
                              "xn"                        : None          ,   
                              "y"                         : None          } )
 
-    def ApplyLinearConstraints ( self, vector ):
-        """Apply linear constraints to a vector."""
+    def ApplyConstraintsToVector ( self, vector, **keywordArguments ):
+        """Apply constraints to a vector."""
         if self.objectiveFunction.linearVectors is not None:
             nframes    = len ( self.trajectory )
             nVariables = self.objectiveFunction.numberOfVariables
@@ -147,8 +147,8 @@ class SAWObjectiveFunction ( ObjectiveFunction ):
                     if f != ( nframes - 1 ):
                         inc = ( f - 1 ) * nVariables
                         for i in range ( nVariables ): gradients[i+inc] -= dofda * self.gd[i+incg]
-                # . This is inefficient as linear projection is done twice.
-                self.ApplyLinearConstraints ( gradients )
+                # . This is inefficient as constraints are applied twice.
+                self.ApplyConstraintsToVector ( gradients )
         return of
 
     @classmethod

@@ -2,16 +2,17 @@
 
 import os, os.path
 
-from  pCore              import Clone                    , \
-                                logFile                  , \
-                                LogFileActive            , \
-                                RawObjectConstructor     , \
-                                YAMLMappingFile_ToObject , \
-                                YAMLPickleFileExtension
-from  pScientific        import PeriodicTable
-from  pScientific.Arrays import Array
-from .GaussianBasis      import GaussianBasis
-from .QCModelError       import QCModelError
+from  pCore                     import Clone                    , \
+                                       logFile                  , \
+                                       LogFileActive            , \
+                                       RawObjectConstructor     , \
+                                       YAMLMappingFile_ToObject , \
+                                       YAMLPickleFileExtension
+from  pScientific               import PeriodicTable
+from  pScientific.Arrays        import Array
+from  pScientific.LinearAlgebra import OrthogonalizationMethod
+from .GaussianBases             import GaussianBasis
+from .QCModelError              import QCModelError
 
 #===================================================================================================================================
 # . Class.
@@ -153,8 +154,9 @@ cdef class MNDOParametersContainer:
         # . Separated off for use separately after, for example, pickling.
         for ( key, entry ) in self.uniqueEntries.items ( ):
             basis = bases.uniqueEntries[key]
-            for ( i, zeta ) in enumerate ( entry.shellExponents ): basis.ScaleShellExponents ( i, zeta )
-            basis.Normalize ( )
+            for ( i, zeta ) in enumerate ( entry.shellExponents ):
+                basis.ScaleShellExponents ( i, zeta )
+            entry.DetermineNormalization ( basis )
 
     @property
     def atomicNumbers ( self ):

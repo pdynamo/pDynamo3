@@ -158,7 +158,7 @@ class QCModel ( EnergyModel ):
             qcGradients3.Scale ( Units.Length_Angstroms_To_Bohrs * Units.Energy_Hartrees_To_Kilojoules_Per_Mole )
             self.ScatterQCGradients3 ( state, target.coordinates3, qcGradients3, scratch.gradients3 )
 
-    def EnergyInitialize ( self,target ):
+    def EnergyInitialize ( self, target ):
         """Energy initialization."""
         scratch = target.scratch
         state   = getattr ( target, self.__class__._stateName )

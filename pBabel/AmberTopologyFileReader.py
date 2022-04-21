@@ -2,28 +2,29 @@
 
 import math
 
-from  pCore                import Clone                     , \
-                                  DataType                  , \
-                                  logFile                   , \
-                                  LogFileActive             , \
-                                  SelfPairList              , \
+from  pCore                import Clone                      , \
+                                  DataType                   , \
+                                  logFile                    , \
+                                  LogFileActive              , \
+                                  SelfPairList               , \
                                   TextFileReader
-from  pMolecule            import EnergyModelPriority       , \
-                                  Sequence                  , \
+from  pMolecule            import EnergyModelPriority        , \
+                                  Sequence                   , \
                                   System
-from  pMolecule.MMModel    import FourierDihedralContainer  , \
-                                  HarmonicAngleContainer    , \
-                                  HarmonicBondContainer     , \
-                                  LJParameterContainer      , \
-                                  MMModelAMBER              , \
+from  pMolecule.MMModel    import FourierDihedralContainer   , \
+                                  HarmonicAngleContainer     , \
+                                  HarmonicBondContainer      , \
+                                  LJParameterContainer       , \
+                                  MMModelAMBER               , \
                                   MMModelState
-from  pScientific          import PeriodicTable             , \
+from  pScientific          import PeriodicTable              , \
                                   Units
 from  pScientific.Arrays   import Array
-from  pScientific.Symmetry import CrystalSystemCubic        , \
-                                  CrystalSystemMonoclinic   , \
-                                  CrystalSystemOrthorhombic , \
-                                  CrystalSystemTetragonal
+from  pScientific.Symmetry import CrystalSystemCubic         , \
+                                  CrystalSystemMonoclinic    , \
+                                  CrystalSystemOrthorhombic  , \
+                                  CrystalSystemTetragonal    , \
+                                  PeriodicBoundaryConditions
 from .ExportImport         import _Importer
 
 #===================================================================================================================================
@@ -422,7 +423,8 @@ class AmberTopologyFileReader ( TextFileReader ):
             elif ( a == b ):                crystalSystem = CrystalSystemTetragonal   ( )
             else:                           crystalSystem = CrystalSystemOrthorhombic ( )
             # . Define symmetry.
-            system.DefineSymmetry ( crystalSystem = crystalSystem, a = a, b = b, c = c, beta = beta )
+            system.symmetry           = PeriodicBoundaryConditions.WithCrystalSystem ( crystalSystem )
+            system.symmetryParameters = system.symmetry.MakeSymmetryParameters ( a = a, b = b, c = c, beta = beta )
 
     def ToSystem ( self, mmModel = None ):
         """Create a system."""
@@ -477,6 +479,8 @@ class AmberTopologyFileReader ( TextFileReader ):
             system.__dict__     ["_mmModel"] = mmModel
             system.__dict__     [ "mmState"] = mmState
             system._UpdateEnergyClosures ( )
+            # . Complete the system connectivity from the MM model.
+            system.mmModel.CompleteConnectivity  ( system )
             # . Symmetry data.
             self.ToSymmetry ( system )
         return system

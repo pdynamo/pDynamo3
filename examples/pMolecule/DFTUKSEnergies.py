@@ -7,7 +7,7 @@ from QCTestSystems     import GetRadicalMoleculeSystems , \
 #===================================================================================================================================
 # . Script.
 #===================================================================================================================================
-_QCModelOptions =  { "LDA:321G"  : { "fitBasis" : "demon" , "functional" : "lda" , "orbitalBasis" : "321g" } }
+_QCModelOptions =  { "LDA:DZVP" : { "fitBasis" : "dgauss-a1-dftjfit" , "functional" : "lda" , "orbitalBasis" : "dgauss-dzvp" } }
 testSystems     = GetRadicalMoleculeSystems ( convergerKeywords = { "densityTolerance" : 1.0e-10, "maximumIterations" : 250 } ,
                                               qcModelClass      = QCModelDFT      ,
                                               qcModelOptions    = _QCModelOptions )

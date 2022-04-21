@@ -141,6 +141,28 @@ Integer RealArray2D_GramSchmidtOrthogonalize ( const RealArray2D *self          
 # undef DEFAULT_TOLERANCE
 
 /*----------------------------------------------------------------------------------------------------------------------------------
+! . Check for a diagonal matrix.
+!---------------------------------------------------------------------------------------------------------------------------------*/
+Boolean RealArray2D_IsDiagonal ( const RealArray2D *self, const Real tolerance )
+{
+    Boolean isDiagonal = False ;
+    if ( self != NULL )
+    {
+        auto Integer i, j ;
+        isDiagonal = True ;
+        for ( i = 0 ; i < self->extent0 ; i++ )
+        {
+            for ( j = 0 ; j < self->extent1 ; j++ )
+            {
+                if ( ( i != j ) && ( fabs ( Array2D_Item ( self, i, j ) ) > tolerance ) ) { isDiagonal = False ; break ; }
+            }
+            if ( ! isDiagonal ) break ;
+        }
+    }
+    return isDiagonal ;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------
 ! . Check for orthogonality (check procedure).
 !---------------------------------------------------------------------------------------------------------------------------------*/
 # define ORTHOGONALITY_TOLERANCE 1.0e-10

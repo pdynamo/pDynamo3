@@ -60,7 +60,7 @@ class QCModelORCAState ( QCModelState ):
         """Determine the paths needed by an ORCA job."""
         paths = {}
         if randomJob: job = RandomString ( )
-        else:            job = _DefaultJobName
+        else:         job = _DefaultJobName
         if randomScratch:
             scratch          = os.path.join ( scratch, RandomString ( ) )
             paths["Scratch"] = scratch # . Only set if random.

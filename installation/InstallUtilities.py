@@ -105,6 +105,12 @@ class BuildClibWithCompileOptions ( build_clib ):
             self.compiler.create_static_lib ( objects, lib_name, output_dir = self.build_clib, debug = self.debug )
 
 #===================================================================================================================================
+# . Error class.
+#===================================================================================================================================
+class InstallationError ( Exception ):
+    pass
+
+#===================================================================================================================================
 # . Installation options class.
 #===================================================================================================================================
 class InstallationOptions:
@@ -128,7 +134,7 @@ class InstallationOptions:
         parser.add_argument ( "-f" , "--full"           , action = "store_true"  , dest = "doFull"           , default = False , help = "do a full installation"                         )
         parser.add_argument ( "-l" , "--list"           , action = "store_true"  , dest = "listPackages"     , default = False , help = "list packages only"                             )
         parser.add_argument (        "--noClearUp"      , action = "store_false" , dest = "doClearUp"        , default = True  , help = "do not clear up after installation"             )
-        parser.add_argument (        "--noThirdParty"   , action = "store_false" , dest = "doThirdParty"     , default = True  , help = "do not install thirdparty libraries"            )
+        parser.add_argument ( "-n" , "--noThirdParty"   , action = "store_false" , dest = "doThirdParty"     , default = True  , help = "do not install thirdparty libraries"            )
         parser.add_argument (        "--openMP"         , action = "store_true"  , dest = "useOpenMP"        , default = False , help = "compile with OpenMP"                            )
         parser.add_argument (        "packageName"      , nargs  = "*"           ,                                               help = "the name of the package to install"             )
         parser.add_argument (        "--ptAtlas"        , action = "store_true"  , dest = "useThreadedAtlas" , default = False , help = "link with the threaded ATLAS libraries"         )
@@ -137,6 +143,7 @@ class InstallationOptions:
         parser.add_argument ( "-s" , "--shell"          , action = "store_true"  , dest = "doShellFiles"     , default = False , help = "write shell files                    [default]" )
         parser.add_argument (        "--threads"        , type   = int           , dest = "threads"          , default = -1    , help = "the number of threads"                          )
         parser.add_argument (        "--thirdPartyOnly" , action = "store_true"  , dest = "doThirdPartyOnly" , default = False , help = "install thirdparty libraries only"              )
+        parser.add_argument ( "-u" , "--update"         , action = "store_true"  , dest = "update"           , default = False , help = "update package and all those that depend on it" )
         parser.add_argument ( "-v" , "--verbose"        , action = "store_true"  , dest = "verbose"          , default = True  , help = "verbose mode                         [default]" )
         arguments = parser.parse_args ( )
         # . Check what is to be done.
@@ -159,10 +166,11 @@ class InstallationOptions:
         doThirdParty     = arguments.doThirdParty
         doThirdPartyOnly = arguments.doThirdPartyOnly
         numberOfThreads  = 0
-        packageNames     = arguments.packageName
+        packageNames     = set ( arguments.packageName )
         useOpenMP        = arguments.useOpenMP        and ( maximumThreads > 1 )
         useThreadedAtlas = arguments.useThreadedAtlas and ( maximumThreads > 1 )
         useSerialAtlas   = arguments.useSerialAtlas and ( not useThreadedAtlas )
+        update           = arguments.update
         verbose          = arguments.verbose
         # . Process the number of threads when OpenMP is to be used.
         # . Is this needed?
@@ -183,6 +191,7 @@ class InstallationOptions:
         self.useOpenMP        = useOpenMP
         self.useSerialAtlas   = useSerialAtlas
         self.useThreadedAtlas = useThreadedAtlas
+        self.update           = update
         self.verbose          = verbose
         if self.doThirdPartyOnly:
             self.doExtensions = False
@@ -261,27 +270,6 @@ class PackageToInstall:
     def __init__ ( self, **options ):
         """Constructor."""
         for ( key, value ) in options.items ( ): setattr ( self, key, value )
-
-    @staticmethod
-    def Compare ( self, other ):
-        """Comparison function."""
-        # . Cross-dependence.
-        otherIsInSelf = ( other.name in self.dependencyNames )
-        selfIsInOther = ( self.name in other.dependencyNames )
-        if otherIsInSelf and selfIsInOther: raise ValueError ( "The directories " + self.name + " and " + other.name + " are mutually dependent." )
-        elif otherIsInSelf: return  1
-        elif selfIsInOther: return -1
-        else:
-            # . Number of dependencies.
-            nself  = len (  self.dependencyNames )
-            nother = len ( other.dependencyNames )
-            if   nself > nother: return  1
-            elif nself < nother: return -1
-            else:
-                # . Names.
-                if   self.name > other.name: return  1
-                elif self.name < other.name: return -1
-                else:                        return  0
 
     def CheckForCLibraries ( self ):
         """Check for C libraries."""
@@ -376,7 +364,7 @@ class PackageToInstall:
                     print ( "\nInvalid Pyrex-derived C files:\n" )
                     for name in errors: print ( name )
                     print ( "" )
-                raise ValueError ( "There are missing or out-of-date Pyrex-derived C files." )
+                raise InstallationError ( "There are missing or out-of-date Pyrex-derived C files." )
 
     def CompileCLibraries ( self ):
         """Compile the C-libraries."""
@@ -423,7 +411,7 @@ class PackageToInstall:
             try:
                 import Cython.Compiler.Errors as Errors, Cython.Compiler.Main as Main, Cython.Compiler.Version as Version
             except:
-                raise ValueError ( "Error locating the " + tag + " compiler." )
+                raise InstallationError ( "Error locating the " + tag + " compiler." )
             # . Compile.
             # . Get the pxdDirectories (self and then dependencies in reverse order).
             pxdDirectories = [ self.pyrexPath ]
@@ -504,7 +492,7 @@ class PackageToInstall:
                 if name.find ( "." ) >= 0: tail = name.split ( "." )[-1]
                 else:                      tail = name
                 paths = glob.glob ( os.path.join ( buildPath, tail + _SharedObjectBuildPathExtension ) )
-                if len ( paths ) != 1: raise ValueError ( "Wrong number of shared object paths ({:d}) for {:s}.".format ( len ( paths ), tail ) )
+                if len ( paths ) != 1: raise InstallationError ( "Wrong number of shared object paths ({:d}) for {:s}.".format ( len ( paths ), tail ) )
                 os.rename ( paths[0], os.path.join ( destinationPath, tail + _SharedObjectExtension ) )
 
     def ProcessWithOptions ( self, options, report ):
@@ -529,7 +517,7 @@ class PackageToInstall:
         items = []
         for name in names:
             try:    items.append ( itemDictionary[name] )
-            except: raise ValueError ( "Unable to resolve dependency \"" + name + "\" for package " + self.name + "." )
+            except: raise InstallationError ( "Unable to resolve dependency \"" + name + "\" for package " + self.name + "." )
         setattr ( self, "dependencyObjects", items )
 
 #===================================================================================================================================
@@ -556,12 +544,12 @@ def FindRootDirectory ( ):
             rootDirectory = os.getenv ( _PDynamoHome )
     # . Finish up.
     if rootDirectory is None:
-        raise ValueError ( "Unable to find pDynamo root directory." )
+        raise InstallationError ( "Unable to find pDynamo root directory." )
     else:
         os.environ[_PDynamoHome] = rootDirectory
     return rootDirectory
 
-def GetRootDirectories ( names ):
+def GetRootDirectories ( names, update = False ):
     """Get the root directories recursively in increasing order of dependency.
     All directories are returned by default otherwise only those specified by |names|.
 
@@ -587,16 +575,7 @@ def GetRootDirectories ( names ):
     for directory in toProcess.values ( ):
         directory.ResolveDependencies ( toProcess )
     # . Create the sorted directory list.
-    directories = list ( toProcess.values ( ) )
-    directories.sort ( key = functools.cmp_to_key ( PackageToInstall.Compare ) )
-    # . Prune the list if necessary.
-    if ( names is not None ) and ( len ( names ) > 0 ):
-        items       = directories
-        directories = []
-        for item in items:
-            if item.name in names: directories.append ( item )
-#    import sys
-#    sys.exit ( )
+    directories = SortPackages ( toProcess, names, update = update )
     # . Finish up.
     return directories
 
@@ -623,11 +602,51 @@ def PyrexCompile ( Errors, Main, source, pxdDirectories = None ):
     except Errors.PyrexError as e:
         print ( e )
         failed = True
-    if failed: raise ValueError ( "There was a Pyrex compiler error." )
+    if failed: raise InstallationError ( "There was a Pyrex compiler error." )
 
 def RemoveBuildDirectory ( ):
     """Remove the build directory if it exists."""
     if os.path.exists ( "build" ): shutil.rmtree ( "build" )
+
+def SortPackages ( toProcess, names, update = False ):
+    """Sort the package list in order of dependency."""
+    # . This could be improved by using the same graph structure for the DFS and topological sort.
+    # . Possibilities (always ordered):
+    #   Names Update Result
+    #   Empty False  All packages
+    #   Empty True   All packages
+    #   True  False  Named packages
+    #   True  True   Named packages + those that depend on them
+    # . toProcess is a dictionary of package names : package instances.
+    # . Generate the graph.
+    doNames = ( names is not None ) and ( len ( names ) > 0 )
+    if doNames: # . Remove packages from toProcess that are not reachable from the named packages.
+        graph = { key : set ( ) for key in toProcess.keys ( ) }
+        for ( key, value ) in toProcess.items ( ):
+            for name in value.dependencyNames: graph[name].add ( key )
+        visited = set ( )
+        for name in names:
+            if name in toProcess.keys ( ): # . To avoid packages which do not require treatment.
+                stack = set ( [ name ] ) 
+                while len ( stack ) > 0:
+                    vertex = stack.pop ( )
+                    if vertex not in visited:
+                        visited.add ( vertex )
+                        stack.update ( graph[vertex] )
+        graph = { name : set ( [ dependency for dependency in toProcess[name].dependencyNames if dependency in visited ] ) for name in visited }
+    else: # . Full graph.
+        graph = { key : set ( value.dependencyNames ) for ( key, value ) in toProcess.items ( ) }
+    # . Order the graph.
+    ordered = list ( TopologicalSort ( graph ) )
+    # . Prune the list with explicitly specified packages only.
+    # . The update option keeps all descendants.
+    if doNames and ( not update ):
+        common  = [ group.intersection ( names ) for group in ordered ]
+        ordered = [ group for group in common if len ( group ) > 0    ]
+    #print ( ordered )
+    #sys.exit ( )
+    # . Finish up.
+    return [ toProcess[name] for group in ordered for name in sorted ( group ) ]
 
 def TimeToString ( time ):
     """Convert a floating point time to a string."""
@@ -641,6 +660,34 @@ def TimeToString ( time ):
     tag = "s"
     fields.append ( "{:5.3f}{:1s}".format ( value, tag ) )
     return " ".join ( fields )
+
+def TopologicalSort ( data ):
+    """Topologically sort the dependency graph."""
+    # . |data| is a dictionary whose keys are package names, and values are sets of dependencies.
+    # . Adapted from toposort-1.5.
+    # . Nothing to be done.
+    if len ( data ) == 0: return
+    # . Copy the input so as to leave it unmodified.
+    data = data.copy()
+    # . Ignore self dependencies.
+    for ( key, value ) in data.items ( ): value.discard ( key )
+    # . Find all items that don't depend on anything.
+    extraItems = functools.reduce ( set.union, data.values ( ) ) - set ( data.keys ( ) )
+    # . Add empty dependences where needed.
+    data.update ( { item : set ( ) for item in extraItems } )
+    # . Do the sorting.
+    while True:
+        ordered = set ( item for item, dep in data.items ( ) if len ( dep ) == 0 )
+        if not ordered:
+            break
+        yield ordered
+        data = { item: ( dep - ordered ) for item, dep in data.items ( ) if item not in ordered }
+    # . There are circular dependencies.
+    if len ( data ) != 0:
+        width = max ( [ len ( key ) for key in data.keys ( ) ] )
+        print ( "\nPackage circular dependencies:" )
+        for key in sorted ( data.keys ( ) ): print ( "{:s} - {:s}", key.ljust ( width ), ", ".join ( sorted ( data[key] ) ) )
+        raise InstallationError ( "The packages have circular dependencies." )
 
 def WriteShellFile ( inPath, outPath, variables, report ):
     """Write a shell file."""

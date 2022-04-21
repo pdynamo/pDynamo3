@@ -182,7 +182,7 @@ class ChainOfStatesOptimizer ( MultiDimensionalMinimizer ):
             else: state.path.gIp[image].CopyTo ( g )
         # . Interior images.
         else:
-            # . Calculate the normalized tangent to the image with linear constraints removed.
+            # . Calculate the normalized tangent to the image with constraints removed.
             t = state.tangent
             state.path.Tangent ( image, state.objectiveFunction, t ) # . Require method option.
             # . Calculate the projected function gradient.

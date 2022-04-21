@@ -1,7 +1,6 @@
 """QC definitions."""
 
-from enum  import Enum    , \
-                  IntEnum
+from enum import Enum, IntEnum
 
 # . These are defined here so as to avoid cyclic references (ElectronicState <-> QCModelBase, etc.).
 
@@ -10,12 +9,6 @@ from enum  import Enum    , \
 #===================================================================================================================================
 # . Definitions.
 #===================================================================================================================================
-class BasisRepresentation ( Enum ):
-    """The basis represenation."""
-    Actual     = 10 # . The orthogonalized atom-centered basis.
-    Orthogonal = 20 # . The molecular basis resulting from orthogonalization (during the SCF for example).
-    Work       = 30 # . The primitive atom-centered work basis.
-
 class ChargeModel ( Enum ):
     """Charge types."""
     CHelpG   =  0
@@ -30,11 +23,6 @@ class FockClosurePriority ( IntEnum ):
     Medium   = 20
     Low      = 30
     VeryLow  = 40
-
-class OrthogonalizationType ( Enum ):
-    """The type of orthogonalization."""
-    Canonical = 1
-    Symmetric = 2
 
 #===================================================================================================================================
 # . Testing.

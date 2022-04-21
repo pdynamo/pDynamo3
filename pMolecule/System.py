@@ -281,7 +281,7 @@ class System ( SummarizableObject ):
     @classmethod
     def FromConnectivity ( selfClass, connectivity, withSequence = False ):
         """Constructor given a connectivity."""
-        self              = selfClass ( )
+        self = selfClass ( )
         self.__dict__["_atoms"       ] = AtomContainer.FromIterable ( connectivity.atoms )
         self.__dict__["_connectivity"] = connectivity
         if withSequence: self.__dict__["_sequence"] = Sequence.FromAtoms ( self.atoms )
@@ -348,18 +348,21 @@ class System ( SummarizableObject ):
         new._UpdateEnergyClosures ( )
         return new
 
-    def PruneToQCRegion ( self ):
+    def PruneToQCRegion ( self, withAtomPaths = False ):
         """
-        Return a system consisting of the QC region, including boundary atoms.
+        Return a minimal system consisting of the QC region, including boundary atoms.
         Nothing is done if no QC model is defined.
         """
         new = None
         if self.qcModel is not None:
-            new              = self.__class__.FromAtoms ( self.qcModel.atomicNumbers )
+            new              = self.__class__.FromAtoms ( self.qcState.atomicNumbers )
             new.coordinates3 = Coordinates3.WithExtent ( len ( new.atoms ) )
-            self.qcModel.GatherQCCoordinates3 ( self.coordinates3, new.coordinates3 )
+            self.qcModel.GatherQCCoordinates3 ( self.qcState, self.coordinates3, new.coordinates3 )
             if self.label is None: new.label = "QC Region"
             else:                  new.label = self.label + " - QC Region"
+            if withAtomPaths:
+                for ( i, s ) in enumerate ( self.qcState.qcAtoms ):
+                    new.atoms[i].label = self.atoms[s].path
         return new
 
     def SummaryItems ( self ):

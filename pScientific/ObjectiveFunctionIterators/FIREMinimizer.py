@@ -97,8 +97,8 @@ class FIREMinimizer ( MultiDimensionalMinimizer ):
         state.d.Add ( state.v, scale =       dt                       )
         state.d.Add ( state.g, scale = 0.5 * dt**2 * state.gToAFactor )
         state.v.Add ( state.g, scale = 0.5 * dt    * state.gToAFactor )
-        # . Apply linear constraints - unnecessary if already applied to g.
-#        state.objectiveFunction.ApplyLinearConstraints ( state.d )
+        # . Apply constraints - unnecessary if already applied to g.
+#        state.objectiveFunction.ApplyConstraintsToVector ( state.d )
         # . Check the step length - this appears to be important for this optimizer.
         step = state.d.RootMeanSquare ( )
         if step > self.maximumStep: state.d.Scale ( self.maximumStep / step )

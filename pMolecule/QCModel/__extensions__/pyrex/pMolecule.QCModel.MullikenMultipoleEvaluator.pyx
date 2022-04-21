@@ -1,7 +1,6 @@
 """Mulliken multipole evaluator."""
 
-from .QCDefinitions import BasisRepresentation
-from .QCModelError  import QCModelError
+from .QCModelError import QCModelError
 
 #===================================================================================================================================
 # . Class.
@@ -16,7 +15,7 @@ cdef class MullikenMultipoleEvaluator:
         cdef IntegerArray1D  basisIndices
         cdef SymmetricMatrix overlap
         cdef CStatus         cStatus = CStatus_OK
-        basisIndices = target.qcState.orbitalBases._centerFunctionPointers[self.basisRepresentation]
+        basisIndices = target.qcState.orbitalBases.centerFunctionPointers
         overlap      = target.scratch.overlapMatrix
         Mulliken_BondOrders ( basisIndices.cObject ,
                               density.cObject      ,
@@ -34,7 +33,7 @@ cdef class MullikenMultipoleEvaluator:
         cdef IntegerArray1D  basisIndices
         cdef SymmetricMatrix overlap
         if multipoleOrder != 0: raise ValueError ( "Invalid multipole order." )
-        basisIndices = target.qcState.orbitalBases._centerFunctionPointers[self.basisRepresentation]
+        basisIndices = target.qcState.orbitalBases.centerFunctionPointers
         overlap      = target.scratch.overlapMatrix
         Mulliken_ChargeDensityDerivatives ( basisIndices.cObject ,
                                             dXdQ.cObject         ,
@@ -53,7 +52,7 @@ cdef class MullikenMultipoleEvaluator:
         cdef SymmetricMatrix onePDM
         cdef SymmetricMatrix overlap
         if multipoleOrder != 0: raise ValueError ( "Invalid multipole order." )
-        basisIndices   = target.qcState.orbitalBases._centerFunctionPointers[self.basisRepresentation]
+        basisIndices   = target.qcState.orbitalBases.centerFunctionPointers
         overlap        = target.scratch.overlapMatrix
         if density is None: onePDM = target.scratch.onePDMP.density
         else:               onePDM = density
@@ -74,13 +73,10 @@ cdef class MullikenMultipoleEvaluator:
         cdef IntegerArray1D  basisIndices
         cdef SymmetricMatrix onePDM
         if multipoleOrder != 0: raise ValueError ( "Invalid multipole order." )
-        basisIndices = target.qcState.orbitalBases._centerFunctionPointers[self.basisRepresentation]
+        basisIndices = target.qcState.orbitalBases.centerFunctionPointers
         if density is None: onePDM = target.scratch.onePDMP.density
         else:               onePDM = density
         Mulliken_WeightedDensity ( basisIndices.cObject ,
                                    dXdQ.cObject         ,
                                    onePDM.cObject       ,
                                    wDM.cObject          )
-
-    @property
-    def basisRepresentation ( self ): return BasisRepresentation.Work

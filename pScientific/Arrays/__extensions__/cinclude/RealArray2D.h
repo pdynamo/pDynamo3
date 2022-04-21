@@ -28,6 +28,8 @@ extern Integer      RealArray2D_GramSchmidtOrthogonalize ( const RealArray2D *se
                                                            const Integer     *numberConstant    ,
                                                            const Real        *tolerance         ,
                                                                  Status      *status            ) ;
+extern Boolean      RealArray2D_IsDiagonal               ( const RealArray2D *self              ,
+                                                           const Real         tolerance         ) ;
 extern Boolean      RealArray2D_IsOrthogonal             ( const RealArray2D *self              ,
                                                            const Real        *tolerance         ,
                                                                  Real        *deviation         ,

@@ -48,11 +48,9 @@ cdef class MMTerm:
     @staticmethod
     def MergeKeys ( parameterKeys, parameters ):
         """Merge parameter keys."""
-        newKeys = set ( parameterKeys )
+        newKeys = sorted ( set ( parameterKeys ) )
         if len ( newKeys ) < len ( parameterKeys ):
-            # . Keys.
-            newKeys = list ( newKeys )
-            newKeys.sort ( )
+            # . Mapping.
             oldToNew = []
             for oldKey in parameterKeys:
                 oldToNew.append ( newKeys.index ( oldKey ) )

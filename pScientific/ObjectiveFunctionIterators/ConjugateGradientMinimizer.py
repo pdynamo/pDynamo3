@@ -68,9 +68,13 @@ class CGObjectiveFunction ( UniDimensionalObjectiveFunction ):
         # . Set up the implicit variables.
         self.x0.CopyTo ( self.x )
         self.x.Add ( self.d, scale = alpha )
-        #print "\nRMS and Maximum Step> ", alpha * self.d.RootMeanSquare ( ), alpha * self.d.AbsoluteMaximum ( ),
+        # . Apply constraints to variables.
+        self.objectiveFunction.ApplyConstraintsToVariables ( self.x, referenceVariables = self.x0 )
         # . Function and gradients.
         self.f = self.objectiveFunction.FunctionGradients ( self.x, self.g )
+        # . Apply constraints to gradients.
+        self.objectiveFunction.ApplyConstraintsToVector ( self.g, referenceVariables = self.x )
+        # . Finish up.
         return ( self.f, self.d.Dot ( self.g ) )
 
 #    def GetBounds ( self ): return ( 0.0, _LargeNumber )
@@ -161,6 +165,18 @@ class ConjugateGradientMinimizer ( MultiDimensionalMinimizer ):
                              "minimumTheta"             : "Minimum Theta"              ,
                              "steepestDescentTolerance" : "Steepest Descent Tolerance" ,
                              "useSpectralTheta"         : "Use Spectral Theta"         } )
+
+    def FunctionGradients ( self, state ):
+        """Evaluate the function and its gradients."""
+        # . Apply constraints to variables.
+        state.objectiveFunction.ApplyConstraintsToVariables ( state.x, referenceVariables = state.x0 ) # . x0 is last iteration.
+        # . Function and gradients.
+        state.f = state.objectiveFunction.FunctionGradients ( state.x, state.g )
+        # . Apply constraints to gradients.
+        state.objectiveFunction.ApplyConstraintsToVector ( state.g, referenceVariables = state.x )
+        # . Finish up.
+        state.rmsGradient = state.g.RootMeanSquare ( )
+        state.numberOfFunctionCalls += 1
 
     def Initialize ( self, state ):
         """Initialization before iteration."""
@@ -262,7 +278,7 @@ class ConjugateGradientMinimizer ( MultiDimensionalMinimizer ):
         if state.g.Dot ( state.d ) > ( - self.steepestDescentTolerance * dNorm2 * gNorm2 ):
             state.g.CopyTo ( state.d )
             state.d.Scale  ( -1.0 )
-        state.objectiveFunction.ApplyLinearConstraints ( state.d )
+        state.objectiveFunction.ApplyConstraintsToVector ( state.d, referenceVariables = state.x0 ) # . x0 is last iteration.
         state.d.Normalize ( )
         # . Alpha keeps its last value at the moment.
         # . Have an option to reset?

@@ -1,0 +1,13 @@
+# . !GaussianBasis
+Atomic Number: 13
+Basis Type: Orbital
+Is Spherical: true
+Normalization Type: Symmetric
+Normalized Primitives: true
+Primitive Fields: [Exponent, Coefficients]
+Shells: [{Primitives: [[6861.0, [1.0]]], Type: S}, {Primitives: [[1372.0, [1.0]]],
+    Type: S}, {Primitives: [[343.0, [1.0]]], Type: S}, {Primitives: [[85.8, [1.0]]],
+    Type: S}, {Primitives: [[21.4, [1.0]]], Type: S}, {Primitives: [[6.72, [1.0, 1.0,
+          1.0]]], Type: SPD}, {Primitives: [[1.34, [1.0, 1.0, 1.0]]], Type: SPD},
+  {Primitives: [[0.34, [1.0, 1.0, 1.0]]], Type: SPD}, {Primitives: [[0.084, [1.0,
+          1.0, 1.0]]], Type: SPD}]

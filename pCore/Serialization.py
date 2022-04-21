@@ -4,6 +4,8 @@ import glob, os, yaml
 
 from pickle import dump, load
 
+# . Yaml 5.1+ requires Loader argument to yaml.load. Previous behavior requires UnsafeLoader option.
+
 #===================================================================================================================================
 # . Parameters.
 #===================================================================================================================================
@@ -46,7 +48,7 @@ def YAMLPickle ( path, items, defaultFlowStyle = True, title = None ):
 def YAMLUnpickle ( path ):
     """Unpickle objects from a file."""
     pFile = open ( path, "r" )
-    items = yaml.load ( pFile )
+    items = yaml.load ( pFile, Loader=yaml.UnsafeLoader )
     pFile.close ( )
     return items
 
@@ -67,7 +69,7 @@ def YAMLMappingFile_FromObject ( path, title, object, defaultFlowStyle = True ):
 def YAMLMappingFile_ToObject ( path, selfClass ):
     """Create an object from a mapping file."""
     pFile = open ( path, "r" )
-    state = yaml.load ( pFile )
+    state = yaml.load ( pFile, Loader=yaml.UnsafeLoader )
     pFile.close ( )
     self  = selfClass.Raw ( )
     self.__setstate__ ( state )

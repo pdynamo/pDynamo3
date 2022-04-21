@@ -132,12 +132,12 @@ class LangevinVelocityVerletIntegrator ( MultiDimensionalDynamics ):
         """Add in random forces."""
         # . First vector.
         self.normalDeviateGenerator.NextStandardDeviates ( state.w )
-        state.objectiveFunction.ApplyLinearConstraints   ( state.w )
+        state.objectiveFunction.ApplyConstraintsToVector ( state.w )
         state.x.Add ( state.w, scale = state.sdR  )
         state.v.Add ( state.w, scale = state.sdV1 )
         # . Second vector.
         self.normalDeviateGenerator.NextStandardDeviates ( state.w )
-        state.objectiveFunction.ApplyLinearConstraints   ( state.w )
+        state.objectiveFunction.ApplyConstraintsToVector ( state.w )
         state.v.Add ( state.w, scale = state.sdV2 )
 
     def TemperatureHandlingOptions ( self ):

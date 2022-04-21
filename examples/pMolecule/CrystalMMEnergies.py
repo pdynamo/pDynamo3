@@ -105,7 +105,6 @@ class CrystalTestSystem:
             if expandToP1:
                 self.p1Factor = float ( len ( molecule.symmetry.transformations ) * _numberCells )
                 molecule      = CrystalExpandToP1 ( molecule, aRange = _aRange, bRange = _bRange, cRange = _cRange )
-
         # . Set up the QC model.
         if qcModel is not None:
             if doQCMM: charge = self.qcmmCharge

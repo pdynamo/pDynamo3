@@ -1,0 +1,11 @@
+{Atomic Number: 12, Basis Type: Orbital, Is Spherical: true, Normalized Primitives: true,
+  Primitive Fields: [Exponent, Coefficients], Shells: [{Primitives: [[12436.675, [
+            -0.0018333]], [1862.2232, [-0.0140828]], [421.37452, [-0.0700956]], [
+          117.69304, [-0.2387718]], [37.431453, [-0.4787377]], [12.505489, [-0.3447773]]],
+      Type: S}, {Primitives: [[25.4514, [0.085214]], [2.4528765, [-0.5646916]], [
+          0.8051334, [-0.5157275]]], Type: S}, {Primitives: [[1.0820076, [-0.1113334]],
+        [0.108334, [0.6481452]]], Type: S}, {Primitives: [[0.0399074, [1.0]]], Type: S},
+    {Primitives: [[92.463222, [0.0162716]], [21.501769, [0.104563]], [6.5374423, [
+            0.3224328]], [2.1180808, [0.4940399]]], Type: P}, {Primitives: [[0.6583148,
+          [1.0]]], Type: P}, {Primitives: [[0.1061, [1.0]]], Type: P}, {Primitives: [
+        [0.187, [1.0]]], Type: D}]}

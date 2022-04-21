@@ -160,7 +160,7 @@ cdef class AntisymmetricMatrix:
                                     RealArray2D     v not None ,
                                     RealArray2D     w not None ,
                                             xTranspose = False ):
-        """Make the commutator x * a * b * y - y^T * b * a * x^T with optional x and y transposition."""
+        """Make the commutator x^T * ( a * b * c - c * b * a ) * x with optional x transposition."""
         cdef CBoolean cXTranpose
         cdef CStatus  cStatus    = CStatus_OK
         if xTranspose: cXTranspose = CTrue

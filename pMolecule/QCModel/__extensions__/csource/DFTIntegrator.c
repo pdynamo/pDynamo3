@@ -9,7 +9,7 @@
 # include "DFTGridWeights.h"
 # include "DFTIntegrator.h"
 # include "DFTIntegratorDataBlock.h"
-# include "GaussianBasisContainerIntegrals_b1e0n1.h"
+# include "GaussianBasisContainerIntegrals_f1Op1.h"
 # include "GridFunctionDataBlock.h"
 # include "Integer.h"
 # include "IntegerArray1D.h"
@@ -181,7 +181,7 @@ extern void DFTIntegrator_Integrate ( const DFTFunctionalModel     *functionalMo
          Status_IsOK ( status ) )
     {
         auto Boolean determineFunctionData, doFock, doGradients, storeFunctionData ;        
-        auto Integer gridAtom, numberOfBasisFunctions = 0, order, r ;                                                   
+        auto Integer gridAtom, numberOfFunctions = 0, order, r ;                                                   
         auto Real    eXCTotal = 0.0e+00, rhoTotal = 0.0e+00 ;                               
         auto Status  localStatus = Status_OK ;                                              
         auto Coordinates3                  *coordinates3    = NULL ;
@@ -190,30 +190,24 @@ extern void DFTIntegrator_Integrate ( const DFTFunctionalModel     *functionalMo
         auto DFTIntegratorDataBlock        *rhoData         = NULL ;
         auto DFTIntegratorDataBlockView    *rhoDataP        = NULL , *rhoDataQ        = NULL ;
         auto GridFunctionDataBlock         *basisData       = NULL ;
-        auto IntegerArray1D                *atomIndices     = NULL , *basisIndices    = NULL ;
+        auto IntegerArray1D                *atomIndices     = NULL ;
         auto RealArray1D                   *weights         = NULL , *work1D          = NULL ;
         auto RealArray2D                   *reducedDensityP = NULL , *reducedDensityQ = NULL, *temp2D = NULL, *work2D = NULL ;
         /* . Initialization. */
         DFTGrid_MakeRecords ( grid, &localStatus ) ;
-        doFock                 = ( fockA      != NULL ) ;
-        doGradients            = ( gradients3 != NULL ) ;
-        numberOfBasisFunctions = GaussianBasisContainer_NumberOfBasisFunctions ( gaussianBases, True ) ;
-        order                  = functionalModel->order ;
+        doFock            = ( fockA      != NULL ) ;
+        doGradients       = ( gradients3 != NULL ) ;
+        numberOfFunctions = GaussianBasisContainer_NumberOfFunctions ( gaussianBases ) ;
+        order             = functionalModel->order ;
         if ( doGradients )
         {
             order      += 1 ;
-            atomIndices = IntegerArray1D_AllocateWithExtent ( numberOfBasisFunctions, &localStatus ) ;
-            GaussianBasisContainer_MakeBasisAtomIndices ( gaussianBases, True, atomIndices, &localStatus ) ;
+            atomIndices = gaussianBases->functionCenters ;
             DFTGrid_DeallocateFunctionData ( grid, &localStatus ) ;
         }
         if ( localStatus != Status_OK ) goto FinishUp ;
         determineFunctionData = ( ! inCore      ) || ( inCore && ( grid->records[0]->functionData == NULL ) ) ;
         storeFunctionData     = ( ! doGradients ) && ( inCore && ( grid->records[0]->functionData == NULL ) ) ;
-        if ( determineFunctionData )
-        {
-            basisIndices = IntegerArray1D_AllocateWithExtent ( gaussianBases->capacity + 1, &localStatus ) ;
-            GaussianBasisContainer_MakeBasisIndices ( gaussianBases, True, basisIndices, &localStatus ) ;
-        }
         /* . Loop over the grid point blocks. */
         for ( r = 0 ; r < grid->numberOfRecords ; r++ )
         {
@@ -228,17 +222,18 @@ extern void DFTIntegrator_Integrate ( const DFTFunctionalModel     *functionalMo
                 if ( ( basisData == NULL ) || ( basisData->numberOfPoints != block->numberOfPoints ) )
                 {
                     GridFunctionDataBlock_Deallocate ( &basisData ) ;
-                    basisData = GridFunctionDataBlock_Allocate ( numberOfBasisFunctions, block->numberOfPoints, order, &localStatus ) ;
+                    basisData = GridFunctionDataBlock_Allocate ( numberOfFunctions, block->numberOfPoints, order, &localStatus ) ;
                 }
-                else GridFunctionDataBlock_Resize ( basisData, numberOfBasisFunctions, &localStatus ) ;
-                GaussianBasisContainerIntegrals_GridFunctionDataBlock ( gaussianBases        ,
-                                                                        basisIndices         ,
-                                                                        qcCoordinates3       ,
-                                                                        coordinates3         ,
-                                                                        True                 ,
-                                                                        &(grid->bfTolerance) ,
-                                                                        basisData            ,
-                                                                        &localStatus         ) ;
+                else GridFunctionDataBlock_Resize ( basisData, numberOfFunctions, &localStatus ) ;
+/*printf ( "\nInto GBCI Grid %d %d %d %d %d\n", r, grid->numberOfRecords, numberOfFunctions, block->numberOfPoints, order ) ; fflush ( stdout ) ;*/
+                GaussianBasisContainerIntegrals_f1Op1ir123 ( gaussianBases        ,
+                                                             qcCoordinates3       ,
+                                                             coordinates3         ,
+                                                             True                 ,
+                                                             &(grid->bfTolerance) ,
+                                                             basisData            ,
+                                                             &localStatus         ) ;
+/*printf ( "\nOut of GBCI Grid\n" ) ; fflush ( stdout ) ;*/
             }
             /* . Retrieve function data. */
             else basisData = block->functionData ;
@@ -500,8 +495,6 @@ extern void DFTIntegrator_Integrate ( const DFTFunctionalModel     *functionalMo
     FinishUp:
         DFTGridWeightsDerivativesWork_Deallocate ( &weightsWork     ) ;
         DFTIntegratorDataBlock_Deallocate        ( &rhoData         ) ;
-        IntegerArray1D_Deallocate                ( &atomIndices     ) ;
-        IntegerArray1D_Deallocate                ( &basisIndices    ) ;
         RealArray1D_Deallocate                   ( &work1D          ) ;
         RealArray2D_Deallocate                   ( &reducedDensityP ) ;
         RealArray2D_Deallocate                   ( &reducedDensityQ ) ;

@@ -36,7 +36,7 @@ _GradientAbsoluteErrorTolerance = 1.0e-02
 #===================================================================================================================================
 # . Model definitions.
 _converger   = DIISSCFConverger.WithOptions ( densityTolerance = 1.0e-12, maximumIterations = 250 )
-_qcModelHF   = QCModelDFT.WithOptions       ( converger = _converger, orbitalBasis = "321g" )
+_qcModelHF   = QCModelDFT.WithOptions       ( converger = _converger, orbitalBasis = "3-21g" )
 _qcModelMNDO = QCModelMNDO.WithOptions      ( converger = _converger )
 _qcModelORCA = None
 _nbModel     = NBModelCutOff.WithDefaults   ( )

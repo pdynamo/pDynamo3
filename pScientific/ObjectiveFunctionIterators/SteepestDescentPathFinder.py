@@ -91,8 +91,8 @@ class SteepestDescentPathFinder ( ObjectiveFunctionIterator ):
                     if len ( negative ) != 1: raise ObjectiveFunctionIteratorError ( "The starting point is not a first-order saddle point." )
                     # . Get the direction of the step from the saddle as the negative eigenVector.
                     for i in range ( state.numberOfVariables ): state.d[i] = eigenVectors[i,negative[0]]
-                    # . Apply linear constraints.
-                    state.objectiveFunction.ApplyLinearConstraints ( state.d )
+                    # . Apply constraints.
+                    state.objectiveFunction.ApplyConstraintsToVector ( state.d )
                     state.d.Normalize ( )
                     # . Get the initial stepsize - the negative direction first.
                     state.direction  = - 1.0

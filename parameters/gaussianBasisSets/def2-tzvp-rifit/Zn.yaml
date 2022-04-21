@@ -1,0 +1,27 @@
+{Atomic Number: 30, Basis Type: Orbital, Is Spherical: true, Normalized Primitives: true,
+  Primitive Fields: [Exponent, Coefficients], Shells: [{Primitives: [[91.330088, [
+            0.19671369]], [43.0984, [1.11340742]], [20.990965, [-0.87865104]]], Type: S},
+    {Primitives: [[10.521655, [1.0]]], Type: S}, {Primitives: [[5.410657, [1.0]]],
+      Type: S}, {Primitives: [[2.844773, [1.0]]], Type: S}, {Primitives: [[1.52366,
+          [1.0]]], Type: S}, {Primitives: [[0.82811, [1.0]]], Type: S}, {Primitives: [
+        [0.454872, [1.0]]], Type: S}, {Primitives: [[0.251463, [1.0]]], Type: S},
+    {Primitives: [[0.139313, [1.0]]], Type: S}, {Primitives: [[267.44963494, [-0.38582947]],
+        [54.30951352, [1.5595784]]], Type: P}, {Primitives: [[21.47168893, [-1.09978619]]],
+      Type: P}, {Primitives: [[5.9962476, [1.92006033]]], Type: P}, {Primitives: [
+        [2.46312598, [1.0]]], Type: P}, {Primitives: [[1.30876616, [1.0]]], Type: P},
+    {Primitives: [[0.7217611, [1.0]]], Type: P}, {Primitives: [[0.38071186, [1.0]]],
+      Type: P}, {Primitives: [[0.21106915, [1.0]]], Type: P}, {Primitives: [[0.10078694804,
+          [1.0]]], Type: P}, {Primitives: [[102.53610084, [1.38496173]]], Type: D},
+    {Primitives: [[30.780892088, [10.00026281]]], Type: D}, {Primitives: [[8.4159263563,
+          [1.07846033]]], Type: D}, {Primitives: [[4.3444881218, [1.19918717]]], Type: D},
+    {Primitives: [[2.2781840215, [1.0]]], Type: D}, {Primitives: [[1.1235654987, [
+            1.0]]], Type: D}, {Primitives: [[0.53127643585, [-2.1e-07]]], Type: D},
+    {Primitives: [[0.20077532274, [1.0]]], Type: D}, {Primitives: [[65.82809328, [
+            -1.28127898]]], Type: F}, {Primitives: [[10.473867813, [1.4636492]]],
+      Type: F}, {Primitives: [[4.9748498007, [2.1474966]]], Type: F}, {Primitives: [
+        [2.6935767185, [0.42243383]]], Type: F}, {Primitives: [[1.4315080811, [1.0]]],
+      Type: F}, {Primitives: [[0.55527751679, [1.0]]], Type: F}, {Primitives: [[20.488986822,
+          [1.4142847]]], Type: G}, {Primitives: [[6.5545161184, [1.4292563]]], Type: G},
+    {Primitives: [[3.1616002386, [-0.26678046]]], Type: G}, {Primitives: [[1.2412891429,
+          [1.0]]], Type: G}, {Primitives: [[0.74440645808, [1.0]]], Type: G}, {Primitives: [
+        [8.8010057733, [1.0]]], Type: H}, {Primitives: [[4.0911084613, [1.0]]], Type: H}]}

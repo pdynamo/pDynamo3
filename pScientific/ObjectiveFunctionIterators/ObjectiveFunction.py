@@ -22,8 +22,12 @@ class ObjectiveFunction ( AttributableObject ):
     _attributable.update ( { "doLogging"    : False ,
                              "trajectories" : list  } )
  
-    def ApplyLinearConstraints ( self, array ):
-        """Apply linear constraints to an one-dimensional array."""
+    def ApplyConstraintsToVariables ( self, variables, **keywordArguments ):
+        """Apply constraints to the variables."""
+        pass
+ 
+    def ApplyConstraintsToVector ( self, array, **keywordArguments ):
+        """Apply constraints to a vector (for example, gradients, step or tangent)."""
         pass
 
     def DefineTrajectory ( self, trajectory, logFrequency ):
@@ -82,7 +86,7 @@ class ObjectiveFunction ( AttributableObject ):
                 variables[i] = temp
                 gradients[i] = ( fplus - fminus )
             gradients.Scale ( 1.0 / ( 2.0 * delta ) )
-            self.ApplyLinearConstraints ( gradients )
+            self.ApplyConstraintsToVector ( gradients )
             return gradients
         else:
             return None
@@ -207,6 +211,11 @@ class ObjectiveFunction ( AttributableObject ):
     def VariablesPut ( self, variables ):
         """Empty the variable array."""
         pass
+
+    @property
+    def numberOfVariables ( self ):
+        """Return the number of variables."""
+        return 0
 
 #===================================================================================================================================
 # . Class.

@@ -7,19 +7,6 @@ from  pCore                          import AttributableObject , \
 from .ObjectiveFunction              import ObjectiveFunction
 from .ObjectiveFunctionIteratorError import ObjectiveFunctionIteratorError
 
-#
-# . Notes:
-#
-#   It might be preferable to have linear constraints at this level rather than
-#   in the objective function. Thus, the iterator applies the LCs and the iterator
-#   state stores them. One could apply them normally directly after gradient
-#   evaluation. Alternatively, explicitly call ApplyLCs (maybe better if LCs
-#   are not vectors) when required rather than implicitly by OF.
-#
-#   It might also be preferable to have Iterate use a state instead of an
-#   objective function with the stete set up explicitly beforehand.
-#
-
 #===================================================================================================================================
 # . Class.
 #===================================================================================================================================

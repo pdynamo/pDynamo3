@@ -787,6 +787,8 @@ class CHARMMPSFFileReader ( TextFileReader ):
                 system.__dict__     ["_mmModel"] = mmModel
                 system.__dict__     [ "mmState"] = mmState
                 system._UpdateEnergyClosures ( )
+                # . Complete the system connectivity from the MM model.
+                system.mmModel.CompleteConnectivity  ( system )
             # . Free atoms - do after MM model so MM terms are appropriately affected.
             self.ToFreeAtoms ( system )
         return system

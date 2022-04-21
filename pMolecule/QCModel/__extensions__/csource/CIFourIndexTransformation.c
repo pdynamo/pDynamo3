@@ -51,16 +51,16 @@ static void CIFIT_TransformIndex1 ( const RealArray2D *mos, const RealArrayND *t
 {
     if  ( ( mos != NULL ) && ( tei234 != NULL ) && ( moTEIs != NULL ) )
     {
-        auto Integer  i, nactive, nbasis, p, pq, q, r, rs, s, upper ;
+        auto Integer  i, nActive, nBasis, p, pq, q, r, rs, s, upper ;
         auto Real     sum ;
 
         /* . Initialization. */
-        nactive = View2D_Columns ( mos ) ;
-        nbasis  = View2D_Rows    ( mos ) ;
+        nActive = View2D_Columns ( mos ) ;
+        nBasis  = View2D_Rows    ( mos ) ;
         DoubleSymmetricMatrix_Set ( moTEIs, 0.0e+00 ) ;
 
         /* . Loop over MOs. */
-        for ( p = pq = 0 ; p < nactive ; p++ )
+        for ( p = pq = 0 ; p < nActive ; p++ )
         {
             for ( q = 0 ; q <= p ; q++, pq++ )
             {
@@ -71,7 +71,7 @@ static void CIFIT_TransformIndex1 ( const RealArray2D *mos, const RealArrayND *t
                     for ( s = 0 ; s <= upper ; s++, rs++ )
                     {
                         /* . This is a dot-product so ultimately should use slices. */
-                        for ( i = 0, sum = 0.0e+00 ; i < nbasis ; i++ ) sum += Array2D_Item ( mos, i, p ) * ArrayND_Item3D ( tei234, i, q, rs ) ;
+                        for ( i = 0, sum = 0.0e+00 ; i < nBasis ; i++ ) sum += Array2D_Item ( mos, i, p ) * ArrayND_Item3D ( tei234, i, q, rs ) ;
                         DoubleSymmetricMatrix_SetItem ( moTEIs, p, q, r, s, sum, NULL ) ;
                     }
                 }
@@ -87,27 +87,27 @@ static void CIFIT_TransformIndex2 ( const RealArray2D *mos, const RealArray2D *t
 {
     if  ( ( mos != NULL ) && ( tei34 != NULL ) && ( tei234 != NULL ) )
     {
-        auto Integer  i, ij, j, nactive, nbasis,q, r, rs, s ;
+        auto Integer  i, ij, j, nActive, nBasis,q, r, rs, s ;
         auto Real     t ;
 
         /* . Initialization. */
-        nactive = View2D_Columns ( mos ) ;
-        nbasis  = View2D_Rows    ( mos ) ;
+        nActive = View2D_Columns ( mos ) ;
+        nBasis  = View2D_Rows    ( mos ) ;
         RealArrayND_Set ( tei234, 0.0e+00, NULL ) ;
 
         /* . Loop over MO pairs. */
-        for ( r = rs = 0 ; r < nactive ; r++ )
+        for ( r = rs = 0 ; r < nActive ; r++ )
         {
             for ( s = 0 ; s <= r ; s++, rs++ )
             {
                 /* . Loop over AOs. */
-                for ( i = ij = 0 ; i < nbasis ; i++ )
+                for ( i = ij = 0 ; i < nBasis ; i++ )
                 {
                     for ( j = 0 ; j <= i ; ij++, j++ )
                     {
                         t  = Array2D_Item ( tei34, ij, rs ) ;
                         if ( i == j ) t *= 0.5e+00 ;
-                        for ( q = 0 ; q < nactive ; q++ )
+                        for ( q = 0 ; q < nActive ; q++ )
                         {
                             ArrayND_Item3D ( tei234, i, q, rs ) += t * Array2D_Item ( mos, j, q ) ;
                             ArrayND_Item3D ( tei234, j, q, rs ) += t * Array2D_Item ( mos, i, q ) ;
@@ -126,12 +126,12 @@ static void CIFIT_TransformIndices34 ( const RealArray2D *mos, BlockStorage *two
 {
     if  ( ( mos != NULL ) && ( twoElectronIntegrals != NULL ) && ( tei34 != NULL ) )
     {
-        auto Integer  i, ii, ij, j, k, kl, l, m, n, nactive, r, rs, s ;
+        auto Integer  i, ii, ij, j, k, kl, l, m, n, nActive, r, rs, s ;
         auto Real     t, wij, wkl ;
         auto Block   *block ;
 
         /* . Initialization. */
-        nactive = View2D_Columns ( mos ) ;
+        nActive = View2D_Columns ( mos ) ;
         RealArray2D_Set ( tei34, 0.0e+00 ) ;
 
         /* . Loop over the integral blocks. */
@@ -167,7 +167,7 @@ static void CIFIT_TransformIndices34 ( const RealArray2D *mos, BlockStorage *two
                 if ( ij == kl ) { wij *= 0.5e+00 ; wkl *= 0.5e+00 ; }
 
                 /* . Loop over MO pairs. */
-                for ( r = rs = 0 ; r < nactive ; r++ )
+                for ( r = rs = 0 ; r < nActive ; r++ )
                 {
                     for ( s = 0 ; s <= r ; rs++, s++ )
                     {

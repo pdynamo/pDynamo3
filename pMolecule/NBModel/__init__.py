@@ -24,6 +24,7 @@ from .PairwiseInteractionSplineABFS                  import PairwiseInteractionS
 from .QCMMElectrostaticModel                         import QCMMElectrostaticModel
 from .QCMMElectrostaticModelDensityBase              import QCMMElectrostaticModelDensityBase
 from .QCMMElectrostaticModelDensityCutOffMNDO        import QCMMElectrostaticModelDensityCutOffMNDO
+from .QCMMElectrostaticModelDensityFitFull           import QCMMElectrostaticModelDensityFitFull
 from .QCMMElectrostaticModelDensityFullGaussianBasis import QCMMElectrostaticModelDensityFullGaussianBasis
 from .QCMMElectrostaticModelDensityFullMNDO          import QCMMElectrostaticModelDensityFullMNDO
 from .QCMMElectrostaticModelDFTB                     import QCMMElectrostaticModelDFTB

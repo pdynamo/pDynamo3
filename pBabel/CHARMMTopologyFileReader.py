@@ -27,10 +27,10 @@ def grouper ( n, iterable, fillValue = None ):
 class CHARMMTopologyAtomType:
     """An atom type definition."""
 
-    _attributable = { "atomicNumber" :   -1,
-                          "index"        :   -1,
-                          "label"        : None,
-                          "mass"         :  0.0 }
+    _attributable = { "atomicNumber" :   -1 ,
+                      "index"        :   -1 ,
+                      "label"        : None ,
+                      "mass"         :  0.0 }
 
     def __init__ ( self, **options ):
         """Constructor."""
@@ -40,27 +40,27 @@ class CHARMMTopologyAtomType:
 class CHARMMTopologyResidue:
     """A patch or residue definition."""
 
-    _attributable = { "acceptors"           : None,
-                          "angles"              : None,
-                          "atoms"               : None,
-                          "bonds"               : None,
-                          "charge"              :  0.0,
-                          "cmaps"               : None,
-                          "currentGroup"        :    0,
-                          "defaultFirst"        : None,
-                          "defaultLast"         : None,
-                          "deleteableAcceptors" : None,
-                          "deleteableAngles"    : None,
-                          "deleteableAtoms"     : None,
-                          "deleteableBonds"     : None,
-                          "deleteableDihedrals" : None,
-                          "deleteableICs"       : None,
-                          "deleteableImpropers" : None,
-                          "dihedrals"           : None,
-                          "donors"              : None,
-                          "ics"                 : None,
-                          "impropers"           : None,
-                          "label"               : None }
+    _attributable = { "acceptors"           : None ,
+                      "angles"              : None ,
+                      "atoms"               : None ,
+                      "bonds"               : None ,
+                      "charge"              :  0.0 ,
+                      "cmaps"               : None ,
+                      "currentGroup"        :    0 ,
+                      "defaultFirst"        : None ,
+                      "defaultLast"         : None ,
+                      "deleteableAcceptors" : None ,
+                      "deleteableAngles"    : None ,
+                      "deleteableAtoms"     : None ,
+                      "deleteableBonds"     : None ,
+                      "deleteableDihedrals" : None ,
+                      "deleteableICs"       : None ,
+                      "deleteableImpropers" : None ,
+                      "dihedrals"           : None ,
+                      "donors"              : None ,
+                      "ics"                 : None ,
+                      "impropers"           : None ,
+                      "label"               : None }
 
     def __init__ ( self, **options ):
         """Constructor."""

@@ -41,6 +41,17 @@ class MMAtomTyper ( AttributableObject ):
         """Check for untyped atoms."""
         # . Check for untyped atoms.
         if len ( untypedAtoms ) > 0:
+#           # . To remove ...
+#           print ( "\nUntyped atoms:\n" )
+#           for atom in untypedAtoms:
+#               print ( "Path          = ", atom.path         ,
+#                       "AtomicNumber  = ", atom.atomicNumber ,
+#                       "Connections   = ", atom.connections  ,
+#                       "FormalCharge  = ", atom.formalCharge ,
+#                       "Hydrogens     = ", atom.hydrogens    ,
+#                       "IsAromatic    = ", atom.isAromatic   ,
+#                       "Label         = ", atom.label        ,
+#                       "Valence       = ", atom.valence      )
             if LogFileActive ( log ):
                 labels = []
                 length = 0
@@ -84,6 +95,21 @@ class MMAtomTyper ( AttributableObject ):
         atomCharges  = [ 0.0  for i in range ( len ( connectivity.atoms ) ) ]
         atomTypes    = [ None for i in range ( len ( connectivity.atoms ) ) ]
         untypedAtoms = set ( connectivity.atoms )
+#       # . To remove ...
+#       print ( "\nAtoms to type:\n" )
+#       for atom in connectivity.atoms:
+#           print ( "Path          = ", atom.path         ,
+#                   "AtomicNumber  = ", atom.atomicNumber ,
+#                   "Connections   = ", atom.connections  ,
+#                   "FormalCharge  = ", atom.formalCharge ,
+#                   "Hydrogens     = ", atom.hydrogens    ,
+#                   "IsAromatic    = ", atom.isAromatic   ,
+#                   "Label         = ", atom.label        ,
+#                   "Valence       = ", atom.valence      )
+#       for bond in connectivity.bonds:
+#           print ( "Node1 = ", bond.node1.path ,
+#                   "Node2 = ", bond.node2.path ,
+#                   "Type  = ", bond.type.name  )
         # . Type the atoms.
         self.TypeBySequence ( sequence    , atomTypes, atomCharges, untypedAtoms )
         self.TypeByPattern  ( connectivity, atomTypes, atomCharges, untypedAtoms )

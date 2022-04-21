@@ -105,9 +105,9 @@ class JaguarInputFileReader ( TextFileReader ):
             if ( len ( tokens ) > 1 ) and ( tokens[0] == "basgss" ): guessbasis = tokens[1].strip ( )
         # . Initialization.
         coefficients = None
-        nbasis       = None
+        nBasis       = None
         orbitals     = None
-        orbitalsets  = {}
+        orbitalSets  = {}
         key          = ""
         warnings0   = self.warnings
         # . Loop until an end of section is reached
@@ -127,39 +127,39 @@ class JaguarInputFileReader ( TextFileReader ):
                 else:                     energy    = 0.0
                 if "Occupation" in items: occupancy = float ( items[items.index ( "Occupation" ) + 1] )
                 else:                     occupancy = 0.0
-                if ( nbasis is None ) and ( coefficients is not None ): nbasis = len ( coefficients )
+                if ( nBasis is None ) and ( coefficients is not None ): nBasis = len ( coefficients )
                 coefficients = []
                 # . Orbital set data.
                 if orbitals is None: orbitals = []
                 orbitals.append ( ( energy, occupancy, coefficients ) )
                 # . Orbital collection data.
                 if key is not None:
-                    if key in orbitalsets: self.Warning ( "Orbital sets with duplicate names.", False )
+                    if key in orbitalSets: self.Warning ( "Orbital sets with duplicate names.", False )
                     else:
-                        orbitalsets[key] = orbitals
+                        orbitalSets[key] = orbitals
                         key              = None
             # . A coefficient line.
             elif ( len ( items ) > 0 ) and ( coefficients is not None ):
                 for item in items: coefficients.append ( float ( item ) )
-                if ( nbasis is not None ) and ( len ( coefficients ) > nbasis ): self.Warning ( "There are orbitals with differing numbers of coefficients.", False )
+                if ( nBasis is not None ) and ( len ( coefficients ) > nBasis ): self.Warning ( "There are orbitals with differing numbers of coefficients.", False )
             # . Other lines.
             else:
                 self.Warning ( "Unable to interpret guess section line.", False )
         # . Save the data if there have been no warnings.
-        if ( warnings0 == self.warnings ) and ( nbasis is not None ):
+        if ( warnings0 == self.warnings ) and ( nBasis is not None ):
             # . Initialization.
-            self.orbitalsets = {}
+            self.orbitalSets = {}
             # . Process each of the orbital sets in turn.
-            for ( key, orbitals ) in orbitalsets.items ( ):
+            for ( key, orbitals ) in orbitalSets.items ( ):
                 norbitals   = len ( orbitals )
                 energies    = Array.WithExtent  ( norbitals )
                 occupancies = Array.WithExtent  ( norbitals )
-                vectors     = Array.WithExtents ( nbasis, norbitals )
+                vectors     = Array.WithExtents ( nBasis, norbitals )
                 for ( i, ( energy, occupancy, coefficients ) ) in enumerate ( orbitals ):
                     energies[i]    = energy
                     occupancies[i] = occupancy
                     for ( j, v ) in enumerate ( coefficients ): vectors[j,i] = v
-                self.orbitalsets[key.lower ( )] = ( norbitals, nbasis, energies, occupancies, vectors )
+                self.orbitalSets[key.lower ( )] = ( norbitals, nBasis, energies, occupancies, vectors )
 
     def ParseHessianSection ( self, line ):
         """Pass the Hessian section."""

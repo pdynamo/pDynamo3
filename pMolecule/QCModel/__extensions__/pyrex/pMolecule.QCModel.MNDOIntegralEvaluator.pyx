@@ -1,11 +1,10 @@
 """MNDO integral evaluator."""
 
-from  pCore         import logFile              , \
-                           LogFileActive        , \
-                           RawObjectConstructor
-from  pScientific   import Units
-from .QCDefinitions import BasisRepresentation
-from .QCModelError  import QCModelError
+from  pCore        import logFile              , \
+                          LogFileActive        , \
+                          RawObjectConstructor
+from  pScientific  import Units
+from .QCModelError import QCModelError
 
 #===================================================================================================================================
 # . Class.
@@ -45,7 +44,7 @@ cdef class MNDOIntegralEvaluator:
         cdef CSymmetricMatrix       *cDZ     = NULL
         scratch      = target.scratch
         coordinates3 = scratch.qcCoordinates3AU
-        basisIndices = target.qcState.orbitalBases._centerFunctionPointers[self.basisRepresentation]
+        basisIndices = target.qcState.orbitalBases.centerFunctionPointers
         parameters   = target.qcState.mndoParameters
         if center is not None: cCenter = center.cObject
         n  = len ( target.qcState.orbitalBases )
@@ -63,6 +62,8 @@ cdef class MNDOIntegralEvaluator:
         if cStatus != CStatus_OK: raise QCModelError ( "Error calculating dipole integrals." )
         return ( dX, dY, dZ )
 
+    f1Df1i = DipoleIntegrals # . For conformity in QCModelBase ...
+
     def ElectronNuclearTEIGradients ( self, target ):
         """The electron-nuclear and TEI gradients."""
         cdef IntegerArray1D          basisIndices
@@ -74,7 +75,7 @@ cdef class MNDOIntegralEvaluator:
         cdef CSymmetricMatrix       *cDSpin = NULL
         scratch = target.scratch
         if scratch.doGradients:
-            basisIndices = target.qcState.orbitalBases._centerFunctionPointers[self.basisRepresentation]
+            basisIndices = target.qcState.orbitalBases.centerFunctionPointers
             coordinates3 = scratch.qcCoordinates3AU
             dTotal       = scratch.onePDMP.density
             gradients3   = scratch.qcGradients3AU
@@ -104,7 +105,7 @@ cdef class MNDOIntegralEvaluator:
         cdef SymmetricMatrix         zMatrix
         scratch = target.scratch
         if scratch.doGradients:
-            basisIndices = target.qcState.orbitalBases._centerFunctionPointers[self.basisRepresentation]
+            basisIndices = target.qcState.orbitalBases.centerFunctionPointers
             coordinates3 = scratch.qcCoordinates3AU
             dHF          = scratch.onePDMP.density
             orbitals     = scratch.orbitalsP.orbitals
@@ -140,7 +141,7 @@ cdef class MNDOIntegralEvaluator:
         cdef SymmetricMatrix         oneElectronMatrix
         cdef CBlockStorage          *cTwoElectronIntegrals = NULL
         scratch           = target.scratch
-        basisIndices      = target.qcState.orbitalBases._centerFunctionPointers[self.basisRepresentation]
+        basisIndices      = target.qcState.orbitalBases.centerFunctionPointers
         coordinates3      = scratch.qcCoordinates3AU
         oneElectronMatrix = scratch.oneElectronMatrix
         parameters        = target.qcState.mndoParameters
@@ -157,7 +158,6 @@ cdef class MNDOIntegralEvaluator:
 
     def ResonanceGradients ( self, target, doCI = False ):
         """The resonance gradients."""
-        cdef IntegerArray1D          basisIndices
         cdef Coordinates3            coordinates3
         cdef Coordinates3            gradients3
         cdef GaussianBasisContainer  bases
@@ -166,7 +166,6 @@ cdef class MNDOIntegralEvaluator:
         scratch = target.scratch
         if scratch.doGradients:
             bases        = target.qcState.orbitalBases
-            basisIndices = bases._centerFunctionPointers[self.basisRepresentation]
             coordinates3 = scratch.qcCoordinates3AU
             gradients3   = scratch.qcGradients3AU
             parameters   = target.qcState.mndoParameters
@@ -174,29 +173,22 @@ cdef class MNDOIntegralEvaluator:
             else:    dTotal = scratch.onePDMP.density
             MNDO_ResonanceGradients ( parameters.cObject   ,
                                       bases.cObject        ,
-                                      basisIndices.cObject ,
                                       coordinates3.cObject ,
                                       dTotal.cObject       ,
                                       gradients3.cObject   )
 
     def ResonanceIntegrals ( self, target ):
         """The resonance integrals."""
-        cdef IntegerArray1D          basisIndices
         cdef Coordinates3            coordinates3
         cdef GaussianBasisContainer  bases
         cdef MNDOParametersContainer parameters
         cdef SymmetricMatrix         oneElectronMatrix
         bases             = target.qcState.orbitalBases
-        basisIndices      = bases._centerFunctionPointers[self.basisRepresentation]
         coordinates3      = target.scratch.qcCoordinates3AU
         parameters        = target.qcState.mndoParameters
         oneElectronMatrix = target.scratch.oneElectronMatrix
         MNDO_ResonanceIntegrals ( parameters.cObject        ,
                                   bases.cObject             ,
-                                  basisIndices.cObject      ,
                                   coordinates3.cObject      ,
                                   oneElectronMatrix.cObject )
-
-    @property
-    def basisRepresentation ( self ): return BasisRepresentation.Actual
 

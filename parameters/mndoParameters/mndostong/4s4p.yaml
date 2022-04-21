@@ -1,10 +1,11 @@
 ---
 # . !GaussianBasis
-Atomic Number        : 0
-Basis Type           : Orbital
-Is Spherical         : true
-Normalization Type   : Diagonal
-Normalized Primitives: true
+Atomic Number            : 0
+Basis Type               : Orbital
+Is Spherical             : true
+Normalized Primitives    : true
+Orthogonalization Method : Diagonal
+Orthogonalization Operator : Overlap
 Primitive Fields:
 - Exponent
 - Coefficients

@@ -1,0 +1,24 @@
+{Atomic Number: 35, Basis Type: Orbital, Is Spherical: true, Normalized Primitives: true,
+  Primitive Fields: [Exponent, Coefficients], Shells: [{Primitives: [[95.83565078,
+          [1.0]]], Type: S}, {Primitives: [[42.83378101, [1.0]]], Type: S}, {Primitives: [
+        [17.7523149, [1.0]]], Type: S}, {Primitives: [[7.67356066, [1.0]]], Type: S},
+    {Primitives: [[5.18486161, [1.0]]], Type: S}, {Primitives: [[2.33638114, [1.0]]],
+      Type: S}, {Primitives: [[0.69883249, [1.0]]], Type: S}, {Primitives: [[0.40812678,
+          [1.0]]], Type: S}, {Primitives: [[0.19922296, [1.0]]], Type: S}, {Primitives: [
+        [0.09914857, [1.0]]], Type: S}, {Primitives: [[51.71658277, [1.0]]], Type: P},
+    {Primitives: [[32.32286419, [1.0]]], Type: P}, {Primitives: [[9.09848855, [1.0]]],
+      Type: P}, {Primitives: [[4.11064989, [1.0]]], Type: P}, {Primitives: [[1.84014548,
+          [1.0]]], Type: P}, {Primitives: [[1.16760356, [1.0]]], Type: P}, {Primitives: [
+        [0.63639976, [1.0]]], Type: P}, {Primitives: [[0.32265619, [1.0]]], Type: P},
+    {Primitives: [[0.0902528, [1.0]]], Type: P}, {Primitives: [[125.68208277, [1.0]]],
+      Type: D}, {Primitives: [[43.69204236, [1.0]]], Type: D}, {Primitives: [[11.11666744,
+          [1.0]]], Type: D}, {Primitives: [[3.81631933, [1.0]]], Type: D}, {Primitives: [
+        [1.5468856, [1.0]]], Type: D}, {Primitives: [[0.868739, [1.0]]], Type: D},
+    {Primitives: [[0.56452603, [1.0]]], Type: D}, {Primitives: [[0.23087582, [1.0]]],
+      Type: D}, {Primitives: [[103.32685318, [-0.53239629]], [13.29052387, [1.283585]]],
+      Type: F}, {Primitives: [[3.19472597, [1.0]]], Type: F}, {Primitives: [[1.7218393,
+          [1.0]]], Type: F}, {Primitives: [[0.84306755, [1.0]]], Type: F}, {Primitives: [
+        [0.39193927, [1.0]]], Type: F}, {Primitives: [[27.21759449, [1.0]]], Type: G},
+    {Primitives: [[8.75930726, [1.0]]], Type: G}, {Primitives: [[3.46896896, [1.0]]],
+      Type: G}, {Primitives: [[0.89030648, [1.0]]], Type: G}, {Primitives: [[2.35538758,
+          [1.0]]], Type: H}]}

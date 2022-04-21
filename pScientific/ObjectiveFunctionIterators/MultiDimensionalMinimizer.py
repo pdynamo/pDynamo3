@@ -108,6 +108,8 @@ class MultiDimensionalMinimizer ( ObjectiveFunctionIterator ):
             self.FunctionGradients ( state )
         except Exception as error:
             state.error = error.args[0]
+            import traceback, sys
+            traceback.print_exc(file=sys.stdout)
 
     def Iteration ( self, state ):
         """Perform an iteration."""

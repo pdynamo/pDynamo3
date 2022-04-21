@@ -6,6 +6,7 @@ Scripts:
   - DFTRKSEnergies
   - DFTUKSEnergies
   - DihydrogenDissociation
+  - GaussianBasisCartesianSphericalTransformation
   - GaussianBasisSets
   - GridUpdating
   - MergePrune

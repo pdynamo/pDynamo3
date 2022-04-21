@@ -11,13 +11,13 @@ from .ArrayIterator import ArrayIterator
 #===================================================================================================================================
 # . Parameters.
 #===================================================================================================================================
-# . Item formatting defaults.
+# . Item formatting defaults - don't be too greedy.
 _DefaultItemFormat  = "{!r}"
 _DefaultItemsPerRow =    9
 _DefaultItemWidth   =   10
-_ItemFormat         = { DataType.Boolean : "{!r}" , DataType.Real : "{:18.8f}" , DataType.Integer : "{:12d}" }
-_ItemsPerRow        = { DataType.Boolean :    9   , DataType.Real :     6      , DataType.Integer :     9    }
-_ItemWidth          = { DataType.Boolean :   10   , DataType.Real :    19      , DataType.Integer :    10    }
+_ItemFormat         = { DataType.Boolean : "{!r}" , DataType.Real : "{:10.3f}" , DataType.Integer : "{:10d}" }
+_ItemsPerRow        = { DataType.Boolean :    9   , DataType.Real :     9      , DataType.Integer :     9    }
+_ItemWidth          = { DataType.Boolean :   10   , DataType.Real :    10      , DataType.Integer :    10    }
 
 #===================================================================================================================================
 # . Functions.

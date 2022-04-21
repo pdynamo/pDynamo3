@@ -20,25 +20,24 @@ from pScientific.Arrays.SymmetricMatrix cimport CSymmetricMatrix , \
 cdef extern from "Loewdin.h":
 
     cdef void Loewdin_AtomicCharges            ( CIntegerArray1D  *basisIndices        ,
-                                                 CRealArray2D     *loewdinT            ,
+                                                 CSymmetricMatrix *loewdinT            ,
                                                  CSymmetricMatrix *density             ,
-                                                 CRealArray1D     *charges             )
+                                                 CRealArray1D     *charges             ,
+                                                 CStatus          *status              )
     cdef void Loewdin_BondOrders               ( CIntegerArray1D  *basisIndices        ,
-                                                 CRealArray2D     *loewdinT            ,
+                                                 CSymmetricMatrix *loewdinT            ,
                                                  CSymmetricMatrix *density             ,
                                                  CSymmetricMatrix *bondOrders          ,
                                                  CStatus          *status              )
     cdef void Loewdin_ChargeDensityDerivatives ( CIntegerArray1D  *basisIndices        ,
                                                  CRealArray1D     *potentials          ,
-                                                 CRealArray2D     *loewdinT            ,
+                                                 CSymmetricMatrix *loewdinT            ,
                                                  CSymmetricMatrix *fock                )
     cdef void Loewdin_WeightedDensity          ( CIntegerArray1D  *basisIndices        ,
                                                  CRealArray1D     *potentials          ,
                                                  CRealArray1D     *eigenValues         ,
                                                  CRealArray2D     *eigenVectors        ,
-                                                 CRealArray2D     *loewdinT            ,
-                                                 CRealArray2D     *a2w                 ,
-                                                 CRealArray2D     *w2a                 ,
+                                                 CSymmetricMatrix *loewdinT            ,
                                                  CSymmetricMatrix *density             ,
                                                  CReal            *eigenValueTolerance ,
                                                  CSymmetricMatrix *wDensity            ,

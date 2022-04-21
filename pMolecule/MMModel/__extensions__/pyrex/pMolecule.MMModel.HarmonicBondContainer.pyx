@@ -119,13 +119,21 @@ cdef class HarmonicBondContainer ( MMTerm ):
         return energy
 
     def Get12Indices ( self ):
-        """Return the 1-2 indices of the bonds."""
+        """Return the 1-2 indices of the terms."""
         cdef CInteger i
         indices = []
         for i from 0 <= i < self.cObject.nTerms:
             indices.append ( self.cObject.terms[i].atom1 )
             indices.append ( self.cObject.terms[i].atom2 )
         return indices
+
+    def GetBonds ( self ):
+        """Return bond indices."""
+        if self.is12Interaction:
+            indices = self.Get12Indices ( ) 
+            return [ indices[i:i+2] for i in range ( 0, len ( indices ) - 1, 2 ) ]
+        else:
+            return []
 
     def GetUniqueTermIndices ( self ):
         """Return the term indices."""

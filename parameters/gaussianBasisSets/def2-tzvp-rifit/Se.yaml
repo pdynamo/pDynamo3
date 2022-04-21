@@ -1,0 +1,24 @@
+{Atomic Number: 34, Basis Type: Orbital, Is Spherical: true, Normalized Primitives: true,
+  Primitive Fields: [Exponent, Coefficients], Shells: [{Primitives: [[88.953661, [
+            1.0]]], Type: S}, {Primitives: [[39.13617, [1.0]]], Type: S}, {Primitives: [
+        [16.880571, [1.0]]], Type: S}, {Primitives: [[6.762032, [1.0]]], Type: S},
+    {Primitives: [[4.7977001, [1.0]]], Type: S}, {Primitives: [[2.0779773, [1.0]]],
+      Type: S}, {Primitives: [[0.57258705, [1.0]]], Type: S}, {Primitives: [[0.36861789,
+          [1.0]]], Type: S}, {Primitives: [[0.19814574, [1.0]]], Type: S}, {Primitives: [
+        [0.10449039, [1.0]]], Type: S}, {Primitives: [[52.366789, [1.0]]], Type: P},
+    {Primitives: [[31.909202, [1.0]]], Type: P}, {Primitives: [[8.4360919, [1.0]]],
+      Type: P}, {Primitives: [[3.8326396, [1.0]]], Type: P}, {Primitives: [[1.7051308,
+          [1.0]]], Type: P}, {Primitives: [[1.0025552, [1.0]]], Type: P}, {Primitives: [
+        [0.52296061, [1.0]]], Type: P}, {Primitives: [[0.27160705, [1.0]]], Type: P},
+    {Primitives: [[0.09595807, [1.0]]], Type: P}, {Primitives: [[111.37879, [1.0]]],
+      Type: D}, {Primitives: [[41.342889, [1.0]]], Type: D}, {Primitives: [[10.087019,
+          [1.0]]], Type: D}, {Primitives: [[3.4698687, [1.0]]], Type: D}, {Primitives: [
+        [1.3396318, [1.0]]], Type: D}, {Primitives: [[0.76154142, [1.0]]], Type: D},
+    {Primitives: [[0.49294005, [1.0]]], Type: D}, {Primitives: [[0.20587338, [1.0]]],
+      Type: D}, {Primitives: [[98.678637, [-0.40633906]], [12.08261, [1.0045495]]],
+      Type: F}, {Primitives: [[2.7326716, [1.0]]], Type: F}, {Primitives: [[1.4926461,
+          [1.0]]], Type: F}, {Primitives: [[0.7110602, [1.0]]], Type: F}, {Primitives: [
+        [0.33015467, [1.0]]], Type: F}, {Primitives: [[24.835528, [1.0]]], Type: G},
+    {Primitives: [[8.0527681, [1.0]]], Type: G}, {Primitives: [[2.9598149, [1.0]]],
+      Type: G}, {Primitives: [[0.76283655, [1.0]]], Type: G}, {Primitives: [[1.9937038,
+          [1.0]]], Type: H}]}

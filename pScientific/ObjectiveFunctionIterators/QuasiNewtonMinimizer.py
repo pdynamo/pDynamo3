@@ -94,8 +94,8 @@ class QuasiNewtonMinimizer ( MultiDimensionalMinimizer ):
         scale /= state.eigenVectors[state.numberOfVariables,0]
         for i in range ( state.numberOfVariables ): state.d[i] = state.eigenVectors[i,0]
         state.d.Scale ( scale )
-        # . Apply linear constraints.
-        state.objectiveFunction.ApplyLinearConstraints ( state.d )
+        # . Apply constraints.
+        state.objectiveFunction.ApplyConstraintsToVector ( state.d )
         # . Check the step length.
         stepSize = state.d.Norm2 ( )
         if stepSize > state.trustRadius:

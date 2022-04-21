@@ -1310,7 +1310,7 @@ Real Coordinates3_RootMeanSquareDeviation ( const Coordinates3 *self, const Coor
                 {
                     Coordinates3_GetRow ( self,  i, x1, y1, z1 ) ;
                     Coordinates3_GetRow ( other, i, x2, y2, z2 ) ;
-                    rmsd  += pow ( x1 - x2, 2 ) + pow ( y1 - y2, 2 ) + pow ( z1 - z2, 2 ) ;
+                    rmsd   += pow ( x1 - x2, 2 ) + pow ( y1 - y2, 2 ) + pow ( z1 - z2, 2 ) ;
                     wTotal += 1.0e+00 ;
                 }
             }
@@ -1320,8 +1320,8 @@ Real Coordinates3_RootMeanSquareDeviation ( const Coordinates3 *self, const Coor
                 {
                     Coordinates3_GetRow ( self,  i, x1, y1, z1 ) ;
                     Coordinates3_GetRow ( other, i, x2, y2, z2 ) ;
-                    w      = Array1D_Item ( weights, i ) ;
-                    rmsd  += w * ( pow ( x1 - x2, 2 ) + pow ( y1 - y2, 2 ) + pow ( z1 - z2, 2 ) ) ;
+                    w       = Array1D_Item ( weights, i ) ;
+                    rmsd   += w * ( pow ( x1 - x2, 2 ) + pow ( y1 - y2, 2 ) + pow ( z1 - z2, 2 ) ) ;
                     wTotal += w ;
                 }
             }
@@ -1335,7 +1335,7 @@ Real Coordinates3_RootMeanSquareDeviation ( const Coordinates3 *self, const Coor
                     i = selection->indices[s] ;
                     Coordinates3_GetRow ( self,  i, x1, y1, z1 ) ;
                     Coordinates3_GetRow ( other, i, x2, y2, z2 ) ;
-                    rmsd  += pow ( x1 - x2, 2 ) + pow ( y1 - y2, 2 ) + pow ( z1 - z2, 2 ) ;
+                    rmsd   += pow ( x1 - x2, 2 ) + pow ( y1 - y2, 2 ) + pow ( z1 - z2, 2 ) ;
                     wTotal += 1.0e+00 ;
                 }
             }
@@ -1346,17 +1346,17 @@ Real Coordinates3_RootMeanSquareDeviation ( const Coordinates3 *self, const Coor
                     i = selection->indices[s] ;
                     Coordinates3_GetRow ( self,  i, x1, y1, z1 ) ;
                     Coordinates3_GetRow ( other, i, x2, y2, z2 ) ;
-                    w      = Array1D_Item ( weights, i ) ;
-                    rmsd  += w * ( pow ( x1 - x2, 2 ) + pow ( y1 - y2, 2 ) + pow ( z1 - z2, 2 ) ) ;
+                    w       = Array1D_Item ( weights, i ) ;
+                    rmsd   += w * ( pow ( x1 - x2, 2 ) + pow ( y1 - y2, 2 ) + pow ( z1 - z2, 2 ) ) ;
                     wTotal += w ;
                 }
             }
         }
         /* . Scaling. */
         if ( wTotal == 0.0e+00 ) rmsd  = 0.0e+00 ;
-        else                    rmsd /= wTotal   ;
-        if ( rmsd   > 0.0e+00 ) rmsd  = sqrt ( rmsd ) ;
-        else                    rmsd  = 0.0e+00 ;
+        else                     rmsd /= wTotal  ;
+        if ( rmsd   > 0.0e+00  ) rmsd  = sqrt ( rmsd ) ;
+        else                     rmsd  = 0.0e+00 ;
     }
     return rmsd ;
 }

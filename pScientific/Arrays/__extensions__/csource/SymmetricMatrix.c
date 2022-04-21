@@ -328,7 +328,7 @@ void SymmetricMatrix_IndexedCopyToRealArray2D ( const SymmetricMatrix *self, con
 {
     if ( ( self != NULL ) && ( indices != NULL ) && ( target != NULL ) )
     {
-        auto Integer  i, j, m, n ;
+        auto Integer i, j, m, n ;
         auto Real    v ;
         for ( i = 0 ; i < indices->capacity ; i++ )
         {

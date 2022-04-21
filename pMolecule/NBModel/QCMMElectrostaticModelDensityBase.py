@@ -53,7 +53,7 @@ class QCMMElectrostaticModelDensityBase ( QCMMElectrostaticModel ):
         dTotal     = scratch.onePDMP.density
         fTotal     = scratch.onePDMP.fock
         potentials = scratch.qcmmPotentials
-        eQCMM      = dTotal.TraceOfProduct ( potentials ) # . Potentials have -1 factor for electrons. */
+        eQCMM      = dTotal.TraceOfProduct ( potentials ) # . Potentials have -1 factor for electrons.
         fTotal.Add ( potentials )
         scratch.energyTerms["QC/MM Electrostatic"] = ( eQCMM * Units.Energy_Hartrees_To_Kilojoules_Per_Mole )
         return eQCMM

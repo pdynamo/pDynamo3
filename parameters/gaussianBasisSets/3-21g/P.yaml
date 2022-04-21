@@ -1,0 +1,7 @@
+{Atomic Number: 15, Basis Type: Orbital, Is Spherical: false, Normalized Primitives: true,
+  Primitive Fields: [Exponent, Coefficients], Shells: [{Primitives: [[1054.9, [0.06554071355]],
+        [159.195, [0.3840360794]], [34.5304, [0.6745411394]]], Type: S}, {Primitives: [
+        [44.2866, [-0.1021300535, 0.1108510025]], [10.1019, [0.08159224271, 0.4564950104]],
+        [2.73997, [0.9697885076, 0.6069360139]]], Type: SP}, {Primitives: [[1.21865,
+          [-0.3714960219, 0.09158231022]], [0.395546, [1.270993496, 0.9349241043]]],
+      Type: SP}, {Primitives: [[0.122811, [1.0, 1.0]]], Type: SP}]}

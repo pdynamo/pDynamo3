@@ -1,0 +1,16 @@
+{Atomic Number: 8, Basis Type: Orbital, Is Spherical: true, Normalized Primitives: true,
+  Primitive Fields: [Exponent, Coefficients], Shells: [{Primitives: [[364.91291, [
+            0.5806034]]], Type: S}, {Primitives: [[77.387094, [1.40179846]]], Type: S},
+    {Primitives: [[24.301706, [0.349946]]], Type: S}, {Primitives: [[8.4369545, [
+            1.0]]], Type: S}, {Primitives: [[3.1527941, [1.0]]], Type: S}, {Primitives: [
+        [1.577543, [1.0]]], Type: S}, {Primitives: [[0.78178244, [1.0]]], Type: S},
+    {Primitives: [[0.31652679, [1.0]]], Type: S}, {Primitives: [[56.735948, [1.04911649]]],
+      Type: P}, {Primitives: [[14.997217, [1.13960439]]], Type: P}, {Primitives: [
+        [5.6428116, [1.0]]], Type: P}, {Primitives: [[2.40692198, [1.0]]], Type: P},
+    {Primitives: [[1.02640596, [1.0]]], Type: P}, {Primitives: [[0.43769977, [1.0]]],
+      Type: P}, {Primitives: [[12.446821, [1.14971821]], [6.1216917, [0.95355196]]],
+      Type: D}, {Primitives: [[2.7102949, [1.0]]], Type: D}, {Primitives: [[1.1524061,
+          [1.0]]], Type: D}, {Primitives: [[0.41386174, [1.0]]], Type: D}, {Primitives: [
+        [4.7793539, [0.361709]]], Type: F}, {Primitives: [[2.3204642, [1.7811199]]],
+      Type: F}, {Primitives: [[1.0912804, [0.45330353]]], Type: F}, {Primitives: [
+        [2.3383107, [1.0]]], Type: G}]}

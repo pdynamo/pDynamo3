@@ -1,8 +1,12 @@
-from pCore.CPrimitiveTypes cimport CBoolean  , \
-                                   CFalse    , \
-                                   CInteger  , \
-                                   CReal     , \
-                                   CTrue
+from pCore.CPrimitiveTypes                         cimport CBoolean       , \
+                                                           CFalse         , \
+                                                           CInteger       , \
+                                                           CReal          , \
+                                                           CTrue
+from pCore.Status                                  cimport CStatus        , \
+                                                           CStatus_OK
+from pMolecule.QCModel.GaussianBases.GaussianBasis cimport CGaussianBasis , \
+                                                           GaussianBasis
 
 #===================================================================================================================================
 # . Declarations.
@@ -125,6 +129,7 @@ cdef extern from "MNDOParameters.h":
     cdef void             MNDOParameters_CalculateOneCenterTEIs ( CMNDOParameters  *self )
     cdef CMNDOParameters *MNDOParameters_Clone                  ( CMNDOParameters  *self )
     cdef void             MNDOParameters_Deallocate             ( CMNDOParameters **self )
+    cdef void             MNDOParameters_DetermineNormalization ( CMNDOParameters  *self , CGaussianBasis *basis, CStatus *status )
     cdef void             MNDOParameters_FillBetaUspd           ( CMNDOParameters  *self )
     cdef void             MNDOParameters_ToAtomicUnits          ( CMNDOParameters  *self )
 

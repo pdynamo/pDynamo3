@@ -55,7 +55,7 @@ class Bond ( Edge ):
             self = value
         # . A tuple of items ( i/node1, j/node2 [, type [, isAromatic ] ] ).
         else:
-            bondType   = None
+            bondType   = BondType.Undefined
             isAromatic = False
             node1      = value[0]
             node2      = value[1]

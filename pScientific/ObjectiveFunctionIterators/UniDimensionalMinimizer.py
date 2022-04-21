@@ -2,6 +2,8 @@
 
 # . This may be split as in the multidimensional case.
 
+import sys, traceback
+
 from  pCore                          import AttributableObject              , \
                                             logFile                         , \
                                             LogFileActive                   , \
@@ -59,9 +61,14 @@ class UniDimensionalMinimizerState ( AttributableObject ):
         self.SetUp ( )
         return self
 
+    def HandleError ( self, error ):
+        """Handle an error."""
+        self.error = error.args[0]
+        traceback.print_exc ( file = sys.stdout )
+
     def SetUp ( self ):
-       """Set up the state."""
-       pass
+        """Set up the state."""
+        pass
 
 #===================================================================================================================================
 # . Class.
@@ -99,7 +106,7 @@ class UniDimensionalMinimizer ( SummarizableObject ):
         try:
             self.FunctionGradient ( state )
         except Exception as error:
-            state.error = error.args[0]
+            state.HandleError ( error )
         state.stepType = "I"
 
     def Iterate ( self, objectiveFunction, log = logFile ):
@@ -119,9 +126,7 @@ class UniDimensionalMinimizer ( SummarizableObject ):
         try:
             pass
         except Exception as error:
-            state.error = error.args[0]
-            import traceback, sys
-            traceback.print_exc(file=sys.stdout)
+            state.HandleError ( error )
         state.numberOfIterations += 1
 
     def LogIteration ( self, state ):

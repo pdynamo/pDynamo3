@@ -84,11 +84,11 @@ class HarmonicBondParameterContainer ( MMParameterContainer ):
                 key       = self.MakeKey ( tI, tJ )
                 parameter = self.items.get ( key, None )
                 if ( parameter is None ) and ( self.parameterFactory is not None ):
-                    parameter = self.parameterFactory ( ( tI, tJ ), ( i, j ), connectivity )
+                    ( parameter, key ) = self.parameterFactory ( ( tI, tJ ), ( i, j ), connectivity, key )
                 if parameter is None:
                     if self.useStrictAssignment:
                         missingParameters.add ( ( self.termLabel, key ) )
-                else:
+                elif parameter[1] != 0.0: # . Zero force constant.
                     p = parameterKeys.get ( key, -1 )
                     if p == -1:
                         p = len ( parameterKeys )

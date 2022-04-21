@@ -24,7 +24,10 @@ from .ElectronTransferPathways       import AtomCenteredStateDefinition         
                                             BondCenteredStateDefinition                  , \
                                             PathwaysGraph
 from .ESPChargeFitting               import ESPChargeFitting                             , \
-                                            GenerateVanDerWaalsSurface
+                                            GenerateVanDerWaalsSurface                   , \
+                                            GetInteractionTerms                          , \
+                                            GetRESPConstraints                           , \
+                                            RESPIterator
 from .GeometryOptimization           import BakerSaddleOptimize_SystemGeometry           , \
                                             ConjugateGradientMinimize_SystemGeometry     , \
                                             FIREMinimize_SystemGeometry                  , \
@@ -47,6 +50,7 @@ from .NormalModes                    import ModifyOption                        
                                             NormalModesTrajectory_SystemGeometry         , \
                                             QuasiHarmonic_SystemGeometry                 , \
                                             ThermodynamicsRRHO_SystemGeometry
+from .QCUtilities                    import DensityFitMultipoles
 from .SelfAvoidingWalkReactionPath   import SAWOptimize_SystemGeometry
 from .SequenceUtilities              import CreateElementSequence                        , \
                                             CreateHomogeneousIsolateSequence             , \

@@ -5,6 +5,7 @@ from .AmberCrdFileWriter        import AmberCrdFileWriter
 from .AmberTopologyFileReader   import AmberTopologyFileReader                      
 from .AmberTrajectoryFileReader import AmberTrajectoryFileReader                    
 from .AmberTrajectoryFileWriter import AmberTrajectoryFileWriter                    
+from .BSEFileReader             import BSEGaussianFileReader                       
 from .CHARMMCRDFileReader       import CHARMMCRDFileReader                          
 from .CHARMMParameterFileReader import CHARMMParameterContainer             , \
                                        CHARMMParameterFileReader               
@@ -16,7 +17,6 @@ from .DCDTrajectoryFileReader   import DCDTrajectoryFileReader
 from .DCDTrajectoryFileWriter   import DCDTrajectoryFileWriter                 
 from .DYLFileReader             import DYLFileReader                           
 from .DYLFileWriter             import DYLFileWriter                           
-from .EMSLFileReader            import EMSLG94FileReader                       
 from .ExportImport              import _Exporter                            , \
                                        ExportFileFormats                    , \
                                        ExportOptions                        , \

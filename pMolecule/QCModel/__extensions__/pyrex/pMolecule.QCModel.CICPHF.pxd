@@ -1,24 +1,24 @@
-from pCore.CPrimitiveTypes                    cimport CBoolean                 , \
-                                                      CFalse                   , \
-                                                      CInteger                 , \
-                                                      CReal                    , \
-                                                      CTrue
-from pCore.Status                             cimport CStatus                  , \
-                                                      CStatus_OK
-from pMolecule.QCModel.BlockStorage           cimport CBlockStorage            , \
-                                                      BlockStorage              
-from pScientific.Arrays.DoubleSymmetricMatrix cimport CDoubleSymmetricMatrix   , \
-                                                      DoubleSymmetricMatrix
-from pScientific.Arrays.IntegerArray2D        cimport CIntegerArray2D          , \
-                                                      IntegerArray2D
-from pScientific.Arrays.RealArray1D           cimport CRealArray1D             , \
-                                                      RealArray1D
-from pScientific.Arrays.RealArray2D           cimport CRealArray2D             , \
-                                                      RealArray2D
-from pScientific.Arrays.RealArrayND           cimport CRealArrayND             , \
-                                                      RealArrayND
-from pScientific.Arrays.SymmetricMatrix       cimport CSymmetricMatrix         , \
-                                                      SymmetricMatrix
+from pCore.CPrimitiveTypes                        cimport CBoolean               , \
+                                                          CFalse                 , \
+                                                          CInteger               , \
+                                                          CReal                  , \
+                                                          CTrue
+from pCore.Status                                 cimport CStatus                , \
+                                                          CStatus_OK
+from pMolecule.QCModel.GaussianBases.BlockStorage cimport CBlockStorage          , \
+                                                          BlockStorage            
+from pScientific.Arrays.DoubleSymmetricMatrix     cimport CDoubleSymmetricMatrix , \
+                                                          DoubleSymmetricMatrix
+from pScientific.Arrays.IntegerArray2D            cimport CIntegerArray2D        , \
+                                                          IntegerArray2D
+from pScientific.Arrays.RealArray1D               cimport CRealArray1D           , \
+                                                          RealArray1D
+from pScientific.Arrays.RealArray2D               cimport CRealArray2D           , \
+                                                          RealArray2D
+from pScientific.Arrays.RealArrayND               cimport CRealArrayND           , \
+                                                          RealArrayND
+from pScientific.Arrays.SymmetricMatrix           cimport CSymmetricMatrix       , \
+                                                          SymmetricMatrix
 
 #===================================================================================================================================
 # . Declarations.

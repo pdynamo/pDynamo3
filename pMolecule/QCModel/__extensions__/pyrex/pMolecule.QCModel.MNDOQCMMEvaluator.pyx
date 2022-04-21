@@ -1,7 +1,6 @@
 """MNDO QC/MM density evaluator."""
 
-from .QCDefinitions import BasisRepresentation
-from .QCModelError  import QCModelError
+from .QCModelError import QCModelError
 
 # . Everything in standard units except one-electron matrix.
 
@@ -111,6 +110,3 @@ cdef class MNDOQCMMEvaluator:
         else:          pF = &value
         MNDOIntegralsMM_Values ( parameters.cObject, R, index, pF, pG )
         return value
-
-    @property
-    def basisRepresentation ( self ): return BasisRepresentation.Actual

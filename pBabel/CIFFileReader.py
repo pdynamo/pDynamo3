@@ -2,25 +2,26 @@
 
 import os.path
 
-from  pCore                 import logFile                  , \
-                                   LogFileActive            , \
-                                   Selection                , \
+from  pCore                 import logFile                    , \
+                                   LogFileActive              , \
+                                   Selection                  , \
                                    TextFileReader
 from  pMolecule             import System
-from  pScientific.Geometry3 import Coordinates3             , \
-                                   Matrix33                 , \
-                                   Transformation3          , \
-                                   Transformation3Container , \
+from  pScientific.Geometry3 import Coordinates3               , \
+                                   Matrix33                   , \
+                                   Transformation3            , \
+                                   Transformation3Container   , \
                                    Vector3
-from  pScientific.Symmetry  import CrystalSystemCubic        , \
-                                   CrystalSystemHexagonal    , \
-                                   CrystalSystemMonoclinic   , \
-                                   CrystalSystemOrthorhombic , \
-                                   CrystalSystemTetragonal   , \
-                                   CrystalSystemTriclinic    , \
-                                   CrystalSystemTrigonal
+from  pScientific.Symmetry  import CrystalSystemCubic         , \
+                                   CrystalSystemHexagonal     , \
+                                   CrystalSystemMonoclinic    , \
+                                   CrystalSystemOrthorhombic  , \
+                                   CrystalSystemTetragonal    , \
+                                   CrystalSystemTriclinic     , \
+                                   CrystalSystemTrigonal      , \
+                                   PeriodicBoundaryConditions
 from .ExportImport          import _Importer
-from .STARFileReader        import STARFileReader           , \
+from .STARFileReader        import STARFileReader             , \
                                    STARFileTable
 
 #===================================================================================================================================
@@ -145,7 +146,7 @@ class CIFFileReader ( STARFileReader ):
         if system is not None:
             # . Get the basic data.
             ( a, b, c, alpha, beta, gamma ) = self.ExtractCellData               ( dataBlock )
-            crystalSystem                    = self.ExtractCrystalSystem           ( dataBlock )
+            crystalSystem                   = self.ExtractCrystalSystem           ( dataBlock )
             transformations                 = self.ExtractCrystalTransformations ( dataBlock )
             # . Check that all items exist.
             isOK = True
@@ -153,14 +154,14 @@ class CIFFileReader ( STARFileReader ):
                 isOK = isOK and ( item is not None )
             # . Assign symmetry to the system.
             if isOK:
-                system.DefineSymmetry ( a               = a               ,
-                                        b               = b               ,
-                                        c               = c               ,
-                                        alpha           = alpha           ,
-                                        beta            = beta            ,
-                                        gamma           = gamma           ,
-                                        crystalSystem    = crystalSystem    ,
-                                        transformations = transformations )
+                system.symmetry = PeriodicBoundaryConditions.WithCrystalSystem ( crystalSystem                     ,
+                                                                                 transformations = transformations )
+                system.symmetryParameters = system.symmetry.MakeSymmetryParameters ( a     = a     ,
+                                                                                     b     = b     ,
+                                                                                     c     = c     ,
+                                                                                     alpha = alpha ,
+                                                                                     beta  = beta  ,
+                                                                                     gamma = gamma )
 
     def ExtractCrystalTransformations ( self, dataBlock ):
         """Extract the crystal transformations from a data block."""

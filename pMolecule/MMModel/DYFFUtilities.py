@@ -8,15 +8,26 @@ from  pScientific    import PeriodicTable  , \
                             Units
 from .MMModelError   import MMModelError
 
+# . It is important that each parameter has a unique key which means these must be redetermined if the parameters
+# . depend explicitly on the connectivity! Otherwise one can have different parameters for the same key (e.g. if
+# . resonant N is 2 or 3 coordinate).
+
+# . Keys should ideally be of the form atom:bond:atom:bond:atom rather than atom:atom:atom:bond:bond, etc.
+
 #===================================================================================================================================
 # . Parameters.
 #===================================================================================================================================
-# . Hybridizations.
+# . Hybridizations and default connections.
 _Octahedral   = "Oct"
 _Resonant     = "Res"
 _SquarePlanar = "SPl"
 _Tetrahedral  = "Tet"
 _Trigonal     = "Tri"
+_Connections  = { _Octahedral   : 6 ,
+                  _Resonant     : 3 ,
+                  _SquarePlanar : 4 ,
+                  _Tetrahedral  : 4 ,
+                  _Trigonal     : 3 }
 
 # . Bond orders.
 _AmideBondOrder    = 1.41   # . N-C=O.
@@ -103,11 +114,13 @@ def DYFFBondOrder ( i, j, connectivity ):
     if bond is None: raise MMModelError ( "Bond not found between atoms {:d} and {:d}.".format ( i, j ) )
     bondType = bond.type
     bO       = float ( bondType.bondOrder )
+    bTag     = bondType.label[0:1].upper ( ) # . Assumes labels unique.
     # . Special cases.
     # . Aromatic - assumes one electron extra in each bond (which is clearly not always the case).
     if bond.isAromatic:
         if bO == 1.0: bO += _AromaticBondOrder
         else:         bO -= _AromaticBondOrder
+        bTag += "a"
     # . Possible amide - N-C=O.
     else:
         nI = iAtom.atomicNumber
@@ -118,9 +131,10 @@ def DYFFBondOrder ( i, j, connectivity ):
             for bond in connectivity.adjacentEdges[cAtom]:
                 other = bond.Opposite ( cAtom )
                 if ( other.atomicNumber == 8 ) and ( bondType is BondType.Double ):
-                    bO = _AmideBondOrder
+                    bO   = _AmideBondOrder
+                    bTag = "Am"
                     break
-    return bO
+    return ( bO, bTag ) # . The bond tag always exists.
 
 def DYFFHybridization ( label ):
     """The hybridization from an atom type label."""
@@ -152,13 +166,14 @@ def DYFFNaturalBondLength ( dyffAtoms, iT, jT, bondOrder ):
 #===================================================================================================================================
 def DYFFCosineAngleParameters ( dyffAtoms ):
     """Factory function for cosine angle parameters."""
-    def f ( types, indices, connectivity ):
+    def f ( types, indices, connectivity, key ):
         """The cosine angle parameters for three elements."""
         # . Bond orders and connections.
-        ( i, j, k )   = indices
-        ijBondOrder   = DYFFBondOrder ( i, j, connectivity )
-        jkBondOrder   = DYFFBondOrder ( j, k, connectivity )
-        nJConnections = len ( connectivity.adjacentNodes[connectivity.nodes[j]] )
+        ( i, j, k ) = indices
+        ( ijBondOrder, ijBondTag ) = DYFFBondOrder ( i, j, connectivity )
+        ( jkBondOrder, jkBondTag ) = DYFFBondOrder ( j, k, connectivity )
+# . Removed explicit dependence on connectivity - values depend uniquely on hybridization (and bond orders).
+#        nJConnections = len ( connectivity.adjacentNodes[connectivity.nodes[j]] )
         # . Atom type data.
         ( iT, jT, kT ) = types
         jAtom   = dyffAtoms.GetItem ( jT )
@@ -181,11 +196,13 @@ def DYFFCosineAngleParameters ( dyffAtoms ):
                 results.append ( ( fC0, 0 ) )
                 results.append ( ( fC0, 1 ) )
             # . Trigonal-planar or resonant central atom.
-            elif ( ( jHybrid == _Trigonal ) or DYFFIsResonant ( jT ) ) and ( nJConnections == 3 ):
+#            elif ( ( jHybrid == _Trigonal ) or DYFFIsResonant ( jT ) ) and ( nJConnections == 3 ):
+            elif ( jHybrid == _Trigonal ) or DYFFIsResonant ( jT ):
                 results.append ( (   fC0 / 9.0, 0 ) )
                 results.append ( ( - fC0 / 9.0, 3 ) )
             # . Square-planar or octahedral central atom.
-            elif ( ( jHybrid == _SquarePlanar ) and ( nJConnections == 4 ) ) or ( ( jHybrid == _Octahedral ) and ( nJConnections == 6 ) ):
+#            elif ( ( jHybrid == _SquarePlanar ) and ( nJConnections == 4 ) ) or ( ( jHybrid == _Octahedral ) and ( nJConnections == 6 ) ):
+            elif ( jHybrid == _SquarePlanar ) or ( jHybrid == _Octahedral ):
                 results.append ( (   fC0 / 16.0, 0 ) )
                 results.append ( ( - fC0 / 16.0, 4 ) )
             # . General case.
@@ -194,20 +211,14 @@ def DYFFCosineAngleParameters ( dyffAtoms ):
                 results.append ( (   fC0 * ( 1.0 + 2.0 * cosT**2 ), 0 ) )
                 results.append ( ( - fC0 * 4.0 * cosT             , 1 ) )
                 results.append ( (   fC0                          , 2 ) )
-        return results
+        # . Finish up.
+        return ( results, tuple ( list ( key ) + [ ijBondTag, jkBondTag ] ) )
     return f
 
 def DYFFCosineDihedralParameters ( dyffAtoms ):
     """Factory function for cosine dihedral parameters."""
-    def f ( types, indices, connectivity ):
+    def f ( types, indices, connectivity, key ):
         """The cosine dihedral parameters for four elements."""
-        # . Bond orders and connections.
-        ( i, j, k, l ) = indices
-        jkBondOrder    = DYFFBondOrder ( j, k, connectivity )
-        nJConnections  = len ( connectivity.adjacentNodes[connectivity.nodes[j]] )
-        nKConnections  = len ( connectivity.adjacentNodes[connectivity.nodes[k]] )
-        # . Get the dihedral multiplicity (the factor of 2 is due to the 1/2 outside the UFF force constant definition).
-        weight = 2.0 * float ( nJConnections - 1 ) * float ( nKConnections - 1 )
         # . Atom type data.
         ( iT, jT, kT, lT ) = types
         jAtom     = dyffAtoms.GetItem ( jT )
@@ -222,6 +233,16 @@ def DYFFCosineDihedralParameters ( dyffAtoms ):
         kTorsion2 = kAtom.GetProperty ( "Torsion 2" )
         kTorsion3 = kAtom.GetProperty ( "Torsion 3" )
         nK        = kAtom.atomicNumber
+        # . Bond orders and connections.
+        ( i, j, k, l ) = indices
+        ( jkBondOrder, jkBondTag ) = DYFFBondOrder ( j, k, connectivity )
+# . Removed explicit dependence on connectivity - values depend uniquely on hybridization (and bond orders).
+#        nJConnections = len ( connectivity.adjacentNodes[connectivity.nodes[j]] )
+#        nKConnections = len ( connectivity.adjacentNodes[connectivity.nodes[k]] )
+        nJConnections = _Connections.get ( jHybrid, 1 )
+        nKConnections = _Connections.get ( kHybrid, 1 )
+        # . Get the dihedral multiplicity (the factor of 2 is due to the 1/2 outside the UFF force constant definition).
+        weight = 2.0 * float ( nJConnections - 1 ) * float ( nKConnections - 1 )
         # . Get flags to indicate group 16 elements (O, S, Se, Te, Po, Lv).
         isJGroup16 = ( PeriodicTable[nJ].group == 16 )
         isKGroup16 = ( PeriodicTable[nK].group == 16 )
@@ -240,7 +261,6 @@ def DYFFCosineDihedralParameters ( dyffAtoms ):
                 period = 3
                 phi0   = math.pi
             fC = math.sqrt ( jTorsion3 * kTorsion3 )
-            #print ( "DIHSP3SP3> {:5d} {:5d} {:10.5f} {:10.5f} {:10.5f} {:10.5f}".format ( nJConnections, nKConnections, jTorsion3, kTorsion3, fC, weight ) )
         # . sp3-sp2/resonant case.
         elif ( ( jHybrid == _Tetrahedral ) and kIsPlanar ) or ( ( kHybrid == _Tetrahedral ) and jIsPlanar ):
             # . j or k are group 16 sp3.
@@ -272,7 +292,6 @@ def DYFFCosineDihedralParameters ( dyffAtoms ):
                     fC     = factor * _Dihedral_sp3sp2
                     period = 6
                     phi0   = 0.0
-            #print ( "DIHSP3SP2> {:5d} {:5d} {:10.5f} {:10.5f} {:10.5f} {:10.5f}".format ( nJConnections, nKConnections, jTorsion2, kTorsion2, fC, weight ) )
         # . Resonant atom-resonant atom case.
         elif ( jHybrid == _Resonant ) and ( kHybrid == _Resonant ):
             fC     = _Dihedral_ResonantResonant
@@ -291,17 +310,17 @@ def DYFFCosineDihedralParameters ( dyffAtoms ):
         # . Other cases.
         else:
             fC = 0.0
-        if fC == 0.0:
+        if ( fC == 0.0 ) or weight == 0.0:
             results = []
         else:
             fC /= weight
             results = [ ( fC, 0 ), ( - fC * math.cos ( float ( period ) * phi0 ), period ) ]
-        return results
+        return ( results, tuple ( list ( key ) + [ jkBondTag ] ) )
     return f
 
 def DYFFCosineOutOfPlaneParameters ( dyffAtoms ):
     """Factory function for cosine out-of-plane parameters."""
-    def f ( types, indices, connectivity ):
+    def f ( types, indices, connectivity, key ):
         """The cosine out-of-plane parameters for four elements."""
         # . Atom data.
         ( jT, iT, kT, lT ) = types # . jT is central atom.
@@ -325,15 +344,15 @@ def DYFFCosineOutOfPlaneParameters ( dyffAtoms ):
             elif nJ == 115: results = _OOP_Mcsp3
         # . All other elements.
         else: results = []
-        return results
+        return ( results, key )
     return f
 
 def DYFFHarmonicBondParameters ( dyffAtoms ):
     """Factory function for harmonic bond parameters."""
-    def f ( types, indices, connectivity ):
+    def f ( types, indices, connectivity, key ):
         """The harmonic bond parameters for two elements."""
         # . Bond order.
-        bondOrder = DYFFBondOrder ( indices[0], indices[1], connectivity )
+        ( bondOrder, bondTag ) = DYFFBondOrder ( indices[0], indices[1], connectivity )
         # . Bond length.
         ( iT, jT ) = types
         eq         = DYFFNaturalBondLength ( dyffAtoms, iT, jT, bondOrder )
@@ -341,8 +360,8 @@ def DYFFHarmonicBondParameters ( dyffAtoms ):
         zI = dyffAtoms.GetItem ( iT ).GetProperty ( "Effective Charge" )
         zJ = dyffAtoms.GetItem ( jT ).GetProperty ( "Effective Charge" )
         fC = Units.Energy_E2Angstroms_To_Kilojoules_Per_Mole * zI * zJ / eq**3
-        if fC == 0.0: return None
-        else:         return ( eq, fC )
+        # . Finish up.
+        return ( ( eq, fC ), tuple ( list ( key ) + [ bondTag ] ) )
     return f
 
 #===================================================================================================================================

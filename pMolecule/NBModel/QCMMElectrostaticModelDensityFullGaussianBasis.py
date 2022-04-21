@@ -1,7 +1,7 @@
 """Full QC/MM electrostatic density model for Gaussian basis QC models."""
 
 from   pCore                             import Clone
-from   pMolecule.QCModel                 import GaussianBasisQCMMEvaluator
+from   pMolecule.QCModel.GaussianBases   import GaussianBasisQCMMEvaluator
 from   pScientific                       import Units
 from   pScientific.Geometry3             import Coordinates3
 from  .QCMMElectrostaticModelDensityBase import QCMMElectrostaticModelDensityBase
@@ -97,13 +97,13 @@ class QCMMElectrostaticModelDensityFullGaussianBasis ( QCMMElectrostaticModelDen
             else:
                 qcGradients3 = None
                 bpGradients3 = None
-            energy = self.evaluator.Core ( target.qcState.nuclearCharges ,
-                                           bpCharges                     ,
-                                           scratch.qcCoordinates3QCMMAU  ,
-                                           scratch.bpCoordinates3AU      ,
-                                           None                          ,
-                                           qcGradients3                  ,
-                                           bpGradients3                  )
+            energy = self.evaluator.m1Cn1ER1 ( target.qcState.nuclearCharges ,
+                                               bpCharges                     ,
+                                               scratch.qcCoordinates3QCMMAU  ,
+                                               scratch.bpCoordinates3AU      ,
+                                               None                          ,
+                                               qcGradients3                  ,
+                                               bpGradients3                  )
             scratch.energyTerms["QC/BP Core"] = energy * Units.Energy_Hartrees_To_Kilojoules_Per_Mole
 
     def QCBPGradients ( self, target ):
@@ -113,14 +113,14 @@ class QCMMElectrostaticModelDensityFullGaussianBasis ( QCMMElectrostaticModelDen
             state     = getattr ( target, self.__class__._stateName )
             bpCharges = getattr ( state, "bpCharges", None )
             if bpCharges is not None:
-                self.evaluator.Gradients ( target.qcState.orbitalBases  ,
-                                           bpCharges                    ,
-                                           scratch.qcCoordinates3QCMMAU ,
-                                           scratch.bpCoordinates3AU     ,
-                                           None                         ,
-                                           scratch.onePDMP.density      ,
-                                           scratch.qcGradients3QCMMAU   ,
-                                           scratch.bpGradients3AU       )
+                self.evaluator.f2Cm1R1 ( target.qcState.orbitalBases  ,
+                                         bpCharges                    ,
+                                         scratch.qcCoordinates3QCMMAU ,
+                                         scratch.bpCoordinates3AU     ,
+                                         None                         ,
+                                         scratch.onePDMP.density      ,
+                                         scratch.qcGradients3QCMMAU   ,
+                                         scratch.bpGradients3AU       )
 
     def QCBPPotentials ( self, target ):
         """Calculate the QC/BP electrostatic potentials."""
@@ -128,12 +128,12 @@ class QCMMElectrostaticModelDensityFullGaussianBasis ( QCMMElectrostaticModelDen
         bpCharges = getattr ( state, "bpCharges", None )
         if bpCharges is not None:
             scratch = target.scratch
-            self.evaluator.Integrals ( target.qcState.orbitalBases  ,
-                                       bpCharges                    ,
-                                       scratch.qcCoordinates3QCMMAU ,
-                                       scratch.bpCoordinates3AU     ,
-                                       None                         ,
-                                       scratch.qcmmPotentials       )
+            self.evaluator.f2Cm1V ( target.qcState.orbitalBases  ,
+                                    bpCharges                    ,
+                                    scratch.qcCoordinates3QCMMAU ,
+                                    scratch.bpCoordinates3AU     ,
+                                    None                         ,
+                                    scratch.qcmmPotentials       )
 
     def QCMMCore ( self, target ):
         """Calculate the QC/MM core energy and gradients."""
@@ -144,37 +144,37 @@ class QCMMElectrostaticModelDensityFullGaussianBasis ( QCMMElectrostaticModelDen
         else:
             qcGradients3 = None
             mmGradients3 = None
-        energy = self.evaluator.Core ( target.qcState.nuclearCharges ,
-                                       target.mmState.charges        ,
-                                       scratch.qcCoordinates3QCMMAU  ,
-                                       scratch.mmCoordinates3AU      ,
-                                       target.mmState.pureMMAtoms    ,
-                                       qcGradients3                  ,
-                                       mmGradients3                  )
+        energy = self.evaluator.m1Cn1ER1 ( target.qcState.nuclearCharges ,
+                                           target.mmState.charges        ,
+                                           scratch.qcCoordinates3QCMMAU  ,
+                                           scratch.mmCoordinates3AU      ,
+                                           target.mmState.pureMMAtoms    ,
+                                           qcGradients3                  ,
+                                           mmGradients3                  )
         scratch.energyTerms["QC/MM Core"] = energy * Units.Energy_Hartrees_To_Kilojoules_Per_Mole
 
     def QCMMGradients ( self, target ):
         """Calculate the QC/MM electrostatic gradients."""
         scratch = target.scratch
         if scratch.doGradients:
-            self.evaluator.Gradients ( target.qcState.orbitalBases  ,
-                                       target.mmState.charges       ,
-                                       scratch.qcCoordinates3QCMMAU ,
-                                       scratch.mmCoordinates3AU     ,
-                                       target.mmState.pureMMAtoms   ,
-                                       scratch.onePDMP.density      ,
-                                       scratch.qcGradients3QCMMAU   ,
-                                       scratch.mmGradients3AU       )
+            self.evaluator.f2Cm1R1 ( target.qcState.orbitalBases  ,
+                                     target.mmState.charges       ,
+                                     scratch.qcCoordinates3QCMMAU ,
+                                     scratch.mmCoordinates3AU     ,
+                                     target.mmState.pureMMAtoms   ,
+                                     scratch.onePDMP.density      ,
+                                     scratch.qcGradients3QCMMAU   ,
+                                     scratch.mmGradients3AU       )
 
     def QCMMPotentials ( self, target ):
         """Calculate the QC/MM electrostatic potentials."""
         scratch = target.scratch
-        self.evaluator.Integrals ( target.qcState.orbitalBases  ,
-                                   target.mmState.charges       ,
-                                   scratch.qcCoordinates3QCMMAU ,
-                                   scratch.mmCoordinates3AU     ,
-                                   target.mmState.pureMMAtoms   ,
-                                   scratch.qcmmPotentials       )
+        self.evaluator.f2Cm1V ( target.qcState.orbitalBases  ,
+                                target.mmState.charges       ,
+                                scratch.qcCoordinates3QCMMAU ,
+                                scratch.mmCoordinates3AU     ,
+                                target.mmState.pureMMAtoms   ,
+                                scratch.qcmmPotentials       )
 
 #===================================================================================================================================
 # . Testing.

@@ -29,16 +29,16 @@ checkGradients = False
 isOK           = True
 molPath        = os.path.join ( dataPath, "mol" )
 
-# . Options.
-converger = DIISSCFConverger.WithOptions ( densityTolerance = 1.0e-10, maximumIterations = 500 )
+# . Options - the results are very sensitive to the SCF and optimizer tolerances!
+converger = DIISSCFConverger.WithOptions ( densityTolerance = 1.0e-8, maximumIterations = 500 )
 qcModel   = QCModelMNDO.WithOptions      ( converger = converger, hamiltonian = "am1" )
 singlet   = ElectronicState.WithOptions  ( charge = 1, isSpinRestricted = False, multiplicity = 1 ) # . Unrestricted!
 triplet   = ElectronicState.WithOptions  ( charge = 1, isSpinRestricted = False, multiplicity = 3 )
 
 # . Optimizer.
-optimizer = QuasiNewtonMinimizer.WithOptions ( logFrequency         =    1 ,
-                                               maximumIterations    = 1000 ,
-                                               rmsGradientTolerance = 0.05 )
+optimizer = QuasiNewtonMinimizer.WithOptions ( logFrequency         =     1 ,
+                                               maximumIterations    =  2500 ,
+                                               rmsGradientTolerance =  0.01 )
 optimizer.Summary ( )
 
 # . Set up the system.

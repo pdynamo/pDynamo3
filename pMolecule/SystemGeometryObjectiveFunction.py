@@ -101,8 +101,8 @@ class SystemGeometryObjectiveFunction ( ObjectiveFunction ):
             # . Reset the number of degrees of freedom.
             self.degreesOfFreedom = self.nVariables - len ( self.linearScalars )
 
-    def ApplyLinearConstraints ( self, vector ):
-        """Apply linear constraints."""
+    def ApplyConstraintsToVector ( self, vector, **keywordArguments ):
+        """Apply constraints to a vector."""
         if self.linearVectors is not None: self.linearVectors.ProjectOutOfArray ( vector )
 
     def DefinePressure ( self ):

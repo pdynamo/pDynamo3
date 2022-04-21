@@ -110,8 +110,8 @@ class BakerOptimizer ( MultiDimensionalMinimizer ):
                 if state.currentMode >= 0: state.w[state.currentMode] *= -1.0
                 # . Finally convert the step back to real space from mode space.
                 state.eigenVectors.VectorMultiply ( state.w, state.d )
-        # . Apply linear constraints.
-        state.objectiveFunction.ApplyLinearConstraints ( state.d )
+        # . Apply constraints.
+        state.objectiveFunction.ApplyConstraintsToVector ( state.d )
         # . Adjust the step size if it is too big or too small.
         dSize = state.d.Norm2 ( )
         if   dSize < self.minimumStep: state.d.Scale ( self.minimumStep / dSize )

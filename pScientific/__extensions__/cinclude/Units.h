@@ -42,4 +42,7 @@
 # define Units_Pressure_Atmospheres_To_Pascals                        1.013250e+5
 # define Units_Pressure_Atmospheres_To_Kilojoules_Per_Mole            ( Units_Pressure_Atmospheres_To_Pascals * Constant_Avogadro_Number * 1.0e-33 )
 
+/* . Quadrupole ( = AU -> Debyes * Bohrs -> Angstroms ). */
+# define Units_Quadrupole_Atomic_Units_To_Buckinghams                 1.34504446e+00
+
 # endif

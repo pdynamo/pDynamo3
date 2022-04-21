@@ -7,10 +7,10 @@ from QCTestSystems     import GetClosedShellMoleculeSystems , \
 #===================================================================================================================================
 # . Script.
 #===================================================================================================================================
-_QCModelOptions =  { "LDA:321G"  : { "fitBasis" : "demon"  , "functional" : "lda" , "orbitalBasis" : "321g" } ,
-                     "BLYP:321G" : { "fitBasis" : "demon"  , "functional" : "blyp", "orbitalBasis" : "321g" } ,
-                     "LDA:SVP"   : { "fitBasis" : "weigend", "functional" : "lda" , "orbitalBasis" : "svp"  } ,
-                     "BLYP:SVP"  : { "fitBasis" : "weigend", "functional" : "blyp", "orbitalBasis" : "svp"  } }
+_QCModelOptions =  { "LDA:DZVP"   : { "fitBasis" : "dgauss-a1-dftjfit" , "functional" : "lda" , "orbitalBasis" : "dgauss-dzvp" } ,
+                     "BLYP:DZVP"  : { "fitBasis" : "dgauss-a1-dftjfit" , "functional" : "blyp", "orbitalBasis" : "dgauss-dzvp" } ,
+                     "LDA:SV(P)"  : { "fitBasis" : "def2-sv(p)-rifit"  , "functional" : "lda" , "orbitalBasis" : "def2-sv(p)"  } ,
+                     "BLYP:SV(P)" : { "fitBasis" : "def2-sv(p)-rifit"  , "functional" : "blyp", "orbitalBasis" : "def2-sv(p)"  } }
 testSystems     = GetClosedShellMoleculeSystems ( convergerKeywords = { "densityTolerance" : 1.0e-10, "maximumIterations" : 250 } ,
                                                   qcModelClass      = QCModelDFT      ,
                                                   qcModelOptions    = _QCModelOptions )

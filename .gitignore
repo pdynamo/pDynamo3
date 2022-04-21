@@ -35,6 +35,7 @@ Thumbs.db
 clibrary/
 psource/
 __pycache__/
+sandBox/
 scratch/
 
 # . pDynamo specific-directories.

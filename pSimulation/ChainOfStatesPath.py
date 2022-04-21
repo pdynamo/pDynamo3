@@ -361,8 +361,8 @@ class ChainOfStatesPath ( AttributableObject ):
                 tangent.Scale ( vMin )
                 tangent.Add ( self.dB, scale = vMax )
             else: raise ValueError ( "Unable to calculate tangent - probably due to numerical errors." )
-        # . Project out the linear constraints and normalize.
-        objectiveFunction.ApplyLinearConstraints ( tangent )
+        # . Apply the constraints and normalize.
+        objectiveFunction.ApplyConstraintsToVector ( tangent )
         tangent.Normalize ( )
 
     def UpdateNonSplineData ( self, images = None ):

@@ -3,7 +3,7 @@
 import glob, math, os.path
 
 from Definitions            import _FullVerificationSummary        , \
-                                   referenceDataPath as _ReferenceDataPath
+                                   yamlPath as _ReferenceDataPath
 from pBabel                 import ImportSystem
 from pCore                  import Align                           , \
                                    Clone                           , \

@@ -33,13 +33,16 @@ def InstallpDynamo ( ):
 
     # . Get the packages for processing in the correct order.
     if options.doCLibraries or options.doExtensions or options.doPyrex or options.listPackages:
-        packages = GetRootDirectories ( options.packageNames )
+        packages = GetRootDirectories ( options.packageNames, update = options.update )
 
     # . Package listing only.
     if options.listPackages:
-        print ( "\nPackages to install in order of dependency:\n" )
-        for package in packages: print ( "  " + package.name )
-        print ( "" )
+        if len ( packages ) > 0:
+            print ( "\nPackages to install in order of dependency:\n" )
+            for package in packages: print ( "  " + package.name )
+            print ( "" )
+        else:
+            print ( "\nThere are no packages to install.\n" )
 
     # . Other processing.
     else:

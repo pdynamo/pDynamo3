@@ -1,21 +1,19 @@
 """pDynamo's in-built MNDO QC model."""
 
-from   math                           import pow
-from   pCore                          import Clone
-from   pScientific.Arrays             import Array                          , \
-                                             StorageType
-from  .GaussianBasisContainer         import GaussianBasisContainer
-from  .GaussianBasisIntegralEvaluator import GaussianBasisIntegralEvaluator
-from  .MNDOIntegralEvaluator          import MNDOIntegralEvaluator   
-from  .MNDOMultipoleEvaluator         import MNDOMultipoleEvaluator
-from  .MNDOParametersContainer        import MNDOParametersContainer 
-from  .QCDefinitions                  import BasisRepresentation            , \
-                                             ChargeModel                    , \
-                                             FockClosurePriority
-from  .QCModelBase                    import QCModelBase                    , \
-                                             QCModelBaseState
-from  .QCModelError                   import QCModelError            
-from ..EnergyModel                    import EnergyClosurePriority   
+from   math                    import pow
+from   pCore                   import Clone
+from   pScientific.Arrays      import Array                          , \
+                                      StorageType
+from  .GaussianBases           import GaussianBasisIntegralEvaluator
+from  .MNDOIntegralEvaluator   import MNDOIntegralEvaluator   
+from  .MNDOMultipoleEvaluator  import MNDOMultipoleEvaluator
+from  .MNDOParametersContainer import MNDOParametersContainer 
+from  .QCDefinitions           import ChargeModel                    , \
+                                      FockClosurePriority
+from  .QCModelBase             import QCModelBase                    , \
+                                      QCModelBaseState
+from  .QCModelError            import QCModelError            
+from ..EnergyModel             import EnergyClosurePriority   
 
 #===================================================================================================================================
 # . Class.
@@ -94,9 +92,9 @@ class QCModelMNDO ( QCModelBase ):
         """Get the orthogonalizing transformation and, optionally, its inverse."""
         # . Ensure the overlap matrix is of the correct dimension for the grid evaluator.
         orbitalBases                 = target.qcState.orbitalBases
-        overlap                      = Array.WithExtent ( orbitalBases._numberOfFunctions[self.gridPointEvaluator.basisRepresentation], storageType = StorageType.Symmetric )
+        overlap                      = Array.WithExtent ( orbitalBases.numberOfFunctions, storageType = StorageType.Symmetric )
         target.scratch.overlapMatrix = overlap
-        self.gridPointEvaluator.OverlapIntegrals ( target )
+        self.gridPointEvaluator.f1Of1i ( target )
         super ( QCModelMNDO, self ).GetOrthogonalizer ( target, doInverse = doInverse )
 
     def GetParameters ( self, target ):

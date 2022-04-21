@@ -29,7 +29,7 @@ class JaguarOutputFileReader ( TextFileReader ):
                              "dipole"              : None     ,
                              "displacementmaximum" : None     ,
                              "displacementrms"     : None     ,
-                             "ecpelectrons"        : None     ,
+                             "ecpElectrons"        : None     ,
                              "energy"              : 0.0      ,
                              "energychange"        : None     ,
                              "gradientmaximum"     : None     ,
@@ -37,8 +37,8 @@ class JaguarOutputFileReader ( TextFileReader ):
                              "mp2energy"           : 0.0      ,
                              "multiplicity"        : 1        ,
                              "natoms"              : 0        ,
-                             "nbasis"              : 0        ,
-                             "nfunctions"          : None     ,
+                             "nBasis"              : 0        ,
+                             "nFunctions"          : None     ,
                              "ngeometries"         : 0        ,
                              "overlap"             : None     ,
                              "QCOMPLETED"          : False    ,
@@ -79,7 +79,7 @@ class JaguarOutputFileReader ( TextFileReader ):
                     elif line.find ( "  energy:"                                         ) >= 0: self.energy        = float ( line.split ( )[1]  )
                     elif line.find ( "number of alpha electrons...."                     ) >= 0: self.nalpha        = int   ( line.split ( )[-1] )
                     elif line.find ( "number of beta electrons....."                     ) >= 0: self.nbeta         = int   ( line.split ( )[-1] )
-                    elif line.find ( "functions...."                                     ) >= 0: self.nbasis        = int   ( line.split ( )[-1] )
+                    elif line.find ( "functions...."                                     ) >= 0: self.nBasis        = int   ( line.split ( )[-1] )
                     elif line.find ( "Geometry optimization complete"                    ) >= 0: self.QCOMPLETED    = True
                     elif line.find ( "geometry optimization step"                        ) >= 0: self.QOPTIMIZATION = True
                     elif line.find ( "multiplicity:"                                     ) >= 0: self.multiplicity  = int   ( line.split ( )[-1] )
@@ -97,7 +97,7 @@ class JaguarOutputFileReader ( TextFileReader ):
                         self.bestenergy       = self.energy
                 # . Check the ecp data.
                 if self.QECP:
-                    if len ( self.ecpelectrons ) != self.natoms: self.Warning ( "Mismatch between number of atoms and ECP atom data.", False )
+                    if len ( self.ecpElectrons ) != self.natoms: self.Warning ( "Mismatch between number of atoms and ECP atom data.", False )
             except EOFError:
                 pass
             except Exception as e:
@@ -148,7 +148,7 @@ class JaguarOutputFileReader ( TextFileReader ):
     def ParseECPs ( self ):
         """Parse the ECP section."""
         # . Initialization.
-        ecpelectrons = []
+        ecpElectrons = []
         # . Header.
         self.GetLine ( ) # . Blank line.
         self.GetLine ( ) # . Table header.
@@ -160,15 +160,15 @@ class JaguarOutputFileReader ( TextFileReader ):
             # . Atom line.
             elif len ( tokens ) == 2:
                 atomicNumber = PeriodicTable.AtomicNumber ( tokens[0] )
-                if ( atomicNumber > 0 ): ecpelectrons.append ( int ( tokens[1] ) )
+                if ( atomicNumber > 0 ): ecpElectrons.append ( int ( tokens[1] ) )
         # . Finish up.
-        self.ecpelectrons = ecpelectrons
+        self.ecpElectrons = ecpElectrons
         self.QECP         = True
 
     def ParseFunctions ( self ):
         """Parse a function list."""
         for i in range ( 7 ): self.GetLine ( ) # . All header lines.
-        nfunctions = []
+        nFunctions = []
         tokens     = self.GetTokens ( converters = [ None, None, None, int ] )
         oldname    = tokens[0]
         nstart     = tokens[3]
@@ -177,7 +177,7 @@ class JaguarOutputFileReader ( TextFileReader ):
             tokens = self.GetTokens ( )
             if ( len ( tokens ) == 8 ):
                 if tokens[0] != oldname:
-                    nfunctions.append ( nstop - nstart + 1 )
+                    nFunctions.append ( nstop - nstart + 1 )
                     nstart  = int ( tokens[3] )
                     nstop   = nstart
                     oldname = tokens[0]
@@ -186,9 +186,9 @@ class JaguarOutputFileReader ( TextFileReader ):
             elif ( len ( tokens ) == 4 ):
                 nstop = int ( tokens[1] )
             else:
-                nfunctions.append ( nstop - nstart + 1 )
+                nFunctions.append ( nstop - nstart + 1 )
                 break
-        self.nfunctions = nfunctions
+        self.nFunctions = nFunctions
 
     def ParseGeometry ( self ):
         """Parse a geometry."""
@@ -240,8 +240,8 @@ class JaguarOutputFileReader ( TextFileReader ):
             for j in range ( 1, l ): data.append ( ( i, j, float ( tokens[j] ) ) )
         ncolumns = ncolumns + l - 1
         # . Loop over subsequent blocks.
-        nbasis  = i
-        nblocks = ( ( nbasis + 4 ) // 5 ) - 1
+        nBasis  = i
+        nblocks = ( ( nBasis + 4 ) // 5 ) - 1
         if nblocks > 0:
             for iblock in range ( nblocks ):
                 self.GetLine ( ) # . Integer heading.
@@ -252,10 +252,10 @@ class JaguarOutputFileReader ( TextFileReader ):
                     l = len ( tokens )
                     for j in range ( 1, l ): data.append ( ( i, ncolumns + j, float ( tokens[j] ) ) )
                 ncolumns = ncolumns + l - 1
-        nbastr = ( nbasis * ( nbasis + 1 ) ) // 2
+        nbastr = ( nBasis * ( nBasis + 1 ) ) // 2
         if len ( data ) == nbastr:
-            self.nbasis  = nbasis
-            self.overlap = Array.WithExtent ( nbasis, storageType = StorageType.Symmetric )
+            self.nBasis  = nBasis
+            self.overlap = Array.WithExtent ( nBasis, storageType = StorageType.Symmetric )
             self.overlap.Set ( 0.0 )
             for ( i, j, o ) in data:
                 self.overlap[i-1,j-1] = o

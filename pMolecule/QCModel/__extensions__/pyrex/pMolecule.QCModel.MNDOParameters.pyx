@@ -1,6 +1,7 @@
 """Handle the parameter data necessary for a MNDO NDDO-type calculation."""
 
-from pCore import RawObjectConstructor
+from  pCore        import RawObjectConstructor
+from .QCModelError import QCModelError
 
 #===================================================================================================================================
 # . Parameters.
@@ -202,7 +203,13 @@ cdef class MNDOParameters:
         self.cObject = NULL
         self.isOwner = False
 
-    def FillDiatomic ( self, CInteger  nterms, object data ):
+    def DetermineNormalization ( self, GaussianBasis basis not None ):
+        """Determine the normalization coming from the basis set."""
+        cdef CStatus status = CStatus_OK
+        MNDOParameters_DetermineNormalization ( self.cObject, basis.cObject, &status )
+        if status != CStatus_OK: raise QCModelError ( "Error normalizing MNDO basis." )
+
+    def FillDiatomic ( self, CInteger nterms, data ):
         """Fill QDIATOMICFLAGS, diatomica, diatomicx."""
         cdef CInteger  j
         cdef CReal     a, x
@@ -217,7 +224,7 @@ cdef class MNDOParameters:
                 self.cObject.diatomica0    [j] = a
                 self.cObject.diatomicx0    [j] = x
 
-    def FillFN123 ( self, CInteger  nterms, object data ):
+    def FillFN123 ( self, CInteger  nterms, data ):
         """Fill fn1, fn2 and fn3."""
         cdef CInteger  i
         if nterms > 0:
@@ -227,7 +234,7 @@ cdef class MNDOParameters:
                 self.cObject.fn20[i] = fn2
                 self.cObject.fn30[i] = fn3
 
-    def FillPDDG ( self, CInteger  nterms, object data ):
+    def FillPDDG ( self, CInteger  nterms, data ):
         """Fill pddgc and pddge."""
         cdef CInteger  i
         if nterms > 0:

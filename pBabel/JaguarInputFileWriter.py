@@ -25,7 +25,8 @@ class JaguarInputFileWriter ( TextFileWriter ):
         """Write a single frame."""
         # . Check the data.
         if xyz == None: xyz = system.coordinates3
-        if ( xyz is None ) or ( not isinstance ( xyz, Coordinates3 ) ) or ( xyz.rows != len ( system.atoms ) ): raise TextFileWriterError ( "Invalid or missing data to write to Jaguar input file." )
+        if ( xyz is None ) or ( not isinstance ( xyz, Coordinates3 ) ) or ( xyz.rows != len ( system.atoms ) ):
+            raise TextFileWriterError ( "Invalid or missing data to write to Jaguar input file." )
         # . Check the label.
         if label is None: label = system.label
         if label is None: label = "Jaguar input file."

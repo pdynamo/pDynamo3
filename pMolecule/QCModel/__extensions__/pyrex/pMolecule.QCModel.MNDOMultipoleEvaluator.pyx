@@ -2,8 +2,6 @@
 
 # . No weighted density matrix contributions as S = I.
 
-from .QCDefinitions import BasisRepresentation
-
 #===================================================================================================================================
 # . Class.
 #===================================================================================================================================
@@ -15,7 +13,7 @@ cdef class MNDOMultipoleEvaluator:
                      SymmetricMatrix bondOrders not None ):
         """Bond orders."""
         cdef IntegerArray1D basisIndices
-        basisIndices = target.qcState.orbitalBases._centerFunctionPointers[self.basisRepresentation]
+        basisIndices = target.qcState.orbitalBases.centerFunctionPointers
         MNDO_BondOrders ( basisIndices.cObject ,
                           density.cObject      ,
                           bondOrders.cObject   )
@@ -29,7 +27,7 @@ cdef class MNDOMultipoleEvaluator:
         cdef IntegerArray1D          basisIndices
         cdef MNDOParametersContainer parameters
         if ( multipoleOrder < 0 ) or ( multipoleOrder > 2 ): raise ValueError ( "Invalid multipole order." )
-        basisIndices = target.qcState.orbitalBases._centerFunctionPointers[self.basisRepresentation]
+        basisIndices = target.qcState.orbitalBases.centerFunctionPointers
         parameters   = target.qcState.mndoParameters
         MNDO_AtomicMultipolesFock ( parameters.cObject   ,
                                     basisIndices.cObject ,
@@ -48,7 +46,7 @@ cdef class MNDOMultipoleEvaluator:
         cdef MNDOParametersContainer parameters
         cdef SymmetricMatrix         onePDM
         if ( multipoleOrder < 0 ) or ( multipoleOrder > 2 ): raise ValueError ( "Invalid multipole order." )
-        basisIndices = target.qcState.orbitalBases._centerFunctionPointers[self.basisRepresentation]
+        basisIndices = target.qcState.orbitalBases.centerFunctionPointers
         parameters   = target.qcState.mndoParameters
         if density is None: onePDM = target.scratch.onePDMP.density
         else:               onePDM = density
@@ -61,6 +59,3 @@ cdef class MNDOMultipoleEvaluator:
         if withNuclei:
             Z = target.qcState.nuclearCharges
             multipoles[0:len ( Z )].Add ( Z )
-
-    @property
-    def basisRepresentation ( self ): return BasisRepresentation.Actual

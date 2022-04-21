@@ -162,7 +162,7 @@ class MMModelState ( EnergyModelState ):
             # . Atom types.
             oldTypes = []
             for entry in entries: oldTypes.extend ( entry.atomTypes )
-            newTypes      = sorted ( oldTypes )
+            newTypes      = sorted ( set ( oldTypes ) )
             new.atomTypes = newTypes
             # . Atom type indices.
             oldToNew = [ newTypes.index ( o ) for o in oldTypes ]
@@ -314,6 +314,17 @@ class MMModel ( EnergyModel ):
             assigner.AssignParameters ( target.connectivity, atomTypes, atomCharges, state, log )
             if target.freeAtoms is not None: state.FixAtoms ( target.freeAtoms )
             state.CheckActiveAtomTotalCharge ( )
+
+    def CompleteConnectivity ( self, target ):
+        """Complete the connectivity of target as much as possible."""
+        connectivity = getattr ( target, "connectivity", None )
+        if connectivity is not None:
+            state = getattr ( target, self.__class__._stateName )
+            bonds = [] # . Initially a list of indices but eventually could include bond types if this information is known.
+            for mmTerm in state.mmTerms:
+                if hasattr ( mmTerm, "GetBonds" ): bonds.extend ( mmTerm.GetBonds ( ) )
+            connectivity.BondsFromIterable ( bonds ) # . Empty lists are assumed to correspond to no bonds at all.
+            connectivity.CompleteConnectivity ( )
 
     def DipoleMoment ( self, target, center, dipole = None ):
         """The dipole moment in Debyes."""

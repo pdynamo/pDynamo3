@@ -2,9 +2,11 @@
 # define _MNDOPARAMETERS
 
 # include "Boolean.h"
+# include "GaussianBasis.h"
 # include "Integer.h"
 # include "MachineTypes.h"
 # include "Real.h"
+# include "Status.h"
 
 /*----------------------------------------------------------------------------------------------------------------------------------
 ! . Types.
@@ -110,6 +112,7 @@ typedef struct {
     Real       *fn1            ;
     Real       *fn2            ;
     Real       *fn3            ;
+    Real       *normalization  ;
     Real       *pddgc          ;
     Real       *pddge          ;
     Real       *uspd           ;
@@ -122,13 +125,14 @@ typedef struct {
 ! . Procedure declarations.
 !---------------------------------------------------------------------------------------------------------------------------------*/
 extern MNDOParameters *MNDOParameters_Allocate                   ( void ) ;
-extern void            MNDOParameters_AllocateDiatomic           (       MNDOParameters  *self, const Integer  n ) ;
-extern void            MNDOParameters_AllocateFN123              (       MNDOParameters  *self, const Integer  n ) ;
-extern void            MNDOParameters_AllocatePDDG               (       MNDOParameters  *self, const Integer  n ) ;
+extern void            MNDOParameters_AllocateDiatomic           (       MNDOParameters  *self , const Integer n ) ;
+extern void            MNDOParameters_AllocateFN123              (       MNDOParameters  *self , const Integer n ) ;
+extern void            MNDOParameters_AllocatePDDG               (       MNDOParameters  *self , const Integer n ) ;
 extern MNDOParameters *MNDOParameters_Clone                      ( const MNDOParameters  *self ) ;
 extern void            MNDOParameters_CalculateOneCenterTEIs     (       MNDOParameters  *self ) ;
 extern void            MNDOParameters_Deallocate                 (       MNDOParameters **self ) ;
 extern void            MNDOParameters_DeallocateAtomicUnitArrays (       MNDOParameters  *self ) ;
+extern void            MNDOParameters_DetermineNormalization     (       MNDOParameters  *self , GaussianBasis *basis, Status *status ) ;
 extern void            MNDOParameters_FillBetaUspd               (       MNDOParameters  *self ) ;
 extern void            MNDOParameters_ToAtomicUnits              (       MNDOParameters  *self ) ;
 

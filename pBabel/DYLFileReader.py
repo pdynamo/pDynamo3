@@ -126,9 +126,9 @@ class DYLFileReader ( TextFileReader ):
 #===================================================================================================================================
 # . Importer definitions.
 #===================================================================================================================================
-_Importer.AddHandler ( { Coordinates3 : DYLFileReader.ToCoordinates3 ,
-                         System       : DYLFileReader.ToSystem       } ,
-                       [ "dyl", "DYL" ], "pDynamo YAML", defaultFunction = DYLFileReader.ToSystem )
+_Importer.AddHandler ( { Coordinates3 : DYLFileReader.PathToCoordinates3 ,
+                         System       : DYLFileReader.PathToSystem       } ,
+                       [ "dyl", "DYL" ], "pDynamo YAML", defaultFunction = DYLFileReader.PathToSystem )
 
 #===================================================================================================================================
 # . Testing.

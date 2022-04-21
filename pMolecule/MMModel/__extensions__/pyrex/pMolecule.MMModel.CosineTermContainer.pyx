@@ -30,14 +30,14 @@ cdef class CosineTermContainer ( MMTerm ):
 
     def __getstate__ ( self ):
         """Return the state."""
-        cdef CInteger i, t
+        cdef CInteger i, p, t
         # . Parameters.
         parameterFields = [ "coefficient", "period" ]
         parameters      = []
-        for i from 0 <= i < self.cObject.nParameters:
+        for p from 0 <= p < self.cObject.nParameters:
             data = []
-            for t from 0 <= t < self.cObject.parameters[i].nTerms:
-                data.append ( [ self.cObject.parameters[i].termCoefficients[t], self.cObject.parameters[i].periods[t] ] )
+            for t from 0 <= t < self.cObject.parameters[p].nTerms:
+                data.append ( [ self.cObject.parameters[p].termCoefficients[t], self.cObject.parameters[p].periods[t] ] )
             parameters.append ( data )
         # . Terms.
         termFields = [ "indices", "parameter", "isActive" ]
@@ -47,8 +47,8 @@ cdef class CosineTermContainer ( MMTerm ):
             for i from 0 <= i < self.cObject.nIndices:
                 indices.append ( self.cObject.terms[t].indices[i] )
             terms.append ( [ indices                                 ,
-                             self.cObject.terms[i].type              ,
-                             self.cObject.terms[i].isActive == CTrue ] )
+                             self.cObject.terms[t].type              ,
+                             self.cObject.terms[t].isActive == CTrue ] )
         # . State.
         state = { "indices"         : self.cObject.nIndices ,
                   "label"           : self.label            ,
@@ -66,7 +66,7 @@ cdef class CosineTermContainer ( MMTerm ):
     def __setstate__ ( self, state ):
         """Set the state."""
         cdef CInteger a, i, n, p, t
-        cdef CReal c
+        cdef CReal    c
         # . Allocate the object.
         n          = state["indices"   ]
         parameters = state["parameters"]
@@ -83,12 +83,12 @@ cdef class CosineTermContainer ( MMTerm ):
                 self.cObject.parameters[i].termCoefficients[t] = c
                 self.cObject.parameters[i].periods         [t] = p
         # . Terms.
-        for ( i, ( indices, p, q ) ) in enumerate ( terms ):
-            for ( t, a ) in enumerate ( indices ):
-                self.cObject.terms[i].indices[t] = a
-            self.cObject.terms[i].type  = p
-            if q: self.cObject.terms[i].isActive = CTrue
-            else: self.cObject.terms[i].isActive = CFalse
+        for ( t, ( indices, p, q ) ) in enumerate ( terms ):
+            for ( i, a ) in enumerate ( indices ):
+                self.cObject.terms[t].indices[i] = a
+            self.cObject.terms[t].type  = p
+            if q: self.cObject.terms[t].isActive = CTrue
+            else: self.cObject.terms[t].isActive = CFalse
         # . Finish processing.
         CosineTermContainer_MakePowers ( self.cObject )
 
@@ -133,15 +133,15 @@ cdef class CosineTermContainer ( MMTerm ):
             terms         = []
             for ( increment, item ) in zip ( increments, items ):
                 if item is not None:
-                    state = item.__getstate__ ( )
+                    state0 = item.__getstate__ ( )
                     if np == 0:
-                        label           = state["label"          ]
-                        numberOfIndices = state["indices"        ]
-                        parameterFields = state["parameterFields"]
-                        termFields      = state["termFields"     ]
-                    parameterKeys0 = state.get ( "parameterKeys", None )
-                    parameters0    = state["parameters"]
-                    terms0         = state["terms"     ]
+                        label           = state0["label"          ]
+                        numberOfIndices = state0["indices"        ]
+                        parameterFields = state0["parameterFields"]
+                        termFields      = state0["termFields"     ]
+                    parameterKeys0 = state0.get ( "parameterKeys", None )
+                    parameters0    = state0["parameters"]
+                    terms0         = state0["terms"     ]
                     np0            = len ( parameters0 )
                     parameters.extend ( parameters0 )
                     for ( indices, p, q ) in terms0:
@@ -152,7 +152,13 @@ cdef class CosineTermContainer ( MMTerm ):
                     np += np0
             # . Construct the new keys and parameters.
             if doKeys:
+#                print ( "\nKeys:\n" )
+#                for ( i, ( key, parameter ) ) in enumerate ( zip ( parameterKeys, parameters ) ):
+#                    print ( i, key, parameter )
                 ( doKeys, oldToNew, parameterKeys, parameters ) = selfClass.MergeKeys ( parameterKeys, parameters )
+#                print ( oldToNew )
+#                for ( i, ( key, parameter ) ) in enumerate ( zip ( parameterKeys, parameters ) ):
+#                    print ( i, key, parameter )
             else:
                 parameterKeys = None
             # . Construct the object.
@@ -172,7 +178,7 @@ cdef class CosineTermContainer ( MMTerm ):
     def Prune ( self, Selection selection, information = {} ):
         """Pruning."""
         cdef CosineTermContainer new
-        new               = CosineTermContainer.Raw ( )
+        new               = self.__class__.Raw ( )
         new.cObject       = CosineTermContainer_Prune ( self.cObject, selection.cObject )
         new.isOwner       = True
         new.label         = self.label

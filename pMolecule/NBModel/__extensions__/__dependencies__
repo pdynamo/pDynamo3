@@ -6,4 +6,5 @@ pScientific.Geometry3
 pScientific.Splines
 pScientific.Symmetry
 pMolecule.MMModel
+pMolecule.QCModel.GaussianBases
 pMolecule.QCModel

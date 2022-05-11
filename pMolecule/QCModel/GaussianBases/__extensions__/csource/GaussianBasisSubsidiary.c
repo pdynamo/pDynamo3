@@ -593,6 +593,66 @@ void GaussianBasisSubsidiary_f1Xg2r ( const Real    *x     ,
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------
+! . Quadruple overlap integrals.
+!---------------------------------------------------------------------------------------------------------------------------------*/
+void GaussianBasisSubsidiary_f2Og2 (       Real    *x  ,
+                                           Real    *y  ,
+                                           Real    *z  ,
+                                     const Real     aa ,
+                                     const Real    *r0 ,
+                                     const Real    *ri ,
+                                     const Real    *rj ,
+                                     const Real    *rk ,
+                                     const Real    *rl ,
+                                     const Integer  ni ,
+                                     const Integer  nj ,
+                                     const Integer  nk ,
+                                     const Integer  nl )
+{
+    Integer i, j, k, l, m, n, npts, p, q ;
+    Real    ar, br, cr, dr, ptr, rint[3], t, temp, tinv ;
+    t    = sqrt ( aa ) ;
+    tinv = 1.0e+00 / t ;
+    for ( i = 0, n = 0 ; i <= ni ; i++ )
+    {
+        for ( j = 0 ; j <= nj ; j++ )
+        {
+	    for ( k = 0 ; k <= nk ; k++ )
+            {
+	        for ( l = 0 ; l <= nl ; l++, n++ )
+                {
+                    for ( m = 0 ; m < 3 ; m++ ) rint[m] = 0.0e+00 ;
+	            npts = ( i + j + k + l ) / 2 ;
+# ifdef CHECKGHPOINTS
+if ( npts > GHMAXPT ) printf ( "\nINVALID NUMBER OF POINTS IN QUADRUPLE GAUSS-HERMITE QUADRATURE = %d\n", npts ) ;
+# endif
+	            for ( p = GHINDEX[npts] ; p < GHINDEX[npts+1] ; p++ )
+                    {
+	                for ( m = 0 ; m < 3 ; m++ )
+                        {
+	                    ptr  = GHABSCISSAE[p] / t + r0[m] ;
+                            ar   = ptr - ri[m] ;
+                            br   = ptr - rj[m] ;
+                            cr   = ptr - rk[m] ;
+                            dr   = ptr - rl[m] ;
+                            temp = GHWEIGHTS[p] ;
+	                    for ( q = 1 ; q <= i ; q++ ) temp *= ar ;
+	                    for ( q = 1 ; q <= j ; q++ ) temp *= br ;
+	                    for ( q = 1 ; q <= k ; q++ ) temp *= cr ;
+	                    for ( q = 1 ; q <= l ; q++ ) temp *= dr ;
+	                    rint[m] += temp ;
+                        }
+	            }
+	            x[n] = rint[0] * tinv ;
+	            y[n] = rint[1] * tinv ;
+	            z[n] = rint[2] * tinv ;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------
 ! . Determine derivative integrals from input integrals.
 !---------------------------------------------------------------------------------------------------------------------------------*/
 void GaussianBasisSubsidiary_f2Xg2r ( const Integer  nI       , 

@@ -81,10 +81,20 @@ def DensityFitMultipoles ( target                     ,
                                                         scratch.onePDMP.totalCharge  ,
                                                         fitCoefficients              ,
                                                         fitVector                    )
-    # . Do the fit function if possible.
-    teis          = scratch.Get ( "twoElectronIntegrals" )
-    doFitFunction = testFitFunction and ( operator is GaussianBasisOperator.Coulomb ) and ( teis is not None )
-    if doFitFunction:
+    # . Do the fit function.
+    if testFitFunction:
+        # . Get the TEIs with the appropriate operator.
+        teis = None
+        if operator is GaussianBasisOperator.Coulomb:
+            teis = scratch.Get ( "twoElectronIntegrals" )
+        # . Recalculate TEIs as operator is not Coulomb or Coulomb TEIs were not found.
+        if teis is None:
+            evaluator.f2Xf2i ( target                                ,
+                               attribute = "fitTwoElectronIntegrals" ,
+                               operator  = operator                  ,
+                               reportTag = "Fit"                     )
+            teis = scratch.Get ( "fitTwoElectronIntegrals" )
+        # . Construct fit function.
         dTotal = scratch.onePDMP.density
         fTotal = Array.WithExtent ( dTotal.rows, storageType = StorageType.Symmetric )
         fTotal.Set ( 0.0 )
@@ -98,7 +108,14 @@ def DensityFitMultipoles ( target                     ,
                                                             scratch.onePDMP.totalCharge  ,
                                                             fitCoefficients              ,
                                                             fTotal                       )
-        fitFunction = 2.0 * ( eC - eF )
+        fitFunction  = 2.0 * ( eC - eF )
+        fitReference = 2.0 * eC
+        if fitFunction >= 0.0:
+            fitErrorAbs = math.sqrt ( fitFunction )
+            fitErrorRel = math.sqrt ( fitFunction / math.fabs ( fitReference ) )
+        else:
+            fitErrorAbs = -1.0
+            fitErrorRel = -1.0
     # . Multipoles.
     # . Integrals.
     overlap                          = evaluator.f1Oi ( target, fitBases = fitBases                  )
@@ -229,9 +246,13 @@ def DensityFitMultipoles ( target                     ,
         ArrayPrint2D  ( quadrupole, itemFormat = "{:.3f}", log = log, title = "Quadrupole (Buckinghams)" )
 
         # . Fit function.
-        if doFitFunction:
-            log.SummaryOfItems ( [ ( "(rho-rho Fitted)^2", "{:.5f}".format ( fitFunction )               ) ,
-                                   (  "|rho-rho Fitted|" , "{:.5f}".format ( math.sqrt ( fitFunction ) ) ) ] , title = "Fit Function" )
+        if testFitFunction:
+            log.SummaryOfItems ( [ ( "Fit Basis"              , fitBasis                         ) , 
+                                   ( "Fit Function"           , "{:.5f}".format ( fitFunction  ) ) ,
+                                   ( "Fit Error Absolute"     , "{:.5f}".format ( fitErrorAbs  ) ) ,
+                                   ( "Fit Error Relative (%)" , "{:.1%}".format ( fitErrorRel  ) ) ,
+                                   ( "Fit Operator"           , operator.name.lower ( )          ) ,
+                                   ( "Fit Reference"          , "{:.5f}".format ( fitReference ) ) ] , title = "Fit Function" )
     # . Finish up.
     results = { "Charges"          : charges         ,
                 "Dipole"           : dipole          ,
@@ -239,9 +260,11 @@ def DensityFitMultipoles ( target                     ,
                 "Fit Coefficients" : fitCoefficients ,
                 "Fit Operator"     : fitOperator     ,
                 "Quadrupole"       : quadrupole      }
-    if doFitFunction:
-        results["(rho-rho Fitted)^2"] = fitFunction
-        results["|rho-rho Fitted|"  ] = math.sqrt ( fitFunction )
+    if testFitFunction:
+        results["Fit Function"          ] = fitFunction
+        results["Fit Reference"         ] = fitReference
+        results["Fit Error Absolute"    ] = fitErrorAbs
+        results["Fit Error Relative (%)"] = fitErrorRel
     return results
 
 #===================================================================================================================================

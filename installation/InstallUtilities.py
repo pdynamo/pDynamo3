@@ -370,7 +370,7 @@ class PackageToInstall:
         """Compile the C-libraries."""
         if getattr ( self, "hasCLibraries", False ):
             # . Get the build directory name.
-            buildPath = os.path.join ( "build", "temp" + ".{:s}-{:s}".format ( get_platform ( ), sys.version[0:3] ) )
+            buildPath = os.path.join ( "build", "temp" + ".{:s}-{:s}".format ( get_platform ( ), VersionString ( ) ) )
             # . Get the include directories.
             includeDirectories = [ self.cIncludePath ]
             for item in reversed ( getattr ( self, "dependencyObjects", [] ) ):
@@ -449,7 +449,7 @@ class PackageToInstall:
         if getattr ( self, "hasPyrexFiles", False ):
             # . Get the build and destination path names.
             nameAsPath      = self.name.replace ( ".", os.sep )
-            buildPath       = os.path.join ( "build", "lib" + ".{:s}-{:s}".format ( get_platform ( ), sys.version[0:3] ), nameAsPath )
+            buildPath       = os.path.join ( "build", "lib" + ".{:s}-{:s}".format ( get_platform ( ), VersionString ( ) ), nameAsPath )
             destinationPath = self.path
             # . Get the include directories.
             includeDirectories = [ self.cIncludePath ]
@@ -688,6 +688,10 @@ def TopologicalSort ( data ):
         print ( "\nPackage circular dependencies:" )
         for key in sorted ( data.keys ( ) ): print ( "{:s} - {:s}", key.ljust ( width ), ", ".join ( sorted ( data[key] ) ) )
         raise InstallationError ( "The packages have circular dependencies." )
+
+def VersionString ( ):
+    """The current system version string for build paths."""
+    return sys.version.split ( " ", 1 )[0].rsplit ( ".", 1 )[0]
 
 def WriteShellFile ( inPath, outPath, variables, report ):
     """Write a shell file."""

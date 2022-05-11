@@ -190,7 +190,7 @@ void GaussianBasisIntegrals_f1Ag1i ( const GaussianBasis *iBasis    ,
             {
                 for ( j = 0 ; j < jBasis->shells[jShell].nBasis ; j++, n++ )
                 {
-                    Array2D_Item ( integrals, i+iBasis->shells[iShell].nStart, j+jBasis->shells[jShell].nStart ) = pG[n] ;
+                    Array2D_Item ( integrals, i+iBasis->shells[iShell].nStart, j+jBasis->shells[jShell].nStart ) = -pG[n] ; /* . -r12 operator. */
                 }
             }
         } /* . jShell. */
@@ -413,9 +413,9 @@ void GaussianBasisIntegrals_f1Ag1r1 ( const GaussianBasis *iBasis ,
             {
                 for ( j = 0 ; j < jBasis->shells[jShell].nBasis ; j++, n++ )
                 {
-                    Array2D_Item ( sX, i+iBasis->shells[iShell].nStart, j+jBasis->shells[jShell].nStart ) = pGx[n] ;
-                    Array2D_Item ( sY, i+iBasis->shells[iShell].nStart, j+jBasis->shells[jShell].nStart ) = pGy[n] ;
-                    Array2D_Item ( sZ, i+iBasis->shells[iShell].nStart, j+jBasis->shells[jShell].nStart ) = pGz[n] ;
+                    Array2D_Item ( sX, i+iBasis->shells[iShell].nStart, j+jBasis->shells[jShell].nStart ) = -pGx[n] ; /* . -r12 operator. */
+                    Array2D_Item ( sY, i+iBasis->shells[iShell].nStart, j+jBasis->shells[jShell].nStart ) = -pGy[n] ;
+                    Array2D_Item ( sZ, i+iBasis->shells[iShell].nStart, j+jBasis->shells[jShell].nStart ) = -pGz[n] ;
                 }
             }
         } /* . jShell. */

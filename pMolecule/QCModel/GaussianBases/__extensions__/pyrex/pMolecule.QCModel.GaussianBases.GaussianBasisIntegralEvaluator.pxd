@@ -157,21 +157,6 @@ cdef extern from "GaussianBasisContainerIntegrals_f1Xg1.h":
                                                           CRealArray2D            *gradients3        ,
                                                           CStatus                 *status            )
 
-cdef extern from "GaussianBasisContainerIntegrals_f2Cf2.h":
-
-    cdef void GaussianBasisContainerIntegrals_f2Cf2i    ( CGaussianBasisContainer *self              ,
-                                                          CRealArray2D            *coordinates3      ,
-                                                          CBlockStorage           *teis              ,
-                                                          CStatus                 *status            )
-    cdef void GaussianBasisContainerIntegrals_f2Cf2R1   ( CGaussianBasisContainer *self              ,
-                                                          CRealArray2D            *coordinates3      ,
-                                                          CSymmetricMatrix        *dTotal            ,
-                                                          CSymmetricMatrix        *dSpin             ,
-                                                          CBoolean                 doCoulomb         ,
-                                                          CReal                    exchangeScaling   ,
-                                                          CRealArray2D            *gradients3        ,
-                                                          CStatus                 *status            )
-
 cdef extern from "GaussianBasisContainerIntegrals_f2Cp1.h":
 
     cdef void GaussianBasisContainerIntegrals_f2Cm1R1   ( CGaussianBasisContainer *self              ,
@@ -202,6 +187,26 @@ cdef extern from "GaussianBasisContainerIntegrals_f2Cp1.h":
                                                           CSelection              *selectionG        ,
                                                           CSymmetricMatrix        *density           ,
                                                           CRealArray1D            *potentials        ,
+                                                          CStatus                 *status            )
+
+cdef extern from "GaussianBasisContainerIntegrals_f2Xf2.h":
+
+    cdef void GaussianBasisContainerIntegrals_f2Cf2i    ( CGaussianBasisContainer *self              ,
+                                                          CRealArray2D            *coordinates3      ,
+                                                          CBlockStorage           *teis              ,
+                                                          CStatus                 *status            )
+    cdef void GaussianBasisContainerIntegrals_f2Cf2R1   ( CGaussianBasisContainer *self              ,
+                                                          CRealArray2D            *coordinates3      ,
+                                                          CSymmetricMatrix        *dTotal            ,
+                                                          CSymmetricMatrix        *dSpin             ,
+                                                          CBoolean                 doCoulomb         ,
+                                                          CReal                    exchangeScaling   ,
+                                                          CRealArray2D            *gradients3        ,
+                                                          CStatus                 *status            )
+    cdef void GaussianBasisContainerIntegrals_f2Xf2i    ( CGaussianBasisContainer *self              ,
+                                                          CRealArray2D            *coordinates3      ,
+                                                          CGaussianBasisOperator   operator          ,
+                                                          CBlockStorage           *teis              ,
                                                           CStatus                 *status            )
 
 cdef extern from "GaussianBasisContainerIntegrals_p1Cq1.h":

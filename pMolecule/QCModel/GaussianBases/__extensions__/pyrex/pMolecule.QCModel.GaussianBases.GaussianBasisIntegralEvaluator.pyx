@@ -528,6 +528,40 @@ cdef class GaussianBasisIntegralEvaluator:
                                                  &cStatus             )
         if cStatus != CStatus_OK: raise GaussianBasisError ( "Error calculating two-basis electron potentials." )
 
+    def f2Xf2i ( self, target, attribute = "twoElectronIntegrals", operator = GaussianBasisOperator.Coulomb, reportTag = "" ):
+        """The two-electron integrals with a choice of operator."""
+        cdef BlockStorage           teis
+        cdef Coordinates3           coordinates3
+        cdef GaussianBasisContainer bases
+        cdef CGaussianBasisOperator cOperator
+        cdef CStatus                cStatus = CStatus_OK
+        bases        = target.qcState.orbitalBases
+        cOperator    = operator.value
+        scratch      = target.scratch
+        coordinates3 = scratch.qcCoordinates3AU
+        teis         = scratch.Get ( attribute, None )
+        if teis is None:
+            teis = BlockStorage ( )
+            scratch.Set ( attribute, teis )
+        else:
+            teis.Empty ( )
+        GaussianBasisContainerIntegrals_f2Xf2i ( bases.cObject        ,
+                                                 coordinates3.cObject ,
+                                                 cOperator            ,
+                                                 teis.cObject         ,
+                                                 &cStatus             )
+        if cStatus != CStatus_OK: raise GaussianBasisError ( "Error calculating two-electron integrals." )
+        n        = float ( len ( bases ) )
+        p        = ( n * ( n + 1.0 ) ) / 2.0
+        n        = teis.count
+        ( s, m ) = teis.byteSize
+        report   = scratch.qcEnergyReport
+        if len ( reportTag ) == 0: tag = reportTag
+        else:                      tag = reportTag + " "
+        report[tag + "TEI Number"      ] = n
+        report[tag + "TEI Sparsity (%)"] = ( ( 1.0 - float ( n ) / ( ( p * ( p + 1.0 ) ) / 2.0 ) ) * 100.0, "{:.1f}" )
+        report[tag + "TEI Storage ({:s}B)".format ( m.symbol )] = ( s, "{:.3f}" )
+
     def m1Cm1ER1 ( self, target ):
         """The core-core energy."""
         cdef Coordinates3    coordinates3

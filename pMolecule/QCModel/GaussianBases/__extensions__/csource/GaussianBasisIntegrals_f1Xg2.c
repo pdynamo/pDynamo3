@@ -343,7 +343,7 @@ void GaussianBasisIntegrals_f1Ag2i ( const GaussianBasis *iBasis ,
                                     indices16[m3  ] = ii ;
                                     indices16[m3+1] = jj ;
                                     indices16[m3+2] = fBasis->shells[fShell].nStart + f ;
-                                    integrals[m]    = pG[n] ;
+                                    integrals[m]    = -pG[n] ; /* . -r12 operator. */
                                     m++ ;
                                 }
                             }
@@ -764,8 +764,8 @@ void GaussianBasisIntegrals_f1Ag2r1 ( const GaussianBasis *iBasis ,
                     values = hX ; GaussianBasisTransform3 ( nCFuncI, nCFuncJ, nCFuncF, iC2S, jC2S, fC2S, &values, &work ) ; pHx = values ;
                     values = hY ; GaussianBasisTransform3 ( nCFuncI, nCFuncJ, nCFuncF, iC2S, jC2S, fC2S, &values, &work ) ; pHy = values ;
                     values = hZ ; GaussianBasisTransform3 ( nCFuncI, nCFuncJ, nCFuncF, iC2S, jC2S, fC2S, &values, &work ) ; pHz = values ;
-                    if ( isDiagonal ) scale = 1.0e+00 ;
-                    else              scale = 2.0e+00 ;
+                    if ( isDiagonal ) scale = -1.0e+00 ; /* . -r12 operator. */
+                    else              scale = -2.0e+00 ;
                     m = block->count ;
                     for ( i = 0, n = 0 ; i < iBasis->shells[iShell].nBasis ; i++ )
                     {

@@ -128,6 +128,112 @@ void Loewdin_ChargeDensityDerivatives ( const IntegerArray1D  *basisIndices   ,
 }
 
 /*----------------------------------------------------------------------------------------------------------------------------------
+! . Charge restraint W-matrix and core term.
+! . Only basic checking is done.
+! . The input W matrix is initialized on entry.
+!---------------------------------------------------------------------------------------------------------------------------------*/
+Real Loewdin_ChargeRestraintMatrix ( const IntegerArray1D  *basisIndices   ,
+                                     const RealArray1D     *nuclearCharges ,
+                                     const IntegerArray1D  *crIndices      ,
+                                     const RealArray1D     *crWeights      ,
+                                     const Boolean          isSpin         ,
+                                     const SymmetricMatrix *loewdinT       ,
+                                           SymmetricMatrix *W              )
+{
+    Real core = 0.0e+00 ;
+    if ( ( basisIndices   != NULL ) &&
+         ( crIndices      != NULL ) &&
+         ( crWeights      != NULL ) &&
+         ( loewdinT       != NULL ) &&
+         ( nuclearCharges != NULL ) &&
+         ( W              != NULL ) )
+    {
+        auto Integer a, i, r, s, u, u0, u1 ;
+        auto Real    f, w ;
+        SymmetricMatrix_Set ( W, 0.0e+00 ) ;
+        for ( i = 0 ; i < View1D_Extent ( crIndices ) ; i++ )
+        {
+            a = Array1D_Item ( crIndices, i ) ;
+            w = Array1D_Item ( crWeights, i ) ;
+            if ( ! isSpin )
+            {    
+                 core += ( w * Array1D_Item ( nuclearCharges, a ) ) ;
+                 w    *= -1.0e+00 ; /* . w is -1.0 for electrons in this case. */
+            }
+            u0 = Array1D_Item ( basisIndices, a   ) ;
+            u1 = Array1D_Item ( basisIndices, a+1 ) ;
+            for ( r = 0 ; r < SymmetricMatrix_Extent ( W ); r++ )
+            {
+                for ( s = 0 ; s <= r ; s++ )
+                {
+                    for ( u = u0, f = 0.0e+00 ; u < u1 ; u++ )
+                    {
+                        /* . Use GetItem here as r, s, and u unordered! */
+                        f += ( SymmetricMatrix_GetItem ( loewdinT, r, u, NULL ) * SymmetricMatrix_GetItem ( loewdinT, s, u, NULL ) ) ;
+                    }
+                    SymmetricMatrix_Item ( W, r, s ) += ( w * f ) ;
+                }
+            }
+        }
+    }
+    return core ;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------
+! . Charge restraint weighted density.
+! . This method needs to be called for each restraint separately together with the derivative of the restraint energy model
+! . with respect to the restraint, dRdL, the overlap eigenvectors and the Z matrix, which is the appropriate density post-multiplied
+! . by the Loewdin transformation.
+! . Only a partial weighted density is formed. The full matrix needs to transformed afterwards by the overlap factors.
+!---------------------------------------------------------------------------------------------------------------------------------*/
+# define _Factor 2.0e+00 /* . The appropriate weight factor. */
+void Loewdin_ChargeRestraintWeightedDensity ( const IntegerArray1D  *basisIndices ,
+                                              const IntegerArray1D  *crIndices    ,
+                                              const RealArray1D     *crWeights    ,
+                                              const Boolean          isSpin       ,
+                                              const Real             dRdL         ,
+                                              const RealArray2D     *eigenVectors ,
+                                              const RealArray2D     *Z            ,
+                                                    SymmetricMatrix *A            )
+{
+    if ( ( basisIndices != NULL    ) &&
+         ( crIndices    != NULL    ) &&
+         ( crWeights    != NULL    ) &&
+         ( eigenVectors != NULL    ) &&
+         ( Z            != NULL    ) &&
+         ( A            != NULL    ) &&
+         ( dRdL         != 0.0e+00 ) ) /* . Do nothing if dRdL is zero! */
+    {
+        auto Integer a, i, j, n, r, u, u0, u1 ;
+        auto Real    f, sum, w ;
+        f = _Factor * dRdL ;
+        if ( ! isSpin ) f *= -1.0e+00 ;
+        n = View2D_Columns ( eigenVectors ) ;
+        for ( r = 0 ; r < View1D_Extent ( crIndices ) ; r++ )
+        {
+            a =     Array1D_Item ( crIndices, r ) ;
+            w = f * Array1D_Item ( crWeights, r ) ;
+            u0 = Array1D_Item ( basisIndices, a   ) ;
+            u1 = Array1D_Item ( basisIndices, a+1 ) ;
+            for ( i = 0 ; i < n ; i++ )
+            {
+                for ( j = 0 ; j <= i ; j++ )
+                {
+                    sum = 0.0e+00 ;
+                    for ( u = u0 ; u < u1 ; u++ )
+                    {
+                        sum += ( Array2D_Item ( eigenVectors, u, i ) * Array2D_Item ( Z, u, j ) +
+                                 Array2D_Item ( eigenVectors, u, j ) * Array2D_Item ( Z, u, i ) ) ;
+                    }
+                    SymmetricMatrix_Item ( A, i, j ) += ( w * sum ) ;
+                }
+            }
+        }
+    }
+}
+# undef _Factor
+
+/*----------------------------------------------------------------------------------------------------------------------------------
 ! . Weighted density matrix.
 ! . wDensity incremented here only.
 !---------------------------------------------------------------------------------------------------------------------------------*/
@@ -224,6 +330,10 @@ void Loewdin_WeightedDensity ( const IntegerArray1D  *basisIndices        ,
                     }
                 }
                 /* . Second transformation. */
+                /* . When rationalize Arrays can use instead:
+                !    SymmetricMatrix_Transform ( wDM, tempNE, eigenVectors, True, -2.0e+00, 1.0e+00, status ) ;
+                !    In this case doesn't save much as tempNO already exists.
+                */
                 SymmetricMatrix_Transform ( tempNE, eigenVectors, True, tempNO, status ) ;
                 /* . Add in the contributions to the density. */
                 SymmetricMatrix_Add ( wDensity, -2.0e+00, tempNO, status ) ;

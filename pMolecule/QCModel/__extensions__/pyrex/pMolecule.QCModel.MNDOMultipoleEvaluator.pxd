@@ -24,20 +24,26 @@ cdef extern from "MNDOMultipoles.h":
         MultipoleRepresentation_Cartesian  = 2 ,
         MultipoleRepresentation_Spherical  = 3
 
-    cdef void MNDO_AtomicMultipoles     ( CMNDOParametersContainer *parameters              ,
-                                          CIntegerArray1D          *basisIndices            ,
-                                          CSymmetricMatrix         *density                 ,
-                                          CMultipoleRepresentation  multipoleRepresentation ,
-                                          CInteger                  multipoleOrder          ,
-                                          CRealArray1D             *multipoles              )
-    cdef void MNDO_AtomicMultipolesFock ( CMNDOParametersContainer *parameters              ,
-                                          CIntegerArray1D          *basisIndices            ,
-                                          CRealArray1D             *potentials              ,
-                                          CInteger                  multipoleOrder          ,
-                                          CSymmetricMatrix         *fock                    )
-    cdef void MNDO_BondOrders           ( CIntegerArray1D          *basisIndices            ,
-                                          CSymmetricMatrix         *density                 ,
-                                          CSymmetricMatrix         *bondOrders              )
+    cdef void  MNDO_AtomicMultipoles      ( CMNDOParametersContainer *parameters              ,
+                                            CIntegerArray1D          *basisIndices            ,
+                                            CSymmetricMatrix         *density                 ,
+                                            CMultipoleRepresentation  multipoleRepresentation ,
+                                            CInteger                  multipoleOrder          ,
+                                            CRealArray1D             *multipoles              )
+    cdef void  MNDO_AtomicMultipolesFock  ( CMNDOParametersContainer *parameters              ,
+                                            CIntegerArray1D          *basisIndices            ,
+                                            CRealArray1D             *potentials              ,
+                                            CInteger                  multipoleOrder          ,
+                                            CSymmetricMatrix         *fock                    )
+    cdef void  MNDO_BondOrders            ( CIntegerArray1D          *basisIndices            ,
+                                            CSymmetricMatrix         *density                 ,
+                                            CSymmetricMatrix         *bondOrders              )
+    cdef CReal MNDO_ChargeRestraintMatrix ( CIntegerArray1D          *basisIndices            ,
+                                            CRealArray1D             *nuclearCharges          ,
+                                            CIntegerArray1D          *crIndices               ,
+                                            CRealArray1D             *crWeights               ,
+                                            CBoolean                  isSpin                  ,
+                                            CSymmetricMatrix         *W                       )
 
 #===================================================================================================================================
 # . Class.

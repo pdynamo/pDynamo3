@@ -325,3 +325,43 @@ void MNDO_BondOrders ( const IntegerArray1D  *basisIndices ,
         }
     }
 }
+
+/*----------------------------------------------------------------------------------------------------------------------------------
+! . Charge restraint W-matrix and core term.
+! . This is hugely wasteful for MNDO methods as W is diagonally sparse!
+! . However it is done for the moment to simplify the charge restraint code, in particular for those methods,
+! . such as DFT with Loewdin charges, for which W is dense.
+! . Only basic checking is done.
+! . The input W matrix is initialized on entry.
+!---------------------------------------------------------------------------------------------------------------------------------*/
+Real MNDO_ChargeRestraintMatrix ( const IntegerArray1D  *basisIndices   ,
+                                  const RealArray1D     *nuclearCharges ,
+                                  const IntegerArray1D  *crIndices      ,
+                                  const RealArray1D     *crWeights      ,
+                                  const Boolean          isSpin         ,
+                                        SymmetricMatrix *W              )
+{
+    Real core = 0.0e+00 ;
+    if ( ( basisIndices   != NULL ) &&
+         ( crIndices      != NULL ) &&
+         ( crWeights      != NULL ) &&
+         ( nuclearCharges != NULL ) &&
+         ( W              != NULL ) )
+    {
+        auto Integer a, i, u, u0, u1 ;
+        auto Real    scale, w ;
+        if ( isSpin ) scale =  1.0e+00 ;
+        else          scale = -1.0e+00 ;
+        SymmetricMatrix_Set ( W, 0.0e+00 ) ;
+        for ( i = 0 ; i < View1D_Extent ( crIndices ) ; i++ )
+        {
+            a = Array1D_Item ( crIndices, i ) ;
+            w = Array1D_Item ( crWeights, i ) ;
+            if ( ! isSpin ) core += ( w * Array1D_Item ( nuclearCharges, a ) ) ;
+            u0 = Array1D_Item ( basisIndices, a   ) ;
+            u1 = Array1D_Item ( basisIndices, a+1 ) ;
+            for ( u = u0 ; u < u1 ; u++ ) SymmetricMatrix_Item ( W, u, u ) += ( scale * w ) ;
+        }
+    }
+    return core ;
+}

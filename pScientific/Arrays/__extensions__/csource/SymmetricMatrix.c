@@ -446,7 +446,7 @@ void SymmetricMatrix_PostMatrixMultiply ( const SymmetricMatrix *self, const Rea
                  ( self->extent                == View2D_Rows    ( result ) ) &&
                  ( View2D_Rows ( matrix ) == View2D_Columns ( result ) ) )
             {
-                for ( i = 0 ; i < View2D_Columns ( matrix ) ; i++ )
+                for ( i = 0 ; i < View2D_Rows ( matrix ) ; i++ )
                 {
                     cblas_dspmv ( CblasColMajor, CblasUpper, self->extent, 1.0e+00, self->data, Array2D_ItemPointer ( matrix, i, 0 ), matrix->stride1 ,
                                                                            0.0e+00,             Array2D_ItemPointer ( result, 0, i ), result->stride0 ) ;
@@ -481,11 +481,11 @@ void SymmetricMatrix_PreMatrixMultiply ( const SymmetricMatrix *self, const Real
         auto Integer  i ;
         if ( useTranspose )
         {
-            if ( ( self->extent                   == View2D_Rows    ( matrix ) ) &&
-                 ( self->extent                   == View2D_Columns ( result ) ) &&
+            if ( ( self->extent              == View2D_Rows    ( matrix ) ) &&
+                 ( self->extent              == View2D_Columns ( result ) ) &&
                  ( View2D_Columns ( matrix ) == View2D_Rows    ( result ) ) )
             {
-                for ( i = 0 ; i < View2D_Rows ( matrix ) ; i++ )
+                for ( i = 0 ; i < View2D_Columns ( matrix ) ; i++ )
                 {
                     cblas_dspmv ( CblasColMajor, CblasUpper, self->extent, 1.0e+00, self->data, Array2D_ItemPointer ( matrix, 0, i ), matrix->stride0 ,
                                                                            0.0e+00,             Array2D_ItemPointer ( result, i, 0 ), result->stride1 ) ;
@@ -795,44 +795,37 @@ void SymmetricMatrix_SymmetricTransform ( const SymmetricMatrix *A, const Symmet
 {
     if ( ( A != NULL ) && ( B != NULL ) && ( BAB != NULL ) && Status_IsOK ( status ) )
     {
-        auto Integer  n = A->extent ;
+        auto Integer n = A->extent ;
         if ( ( B->extent == n ) && ( BAB->extent == n ) )
         {
-            auto RealArray1D *t ;
-            t = RealArray1D_AllocateWithExtent ( n, status ) ;
-            if ( t != NULL )
+            auto RealArray1D *BA ;
+            BA = RealArray1D_AllocateWithExtent ( n, status ) ;
+            if ( BA != NULL )
             {
-                auto Integer  i, ij, il, j, jk, k, kl, l ;
+                auto Integer  i, j, k, l ;
                 auto Real     sum ;
-                for ( i = il = 0 ; i < n ; i++ )
+                for ( i = 0 ; i < n ; i++ )
                 {
                     for ( k = 0 ; k < n ; k++ )
                     {
-                        sum = 0.0e+00 ;
-                        for ( j = 0 ; j < n ; j++ )
+                        for ( j = 0, sum = 0.0e+00 ; j < n ; j++ )
                         {
-                            if ( i >= j ) ij = ( i * ( i + 1 ) ) / 2 + j ;
-                            else          ij = ( j * ( j + 1 ) ) / 2 + i ;
-                            if ( j >= k ) jk = ( j * ( j + 1 ) ) / 2 + k ;
-                            else          jk = ( k * ( k + 1 ) ) / 2 + j ;
-                            sum += B->data[ij] * A->data[jk] ;
+                            sum += SymmetricMatrix_GetItem ( B, i, j, NULL ) * SymmetricMatrix_GetItem ( A, j, k, NULL ) ;
                         }
-                        Array1D_Item ( t, k ) = sum ;
+                        Array1D_Item ( BA, k ) = sum ;
                     }
-                    for ( l = 0 ; l <= i ; il++, l++ )
+                    for ( l = 0 ; l <= i ; l++ )
                     {
-                        sum = 0.0e+00 ;
-                        for ( k = 0 ; k < n ; k++ )
+                        for ( k = 0, sum = 0.0e+00 ; k < n ; k++ )
                         {
-                            if ( k >= l ) kl = ( k * ( k + 1 ) ) / 2 + l ;
-                            else          kl = ( l * ( l + 1 ) ) / 2 + k ;
-                            sum += Array1D_Item ( t, k ) * B->data[kl] ;
+                            sum += Array1D_Item ( BA, k ) * SymmetricMatrix_GetItem ( B, k, l, NULL ) ;
                         }
-                        BAB->data[il] = sum ;
+                        SymmetricMatrix_Item ( BAB, i, l ) = sum ;
                     }
                 }
-                RealArray1D_Deallocate ( &t ) ;
+                RealArray1D_Deallocate ( &BA ) ;
             }
+            else Status_Set ( status, Status_OutOfMemory ) ;
         }
         else Status_Set ( status, Status_NonConformableArrays ) ;
     }

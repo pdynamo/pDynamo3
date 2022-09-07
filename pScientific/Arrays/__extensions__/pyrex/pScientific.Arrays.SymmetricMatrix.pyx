@@ -68,7 +68,7 @@ cdef class SymmetricMatrix:
         return self._MakeIterator ( )
 
     def __len__ ( self ):
-        """Return the size of the symmetricmatrix."""
+        """Return the size of the symmetric matrix."""
         return self.size
 
     def __reduce_ex__ ( self, protocol ):
@@ -213,11 +213,15 @@ cdef class SymmetricMatrix:
         return SymmetricMatrix_RootMeanSquare ( self.cObject )
 
     def Scale ( self, CReal value ):
-        """Scale all the elements of a symmetricmatrix."""
+        """Scale all the elements of a symmetric matrix."""
         SymmetricMatrix_Scale ( self.cObject, value )
 
+    def ScaleOffDiagonal ( self, CReal value ):
+        """Scale the off-diagonal elements of a symmetric matrix."""
+        SymmetricMatrix_ScaleOffDiagonal ( self.cObject, value )
+
     def Set ( self, CReal value ):
-        """Set all the elements of a symmetricmatrix."""
+        """Set all the elements of a symmetric matrix."""
         SymmetricMatrix_Set ( self.cObject, value )
 
     def SetColumn ( self, CInteger  column, RealArray1D vector ):
@@ -235,7 +239,7 @@ cdef class SymmetricMatrix:
     def SymmetricTransform ( self, SymmetricMatrix matrix not None ,
                                    SymmetricMatrix result not None ):
         """Transform the matrix by X * S * X."""
-        cdef CStatus  cStatus = CStatus_OK
+        cdef CStatus cStatus = CStatus_OK
         SymmetricMatrix_SymmetricTransform ( self.cObject, matrix.cObject, result.cObject, &cStatus )
         if cStatus != CStatus_OK: raise ArrayError ( "Error transforming symmetric matrix." )
 

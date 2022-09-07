@@ -97,7 +97,7 @@ class SystemGeometryObjectiveFunction ( ObjectiveFunction ):
             reference          = Array.WithExtent ( self.linearVectors.rows    )
             if self.rtReference is None: self.iCoordinates3.CopyTo        ( reference.iterator )
             else:                        self.rtReference.iterator.CopyTo ( reference.iterator )
-            self.linearVectors.VectorMultiply ( reference, self.linearScalars, 1.0, 0.0, transpose = True )
+            self.linearVectors.VectorMultiply ( reference, self.linearScalars, transpose = True )
             # . Reset the number of degrees of freedom.
             self.degreesOfFreedom = self.nVariables - len ( self.linearScalars )
 

@@ -1,25 +1,38 @@
+"""Check the pseudo-inverse."""
 """Tests for dense linear algebra."""
 
 from pCore                     import CPUTime                 , \
                                       logFile                 , \
                                       TestScriptExit_Fail
 from pScientific.Arrays        import Array                   , \
+                                      ArrayPrint2D            , \
                                       StorageType
 from pScientific.LinearAlgebra import EigenPairs              , \
                                       LinearEquations         , \
                                       LinearLeastSquaresBySVD , \
-                                      MachineConstants
+                                      MachineConstants        , \
+                                      MatrixPseudoInverse
 from pScientific.RandomNumbers import NormalDeviateGenerator  , \
                                       RandomNumberGenerator
 
 #===================================================================================================================================
 # . Parameters.
 #===================================================================================================================================
-# . Matrix sizes.
-_Extents = ( 1, 5, 10, 25, 100, 500, 1000 )
+# . Matrix shapes.
+_Shapes = ( (    1,    1 ), (    5,   5 ) ,
+            (   10,   10 ), (   25,  25 ) ,
+            (  100,  100 ), (  500, 500 ) ,
+            ( 1000, 1000 ),
+            (    1,    5 ), (    5,   1 ) ,
+            (    5,   10 ), (   10,   5 ) ,
+            (   10,   25 ), (   25,  10 ) ,
+            (   25,  100 ), (  100,  25 ) ,
+            (  100,  500 ), (  500, 100 ) ,
+            (  500, 1000 ), ( 1000, 500 ) )
 
-# . Precision.
-_Tolerance = 1.0e-10
+# . Options.
+_MaximumExtent = 1001
+_Tolerance     = 1.0e-10
 
 #===================================================================================================================================
 # . Functions.
@@ -33,6 +46,32 @@ def _CheckEigenPairs ( s, e, v ):
     for i in range ( n ):
         sF[i,i] -= e[i]
     return sF.iterator.AbsoluteMaximum ( )
+
+def _CheckPseudoInverse ( a, b ):
+    m = a.rows
+    n = a.columns
+    if ( m == n ) or ( m < n ):
+        c = Array.WithExtents ( m, m ) # . A * B.
+        c.Set ( 0.0 )
+        c.MatrixMultiply ( a, b )
+        s = 0
+        for i in range ( m ):
+            if ( c[i,i] - 1.0 ) <= _Tolerance:
+                c[i,i] = 0.0
+                s += 1
+        error = c.iterator.AbsoluteMaximum ( )
+    else: error = 0.0
+    if ( m == n ) or ( m > n ):
+        c = Array.WithExtents ( n, n ) # . B * A.
+        c.Set ( 0.0 )
+        c.MatrixMultiply ( b, a )
+        t = 0
+        for i in range ( n ):
+            if ( c[i,i] - 1.0 ) <= _Tolerance:
+                c[i,i] = 0.0
+                t += 1
+        error = max ( error, c.iterator.AbsoluteMaximum ( ) )
+    return error
 
 def _CheckSquareLinearEquations ( a, b, c ):
     a.VectorMultiply ( c, b, alpha = 1.0, beta = -1.0 )
@@ -53,6 +92,22 @@ def _EigenPairs ( extent, cpuTimer, ndg ):
     try:
         results = EigenPairs ( s, e, v, preserveInput = True )
         error   = _CheckEigenPairs ( s, e, v )
+        success = True
+    except Exception as e:
+        print ( e )
+        error   = 0.0
+        success = False
+    return ( cpuTimer.Current ( ) - tStart, success, error )
+
+def _PseudoInverse ( extent0, extent1, cpuTimer, ndg ):
+    a = Array.WithExtents ( extent0, extent1 ) ; a.Set ( 0.0 )
+    b = Array.WithExtents ( extent1, extent0 ) ; b.Set ( 0.0 )
+    for i in range ( extent0 ):
+        for j in range ( extent1 ): a[i,j] = ndg.NextDeviate ( )
+    tStart = cpuTimer.Current ( )
+    try:
+        results = MatrixPseudoInverse ( a, b, preserveInput = True )
+        error   = _CheckPseudoInverse ( a, b )
         success = True
     except Exception as e:
         print ( e )
@@ -146,20 +201,30 @@ constants = MachineConstants ( )
 # . Run the tests.
 numberFailed     = 0
 numberInaccurate = 0
-for ( function, label ) in ( ( _EigenPairs                       , "EigenPairs"    ) ,
-                             ( _SquareMatrixLinearEquations      , "Square LEs"    ) ,
-                             ( _SquareMatrixLinearEquationsBySVD , "SVD LEs"       ) ,
-                             ( _SymmetricMatrixLinearEquations   , "Symmetric LEs" ) ):
-    results = [ function ( extent, cpuTimer, ndg ) for extent in _Extents ]
-    table   = logFile.GetTable ( columns = [ 10, 20, 20, 20 ] )
+for ( function, label, isSquare ) in ( ( _EigenPairs                       , "EigenPairs"    , True  ) ,
+                                       ( _PseudoInverse                    , "Pseudo-Inverse", False ) ,
+                                       ( _SquareMatrixLinearEquations      , "Square LEs"    , True  ) ,
+                                       ( _SquareMatrixLinearEquationsBySVD , "SVD LEs"       , True  ) ,
+                                       ( _SymmetricMatrixLinearEquations   , "Symmetric LEs" , True  ) ):
+    results = []
+    for ( e0, e1 ) in _Shapes:
+        if ( e0 > _MaximumExtent ) or ( e1 > _MaximumExtent ): continue
+        if isSquare:
+            if e0 == e1:
+                results.append ( ( e0, e1, function ( e0, cpuTimer, ndg ) ) )
+        else:
+            results.append ( ( e0, e1, function ( e0, e1, cpuTimer, ndg ) ) )
+    table   = logFile.GetTable ( columns = [ 4, 2, 4, 20, 20, 20 ] )
     table.Start   ( )
     table.Title   ( label + " Results" )
-    table.Heading ( "Extent" )
+    table.Heading ( "Shape", columnSpan = 3 )
     table.Heading ( "Times", columnSpan = 2 )
     table.Heading ( "Error" )
-    for ( extent, ( time, success, error ) ) in zip ( _Extents, results ):
-        table.Entry ( "{:d}"  .format ( extent ) )
-        table.Entry ( "{:.3f}".format ( time   ) )
+    for ( extent0, extent1, ( time, success, error ) ) in results:
+        table.Entry ( "{:d}"  .format ( extent0 ) )
+        table.Entry ( "x" )
+        table.Entry ( "{:d}"  .format ( extent1 ) )
+        table.Entry ( "{:.3f}".format ( time    ) )
         table.Entry ( CPUTime.TimeToString ( time ) )
         if success:
             if error >= _Tolerance:

@@ -24,6 +24,7 @@ extern void         RealArray2D_DiagonalOfProduct        ( const RealArray2D *se
                                                                  RealArray1D *diagonal          ,
                                                                  Status      *status            ) ;
 extern Integer      RealArray2D_GramSchmidtOrthogonalize ( const RealArray2D *self              ,
+                                                           const RealArray1D *constants         ,
                                                            const Integer     *maximumIterations ,
                                                            const Integer     *numberConstant    ,
                                                            const Real        *tolerance         ,

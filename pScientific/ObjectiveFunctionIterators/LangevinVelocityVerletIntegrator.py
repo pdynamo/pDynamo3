@@ -126,7 +126,7 @@ class LangevinVelocityVerletIntegrator ( MultiDimensionalDynamics ):
             ( state.kineticEnergy, state.temperature ) = state.objectiveFunction.Temperature ( state.v )
             state.totalEnergy = state.f + state.kineticEnergy
         except Exception as error:
-            state.error = error.args[0]
+            state.HandleError ( error )
 
     def RandomForces ( self, state ):
         """Add in random forces."""

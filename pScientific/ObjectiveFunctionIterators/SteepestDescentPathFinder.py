@@ -116,7 +116,7 @@ class SteepestDescentPathFinder ( ObjectiveFunctionIterator ):
                 state.direction     = + 1.0
                 self.GetStep ( state )
         except Exception as error:
-            state.error = error.args[0]
+            state.HandleError ( error )
 
     def GetStep ( self, state ):
         """Get a step."""
@@ -135,7 +135,7 @@ class SteepestDescentPathFinder ( ObjectiveFunctionIterator ):
             # . Get the initial step.
             self.GetFirstStep ( state )
         except Exception as error:
-            state.error = error.args[0]
+            state.HandleError ( error )
 
     def Iteration ( self, state ):
         """Perform an iteration using the simplest possible step."""

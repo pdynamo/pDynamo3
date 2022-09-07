@@ -1,8 +1,15 @@
 """Miscellaneous dense linear algebra operations."""
 
-from  pCore              import logFile            , \
-                                LogFileActive
-from .LinearAlgebraError import LinearAlgebraError
+from   pCore              import logFile            , \
+                                 LogFileActive
+from ..Arrays             import Array
+from  .LinearAlgebraError import LinearAlgebraError
+
+#===================================================================================================================================
+# . Parameters.
+#===================================================================================================================================
+# . SVD relative tolerance.
+_SVDTolerance = 1.0e-12
 
 #===================================================================================================================================
 # . Functions.
@@ -95,27 +102,25 @@ def LinearEquations ( matrix, RealArray1D rhs, preserveInput = True, RealArray1D
     return solution
 
 #-----------------------------------------------------------------------------------------------------------------------------------
-def LinearLeastSquaresBySVD ( RealArray2D matrix, RealArray1D rhs, preserveInput = True, relativeTolerance = 1.0e-12, RealArray1D solution = None ):
-    """Solve a linear least squares problem using SVD."""
-    cdef CBoolean cPreserveInput
-    cdef CInteger cRank
-    cdef CReal    cCondition
-    cdef CReal    cRelativeTolerance
-    cdef CStatus  cStatus = CStatus_OK
-    if preserveInput   : cPreserveInput = CTrue
-    else:                cPreserveInput = CFalse
-    if solution is None: solution       = rhs
-    cRelativeTolerance = relativeTolerance
-    LinearLeastSquaresSVDSolve ( matrix.cObject      ,
-                                 rhs.cObject         ,
-                                 cPreserveInput      ,
-                                 &cRelativeTolerance ,
-                                 solution.cObject    ,
-                                 &cRank              ,
-                                 &cCondition         ,
-                                 &cStatus            )
-    if cStatus != CStatus_OK: raise LinearAlgebraError ( "Linear least squares by SVD solution error." )
-    return { "Solution" : solution, "Rank" : cRank, "Condition Number" : cCondition }
+def LinearLeastSquaresBySVD ( RealArray2D matrix not None                   ,
+                                          rhs    not None                   ,
+                                          preserveInput     = True          ,
+                                          relativeTolerance = _SVDTolerance ,
+                                          solution          = None          ):
+    """Solve a linear least squares problem using SVD with a vector or matrix RHS."""
+    # . No check is made for overdetermined or underdetermined systems.
+    # . Get the inverse.
+    inverse = Array.WithExtents ( matrix.columns, matrix.rows )
+    report  = MatrixPseudoInverse ( matrix, inverse, preserveInput = True, relativeTolerance = relativeTolerance )
+    # . Set the solution array.
+    if isinstance ( rhs, RealArray1D ):
+        if solution is None: solution = Array.WithExtent ( matrix.columns )
+        inverse.VectorMultiply ( rhs, solution )
+    else:
+        if solution is None: solution = Array.WithExtents ( matrix.columns, rhs.columns )
+        solution.MatrixMultiply ( inverse, rhs )
+    report["Solution"] = solution
+    return report
 
 #-----------------------------------------------------------------------------------------------------------------------------------
 def MatrixPower ( SymmetricMatrix matrix not None  ,
@@ -152,5 +157,29 @@ def MatrixPowerInverse ( SymmetricMatrix matrix not None  ,
                                    result.cObject ,
                                    &cStatus       )
     if cStatus != CStatus_OK: raise LinearAlgebraError ( "Error making matrix inverse power." )
+
+#-----------------------------------------------------------------------------------------------------------------------------------
+def MatrixPseudoInverse ( RealArray2D matrix  not None            ,
+                          RealArray2D inverse not None            ,
+                                      preserveInput     = True    ,
+                                      relativeTolerance = 1.0e-12 ):
+    """Find the pseudo-inverse of a matrix."""
+    cdef CBoolean cPreserveInput
+    cdef CInteger cRank
+    cdef CReal    cCondition
+    cdef CReal    cRelativeTolerance
+    cdef CStatus  cStatus = CStatus_OK
+    if preserveInput   : cPreserveInput = CTrue
+    else:                cPreserveInput = CFalse
+    cRelativeTolerance = relativeTolerance
+    Matrix_PseudoInverse ( matrix.cObject      ,
+                          cPreserveInput      ,
+                          &cRelativeTolerance ,
+                          inverse.cObject     ,
+                          &cRank              ,
+                          &cCondition         ,
+                          &cStatus            )
+    if cStatus != CStatus_OK: raise LinearAlgebraError ( "Error finding matrix pseudo-inverse." )
+    return { "Rank" : cRank, "Condition Number" : cCondition }
 
 #===================================================================================================================================

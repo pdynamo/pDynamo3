@@ -1,6 +1,6 @@
 """Defines classes for the DIIS SCF converger."""
 
-import collections
+import collections, sys, traceback
 
 from math                                   import fabs, pow, sqrt
 from pCore                                  import AttributableObject        , \
@@ -39,6 +39,7 @@ class DIISSCFConvergerState ( AttributableObject ):
                              "numberOfSpins"         : 0     ,
                              "overlapMatrix"         : None  ,
                              "orthogonalizer"        : None  ,
+                             "printTraceback"        : False ,
                              "rcaMu"                 : 0.0   ,
                              "rmsDifference"         : 0.0   ,
                              "statusMessage"         : None  ,
@@ -46,6 +47,7 @@ class DIISSCFConvergerState ( AttributableObject ):
                              "storeDIIS"             : None  ,
                              "storeODA"              : None  ,
                              "table"                 : None  ,
+                             "target"                : None  ,
                              "workMa"                : None  ,
                              "workMb"                : None  ,
                              "workMc"                : None  ,
@@ -148,6 +150,12 @@ class DIISSCFConvergerState ( AttributableObject ):
         self._Allocate ( m, extent, maximumHistory, useODA )
         #self._Allocate ( extent, extent, maximumHistory, useODA )
         return self
+        return self
+
+    def HandleError ( self, error ):
+        """Handle an error."""
+        self.error = error.args[0]
+        if self.printTraceback: traceback.print_exc ( file = sys.stdout )
 
 #===================================================================================================================================
 # . Class.
@@ -159,36 +167,36 @@ class DIISSCFConverger ( ObjectiveFunctionIterator ):
     _classLabel   = "DIIS SCF Converger"
     _stateObject  = DIISSCFConvergerState
     _summarizable = dict ( ObjectiveFunctionIterator._summarizable )
-    _attributable.update ( { "dampEnergyTolerance"        : 2.0e-04                       , 
-                             "dampExtrapolationFrequency" : 15                            , 
-                             "dampMaximum"                : 256.0                         , 
-                             "dampScaleFactor"            : 16.0                          , 
-                             "dampTolerance"              : 1.0                           , 
-                             "densityTolerance"           : 1.0e-12                       , 
-                             "diisDeviation"              : 1.0e-06                       , 
-                             "diisOnset"                  : 0.2                           , 
-                             "energyTolerance"            : 2.0e-4                        , 
-                             "logFrequency"               : 1                             , 
-                             "maximumHistory"             : 10                            , 
-                             "maximumIterations"          : 100                           , 
-                             "minimumMu"                  : 1.0e-02                       , 
-                             "rcaOnset"                   : 0.8                           , 
-                             "useODA"                     : True                          } )
-    _summarizable.update ( { "dampEnergyTolerance"        :"Damp Energy Tolerance"        ,
-                             "dampExtrapolationFrequency" :"Damp Extrapolation Frequency" ,
-                             "dampMaximum"                :"Damp Maximum"                 ,
-                             "dampScaleFactor"            :"Damp Scale Factor"            ,
-                             "dampTolerance"              :"Damp Tolerance"               ,
-                             "densityTolerance"           :"Density Tolerance"            ,
-                             "diisDeviation"              :"Diis Deviation"               ,
-                             "diisOnset"                  :"Diis Onset"                   ,
-                             "energyTolerance"            :"Energy Tolerance"             ,
-                             "logFrequency"               :"Log Frequency"                ,
-                             "maximumHistory"             :"Maximum History"              ,
-                             "maximumIterations"          :"Maximum Iterations"           ,
-                             "minimumMu"                  :"Minimum Mu"                   ,
-                             "rcaOnset"                   :"ODA Onset"                    ,
-                             "useODA"                     :"Use ODA"                      } )
+    _attributable.update ( { "dampEnergyTolerance"        : 2.0e-04                        , 
+                             "dampExtrapolationFrequency" : 15                             , 
+                             "dampMaximum"                : 256.0                          , 
+                             "dampScaleFactor"            : 16.0                           , 
+                             "dampTolerance"              : 1.0                            , 
+                             "densityTolerance"           : 1.0e-12                        , 
+                             "diisDeviation"              : 1.0e-06                        , 
+                             "diisOnset"                  : 0.2                            , 
+                             "energyTolerance"            : 2.0e-4                         , 
+                             "logFrequency"               : 1                              , 
+                             "maximumHistory"             : 10                             , 
+                             "maximumIterations"          : 100                            , 
+                             "minimumMu"                  : 1.0e-02                        , 
+                             "rcaOnset"                   : 0.8                            , 
+                             "useODA"                     : True                           } )
+    _summarizable.update ( { "dampEnergyTolerance"        : "Damp Energy Tolerance"        ,
+                             "dampExtrapolationFrequency" : "Damp Extrapolation Frequency" ,
+                             "dampMaximum"                : "Damp Maximum"                 ,
+                             "dampScaleFactor"            : "Damp Scale Factor"            ,
+                             "dampTolerance"              : "Damp Tolerance"               ,
+                             "densityTolerance"           : "Density Tolerance"            ,
+                             "diisDeviation"              : "Diis Deviation"               ,
+                             "diisOnset"                  : "Diis Onset"                   ,
+                             "energyTolerance"            : "Energy Tolerance"             ,
+                             "logFrequency"               : "Log Frequency"                ,
+                             "maximumHistory"             : "Maximum History"              ,
+                             "maximumIterations"          : "Maximum Iterations"           ,
+                             "minimumMu"                  : "Minimum Mu"                   ,
+                             "rcaOnset"                   : "ODA Onset"                    ,
+                             "useODA"                     : "Use ODA"                      } )
 
     def Continue ( self, state ):
         """Check to see if the calculation should continue."""
@@ -347,8 +355,7 @@ class DIISSCFConverger ( ObjectiveFunctionIterator ):
         try:
             self.FunctionGradients ( state )
         except Exception as error:
-            state.error = error
-            print ( error )
+            state.HandleError ( error )
 
     def Iterate ( self, target, log = logFile ):
         """Apply the algorithm to a target."""
@@ -363,15 +370,14 @@ class DIISSCFConverger ( ObjectiveFunctionIterator ):
         return state.Finalize ( )
 
     def Iteration ( self, state ):
-#        """Perform an iteration."""
-#        try:
+        """Perform an iteration."""
+        try:
             self.ModifyFockMatrices ( state )
             self.MakeDensities      ( state )
             self.FunctionGradients  ( state )
-#        except Exception as error:
-#            state.error = error
-#            print ( error )
-            state.numberOfIterations += 1
+        except Exception as error:
+            state.HandleError ( error )
+        state.numberOfIterations += 1
 
     def LogIteration ( self, state ):
         """Log an iteration."""
@@ -423,9 +429,10 @@ class DIISSCFConverger ( ObjectiveFunctionIterator ):
     def MakeDensities ( self, state ):
         """Make the densities."""
         old           = state.workS
+        scratch       = state.target.scratch
         rmsDifference = 0.0
         for ( d, f, o ) in state.currentFrame:
-            o.MakeFromFock ( f, orthogonalizer = state.orthogonalizer )
+            o.MakeFromFock ( f, scratch, orthogonalizer = state.orthogonalizer )
             d.CopyTo ( old )
             d.MakeFromEigenSystem ( o.occupancyHandler.numberOccupied, o.occupancies, o.orbitals )
             old.Add ( d, scale = -1.0 )

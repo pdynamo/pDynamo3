@@ -77,9 +77,15 @@ void RealArray2D_DiagonalOfProduct ( const RealArray2D  *self       ,
 ! . The number of orthogonal vectors is returned (<= old number).
 ! . There is an option to treat the first numberConstant vectors as already orthogonalized.
 ! . The tolerance is the size of norm2 per element.
+!
+! . A modification was made to allow an optional array of constants to be input which
+! . are simultaneously "orthogonalized". This is useful, for example, in cases where one has
+! . a series of linear constraints of the form A.X = c. Reorthogonalization of X would then
+! . lead to a series of new, equivalent constraints of the form A.X' = c'.
 !---------------------------------------------------------------------------------------------------------------------------------*/
-# define DEFAULT_TOLERANCE 1.0e-10
+# define _DefaultTolerance 1.0e-10
 Integer RealArray2D_GramSchmidtOrthogonalize ( const RealArray2D *self              ,
+                                               const RealArray1D *constants         ,
                                                const Integer     *maximumIterations ,
                                                const Integer     *numberConstant    ,
                                                const Real        *tolerance         ,
@@ -88,7 +94,21 @@ Integer RealArray2D_GramSchmidtOrthogonalize ( const RealArray2D *self          
     Integer numberOrthogonalized = 0 ;
     if ( ( self != NULL ) && Status_IsOK ( status ) )
     {
+        auto Boolean doConstants = False ;
         auto Integer nStart, nVectors ;
+        /* . Check for constants. */
+        if ( constants != NULL )
+        {
+            if ( View2D_Columns ( self ) > View1D_Extent ( constants ) )
+            {
+                Status_Set ( status, Status_NonConformableArrays ) ;
+                goto FinishUp ;
+            }
+            else
+            {
+                doConstants = True ;
+            }
+        }
         /* . Get various indices. */
         nVectors = View2D_Columns ( self ) ;
         if ( numberConstant != NULL ) nStart = Maximum ( 0, (*numberConstant) ) ;
@@ -102,7 +122,7 @@ Integer RealArray2D_GramSchmidtOrthogonalize ( const RealArray2D *self          
             if ( maximumIterations != NULL ) nIterations = Maximum ( 1, (*maximumIterations) ) ;
             else                             nIterations = 1 ;
             /* . Get the tolerance for normalization. */
-            if ( tolerance == NULL ) delta = DEFAULT_TOLERANCE     ;
+            if ( tolerance == NULL ) delta = _DefaultTolerance     ;
             else                     delta = fabs ( (*tolerance) ) ;
             delta *= sqrt ( ( Real ) View2D_Rows ( self ) ) ;
             /* . Loop over vectors to be orthogonalized. */
@@ -118,6 +138,7 @@ Integer RealArray2D_GramSchmidtOrthogonalize ( const RealArray2D *self          
                         RealArray2D_ColumnView   ( self, j, False, &jVector, status ) ;
                         factor = RealArray1D_Dot ( &iVector, &jVector, status ) ;
                         RealArray1D_Add          ( &iVector, -factor, &jVector, status ) ;
+                        if ( doConstants ) Array1D_Item ( constants, i ) -= factor * Array1D_Item ( constants, j ) ;
                     }
                 }
                 /* . Normalization. If OK, scale and move the vector if necessary. */
@@ -125,10 +146,12 @@ Integer RealArray2D_GramSchmidtOrthogonalize ( const RealArray2D *self          
                 if ( factor > delta )
                 {
                     RealArray1D_Scale ( &iVector, 1.0e+00 / factor ) ;
+                    if ( doConstants ) Array1D_Item ( constants, i ) /= factor ;
                     if ( nCurrent != i )
                     {
                         RealArray2D_ColumnView ( self, nCurrent, False, &jVector, status ) ;
                         RealArray1D_CopyTo     ( &iVector, &jVector, status ) ;
+                        if ( doConstants ) Array1D_Item ( constants, nCurrent ) = Array1D_Item ( constants, i ) ;
                     }
                     nCurrent++ ;
                     numberOrthogonalized++ ;
@@ -136,9 +159,10 @@ Integer RealArray2D_GramSchmidtOrthogonalize ( const RealArray2D *self          
             }
         }
     }
+FinishUp:
     return numberOrthogonalized ;
 }
-# undef DEFAULT_TOLERANCE
+# undef _DefaultTolerance
 
 /*----------------------------------------------------------------------------------------------------------------------------------
 ! . Check for a diagonal matrix.
@@ -258,9 +282,16 @@ void RealArray2D_MatrixMultiply ( const Boolean      aTranspose ,
                 else              aT = CblasNoTrans ;
                 if ( bTranspose ) bT = CblasTrans   ;
                 else              bT = CblasNoTrans ;
+/*
+printf ( "\nXXX> %u %u %d %d %d %d %d %d\n", aT, bT, m, n, k, a->stride0, b->stride0, c->stride0 ) ;
+fflush ( stdout ) ;
+*/
                 cblas_dgemm ( CblasRowMajor, aT, bT, m, n, k, alpha, Array_DataPointer ( a ), a->stride0 ,
                                                                      Array_DataPointer ( b ), b->stride0 ,
                                                               beta , Array_DataPointer ( c ), c->stride0 ) ;
+/*
+fflush ( stdout ) ;
+*/
             }
             else Status_Set ( status, Status_NonConformableArrays ) ;
         }

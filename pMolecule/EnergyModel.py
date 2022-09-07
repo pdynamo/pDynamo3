@@ -22,23 +22,24 @@ class EnergyClosurePriority ( IntEnum ):
     NBInitialization      =  10 # In future use enum.auto ( ) (from Python 3.6+)
     QCInitialization      =  20
     QCIntegrals           =  30
-    QCPreEnergy           =  40
-    QCEnergy              =  50
-    QCPostEnergy          =  60
-    QCPreGradients        =  70
-    QCGradients           =  80
-    QCFinalization        =  90
-    IndependentEnergyTerm = 100
+    QCOrthogonalizer      =  40
+    QCPreEnergy           =  50
+    QCEnergy              =  60
+    QCPostEnergy          =  70
+    QCPreGradients        =  80
+    QCGradients           =  90
+    QCFinalization        = 100
+    IndependentEnergyTerm = 110
 
 class EnergyModelPriority ( IntEnum ):
     """Energy model priorities."""
-    Restraint    =   0
-    NullModel    =  10
-    MMModel      =  20
-    QCModel      =  30
-    QCDispersion =  40
-    NBModel      =  50
-    QCMMModel    =  60
+    Restraint =   0
+    NullModel =  10
+    MMModel   =  20
+    QCModel   =  30
+    QCAddOns  =  40 # . Charge restraints, dispersion, etc.
+    NBModel   =  50
+    QCMMModel =  60
 
 #===================================================================================================================================
 # . State class.

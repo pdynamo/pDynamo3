@@ -47,7 +47,7 @@ class MoreThuenteLineSearcherState ( UniDimensionalMinimizerState ):
     def Finalize ( self ):
         """Finalization."""
         # . Return the best point if abnormal termination.
-        if ( not self.isConverged ) and ( self.f > self.fB ):
+        if ( not self.isConverged ) and ( self.error is None ) and ( self.f > self.fB ):
             self.objectiveFunction.RestoreBestToCurrent ( )
             self.f = self.fB
             self.g = self.gB
@@ -101,7 +101,9 @@ class MoreThuenteLineSearcher ( UniDimensionalMinimizer ):
 
     def Continue ( self, state ):
         """Check to see if iterations should continue."""
-        state.isConverged = ( state.f <= state.fTest ) and ( fabs ( state.g ) <= ( self.gradientTolerance * fabs ( state.g0 ) ) )
+        state.isConverged = ( state.error      is None        ) and \
+                            ( state.f          <= state.fTest ) and \
+                            ( fabs ( state.g ) <= ( self.gradientTolerance * fabs ( state.g0 ) ) )
         if   state.isConverged:                                  state.statusMessage = "Minimization converged."
         elif state.numberOfIterations >= self.maximumIterations: state.statusMessage = "Too many iterations."
         elif state.error is not None:                            state.statusMessage = "Minimization error: " + state.error

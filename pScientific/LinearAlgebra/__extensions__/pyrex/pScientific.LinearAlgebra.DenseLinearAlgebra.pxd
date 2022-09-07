@@ -20,52 +20,47 @@ from pScientific.Arrays.SymmetricMatrix cimport CSymmetricMatrix , \
 cdef extern from "DenseDeterminants.h":
 
     # . Functions.
-    cdef void  Matrix_LUPFactorizationInPlace       ( CRealArray2D     *self              , 
-                                                      CIntegerArray1D  *pivots            , 
-                                                      CStatus          *status            ) 
-    cdef CReal SquareMatrix_Determinant             ( CRealArray2D     *self              , 
-                                                      CStatus          *status            ) 
+    cdef void  Matrix_LUPFactorizationInPlace       ( CRealArray2D     *self              ,
+                                                      CIntegerArray1D  *pivots            ,
+                                                      CStatus          *status            )
+    cdef CReal SquareMatrix_Determinant             ( CRealArray2D     *self              ,
+                                                      CStatus          *status            )
 
 cdef extern from "DenseEigenvalueSolvers.h":
 
     # . Functions.
-    cdef void  SymmetricMatrix_EigenvaluesSolve     ( CSymmetricMatrix *self              , 
-                                                      CBoolean          preserveInput     , 
-                                                      CInteger          lower             , 
-                                                      CInteger          upper             , 
-                                                      CRealArray1D     *eigenValues       , 
-                                                      CRealArray2D     *eigenVectors      , 
-                                                      CBoolean          isColumnMajor     , 
-                                                      CStatus          *status            ) 
+    cdef void  SymmetricMatrix_EigenvaluesSolve     ( CSymmetricMatrix *self              ,
+                                                      CBoolean          preserveInput     ,
+                                                      CInteger          lower             ,
+                                                      CInteger          upper             ,
+                                                      CRealArray1D     *eigenValues       ,
+                                                      CRealArray2D     *eigenVectors      ,
+                                                      CBoolean          isColumnMajor     ,
+                                                      CStatus          *status            )
 
 cdef extern from "DenseLinearEquationSolvers.h":
 
     # . Functions.
-    cdef void  SquareMatrix_LinearEquationsSolve    ( CRealArray2D     *self              , 
-                                                      CRealArray1D     *rhs               , 
-                                                      CBoolean          preserveInput     , 
-                                                      CRealArray1D     *solution          , 
-                                                      CStatus          *status            ) 
-    cdef void  SymmetricMatrix_LinearEquationsSolve ( CSymmetricMatrix *self              , 
-                                                      CRealArray1D     *rhs               , 
-                                                      CRealArray1D     *solution          , 
-                                                      CStatus          *status            ) 
-
-cdef extern from "DenseLinearLeastSquaresSolvers.h":
-
-    # . Functions.
-    cdef void  LinearLeastSquaresSVDSolve           ( CRealArray2D     *self              ,
+    cdef void  SquareMatrix_LinearEquationsSolve    ( CRealArray2D     *self              ,
                                                       CRealArray1D     *rhs               ,
                                                       CBoolean          preserveInput     ,
-                                                      CReal            *relativeTolerance ,
                                                       CRealArray1D     *solution          ,
-                                                      CInteger         *rank              ,
-                                                      CReal            *condition         ,
+                                                      CStatus          *status            )
+    cdef void  SymmetricMatrix_LinearEquationsSolve ( CSymmetricMatrix *self              ,
+                                                      CRealArray1D     *rhs               ,
+                                                      CRealArray1D     *solution          ,
                                                       CStatus          *status            )
 
 cdef extern from "DenseMatrixPower.h":
 
     # . Functions.
+    cdef void Matrix_PseudoInverse                  ( CRealArray2D     *self              ,
+                                                      CBoolean          preserveInput     ,
+                                                      CReal            *relativeTolerance ,
+                                                      CRealArray2D     *inverse           ,
+                                                      CInteger         *rank              ,
+                                                      CReal            *condition         ,
+                                                      CStatus          *status            )
     cdef void SymmetricMatrix_InversePower          ( CSymmetricMatrix *self              ,
                                                       CBoolean          preserveInput     ,
                                                       CReal             power             ,

@@ -14,7 +14,7 @@ _nameM = "pMolecule"
 dataPath          = TestScript_InputDataPath  ( _name  )
 dataPathM         = TestScript_InputDataPath  ( _nameM )
 outPath           = TestScript_OutputDataPath ( _name  )
-referenceDataPath = os.path.join ( dataPath, "reference" )
+referenceDataPath = os.path.join ( dataPath, "yaml" )
 structuresPath    = os.path.join ( os.getenv ( "PDYNAMO3_HOME" ), "structures" )
 
 # . Other options.

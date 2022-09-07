@@ -82,7 +82,7 @@ class MultiDimensionalMinimizer ( ObjectiveFunctionIterator ):
 
     def Continue ( self, state ):
         """Check to see if iterations should continue."""
-        state.isConverged = ( state.rmsGradient <= self.rmsGradientTolerance )
+        state.isConverged = ( state.error is None ) and ( state.rmsGradient <= self.rmsGradientTolerance )
         if   state.isConverged:                                  state.statusMessage = "Minimization converged."
         elif state.numberOfIterations >= self.maximumIterations: state.statusMessage = "Too many iterations."
         elif state.error is not None:                            state.statusMessage = "Minimization error: " + state.error
@@ -107,9 +107,7 @@ class MultiDimensionalMinimizer ( ObjectiveFunctionIterator ):
         try:
             self.FunctionGradients ( state )
         except Exception as error:
-            state.error = error.args[0]
-            import traceback, sys
-            traceback.print_exc(file=sys.stdout)
+            state.HandleError ( error )
 
     def Iteration ( self, state ):
         """Perform an iteration."""
@@ -117,9 +115,7 @@ class MultiDimensionalMinimizer ( ObjectiveFunctionIterator ):
             self.DetermineStep     ( state )
             self.FunctionGradients ( state )
         except Exception as error:
-            state.error = error.args[0]
-            import traceback, sys
-            traceback.print_exc(file=sys.stdout)
+            state.HandleError ( error )
         state.numberOfIterations += 1
 
     def LogIteration ( self, state ):

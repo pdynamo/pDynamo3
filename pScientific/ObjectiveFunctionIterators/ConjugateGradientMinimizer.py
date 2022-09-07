@@ -203,9 +203,7 @@ class ConjugateGradientMinimizer ( MultiDimensionalMinimizer ):
             self.LineSearch         ( state )
             self.NewSearchDirection ( state )
         except Exception as error:
-            state.error = error.args[0]
-            import traceback, sys
-            traceback.print_exc ( file = sys.stdout )
+            state.HandleError ( error )
         state.numberOfIterations += 1
 
     def LineSearch ( self, state ):
@@ -222,11 +220,11 @@ class ConjugateGradientMinimizer ( MultiDimensionalMinimizer ):
         # . Determine the line search step type (success, partial, error).
         if report["Converged"]:
             statusFlag  = "s"
-        elif state.f < state.f0:
+        elif ( report.get ( "Error", None ) is None ) and ( state.f < state.f0 ):
             statusFlag  = "p"
         else:
             statusFlag  = "e"
-            state.error = "Line search error: " + report["Status Message"] 
+            state.error = report["Status Message"].replace ( "Minimization error: ", "" )
         state.stepType = "L{:d}{:s}".format ( report.get ( "Iterations", 0 ), statusFlag )
 
     def NewSearchDirection ( self, state ):

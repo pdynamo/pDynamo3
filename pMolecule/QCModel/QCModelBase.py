@@ -145,7 +145,7 @@ class QCModelBase ( QCModel ):
         ( state.alphaCharge, state.betaCharge ) = target.electronicState.Verify ( sum ( state.nuclearCharges ) )
         state.AddFockModel ( self.__class__._classLabel, self                   )
         state.AddFockModel ( "Electronic State"        , target.electronicState )
-        if self.converger is None: self.converger = DIISSCFConverger ( )
+        if self.converger is None: self.converger = DIISSCFConverger.WithDefaults ( )
         return state
 
     def DipoleMoment ( self, target, center = None, dipole = None ):
@@ -174,14 +174,21 @@ class QCModelBase ( QCModel ):
 
     def Energy ( self, target ):
         """Calculate the QC energy."""
-        # . It is assumed that the last converger call to the Fock closures correspond to the best energy.
+        # . It is assumed that the last converger call to the Fock closures corresponds to the best energy.
         # . More sophisticated handling would be preferable here.
         report   = self.converger.Iterate ( target, log = target.scratch.log )
         error    = report.get ( "Error", None )
         qcReport = target.scratch.qcEnergyReport
         qcReport["SCF Converged" ] = report["Converged" ]
         qcReport["SCF Iterations"] = report["Iterations"]
-        if error is not None: raise QCModelError ( "Converger error: {:s}".format ( error ) )
+        if error is not None: raise QCModelError ( "SCF Converger error: {:s}".format ( error ) )
+
+    # . Extra closure for manipulations required by the electronic state (e.g. MOM method).
+    def EnergyClosures ( self, target ):
+        """Energy closures."""
+        closures = super ( QCModelBase, self ).EnergyClosures ( target )
+        closures.extend ( target.electronicState.EnergyClosures ( target ) )
+        return closures
 
     def EnergyFinalize ( self, target ):
         """Energy finalization."""
@@ -218,6 +225,15 @@ class QCModelBase ( QCModel ):
         oem.Set ( 0.0 )
         scratch.qcEnergyReport = { }
 
+    def FockClosures ( self, target ):
+        """Fock closures."""
+        def a ( ):
+            return self.FockOne ( target )
+        def b ( ):
+            return self.FockTwo ( target )
+        return [ ( FockClosurePriority.VeryLow , a ) ,
+                 ( FockClosurePriority.VeryHigh, b ) ]
+
     def FockOne ( self, target ):
         """The one-electron contribution to the Fock matrices."""
         scratch = target.scratch
@@ -231,15 +247,6 @@ class QCModelBase ( QCModel ):
         eQCE    = scratch.qcEnergyReport.pop ( "QC Electronic Accumulator", 0.0 ) # . Remove accumulator.
         scratch.energyTerms["QC Electronic"] = ( ( eOE + eQCE ) * Units.Energy_Hartrees_To_Kilojoules_Per_Mole )
         return eOE
-
-    def FockClosures ( self, target ):
-        """Fock closures."""
-        def a ( ):
-            return self.FockOne ( target )
-        def b ( ):
-            return self.FockTwo ( target )
-        return [ ( FockClosurePriority.VeryLow , a ) ,
-                 ( FockClosurePriority.VeryHigh, b ) ]
 
     # . Accumulator and Fock matrices initialized here.
     def FockTwo ( self, target ):
@@ -331,7 +338,8 @@ class QCModelBase ( QCModel ):
             squareRoots = Clone ( eigenValues )
             squareRoots.Power ( 0.5 )
             loewdinT.MakeFromEigenSystem ( n, squareRoots, eigenVectors )
-            target.scratch.loewdinT = loewdinT
+            target.scratch.loewdinT               = loewdinT
+            target.scratch.overlapEigenValueRoots = squareRoots
 
     def GetParameters ( self, target ):
         """Get the parameters for the model."""
@@ -464,6 +472,7 @@ class QCModelBase ( QCModel ):
                ( item.spinType       != spinType ) or \
                ( item.totalCharge    != charge   ):
                 scratch.Set ( name, QCOnePDM.FromDiagonalGuess ( extent, spinType, charge ) )
+            # . Could apply constraints here on both existing and new densities.
 
     def SetUpOrbitals ( self, target ):
         """Set up the orbital sets."""

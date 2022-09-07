@@ -1,5 +1,7 @@
 """Objective function iterator."""
 
+import sys, traceback
+
 from  pCore                          import AttributableObject , \
                                             logFile            , \
                                             LogFileActive      , \
@@ -15,15 +17,16 @@ class ObjectiveFunctionIteratorState ( AttributableObject ):
 
     _attributable           = dict ( AttributableObject._attributable )
     _objectiveFunctionClass = ObjectiveFunction
-    _attributable.update ( { "error"              : None ,
-                             "f"                  : None ,
-                             "log"                : None ,
-                             "numberOfIterations" : 0    ,
-                             "numberOfVariables"  : 0    ,
-                             "objectiveFunction"  : None ,
-                             "statusMessage"      : None ,
-                             "table"              : None ,
-                             "x"                  : None } )
+    _attributable.update ( { "error"              : None  ,
+                             "f"                  : None  ,
+                             "log"                : None  ,
+                             "numberOfIterations" : 0     ,
+                             "numberOfVariables"  : 0     ,
+                             "objectiveFunction"  : None  ,
+                             "printTraceback"     : False ,
+                             "statusMessage"      : None  ,
+                             "table"              : None  ,
+                             "x"                  : None  } )
 
     def Finalize ( self ):
         """Finalization."""
@@ -48,6 +51,11 @@ class ObjectiveFunctionIteratorState ( AttributableObject ):
         # . Finish up.
         self.SetUp ( )
         return self
+
+    def HandleError ( self, error ):
+        """Handle an error."""
+        self.error = error.args[0]
+        if self.printTraceback: traceback.print_exc ( file = sys.stdout )
 
     def SetUp ( self ):
        """Set up the state."""
@@ -97,7 +105,7 @@ class ObjectiveFunctionIterator ( SummarizableObject ):
         try:
             pass
         except Exception as error:
-            state.error = error.args[0]
+            state.HandleError ( error )
         state.numberOfIterations += 1
 
     def LogIteration ( self, state ):

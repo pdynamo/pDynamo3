@@ -27,6 +27,7 @@ class UniDimensionalMinimizerState ( AttributableObject ):
                              "numberOfFunctionCalls" : 0     ,
                              "numberOfIterations"    : 0     ,
                              "objectiveFunction"     : None  ,
+                             "printTraceback"        : False ,
                              "statusMessage"         : None  ,
                              "stepType"              : ""    ,
                              "table"                 : None  ,
@@ -64,7 +65,7 @@ class UniDimensionalMinimizerState ( AttributableObject ):
     def HandleError ( self, error ):
         """Handle an error."""
         self.error = error.args[0]
-        traceback.print_exc ( file = sys.stdout )
+        if self.printTraceback: traceback.print_exc ( file = sys.stdout )
 
     def SetUp ( self ):
         """Set up the state."""
@@ -89,7 +90,7 @@ class UniDimensionalMinimizer ( SummarizableObject ):
 
     def Continue ( self, state ):
         """Check to see if iterations should continue."""
-        state.isConverged = ( state.g <= self.gradientTolerance )
+        state.isConverged = ( state.error is None ) and ( state.g <= self.gradientTolerance )
         if   state.isConverged:                                  state.statusMessage = "Minimization converged."
         elif state.numberOfIterations >= self.maximumIterations: state.statusMessage = "Too many iterations."
         elif state.error is not None:                            state.statusMessage = "Minimization error: " + state.error

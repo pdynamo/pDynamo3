@@ -26,6 +26,7 @@ def _GetReshapeState ( array, shape ):
     oldState = array.__getstate__ ( )
     extents0 = oldState["extents"]
     rank0    = 0
+    size0    = oldState["size"   ]
     strides0 = oldState["strides"]
     for d0 in range ( 1, oldState["rank"] ):
         e0 = extents0[d0]
@@ -37,16 +38,20 @@ def _GetReshapeState ( array, shape ):
             extents0[rank0] = e0
         strides0[rank0] = s0
     rank0 += 1
+#    print ( "Old state>", oldState )
+#    print ( "Flattened state>", rank0, extents0[0:rank0], strides0[0:rank0] ) 
     # . Remove unnecessary trailing extents of 1 (except the last).
     while ( extents0[rank0-1] == 1 ) and ( rank0 > 1 ):
         extents0.pop ( )
         strides0.pop ( )
         rank0 -= 1
+#    print ( "State with trailing 1s removed>", rank0, extents0[0:rank0], strides0[0:rank0] ) 
     # . Determine if the old shape can be reshaped to the new one. For this to be possible, each contiguous 
     # . multiple of extents in the new shape must be equal to an extent in the (flattened) old shape.
+    # . The strides need to be verified for cases where extra extents of 1 are added.
     extents1 = list ( shape )
     rank1    = len  ( shape )
-    strides1 = [ 0 for d1 in range ( rank1 ) ]
+    strides1 = [ size0 for d1 in range ( rank1 ) ] # . Use size0 for cases such as [12] -> [1,3,4].
     d1       = rank1-1
     for d0 in range ( rank0-1, -1, -1 ):
         e0 = extents0[d0]
@@ -58,12 +63,13 @@ def _GetReshapeState ( array, shape ):
             d1          -= 1
             if e1 >= e0: break
         if e1 != e0: raise ArrayError ( "New shape incompatible with array." )
+#    print ( "New state>", rank1, extents1, strides1 ) 
     # . Finish up.
     return { "block"   : oldState["block" ] ,
              "extents" : extents1           ,
              "offset"  : oldState["offset"] ,
              "rank"    : rank1              ,
-             "size"    : oldState["size"  ] ,
+             "size"    : size0              ,
              "strides" : strides1           }
 
 #===================================================================================================================================

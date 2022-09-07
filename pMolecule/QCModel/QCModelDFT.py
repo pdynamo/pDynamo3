@@ -156,7 +156,7 @@ class QCModelDFT ( QCModelBase ):
             def h ( ): self.integralEvaluator.f2Cf2i ( target ) 
             closures.append ( ( EnergyClosurePriority.QCIntegrals, h, "QC Two-Electron Integrals" ) )
         def i ( ): self.GetOrthogonalizer ( target )
-        closures.append ( ( EnergyClosurePriority.QCPreEnergy, i, "QC Orthogonalizer" ) )
+        closures.append ( ( EnergyClosurePriority.QCOrthogonalizer, i, "QC Orthogonalizer" ) )
         # . Gradients.
         closures.extend ( self.EnergyClosureGradients ( target ) )
         # . Finish up.

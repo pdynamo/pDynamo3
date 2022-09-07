@@ -98,6 +98,17 @@ cdef class RealArray2D ( BaseArray2D ):
         RealArray2D_MatrixMultiply ( cXTranspose, cYTranspose, alpha, x.cObject, y.cObject, beta, self.cObject, &cStatus )
         if cStatus != CStatus_OK: raise ArrayError ( "Error multiplying matrix by matrix." )
 
+    def OrthogonalizeColumns ( self, RealArray1D constants = None ):
+        """Orthogonalize the columns of an array."""
+        cdef CInteger      n
+        cdef CRealArray1D *cConstants
+        cdef CStatus       cStatus = CStatus_OK
+        if constants is None: cConstants = NULL
+        else:                 cConstants = constants.cObject
+        n = RealArray2D_GramSchmidtOrthogonalize ( self.cObject, cConstants, NULL, NULL, NULL, &cStatus )
+        if cStatus != CStatus_OK: raise ArrayError ( "Error orthogonalizing array columns." )
+        return n
+
     def ProjectOutOfArray ( self, RealArray1D vector ):
         """Project the array out of another one."""
         cdef CStatus cStatus = CStatus_OK

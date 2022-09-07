@@ -10,7 +10,7 @@ provided by O. Farkas, Hungarian Academy of Sciences.
 import glob, math, os.path
 
 from Definitions       import structuresPath
-from pBabel            import ImportCoordinates3                   , \
+from pBabel            import ImportCoordinates3                       , \
                               ImportSystem
 from pCore             import Align                                    , \
                               CPUTime                                  , \

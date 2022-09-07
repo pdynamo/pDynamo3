@@ -24,7 +24,7 @@ class QCOrbitals:
         """Constructor."""
         for ( key, value ) in self.__class__._attributable.items ( ): setattr ( self, key, value )
 
-    def MakeFromFock ( self, fock, orthogonalizer = None, preserveInput = True ):
+    def MakeFromFock ( self, fock, scratch, orthogonalizer = None, preserveInput = True ):
         """Make the orbitals from a Fock matrix."""
         eigenValues = self.energies
         if orthogonalizer is None:
@@ -38,7 +38,7 @@ class QCOrbitals:
         EigenPairs ( fockLocal, eigenValues, eigenVectors, preserveInput = preserveInput )
         if orthogonalizer is not None:
             self.orbitals[:,0:eigenVectors.shape[1]].MatrixMultiply ( orthogonalizer, eigenVectors )
-        self.fermiEnergy = self.occupancyHandler.SetOccupanciesFromEnergies ( self.energies, self.occupancies )
+        self.fermiEnergy = self.occupancyHandler.ProcessOrbitals ( self.energies, self.occupancies, self.orbitals, scratch )
 
     def MakeWeightedDensity ( self, wDM ):
         """Make the weighted density matrix."""

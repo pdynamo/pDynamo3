@@ -73,7 +73,9 @@ class BakerOptimizer ( MultiDimensionalMinimizer ):
 
     def Continue ( self, state ):
         """Check to see if iterations should continue."""
-        state.isConverged = ( state.rmsGradient <= self.rmsGradientTolerance ) and ( state.numberOfNegativeModes == self.numberOfNegativeModes )
+        state.isConverged = ( state.error       is None                      ) and \
+                            ( state.rmsGradient <= self.rmsGradientTolerance ) and \
+                            ( state.numberOfNegativeModes == self.numberOfNegativeModes )
         if   state.isConverged:                                  state.statusMessage = "Minimization converged."
         elif state.numberOfIterations >= self.maximumIterations: state.statusMessage = "Too many iterations."
         elif state.error is not None:                            state.statusMessage = "Minimization error: " + state.error

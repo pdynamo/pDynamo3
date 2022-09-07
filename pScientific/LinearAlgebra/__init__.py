@@ -8,7 +8,8 @@ from .DenseLinearAlgebra            import Determinant                        , 
                                            LinearEquations                    , \
                                            LinearLeastSquaresBySVD            , \
                                            MatrixPower                        , \
-                                           MatrixPowerInverse
+                                           MatrixPowerInverse                 , \
+                                           MatrixPseudoInverse
 from .LinearAlgebraError            import LinearAlgebraError
 from .MachineConstants              import MachineConstants
 from .OrthogonalizingTransformation import OrthogonalizationMethod            , \

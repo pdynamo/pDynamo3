@@ -6,8 +6,7 @@ from pCore                     import logFile       , \
                                       LogFileActive
 from pScientific               import PeriodicTable , \
                                       Units
-from pScientific.Arrays        import Array         , \
-                                      ArrayPrint
+from pScientific.Arrays        import Array
 from pScientific.Geometry3     import Coordinates3  , \
                                       Vector3 
 from pScientific.LinearAlgebra import LinearLeastSquaresBySVD
@@ -102,21 +101,12 @@ def ESPChargeFitting ( system                          ,
     # . Get the observed potentials at the grid points due to the full density.
     if ( fitBases is None ) and ( fitCoefficients is None ):
         phi = system.qcModel.GridPointPotentials ( system, gridPoints, includeNuclear = includeNuclear )
-        #ArrayPrint ( phi, itemFormat = "{:.3f}", title = "Potentials from Full Density" )
     # . Get the observed potentials at the grid points due to the fitted density.
     else:
         phi = Array.WithExtent ( gridPoints.shape[0] )
         phi.Set ( 0.0 )
         system.qcModel.gridPointEvaluator.f1Cp1V ( system, fitCoefficients, gridPoints, phi, fitBases = fitBases )
         if includeNuclear: system.qcModel.gridPointEvaluator.m1Cp1V ( system, gridPoints, phi )
-        #ArrayPrint ( phi, itemFormat = "{:.3f}", title = "Potentials from Fitted Density" )
-        # . Check with no nuclei.
-        #from pMolecule.QCModel.GaussianBases import GaussianBasisQCMMEvaluator
-        #gCharges  = Array.WithExtent ( gridPoints.shape[0]     ) ; gCharges.Set  ( 1.0 )
-        #integrals = Array.WithExtent ( len ( fitCoefficients ) ) ; integrals.Set ( 0.0 )
-        #qcmmEvaluator = GaussianBasisQCMMEvaluator ( )
-        #qcmmEvaluator.f1Cm1V ( fitBases, gCharges, system.scratch.qcCoordinates3AU, gridPoints, None, integrals )
-        #print ( "\n*** Check energies: phi * Q = {:20.5f}; C * I = {:20.5f} ***\n".format ( phi.Dot ( gCharges ), integrals.Dot ( fitCoefficients ) ) )
     # . Get the interaction terms for each atom at the grid points.
     coordinates3 = system.scratch.qcCoordinates3AU
     GetInteractionTerms ( coordinates3, gridPoints, fInteraction )

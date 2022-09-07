@@ -63,6 +63,7 @@ cdef extern from "RealArray2D.h":
                                                               CRealArray1D  *diagonal          ,
                                                               CStatus       *status            )
     cdef CInteger      RealArray2D_GramSchmidtOrthogonalize ( CRealArray2D  *self              ,
+                                                              CRealArray1D  *constants         ,
                                                               CInteger      *maximumIterations ,
                                                               CInteger      *numberConstant    ,
                                                               CReal         *tolerance         ,

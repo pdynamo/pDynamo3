@@ -1,9 +1,11 @@
 ---
 Scripts:
+  - ChargeRestraintEnergies
   - DetermineSymmetries
   - FindCIPLabels
   - HydrogenBuilding
   - IonMobilities
+  - MOMExcitedStates
   - OptimizeGeometries
   - PathwaysCOS
   - RotationTranslationRemoval

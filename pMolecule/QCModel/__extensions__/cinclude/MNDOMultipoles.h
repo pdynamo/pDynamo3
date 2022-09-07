@@ -1,6 +1,7 @@
 # ifndef _MNDOMULTIPOLES
 # define _MNDOMULTIPOLES
 
+# include "Boolean.h"
 # include "IntegerArray1D.h"
 # include "MNDOParametersContainer.h"
 # include "RealArray1D.h"
@@ -20,18 +21,24 @@ typedef enum {
 /*----------------------------------------------------------------------------------------------------------------------------------
 ! . Functions.
 !---------------------------------------------------------------------------------------------------------------------------------*/
-extern void MNDO_AtomicMultipoles     ( const MNDOParametersContainer *parameters              ,
-                                        const IntegerArray1D          *basisIndices            ,
-                                        const SymmetricMatrix         *density                 ,
-                                        const MultipoleRepresentation  multipoleRepresentation ,
-                                        const Integer                  multipoleOrder          ,
-                                              RealArray1D             *multipoles              ) ;
-extern void MNDO_AtomicMultipolesFock ( const MNDOParametersContainer *parameters              ,
-                                        const IntegerArray1D          *basisIndices            ,
-                                        const RealArray1D             *potentials              ,
-                                        const Integer                  multipoleOrder          ,
-                                              SymmetricMatrix         *fock                    ) ;
-extern void MNDO_BondOrders           ( const IntegerArray1D          *basisIndices            ,
-                                        const SymmetricMatrix         *density                 ,
-                                              SymmetricMatrix         *bondOrders              ) ;
+extern void MNDO_AtomicMultipoles      ( const MNDOParametersContainer *parameters              ,
+                                         const IntegerArray1D          *basisIndices            ,
+                                         const SymmetricMatrix         *density                 ,
+                                         const MultipoleRepresentation  multipoleRepresentation ,
+                                         const Integer                  multipoleOrder          ,
+                                               RealArray1D             *multipoles              ) ;
+extern void MNDO_AtomicMultipolesFock  ( const MNDOParametersContainer *parameters              ,
+                                         const IntegerArray1D          *basisIndices            ,
+                                         const RealArray1D             *potentials              ,
+                                         const Integer                  multipoleOrder          ,
+                                               SymmetricMatrix         *fock                    ) ;
+extern void MNDO_BondOrders            ( const IntegerArray1D          *basisIndices            ,
+                                         const SymmetricMatrix         *density                 ,
+                                               SymmetricMatrix         *bondOrders              ) ;
+extern Real MNDO_ChargeRestraintMatrix ( const IntegerArray1D          *basisIndices            ,
+                                         const RealArray1D             *nuclearCharges          ,
+                                         const IntegerArray1D          *crIndices               ,
+                                         const RealArray1D             *crWeights               ,
+                                         const Boolean                  isSpin                  ,
+                                               SymmetricMatrix         *W                       ) ;
 # endif

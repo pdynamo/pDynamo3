@@ -2,6 +2,8 @@
 
 # . No weighted density matrix contributions as S = I.
 
+from pScientific.Arrays import Array, StorageType
+
 #===================================================================================================================================
 # . Class.
 #===================================================================================================================================
@@ -17,6 +19,30 @@ cdef class MNDOMultipoleEvaluator:
         MNDO_BondOrders ( basisIndices.cObject ,
                           density.cObject      ,
                           bondOrders.cObject   )
+
+    def ChargeRestraintMatrix ( self, target, restraint ):
+        """Get the W matrix and the core term appropriate for the charge restraint."""
+        cdef IntegerArray1D  basisIndices
+        cdef IntegerArray1D  crIndices
+        cdef RealArray1D     crWeights
+        cdef RealArray1D     nuclearCharges
+        cdef SymmetricMatrix W
+        cdef CBoolean        cIsSpin
+        cdef CReal           core
+        basisIndices   = target.qcState.orbitalBases.centerFunctionPointers
+        nuclearCharges = target.qcState.nuclearCharges
+        crIndices      = restraint.indices
+        crWeights      = restraint.weights
+        W              = Array.WithExtent ( len ( target.qcState.orbitalBases ), storageType = StorageType.Symmetric )
+        if restraint.isSpin: cIsSpin = CTrue
+        else:                cIsSpin = CFalse
+        core = MNDO_ChargeRestraintMatrix ( basisIndices.cObject   ,
+                                            nuclearCharges.cObject ,
+                                            crIndices.cObject      ,
+                                            crWeights.cObject      ,
+                                            cIsSpin                ,
+                                            W.cObject              )
+        return ( W, core )
 
     def FockMultipoleDerivatives ( self                          ,
                                    target                        , 

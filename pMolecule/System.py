@@ -119,7 +119,9 @@ class System ( SummarizableObject ):
         if not ( ( value is not None ) and isinstance ( value, ElectronicState ) ):
             raise TypeError ( "Invalid electronic state argument." )
         self.__dict__["_electronicState"] = value
-        if self.qcModel is not None: self.qcModel.ModifyElectronicState ( self )
+        if self.qcModel is not None:
+            self.qcModel.ModifyElectronicState ( self )
+            self._UpdateEnergyClosures ( ) # . As QC model closures may have changed.
 
     def _SetHandlerFreeAtoms ( self, value ):
         """Free atoms set handler."""
@@ -180,6 +182,7 @@ class System ( SummarizableObject ):
 
     def AddEnergyModel ( self, key, value, **options ):
         """Add an energy model."""
+        # . A None value removes a model.
         self._PopEnergyModel ( key, options.get ( "priority", EnergyModelPriority.NullModel ) )
         self._AddEnergyModel ( key, value, **options )
         self._UpdateEnergyClosures ( )
@@ -243,7 +246,7 @@ class System ( SummarizableObject ):
             if doGradients: rmsGradient = "{:16.4f}".format ( self.scratch.gradients3.RootMeanSquare ( ) )
             else:           rmsGradient = "None"
             items = [ ( "Potential Energy", "{:16.4f}".format ( potentialEnergy ) ) ,
-                       ( "RMS Gradient"    , rmsGradient                           ) ]
+                      ( "RMS Gradient"    , rmsGradient                           ) ]
             items.extend ( [ ( key, "{:16.4f}".format ( energies[key] ) ) for key in sorted ( energies.keys ( ) ) ] )
             log.SummaryOfItems ( items, order = False, title = "Summary of Energy Terms" )
         energies["Potential Energy"] = potentialEnergy

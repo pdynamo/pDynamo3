@@ -50,7 +50,12 @@ from .NormalModes                    import ModifyOption                        
                                             NormalModesTrajectory_SystemGeometry         , \
                                             QuasiHarmonic_SystemGeometry                 , \
                                             ThermodynamicsRRHO_SystemGeometry
-from .QCUtilities                    import DensityFitMultipoles
+from .QCUtilities                    import DensityFitMultipoles                         , \
+                                            DetermineWavefunctionOverlap                 , \
+                                            EnforceChargeRestraints                      , \
+                                            MakeExcitedStateByOrbitalSwapping            , \
+                                            SetUpMOMExcitedStateCalculation              , \
+                                            TransitionDipoleMoment
 from .SelfAvoidingWalkReactionPath   import SAWOptimize_SystemGeometry
 from .SequenceUtilities              import CreateElementSequence                        , \
                                             CreateHomogeneousIsolateSequence             , \

@@ -71,8 +71,8 @@ class AttributableObject:
                     setattr ( self, name, value )
             else:
                 unknown.add ( name )
-        if len ( unknown   ) > 0: raise TypeError ( "Unknown options: {:s}.".format      ( ", ".join ( sorted ( unknown   ) ) ) )
-        if len ( unsetable ) > 0: raise TypeError ( "Unsetable attributes: {:s}.".format ( ", ".join ( sorted ( unsetable ) ) ) )
+        if len ( unknown   ) > 0: raise TypeError ( "Unknown options for \"{:s}\": {:s}.".format      ( self.__class__.__name__, ", ".join ( sorted ( unknown   ) ) ) )
+        if len ( unsetable ) > 0: raise TypeError ( "Unsetable attributes for \"{:s}\": {:s}.".format ( self.__class__.__name__, ", ".join ( sorted ( unsetable ) ) ) )
        
     @classmethod
     def Raw ( selfClass ):

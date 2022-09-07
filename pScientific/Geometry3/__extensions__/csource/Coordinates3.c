@@ -1476,7 +1476,7 @@ Integer Coordinates3_RotationTranslationVectors ( const Coordinates3 *self    ,
                              RealArray2D_SetItem ( vectors, 3*iatom,     inc, - w * ( y - cy ), NULL ) ; }
             }
             /* . Create a linearly independent set of orthonormal vectors. */
-            nVectors = RealArray2D_GramSchmidtOrthogonalize ( vectors, NULL, NULL, NULL, NULL ) ;
+            nVectors = RealArray2D_GramSchmidtOrthogonalize ( vectors, NULL, NULL, NULL, NULL, status ) ;
             /* . Finish up. */
             RealArray1D_Deallocate ( &wts    ) ;
             Vector3_Deallocate     ( &center ) ;

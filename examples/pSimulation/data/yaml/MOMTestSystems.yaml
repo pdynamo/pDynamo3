@@ -1,0 +1,55 @@
+# . MOM test systems.
+# . Sort by system size (with ties broken by system mass).
+---
+"Acetaldehyde Singlet" :
+    Structure File : Acetaldehyde.mol
+    Charge         : 0
+    Multiplicity   : 1
+    Orbital Swaps  :
+    - { SwapsP : [ [  0, 0 ] ] }
+"Acetone Singlet" :
+    Structure File : Acetone.mol
+    Charge         : 0
+    Multiplicity   : 1
+    Orbital Swaps  :
+    - { SwapsP : [ [  0, 0 ] ] }
+    - { SwapsP : [ [  0, 1 ] ] }
+"Acetone Triplet" :
+    Structure File : Acetone.mol
+    Charge         : 0
+    Multiplicity   : 3
+    Orbital Swaps  :
+    - { SwapsP : [ [  0, 0 ] ] }
+"Alanine Singlet" :
+    Structure File : Alanine.mol
+    Charge         : 0
+    Multiplicity   : 1
+    Orbital Swaps  :
+    - { SwapsP : [ [  0, 0 ] ] }
+"Ethene Singlet" :
+    Structure File : Ethene.mol
+    Charge         : 0
+    Multiplicity   : 1
+    Orbital Swaps  :
+    - { SwapsP : [ [  0, 0 ] ] }
+"Ethene Triplet" :
+    Structure File : Ethene.mol
+    Charge         : 0
+    Multiplicity   : 3
+    Orbital Swaps  :
+    - { SwapsP : [ [  0, 0 ] ] }
+"Formaldehyde Singlet" :
+    Structure File : Formaldehyde.mol
+    Charge         : 0
+    Multiplicity   : 1
+    Orbital Swaps  :
+    - { SwapsP : [ [  0, 0 ] ] }
+    - { SwapsP : [ [  0, 1 ] ] }
+"Formaldehyde Triplet" :
+    Structure File : Formaldehyde.mol
+    Charge         : 0
+    Multiplicity   : 3
+    Orbital Swaps  :
+    - { SwapsP : [ [  0, 0 ] ] }
+    - { SwapsP : [ [  0, 1 ] ] }
+...

@@ -1,0 +1,276 @@
+# . Charge restraint tests.
+# . Weights default to one if not specified.
+#
+# . Sort by system size (with ties broken by system mass).
+#
+# . Notes:
+#
+#   - convergence can be a problem!
+#   - the "Dihydrogen anion" case requires random starting values for the LMs to work (rather than the default zero).
+#
+---
+#
+# . Diatomics.
+#
+"Dihydrogen" :
+    Description    : "H2 -1/+1 charge"
+    Structure File : dihydrogen.xyz
+    Charge         : 0
+    Multiplicity   : 1
+    Restraints     :
+        - { Indices: [ 1 ], IsSpin : False, Target : 1.0 }
+"Dinitrogen" :
+    Description    : "N2 -1/+1 charge"
+    Structure File : dinitrogen.xyz
+    Charge         : 0
+    Multiplicity   : 1
+    Restraints     :
+        - { Indices: [ 1 ], IsSpin : False, Target : 1.0 }
+"Dihydrogen anion" :
+    Description    : "H2 anion 0/-1 charge and 1/0 spin"
+    Structure File : dihydrogen.xyz
+    Charge         : -1
+    Multiplicity   :  2
+    Restraints     :
+        - { Indices: [ 1 ], IsSpin : False, Target : -1.0 }
+        - { Indices: [ 0 ], IsSpin : True , Target :  1.0 }
+"Dinitrogen anion" :
+    Description    : "N2 anion 0/-1 charge and 1/0 spin"
+    Structure File : dinitrogen.xyz
+    Charge         : -1
+    Multiplicity   :  2
+    Restraints     :
+        - { Indices: [ 1 ], IsSpin : False, Target : -1.0 }
+        - { Indices: [ 0 ], IsSpin : True , Target :  1.0 }
+#
+# . Benzene.
+#
+"Benzene singlet" :
+    Description    : "Benzene singlet - +1 charge on one CH and -1 on opposite CH"
+    Structure File : benzene.xyz
+    Charge         : 0
+    Multiplicity   : 1
+    Restraints     :
+        - { Indices: [ 0, 6 ], IsSpin : False, Target : -1.0 }
+        - { Indices: [ 3, 9 ], IsSpin : False, Target :  1.0 }
+"Benzene triplet charge" :
+    Description    : "Benzene triplet - +1 charge on one CH and -1 on opposite CH"
+    Structure File : benzene.xyz
+    Charge         : 0
+    Multiplicity   : 3
+    Restraints     :
+        - { Indices: [ 0, 6 ], IsSpin : False, Target : -1.0 }
+        - { Indices: [ 3, 9 ], IsSpin : False, Target :  1.0 }
+"Benzene triplet spin" :
+    Description    : "Benzene Triplet - +1 spin on one CH and -1 on opposite CH"
+    Structure File : benzene.xyz
+    Charge         : 0
+    Multiplicity   : 3
+    Restraints     :
+        - { Indices: [ 0, 6 ], IsSpin : True, Target : -1.0 }
+        - { Indices: [ 3, 9 ], IsSpin : True, Target :  1.0 }
+# . The following four tests should give identical results!
+"Benzene triplet charge/spin 1" :
+    Description    : "Benzene triplet - -1 charge on one CH and +1 spin on opposite CH"
+    Structure File : benzene.xyz
+    Charge         : 0
+    Multiplicity   : 3
+    Restraints     :
+        - { Indices: [ 0, 6 ], IsSpin : False, Target : -1.0 }
+        - { Indices: [ 3, 9 ], IsSpin : True , Target :  1.0 }
+"Benzene triplet charge/spin 2" :
+    Description    : "Benzene triplet - -1 charge on one CH and +1 spin on opposite CH"
+    Structure File : benzene.xyz
+    Charge         : 0
+    Multiplicity   : 3
+    Restraints     :
+        - { Indices: [ 3, 9 ], IsSpin : False, Target : -1.0 }
+        - { Indices: [ 0, 6 ], IsSpin : True , Target :  1.0 }
+"Benzene triplet charge/spin 3" :
+    Description    : "Benzene triplet - -1 charge on one CH and +1 spin on opposite CH"
+    Structure File : benzene.xyz
+    Charge         : 0
+    Multiplicity   : 3
+    Restraints     :
+        - { Indices: [ 3, 9 ], IsSpin : True , Target :  1.0 }
+        - { Indices: [ 0, 6 ], IsSpin : False, Target : -1.0 }
+"Benzene triplet charge/spin 4" :
+    Description    : "Benzene triplet - -1 charge on one CH and +1 spin on opposite CH"
+    Structure File : benzene.xyz
+    Charge         : 0
+    Multiplicity   : 3
+    Restraints     :
+        - { Indices: [ 0, 6 ], IsSpin : True , Target :  1.0 }
+        - { Indices: [ 3, 9 ], IsSpin : False, Target : -1.0 }
+#
+# . Benzene - chloride anion.
+#   [Q Wu and T Van Voorhis; J Chem Phys 125, 164105, 2006]
+#
+# . Benzene-chloride 1 with chloride above mid-point of C-C bond.
+"Benzene chloride 1 singlet charge 0/-1" :
+    Description    : "Benzene chloride 1 - 0 charge on benzene and -1 on chlorine"
+    Structure File : benzeneChloride_1.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 12 ], IsSpin : False, Target : -1.0 }
+"Benzene chloride 1 singlet charge -0.5/-0.5" :
+    Description    : "Benzene chloride 1 - -0.5 charge on benzene and -0.5 on chlorine"
+    Structure File : benzeneChloride_1.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 12 ], IsSpin : False, Target : -0.5 }
+"Benzene chloride 1 singlet charge -1/0" :
+    Description    : "Benzene chloride 1 - -1 charge on benzene and 0 on chlorine"
+    Structure File : benzeneChloride_1.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 12 ], IsSpin : False, Target : 0.0 }
+# . Benzene-chloride 2 with chloride above mid-point of line between bisector of C-C bond and the center.
+"Benzene chloride 2 singlet charge 0/-1" :
+    Description    : "Benzene chloride 2 - 0 charge on benzene and -1 on chlorine"
+    Structure File : benzeneChloride_2.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 12 ], IsSpin : False, Target : -1.0 }
+"Benzene chloride 2 singlet charge -0.5/-0.5" :
+    Description    : "Benzene chloride 2 - -0.5 charge on benzene and -0.5 on chlorine"
+    Structure File : benzeneChloride_2.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 12 ], IsSpin : False, Target : -0.5 }
+"Benzene chloride 2 singlet charge -1/0" :
+    Description    : "Benzene chloride 2 - -1 charge on benzene and 0 on chlorine"
+    Structure File : benzeneChloride_2.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 12 ], IsSpin : False, Target : 0.0 }
+#
+# . Methyl chloride - fluoride anion.
+#   [B Kaduk, T Kowalczyk and T Van Voorhis; Chem Rev 112, 321-370, 2012]
+#
+"CH3Cl/F anion charge 0/-1" :
+    Description    : "CH3Cl/F anion - -1 charge on fluorine"
+    Structure File : fch3cl.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 5 ], IsSpin : False, Target : -1.0 }
+"CH3Cl/F anion charge -0.5/-0.5" :
+    Description    : "CH3Cl/F anion - -0.5 charge on fluorine"
+    Structure File : fch3cl.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 5 ], IsSpin : False, Target : -0.5 }
+"CH3Cl/F anion charge -1/0" :
+    Description    : "CH3Cl/F anion - 0 charge on fluorine"
+    Structure File : fch3cl.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 5 ], IsSpin : False, Target : 0 }
+"CH3Cl/F anion spin -1/1" :
+    Description    : "CH3Cl/F anion - 1 spin on fluorine"
+    Structure File : fch3cl.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 5 ], IsSpin : True, Target : 1.0 }
+"CH3Cl/F anion spin -0.5/0.5" :
+    Description    : "CH3Cl/F anion - 0.5 spin on fluorine"
+    Structure File : fch3cl.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 5 ], IsSpin : True, Target : 0.5 }
+"CH3Cl/F anion spin 0/0" :
+    Description    : "CH3Cl/F anion - 0 spin on fluorine"
+    Structure File : fch3cl.xyz
+    Charge         : -1
+    Multiplicity   :  1
+    Restraints     :
+        - { Indices: [ 5 ], IsSpin : True, Target : 0.0 }
+#
+# . Q-TTF-Q.
+#   [Q Wu and T Van Voorhis; J Chem Phys 125, 164105, 2006]
+#
+# . S-C-S groups, quinones and C=Os on each side of molecule are:
+#  [ 0, 1, 6 ] [ 4, 5, 18, 19, 20, 21, 22, 23, 24, 25 ] [ 18, 19, 22, 23 ]
+#  [ 2, 3, 7 ] [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ] [ 10, 11, 14, 15 ]
+"Q-TTF-Q charge +1/-1" :
+    Description    : "Q-TTF-Q neutral - +1 charge on one quinone and -1 on the other"
+    Structure File : qttfq.xyz
+    Charge         : 0
+    Multiplicity   : 1
+    Restraints     :
+        - { Indices: [ 4, 5, 18, 19, 20, 21, 22, 23, 24, 25 ], IsSpin : False, Target :  1.0 }
+        - { Indices: [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ], IsSpin : False, Target : -1.0 }
+"Q-TTF-Q anion charge 0/-1" :
+    Description    : "Q-TTF-Q anion - 0 charge on one quinone and -1 on the other"
+    Structure File : qttfq.xyz
+    Charge         : -1
+    Multiplicity   :  2
+    Restraints     :
+        - { Indices: [ 4, 5, 18, 19, 20, 21, 22, 23, 24, 25 ], IsSpin : False, Target :  0.0 }
+        - { Indices: [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ], IsSpin : False, Target : -1.0 }
+"Q-TTF-Q anion charge spin 0/-1" :
+    Description    : "Q-TTF-Q anion - -1 charge and 1 spin on one quinone and 0 charge and 0 spin on the other"
+    Structure File : qttfq.xyz
+    Charge         : -1
+    Multiplicity   :  2
+    Restraints     :
+        - { Indices: [ 4, 5, 18, 19, 20, 21, 22, 23, 24, 25 ], IsSpin : False, Target :  0.0 }
+        - { Indices: [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ], IsSpin : False, Target : -1.0 }
+        - { Indices: [ 4, 5, 18, 19, 20, 21, 22, 23, 24, 25 ], IsSpin : True , Target :  0.0 }
+        - { Indices: [ 8, 9, 10, 11, 12, 13, 14, 15, 16, 17 ], IsSpin : True , Target :  1.0 }
+#
+# . Paddon-Row donor-acceptor compounds.
+#   [DC Craig and MN Paddon-Row; Aust J Chem 40, 1951-1964, 1987]
+#
+# . All compounds consist of a dimethoxynaphthalene donor and a dicyanomethylene acceptor
+#   separated by rigid bridges on various lengths. Their indices are:
+#
+#   pr04: [ 0, 1, 2, 3, 4 ] and [ 5, 6, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 27, 28, 37, 38, 39, 40, 45, 46, 47, 48, 49, 50 ]
+#   pr06: [ 0, 1, 2, 3, 4 ] and [ 5, 6, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 32, 33, 44, 45, 46, 47, 56, 57, 58, 59, 60, 61 ]
+#   pr08: [ 0, 1, 2, 3, 4 ] and [ 5, 6, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 38, 39, 51, 52, 53, 54, 70, 71, 72, 73, 74, 75 ]
+#   pr10: [ 0, 1, 2, 3, 4 ] and [ 5, 6, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 43, 44, 58, 59, 60, 61, 81, 82, 83, 84, 85, 86 ]
+#
+"Paddon-Row 4 charge +1/-1" :
+    Description    : "Paddon-Row compound 4 - +1 charge on donor and -1 on acceptor"
+    Structure File : pr04.xyz
+    Charge         : 0
+    Multiplicity   : 1
+    Restraints     :
+        - { Indices: [ 5, 6, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 27, 28, 37, 38, 39, 40, 45, 46, 47, 48, 49, 50 ], IsSpin : False, Target :  1.0 }
+        - { Indices: [ 0, 1, 2, 3, 4 ]                                                                               , IsSpin : False, Target : -1.0 }
+"Paddon-Row 6 charge +1/-1" :
+    Description    : "Paddon-Row compound 6 - +1 charge on donor and -1 on acceptor"
+    Structure File : pr06.xyz
+    Charge         : 0
+    Multiplicity   : 1
+    Restraints     :
+        - { Indices: [ 5, 6, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 32, 33, 44, 45, 46, 47, 56, 57, 58, 59, 60, 61 ], IsSpin : False, Target :  1.0 }
+        - { Indices: [ 0, 1, 2, 3, 4 ]                                                                               , IsSpin : False, Target : -1.0 }
+"Paddon-Row 8 charge +1/-1" :
+    Description    : "Paddon-Row compound 8 - +1 charge on donor and -1 on acceptor"
+    Structure File : pr08.xyz
+    Charge         : 0
+    Multiplicity   : 1
+    Restraints     :
+        - { Indices: [ 5, 6, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 38, 39, 51, 52, 53, 54, 70, 71, 72, 73, 74, 75 ], IsSpin : False, Target :  1.0 }
+        - { Indices: [ 0, 1, 2, 3, 4 ]                                                                               , IsSpin : False, Target : -1.0 }
+"Paddon-Row 10 charge +1/-1" :
+    Description    : "Paddon-Row compound 10 - +1 charge on donor and -1 on acceptor"
+    Structure File : pr10.xyz
+    Charge         : 0
+    Multiplicity   : 1
+    Restraints     :
+        - { Indices: [ 5, 6, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 43, 44, 58, 59, 60, 61, 81, 82, 83, 84, 85, 86 ], IsSpin : False, Target :  1.0 }
+        - { Indices: [ 0, 1, 2, 3, 4 ]                                                                               , IsSpin : False, Target : -1.0 }
+...

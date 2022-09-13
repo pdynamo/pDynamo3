@@ -384,7 +384,7 @@ def WHAM_DirectIteration ( paths, **options ):
 def WHAM_LBFGSMinimize ( paths, **options ):
     """Solve the WHAM equations by LBFGS minimization."""
     ( of, options, log ) = _InitializeSolution ( paths, LBFGSMinimizer._attributable, {}, options )
-    optimizer = LBFGSMinimizer ( **options )
+    optimizer = LBFGSMinimizer.WithOptions ( **options )
     optimizer.Summary ( log = log )
     report = optimizer.Iterate ( of, log = log )
     return _FinalizeSolution ( of, log, report )

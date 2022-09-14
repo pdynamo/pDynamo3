@@ -146,26 +146,13 @@ class CHARMMPSFFileWriter ( TextFileWriter ):
         else:                        fixedAtoms = system.freeAtoms.Complement ( upperBound = len ( system.atoms ) )
         # . Atom data.
         try:
-            # . Basic data.
-            mmAtomData      = system.energyModel.mmAtoms.__getstate__ ( )
-            mmTerms         = system.energyModel.mmTerms
-            # . Extraction.
-            atomFields      = mmAtomData["atomFields"]
-            atoms           = mmAtomData["atoms"]
+            mmState         = system.mmState
+            mmTerms         = mmState.mmTerms
+            atomTypeIndices = mmState.atomTypeIndices
+            charges         = mmState.charges
+            uniqueAtomTypes = mmState.atomTypes
+            atomTypes       = [ uniqueAtomTypes[index] for index in atomTypeIndices ]
             masses          = [ atom.mass for atom in system.atoms ]
-            uniqueAtomTypes = mmAtomData["atomTypes"]
-            # . Build arrays.
-            atomTypeIndexIndex = atomFields.index ( "atomType" )
-            chargeIndex        = atomFields.index ( "charge"   )
-            atomTypeIndices = []
-            charges         = []
-            for atom in atoms:
-                atomTypeIndices.append ( atom[atomTypeIndexIndex] )
-                charges.append         ( atom[chargeIndex]        )
-            # . Atom types.
-            atomTypes = []
-            for index in atomTypeIndices:
-                atomTypes.append ( uniqueAtomTypes[index] )
         except Exception as e:
             print ( e[0] )
             raise ValueError ( "Unable to obtain MM atom data for the system." )

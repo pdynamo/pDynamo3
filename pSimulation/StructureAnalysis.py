@@ -38,8 +38,8 @@ def IdentifyPossibleBonds ( system, atomRadii = None, bondSafetyFactor = 0.45, c
 
             # . Get the MM bonds.
             mmbonds = None
-            if excludeMMBonds and ( system.energyModel is not None ):
-                mmbonds = system.energyModel.Get12Exclusions ( )
+            if excludeMMBonds and ( system.mmState is not None ):
+                mmbonds = system.mmState.Get12Exclusions ( )
                 if ( mmbonds is not None ) and ( len ( mmbonds ) <= 0 ): mmbonds = None
 
             # . Get close contacts (no matter whether MM or not) and possible bonds (excluding MM).

@@ -377,6 +377,8 @@ class QCModelDFTB ( QCModel ):
         # . Slater-Koster files (type 2 only).
         inFile.write ( "  SlaterKosterFiles = Type2FileNames {\n" )
         inFile.write ( "    Prefix    = \"{:s}\"\n    Separator = \"-\"\n    Suffix    = \".skf\"\n  }}\n".format ( os.path.join ( self.skfPath, "" ) ) )
+        # . User specified options using extended format.
+        if self.extendedInput is not None: inFile.write ( "{:s}\n".format ( self.extendedInput ) )
         # . QC/MM - there are assumptions here about the QC/MM model.
         if doQCMM: 
             target        = target
@@ -396,8 +398,6 @@ class QCModelDFTB ( QCModel ):
         inFile.write ( "Analysis      = {{\n  CalculateForces = {:s}\n}}\n".format ( gTag ) )
         inFile.write ( "Options       = {\n  WriteAutotestTag   = Yes\n  }\n" )
         inFile.write ( "ParserOptions = {\n  ParserVersion = 5\n}\n" )
-        # . User specified options using extended format.
-        if self.extendedInput is not None: inFile.write ( "{:s}\n".format ( self.extendedInput ) )
         # . Finish up.
         inFile.close ( )
 

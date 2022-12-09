@@ -4,6 +4,7 @@ from  enum               import Enum
 from .AttributableObject import AttributableObject
 from .LogFileWriter      import logFile            , \
                                 LogFileActive
+from .PrintObjects       import Align
 
 # . _summarizable is a dictionary of attribute/summary label or attribute/(summary label, summary format) name/values.
 
@@ -56,6 +57,35 @@ class SummarizableObject ( AttributableObject ):
                         string = format.format   ( value )
                     items.append ( ( label, string ) )
         return items
+
+    def OptionRecords ( self ):
+        """Option records and subobjects that also have options."""
+        # . The actual state of the component objects is used to determine if they also have options!
+        # . Gather attributes and values.
+        attributes = set ( self._summarizable.keys ( ) )
+        records    = []
+        subObjects = []
+        for attribute in sorted ( attributes ):
+            default = self._attributable[attribute]
+            label   = self._summarizable[attribute]
+            value   = getattr ( self, attribute, None )
+            if                 label is None: label = "Object with Options"
+            elif isinstance ( label, tuple ): label = label[0]
+            records.append ( ( attribute, label, value.__class__.__name__, self._GetString ( default ) ) )
+            if hasattr ( value, "TableOfOptions" ): subObjects.append ( value )
+        return ( records, subObjects ) # . Order is important and subObjects must have TableOfOptions method!
+
+    def TableOfOptions ( self, log = logFile ):
+        """Output a table with the default options."""
+        if LogFileActive ( log ):
+            ( records, subObjects ) = self.OptionRecords ( )
+            alignments = [ Align.Left ] * ( len ( records[0] ) - 1 ) + [ Align.Right ]
+            headers    = [ "Option", "Description", "Type", "Default" ]
+            title      = "{:s} Option Table".format ( str ( self ) )
+            log.TableOfRecords ( records, alignments = alignments, headers = headers, title = title )
+            if len ( subObjects ) > 0:
+                for subObject in subObjects:
+                    subObject.TableOfOptions ( log = log )
 
 #===================================================================================================================================
 # . Testing.

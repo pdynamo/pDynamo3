@@ -48,7 +48,7 @@ class LogFileWriter ( AttributableObject ):
             ( head, tail ) = os.path.split ( self.path )
             if len ( head ) == 0: head = "."
             if not os.access ( head, os.W_OK ): raise IOError ( "Unwriteable file: " + self.path + "." )
-            try:    self.file = open ( path, "w", bufferSize )
+            try:    self.file = open ( self.path, "w", self.bufferSize )
             except: raise IOError ( "Cannot open file: " + self.path + "." )
 
     def Close ( self ):
@@ -148,6 +148,32 @@ class LogFileWriter ( AttributableObject ):
             summary = self.GetSummary ( **options ) # . Include order and withSections.
             ( title, sections ) = summary.SetUp ( title, items )
             summary.Print ( title, sections )
+
+#### . MJF
+    def TableOfRecords ( self, records, **options ):
+        """Table of records."""
+        # . Headers must be present.
+        if self.isActive and ( len ( records ) > 0 ):
+            alignments = options.pop ( "alignments"        , None )
+            columns    = options.pop ( "columns"           , None )
+            headers    = options.pop ( "headers"           , None )
+            padding    = options.pop ( "columnPadding"     ,    2 )
+            title      = options.pop ( "title"             , "Table Of Records" )
+            width      = options.pop ( "minimumColumnWidth",   20 )
+            if columns is None:
+                columns = []
+                for c in range ( len ( records[0] ) ):
+                    columns.append ( max ( width, max ( [ len ( record[c] ) + padding for record in records ] ) ) )
+                options["columns"] = columns
+            table = self.GetTable ( **options )
+            table.Start ( )
+            table.Title ( title )
+            for header in headers: table.Heading ( header )
+            for record in records:
+                for ( alignment, item ) in zip ( alignments, record ):
+                   table.Entry ( item, align = alignment )
+            table.Stop ( )
+#### . MJF
 
     def Text ( self, text ):
         """Text."""

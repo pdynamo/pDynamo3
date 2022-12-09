@@ -1,6 +1,7 @@
 """Pairlist generation class and functions."""
 
-from  pCore          import logFile              , \
+from  pCore          import Align                , \
+                            logFile              , \
                             LogFileActive        , \
                             RawObjectConstructor
 from .Geometry3Error import Geometry3Error
@@ -51,6 +52,8 @@ cdef class PairListGenerator:
         """Set the state."""
         self._Allocate ( )
         self.SetOptions ( **state )
+
+    def __str__ ( self ): return "Pair List Generator"
 
     def _Allocate ( self ):
         """Allocation."""
@@ -161,10 +164,17 @@ cdef class PairListGenerator:
         pairList.isOwner = True
         return pairList
 
-    @classmethod
-    def WithOptions ( selfClass, **options ):
-        """Constructor from options."""
-        return selfClass ( **options )
+    def OptionRecords ( self ):
+        """Option records and subobjects that also have options."""
+        return ( [ ( "cellSize"             , "Cell Size"               , "float", "{:.3f}".format ( self.cObject.cellSize               ) ) ,
+                   ( "cutOff"               , "List CutOff"             , "float", "{:.3f}".format ( self.cObject.cutOff                 ) ) ,
+                   ( "cutOffCellSizeFactor" , "CutOff Cell Size Factor" , "float", "{:.3f}".format ( self.cObject.cutOffCellSizeFactor   ) ) ,
+                   ( "useGridByCell"        , "Grid Cell/Cell Method"   , "bool" , "{!r}"  .format ( self.cObject.useGridByCell == CTrue ) ) ,
+                   ( "minimumCellExtent"    , "Minimum Cell Extent"     , "int"  , "{:d}"  .format ( self.cObject.minimumCellExtent      ) ) ,
+                   ( "minimumCellSize"      , "Minimum Cell Size"       , "float", "{:.3f}".format ( self.cObject.minimumCellSize        ) ) ,
+                   ( "minimumExtentFactor"  , "Minimum Extent Factor"   , "float", "{:.3f}".format ( self.cObject.minimumExtentFactor    ) ) ,
+                   ( "minimumPoints"        , "Minimum Points"          , "int"  , "{:d}"  .format ( self.cObject.minimumPoints          ) ) ,
+                   ( "sortIndices"          , "Sort Indices"            , "bool" , "{!r}"  .format ( self.cObject.sortIndices == CTrue   ) ) ], [] )
 
     @classmethod
     def Raw ( selfClass ):
@@ -249,11 +259,28 @@ cdef class PairListGenerator:
                  ( "Minimum Points"          , "{:d}"  .format ( self.cObject.minimumPoints          ) ) ,
                  ( "Sort Indices"            , "{!r}"  .format ( self.cObject.sortIndices == CTrue   ) ) ]
 
+    def TableOfOptions ( self, log = logFile ):
+        """Output a table with the default options."""
+        if LogFileActive ( log ):
+            ( records, subObjects ) = self.OptionRecords ( )
+            alignments = [ Align.Left ] * ( len ( records[0] ) - 1 ) + [ Align.Right ]
+            headers    = [ "Option", "Description", "Type", "Default" ]
+            title      = "{:s} Option Table".format ( str ( self ) )
+            log.TableOfRecords ( records, alignments = alignments, headers = headers, title = title )
+            if len ( subObjects ) > 0:
+                for subObject in subObjects:
+                    subObject.TableOfOptions ( log = log )
+
     def UseGridSearch ( self, Coordinates3 coordinates3 not None ):
         """See if a grid search is to be performed for a set of coordinates."""
         cdef cUseGrid
         cUseGrid = PairListGenerator_DetermineMethod ( self.cObject, coordinates3.cObject, NULL )
         return ( cUseGrid == CTrue )
+
+    @classmethod
+    def WithOptions ( selfClass, **options ):
+        """Constructor from options."""
+        return selfClass ( **options )
 
     @property
     def cellSize ( self ): return self.cObject.cellSize

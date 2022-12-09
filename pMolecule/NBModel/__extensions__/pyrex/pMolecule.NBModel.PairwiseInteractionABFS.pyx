@@ -32,6 +32,8 @@ cdef class PairwiseInteractionABFS ( PairwiseInteraction ):
                  "innerCutOff"   : self.cObject.innerCutOff   ,
                  "outerCutOff"   : self.cObject.outerCutOff   }
 
+    def __str__ ( self ): return "ABFS Pairwise Interaction"
+
     def _Allocate ( self ):
         """Allocation."""
         cdef CStatus cStatus = CStatus_OK
@@ -202,6 +204,12 @@ cdef class PairwiseInteractionABFS ( PairwiseInteraction ):
                                                &cStatus                    )
         if cStatus != CStatus_OK: raise NBModelError ( "Error calculating minimum image MM energy." )
         return ( eElectrostatic, eLennardJones )
+
+    def OptionRecords ( self ):
+        """Option records and subobjects that also have options."""
+        return ( [ ( "dampingCutOff", "Damping Cut-Off", "float", "{:.3f}".format ( self.cObject.dampingCutOff ) ) ,
+                   ( "innerCutOff"  , "Inner Cut-Off"  , "float", "{:.3f}".format ( self.cObject.innerCutOff   ) ) ,
+                   ( "outerCutOff"  , "Outer Cut-Off"  , "float", "{:.3f}".format ( self.cObject.outerCutOff   ) ) ], [] )
 
     def QCMMGradients ( self, RealArray1D  chargesQ           not None ,
                               RealArray1D  chargesM           not None ,
@@ -382,7 +390,7 @@ cdef class PairwiseInteractionABFS ( PairwiseInteraction ):
             raise NBModelError ( "Invalid cutOff values: damping - {:.3f}; inner - {:.3f}; outer - {:.3f}.".format ( self.cObject.dampingCutOff ,
                                                                                                                      self.cObject.innerCutOff   ,
                                                                                                                      self.cObject.outerCutOff ) )
- 
+
     def Summary ( self, log = logFile ):
         """Summary."""
         if LogFileActive ( log ):

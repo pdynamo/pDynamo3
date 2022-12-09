@@ -1,9 +1,12 @@
 """Utilities for compilation and installation."""
 
-import functools, glob, imp, os, os.path, shutil, sys
+# . Note that distutils is deprecated so this will have to be replaced by setuptools!
+# . In any case, paths need to be sorted out!
+
+import functools, glob, imp, os, os.path, shutil, sys, sysconfig
 
 from distutils.core import setup, Extension
-from distutils.util import get_platform
+#from distutils.util import get_platform
 
 # . Attempts have been made to use unqualified pyx names.
 #   Everything compiles fine but runtime errors arise
@@ -39,7 +42,7 @@ _InitFile              = "__init__.py"
 _LibraryFile           = "__libraries__"
 
 # . Language level (2 or 3).
-_LanguageLevel  = 3
+_LanguageLevel = 3
 
 # . Libraries.
 # . May need to add "irc" to libraries for Intel C compiler.
@@ -370,7 +373,7 @@ class PackageToInstall:
         """Compile the C-libraries."""
         if getattr ( self, "hasCLibraries", False ):
             # . Get the build directory name.
-            buildPath = os.path.join ( "build", "temp" + ".{:s}-{:s}".format ( get_platform ( ), VersionString ( ) ) )
+            buildPath = BuildPath ( "temp" ) #os.path.join ( "build", "temp" + ".{:s}-cpython-{:s}".format ( get_platform ( ), VersionString ( ) ) )
             # . Get the include directories.
             includeDirectories = [ self.cIncludePath ]
             for item in reversed ( getattr ( self, "dependencyObjects", [] ) ):
@@ -449,7 +452,7 @@ class PackageToInstall:
         if getattr ( self, "hasPyrexFiles", False ):
             # . Get the build and destination path names.
             nameAsPath      = self.name.replace ( ".", os.sep )
-            buildPath       = os.path.join ( "build", "lib" + ".{:s}-{:s}".format ( get_platform ( ), VersionString ( ) ), nameAsPath )
+            buildPath       = BuildPath ( "lib" ) #os.path.join ( "build", "lib" + ".{:s}-cpython-{:s}".format ( get_platform ( ), VersionString ( ) ), nameAsPath )
             destinationPath = self.path
             # . Get the include directories.
             includeDirectories = [ self.cIncludePath ]
@@ -489,9 +492,12 @@ class PackageToInstall:
             # . Move the files to the appropriate place.
             # . Here the unqualified name is required.
             for ( name, nameM ) in self.pyrexFileRoots:
-                if name.find ( "." ) >= 0: tail = name.split ( "." )[-1]
-                else:                      tail = name
-                paths = glob.glob ( os.path.join ( buildPath, tail + _SharedObjectBuildPathExtension ) )
+                ( head, tail ) = name.rsplit ( ".", 1 ) # . How robust is this?
+                head = head.replace ( ".", os.sep )
+#                if name.find ( "." ) >= 0: 
+#                else:                      ( head, tail ) = ( "", name )
+#                print ( "XXX>", buildPath, head, tail, name, nameM )
+                paths = glob.glob ( os.path.join ( buildPath, head, tail + _SharedObjectBuildPathExtension ) )
                 if len ( paths ) != 1: raise InstallationError ( "Wrong number of shared object paths ({:d}) for {:s}.".format ( len ( paths ), tail ) )
                 os.rename ( paths[0], os.path.join ( destinationPath, tail + _SharedObjectExtension ) )
 
@@ -523,6 +529,10 @@ class PackageToInstall:
 #===================================================================================================================================
 # . Functions.
 #===================================================================================================================================
+def BuildPath ( name ):
+    """Get the build path."""
+    return os.path.join ( "build", "{:s}.{:s}-{:s}".format ( name, sysconfig.get_platform ( ), sys.implementation.cache_tag ) )
+
 def FindRootDirectory ( ):
     """Find or guess a root directory."""
     # . Initialization.
@@ -689,9 +699,9 @@ def TopologicalSort ( data ):
         for key in sorted ( data.keys ( ) ): print ( "{:s} - {:s}", key.ljust ( width ), ", ".join ( sorted ( data[key] ) ) )
         raise InstallationError ( "The packages have circular dependencies." )
 
-def VersionString ( ):
-    """The current system version string for build paths."""
-    return sys.version.split ( " ", 1 )[0].rsplit ( ".", 1 )[0]
+#def VersionString ( ):
+#    """The current system version string for build paths."""
+#    return sys.version.split ( " ", 1 )[0].rsplit ( ".", 1 )[0].replace ( ".", "" )
 
 def WriteShellFile ( inPath, outPath, variables, report ):
     """Write a shell file."""

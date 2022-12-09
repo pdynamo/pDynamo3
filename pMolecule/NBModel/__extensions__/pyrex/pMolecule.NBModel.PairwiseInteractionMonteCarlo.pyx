@@ -38,6 +38,8 @@ cdef class PairwiseInteractionMonteCarlo ( PairwiseInteraction ):
                  "underFlowL"   : self.cObject.underFlowL   ,
                  "underFlowQ"   : self.cObject.underFlowQ   }
 
+    def __str__ ( self ): return "Monte Carlo Pairwise Interaction"
+
     def _Allocate ( self ):
         """Allocation."""
         cdef CStatus cStatus = CStatus_OK
@@ -121,6 +123,17 @@ cdef class PairwiseInteractionMonteCarlo ( PairwiseInteraction ):
                                                           &cStatus                    )
         if cStatus != CStatus_OK: raise NBModelError ( "Error calculating MM isolate energy." )
         return ( eElectrostatic, eLennardJones )
+
+    def OptionRecords ( self ):
+        """Option records and subobjects that also have options."""
+        return ( [ ( "cutOff"      , "Cut-Off"                 , "float", "{:.3f}".format ( self.cObject.cutOff       ) ) ,
+                   ( "buffer"      , "Buffer"                  , "float", "{:.3f}".format ( self.cObject.buffer       ) ) ,
+                   ( "underFlowQ"  , "Electrostatic Underflow" , "float", "{:.3f}".format ( self.cObject.underFlowQ   ) ) ,
+                   ( "underFlowL"  , "Lennard-Jones Underflow" , "float", "{:.3f}".format ( self.cObject.underFlowL   ) ) ,
+                   ( "isolateScale", "Isolate for Scaling"     , "int"  , "{:d}".format   ( self.cObject.isolateScale ) ) ,
+                   ( "chargeScale" , "Charge Scaling"          , "float", "{:.3f}".format ( self.cObject.chargeScale  ) ) ,
+                   ( "epsilonScale", "Epsilon Scaling"         , "float", "{:.3f}".format ( self.cObject.epsilonScale ) ) ,
+                   ( "sigmaScale"  , "Sigma Scaling"           , "float", "{:.3f}".format ( self.cObject.sigmaScale   ) ) ], [] )
 
     def ScaleIsolateInteractionParameters ( self, isolate, chargeScale, epsilonScale, sigmaScale, log = logFile ):
         """Scale the isolate interaction parameters."""

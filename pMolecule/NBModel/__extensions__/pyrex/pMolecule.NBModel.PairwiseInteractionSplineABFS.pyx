@@ -55,6 +55,8 @@ cdef class PairwiseInteractionSplineABFS ( PairwiseInteraction ):
                  "width1"             : self.width1             ,
                  "width2"             : self.width2             }
 
+    def __str__ ( self ): return "ABFS Spline Pairwise Interaction"
+
     def _Allocate ( self ):
         """Allocation."""
         cdef CStatus cStatus = CStatus_OK
@@ -338,6 +340,16 @@ cdef class PairwiseInteractionSplineABFS ( PairwiseInteraction ):
         if cStatus != CStatus_OK: raise NBModelError ( "Error calculating minimum image MM energy." )
         return ( eElectrostatic, eLennardJones )
 
+    def OptionRecords ( self ):
+        """Option records and subobjects that also have options."""
+        return ( [ ( "dampingCutOff"     , "Damping Cut-Off"      , "float"      , "{:.3f}".format ( self.dampingCutOff            ) ) ,
+                   ( "electrostaticModel", "Electrostatic Model"  , "SplineModel", self.electrostaticModel.name.replace ( "_", "/" ) ) ,
+                   ( "innerCutOff"       , "Inner Cut-Off"        , "float"      , "{:.3f}".format ( self.innerCutOff              ) ) ,
+                   ( "outerCutOff"       , "Outer Cut-Off"        , "float"      , "{:.3f}".format ( self.outerCutOff              ) ) ,
+                   ( "pointDensity"      , "Spline Point Density" , "int"        , "{:d}"  .format ( self.pointDensity             ) ) ,
+                   ( "width1"            , "Width 1"              , "float"      , "{:.3f}".format ( self.width1                   ) ) ,
+                   ( "width2"            , "Width 2"              , "float"      , "{:.3f}".format ( self.width2                   ) ) ], [] )
+
     def QCMMGradients ( self, RealArray1D  chargesQ           not None ,
                               RealArray1D  chargesM           not None ,
                                            electrostaticScale          ,
@@ -528,10 +540,10 @@ cdef class PairwiseInteractionSplineABFS ( PairwiseInteraction ):
 
     def SummaryItems ( self ):
         """Summary items."""
-        return [ ( "Damping CutOff"       , "{:.3f}".format ( self.dampingCutOff            ) ) ,
+        return [ ( "Damping Cut-Off"      , "{:.3f}".format ( self.dampingCutOff            ) ) ,
                  ( "Electrostatic Model"  , self.electrostaticModel.name.replace ( "_", "/" ) ) ,
-                 ( "Inner CutOff"         , "{:.3f}".format ( self.innerCutOff              ) ) ,
-                 ( "Outer CutOff"         , "{:.3f}".format ( self.outerCutOff              ) ) ,
+                 ( "Inner Cut-Off"        , "{:.3f}".format ( self.innerCutOff              ) ) ,
+                 ( "Outer Cut-Off"        , "{:.3f}".format ( self.outerCutOff              ) ) ,
                  ( "Spline Point Density" , "{:d}"  .format ( self.pointDensity             ) ) ,
                  ( "Width 1"              , "{:.3f}".format ( self.width1                   ) ) ,
                  ( "Width 2"              , "{:.3f}".format ( self.width2                   ) ) ]

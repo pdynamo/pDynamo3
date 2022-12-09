@@ -1,6 +1,7 @@
 """Base class for pairwise interactions."""
 
-from pCore import logFile       , \
+from pCore import Align         , \
+                  logFile       , \
                   LogFileActive , \
                   RawObjectConstructor
 
@@ -41,6 +42,8 @@ cdef class PairwiseInteraction:
         self._Allocate ( )
         self.SetOptions ( **state )
 
+    def __str__ ( self ): return "Pairwise Interaction"
+
     def _Allocate ( self ):
         """Allocation."""
         pass
@@ -60,6 +63,10 @@ cdef class PairwiseInteraction:
                  "Lennard-Jones A" : None ,
                  "Lennard-Jones B" : None }
 
+    def OptionRecords ( self ):
+        """Option records and subobjects that also have options."""
+        return ( [], [] )
+
     @classmethod
     def Raw ( selfClass ):
         """Raw constructor."""
@@ -77,7 +84,19 @@ cdef class PairwiseInteraction:
 
     def SummaryItems ( self ):
         """Summary items."""
-        pass
+        return []
+
+    def TableOfOptions ( self, log = logFile ):
+        """Output a table with the default options."""
+        if LogFileActive ( log ):
+            ( records, subObjects ) = self.OptionRecords ( )
+            alignments = [ Align.Left ] * ( len ( records[0] ) - 1 ) + [ Align.Right ]
+            headers    = [ "Option", "Description", "Type", "Default" ]
+            title      = "{:s} Option Table".format (  str ( self ) )
+            log.TableOfRecords ( records, alignments = alignments, headers = headers, title = title )
+            if len ( subObjects ) > 0:
+                for subObject in subObjects:
+                    subObject.TableOfOptions ( log = log )
 
     @property
     def range ( self ): return 0.0

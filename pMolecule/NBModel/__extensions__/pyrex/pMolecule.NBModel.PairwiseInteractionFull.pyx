@@ -31,6 +31,8 @@ cdef class PairwiseInteractionFull ( PairwiseInteraction ):
         """Return the state."""
         return { "dampingCutOff" : self.cObject.dampingCutOff }
 
+    def __str__ ( self ): return "Full Pairwise Interaction"
+
     def _Allocate ( self ):
         """Allocation."""
         cdef CStatus cStatus = CStatus_OK
@@ -117,6 +119,10 @@ cdef class PairwiseInteractionFull ( PairwiseInteraction ):
                                              &cStatus               )
         if cStatus != CStatus_OK: raise NBModelError ( "Error calculating MM energy." )
         return ( eElectrostatic, eLennardJones )
+
+    def OptionRecords ( self ):
+        """Option records and subobjects that also have options."""
+        return ( [ ( "dampingCutOff", "Damping Cut-Off", "float", "{:.3f}".format ( self.cObject.dampingCutOff ) ) ], [] )
 
     def QCMMGradients ( self,              multipoleOrder              ,
                               RealArray1D  multipolesQ        not None ,

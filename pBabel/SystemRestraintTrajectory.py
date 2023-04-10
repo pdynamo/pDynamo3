@@ -173,7 +173,7 @@ class SystemRestraintTrajectoryDataHandler ( AttributableObject ):
                 hasEnergy = self.hasEnergy and ( "Potential Energy" in toKeep )
                 hasVolume = self.hasVolume and ( "Volume"           in toKeep )
                 # . Treat indices.
-                indices.order ( )
+                indices.sort ( )
                 # . Indices of restraints.
                 d = 0
                 if hasEnergy: d += 1
@@ -186,9 +186,8 @@ class SystemRestraintTrajectoryDataHandler ( AttributableObject ):
                 oldPeriods      = self.periods
                 oldRank         = self.rank
                 # . Data.
-                numberOfFrames  = sum ( self.windowPoints )
                 data            = []
-                for c in range ( 0, numberOfFrames, oldRank ):
+                for c in range ( 0, len(oldData), oldRank ):
                     for r in indices: data.append ( oldData[c+r] )
                 # . Energy models.
                 energyModels = []

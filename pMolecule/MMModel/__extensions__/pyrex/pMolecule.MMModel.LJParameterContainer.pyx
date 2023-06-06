@@ -237,6 +237,7 @@ cdef class LJParameterContainer:
             if doKeys:
                 ( doKeys, oldToNew, parameterKeys, epsilons, sigmas ) = selfClass.MergeKeys ( parameterKeys, epsilons, sigmas )
             else:
+                oldToNew      = None
                 parameterKeys = None
 #            print "New>", parameterKeys, epsilons, sigmas, len ( epsilons )
             # . Allocate the object.

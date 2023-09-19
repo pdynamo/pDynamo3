@@ -209,6 +209,11 @@ class QCModelORCA ( QCModel ):
                         words                   = line.split ( )
                         scratch["Cycles"]       = int ( words[-3] )
                         scratch["Is Converged"] = True
+                    # . Convergence OK if xTB being used (added by Fernando Bachega).
+                    elif line.find ( "convergence criteria satisfied after" ) >= 0:
+                        words                   = line.split ( )
+                        scratch["Cycles"]       = int ( words[5] )
+                        scratch["Is Converged"] = True
                     # . Convergence not OK.
                     elif line.find ( "SCF NOT CONVERGED AFTER" ) >= 0:
                         words             = line.split ( )

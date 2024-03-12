@@ -11,6 +11,7 @@
 */
 
 # include "f2c.h"
+# include "stdio.h"
 
 /* Table of constant values */
 

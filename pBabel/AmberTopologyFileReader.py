@@ -114,6 +114,7 @@ def _YXTriangle ( n ): return ( n * ( n + 1 ) ) // 2
 def _YX3        ( n ): return 3 * n
 def _YX4        ( n ): return 4 * n
 def _YX5        ( n ): return 5 * n
+def _YX6        ( n ): return 6 * n
 
 # . In AMBER 12 - two additional sections after DIHEDRAL_PHASE are SCEE_SCALE_FACTOR
 # . and SCNB_SCALE_FACTOR. One should also maybe take care of three sections (RADIUS_SET,
@@ -163,7 +164,30 @@ _SECTIONDATA = { "ATOM_NAME"                  : ( _NATOMS, _YX         ) ,
                  "IPOL"                       : ( -1,      _YX         ) ,
                  "SOLVENT_POINTERS"           : ( -1,      _YX         ) ,
                  "ATOMS_PER_MOLECULE"         : ( -1,      _YX         ) ,
-                 "BOX_DIMENSIONS"             : ( -1,      _YX         ) }
+                 "BOX_DIMENSIONS"             : ( -1,      _YX         ) ,
+                 "CMAP_COUNT"                 : ( -1,      _YX         ) ,
+                 "CMAP_RESOLUTION"            : ( -1,      _YX         ) ,
+                 "CMAP_PARAMETER_01"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_02"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_03"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_04"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_05"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_06"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_07"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_08"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_09"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_10"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_11"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_12"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_13"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_14"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_15"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_16"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_17"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_18"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_19"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_PARAMETER_20"          : ( -1,      _YXSquared  ) ,
+                 "CMAP_INDEX"                 : ( -1,      _YX6        ) }
 
 #===================================================================================================================================
 # . AmberTopology file reader class.
@@ -201,9 +225,12 @@ class AmberTopologyFileReader ( TextFileReader ):
                     data = _SECTIONDATA.get ( sectionName, None )
                     if data is None: self.Warning ( "Unknown section name: " + sectionName, True )
                     ( pointerIndex, dimensioner ) = data
-                    if sectionName == "ATOMS_PER_MOLECULE": numberOfItems = self.solvent_pointers[1]
-                    elif pointerIndex < 0:                  numberOfItems = -1
-                    else:                                   numberOfItems = self.pointers[pointerIndex]
+                    if   sectionName == "ATOMS_PER_MOLECULE": numberOfItems = self.solvent_pointers[1]
+                    elif sectionName == "CMAP_INDEX"        : numberOfItems = self.cmap_count[0]
+                    elif sectionName == "CMAP_RESOLUTION"   : numberOfItems = self.cmap_count[1]
+                    elif sectionName.startswith ( "CMAP_PARAMETER_" ): numberOfItems = self.cmap_resolution[int(sectionName[15:-1])-1]
+                    elif pointerIndex < 0: numberOfItems = -1
+                    else:                  numberOfItems = self.pointers[pointerIndex]
                     setattr ( self, sectionName.lower ( ), self.ParseSectionData ( sectionName, dimensioner ( numberOfItems ) ) )
             except EOFError:
                 pass
@@ -240,8 +267,10 @@ class AmberTopologyFileReader ( TextFileReader ):
     def ParseSectionData ( self, sectionName, numberOfItems ):
         """Parse a section."""
         items = None
-        # . The FORMAT line.
-        self.line = next ( self.file ).strip ( )
+        # . The FORMAT line preceded by optional COMMENT lines.
+        while True:
+            self.line = next ( self.file ).strip ( )
+            if not self.line.startswith ( "%COMMENT" ): break
         if ( self.line[0:8] != "%FORMAT(" ) or ( self.line[-1] != ")" ): self.Warning ( "Invalid " + sectionName + " format line: " + self.line.rstrip ( ), True )
         try:
             ( number, width, converter, default ) = self.ParseFormat ( self.line[8:-1] )

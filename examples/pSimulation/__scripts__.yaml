@@ -8,6 +8,7 @@ Scripts:
   - MOMExcitedStates
   - OptimizeGeometries
   - PathwaysCOS
+  - QCGridsAndSurfaces
   - RotationTranslationRemoval
   - VibrationalDynamics
 ...

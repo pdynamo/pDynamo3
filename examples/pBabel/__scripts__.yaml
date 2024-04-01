@@ -3,7 +3,6 @@ Scripts:
   - AmberTopCrdRead
   - BSEBasisSetRead
   - CharmmPSFRead
-  - GaussianCubeFileWrite
   - GromacsTopCrdRead
   - ImportExportSystems
   - mmCIFFileReadWrite

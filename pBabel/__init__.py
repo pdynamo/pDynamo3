@@ -19,6 +19,7 @@ from .DYLFileReader             import DYLFileReader
 from .DYLFileWriter             import DYLFileWriter                           
 from .ExportImport              import _Exporter                            , \
                                        ExportFileFormats                    , \
+                                       ExportObjects                        , \
                                        ExportOptions                        , \
                                        ExportSystem                         , \
                                        ExportTrajectory                     , \

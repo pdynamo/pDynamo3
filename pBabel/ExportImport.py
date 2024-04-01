@@ -203,6 +203,16 @@ def ExportFileFormats ( ):
     """Return a list of the export file formats."""
     return _Exporter.FileFormats ( )
 
+def ExportObjects ( path, object, **options ):
+    """Export objects from the file."""
+    format  = options.pop ( "format", None    )
+    log     = options.pop ( "log"   , logFile )
+    handler = _Exporter.GetHandler ( path, format = format )
+    item    = handler.ExportObject ( path, object, **options )
+    if LogFileActive ( log ):
+        log.Paragraph( "Objects exported to \"{:s}\" in {:s} format.".format ( ExportImportPathOutput ( path ), handler.label ) )
+    return item
+
 def ExportOptions ( log = logFile ):
     """List the export options."""
     _Exporter.HandlerSummary ( log = log, title = "Export Options" )

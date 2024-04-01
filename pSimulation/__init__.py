@@ -50,6 +50,7 @@ from .NormalModes                    import ModifyOption                        
                                             NormalModesTrajectory_SystemGeometry         , \
                                             QuasiHarmonic_SystemGeometry                 , \
                                             ThermodynamicsRRHO_SystemGeometry
+from .QCGridProperties               import QCGridPropertyGenerator
 from .QCUtilities                    import DensityFitMultipoles                         , \
                                             DetermineWavefunctionOverlap                 , \
                                             EnforceChargeRestraints                      , \

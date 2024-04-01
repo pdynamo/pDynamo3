@@ -145,6 +145,14 @@ cdef class RegularGrid:
 
     # . Properties.
     @property
+    def origin ( self ):
+        cdef CInteger d
+        origin = []
+        if self.cObject != NULL:
+            for d from 0 <= d < self.cObject.ndimensions:
+                origin.append ( self.cObject.dimensions[d].lower )
+        return origin
+    @property
     def rank ( self ):
         if self.cObject == NULL: return 0
         else:                    return self.cObject.ndimensions
@@ -159,3 +167,11 @@ cdef class RegularGrid:
     @property
     def size ( self ):
         return RegularGrid_NumberOfGridPoints ( self.cObject )
+    @property
+    def spacing ( self ):
+        cdef CInteger d
+        spacing = []
+        if self.cObject != NULL:
+            for d from 0 <= d < self.cObject.ndimensions:
+                spacing.append ( self.cObject.dimensions[d].binSize )
+        return spacing

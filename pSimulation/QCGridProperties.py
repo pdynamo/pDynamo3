@@ -74,6 +74,20 @@ class QCGridProperty ( QCBaseProperty ):
                  "orbitalIndices" : self.orbitalIndices ,
                  "title"          : self.label          }
 
+    def Isosurface ( self, isovalue, orbitalIndex = None ):
+        """Generate an isosurface."""
+        shape   = self.grid.shape
+        sliceND = False
+        if ( self.orbitalIndices is not None ) and ( len ( self.orbitalIndices ) > 1 ):
+            shape   = list ( shape ) + [ len ( self.orbitalIndices ) ]
+            sliceND = True
+            try: index = self.orbitalIndices.index ( orbitalIndex )
+            except: raise ValueError ( "Orbital index specified for isosurface generation not found." )
+        dataND = Reshape ( self.gridValues, shape, resultClass = RealArrayND )
+        if sliceND: dataND = dataND[:,:,:,index]
+        surface = MarchingCubes_Isosurface3D ( self.grid, dataND, isovalue )
+        return surface
+
 class QCIsosurface ( QCBaseProperty ):
     """A QC isosurface."""
 
@@ -193,17 +207,15 @@ class QCGridPropertyGenerator ( SummarizableObject ):
                                                                  spinType   = spinType        ,
                                                                  system     = self.system     )
 
-    def Isosurface ( self, dataTag, isovalue, tag = _DefaultIsosurfaceTag ):
+    def Isosurface ( self, dataTag, isovalue, orbitalIndex = None, tag = _DefaultIsosurfaceTag ):
         """Generate an isosurface."""
-        gridProperty  = self.GetProperty ( dataTag )
-        if not isinstance ( gridProperty, QCGridProperty ):
-            raise QCModelError ( "Invalid grid property for isosurface generation." )
-        data1D        = gridProperty.gridValues
-        dataND        = Reshape ( data1D, self.grid.shape, resultClass = RealArrayND )
-        surface       = MarchingCubes_Isosurface3D ( self.grid, dataND, isovalue )
-        surface.label = "{:s} with isovalue {:.1f}".format ( tag.capitalize ( ), isovalue )
-        self.properties[tag] = QCIsosurface.WithOptions ( isosurface = surface  ,
-                                                          isovalue   = isovalue )
+        gridProperty = self.GetProperty ( dataTag )
+        if hasattr ( gridProperty, "Isosurface" ):
+            surface       = gridProperty.Isosurface ( isovalue, orbitalIndex = orbitalIndex )
+            surface.label = "{:s} with isovalue {:.1f}".format ( tag.capitalize ( ), isovalue )
+            self.properties[tag] = QCIsosurface.WithOptions ( isosurface = surface  ,                                               isovalue   = isovalue )
+        else:
+            raise QCModelError ( "Invalid QC property for isosurface generation." )
 
 #===================================================================================================================================
 # . Test.

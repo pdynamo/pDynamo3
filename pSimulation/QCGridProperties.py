@@ -132,7 +132,7 @@ class QCGridPropertyGenerator ( SummarizableObject ):
             radii = allRadii
         else:
             radii = Array.WithExtent ( len ( self.atomicNumbers ) )
-            for ( i, s ) in enumerate ( self.qcAtoms ): radii[i] = allRadii[s]
+            for ( i, s ) in enumerate ( self.system.qcState.qcAtoms ): radii[i] = allRadii[s]
         radii.Scale ( radiusFactor / Units.Length_Bohrs_To_Angstroms )
         # . Get grid axis data so that the grid encloses fully the QC system.
         gridAxes = []

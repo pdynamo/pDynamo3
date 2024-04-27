@@ -95,7 +95,8 @@ class QCModelMNDO ( QCModelBase ):
         overlap                      = Array.WithExtent ( orbitalBases.numberOfFunctions, storageType = StorageType.Symmetric )
         target.scratch.overlapMatrix = overlap
         self.gridPointEvaluator.f1Of1i ( target )
-        super ( QCModelMNDO, self ).GetOrthogonalizer ( target, doInverse = doInverse )
+        super ( QCModelMNDO, self ).GetOrthogonalizer ( target, doInverse = doInverse, doLoewdin = doLoewdin )
+        target.scratch.Pop ( "overlapMatrix" )
 
     def GetParameters ( self, target ):
         """Get the parameters for the model."""

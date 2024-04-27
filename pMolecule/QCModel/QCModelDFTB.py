@@ -140,7 +140,15 @@ class QCModelDFTB ( QCModel ):
                              "sccTolerance"         : 1.0e-8       ,
                              "scratch"              : _DFTBScratch ,
                              "skfPath"              : "."          ,
-                             "useSCC"               : False        } )
+                             "useSCC"               : False        ,
+                             
+                             #. By Bachega at April / 2024,
+                             #. following the instructios from: https://dftb.org/parameters/download/3ob/3ob-3-1-cc
+                             "ThirdOrderFull"       : True         ,  
+                             "zeta"                 : 4.00         , 
+                             "HubbardDerivs"        : None         , # should be a dict like: {'Br': -0.0573 , 'C' : -0.1492 ,'Ca': -0.0340 ...}
+                             } )
+                             
     _summarizable.update ( { "deleteJobFiles"       :   "Delete Job Files"                    ,
                              "fermiTemperature"     : ( "Fermi Temperature"      , "{:.3f}" ) ,
                              "gaussianBlurWidth"    : ( "Gaussian Blur Width"    , "{:.3f}" ) ,
@@ -148,6 +156,9 @@ class QCModelDFTB ( QCModel ):
                              "randomScratch"        :   "Random Scratch"                      ,
                              "sccTolerance"         : ( "SCC Tolerance"          , "{:g}"   ) ,
                              "useSCC"               :   "Use SCC"                           } )
+
+ 
+
 
     def AtomicCharges ( self, target, chargeModel = None ):
         """Atomic charges."""
@@ -370,6 +381,46 @@ class QCModelDFTB ( QCModel ):
             inFile.write ( "  SCCTolerance       = {:g}\n".format ( self.sccTolerance         ) )
         else:
             inFile.write ( "  SCC = No\n" )
+        #--------------------------------------------------------------------------------------     
+        # . ThirdOrderFull 
+        '''              
+        Insertions (by Fernando Bachega  April 23 /2023) 
+        according to  https://dftb.org/parameters/download/3ob/3ob-3-1-cc
+        '''
+        if self.ThirdOrderFull:
+            if self.HubbardDerivs:
+                pass
+            else:
+                
+                self.HubbardDerivs = {
+                                         'Br': -0.0573 ,
+                                         'C' : -0.1492 ,
+                                         'Ca': -0.0340 ,
+                                         'Cl': -0.0697 ,
+                                         'F' : -0.1623 ,
+                                         'H' : -0.1857 ,
+                                         'I' : -0.0433 ,
+                                         'K' : -0.0339 ,
+                                         'Mg': -0.02   ,
+                                         'N' : -0.1535 ,
+                                         'Na': -0.0454 ,
+                                         'O' : -0.1575 ,
+                                         'P' : -0.14   ,
+                                         'S' : -0.11   ,
+                                         'Zn': -0.03   ,
+                                         }
+
+            inFile.write ( "  ThirdOrderFull     = Yes\n" )
+            inFile.write ( "  HCorrection        = Damping { \n")
+            inFile.write ( "  Exponent = {:f}\n".format (self.zeta))
+            inFile.write ( "  }\n" )
+            inFile.write ( "  HubbardDerivs {\n")
+            for  s  in  uniqueSymbols:
+                #inFile.write ( "    {:2s} = {:f}\n".format ( s, Hubbard_Derivs_parameters[s]))
+                inFile.write ( "    {:2s} = {:f}\n".format ( s, self.HubbardDerivs[s]))
+            inFile.write ( "  }\n" )
+        #--------------------------------------------------------------------------------------     
+            
         # . Maximum angular momenta.
         inFile.write ( "  MaxAngularMomentum = {\n" )
         for ( s, q ) in zip ( uniqueSymbols, uniqueQNs ): inFile.write ( "    {:2s} = \"{:s}\"\n".format ( s, _OrbitalQuantumNumberLabels[q] ) )

@@ -144,12 +144,17 @@ class DIISSCFConvergerState ( AttributableObject ):
         self.inverseOrthogonalizer = scratch.Get ( "inverseOrthogonalizer", None )
         self.orthogonalizer        = scratch.Get ( "orthogonalizer"       , None )
         self.overlapMatrix         = scratch.Get ( "overlapMatrix"        , None )
+        if ( self.inverseOrthogonalizer is None ) or \
+           ( self.orthogonalizer        is None ) or \
+           ( self.overlap               is None ):
+            self.inverseOrthogonalizer = None
+            self.orthogonalizer        = None
+            self.overlapMatrix         = None
         # . Allocate all necessary space.
         if self.orthogonalizer is None: m = extent
         else:                           m = self.orthogonalizer.shape[1]
         self._Allocate ( m, extent, maximumHistory, useODA )
         #self._Allocate ( extent, extent, maximumHistory, useODA )
-        return self
         return self
 
     def HandleError ( self, error ):

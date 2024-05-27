@@ -36,7 +36,7 @@ cdef class PairwiseInteractionSplineABFS ( PairwiseInteraction ):
 
     def __copy__ ( self ):
         """Copying."""
-        return self.__class__ ( **self.__getstate__ )
+        return self.__class__ ( **self.__getstate__ ( ) )
 
     def __dealloc__ ( self ):
         """Finalization."""

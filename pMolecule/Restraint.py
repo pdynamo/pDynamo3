@@ -409,17 +409,22 @@ class RestraintMultipleTether ( Restraint ):
     def Energy ( self, coordinates3, gradients3 = None ):
         """Calculate the energy."""
         fTotal = 0.0
+        sr12   = 0.0
         v12    = Vector3.Null ( )
         for i in self.selection:
             coordinates3[i].CopyTo ( v12 )
             v12.Add ( self.reference[i], scale = -1.0 )
             r12 = v12.Norm2 ( )
+            sr12 += r12
             ( f, dF ) = self.energyModel.Energy ( r12 )
             fTotal += f
             if ( gradients3 is not None ) and ( r12 != 0.0 ):
                 v12.Scale ( dF / r12 )
                 gradients3.AddScaledRow ( i, 1.0, v12 )
-        return ( fTotal, None )
+        return ( fTotal, sr12 )
+        #return ( fTotal, None )
+        # . GMA: None gives read/write errors in SystemRestraintTrajectory.py/WriteOwnerData() if len(self.labels) > 1.
+
 
     def Merge ( self, indexIncrement ):
         """Merging."""
@@ -592,6 +597,272 @@ class RestraintTether ( Restraint ):
         if self.point in selection:
             pruned = self.__class__ ( selection.Position ( self.point ), Clone ( self.origin ), Clone ( self.energyModel ) )
         return pruned
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------
+
+class RestraintMCEC ( Restraint ):
+    """Modified center of excess charge (mCEC) restraint. 
+       Implemented in Nov/2022 by GMA. Please, cite:
+       DOI: 10.1101/2024.11.22.624873
+       DOI: 10.1021/jp052328q
+       Example script in https://doi.org/10.5281/zenodo.14198667
+    """
+
+    _attributable = dict ( Restraint._attributable )
+    _classLabel   = "mCEC" 
+    _attributable.update ( { "rsw"      : 1.20 , # Angstroms ; CHARMM default is rsw=1.20 ; dsw=0.04
+                             "dsw"      : 0.04 ,
+                             "donor"    : None , 
+                             "acceptor" : None ,
+                             "weights"  : {}   ,
+                             "groups"   : []   } )
+    
+    # weights : dict of titrable atom_index:weight; 
+    #           O:2.0  water 
+    #           N:2.0  LYS
+    #           N:0.5  HIS
+    #           O:0.0  ASP/GLU (anion) or 0.5 (neutral)
+    #           N:4/3  ARG
+    #           H:0.1  all acidic H
+
+    # groups  : list of pairs of O/N atom_index in a coupled protonation group (e.g, [(OD1,OD2)] in Asp)
+
+    def _CheckOptions ( self ):
+        """Check options."""
+        super ( RestraintMCEC, self )._CheckOptions ( )
+        if not ( isinstance ( self.rsw     , float ) and \
+                 isinstance ( self.dsw     , float ) and \
+                 isinstance ( self.donor   , int   ) and \
+                 isinstance ( self.acceptor, int   ) and \
+                 isinstance ( self.weights , dict  ) and \
+                 isinstance ( self.groups  , list  ) ):
+            raise TypeError ( "Invalid mCEC options." )
+
+    def Energy ( self, coordinates3, gradients3 = None ):
+        """Calculate the energy."""
+
+        # . Calculate the mCEC.
+        mCEC = self.mCEC ( coordinates3 )
+
+        # . Calculate reaction coordinate (r12) from mCEC and the position of donor and acceptor atoms.
+        D  = Vector3.Null ( ) 
+        coordinates3[self.donor].CopyTo ( D )
+        D.Add( mCEC, scale = -1.0 )
+        dD  = D.Norm2 ()
+
+        A  = Vector3.Null ( ) 
+        coordinates3[self.acceptor].CopyTo ( A )
+        A.Add( mCEC, scale = -1.0 )
+        dA  = A.Norm2 ()
+
+        r12 = dD/(dD+dA) 
+
+        ( f, df ) = self.energyModel.Energy ( r12 )
+        self.mCECval = mCEC
+
+        if gradients3 is not None:
+
+            fden = df / (dD+dA)
+            fptn = fden * r12
+         
+            # . Propagate restraint force to mCEC atoms.
+            v12 = Vector3.Null ( )
+            D.CopyTo ( v12 )
+            v12.Scale ( - fden / dD ) 
+            gradients3.AddScaledRow ( self.donor, -1.0, v12 ) 
+            self.dmCEC ( coordinates3, gradients3, v12 )
+
+            A.CopyTo ( v12 )
+            v12.Scale ( fptn / dA ) 
+            gradients3.AddScaledRow ( self.acceptor, -1.0, v12 )
+            self.dmCEC ( coordinates3, gradients3, v12 )
+
+            D.CopyTo ( v12 )
+            v12.Scale ( fptn / dD ) 
+            gradients3.AddScaledRow ( self.donor, -1.0, v12 )
+            self.dmCEC ( coordinates3, gradients3, v12 )
+
+        return ( f, r12 )
+
+
+    def Merge ( self, indexIncrement ):
+        """Merging."""
+        new = Clone ( self )
+        new.donor    += indexIncrement
+        new.acceptor += indexIncrement
+        return new
+
+
+    def Prune ( self, selection ):
+        """Pruning."""
+        pruned = None
+        if ( self.donor    in selection ) and \
+           ( self.acceptor in selection ):
+            pruned = self.__class__ ( ( selection.Position ( self.donor ), \
+                                        selection.Position ( self.acceptor ), \
+                                        Clone ( self.weights ) , Clone ( self.groups ) , Clone ( self.rsw ), Clone ( self.dsw ) ), \
+                                        Clone ( self.energyModel ) )
+        return pruned
+
+
+    def Fsw ( self, d, doGrad = False ):
+        """Switch function for bond connectivity."""
+        e   = math.exp( (d - self.rsw) / self.dsw )
+        fsw = 1/(1 + e)
+        if doGrad:
+            if (e < 1.0e+40):
+               return fsw, ( -1.0 / ((1.0 + e)*(1.0 + e)) ) * e / self.dsw
+            else:
+               return fsw, 0.0
+        else: 
+            return    fsw
+
+    
+    def mCEC ( self, coordinates3 ):
+        """Calculate the mCEC as defined in JPCA, 2006, 548, DOI: 10.1021/jp052328q """
+        protonTerm     = Vector3.Null ( )
+        heavyAtomTerm  = Vector3.Null ( )
+        correctionTerm = Vector3.Null ( )
+        coupledTerm    = Vector3.Null ( )
+        mcec           = Vector3.Null ( )
+
+        kexp   = 15
+        Hlist  = []
+        ONlist = []
+
+        for i in list( self.weights.keys() ):
+            if self.weights[i] == 0.1 : # only acidic H
+                Hlist.append(i)
+                protonTerm.Add    ( coordinates3[i], scale = 1.0 )
+            else: 
+                ONlist.append(i)
+                heavyAtomTerm.Add ( coordinates3[i], scale = - self.weights[i] )
+
+
+        for j in ONlist:
+            for i in Hlist:
+                v12  = coordinates3.Displacement(i,j) 
+                dist = v12.Norm2( ) 
+                fsw  = self.Fsw(dist)
+                correctionTerm.Add( v12            , scale = - fsw )
+
+        for grp in self.groups:
+            # . CHARMM implementation uses a midpoint of two acceptor atoms.
+            mP = Vector3.Null ( )
+
+            for k in grp: mP.Add( coordinates3[k], scale = 0.5 ) 
+
+            for k in grp:
+                    v  = Vector3.Null ( )
+                    mP.CopyTo ( v )
+                    v.Add( coordinates3[k], scale = -1.0 )
+
+                    f15 = 0
+                    f16 = 0
+                    for i in Hlist:
+                        dist = coordinates3.Distance(i,k)
+                        f    = self.Fsw(dist)
+                        f16 += f**(kexp+1)
+                        f15 += f** kexp
+                    mk = 0
+                    if (f15 > 1.0e-20): mk = f16/f15 
+                    
+                    # . CHARMM implementation does not include weights.
+                    coupledTerm.Add( v             , scale = mk  ) 
+
+        mcec.Add ( protonTerm    , 1.0 )
+        mcec.Add ( heavyAtomTerm , 1.0 )
+        mcec.Add ( correctionTerm, 1.0 )
+        mcec.Add ( coupledTerm   , 1.0 )
+
+        return mcec
+
+    def dmCEC ( self, coordinates3, gradients3, v12 ):
+        """ Propagate restraint force to cartesian gradients of mCEC atoms. """
+
+        bvH  = Vector3.Null ( )
+        bvON = Vector3.Null ( )
+
+        kexp   = 15
+        Hlist  = []
+        ONlist = []
+
+        for i in list( self.weights.keys() ):
+            if self.weights[i] == 0.1 : # only acidic H
+                Hlist.append(i)
+                gradients3.AddScaledRow ( i,               1.0, v12 )
+            else: 
+                ONlist.append(i)
+                gradients3.AddScaledRow ( i, - self.weights[i], v12 )
+
+        for j in ONlist:
+            for i in Hlist:
+                d    = coordinates3.Displacement(i,j) 
+                dist = d.Norm2( ) 
+                dfsw = self.Fsw(dist, doGrad = True)
+                fsw  = dfsw[0]
+                dd   = dfsw[1] / dist
+
+                bvH[0]  = - v12[1]*d[0]*dd*d[1] - v12[2]*d[0]*dd*d[2] - v12[0]*d[0]*dd*d[0] - v12[0]*fsw 
+                bvH[1]  = - v12[0]*d[1]*dd*d[0] - v12[2]*d[1]*dd*d[2] - v12[1]*d[1]*dd*d[1] - v12[1]*fsw 
+                bvH[2]  = - v12[0]*d[2]*dd*d[0] - v12[1]*d[2]*dd*d[1] - v12[2]*d[2]*dd*d[2] - v12[2]*fsw 
+
+                bvON[0] =   v12[1]*d[0]*dd*d[1] + v12[2]*d[0]*dd*d[2] + v12[0]*d[0]*dd*d[0] + v12[0]*fsw 
+                bvON[1] =   v12[0]*d[1]*dd*d[0] + v12[2]*d[1]*dd*d[2] + v12[1]*d[1]*dd*d[1] + v12[1]*fsw 
+                bvON[2] =   v12[0]*d[2]*dd*d[0] + v12[1]*d[2]*dd*d[1] + v12[2]*d[2]*dd*d[2] + v12[2]*fsw 
+
+                gradients3.AddScaledRow ( i,               1.0, bvH  )
+                gradients3.AddScaledRow ( j,               1.0, bvON )
+
+        for grp in self.groups:
+            mP = Vector3.Null ( )
+            for k in grp: mP.Add( coordinates3[k], scale = 0.5 ) 
+
+            for k in grp:
+                    v = Vector3.Null ( )
+                    mP.CopyTo ( v )
+                    v.Add( coordinates3[k], scale = -1.0 )
+
+                    f15 = 0
+                    f16 = 0
+                    for i in Hlist:
+                        dist = coordinates3.Distance(i,k)
+                        f    = self.Fsw(dist)
+                        f16 += f**(kexp+1)
+                        f15 += f** kexp
+                    mk = 0
+                    if (f15 > 1.0e-20): mk = f16/f15 
+
+                    # . CHARMM implementation does not include weights.
+                    gradients3.AddScaledRow     ( k,                    - mk,       v12 )
+
+                    for l in grp:
+                        # . CHARMM implementation does not include weights.
+                        gradients3.AddScaledRow ( l,                      mk * 0.5, v12 ) 
+
+                    for i in Hlist:
+                        d    = coordinates3.Displacement(i,k)
+                        dist = d.Norm2( )
+                        dfsw = self.Fsw(dist, doGrad = True)
+
+                        w1   = dfsw[0]**(kexp-1)
+                        w2   = dfsw[0]* w1
+
+                        f1   = 0.0
+                        if (f15 > 1.0e-20):
+                           f1 = ( f15 * (kexp+1) * w2  -  f16 * kexp * w1 ) / (f15 * f15)
+                           f1 *= dfsw[1]/dist
+
+                        G = Vector3.Null ( )
+                        for j in range(3): G[j] = v12[j]*v[j]*f1
+                        gsum=G[0]+G[1]+G[2]
+
+                        gradients3.AddScaledRow ( i,   gsum, d ) 
+                        gradients3.AddScaledRow ( k, - gsum, d ) 
+
+        return 
+
 
 #===================================================================================================================================
 # . Testing.

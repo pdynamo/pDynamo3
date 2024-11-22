@@ -38,7 +38,8 @@ from .Restraint                                 import RestraintDihedral        
                                                        RestraintMultipleDistance                 , \
                                                        RestraintMultipleTether                   , \
                                                        RestraintOutOfPlaneBend                   , \
-                                                       RestraintTether
+                                                       RestraintTether                           , \
+                                                       RestraintMCEC
 from .RestraintModel                            import RestraintModel
 from .SEAMObjectiveFunction                     import SEAMObjectiveFunction
 from .Sequence                                  import Sequence                                  , \

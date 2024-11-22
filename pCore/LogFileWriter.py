@@ -101,6 +101,7 @@ class LogFileWriter ( AttributableObject ):
         """Write a footer and close the file."""
         if self.cpuTime is not None: self.Paragraph ( "CPU Time: " + self.cpuTime.CurrentAsString ( ) )
         self.Paragraph ( "Stop Time: " + time.asctime ( time.localtime ( None ) ) )
+        # . GMA: Comment line below for usage w/ Jupyter notebooks.
         self.Close ( )
 
     def Header ( self, title = None ):

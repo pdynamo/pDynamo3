@@ -334,6 +334,7 @@ class QCModelORCA ( QCModel ):
         if doQCMM     : inFile.write ( '%pointcharges "' + state.paths["PC"] + '"\n' )
         if doGradients: mode = "ENGRAD"
         else          : mode = "ENERGY"
+        # . GMA : Removing the " " (space) in .join allows to pass various lines to ORCA.
         inFile.write ( "! " + mode + " BOHRS " + " ".join ( self.keywords ) + "\n" )
         inFile.write ( "* xyz {:d} {:d}\n".format ( target.electronicState.charge, target.electronicState.multiplicity ) )
         for ( i, n ) in enumerate ( state.atomicNumbers ):

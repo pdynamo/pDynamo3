@@ -12,7 +12,7 @@ Name                           : Nitrogen
 Pauling Electronegativity      : 3.04
 Period                         : 2
 RGB Color Indices              : [48, 80, 248]
-Single Bond Distances          : {8     : 1.4, 1     : 1.01, 6     : 1.47, 7     : 1.45}
+Single Bond Distances          : {8     : 1.4, 1     : 1.01, 6     : 1.47, 7     : 1.45,  26: 2.1 }
 Symbol                         : N
 Valence Electrons              : 5
 vdW Radius                     : 1.85

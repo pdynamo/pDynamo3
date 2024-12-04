@@ -21,9 +21,19 @@ from pSimulation       import ConjugateGradientMinimize_SystemGeometry , \
 # . Header.
 logFile.Header ( )
 
+# . DFTB+ settings for the 3ob parameter set used in this example (in skfPath).
+eiHO   = "  ThirdOrderFull = Yes\n  HCorrection = Damping { Exponent = 4.0 }\n  HubbardDerivs = { \n    H = -0.1857 \n    O = -0.1575 \n }"
+eiCHON = "  ThirdOrderFull = Yes\n  HCorrection = Damping { Exponent = 4.0 }\n  HubbardDerivs = { \n    H = -0.1857 \n    O = -0.1575 \n    C = -0.1492 \n    N = -0.1535 \n }"
+
 # . Loop over molecules and QC model options (QC/MM only works with SCC).
 for ( mLabel, qIndices ) in ( ( "bAla_c7eq", [ 10, 11, 12, 13 ] ), ( "waterDimer_cs", [ 0, 1, 2 ] ) ):
     for ( useSCC, qLabel ) in ( ( True , "scc"   ), ):
+
+        # . Select settings.
+        if "bAla" in mLabel:
+           ei = eiCHON
+        else:
+           ei = eiHO
 
         # . Define various models.
         electronicState = ElectronicState.WithOptions ( charge = 0, multiplicity = 1 )

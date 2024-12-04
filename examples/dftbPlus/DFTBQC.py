@@ -18,11 +18,22 @@ from pSimulation       import ConjugateGradientMinimize_SystemGeometry , \
 # . Header.
 logFile.Header ( )
 
+# . DFTB+ settings for the 3ob parameter set used in this example (in skfPath).
+eiHO   = "  ThirdOrderFull = Yes\n  HCorrection = Damping { Exponent = 4.0 }\n  HubbardDerivs = { \n    H = -0.1857 \n    O = -0.1575 \n }"
+eiCHON = "  ThirdOrderFull = Yes\n  HCorrection = Damping { Exponent = 4.0 }\n  HubbardDerivs = { \n    H = -0.1857 \n    O = -0.1575 \n    C = -0.1492 \n    N = -0.1535 \n }"
+
 # . Loop over molecules and QC model options (only +/- SCC in this case).
 for mLabel in ( "bAla_c7eq", "water", "waterDimer_cs" ):
     for ( useSCC, qLabel ) in ( ( False, "noSCC" ) ,
-                                ( True , "scc"   ), ):
+                                ( True , "scc"   ) , ):
 
+        # . Select settings.
+        ei = None
+        if useSCC:
+           if "bAla" in mLabel:
+              ei = eiCHON
+           else:
+              ei = eiHO
         # . Set up the system.
         system                 = ImportSystem ( os.path.join ( dataPathM, "mol", mLabel + ".mol" ) )
         system.electronicState = ElectronicState.WithOptions ( charge = 0, multiplicity = 1 )
@@ -30,7 +41,8 @@ for mLabel in ( "bAla_c7eq", "water", "waterDimer_cs" ):
                                                            randomScratch  = True                             ,
                                                            scratch        = outPath                          ,
                                                            skfPath        = os.path.join ( dataPath, "skf" ) ,
-                                                           useSCC         = useSCC                           )
+                                                           useSCC         = useSCC                           ,
+                                                           extendedInput  = ei   )
         system.DefineQCModel ( qcModel )
         system.Summary ( )
 

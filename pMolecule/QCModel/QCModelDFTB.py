@@ -135,15 +135,17 @@ class QCModelDFTB ( QCModel ):
                              "extendedInput"        : None         ,
                              "fermiTemperature"     : 10.0         ,
                              "gaussianBlurWidth"    :  0.0         ,
+                             "hamiltonian"          : "DFTB"       ,
                              "maximumSCCIterations" : 300          ,
                              "randomScratch"        : False        ,
                              "sccTolerance"         : 1.0e-8       ,
                              "scratch"              : _DFTBScratch ,
                              "skfPath"              : "."          ,
-                             "useSCC"               : False        } )
+                             "useSCC"               : True        } )
     _summarizable.update ( { "deleteJobFiles"       :   "Delete Job Files"                    ,
                              "fermiTemperature"     : ( "Fermi Temperature"      , "{:.3f}" ) ,
                              "gaussianBlurWidth"    : ( "Gaussian Blur Width"    , "{:.3f}" ) ,
+                             "hamiltonian"          :   "Hamiltonian"                         ,
                              "maximumSCCIterations" :   "Maximum SCC Iterations"              ,
                              "randomScratch"        :   "Random Scratch"                      ,
                              "sccTolerance"         : ( "SCC Tolerance"          , "{:g}"   ) ,
@@ -358,9 +360,20 @@ class QCModelDFTB ( QCModel ):
                 inFile.write ( "  {:25.15f}{:25.15f}{:25.15f}\n".format ( sp.H[0,i], sp.H[1,i], sp.H[2,i] ) )
         inFile.write ( "}\n" )
         # . Start Hamiltonian block - basic options only.
-        inFile.write ( "Hamiltonian = DFTB {\n" )
-        inFile.write ( "  Charge             = {:d}\n".format ( target.electronicState.charge ) )
-        inFile.write ( "  Eigensolver        = QR {}\n" )
+        if "xTB" not in self.hamiltonian: 
+            inFile.write ( "Hamiltonian = DFTB {\n" )
+            inFile.write ( "  Eigensolver        = QR {}\n" )
+            # . Maximum angular momenta.
+            inFile.write ( "  MaxAngularMomentum = {\n" )
+            for ( s, q ) in zip ( uniqueSymbols, uniqueQNs ): inFile.write ( "    {:2s} = \"{:s}\"\n".format ( s, _OrbitalQuantumNumberLabels[q] ) )
+            inFile.write ( "  }\n" )
+            # . Slater-Koster files (type 2 only).
+            inFile.write ( "  SlaterKosterFiles = Type2FileNames {\n" )
+            inFile.write ( "    Prefix    = \"{:s}\"\n    Separator = \"-\"\n    Suffix    = \".skf\"\n  }}\n".format ( os.path.join ( self.skfPath, "" ) ) )
+        else:    
+            inFile.write ( "Hamiltonian = xTB {\n" )
+            inFile.write ( "  Method = \"{:s}\"\n".format ( self.hamiltonian ) )
+        inFile.write ( "  Charge = {:d}\n".format ( target.electronicState.charge ) )
         inFile.write ( "  Filling            = Fermi {{ Temperature [Kelvin] = {:.1f} }}\n".format ( self.fermiTemperature ) )
         # . SCC.
         if self.useSCC:
@@ -370,13 +383,6 @@ class QCModelDFTB ( QCModel ):
             inFile.write ( "  SCCTolerance       = {:g}\n".format ( self.sccTolerance         ) )
         else:
             inFile.write ( "  SCC = No\n" )
-        # . Maximum angular momenta.
-        inFile.write ( "  MaxAngularMomentum = {\n" )
-        for ( s, q ) in zip ( uniqueSymbols, uniqueQNs ): inFile.write ( "    {:2s} = \"{:s}\"\n".format ( s, _OrbitalQuantumNumberLabels[q] ) )
-        inFile.write ( "  }\n" )
-        # . Slater-Koster files (type 2 only).
-        inFile.write ( "  SlaterKosterFiles = Type2FileNames {\n" )
-        inFile.write ( "    Prefix    = \"{:s}\"\n    Separator = \"-\"\n    Suffix    = \".skf\"\n  }}\n".format ( os.path.join ( self.skfPath, "" ) ) )
         # . User specified options using extended format.
         if self.extendedInput is not None: inFile.write ( "{:s}\n".format ( self.extendedInput ) )
         # . QC/MM - there are assumptions here about the QC/MM model.

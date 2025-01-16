@@ -12,7 +12,7 @@ Released under the [GNU General Public License](gpl-3.0.txt)
 
 ## Features of pDynamo3
   - Density functional theory and Hartree-Fock QC methods employing Gaussian basis sets
-  - Semi-empirical QC methods of the MNDO type, including AM1, MNDO, PDDG, PM3 and RM1
+  - Semi-empirical QC methods of the MNDO type, including AM1, MNDO, PDDG, PM3, RM1 and PM6
   - Support for some standard MM force fields, including AMBER, CHARMM and OPLS-AA
   - Hybrid QC/MM methods using any combination of the QC and MM potentials implemented in the library
   - Coupling to third-party programs

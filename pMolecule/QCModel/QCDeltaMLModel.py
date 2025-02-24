@@ -8,6 +8,57 @@ from ..EnergyModel        import EnergyClosurePriority , \
                                  EnergyModelState      , \
                                  EnergyModel
 
+# The D3 and ML correction modules are loaded safely, so that they do not break
+# the rest of the installation if they are not present
+
+# NumPy
+try:
+    import numpy as np
+    numpy_available = True
+except:
+    numpy_available = False
+
+# Torch and TorchMD-NET
+try:
+    import torch
+    from torchmdnet.models.model import load_model
+    torchmd_available = True
+except:
+    torchmd_available = False
+
+# Dispersion correction
+try:
+    from dftd3.interface import RationalDampingParam, DispersionModel
+    dftd3_available = True
+except:
+    dftd3_available = False
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# INSTALLATION
+# tested with python 3.11, module 'inp' removed in 3.12
+#
+# PYTHON ENVIRONMENT
+# conda install -c conda-forge simple-dftd3 dftd3-python 
+# conda install -c conda-forge torchmd-net
+#
+# QUESTIONS
+# I added the __init__ constructor which loads the ML correction parameters. It works but it may not be
+# consistent with the rest of teh framework.
+#
+# ISSUES
+# - Missing elements, add to #!#4
+#
+# TBD
+# - D3 gradient
+# - ML gradient
+#
+# RESULTS (kJ/mol)
+# PM6: pDynamo -414.12  MOPAC/cuby -416.31
+# D3:  pDynamo  -80.73  MOPAC/cuby  -78.94
+# ML:  pDynamo  -92.73  MOPAC/cuby  -92.73
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 #===================================================================================================================================
 # . Parameters.
 #===================================================================================================================================
@@ -33,27 +84,86 @@ class QCDeltaMLModel ( EnergyModel ):
     _stateObject  = QCDeltaMLModelState
     _summarizable = dict ( EnergyModel._summarizable )
 
+    # Constants
+    #!#4 - Add missing elements
+    Z_TO_ATYPE = {
+            1: 10, 
+            6: 3, 
+            7: 17, 
+            8: 21, 
+            9: 9, 
+            15: 23, 
+            16: 26,
+            17: 7, 
+            35: 1, 
+            53: 12,
+            }
+
+    def __init__(self, ml_model_file):
+        """Initialize the model and load ML correction data."""
+        # Load ML model
+        self.model = load_model(ml_model_file, derivative=True)
+        self.device = torch.get_default_device()
+        self.model.to(self.device)
+
     def BuildModel ( self, target ):
         """Build the model."""
+        # Python modules check
+        if not numpy_available:
+            raise QCModelError("The QC Delta-ML model requires the numpy python module installed")
+        if not torchmd_available:
+            raise QCModelError("The QC Delta-ML model requires the torchmd-net python module installed")
+        if not dftd3_available:
+            raise QCModelError("The QC Delta-ML model requires the simple-dftd3 and dftd3-python python modules installed")
+        # Method checks
         if target.qcState is None:
             raise QCModelError ( "This QC Delta-ML model requires a pre-defined QC model." )
         elif target.qcModel.hamiltonian != 'pm6':     
             raise QCModelError ( "This QC Delta-ML correction is only valid for the PM6 hamiltonian." )
         else:
             state = super ( QCDeltaMLModel, self ).BuildModel ( target )
+        # Check for parametrized elements
+        for an in target.qcState.atomicNumbers:
+            if not an in self.__class__.Z_TO_ATYPE:
+                raise QCModelError(f"The QC Delta-ML model does not have parameters for element {PeriodicTable.Symbol(an)}")
 
     def Energy ( self, target ):
         """Calculate ML and D3 corrections to the quantum chemical energy."""
-
+        # Coordinates and atomic numbers
         coordinates3  = target.scratch.qcCoordinates3AU
         atomicNumbers = target.qcState.atomicNumbers 
-        # PeriodicTable.Symbol ( atomicNumbers[i] ) gives atomic symbol of atom rank i.
-        # . Add energy corrections.
-        eML = 0.0
-        eD3 = 0.0
-        #
-        target.scratch.energyTerms["QC Delta-ML correction"]      = eML * Units.Energy_Hartrees_To_Kilojoules_Per_Mole
-        target.scratch.energyTerms["QC Dispersion D3 correction"] = eD3 * Units.Energy_Hartrees_To_Kilojoules_Per_Mole
+
+        # Compute D3 correction
+        disp = DispersionModel(
+            numbers=np.array(atomicNumbers), positions=np.array(coordinates3) # Coordinates read in AU
+        )
+        disp_res = disp.get_dispersion(
+            RationalDampingParam(s6=1.0, s8=0.3908, a1=0.566, a2=3.128), grad=target.scratch.doGradients
+        )
+        eD3_au = disp_res.get("energy") # Energy in hartrees
+
+        # Compute ML correction
+        # Convert atomic numbers to atom types
+        atomtypes = []
+        for i, an in enumerate(atomicNumbers):
+            if not an in self.__class__.Z_TO_ATYPE:
+                raise QCModelError(f"The Delta-ML correction is not available for element {PeriodicTable.Symbol(an)}")
+            atomtypes.append(self.__class__.Z_TO_ATYPE[an])
+        # Convert coordinates to Angstrom, reshape the array to 3*natom
+        geom = np.array(coordinates3) * Units.Length_Bohrs_To_Angstroms
+        geom.shape = (geom.size//3, 3)
+        # Prepare data for torch
+        types = torch.tensor(atomtypes, dtype=torch.long)
+        types = types.to(self.device)
+        pos = torch.tensor(geom, dtype=torch.float32)
+        pos = pos.to(self.device)
+        # Run the calculation
+        ml_energy, ml_forces = self.model.forward(types, pos)
+        eML = ml_energy.item() # Returns energy in kJ/mol
+
+        # Add energy corrections.
+        target.scratch.energyTerms["QC Delta-ML correction"]      = eML
+        target.scratch.energyTerms["QC Dispersion D3 correction"] = eD3_au * Units.Energy_Hartrees_To_Kilojoules_Per_Mole
 
         doGradients  = target.scratch.doGradients
         if doGradients:

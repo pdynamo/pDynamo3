@@ -35,19 +35,21 @@ except:
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# NOTES
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#
 # INSTALLATION
 # tested with python 3.11, module 'inp' removed in 3.12
 #
 # PYTHON ENVIRONMENT
+# conda environment with python 3.11
+# run pDynamo installation script, source the environment
 # conda install -c conda-forge simple-dftd3 dftd3-python 
 # conda install -c conda-forge torchmd-net
 #
 # QUESTIONS
-# I added the __init__ constructor which loads the ML correction parameters. It works but it may not be
-# consistent with the rest of teh framework.
-#
-# ISSUES
-# - Missing elements, add to #!#4
+# I added the __init__ constructor which loads the ML correction model file.
+# It works but it may not be consistent with the rest of the framework.
 #
 # TBD
 # - D3 gradient
@@ -85,19 +87,23 @@ class QCDeltaMLModel ( EnergyModel ):
     _summarizable = dict ( EnergyModel._summarizable )
 
     # Constants
-    #!#4 - Add missing elements
     Z_TO_ATYPE = {
-            1: 10, 
-            6: 3, 
-            7: 17, 
-            8: 21, 
-            9: 9, 
-            15: 23, 
-            16: 26,
-            17: 7, 
-            35: 1, 
-            53: 12,
-            }
+        1: 10, # H
+        3: 14, # Li
+        6: 3, # C
+        7: 17, # N
+        8: 21, # O
+        9: 9, # F
+        11: 19, # Na
+        12: 15, # Mg
+        15: 23, # P
+        16: 26, # S
+        17: 7, # Cl
+        19: 13, # K
+        20: 5, # Ca
+        35: 1, # Br
+        53: 12, # I
+    }
 
     def __init__(self, ml_model_file):
         """Initialize the model and load ML correction data."""
@@ -122,6 +128,7 @@ class QCDeltaMLModel ( EnergyModel ):
             raise QCModelError ( "This QC Delta-ML correction is only valid for the PM6 hamiltonian." )
         else:
             state = super ( QCDeltaMLModel, self ).BuildModel ( target )
+
         # Check for parametrized elements
         for an in target.qcState.atomicNumbers:
             if not an in self.__class__.Z_TO_ATYPE:

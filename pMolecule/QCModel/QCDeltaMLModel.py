@@ -51,9 +51,8 @@ except:
 # I added the __init__ constructor which loads the ML correction model file.
 # It works but it may not be consistent with the rest of the framework.
 #
-# TBD
-# - D3 gradient
-# - ML gradient
+# I haven't found constant Units.Energy_Kilojoules_Per_Mole_To_Hartrees,
+# so I divide by the inverse, but the code will be nicer if it was added.
 #
 # RESULTS (kJ/mol)
 # PM6: pDynamo -414.12  MOPAC/cuby -416.31
@@ -175,19 +174,49 @@ class QCDeltaMLModel ( EnergyModel ):
         doGradients  = target.scratch.doGradients
         if doGradients:
             n = len ( target.qcState.atomicNumbers )
-            gradients3 = coordinates3.WithExtent ( n )
-            gradients3.Set ( 0.0 )
-            # . Add gradient corrections to gradients3.
+            # D3 gradient, to be retrieved from disp_res computed above
+            gradients3_d3 = coordinates3.WithExtent(n)
+            # Get gradient, it is in a.u.
+            dftd3_grad = disp_res.get("gradient")
+            # Copy to gradients3_d3
+            for i in range(n):
+                for j in range(3):
+                    gradients3_d3[i][j] = dftd3_grad[i][j]
 
+            # ML corection gradient, available in ml_forces
+            gradients3_ml = coordinates3.WithExtent(n)
+            for i in range(n):
+                for j in range(3):
+                    # Not gradient but forces
+                    # in kJ/mol
+                    gradients3_ml[i][j] = (ml_forces[i][j].item() * -1.0
+                        / Units.Energy_Hartrees_To_Kilojoules_Per_Mole 
+                        / Units.Length_Angstroms_To_Bohrs
+                        )
 
+            # Add gradient corrections to gradients3
             qcGradients3 = target.scratch.qcGradients3AU
-            gradients3.ScatterAdd( 1.0 , qcGradients3 )
+            # qcGradients3.Set(0.0) # For testing corrections only
+            gradients3_d3.ScatterAdd(1.0, qcGradients3)
+            gradients3_ml.ScatterAdd(1.0, qcGradients3)
+
+            #!# Write gradient
+            #print("#" * 80)
+            #print("Gradient")
+            #rmsgrad = qcGradients3.RootMeanSquare()
+            #rmsgrad2 = rmsgrad * Units.Energy_Hartrees_To_Kilojoules_Per_Mole / Units.Length_Bohrs_To_Angstroms
+            #print(f"RMS as is: {rmsgrad}")
+            #print(f"RMS kJ/mol/A: {rmsgrad2}")
+            #print(f"RMS kcal/mol/A: {rmsgrad2 * 0.2390057361376673}")
+            #print("Gradient in kcal/mol/A")
+            #print(np.array(qcGradients3).reshape((-1,3)) * Units.Energy_Hartrees_To_Kilojoules_Per_Mole / Units.Length_Bohrs_To_Angstroms * 0.2390057361376673)
+            #print("#" * 80)
 
     def EnergyClosures ( self, target ):
         """Return energy closures."""
         def a ( ):
             results = self.Energy ( target )
-        return [ ( EnergyClosurePriority.QCEnergy, a, "QC Delta-ML and D3 correction" ) ] 
+        return [ ( EnergyClosurePriority.QCGradients, a, "QC Delta-ML and D3 correction" ) ]
 
     def SummaryItems ( self ):
         """Summary items."""

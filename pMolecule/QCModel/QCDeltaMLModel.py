@@ -11,7 +11,7 @@ from ..EnergyModel        import EnergyClosurePriority , \
 # The D3 and ML correction modules are loaded safely, so that they do not break
 # the rest of the installation if they are not present
 
-# NumPy
+# NumPy (dftd3 expects numpy arrays on input)
 try:
     import numpy as np
     numpy_available = True

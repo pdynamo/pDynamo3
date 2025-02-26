@@ -54,10 +54,6 @@ except:
 # I haven't found constant Units.Energy_Kilojoules_Per_Mole_To_Hartrees,
 # so I divide by the inverse, but the code will be nicer if it was added.
 #
-# RESULTS (kJ/mol)
-# PM6: pDynamo -414.12  MOPAC/cuby -416.31
-# D3:  pDynamo  -80.73  MOPAC/cuby  -78.94
-# ML:  pDynamo  -92.73  MOPAC/cuby  -92.73
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #===================================================================================================================================
@@ -195,22 +191,10 @@ class QCDeltaMLModel ( EnergyModel ):
                         )
 
             # Add gradient corrections to gradients3
-            qcGradients3 = target.scratch.qcGradients3AU
+            qcGradients3 = target.scratch.qcGradients3AU # QM gradient in a.u.
             # qcGradients3.Set(0.0) # For testing corrections only
             gradients3_d3.ScatterAdd(1.0, qcGradients3)
             gradients3_ml.ScatterAdd(1.0, qcGradients3)
-
-            #!# Write gradient
-            #print("#" * 80)
-            #print("Gradient")
-            #rmsgrad = qcGradients3.RootMeanSquare()
-            #rmsgrad2 = rmsgrad * Units.Energy_Hartrees_To_Kilojoules_Per_Mole / Units.Length_Bohrs_To_Angstroms
-            #print(f"RMS as is: {rmsgrad}")
-            #print(f"RMS kJ/mol/A: {rmsgrad2}")
-            #print(f"RMS kcal/mol/A: {rmsgrad2 * 0.2390057361376673}")
-            #print("Gradient in kcal/mol/A")
-            #print(np.array(qcGradients3).reshape((-1,3)) * Units.Energy_Hartrees_To_Kilojoules_Per_Mole / Units.Length_Bohrs_To_Angstroms * 0.2390057361376673)
-            #print("#" * 80)
 
     def EnergyClosures ( self, target ):
         """Return energy closures."""

@@ -155,9 +155,9 @@ class QCModelORCA ( QCModel ):
     def Execute ( self, state ):
         """Execute the job."""
         try:
-            outFile = open ( state.paths["Output"], "w" )
-            subprocess.check_call ( [ self.command, state.paths["Input"] ], stderr = outFile, stdout = outFile )
-            outFile.close ( )
+
+            with open(state.paths["Output"], "w") as outFile:
+                subprocess.check_call ( [ self.command, state.paths["Input"] ], stderr = outFile, stdout = outFile )
             return True
         except:
             return False
@@ -193,9 +193,12 @@ class QCModelORCA ( QCModel ):
             n       = len ( state.atomicNumbers )
             scratch = { "Is Converged" : False }
             outFile = open ( state.paths["Output"], "r" )
+
             while True:
                 try:
-                    line = next ( outFile ).strip ( )
+                    line = next ( outFile ).strip(" *-")
+                    OrcaVersion = re.search(r"Program Version\s+([0-9]+\.[0-9]+\.[0-9]+)", line)  
+                    if OrcaVersion: print(f"orca version: {OrcaVersion.group(0).split()[-1]}")
                     # . CHELPG charges.
                     if line == "Chelpg Charges":
                         data = Array.WithExtent ( n )
@@ -206,9 +209,10 @@ class QCModelORCA ( QCModel ):
                         scratch["CHELPG Charges"] = data
                     # . Convergence OK.
                     elif line.find ( "SCF CONVERGED AFTER" ) >= 0:
-                        words                   = line.split ( )
+                        words                   = line.split()
                         scratch["Cycles"]       = int ( words[-3] )
                         scratch["Is Converged"] = True
+                        print(words)
                     # . Convergence OK if xTB being used (added by Fernando Bachega).
                     elif line.find ( "convergence criteria satisfied after" ) >= 0:
                         words                   = line.split ( )
@@ -226,7 +230,7 @@ class QCModelORCA ( QCModel ):
                             data[i] = Units.Dipole_Atomic_Units_To_Debyes * float ( word )
                         scratch["Dipole"] = data
                     # . Energy.
-                    elif line.startswith ( "FINAL SINGLE POINT ENERGY" ):
+                    elif "FINAL SINGLE POINT ENERGY" in line:
                         scratch["Energy"] = float ( line.split ( )[-1] )
                     # . Loewdin charges.
                     elif line == "LOEWDIN ATOMIC CHARGES":

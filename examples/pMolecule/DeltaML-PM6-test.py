@@ -4,7 +4,7 @@
 # RESULTS (kJ/mol)
 # PM6: pDynamo -414.12  MOPAC/cuby -416.31
 # D3:  pDynamo  -80.73  MOPAC/cuby  -78.94
-# ML:  pDynamo  -92.73  MOPAC/cuby  -92.73
+# ML:  pDynamo -387.98  MOPAC/cuby -387.98
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 import os.path

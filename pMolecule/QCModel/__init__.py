@@ -33,8 +33,6 @@ from .MNDOQCMMEvaluator          import _MNDOQCMMTermLabels                     
 from .MullikenMultipoleEvaluator import MullikenMultipoleEvaluator
 from .QCDefinitions              import ChargeModel                                       , \
                                         FockClosurePriority
-from .QCDeltaMLModel             import QCDeltaMLModel                                    , \
-                                        QCDeltaMLModelState
 from .QCModel                    import QCModel
 from .QCModelBase                import QCModelBase
 from .QCModelDFT                 import QCModelDFT

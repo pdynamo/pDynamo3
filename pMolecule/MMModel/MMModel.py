@@ -76,7 +76,7 @@ class MMModelState ( EnergyModelState ):
         totalCharge    = self.ActiveAtomTotalCharge ( )
         nearestInteger = round ( totalCharge )
         if math.fabs ( totalCharge - nearestInteger ) > tolerance:
-            raise MMModelError ( "Total active MM charge is neither integral nor zero: {:.3f}.".format ( totalCharge ) )
+            raise MMModelError ( "Total active MM charge is neither integral nor zero: {:.6f}.".format ( totalCharge ) )
 
     def DeactivateQCAtoms ( self, pureQCAtoms, baAtoms ):
         """Deactivate MM atoms and terms due to the presence of QC atoms."""

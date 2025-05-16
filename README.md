@@ -15,6 +15,7 @@ Released under the [GNU General Public License](gpl-3.0.txt)
   - Semi-empirical QC methods of the MNDO type, including AM1, MNDO, PDDG, PM3, RM1 and PM6
   - Support for some standard MM force fields, including AMBER, CHARMM and OPLS-AA
   - Hybrid QC/MM methods using any combination of the QC and MM potentials implemented in the library
+  - Δ-ML (Delta Machine Learning) correction to semi-empirical PM6 (PM6-ML) 
   - Coupling to third-party programs
   - Energy calculations
   - Geometry optimizations

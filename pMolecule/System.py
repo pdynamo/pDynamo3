@@ -226,7 +226,10 @@ class System ( SummarizableObject ):
         dipole = None
         for attribute in ( "mmModel", "qcModel" ):
             model = getattr ( self, attribute, None )
-            if model is not None: dipole = model.DipoleMoment ( self, center, dipole = dipole )
+            # if model is not None: dipole = model.DipoleMoment ( self, center, dipole = dipole )
+            # GMA: What's the purpose of model.DipoleMoment ( ..., dipole = dipole )? 
+            #      It breaks dipoles from QCModelDFTB/ORCA, and is not required for QCModelMNDO.
+            if model is not None: dipole = model.DipoleMoment ( self, center )
         return dipole
 
     def Energy ( self, doGradients = False, log = logFile ):

@@ -74,7 +74,7 @@ The pDynamo3 repository includes third-party extension packages in the ```addOns
  - [pcetk](https://github.com/mfx9/pcetk) calculates proton binding energetics in proteins using a continuum electrostatics model.
  - [pyCPR](http://www.bisb.uni-bayreuth.de/index.php?page=data/PyCPR/PyCPR) searches for transition states on molecular potential energy surfaces using the conjugate peak refinement
    algorithm.
-  -[PM6-ML](https://github.com/Honza-R/mopac-ml) Δ-ML (Delta Machine Learning) correction to semi-empirical PM6 energies and gradients.
+ - [PM6-ML](https://github.com/Honza-R/mopac-ml) Δ-ML (Delta Machine Learning) correction to semi-empirical PM6 energies and gradients.
 
 Users should refer to the web pages of these packages for full details about their use.
 

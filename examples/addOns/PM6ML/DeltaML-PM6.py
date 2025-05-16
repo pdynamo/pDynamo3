@@ -9,14 +9,22 @@
 
 import os.path
 
-from pCore              import Selection, TestScript_InputDataPath
+from pCore              import Selection, TestScript_InputDataPath, NotInstalledError, logFile
 from pBabel             import ImportSystem 
 
 from pMolecule          import EnergyModelPriority
 from pMolecule.QCModel  import QCModelMNDO
 from pScientific        import Units
 
-from addOns.PM6ML       import QCDeltaMLModel
+try:
+    from addOns.PM6ML       import QCDeltaMLModel
+    import numpy, torch, dftd3
+except:
+    raise NotInstalledError( "The QC Delta-ML model requires the numpy, torchmd-net, simple-dftd3 and dftd3-python python modules installed." )
+    # See instalation notes at $PDYNAMO3_HOME/addOns/PM6ML/__init__.py
+
+# . Start.
+logFile.Header ( )
 
 # . The input data paths.
 dataPath = TestScript_InputDataPath ( "book" )
@@ -27,9 +35,12 @@ molecule  = ImportSystem ( os.path.join ( molPath, "bala_c7eq.mol" ) )
 
 # . Define the energy model with DeltaML correction.
 molecule.DefineQCModel  ( QCModelMNDO.WithOptions ( hamiltonian = "pm6" ) )
-eml = QCDeltaMLModel( ml_model_file = "PM6-ML_correction_seed8_best.ckpt")
+eml = QCDeltaMLModel ( ml_model_file = "PM6-ML_correction_seed8_best.ckpt" )
 molecule.AddEnergyModel ('QC Delta-ML correction', eml, priority = EnergyModelPriority.QCAddOns )
 
 # . Calculate an energy.
 molecule.Energy( doGradients=True )
+
+# . Stop.
+logFile.Footer ( )
 

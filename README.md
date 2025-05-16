@@ -15,7 +15,6 @@ Released under the [GNU General Public License](gpl-3.0.txt)
   - Semi-empirical QC methods of the MNDO type, including AM1, MNDO, PDDG, PM3, RM1 and PM6
   - Support for some standard MM force fields, including AMBER, CHARMM and OPLS-AA
   - Hybrid QC/MM methods using any combination of the QC and MM potentials implemented in the library
-  - Δ-ML (Delta Machine Learning) correction to semi-empirical PM6 (PM6-ML) 
   - Coupling to third-party programs
   - Energy calculations
   - Geometry optimizations
@@ -70,11 +69,12 @@ of the tests available may be obtained with the command ```python3 RunExamples.p
 
 ## Additional packages and programs
 
-The pDynamo3 repository includes third-party extension packages in the ```addOns``` directory. Currently the two principal ones are:
+The pDynamo3 repository includes third-party extension packages in the ```addOns``` directory. Currently the principal ones are:
 
  - [pcetk](https://github.com/mfx9/pcetk) calculates proton binding energetics in proteins using a continuum electrostatics model.
  - [pyCPR](http://www.bisb.uni-bayreuth.de/index.php?page=data/PyCPR/PyCPR) searches for transition states on molecular potential energy surfaces using the conjugate peak refinement
    algorithm.
+  -[PM6-ML](https://github.com/Honza-R/mopac-ml) Δ-ML (Delta Machine Learning) correction to semi-empirical PM6 energies and gradients.
 
 Users should refer to the web pages of these packages for full details about their use.
 

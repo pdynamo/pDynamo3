@@ -13,7 +13,7 @@
 #
 # . Obtain ML model weights at https://github.com/Honza-R/mopac-ml/blob/main/models/PM6-ML_correction_seed8_best.ckpt
 #
-# . Example: examples/addOns/PM6-ML/DeltaML-PM6.py
+# . Example: examples/addOns/PM6ML/DeltaML-PM6.py
 #
 # 
 # . References:

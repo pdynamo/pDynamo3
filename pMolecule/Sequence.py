@@ -87,42 +87,6 @@ class Sequence ( TreeRootNode ):
         return matched
 
     @classmethod
-    def FromAtoms ( selfClass, atoms, componentLabel = _DefaultComponentLabel, entityLabel = _DefaultEntityLabel ):
-        """Create a default sequence given an atom list."""
-        # . Sequence tree.
-        if componentLabel is None: componentLabel = selfClass._attributable["defaultLabel"]
-        if    entityLabel is None:    entityLabel = selfClass._attributable["defaultLabel"]
-        self      = selfClass.WithDefaults ( )
-        entity    = SequenceEntity.WithOptions    ( label = entityLabel    )
-        component = SequenceComponent.WithOptions ( label = componentLabel )
-        self.AddChild   ( entity    )
-        entity.AddChild ( component )
-        # . Are the atom labels unique?
-        labels = set ( )
-        for atom in atoms:
-            if atom.label is not None: labels.add ( atom.label )
-        reassignLabels = ( len ( atoms ) != len ( labels ) )
-        # . Assign atoms.
-        for ( i, atom ) in enumerate ( atoms ):
-            atom.index = i
-            if reassignLabels:
-                atom.label = PeriodicTable.Symbol ( atom.atomicNumber, index = i )
-            component.AddChild ( atom )
-        # . Set path to label if the component and entity labels are not set.
-        if ( len ( componentLabel ) <= 0 ) and ( len ( entityLabel ) <= 0 ):
-            for atom in atoms: atom._path = atom.label
-        # . There is no associated data.
-        return self
-
-    def GatherAtoms ( self ):
-        """Gather all atoms."""
-        atoms = []
-        for entity in self.children:
-            for component in entity.children:
-                for atom in component.children: atoms.append ( atom )
-        return atoms
-
-    @classmethod
     def FromAtomPaths ( selfClass, atomPaths, atoms = None ):
         """Create a sequence from a list of atom paths."""
         # . Argument check.
@@ -161,6 +125,34 @@ class Sequence ( TreeRootNode ):
         return self
 
     @classmethod
+    def FromAtoms ( selfClass, atoms, componentLabel = _DefaultComponentLabel, entityLabel = _DefaultEntityLabel ):
+        """Create a default sequence given an atom list."""
+        # . Sequence tree.
+        if componentLabel is None: componentLabel = selfClass._attributable["defaultLabel"]
+        if    entityLabel is None:    entityLabel = selfClass._attributable["defaultLabel"]
+        self      = selfClass.WithDefaults ( )
+        entity    = SequenceEntity.WithOptions    ( label = entityLabel    )
+        component = SequenceComponent.WithOptions ( label = componentLabel )
+        self.AddChild   ( entity    )
+        entity.AddChild ( component )
+        # . Are the atom labels unique?
+        labels = set ( )
+        for atom in atoms:
+            if atom.label is not None: labels.add ( atom.label )
+        reassignLabels = ( len ( atoms ) != len ( labels ) )
+        # . Assign atoms.
+        for ( i, atom ) in enumerate ( atoms ):
+            atom.index = i
+            if reassignLabels:
+                atom.label = PeriodicTable.Symbol ( atom.atomicNumber, index = i )
+            component.AddChild ( atom )
+        # . Set path to label if the component and entity labels are not set.
+        if ( len ( componentLabel ) <= 0 ) and ( len ( entityLabel ) <= 0 ):
+            for atom in atoms: atom._path = atom.label
+        # . There is no associated data.
+        return self
+
+    @classmethod
     def FromMapping ( selfClass, mapping ):
         """Constructor from a mapping."""
         self = selfClass.WithDefaults ( )
@@ -188,6 +180,14 @@ class Sequence ( TreeRootNode ):
                 self.variants.append ( SequenceVariant.WithOptions ( component = component, label = label ) )
         # . Finish up.
         return self
+
+    def GatherAtoms ( self ):
+        """Gather all atoms."""
+        atoms = []
+        for entity in self.children:
+            for component in entity.children:
+                for atom in component.children: atoms.append ( atom )
+        return atoms
 
     @classmethod
     def Merge ( selfClass, items, information = {} ):

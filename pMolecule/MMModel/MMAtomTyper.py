@@ -41,17 +41,17 @@ class MMAtomTyper ( AttributableObject ):
         """Check for untyped atoms."""
         # . Check for untyped atoms.
         if len ( untypedAtoms ) > 0:
-#           # . To remove ...
-#           print ( "\nUntyped atoms:\n" )
-#           for atom in untypedAtoms:
-#               print ( "Path          = ", atom.path         ,
-#                       "AtomicNumber  = ", atom.atomicNumber ,
-#                       "Connections   = ", atom.connections  ,
-#                       "FormalCharge  = ", atom.formalCharge ,
-#                       "Hydrogens     = ", atom.hydrogens    ,
-#                       "IsAromatic    = ", atom.isAromatic   ,
-#                       "Label         = ", atom.label        ,
-#                       "Valence       = ", atom.valence      )
+            # . To remove ...
+            #print ( "\nUntyped atoms:\n" )
+            #for atom in untypedAtoms:
+            #    print ( "Path          = ", atom.path         ,
+            #            "AtomicNumber  = ", atom.atomicNumber ,
+            #            "Connections   = ", atom.connections  ,
+            #            "FormalCharge  = ", atom.formalCharge ,
+            #            "Hydrogens     = ", atom.hydrogens    ,
+            #            "IsAromatic    = ", atom.isAromatic   ,
+            #            "Label         = ", atom.label        ,
+            #            "Valence       = ", atom.valence      )
             if LogFileActive ( log ):
                 labels = []
                 length = 0

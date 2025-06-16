@@ -412,10 +412,13 @@ def DetermineAromaticity ( self ):
 # . Atom geometry.
 #===================================================================================================================================
 # . Needs improvement.
+# . Not done for atoms whose geometries are already defined.
 def DetermineAtomGeometry ( self ):
     """Determine the bonding geometry of the atoms in a connectivity."""
     # . Loop over atoms.
     for atom in self.atoms:
+        # . Skip if geometry already defined.
+        if getattr ( atom, "geometry", None ) is not None: continue
         # . Attributes.
         atomicNumber = atom.atomicNumber
         connections  = getattr ( atom, "connections", None  )
@@ -450,27 +453,30 @@ def DetermineAtomGeometry ( self ):
 #===================================================================================================================================
 # . Needs improvement.
 # . For the definitive definition of OS see: Karen P, McArdle P, Takats J, Pure Appl Chem 86, 1017-1081, 2014.
+# . Not done for atoms whose oxidation states are already defined.
 def DetermineAtomOxidationState ( self ):
     """Determine the oxidation states of the atoms in a connectivity."""
     # . Initialization.
     atoms = self.atoms
     bonds = self.bonds
-    # . Initialization the oxidation states of each atom.
-    for atom in atoms: atom.oxidationState = atom.formalCharge
+    # . Initialization.
+    undefined = { atom : getattr ( atom, "oxidationState", None ) is None for atom in atoms }
+    for atom in atoms:
+        if undefined[atom]: atom.oxidationState = atom.formalCharge
     # . Loop over bonds giving the more electronegative atom the electrons.
     for bond in bonds:
-        atom1 = bond.node1
-        atom2 = bond.node2
-        if atom1.atomicNumber != atom2.atomicNumber:
+        atom1 = bond.node1 ; do1 = undefined[atom1]
+        atom2 = bond.node2 ; do2 = undefined[atom2]
+        if do1 or do2 and ( atom1.atomicNumber != atom2.atomicNumber ):
             en1   = getattr ( atom1, "Allen Electronegativity", 2.0 )
             en2   = getattr ( atom2, "Allen Electronegativity", 2.0 )
             order = bond.type.bondOrder
             if en1 > en2:
-                atom1.oxidationState -= order
-                atom2.oxidationState += order
+                if do1: atom1.oxidationState -= order
+                if do2: atom2.oxidationState += order
             else:
-                atom1.oxidationState += order
-                atom2.oxidationState -= order
+                if do1: atom1.oxidationState += order
+                if do2: atom2.oxidationState -= order
 
 #===================================================================================================================================
 # . Make various atom attributes.

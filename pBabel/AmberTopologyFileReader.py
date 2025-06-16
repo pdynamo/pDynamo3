@@ -409,7 +409,7 @@ class AmberTopologyFileReader ( TextFileReader ):
         # . Check for residues.
         nresidues = self.pointers[_NRES]
         if nresidues > 0:
-            # . Intialization.
+            # . Initialization.
             majorSeparator = Sequence._attributable["labelSeparator"]
             minorSeparator = Sequence._attributable["fieldSeparator"]
             # . Get the atom names and residue labels.

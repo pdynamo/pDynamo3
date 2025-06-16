@@ -28,12 +28,28 @@ Patterns:
     # . Amide.
     - Label: Amide
       Atom Patterns:
-          - [ 0, 7, 0.0, 3, 0,   ., ., False, False, ., "N:Tri" ]
+          - [ 0, 7, 0.0, 3, 0, Tri, ., False, False, ., "N:Tri" ]
           - [ 1, 6, 0.0, 3, 0, Tri, ., False, False, ., "C:Tri" ]
-          - [ 2, 8, 0.0, 1, 0,   ., ., False, False, ., "O:Tri" ]
+          - [ 2, 8, 0.0, 1, 0, Tri, ., False, False, ., "O:Tri" ]
       Bond Patterns:
           - [ 0, 1, Single ]
           - [ 1, 2, Double ]
+
+    # . Guanidinium cation.
+    - Label: Guanidinium Cation
+      Atom Patterns:
+          - [ 0, 7, 0.0, 3, 0, Tri, 2, False, False, ., "N:Tri" ]
+          - [ 1, 6, 0.0, 3, 1, Tri, 0, False, False, ., "C:Tri" ]
+          - [ 2, 7, 0.0, 3, 0, Tri, 2, False, False, ., "N:Tri" ]
+          - [ 3, 7, 0.0, 3, 0, Tri, 1, False, False, ., "N:Tri" ]
+          - [ 4, 6, 0.0, 4, 0, Tet, ., False, True , ., .       ]
+          - [ 5, 6, 0.0, 4, 0, Tet, ., False, True , ., .       ]
+      Bond Patterns:
+          - [ 0, 1, Double ]
+          - [ 1, 2, Single ]
+          - [ 1, 3, Single ]
+          - [ 3, 4, Single ]
+          - [ 4, 5, Single ]
 
     # . N-Car.
     - Label: N-Car
@@ -67,7 +83,7 @@ Patterns:
       Bond Patterns:
           - [ 0, 1, Single ]
 
-    # . O--Csp2.
+    # . O-Csp2.
     - Label: O-Csp2
       Atom Patterns:
           - [ 0, 8, 0.0, 1, -1,   ., ., False, False, ., "O:Tri" ]

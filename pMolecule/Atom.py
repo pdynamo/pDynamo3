@@ -18,23 +18,17 @@ class Atom ( Node, TreeLeafNode ):
     """An atom."""
 
     #
-    # . Possible attributes (apart from elemental ones) include:
+    # . Other actual or possible attributes:
     #
     #   aromaticElectrons       the number of electrons the atom donates to an aromatic system
     #   aromaticValence         the extra valence used up by belonging to an aromatic system
     #   chiralityClass          Smiles
     #   chiralityNumber         Smiles
-    #   connections             the number of connections
-    #   formalCharge            the formal charge
-    #   hydrogens               explicit and implicit hydrogens
     #   implicitHydrogens       hydrogens with no atom specification
-    #   index                   the order of the atom in the atom sequence
     #   inRing                  is the atom in a ring?
-    #   isAromatic              is the atom aromatic?
     #   isotope                 isotope specification
     #   isReduced               Smiles
     #   radical                 radical specification
-    #   valence                 sum of bond orders of the atom
     #
     # . No attributes are inherited from Node.
     #
@@ -44,16 +38,16 @@ class Atom ( Node, TreeLeafNode ):
     #   parent
     #   path
     #
-    # . Remove connections, hydrogens, index, isAromatic, valence, and create when necessary?
-    #
     _attributable = dict ( TreeLeafNode._attributable )
-    _attributable.update ( { "atomicNumber" :    -1 ,
-                             "connections"  :     0 ,
-                             "formalCharge" :     0 ,
-                             "hydrogens"    :     0 ,
-                             "index"        :    -1 ,
-                             "isAromatic"   : False ,
-                             "valence"      :     0 } )
+    _attributable.update ( { "atomicNumber"   :    -1 ,
+                             "connections"    :     0 ,
+                             "formalCharge"   :     0 ,
+                             "geometry"       :  None ,
+                             "hydrogens"      :     0 ,
+                             "index"          :    -1 ,
+                             "isAromatic"     : False ,
+                             "oxidationState" :  None ,
+                             "valence"        :     0 } )
 
     def __getattr__ ( self, name ):
         """Get an elemental attribute."""

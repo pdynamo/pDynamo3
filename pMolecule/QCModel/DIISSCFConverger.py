@@ -146,7 +146,7 @@ class DIISSCFConvergerState ( AttributableObject ):
         self.overlapMatrix         = scratch.Get ( "overlapMatrix"        , None )
         if ( self.inverseOrthogonalizer is None ) or \
            ( self.orthogonalizer        is None ) or \
-           ( self.overlap               is None ):
+           ( self.overlapMatrix         is None ):
             self.inverseOrthogonalizer = None
             self.orthogonalizer        = None
             self.overlapMatrix         = None

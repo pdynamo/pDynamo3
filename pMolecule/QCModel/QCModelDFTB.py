@@ -135,21 +135,30 @@ class QCModelDFTB ( QCModel ):
                              "extendedInput"        : None         ,
                              "fermiTemperature"     : 10.0         ,
                              "gaussianBlurWidth"    :  0.0         ,
-                             "hamiltonian"          : "DFTB"       ,
                              "maximumSCCIterations" : 300          ,
                              "randomScratch"        : False        ,
                              "sccTolerance"         : 1.0e-8       ,
                              "scratch"              : _DFTBScratch ,
                              "skfPath"              : "."          ,
-                             "useSCC"               : True        } )
+                             "useSCC"               : False        ,
+                             
+                             #. By Bachega at April / 2024,
+                             #. following the instructios from: https://dftb.org/parameters/download/3ob/3ob-3-1-cc
+                             "ThirdOrderFull"       : True         ,  
+                             "zeta"                 : 4.00         , 
+                             "HubbardDerivs"        : None         , # should be a dict like: {'Br': -0.0573 , 'C' : -0.1492 ,'Ca': -0.0340 ...}
+                             } )
+                             
     _summarizable.update ( { "deleteJobFiles"       :   "Delete Job Files"                    ,
                              "fermiTemperature"     : ( "Fermi Temperature"      , "{:.3f}" ) ,
                              "gaussianBlurWidth"    : ( "Gaussian Blur Width"    , "{:.3f}" ) ,
-                             "hamiltonian"          :   "Hamiltonian"                         ,
                              "maximumSCCIterations" :   "Maximum SCC Iterations"              ,
                              "randomScratch"        :   "Random Scratch"                      ,
                              "sccTolerance"         : ( "SCC Tolerance"          , "{:g}"   ) ,
                              "useSCC"               :   "Use SCC"                           } )
+
+ 
+
 
     def AtomicCharges ( self, target, chargeModel = None ):
         """Atomic charges."""
@@ -360,20 +369,9 @@ class QCModelDFTB ( QCModel ):
                 inFile.write ( "  {:25.15f}{:25.15f}{:25.15f}\n".format ( sp.H[0,i], sp.H[1,i], sp.H[2,i] ) )
         inFile.write ( "}\n" )
         # . Start Hamiltonian block - basic options only.
-        if "xTB" not in self.hamiltonian: 
-            inFile.write ( "Hamiltonian = DFTB {\n" )
-            inFile.write ( "  Eigensolver        = QR {}\n" )
-            # . Maximum angular momenta.
-            inFile.write ( "  MaxAngularMomentum = {\n" )
-            for ( s, q ) in zip ( uniqueSymbols, uniqueQNs ): inFile.write ( "    {:2s} = \"{:s}\"\n".format ( s, _OrbitalQuantumNumberLabels[q] ) )
-            inFile.write ( "  }\n" )
-            # . Slater-Koster files (type 2 only).
-            inFile.write ( "  SlaterKosterFiles = Type2FileNames {\n" )
-            inFile.write ( "    Prefix    = \"{:s}\"\n    Separator = \"-\"\n    Suffix    = \".skf\"\n  }}\n".format ( os.path.join ( self.skfPath, "" ) ) )
-        else:    
-            inFile.write ( "Hamiltonian = xTB {\n" )
-            inFile.write ( "  Method = \"{:s}\"\n".format ( self.hamiltonian ) )
-        inFile.write ( "  Charge = {:d}\n".format ( target.electronicState.charge ) )
+        inFile.write ( "Hamiltonian = DFTB {\n" )
+        inFile.write ( "  Charge             = {:d}\n".format ( target.electronicState.charge ) )
+        inFile.write ( "  Eigensolver        = QR {}\n" )
         inFile.write ( "  Filling            = Fermi {{ Temperature [Kelvin] = {:.1f} }}\n".format ( self.fermiTemperature ) )
         # . SCC.
         if self.useSCC:
@@ -383,6 +381,53 @@ class QCModelDFTB ( QCModel ):
             inFile.write ( "  SCCTolerance       = {:g}\n".format ( self.sccTolerance         ) )
         else:
             inFile.write ( "  SCC = No\n" )
+        #--------------------------------------------------------------------------------------     
+        # . ThirdOrderFull 
+        '''              
+        Insertions (by Fernando Bachega  April 23 /2023) 
+        according to  https://dftb.org/parameters/download/3ob/3ob-3-1-cc
+        '''
+        if self.ThirdOrderFull:
+            if self.HubbardDerivs:
+                pass
+            else:
+                
+                self.HubbardDerivs = {
+                                         'Br': -0.0573 ,
+                                         'C' : -0.1492 ,
+                                         'Ca': -0.0340 ,
+                                         'Cl': -0.0697 ,
+                                         'F' : -0.1623 ,
+                                         'H' : -0.1857 ,
+                                         'I' : -0.0433 ,
+                                         'K' : -0.0339 ,
+                                         'Mg': -0.02   ,
+                                         'N' : -0.1535 ,
+                                         'Na': -0.0454 ,
+                                         'O' : -0.1575 ,
+                                         'P' : -0.14   ,
+                                         'S' : -0.11   ,
+                                         'Zn': -0.03   ,
+                                         }
+
+            inFile.write ( "  ThirdOrderFull     = Yes\n" )
+            inFile.write ( "  HCorrection        = Damping { \n")
+            inFile.write ( "  Exponent = {:f}\n".format (self.zeta))
+            inFile.write ( "  }\n" )
+            inFile.write ( "  HubbardDerivs {\n")
+            for  s  in  uniqueSymbols:
+                #inFile.write ( "    {:2s} = {:f}\n".format ( s, Hubbard_Derivs_parameters[s]))
+                inFile.write ( "    {:2s} = {:f}\n".format ( s, self.HubbardDerivs[s]))
+            inFile.write ( "  }\n" )
+        #--------------------------------------------------------------------------------------     
+            
+        # . Maximum angular momenta.
+        inFile.write ( "  MaxAngularMomentum = {\n" )
+        for ( s, q ) in zip ( uniqueSymbols, uniqueQNs ): inFile.write ( "    {:2s} = \"{:s}\"\n".format ( s, _OrbitalQuantumNumberLabels[q] ) )
+        inFile.write ( "  }\n" )
+        # . Slater-Koster files (type 2 only).
+        inFile.write ( "  SlaterKosterFiles = Type2FileNames {\n" )
+        inFile.write ( "    Prefix    = \"{:s}\"\n    Separator = \"-\"\n    Suffix    = \".skf\"\n  }}\n".format ( os.path.join ( self.skfPath, "" ) ) )
         # . User specified options using extended format.
         if self.extendedInput is not None: inFile.write ( "{:s}\n".format ( self.extendedInput ) )
         # . QC/MM - there are assumptions here about the QC/MM model.
